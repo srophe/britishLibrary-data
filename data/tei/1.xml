@@ -1,6 +1,6 @@
 <?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/srophe-app/documentation/enrich-syriaca.rnc" type="application/relax-ng-compact-syntax"?>
 <?xml-stylesheet type="text/css" href="SRPEnrichCSS.css"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -72,9 +72,9 @@
               <idno type="BL-Shelmark-simplified">BL Add MS 12133</idno>
             </altIdentifier>
           </msIdentifier>
-          <head >
-            <note  type="contents-note">This manuscript record does not have a summary list of contents. For composite manuscripts, the list of contents can be found under each individual part.</note>
-            <listRelation  type="Wright-BL-Taxonomy"/>
+          <head>
+            <note type="contents-note">This manuscript record does not have a summary list of contents. For composite manuscripts, the list of contents can be found under each individual part.</note>
+            <listRelation type="Wright-BL-Taxonomy"/>
             <listRelation type="composite-to-parts">
               <desc>This composite manuscript consists of 2 distinct parts:</desc>
               <relation name="syriaca:has-unspecified-codicological-part" ref="#syriaca:has-unspecified-codicological-part" active="http://syriaca.org/manuscript/1" passive="http://syriaca.org/manuscript/2">
@@ -85,7 +85,7 @@
               </relation>
             </listRelation>
           </head>
-          <msPart n="1" xml:id="Part1">
+          <msPart xml:id="Part1" n="1">
             <msIdentifier>
               <idno type="URI">http://syriaca.org/manuscript/2</idno>
               <altIdentifier>
@@ -103,9 +103,9 @@
                 <idno type="Wright-BL-Roman">IX</idno>
               </altIdentifier>
             </msIdentifier>
-            <head >
-              <note  type="contents-note">This manuscript contains: The book of Exodus, according to the Peshitta version. In total, including sub-sections, this manuscript contains 1 items. N.B., items have been renumbered by the editors and may not reflect Wright's original numeration.</note>
-              <listRelation  type="Wright-BL-Taxonomy">
+            <head>
+              <note type="contents-note">This manuscript contains: The book of Exodus, according to the Peshitta version. In total, including sub-sections, this manuscript contains 1 items. N.B., items have been renumbered by the editors and may not reflect Wright's original numeration.</note>
+              <listRelation type="Wright-BL-Taxonomy">
                 <relation name="dcterms:type" ref="http://purl.org/dc/terms/type" active="http://syriaca.org/manuscript/2" passive="#bible-ot">
                   <desc>Old Testament</desc>
                 </relation>
@@ -120,7 +120,7 @@
             <msContents>
               <summary/>
               <textLang mainLang="syr">Syriac</textLang>
-              <msItem n="1" xml:id="p1a1">
+              <msItem xml:id="p1a1" n="1">
                 <locus from="3b" to="107b">Foll. 3b-107b</locus>
                 <title ref="http://syriaca.org/work/2">The book of Exodus, according to the Peshitta version.</title>
                 <rubric xml:lang="syr">ܡܦܩܢܐ̇ ܣܦܪܐ ܕܬܪ̈ܝܼܢ ܕܐܘܪܝܬܐ<locus from="3b" to="3b"/>
@@ -164,15 +164,14 @@
                 </layoutDesc>
               </objectDesc>
               <handDesc>
-                <handNote xml:id="p1handnote1" scope="major" script="syr-Syre" medium="unknown">
+                <handNote xml:id="p1handNote1" scope="major" script="syr-Syre" medium="unknown">
                   <desc>The character is an elegant, regular Estrangela, of<origDate notBefore="0700" notAfter="0750">the earlier half of the viiith century</origDate>.<ref target="#p1addition1 #p1addition2">See additions.</ref>
                   </desc>
                 </handNote>
-                <handNote xml:id="p1handnote2" scope="minor" script="syr-Syrj" medium="unknown">
+                <handNote xml:id="p1handNote2" scope="minor" script="syr-Syrj" medium="unknown">
                   <desc>Vowels have been added in a few cases by a later hand (e.g. foll.<locus>15b</locus>and<locus>16a</locus>,<foreign xml:lang="syr">ܰ, ܶ, ܺ, ܳ,  ,</foreign>).</desc>
                 </handNote>
-                <!--Missing Syriac vowels-->
-                <handNote xml:id="p1handnote3" scope="minor" script="syr" medium="unknown">
+                <handNote xml:id="p1handNote3" scope="minor" script="syr" medium="unknown">
                   <locus from="2a" to="2a"/>
                   <listPerson>
                     <person>
@@ -183,11 +182,11 @@
                     </person>
                   </listPerson>
                 </handNote>
-                <handNote xml:id="p1handnote4" scope="minor" script="syr-Syre" medium="unknown">
+                <handNote xml:id="p1handNote4" scope="minor" script="syr-Syre" medium="unknown">
                   <locus from="2a" to="2a"/>
                   <desc>Note written in large open Estrangela characters.</desc>
                 </handNote>
-                <handNote xml:id="p1handnote5" scope="minor" script="syr" medium="unknown">
+                <handNote xml:id="p1handNote5" scope="minor" script="syr" medium="unknown">
                   <locus from="107b" to="107b"/>
                   <locus from="108a" to="108a"/>
                   <desc>
@@ -199,7 +198,7 @@
               <additions>
                 <note type="proofreader-note">N.B., items below may have been listed out of folio order in Wright's catalogue.</note>
                 <list>
-                  <item n="1" xml:id="p1addition1" syriaca-tags="doxology scribal-colophon">
+                  <item xml:id="p1addition1" n="1" syriaca-tags="doxology scribal-colophon">
                     <label>Doxology</label>
                     <locus from="107b" to="107b"/>
                     <p>The doxology,</p>
@@ -210,7 +209,7 @@
                       <quote xml:lang="syr">ܨܠܘ ܥܠ ܡ̇ܢ ܕܟܬ̣ܒ ܕܢܬܚܢܢ ܒܝܘܡ ܕܝܢ̣ܐ.</quote>
                     </p>
                   </item>
-                  <item n="2" xml:id="p1addition2" syriaca-tags="ownership-inscription">
+                  <item xml:id="p1addition2" n="2" syriaca-tags="ownership-inscription">
                     <label>Colophon</label>
                     <locus from="108a" to="108a"/>
                     <p>A note on fol.<locus>108a</locus>, states that the manuscript was written for the monks of the<placeName>convent of Nātphā</placeName>,  near<placeName>Māridīn</placeName>, at the expense of the priest<listPerson>
@@ -233,7 +232,7 @@
                                             ܘܥܒܕܝܢ ܨܒܝܢܗ ܕܐܠܗܐ ܠܥܠܡܝܢ.</quote>
                     </p>
                   </item>
-                  <item n="3" xml:id="p1addition3">
+                  <item xml:id="p1addition3" n="3">
                     <locus from="108a" to="108a"/>
                     <p>What originally followed has been
                                             erased, and in its place we read, in the handwriting of<persName ref="http://syriaca.org/person/647">Moses of Nisibis</persName>, abbat of the <placeName ref="http://syriaca.org/place/360">convent of S. Mary Deipara</placeName>in the<placeName>desert of Scete</placeName>
@@ -257,7 +256,7 @@
                                             ܒ̈ܨܠܘܬܐ ܕܝܠܕܬ ܐܠܗܐ ܘܩܕ̈ܝܫܐ ܐܡܝܢ♱</quote>
                     </p>
                   </item>
-                  <item n="4" xml:id="p1addition4">
+                  <item xml:id="p1addition4" n="4">
                     <locus from="2a" to="2a"/>
                     <ref target="#p1handnote3"/>
                     <p>
@@ -277,7 +276,7 @@
                                             ܐܡܝܢ.</quote>
                     </p>
                   </item>
-                  <item n="5" xml:id="p1addition5">
+                  <item xml:id="p1addition5" n="5">
                     <locus from="2a" to="2a"/>
                     <ref target="#p1handnote4"/>
                     <p>Notation of the names of two readers of the book,<persName>John</persName>and<persName>Yeshūa’</persName>
@@ -308,7 +307,6 @@
                     </bibl>.
                                         abbreviated by the Syriaca.org project team.</source>
                 </recordHist>
-                <availability status="restricted"/>
                 <note/>
               </adminInfo>
               <listBibl>
@@ -324,7 +322,7 @@
               </listBibl>
             </additional>
           </msPart>
-          <msPart n="2" xml:id="Part2">
+          <msPart xml:id="Part2" n="2">
             <msIdentifier>
               <idno type="URI">http://syriaca.org/manuscript/3</idno>
               <altIdentifier>
@@ -345,9 +343,9 @@
                 <idno type="Wright-BL-Roman">LI</idno>
               </altIdentifier>
             </msIdentifier>
-            <head >
-              <note  type="contents-note">This manuscript contains: The book of Joshua, translated from the Septuagint by Paul of Tellā, with critical marks from the Hexapla and marginal readings. In total, including sub-sections, this manuscript contains 7 items. N.B., items have been renumbered by the editors and may not reflect Wright's original numeration.</note>
-              <listRelation  type="Wright-BL-Taxonomy">
+            <head>
+              <note type="contents-note">This manuscript contains: The book of Joshua, translated from the Septuagint by Paul of Tellā, with critical marks from the Hexapla and marginal readings. In total, including sub-sections, this manuscript contains 7 items. N.B., items have been renumbered by the editors and may not reflect Wright's original numeration.</note>
+              <listRelation type="Wright-BL-Taxonomy">
                 <relation name="dcterms:type" ref="http://purl.org/dc/terms/type" active="http://syriaca.org/manuscript/3" passive="#bible-ot">
                   <desc>Old Testament</desc>
                 </relation>
@@ -362,7 +360,7 @@
             <msContents>
               <summary/>
               <textLang mainLang="syr">Syriac</textLang>
-              <msItem n="1" xml:id="p2a1" defective="true">
+              <msItem xml:id="p2a1" n="1" defective="true">
                 <locus from="109" to="169">Foll. 109-169</locus>
                 <editor role="translator" ref="http://syriaca.org/person/82">Paul of Tella</editor>
                 <title xml:lang="en" type="supplied" resp="http://syriaca.org/documentation/editors.xml#ngibson">The book of Joshua,
@@ -370,7 +368,7 @@
                 <colophon>
                   <ref target="#p2addition1">See additions.</ref>
                 </colophon>
-                <msItem n="1" xml:id="p2b1" defective="true">
+                <msItem xml:id="p2b1" n="2" defective="true">
                   <locus from="109" to="112a"/>
                   <title>Summary of
                                     the contents.</title>
@@ -379,7 +377,7 @@
                                         Patrol. Gr., t. lvi., col. 336.</bibl>
                   </note>
                 </msItem>
-                <msItem n="2" xml:id="p2b2" defective="true">
+                <msItem xml:id="p2b2" n="3" defective="true">
                   <locus from="112a" to="169"/>
                   <editor role="translator" ref="http://syriaca.org/person/82">Paul of Tella</editor>
                   <title ref="http://syriaca.org/work/141">The book of Joshua,
@@ -400,16 +398,16 @@
                                         tetragrammaton is indicated on the margin by<foreign xml:lang="syr">ܦܝܦܝ</foreign>.</p>
                   </note>
                 </msItem>
-                <msItem n="3" xml:id="p2b3">
+                <msItem xml:id="p2b3" n="4">
                   <title ref="http://syriaca.org/work/185">Critical marks of the Hexapla of Origen</title>
                 </msItem>
-                <msItem n="4" xml:id="p2b4">
+                <msItem xml:id="p2b4" n="5">
                   <title ref="http://syriaca.org/work/182">Marginal notes of the book of Joshua according to Aquila</title>
                 </msItem>
-                <msItem n="5" xml:id="p2b5">
+                <msItem xml:id="p2b5" n="6">
                   <title ref="http://syriaca.org/work/183">Marginal notes of the book of Joshua according to Symmachus</title>
                 </msItem>
-                <msItem n="6" xml:id="p2a6">
+                <msItem xml:id="p2b6" n="7">
                   <title ref="http://syriaca.org/work/184">Marginal notes of the book of Joshua according to Theodotion</title>
                 </msItem>
               </msItem>
@@ -449,18 +447,17 @@
                 </layoutDesc>
               </objectDesc>
               <handDesc n="1">
-                <handNote xml:id="p2handnote1" scope="major" script="syr-Syre" medium="unknown">
+                <handNote xml:id="p2handNote1" scope="major" script="syr-Syre" medium="unknown">
                   <desc>The writing is a fine, regular Estrangela of the<origDate notBefore="0700" notAfter="0800">viiith century</origDate>.<persName ref="http://syriaca.org/person/82">Paul of Tellā</persName>.<ref target="#p2addition1">See additions.</ref>
                   </desc>
                 </handNote>
               </handDesc>
               <additions>
                 <list>
-                  <item n="1" xml:id="p2addition1" syriacatags="scribal-colophon">
+                  <item xml:id="p2addition1" n="1" syriacatags="scribal-colophon">
                     <label>Colophon</label>
                     <locus from="169b" to="169b"/>
                     <p>On fol. 169b we have the following colophon:</p>
-                    <!-- Mixture of production note and final rubric. -->
                     <p>
                       <quote xml:lang="syr">ܫܠܡ ܝܫܘܥ ܒܪܗ ܕܢܘܢ ܐܝܟ ܗ̇ܢܘܢ ܫܥܒܝܢ
                                             .ܘ. ܗܠܝܼܢ ܒܬܪ ܫܘܠܡܐ ܐܝܟ ܗ̇ܢܘܢ ܫܒܥܝܢ ܣܝ̈ܡܢ ܗ̈ܘܝ ܒܨܚܚܐ ܥܡ
@@ -500,7 +497,6 @@
                     </bibl>.
                                         abbreviated by the Syriaca.org project team.</source>
                 </recordHist>
-                <availability status="restricted"/>
                 <note/>
               </adminInfo>
               <listBibl>
