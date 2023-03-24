@@ -1,0 +1,41 @@
+name: Proofreading BL Manuscripts
+description: Track the results of proofreading the Digital Wright Catalogue
+title: "[Proofreading]: {SHELFMARK}"
+labels: ["proofreading"]
+assignees:
+  - wpotter
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this proofreading report! Please update the name of this issue with the manuscript's shelfmark.
+        The form will guide you through the process of submitting revision requests based on your proofreading.
+  - type: input
+    id: ms-uri
+    attributes:
+      label: Manuscript URI
+      description: Please provide the link to the manuscript record
+      placeholder: ex. https://bl.vuexistapps.us/manuscript/10
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: "## Manuscript Overview"
+  - type: textarea
+    id: ms-overview-desc
+    attributes:
+      label: Problems with Manuscript Overview
+      description: Describe any errors or problems with the manuscript overview box
+    validations:
+      required: false
+  - type: checkboxes
+    id: ms-overview-checkbox
+    attributes:
+      label: Categories of Manuscript Overview Problems
+      description: From the following list, select the kinds of issues with the manuscript overview box
+      options:
+        - label: Whitespace
+        - label: Typo(s)
+        - label: Incorrect content
+        - label: Missing content
+      
