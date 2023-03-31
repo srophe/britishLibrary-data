@@ -1,23 +1,13 @@
 name: Proofreading BL Manuscripts
 description: Track the results of proofreading the Digital Wright Catalogue
-title: "[Proofreading]: {SHELFMARK}"
+title: "{SHELFMARK} | {URI}"
 labels: ["proofreading", "data-edits"]
-assignees:
-  - wlpotter
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this proofreading report! Please update the name of this issue with the manuscript's shelfmark.
+        Thanks for taking the time to fill out this proofreading report! Please make sure the name of this issue includes the manuscript's shelfmark and URL.
         The form will guide you through the process of submitting revision requests based on your proofreading.
-  - type: input
-    id: ms-uri
-    attributes:
-      label: Manuscript URI
-      description: Please provide the link to the manuscript record
-      placeholder: ex. https://bl.vuexistapps.us/manuscript/10
-    validations:
-      required: true
   - type: markdown
     attributes:
       value: "## Manuscript Overview"
@@ -58,78 +48,12 @@ body:
         - label: Missing content
   - type: markdown
     attributes:
-      value: "## Manuscript Contents"
-  - type: textarea
-    id: manuscript-contents-desc
-    attributes:
-      label: Problems with Manuscript Contents
-      description: Describe any errors or problems with the Manuscript Contents section. Since there could be a large number of items, please include the item number and foliation, where possible, when describing content issues.
-  - type: checkboxes
-    id: manuscript-contents-checkbox
-    attributes:
-      label: Categories of Manuscript Contents Problems
-      description: From the following list, select the kinds of issues with the manuscript contents. Select all that apply, even if they do not all apply for the same content item (e.g., there could be a typo in one item and incorrect content in another item. In such a case, select both Typo(s) and Incorrect content).
-      options:
-        - label: Whitespace
-        - label: Typo(s)
-        - label: Incorrect content
-        - label: Missing content
-        - label: Content out of order
-  - type: markdown
-    attributes:
-      value: "## Decoration Description"
-  - type: textarea
-    id: decoration-description-desc
-    attributes:
-      label: Problems with Decoration Description
-      description: Describe any errors or problems with the Decoration Description section. Skip this if the manuscript does not have decorations.
-  - type: checkboxes
-    id: decoration-description-checkbox
-    attributes:
-      label: Categories of Decoration Description Problems
-      description: From the following list, select the kinds of issues with the Decoration Description section. Skip if the manuscript does not have decorations
-      options:
-        - label: Whitespace
-        - label: Typo(s)
-        - label: Incorrect content
-        - label: Missing content
-        - label: Contents out of order
-  - type: markdown
-    attributes:
-      value: "## Manuscript Additions"
-  - type: textarea
-    id: additions-desc
-    attributes:
-      label: Problems with Manuscript Additions
-      description: Describe any errors or problems with the Manuscript Additions section. Since there could be a large number of items, please include the item number and foliation, where possible, when describing additions issues.
-  - type: checkboxes
-    id: additions-checkbox
-    attributes:
-      label: Categories of Manuscript Additions Problems
-      description: From the following list, select the kinds of issues with the manuscript additions. Select all that apply, even if they do not all apply for the same addition item (e.g., there could be a typo in one item and incorrect content in another item. In such a case, select both Typo(s) and Incorrect content).
-      options:
-        - label: Whitespace
-        - label: Typo(s)
-        - label: Incorrect content
-        - label: Missing content
-        - label: Content out of order
-  - type: markdown
-    attributes:
       value: "## Additional Notes"
   - type: textarea
     id: general-notes
     attributes:
       label: General Notes
       description: Provide here any additional notes from proofreading that do not fall into the above categories.
-  - type: checkboxes
-    id: added-to-project-verification
-    attributes:
-      label: Add to GitHub Project
-      description: Please add this issue to the BL Proofreading project. On the right panel, under Projects select Organization and BL Proofreading.
-      options:
-        - label: I have added the issue to the BL Proofreading project
-    validations:
-      required: true
   - type: markdown
     attributes:
       value: |
