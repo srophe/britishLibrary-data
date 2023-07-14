@@ -1,0 +1,39 @@
+name: Proofreading BL Manuscript Contents
+description: Track the results of proofreading the Digital Wright Catalogue
+title: "{SHELFMARK} | {URI}"
+labels: ["proofreading", "data-edits", "ms-contents"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this proofreading report! Please make sure the name of this issue includes the manuscript's shelfmark and URL.
+        The form will guide you through the process of submitting revision requests based on your proofreading.
+  - type: markdown
+    attributes:
+      value: "## Manuscript Contents"
+  - type: textarea
+    id: ms-contents-desc
+    attributes:
+      label: Problems with Manuscript Contents
+      description: Describe any errors or problems with the manuscript overview box
+    validations:
+      required: false
+  - type: checkboxes
+    id: ms-overview-checkbox
+    attributes:
+      label: Categories of Manuscript Overview Problems
+      description: From the following list, select the kinds of issues with the manuscript overview box
+      options:
+        - label: Whitespace
+        - label: Typo(s)
+        - label: Incorrect content
+        - label: Missing content
+  - type: markdown
+    attributes:
+      value: "## Physical Description"
+  - type: textarea
+    id: physical-description-desc
+    attributes:
+
+
+
