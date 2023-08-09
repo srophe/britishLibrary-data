@@ -1,19 +1,15 @@
-<collection xmlns="http://exist-db.org/collection-config/1.0">
-    <index xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:srophe="https://srophe.app">
+<collection xmlns="http://exist-db.or<collection xmlns="http://exist-db.org/collection-config/1.0">
+    <index xmlns:srophe="https://srophe.app" xmlns:tei="http://www.tei-c.org/ns/1.0">
         <lucene diacritics="no">
-            <module uri="http://srophe.org/srophe/facets" prefix="sf"
-                at="xmldb:exist:////db/apps/britishLibrary/modules/lib/facets.xql"/>
+            <module uri="http://srophe.org/srophe/facets" prefix="sf" at="xmldb:exist:////db/apps/britishLibrary/modules/lib/facets.xql"/>
             <text qname="tei:TEI">
-                <facet dimension="material"
-                    expression="descendant::tei:msDesc/tei:physDesc/tei:objectDesc/tei:supportDesc/@material"/>
-                <facet dimension="script"
-                    expression="descendant::tei:msDesc/tei:physDesc/tei:handDesc/tei:handNote/@script"/>
+                <facet dimension="material" expression="descendant::tei:msDesc/tei:physDesc/tei:objectDesc/tei:supportDesc/@material"/>
+                <facet dimension="script" expression="descendant::tei:msDesc/tei:physDesc/tei:handDesc/tei:handNote/@script"/>
                 <field name="title" expression="sf:field(.,'title')"/>
                 <field name="titleSyriac" expression="sf:field(.,'titleSyriac')"/>
                 <field name="titleArabic" expression="sf:field(.,'titleArabic')"/>
                 <field name="author" expression="sf:field(.,'author')"/>
-                <field name="publicationDate"
-                    expression="ancestor-or-self::tei:TEI/descendant::tei:sourceDesc/tei:bibl/tei:date/@when"/>
+                <field name="publicationDate" expression="ancestor-or-self::tei:TEI/descendant::tei:sourceDesc/tei:bibl/tei:date/@when"/>
                 <ignore qname="tei:encodingDesc"/>
                 <ignore qname="tei:profileDesc"/>
             </text>
@@ -34,6 +30,7 @@
             <text qname="tei:item"/>
             <text qname="tei:quote"/>
             <text qname="tei:foreign"/>
+            <text qname="tei:rubric"/>
             <!--
             <text qname="tei:finalRubric" boost="2.5"/>
             <text qname="tei:rubric" boost="2.5"/>
