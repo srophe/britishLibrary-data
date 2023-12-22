@@ -53,6 +53,10 @@
           <resp>English text entry and proofreading by</resp>
           <name type="org" ref="http://syriaca.org/documentation/editors.xml#uasyriacaresearchgroup">Syriac Research Group, University of Alabama</name>
         </respStmt>
+      <respStmt>
+          <resp>Folio extent edited by</resp>
+          <name type="person" ref="http://syriaca.org/documentation/editors.xml#kurban">Kurt Urban</name>
+        </respStmt>
       </titleStmt>
       <editionStmt>
         <edition n="1.0"/>
@@ -66,7 +70,7 @@
             <p>Distributed under a Creative Commons Attribution 3.0 Unported License</p>
           </licence>
         </availability>
-        <date calendar="Gregorian"/>
+        <date calendar="Gregorian">2023-04-21-05:00</date>
       </publicationStmt>
       <sourceDesc>
         <msDesc xml:id="manuscript-562">
@@ -80,6 +84,9 @@
               <idno type="BL-Shelfmark">Add. 14,696</idno>
             </altIdentifier>
             <altIdentifier>
+              <idno type="BL-Shelfmark-display">London, BL, Add. 14,696</idno>
+            </altIdentifier>
+            <altIdentifier>
               <idno type="BL-Shelmark-simplified">BL Add MS 14696</idno>
             </altIdentifier>
             <altIdentifier>
@@ -91,9 +98,9 @@
               <idno type="Wright-BL-Roman">CCCXLIV</idno>
             </altIdentifier>
           </msIdentifier>
-          <head xmlns="'http://www.tei-c.org/ns/1.0'">
-            <note xmlns="http://www.tei-c.org/ns/1.0" type="contents-note">This manuscript contains: A large collection of Canons and Anthems for the festivals of the whole year. In total, including sub-sections, this manuscript contains 53 items. N.B., items have been renumbered by the editors and may not reflect Wright's original numeration.</note>
-            <listRelation xmlns="http://www.tei-c.org/ns/1.0" type="Wright-BL-Taxonomy">
+          <head>
+            <note type="contents-note">This manuscript contains: A large collection of Canons and Anthems for the festivals of the whole year. In total, including sub-sections, this manuscript contains 53 items.</note>
+            <listRelation type="Wright-BL-Taxonomy">
               <relation name="dcterms:type" ref="http://purl.org/dc/terms/type" active="http://syriaca.org/manuscript/562" passive="#choral">
                 <desc>Choral Books</desc>
               </relation>
@@ -392,6 +399,9 @@
                         Each page is divided into two columns, of from 25 to 31 lines. </p>
             <objectDesc form="codex">
               <supportDesc material="chart">
+                <extent>
+                  <measure type="composition" unit="leaf" quantity="315">315 ff.</measure>
+                </extent>
                 <foliation/>
                 <collation/>
                 <condition>
@@ -408,11 +418,11 @@
               </supportDesc>
             </objectDesc>
             <handDesc hands="2">
-              <handNote medium="unknown" xml:id="handNote1" scope="" script="">
-                <desc>This volume is written in a good, regular hand of the xiiith cent. (with the exception of fol.302, which is a somewhat later addition).</desc>
+              <handNote xml:id="handNote1" medium="unknown" scope="major" script="syr">
+                <desc>This volume is written in a good, regular hand of the xiiith cent.</desc>
               </handNote>
-              <handNote medium="unknown" xml:id="handNote2" scope="minor" script="syr">
-                <desc>See additions.</desc>
+              <handNote xml:id="handNote2" medium="unknown" scope="minor" script="syr">
+                <desc>Fol.302 is a somewhat later addition.</desc>
               </handNote>
             </handDesc>
             <additions>
@@ -451,14 +461,14 @@
             <adminInfo>
               <recordHist>
                 <source>Manuscript description based on<bibl>
-                    <ref target="#Wright">Wright's
+                    <ref target="#Wrightpart">Wright's
                       Catalogue</ref>
                   </bibl>. abbreviated by the Syriaca.org editors.</source>
               </recordHist>
               <note/>
             </adminInfo>
             <listBibl>
-              <bibl xml:id="Wright">
+              <bibl xml:id="Wrightpart">
                 <author>William Wright</author>
                 <title xml:lang="en">Catalogue of Syriac Manuscripts in the British Museum Acquired
                   since the Year 1838</title>
@@ -467,6 +477,7 @@
                 <ptr target="http://syriaca.org/bibl/8"/>
                 <citedRange unit="entry">CCCXLIV</citedRange>
                 <citedRange unit="pp">1:289-290</citedRange>
+              <ref type="internet-archive-pdf" target="https://archive.org/details/catalogueofsyria01brituoft/page/289"/>
               </bibl>
             </listBibl>
           </additional>
@@ -634,6 +645,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc status="draft">
+      <change who="http://syriaca.org/documentation/editors.xml#kurban" when="2023-04-21-05:00">CHANGED: added or corrected folio extent values</change>
       <change who="http://syriaca.org/documentation/editors.xml#srophe-util" when="2020-05-06-05:00">CHANGED: deleted empty elements and attributes</change>
       <change who="http://syriaca.org/documentation/editors.xml#srophe-util" when="2020-05-06-05:00">CHANGED: Added project metadata; metadata from Wright Decoder; msItem, handDesc, and
         additions enumeration; Wright Taxonomy designation</change>

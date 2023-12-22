@@ -43,6 +43,10 @@
           <resp>English text entry and proofreading by</resp>
           <name type="org" ref="http://syriaca.org/documentation/editors.xml#uasyriacaresearchgroup">Syriac Research Group, University of Alabama</name>
         </respStmt>
+      <respStmt>
+          <resp>Folio extent edited by</resp>
+          <name type="person" ref="http://syriaca.org/documentation/editors.xml#kurban">Kurt Urban</name>
+        </respStmt>
       </titleStmt>
       <editionStmt>
         <edition n="1.0"/>
@@ -56,7 +60,7 @@
             <p>Distributed under a Creative Commons Attribution 3.0 Unported License</p>
           </licence>
         </availability>
-        <date calendar="Gregorian"/>
+        <date calendar="Gregorian">2023-04-21-05:00</date>
       </publicationStmt>
       <sourceDesc>
         <msDesc xml:id="manuscript-603">
@@ -70,6 +74,9 @@
               <idno type="BL-Shelfmark">Add. 14,721</idno>
             </altIdentifier>
             <altIdentifier>
+              <idno type="BL-Shelfmark-display">London, BL, Add. 14,721</idno>
+            </altIdentifier>
+            <altIdentifier>
               <idno type="BL-Shelmark-simplified">BL Add MS 14721</idno>
             </altIdentifier>
             <altIdentifier>
@@ -81,9 +88,9 @@
               <idno type="Wright-BL-Roman">CCCCLXXII</idno>
             </altIdentifier>
           </msIdentifier>
-          <head xmlns="'http://www.tei-c.org/ns/1.0'">
-            <note xmlns="http://www.tei-c.org/ns/1.0" type="contents-note">This manuscript contains: A Collection of Hymns. In total, including sub-sections, this manuscript contains 4 items. N.B., items have been renumbered by the editors and may not reflect Wright's original numeration.</note>
-            <listRelation xmlns="http://www.tei-c.org/ns/1.0" type="Wright-BL-Taxonomy">
+          <head>
+            <note type="contents-note">This manuscript contains: A Collection of Hymns. In total, including sub-sections, this manuscript contains 4 items.</note>
+            <listRelation type="Wright-BL-Taxonomy">
               <relation name="dcterms:type" ref="http://purl.org/dc/terms/type" active="http://syriaca.org/manuscript/603" passive="#hymns">
                 <desc>Hymns</desc>
               </relation>
@@ -92,6 +99,7 @@
           <msContents>
             <textLang mainLang="syr"/>
             <msItem xml:id="a1" n="1">
+              <locus from="1b"/>
               <title xml:lang="en">A Collection of Hymns</title>
               <msItem xml:id="b1" n="2">
                 <locus from="1b"/>
@@ -101,7 +109,6 @@
                 <finalRubric xml:lang="syr">
                   <locus from="110a"/>ܫܠ̣ܡ ܩ̈ܠܐ ܓ̈ܢܝܙܬܐ <foreign xml:lang="en">(sic)</foreign> ܐܘܿ ܟܝܬ ܪܘܪ̈ܒܐ: ܟܠ ܕܩ̇ܪܐ ܢܨ̇ܠܐ ܥܠ
                   ܟ̇ܬܘܒܐ ܘܥܠ ܟܠ ܕܐܫܬ݀ܘܬܦ ܏ܘܫ</finalRubric>
-                <!-- WLP: Missing Arabic here. It appears that the subscription continues in Arabic -->
               </msItem>
               <msItem xml:id="b2" n="3">
                 <locus from="110b"/>
@@ -126,7 +133,7 @@
             <objectDesc form="codex">
               <supportDesc material="chart">
                 <extent>
-                  <measure unit="content_pending" quantity="-1"/>
+                  <measure type="composition" unit="leaf" quantity="206">206 ff.</measure>
                 </extent>
                 <foliation/>
                 <collation/>
@@ -148,7 +155,7 @@
               </layoutDesc>
             </objectDesc>
             <handDesc hands="1">
-              <handNote medium="unknown" xml:id="handNote1" scope="sole" script="syr">
+              <handNote xml:id="handNote1" medium="unknown" scope="sole" script="syr">
                 <desc>This volume is written in a neat, small hand of the <date>xiiith cent.</date>
                 </desc>
               </handNote>
@@ -174,14 +181,14 @@
             <adminInfo>
               <recordHist>
                 <source>Manuscript description based on<bibl>
-                    <ref target="#Wright">Wright's
+                    <ref target="#Wrightpart">Wright's
                       Catalogue</ref>
                   </bibl>. abbreviated by the Syriaca.org editors.</source>
               </recordHist>
               <note/>
             </adminInfo>
             <listBibl>
-              <bibl xml:id="Wright">
+              <bibl xml:id="Wrightpart">
                 <author>William Wright</author>
                 <title xml:lang="en">Catalogue of Syriac Manuscripts in the British Museum Acquired
                   since the Year 1838</title>
@@ -190,6 +197,7 @@
                 <ptr target="http://syriaca.org/bibl/8"/>
                 <citedRange unit="entry">CCCCLXXII</citedRange>
                 <citedRange unit="pp">1:376-377</citedRange>
+              <ref type="internet-archive-pdf" target="https://archive.org/details/catalogueofsyria01brituoft/page/376"/>
               </bibl>
             </listBibl>
           </additional>
@@ -357,6 +365,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc status="draft">
+      <change who="http://syriaca.org/documentation/editors.xml#kurban" when="2023-04-21-05:00">CHANGED: added or corrected folio extent values</change>
       <change who="http://syriaca.org/documentation/editors.xml#srophe-util" when="2021-08-17-04:00">CHANGED: deleted empty elements and attributes</change>
       <change who="http://syriaca.org/documentation/editors.xml#srophe-util" when="2021-08-17-04:00">CHANGED: Added project metadata; metadata from Wright Decoder; msItem, handDesc, and additions enumeration; Wright Taxonomy designation</change>
       <change who="http://syriaca.org/documentation/editors.xml#rbrasoveanu">Initial TEI encoding.</change>

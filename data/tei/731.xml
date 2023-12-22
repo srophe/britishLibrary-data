@@ -1,6 +1,6 @@
 <?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/srophe-app/documentation/enrich-syriaca.rnc" type="application/relax-ng-compact-syntax"?>
 <?xml-stylesheet type="text/css" href="SRPEnrichCSS.css"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -43,6 +43,10 @@
           <resp>English text entry and proofreading by</resp>
           <name type="org" ref="http://syriaca.org/documentation/editors.xml#uasyriacaresearchgroup">Syriac Research Group, University of Alabama</name>
         </respStmt>
+      <respStmt>
+          <resp>Folio extent edited by</resp>
+          <name type="person" ref="http://syriaca.org/documentation/editors.xml#kurban">Kurt Urban</name>
+        </respStmt>
       </titleStmt>
       <editionStmt>
         <edition n="1.0"/>
@@ -57,9 +61,7 @@
             <p>Distributed under a Creative Commons Attribution 3.0 Unported License</p>
           </licence>
         </availability>
-        <date calendar="Gregorian">
-          <!-- Date of publication -->
-        </date>
+        <date calendar="Gregorian">2023-04-21-05:00</date>
       </publicationStmt>
       <sourceDesc>
         <msDesc xml:id="manuscript-731" xml:lang="en">
@@ -73,6 +75,9 @@
               <idno type="BL-Shelfmark">Add. 17,104</idno>
             </altIdentifier>
             <altIdentifier>
+              <idno type="BL-Shelfmark-display">London, BL, Add. 17,104</idno>
+            </altIdentifier>
+            <altIdentifier>
               <idno type="BL-Shelmark-simplified">BL Add MS 17104</idno>
             </altIdentifier>
             <altIdentifier>
@@ -84,9 +89,9 @@
               <idno type="Wright-BL-Roman">XXV</idno>
             </altIdentifier>
           </msIdentifier>
-          <head xmlns="'http://www.tei-c.org/ns/1.0'">
-            <note xmlns="http://www.tei-c.org/ns/1.0" type="contents-note">This manuscript contains: The two books of Chronicles, according to the Peshitta version. In total, including sub-sections, this manuscript contains 3 items. N.B., items have been renumbered by the editors and may not reflect Wright's original numeration.</note>
-            <listRelation xmlns="http://www.tei-c.org/ns/1.0" type="Wright-BL-Taxonomy">
+          <head>
+            <note type="contents-note">This manuscript contains: The two books of Chronicles, according to the Peshitta version. In total, including sub-sections, this manuscript contains 3 items.</note>
+            <listRelation type="Wright-BL-Taxonomy">
               <relation name="dcterms:type" ref="http://purl.org/dc/terms/type" active="http://syriaca.org/manuscript/731" passive="#bible-ot">
                 <desc>Old Testament</desc>
               </relation>
@@ -95,18 +100,17 @@
           <msContents>
             <summary/>
             <textLang mainLang="syr">Syriac</textLang>
-            <msItem n="1" xml:id="a1" defective="true">
+            <msItem xml:id="a1" n="1" defective="true">
               <locus from="1" to="104">Foll. 1-104</locus>
               <title type="supplied" ref="http://syriaca.org/work/46">The two books of Chronicles, according to the Peshitta version</title>
-              <msItem n="2" xml:id="b1" defective="true">
+              <msItem xml:id="b1" n="2" defective="true">
                 <locus from="1" to="49">Foll. 1-49</locus>
                 <title ref="http://syriaca.org/work/13" type="supplied">The first book of Chronicles, according to the Peshitta version.</title>
                 <rubric xml:lang="syr">ܣܦܪ ܕܘܒܪ ܝܘܡ̈ܬܐ ܕܡ̈ܠܟܐ ܕܝܗܘܕܐ ܕܡܬܩܪܐ ܣܦܪ  ܕܒܪܝܡܝܢ.<locus from="1b" to="1b"/>
                 </rubric>
-                <!-- Hebrew NEEDED ^^^-->
                 <note>The missing portions are : ch. xiv. 12—xvii. 27, and xxii. 8 to the end.</note>
               </msItem>
-              <msItem n="3" xml:id="b2" defective="true">
+              <msItem xml:id="b2" n="3" defective="true">
                 <locus from="49b" to="104">Foll. 49b-104</locus>
                 <title ref="http://syriaca.org/work/14" type="supplied">The second book of Chronicles, according to the Peshitta version.</title>
                 <rubric xml:lang="syr">ܦܠܓܘܬܐ ܐܚܪܝܬܐ ܕܣܦܪ ܕܒܪܝܡܝܢ<locus from="49b" to="49b"/>
@@ -152,20 +156,20 @@
             </objectDesc>
             <handDesc>
               <handNote xml:id="handNote1" scope="major" script="syr-Syre" medium="unknown">
-                <desc>The writing is a small, regular Estrangela of the<origDate notBefore="0500" notAfter="0600">vith cent.</origDate>
+                <desc>The writing is a small, regular Estrangela of the <origDate notBefore="0500" notAfter="0600">vith cent.</origDate>
                 </desc>
               </handNote>
-              <handNote xml:id="handnote2" scope="minor" script="syr-Syrj grc" medium="uknown">
+              <handNote xml:id="handNote2" scope="minor" script="mixed" medium="uknown">
                 <desc>
                   <ref target="#addition1 #addition2">See additions.</ref>
                 </desc>
               </handNote>
-              <handNote xml:id="handnote3" scope="minor" script="syr grc" medium="uknown">
+              <handNote xml:id="handNote3" scope="minor" script="mixed" medium="uknown">
                 <desc>
                   <ref target="#addition3">See additions.</ref>
                 </desc>
               </handNote>
-              <handNote xml:id="handnote4" scope="minor" script="syr grc" medium="uknown">
+              <handNote xml:id="handNote4" scope="minor" script="mixed" medium="uknown">
                 <desc>
                   <ref target="#addition4">See additions.</ref>
                 </desc>
@@ -174,14 +178,13 @@
             <additions>
               <note type="proofreader-note">N.B., folio location may not be available for some items below.</note>
               <list>
-                <item n="1" xml:id="addition1">
+                <item xml:id="addition1" n="1">
                   <p>Numerous Greek vowels have been added by a later hand (<foreign xml:lang="grc">α</foreign>,<foreign xml:lang="grc">ε</foreign>, ⲏ,<foreign xml:lang="grc">ω</foreign>,<foreign xml:lang="grc">ὄ</foreign>and<foreign xml:lang="grc">αυ</foreign>; e.g.<foreign xml:lang="syr">ܘܢܺܬܢܺܐܝܶܠ, ܘܐܘܨܡ, ܘܝܘܐܒ, ܝܬ, ܠܡ̇ܢܘ</foreign>).</p>
                 </item>
-                <!-- Missing other vowels on top of these syriac words!!! -->
-                <item n="2" xml:id="addition2">
+                <item xml:id="addition2" n="2">
                   <p>The same hand that added the vowel-points has divided the books into sections, marked by Greek letters on the margins. The last of these in 1 Chronicles is<foreign xml:lang="grc">ϊθ</foreign>(ch. xxii. 2), fol.<locus>48a</locus>; and in 2 Chronicles (commencing with<foreign xml:lang="grc">Δ</foreign>) ΚΓ (ch. xxix. 1), fol.<locus>104b</locus>.</p>
                 </item>
-                <item n="3" xml:id="addition3">
+                <item xml:id="addition3" n="3">
                   <p>There are also a few marginal notes and glosses; e.g.</p>
                   <p>
                     <table>
@@ -223,7 +226,7 @@
                     </table>
                   </p>
                 </item>
-                <item n="4" xml:id="addition4">
+                <item xml:id="addition4" n="4">
                   <p>The quires are now signed with letters.</p>
                 </item>
               </list>
@@ -238,21 +241,21 @@
             <adminInfo>
               <recordHist>
                 <source>Manuscript description based on<bibl>
-                    <ref target="#Wright">Wright's Catalogue</ref>
+                    <ref target="#Wrightpart">Wright's Catalogue</ref>
                   </bibl>. abbreviated by the Syriaca.org editors.</source>
               </recordHist>
-              <availability status="restricted"/>
               <note/>
             </adminInfo>
             <listBibl>
-              <bibl xml:id="Wright">
+              <bibl xml:id="Wrightpart">
                 <author>William Wright</author>
                 <title xml:lang="en">Catalogue of Syriac Manuscripts in the British Museum Acquired since the Year 1838</title>
                 <pubPlace>London</pubPlace>
                 <date>1870</date>
                 <ptr target="http://syriaca.org/bibl/8"/>
                 <citedRange unit="entry">XXV</citedRange>
-                <citedRange unit="pp">I:16-17</citedRange>
+                <citedRange unit="pp">1:16-17</citedRange>
+              <ref type="internet-archive-pdf" target="https://archive.org/details/catalogueofsyria01brituoft/page/16"/>
               </bibl>
             </listBibl>
           </additional>
@@ -420,6 +423,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc status="draft">
+      <change who="http://syriaca.org/documentation/editors.xml#kurban" when="2023-04-21-05:00">CHANGED: added or corrected folio extent values</change>
       <change who="http://syriaca.org/documentation/editors.xml#dgreeson" when="2013-07-01">Created: file</change>
       <change who="http://syriaca.org/documentation/editors.xml#thannah" when="2013-09-06">Initial edit: rearranged msItems, handNotes, and additions.</change>
       <change type="planned" subtype="hebrew">Add missing Hebrew text.</change>

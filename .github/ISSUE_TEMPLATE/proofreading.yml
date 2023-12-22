@@ -1,0 +1,60 @@
+name: Proofreading BL Manuscripts
+description: Track the results of proofreading the Digital Wright Catalogue
+title: "{SHELFMARK} | {URI}"
+labels: ["proofreading", "data-edits", "overview-box", "physical-description"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this proofreading report! Please make sure the name of this issue includes the manuscript's shelfmark and URL.
+        The form will guide you through the process of submitting revision requests based on your proofreading.
+  - type: markdown
+    attributes:
+      value: "## Manuscript Overview"
+  - type: textarea
+    id: ms-overview-desc
+    attributes:
+      label: Problems with Manuscript Overview
+      description: Describe any errors or problems with the manuscript overview box
+    validations:
+      required: false
+  - type: checkboxes
+    id: ms-overview-checkbox
+    attributes:
+      label: Categories of Manuscript Overview Problems
+      description: From the following list, select the kinds of issues with the manuscript overview box
+      options:
+        - label: Whitespace
+        - label: Typo(s)
+        - label: Incorrect content
+        - label: Missing content
+  - type: markdown
+    attributes:
+      value: "## Physical Description"
+  - type: textarea
+    id: physical-description-desc
+    attributes:
+      label: Problems with Physical Description
+      description: Describe any errors or problems with the Physical Description section
+  - type: checkboxes
+    id: physical-description-checkbox
+    attributes:
+      label: Categories of Physical Description Problems
+      description: From the following list, select the kinds of issues with the Physical Description section
+      options:
+        - label: Whitespace
+        - label: Typo(s)
+        - label: Incorrect content
+        - label: Missing content
+  - type: markdown
+    attributes:
+      value: "## Additional Notes"
+  - type: textarea
+    id: general-notes
+    attributes:
+      label: General Notes
+      description: Provide here any additional notes from proofreading that do not fall into the above categories.
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for your help proofreading these manuscript description records!

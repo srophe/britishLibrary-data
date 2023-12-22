@@ -1,9 +1,9 @@
 <?oxygen RNGSchema="http://syriaca.org/documentation/syriaca-tei-main.rnc" type="compact"?>
 <?xml-stylesheet type="text/css" href="https://raw.githubusercontent.com/srophe/wright-catalogue/master/parameters/tei.css"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
-   <teiHeader>
-      <fileDesc>
-         <titleStmt>
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
         <title level="a" xml:lang="en">London, BL, Add. 17248</title>
         <title xml:lang="en" level="m">A Digital Catalogue of Syriac Manuscripts in the British Library</title>
         <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
@@ -43,11 +43,15 @@
           <resp>English text entry and proofreading by</resp>
           <name type="org" ref="http://syriaca.org/documentation/editors.xml#uasyriacaresearchgroup">Syriac Research Group, University of Alabama</name>
         </respStmt>
+      <respStmt>
+          <resp>Folio extent edited by</resp>
+          <name type="person" ref="http://syriaca.org/documentation/editors.xml#kurban">Kurt Urban</name>
+        </respStmt>
       </titleStmt>
-         <editionStmt>
+      <editionStmt>
         <edition n="1.0"/>
       </editionStmt>
-         <publicationStmt>
+      <publicationStmt>
         <authority>Syriaca.org: The Syriac Reference Portal</authority>
         <idno type="URI">http://syriaca.org/manuscript/1040/tei</idno>
         <availability>
@@ -56,11 +60,11 @@
             <p>Distributed under a Creative Commons Attribution 3.0 Unported License</p>
           </licence>
         </availability>
-        <date calendar="Gregorian"/>
+        <date calendar="Gregorian">2023-04-21-05:00</date>
       </publicationStmt>
-         <sourceDesc>
-            <msDesc xml:id="manuscript-1040">
-               <msIdentifier>
+      <sourceDesc>
+        <msDesc xml:id="manuscript-1040">
+          <msIdentifier>
             <country>United Kingdom</country>
             <settlement>London</settlement>
             <repository>British Library</repository>
@@ -68,6 +72,9 @@
             <idno type="URI">http://syriaca.org/manuscript/1040</idno>
             <altIdentifier>
               <idno type="BL-Shelfmark">Add. 17,248</idno>
+            </altIdentifier>
+            <altIdentifier>
+              <idno type="BL-Shelfmark-display">London, BL, Add. 17,248</idno>
             </altIdentifier>
             <altIdentifier>
               <idno type="BL-Shelmark-simplified">BL Add MS 17248</idno>
@@ -81,15 +88,15 @@
               <idno type="Wright-BL-Roman">CCCCLXIV</idno>
             </altIdentifier>
           </msIdentifier>
-          <head xmlns="'http://www.tei-c.org/ns/1.0'">
-            <note xmlns="http://www.tei-c.org/ns/1.0" type="contents-note">This manuscript contains: A collection of Hymns. ; Comprising prayers of Jacob and Ephraim. ; A prayer of Ephraim. In total, including sub-sections, this manuscript contains 20 items. N.B., items have been renumbered by the editors and may not reflect Wright's original numeration.</note>
-            <listRelation xmlns="http://www.tei-c.org/ns/1.0" type="Wright-BL-Taxonomy">
+          <head>
+            <note type="contents-note">This manuscript contains: A collection of Hymns.; Comprising prayers of Jacob and Ephraim.; A prayer of Ephraim. In total, including sub-sections, this manuscript contains 20 items.</note>
+            <listRelation type="Wright-BL-Taxonomy">
               <relation name="dcterms:type" ref="http://purl.org/dc/terms/type" active="http://syriaca.org/manuscript/1040" passive="#hymns">
                 <desc>Hymns</desc>
               </relation>
             </listRelation>
           </head>
-               <msContents>
+          <msContents>
             <textLang mainLang="syr"/>
             <msItem xml:id="a1" n="1" defective="true">
               <locus to="140" from="1a">Foll. 1a-140</locus>
@@ -105,6 +112,7 @@
                 <rubric xml:lang="syr">ܛܟ̣ܣܐ ܕܡܘܪ̈ܒܐ</rubric>
               </msItem>
               <msItem xml:id="b3" n="4">
+                <locus from="35a"/>
                 <title xml:lang="en">The Hymns of <persName ref="http://syriaca.org/person/51">Severus</persName>.</title>
                 <rubric xml:lang="syr">ܣܚܚܐ ܕܡ̈ܥܝܢܝܬܐ (sic) ܕܡܪܝ ܣܐܘܪܐ</rubric>
                 <note>Each hymn is marked by a letter denoting its tone.</note>
@@ -194,15 +202,18 @@
               <rubric xml:lang="syr">ܒܥܘܬܐ ܕܡܪܝ ܐܦܪܝܡ</rubric>
             </msItem>
           </msContents>
-               <physDesc>
+          <physDesc>
             <p>Paper, about 6 7/8 in. by 5 1/8, consisting of 140 leaves, some
                                     of which are much stained, and torn, especially foll. 1—4, 53,
                                     54, 121, and 136—140. The quires, signed with letters, were 15
                                     or 16 in number. Leaves are wanting at the beginning, as well as
                                     after foll. 4, 12 (one), 52 (one), and 136. There are from 18 to
                                     25 lines in each page. </p>
-                  <objectDesc form="codex">
+            <objectDesc form="codex">
                      <supportDesc material="chart">
+                <extent>
+                  <measure type="composition" unit="leaf" quantity="140">140 ff.</measure>
+                </extent>
                         <foliation/>
                         <collation/>
                         <condition>
@@ -219,24 +230,24 @@
                         </condition>
                      </supportDesc>
                   </objectDesc>
-                  <handDesc hands="3">
-              <handNote medium="unknown" xml:id="handNote1" scope="major" script="syr">
-                        <desc>This volume is written in a neat, regular hand of the xiith
+            <handDesc hands="3">
+              <handNote xml:id="handNote1" medium="unknown" scope="major" script="syr">
+                <desc>This volume is written in a neat, regular hand of the xiith
                            cent.</desc>
-                     </handNote>
-              <handNote medium="unknown" xml:id="handNote2" scope="minor" script="syr">
+              </handNote>
+              <handNote xml:id="handNote2" medium="unknown" scope="minor" script="syr">
                 <desc>The handwriting on the flyleaves is cursive, but of not much later date than
                   the rest of the manuscript. The writer seems to have been the same
                     <persName>Rabban Samuel bar Mẹ̆khīr</persName>, whose name appears on the margin
                   of fol. 136 b.</desc>
               </handNote>
-              <handNote medium="unknown" xml:id="handNote3" scope="minor" script="syr">
-                        <desc>This [prayer of Ephraim] is in a different hand, apparently that of
+              <handNote xml:id="handNote3" medium="unknown" scope="minor" script="syr">
+                <desc>This [prayer of Ephraim] is in a different hand, apparently that of
                            <persName>Rabban Iyūb of Māridīn</persName>, who has recorded his name, and the date <date datingMethod="Seleucid" when-custom="1552">A. Gr.
                            1552</date> (<date calendar="Gregorian" when="1241">A.D. 1241</date>), on fol. 140 a.</desc>
-                     </handNote>
+              </handNote>
             </handDesc>
-                  <additions>
+            <additions>
               <note type="proofreader-note">N.B., folio location may not be available for some items below.</note>
               <p/>
               <list>
@@ -251,21 +262,21 @@
                   </p>
                 </item>
                 <item xml:id="addition2" n="2">
-                           <locus/>
-                           <p>
+                  <locus/>
+                  <p>
                     <persName>Rabban Iyūb of Māridīn</persName>, who has recorded his name, and the date <date datingMethod="Seleucid" when-custom="1552">A.
                               Gr. 1552</date> (<date calendar="Gregorian" when="1241">A.D. 1241</date>), on fol. 140 a.</p>
-                           <p>
+                  <p>
                               <quote xml:lang="syr">ܐܝܬܘܗܝ ܨ[ܚܚܐ ܗܢܐ] ܠܪܒܢ ܐܝܘܒ ܕ . . . ܕܡܢ ܐܬܪܐ
                                  ܡܒܪܟܐ ܕܡܪܕܐ ܨܠܘ ܥܠܘܗ[ܝ] ܡܛܠ ܡܪܢ ܐܠܗܐ ܚܣܐ ܠܟܠ ܕܫܬܘܬܦ (sic) ܒܫܢܬ ܐܠܦ
                                  ܘܚ̈ܡܫܡـ̣[ܐܐ] ܘܢܒ ܕܝܘ̈ܢܝܐ ܢܟܝ̈ܠܐ.</quote>
                            </p>
-                        </item>
+                </item>
               </list>
             </additions>
-                  <accMat/>
-               </physDesc>
-               <history>
+            <accMat/>
+          </physDesc>
+          <history>
                   <origin>
                      <origDate notBefore="1100" notAfter="1200">the xiith cent.</origDate>
                      <origPlace/>
@@ -273,18 +284,18 @@
                   <provenance/>
                   <acquisition/>
                </history>
-               <additional>
+          <additional>
             <adminInfo>
               <recordHist>
                 <source>Manuscript description based on<bibl>
-                    <ref target="#Wright">Wright's
+                    <ref target="#Wrightpart">Wright's
                       Catalogue</ref>
                   </bibl>. abbreviated by the Syriaca.org editors.</source>
               </recordHist>
               <note/>
             </adminInfo>
             <listBibl>
-              <bibl xml:id="Wright">
+              <bibl xml:id="Wrightpart">
                 <author>William Wright</author>
                 <title xml:lang="en">Catalogue of Syriac Manuscripts in the British Museum Acquired
                   since the Year 1838</title>
@@ -293,13 +304,14 @@
                 <ptr target="http://syriaca.org/bibl/8"/>
                 <citedRange unit="entry">CCCCLXIV</citedRange>
                 <citedRange unit="pp">1:369</citedRange>
+              <ref type="internet-archive-pdf" target="https://archive.org/details/catalogueofsyria01brituoft/page/369"/>
               </bibl>
             </listBibl>
           </additional>
-            </msDesc>
-         </sourceDesc>
-      </fileDesc>
-      <encodingDesc>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
       <editorialDecl>
         <interpretation>
           <p>Description is based on Wright's Catalogue without consultation of physical
@@ -430,7 +442,7 @@
         </taxonomy>
       </classDecl>
     </encodingDesc>
-      <profileDesc>
+    <profileDesc>
       <langUsage>
         <language ident="syr">Unvocalized Syriac of any variety or period</language>
         <language ident="syr-Syre">Syriac in Estrangela</language>
@@ -459,7 +471,8 @@
         </keywords>
       </textClass>
     </profileDesc>
-      <revisionDesc status="draft">
+    <revisionDesc status="draft">
+      <change who="http://syriaca.org/documentation/editors.xml#kurban" when="2023-04-21-05:00">CHANGED: added or corrected folio extent values</change>
          <change who="http://syriaca.org/documentation/editors.xml#srophe-util" when="2020-04-29-05:00">CHANGED: deleted empty elements and attributes</change>
       <change who="http://syriaca.org/documentation/editors.xml#srophe-util" when="2020-04-29-05:00">CHANGED: Added project metadata; metadata from Wright Decoder; msItem, handDesc, and additions enumeration; Wright Taxonomy designation</change>
       <change who="http://syriaca.org/documentation/editors.xml#jpagan" when="2020-01-30">Initial
@@ -467,11 +480,11 @@
          <change type="planned" subtype="checkSyriac">The Syriac copied from the Word Document needs
             to be checked for accuracy</change>
       </revisionDesc>
-   </teiHeader>
-   <facsimile>
+  </teiHeader>
+  <facsimile>
       <formula>Content pending</formula>
    </facsimile>
-   <text>
+  <text>
       <body>
          <bibl>Content pending</bibl>
       </body>

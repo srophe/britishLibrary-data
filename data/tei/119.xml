@@ -42,6 +42,10 @@
           <resp>English text entry and proofreading by</resp>
           <name type="org" ref="http://syriaca.org/documentation/editors.xml#uasyriacaresearchgroup">Syriac Research Group, University of Alabama</name>
         </respStmt>
+      <respStmt>
+          <resp>Folio extent edited by</resp>
+          <name type="person" ref="http://syriaca.org/documentation/editors.xml#kurban">Kurt Urban</name>
+        </respStmt>
       </titleStmt>
       <editionStmt>
         <edition n="1.0"/>
@@ -56,9 +60,7 @@
             <p>Distributed under a Creative Commons Attribution 3.0 Unported License</p>
           </licence>
         </availability>
-        <date calendar="Gregorian">
-          <!-- Our date of publication of this XML document-->
-        </date>
+        <date calendar="Gregorian">2023-04-21-05:00</date>
       </publicationStmt>
       <sourceDesc>
         <msDesc xml:id="manuscript-119" xml:lang="en">
@@ -72,6 +74,9 @@
               <idno type="BL-Shelfmark">Add. 14,447</idno>
             </altIdentifier>
             <altIdentifier>
+              <idno type="BL-Shelfmark-display">London, BL, Add. 14,447</idno>
+            </altIdentifier>
+            <altIdentifier>
               <idno type="BL-Shelmark-simplified">BL Add MS 14447</idno>
             </altIdentifier>
             <altIdentifier>
@@ -83,9 +88,9 @@
               <idno type="Wright-BL-Roman">CLVI</idno>
             </altIdentifier>
           </msIdentifier>
-          <head xmlns="'http://www.tei-c.org/ns/1.0'">
-            <note xmlns="http://www.tei-c.org/ns/1.0" type="contents-note">This manuscript contains: The Book of Women. In total, including sub-sections, this manuscript contains 5 items. N.B., items have been renumbered by the editors and may not reflect Wright's original numeration.</note>
-            <listRelation xmlns="http://www.tei-c.org/ns/1.0" type="Wright-BL-Taxonomy">
+          <head>
+            <note type="contents-note">This manuscript contains: The Book of Women. In total, including sub-sections, this manuscript contains 5 items.</note>
+            <listRelation type="Wright-BL-Taxonomy">
               <relation name="dcterms:type" ref="http://purl.org/dc/terms/type" active="http://syriaca.org/manuscript/119" passive="#bible-apocrypha">
                 <desc>Apocrypha</desc>
               </relation>
@@ -94,7 +99,7 @@
           <msContents>
             <summary/>
             <textLang mainLang="syr">Syriac</textLang>
-            <msItem n="1" xml:id="a1" defective="true">
+            <msItem xml:id="a1" n="1" defective="true">
               <locus from="1b" to="32b">Foll. 1b-32b</locus>
               <title ref="http://syriaca.org/work/211" type="supplied">The Book of Women</title>
               <rubric xml:lang="syr">ܟܬܒܐ ܕܢܫ̈ܐ<locus from="1b" to="1b"/>
@@ -103,25 +108,25 @@
                 </bibl>, and <bibl>Egerton 704<ptr target="http://syriaca.org/manuscript/1153"/>, <citedRange unit="fol" from="197a">foll. 197 a</citedRange> and <citedRange unit="fol" from="287a">287 a</citedRange>
                 </bibl>.</note>
               <note>This manuscript has been used by <persName>Dr. de Lagarde</persName> in <bibl>his edition of the Apocrypha</bibl>.</note>
-              <msItem n="2" xml:id="b1">
+              <msItem xml:id="b1" n="2">
                 <locus from="1b" to="5">Foll. 1b-5</locus>
                 <title ref="http://syriaca.org/work/49" type="supplied">The story of Susanna</title>
                 <rubric xml:lang="syr">ܕܥܠ ܫܘܫܢ ܢܟܦܬܐ<locus from="1b" to="1b"/>
                 </rubric>
               </msItem>
-              <msItem n="3" xml:id="b2">
+              <msItem xml:id="b2" n="3">
                 <locus from="5b" to="15">Foll. 5b-15</locus>
                 <title ref="http://syriaca.org/work/17" type="supplied">The book of Esther</title>
                 <rubric xml:lang="syr">ܢܨܚ̈ܢܐ ܕܐܣܬܝܪ.<locus from="5b" to="5b"/>
                 </rubric>
               </msItem>
-              <msItem n="4" xml:id="b3">
+              <msItem xml:id="b3" n="4">
                 <locus from="15a" to="32">Foll. 15a-32</locus>
                 <title ref="http://syriaca.org/work/57" type="supplied">The book of Judith</title>
                 <rubric xml:lang="syr">ܬܫܥܝܬܐ ܕܝܗܘܕܝܬ.<locus from="15a" to="15a"/>
                 </rubric>
               </msItem>
-              <msItem n="5" xml:id="b4" defective="true">
+              <msItem xml:id="b4" n="5" defective="true">
                 <locus from="32b" to="32b">Fol. 32b</locus>
                 <title ref="http://syriaca.org/work/212" type="supplied">The history of Thecla the martyr</title>
                 <rubric xml:lang="syr">ܬܫܥܝܬܐ ܕܬܩܠܐ ܣܗܕܬܐ.<locus from="32b" to="32b"/>
@@ -182,7 +187,7 @@
             <decoDesc/>
             <additions>
               <list>
-                <item n="1" xml:id="addition1" syriaca-tags="ownership-inscription colophon-incertus">
+                <item xml:id="addition1" n="1" syriaca-tags="ownership-inscription colophon-incertus">
                   <locus from="1a" to="1a"/>
                   <p>On fol. 1 a there is a note stating that this volume belonged to<placeName>the convent of S. Mary Deipara</placeName>.</p>
                   <p>
@@ -210,22 +215,21 @@
             <adminInfo>
               <recordHist>
                 <source>Manuscript description based on<bibl>
-                    <ref target="#Wright">Wright's Catalogue</ref>
+                    <ref target="#Wrightpart">Wright's Catalogue</ref>
                   </bibl>. abbreviated by the Syriaca.org editors.</source>
               </recordHist>
-              <availability status="restricted"/>
-              <custodialHist/>
               <note/>
             </adminInfo>
             <listBibl>
-              <bibl xml:id="Wright">
+              <bibl xml:id="Wrightpart">
                 <author>William Wright</author>
                 <title xml:lang="en">Catalogue of Syriac Manuscripts in the British Museum Acquired since the Year 1838</title>
                 <pubPlace>London</pubPlace>
                 <date>1870</date>
                 <ptr target="http://syriaca.org/bibl/8"/>
                 <citedRange unit="entry">CLVI</citedRange>
-                <citedRange unit="pp">I:98</citedRange>
+                <citedRange unit="pp">1:98</citedRange>
+              <ref type="internet-archive-pdf" target="https://archive.org/details/catalogueofsyria01brituoft/page/98"/>
               </bibl>
             </listBibl>
           </additional>
@@ -393,6 +397,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc status="draft">
+      <change who="http://syriaca.org/documentation/editors.xml#kurban" when="2023-04-21-05:00">CHANGED: added or corrected folio extent values</change>
       <change who="http://syriaca.org/documentation/editors.xml#thannah" when="2013-10-17">Created: file</change>
       <change who="http://syriaca.org/documentation/editors.xml#thannah" when="2013-12-31">Initial edit: no updates required at this time</change>
       <change who="http://syriaca.org/documentation/editors.xml#jarnwine" when="2014-04-10">Marked up addition with syriaca-tags</change>

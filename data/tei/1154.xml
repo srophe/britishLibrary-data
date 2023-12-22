@@ -1,9 +1,9 @@
 <?oxygen RNGSchema="http://syriaca.org/documentation/syriaca-tei-main.rnc" type="compact"?>
 <?xml-stylesheet type="text/css" href="https://raw.githubusercontent.com/srophe/wright-catalogue/master/parameters/tei.css"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
-   <teiHeader>
-      <fileDesc>
-         <titleStmt>
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
         <title level="a" xml:lang="en"/>
         <title xml:lang="en" level="m">A Digital Catalogue of Syriac Manuscripts in the British Library</title>
         <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
@@ -43,11 +43,27 @@
           <resp>English text entry and proofreading by</resp>
           <name type="org" ref="http://syriaca.org/documentation/editors.xml#uasyriacaresearchgroup">Syriac Research Group, University of Alabama</name>
         </respStmt>
+      <respStmt>
+          <resp>Locus information for manuscript items added by</resp>
+          <name type="person" ref="http://syriaca.org/documentation/editors.xml#zzhang">Ziyan Zhang</name>
+        </respStmt>
+        <respStmt>
+          <resp>Decoration information encoded by</resp>
+          <name type="person" ref="http://syriaca.org/documentation/editors.xml#aahn">Alexys Ahn</name>
+        </respStmt>
+        <respStmt>
+          <resp>Decorations identified and categorized by</resp>
+          <name type="person" ref="http://syriaca.org/documentation/editors.xml#bmaczka">Beth Maczka</name>
+        </respStmt>
+      <respStmt>
+          <resp>Folio extent edited by</resp>
+          <name type="person" ref="http://syriaca.org/documentation/editors.xml#kurban">Kurt Urban</name>
+        </respStmt>
       </titleStmt>
-         <editionStmt>
+      <editionStmt>
         <edition n="1.0"/>
       </editionStmt>
-         <publicationStmt>
+      <publicationStmt>
         <authority>Syriaca.org: The Syriac Reference Portal</authority>
         <idno type="URI">http://syriaca.org/manuscript/1154/tei</idno>
         <availability>
@@ -56,11 +72,11 @@
             <p>Distributed under a Creative Commons Attribution 3.0 Unported License</p>
           </licence>
         </availability>
-        <date calendar="Gregorian"/>
+        <date calendar="Gregorian">2023-04-21-05:00</date>
       </publicationStmt>
-         <sourceDesc>
-            <msDesc xml:id="manuscript-1154">
-               <msIdentifier>
+      <sourceDesc>
+        <msDesc xml:id="manuscript-1154">
+          <msIdentifier>
             <country>United Kingdom</country>
             <settlement>London</settlement>
             <repository>British Library</repository>
@@ -68,6 +84,9 @@
             <idno type="URI">http://syriaca.org/manuscript/1154</idno>
             <altIdentifier>
               <idno type="BL-Shelfmark"/>
+            </altIdentifier>
+            <altIdentifier>
+              <idno type="BL-Shelfmark-display">London, BL, </idno>
             </altIdentifier>
             <altIdentifier>
               <idno type="BL-Shelmark-simplified"/>
@@ -81,15 +100,15 @@
               <idno type="Wright-BL-Roman">MVII</idno>
             </altIdentifier>
           </msIdentifier>
-          <head xmlns="'http://www.tei-c.org/ns/1.0'">
-            <note xmlns="http://www.tei-c.org/ns/1.0" type="contents-note">This manuscript contains: A treatise on Chemistry (Alchemy) and Natural Philosophy, composed partly in Syriac (foll. 1—56 a), and partly in Arabic (foll. 56 b—99) with occasional passages in Syriac interspersed (e.g. foll. 81, 82, and 96 b—99). ; Democritus. ; Diogenes. ; Hippocrates. In total, including sub-sections, this manuscript contains 10 items. N.B., items have been renumbered by the editors and may not reflect Wright's original numeration.</note>
-            <listRelation xmlns="http://www.tei-c.org/ns/1.0" type="Wright-BL-Taxonomy">
+          <head>
+            <note type="contents-note">This manuscript contains: A treatise on Chemistry (Alchemy) and Natural Philosophy, composed partly in Syriac (foll. 1—56 a), and partly in Arabic (foll. 56 b—99) with occasional passages in Syriac interspersed (e.g. foll. 81, 82, and 96 b—99).; Democritus.; Diogenes.; Hippocrates. In total, including sub-sections, this manuscript contains 10 items.</note>
+            <listRelation type="Wright-BL-Taxonomy">
               <relation name="dcterms:type" ref="http://purl.org/dc/terms/type" active="http://syriaca.org/manuscript/1154" passive="#sci-chemistry">
                 <desc>Chemistry</desc>
               </relation>
             </listRelation>
           </head>
-               <msContents>
+          <msContents>
             <textLang mainLang="syr"/>
             <msItem xml:id="a1" n="1" defective="true">
               <locus to="100" from="1b">Foll. 1b-100</locus>
@@ -126,6 +145,7 @@
                 <rubric xml:lang="syr">ܐܬܘ̈ܬܐ ܕ܏ܝܒ ܡ̈ܠܘܫܐ</rubric>
               </msItem>
               <msItem xml:id="b4" n="5">
+                <locus from="4"/>
                 <title xml:lang="en">Chapters on the seven earths.</title>
                 <rubric xml:lang="syr">ܡܛܠ ܐܪ̈ܥܬܐ ܏ܙ</rubric>
               </msItem>
@@ -135,6 +155,7 @@
                 <rubric xml:lang="syr">ܟ̈ܐܦܐ</rubric>
               </msItem>
               <msItem xml:id="b6" n="7">
+                <locus to="4" from="4a">Foll. 4a-4</locus>
                 <title xml:lang="en">Recipes for various preparations.</title>
               </msItem>
             </msItem>
@@ -151,12 +172,14 @@
               </quote>
             </msItem>
             <msItem xml:id="a3" n="9">
+              <locus from="9"/>
               <title xml:lang="en">
                 <persName ref="http://syriaca.org/person/2262">Diogenes</persName>.</title>
               <quote xml:lang="syr">ܕܝܘܓܢܝܣ<locus from="9b"/>
               </quote>
             </msItem>
             <msItem xml:id="a4" n="10">
+              <locus to="38" from="14"/>
               <title xml:lang="en">
                 <persName ref="http://syriaca.org/person/">Hippocrates</persName>.</title>
               <quote xml:lang="syr">ܡܐܡ̣ܪܐ ܏ܕܕ ܕܐܝܦܘܩܪܛܝܣ<locus from="14b"/>
@@ -168,12 +191,15 @@
               </quote>
             </msItem>
           </msContents>
-               <physDesc>
+          <physDesc>
             <p>Paper, about 6 3/8 in. by 4 1/8, consisting of 100 leaves. The
                                     quires, signed with letters, are ten in number. There are from
                                     18 to 20 lines in each page.</p>
-                  <objectDesc form="codex">
+            <objectDesc form="codex">
                      <supportDesc material="chart">
+                <extent>
+                  <measure type="composition" unit="leaf" quantity="100">100 ff.</measure>
+                </extent>
                         <foliation/>
                         <collation/>
                         <condition>
@@ -187,66 +213,69 @@
                         </condition>
                      </supportDesc>
                   </objectDesc>
-                  <handDesc hands="1">
-              <handNote medium="unknown" xml:id="handNote1" scope="sole" script="syr">
-                        <desc>This volume is written in a small, regular hand of the <date calendar="Gregorian" notBefore="1500" notAfter="1600">xvith
+            <handDesc hands="1">
+              <handNote xml:id="handNote1" medium="unknown" scope="sole" script="syr">
+                <desc>This volume is written in a small, regular hand of the <date calendar="Gregorian" notBefore="1500" notAfter="1600">xvith
                            cent.</date>
                 </desc>
-                     </handNote>
+              </handNote>
             </handDesc>
-                  <additions>
+            <decoDesc>
+              <decoNote xml:id="decoNote1" type="illustration hmml:drawing"/>
+            </decoDesc>
+            <additions>
               <note type="proofreader-note">N.B., folio location may not be available for some items below.</note>
               <p/>
               <list>
                 <item xml:id="addition1" n="1">
-                           <locus/>
-                           <p>The Arabic portion of the work begins on fol. 56 b.</p>
-                           <p>
+                  <locus/>
+                  <p>The Arabic portion of the work begins on fol. 56 b.</p>
+                  <p>
                               <quote xml:lang="syr">ܩܐܠ ܏ܐܠܚܟܝܡ ܝܢܒܓܝܐܢ ܝܒܝܜ ܐܠܔܣܕ ܐܠܐܣܘܕ. ܒܥܕ ܐܢ
                       ܝܣܬܘܦܝ ܠܟܠ ܏ܛ ܐܓܙܐ ܡܢ ܐܠܡܐ. ܓܙܘ ܡܢ ܐܠܐܓܣܐܕ ܒܢܐܪٍ ܦܐܬܪܗ. ܠܐ ܝܒܠܓ ܚܪܗܐ. ܐܢ ܠܐ
                       ܬܨܒܪܗܐ ܐܠܝܕ. ܠܐ ܩܠܝܠ ܘܠܐ ܐܟܬܪ. ܦܬܘܩܕ ܬܚܬܗܐ ܣܬܗ̈ ܣܐܥܐܬ ܡܢ ܐܠܢܗܐܪ. ܘܡܐ ܝܕܘܒ ܐܕܐ
                       ܟܐܢ ܣܐܟܢ ܩܘܝ. ܘܠܬܓܪܒܗ ܬܕܠܟ. ܬܡ ܕܥܗ ܚܬܝ ܝܨܒܚ. ܬܡ ܥܘܕ ܕܐܠܟ ܏ܙ ܐܝܐܡ. ܚܬܝ ܝܦܪ
                       ܐܠܣܘܐܕ. ܘܗܕܐ ܗܘ ܩܡܪ ܐܠܩܕܡܐ ܐܠܚܩܝܩܝ.</quote>
                            </p>
-                        </item>
+                </item>
                 <item xml:id="addition2" n="2">
-                           <locus/>
-                           <p>This book once belonged to a Jew, who has occasionally written words
+                  <locus/>
+                  <p>This book once belonged to a Jew, who has occasionally written words
                               on the margins in rude Hebrew characters; e. g. foll. 8 a and b, 13 a,
                               21 b, 22 etc.</p>
-                           <p>
+                  <p>
                               <quote xml:lang="syr"/>
                            </p>
-                        </item>
+                </item>
                 <item xml:id="addition3" n="3">
-                           <locus/>
-                           <p>Another owner, the <persName>deacon Ibrahim</persName>, has recorded
+                  <locus/>
+                  <p>Another owner, the <persName>deacon Ibrahim</persName>, has recorded
                               his name on fol. 100 b. </p>
-                           <p>
+                  <p>
                               <quote xml:lang="syr">ܫܡܐܣ ܐܒܪܐܗܝܡ</quote>
                            </p>
-                        </item>
+                </item>
                 <item xml:id="addition4" n="4">
-                           <locus/>
-                           <p>Subsequently it became the property of <persName>Dr. Adam
+                  <locus/>
+                  <p>Subsequently it became the property of <persName>Dr. Adam
                                  Clarke</persName>. See the <bibl>Catalogue of his MSS., p. 217, no.
                                  309</bibl>.</p>
-                           <p>
+                  <p>
                               <quote xml:lang="syr"/>
                            </p>
-                        </item>
+                </item>
                 <item xml:id="addition5" n="5">
-                           <locus/>
-                           <p>On fol. 56 a there are some drawings of instruments.</p>
-                           <p>
+                  <locus/>
+                  <p>On fol. 56 a there are some drawings of instruments.</p>
+                  <p>
                               <quote xml:lang="syr"/>
                            </p>
-                        </item>
+                </item>
               </list>
             </additions>
-                  <accMat/>
-               </physDesc>
-               <history>
+            <accMat/>
+          </physDesc>
+          <history>
                   <origin>
                      <origDate notBefore="1500" notAfter="1600">This volume is
                         written in a small, regular hand of the xvith cent.</origDate>
@@ -255,18 +284,18 @@
                   <provenance/>
                   <acquisition/>
                </history>
-               <additional>
+          <additional>
             <adminInfo>
               <recordHist>
                 <source>Manuscript description based on<bibl>
-                    <ref target="#Wright">Wright's
+                    <ref target="#Wrightpart">Wright's
                       Catalogue</ref>
                   </bibl>. abbreviated by the Syriaca.org editors.</source>
               </recordHist>
               <note/>
             </adminInfo>
             <listBibl>
-              <bibl xml:id="Wright">
+              <bibl xml:id="Wrightpart">
                 <author>William Wright</author>
                 <title xml:lang="en">Catalogue of Syriac Manuscripts in the British Museum Acquired
                   since the Year 1838</title>
@@ -275,13 +304,14 @@
                 <ptr target="http://syriaca.org/bibl/8"/>
                 <citedRange unit="entry">MVII</citedRange>
                 <citedRange unit="pp">3:1190-1191</citedRange>
+              <ref type="internet-archive-pdf" target="https://archive.org/details/catalogueofsyria03brituoft/page/1190"/>
               </bibl>
             </listBibl>
           </additional>
-            </msDesc>
-         </sourceDesc>
-      </fileDesc>
-      <encodingDesc>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
       <editorialDecl>
         <interpretation>
           <p>Description is based on Wright's Catalogue without consultation of physical
@@ -412,7 +442,7 @@
         </taxonomy>
       </classDecl>
     </encodingDesc>
-      <profileDesc>
+    <profileDesc>
       <langUsage>
         <language ident="syr">Unvocalized Syriac of any variety or period</language>
         <language ident="syr-Syre">Syriac in Estrangela</language>
@@ -441,7 +471,10 @@
         </keywords>
       </textClass>
     </profileDesc>
-      <revisionDesc status="draft">
+    <revisionDesc status="draft">
+      <change who="http://syriaca.org/documentation/editors.xml#kurban" when="2023-04-21-05:00">CHANGED: added or corrected folio extent values</change>
+      <change who="http://syriaca.org/documentation/editors.xml#zzhang" when="2023-01-13-06:00">ADDED: added missing locus information for msItems</change>
+      <change who="http://syriaca.org/documentation/editors.xml#aahn" when="2023-01-13-06:00">ADDED: added decoNote elements for decorations</change>
          <change who="http://syriaca.org/documentation/editors.xml#srophe-util" when="2020-04-24-05:00">CHANGED: deleted empty elements and attributes</change>
       <change who="http://syriaca.org/documentation/editors.xml#srophe-util" when="2020-04-24-05:00">CHANGED: Added project metadata; metadata from Wright Decoder; msItem, handDesc, and additions enumeration; Wright Taxonomy designation</change>
       <change who="http://syriaca.org/documentation/editors.xml#jpagan" when="2020-02-08">Initial
@@ -449,11 +482,11 @@
          <change type="planned" subtype="checkSyriac">The Syriac copied from the Word Document needs
             to be checked for accuracy</change>
       </revisionDesc>
-   </teiHeader>
-   <facsimile>
+  </teiHeader>
+  <facsimile>
       <formula>Content pending</formula>
    </facsimile>
-   <text>
+  <text>
       <body>
          <bibl>Content pending</bibl>
       </body>

@@ -15,6 +15,7 @@
         <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A. Michelson</editor>
         <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#raydin">Robert Aydin</editor>
         <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#rbrasoveanu">Roman Brasoveanu</editor>
+        <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#jarnwine">Justin Arnwine</editor>
         <respStmt>
           <resp>Created by</resp>
           <name type="person" ref="http://syriaca.org/documentation/editors.xml#rbrasoveanu">Roman Brasoveanu</name>
@@ -43,6 +44,19 @@
           <resp>English text entry and proofreading by</resp>
           <name type="org" ref="http://syriaca.org/documentation/editors.xml#uasyriacaresearchgroup">Syriac Research Group, University of Alabama</name>
         </respStmt>
+      <respStmt>
+          <resp>Syriaca.org URIs for authors edited by</resp>
+          <name type="person" ref="http://syriaca.org/documentation/editors.xml#jarnwine">Justin Arnwine</name>
+        </respStmt>
+        <respStmt>
+          <resp>Syriaca.org URIs for authors checked by</resp>
+          <name type="person" ref="http://syriaca.org/documentation/editors.xml#aahn">Alexys Ahn</name>
+          <name type="person" ref="http://syriaca.org/documentation/editors.xml#jdalfonso">Joseph DAlfonso</name>
+        </respStmt>
+      <respStmt>
+          <resp>Folio extent edited by</resp>
+          <name type="person" ref="http://syriaca.org/documentation/editors.xml#kurban">Kurt Urban</name>
+        </respStmt>
       </titleStmt>
       <editionStmt>
         <edition n="1.0"/>
@@ -56,7 +70,7 @@
             <p>Distributed under a Creative Commons Attribution 3.0 Unported License</p>
           </licence>
         </availability>
-        <date calendar="Gregorian"/>
+        <date calendar="Gregorian">2023-04-21-05:00</date>
       </publicationStmt>
       <sourceDesc>
         <msDesc xml:id="manuscript-423">
@@ -70,6 +84,9 @@
               <idno type="BL-Shelfmark">Add. 14,655</idno>
             </altIdentifier>
             <altIdentifier>
+              <idno type="BL-Shelfmark-display">London, BL, Add. 14,655</idno>
+            </altIdentifier>
+            <altIdentifier>
               <idno type="BL-Shelmark-simplified">BL Add MS 14655</idno>
             </altIdentifier>
             <altIdentifier>
@@ -81,9 +98,9 @@
               <idno type="Wright-BL-Roman">DCCCCLVII</idno>
             </altIdentifier>
           </msIdentifier>
-          <head xmlns="'http://www.tei-c.org/ns/1.0'">
-            <note xmlns="http://www.tei-c.org/ns/1.0" type="contents-note">This manuscript contains: The History of Maximus and Domitius ; The history of Archelides ; The history of the Man of God from the city of Rome, in two parts ; Ephraim. A metrical discourse of Ephraim ; The Creed of the Orthodox ; .... In total, including sub-sections, this manuscript contains 8 items. N.B., items have been renumbered by the editors and may not reflect Wright's original numeration.</note>
-            <listRelation xmlns="http://www.tei-c.org/ns/1.0" type="Wright-BL-Taxonomy">
+          <head>
+            <note type="contents-note">This manuscript contains: The History of Maximus and Domitius; The history of Archelides; The history of the Man of God from the city of Rome, in two parts; Ephraim. A metrical discourse of Ephraim; The Creed of the Orthodox; .... In total, including sub-sections, this manuscript contains 8 items.</note>
+            <listRelation type="Wright-BL-Taxonomy">
               <relation name="dcterms:type" ref="http://purl.org/dc/terms/type" active="http://syriaca.org/manuscript/423" passive="#lives-collect">
                 <desc>Collected Lives</desc>
               </relation>
@@ -106,6 +123,7 @@
               <note>See <bibl>Add. 14,641, no. 4, g</bibl>.</note>
             </msItem>
             <msItem xml:id="a3" n="3">
+              <locus from="54b"/>
               <title xml:lang="en">The history of <persName>the Man of God</persName> from <placeName>the city of Rome</placeName>, in two parts</title>
               <note>See <bibl>Add. 14,649, no. 3</bibl>.</note>
               <msItem xml:id="b1" n="4" defective="true">
@@ -159,7 +177,7 @@
             <objectDesc form="codex">
               <supportDesc material="perg">
                 <extent>
-                  <measure unit="content_pending" quantity="-1"/>
+                  <measure type="composition" unit="leaf" quantity="99">99 ff.</measure>
                 </extent>
                 <foliation/>
                 <collation/>
@@ -181,11 +199,11 @@
               </layoutDesc>
             </objectDesc>
             <handDesc hands="2">
-              <handNote medium="unknown" xml:id="handNote1" scope="major" script="syr">
+              <handNote xml:id="handNote1" medium="unknown" scope="major" script="syr">
                 <desc>This volume is written in a good, regular hand of about the <date>xith cent.</date>
                 </desc>
               </handNote>
-              <handNote medium="unknown" xml:id="handNote2" scope="minor" script="syr">
+              <handNote xml:id="handNote2" medium="unknown" scope="minor" script="syr">
                 <desc>See additions.</desc>
               </handNote>
             </handDesc>
@@ -241,14 +259,14 @@
             <adminInfo>
               <recordHist>
                 <source>Manuscript description based on<bibl>
-                    <ref target="#Wright">Wright's
+                    <ref target="#Wrightpart">Wright's
                       Catalogue</ref>
                   </bibl>. abbreviated by the Syriaca.org editors.</source>
               </recordHist>
               <note/>
             </adminInfo>
             <listBibl>
-              <bibl xml:id="Wright">
+              <bibl xml:id="Wrightpart">
                 <author>William Wright</author>
                 <title xml:lang="en">Catalogue of Syriac Manuscripts in the British Museum Acquired
                   since the Year 1838</title>
@@ -257,6 +275,7 @@
                 <ptr target="http://syriaca.org/bibl/8"/>
                 <citedRange unit="entry">DCCCCLVII</citedRange>
                 <citedRange unit="pp">3:1119-1120</citedRange>
+              <ref type="internet-archive-pdf" target="https://archive.org/details/catalogueofsyria03brituoft/page/1119"/>
               </bibl>
             </listBibl>
           </additional>
@@ -424,6 +443,8 @@
       </textClass>
     </profileDesc>
     <revisionDesc status="draft">
+      <change who="http://syriaca.org/documentation/editors.xml#kurban" when="2023-04-21-05:00">CHANGED: added or corrected folio extent values</change>
+      <change who="http://syriaca.org/documentation/editors.xml#jarnwine" when="2023-01-13-06:00">ADDED: supplied and corrected Syriaca.org URIs for authors</change>
       <change who="http://syriaca.org/documentation/editors.xml#srophe-util" when="2021-06-09-05:00">CHANGED: deleted empty elements and attributes</change>
       <change who="http://syriaca.org/documentation/editors.xml#srophe-util" when="2021-06-09-05:00">CHANGED: Added project metadata; metadata from Wright Decoder; msItem, handDesc, and additions enumeration; Wright Taxonomy designation</change>
       <change who="http://syriaca.org/documentation/editors.xml#rbrasoveanu" when="2021-04-19">Initial TEI encoding.</change>

@@ -38,6 +38,26 @@
           <resp>English text entry and proofreading by</resp>
           <name type="org" ref="http://syriaca.org/documentation/editors.xml#uasyriacaresearchgroup">Syriac Research Group, University of Alabama</name>
         </respStmt>
+      <respStmt>
+          <resp>Locus information for manuscript items added by</resp>
+          <name type="person" ref="http://syriaca.org/documentation/editors.xml#zzhang">Ziyan Zhang</name>
+        </respStmt>
+        <respStmt>
+          <resp>Form and material support designations edited by</resp>
+          <name type="person" ref="http://syriaca.org/documentation/editors.xml#cchen">Claire Chen</name>
+        </respStmt>
+        <respStmt>
+          <resp>Decoration information encoded by</resp>
+          <name type="person" ref="http://syriaca.org/documentation/editors.xml#aahn">Alexys Ahn</name>
+        </respStmt>
+        <respStmt>
+          <resp>Decorations identified and categorized by</resp>
+          <name type="person" ref="http://syriaca.org/documentation/editors.xml#bmaczka">Beth Maczka</name>
+        </respStmt>
+      <respStmt>
+          <resp>Folio extent edited by</resp>
+          <name type="person" ref="http://syriaca.org/documentation/editors.xml#kurban">Kurt Urban</name>
+        </respStmt>
       </titleStmt>
       <editionStmt>
         <edition n="1.0"/>
@@ -52,9 +72,7 @@
             <p>Distributed under a Creative Commons Attribution 3.0 Unported License</p>
           </licence>
         </availability>
-        <date calendar="Gregorian">
-          <!-- Our date of publication of this XML document-->
-        </date>
+        <date calendar="Gregorian">2023-04-21-05:00</date>
       </publicationStmt>
       <sourceDesc>
         <msDesc xml:id="manuscript-9" xml:lang="en">
@@ -68,6 +86,9 @@
               <idno type="BL-Shelfmark">Add. 12,137</idno>
             </altIdentifier>
             <altIdentifier>
+              <idno type="BL-Shelfmark-display">London, BL, Add. 12,137</idno>
+            </altIdentifier>
+            <altIdentifier>
               <idno type="BL-Shelmark-simplified">BL Add MS 12137</idno>
             </altIdentifier>
             <altIdentifier>
@@ -79,9 +100,9 @@
               <idno type="Wright-BL-Roman">LXXV</idno>
             </altIdentifier>
           </msIdentifier>
-          <head xmlns="'http://www.tei-c.org/ns/1.0'">
-            <note xmlns="http://www.tei-c.org/ns/1.0" type="contents-note">This manuscript contains: The text exhibits the Ammonian sections, each being referred to the proper canon of Eusebius. In total, including sub-sections, this manuscript contains 1 items. N.B., items have been renumbered by the editors and may not reflect Wright's original numeration.</note>
-            <listRelation xmlns="http://www.tei-c.org/ns/1.0" type="Wright-BL-Taxonomy"/>
+          <head>
+            <note type="contents-note">This manuscript contains: The text exhibits the Ammonian sections, each being referred to the proper canon of Eusebius. In total, including sub-sections, this manuscript contains 1 items.</note>
+            <listRelation type="Wright-BL-Taxonomy"/>
             <listRelation type="composite-to-parts">
               <desc>This composite manuscript consists of 5 distinct parts:</desc>
               <relation name="syriaca:has-unspecified-codicological-part" ref="#syriaca:has-unspecified-codicological-part" active="http://syriaca.org/manuscript/9" passive="http://syriaca.org/manuscript/1161">
@@ -102,14 +123,19 @@
             </listRelation>
           </head>
           <msContents>
-            <msItem n="1" xml:id="a1">
+            <msItem xml:id="a1" n="1">
+              <locus from="19"/>
               <title type="supplied" ref="http://syriaca.org/work/180">The text exhibits the Ammonian sections, each being referred to the proper canon of Eusebius.</title>
               <note>The lessons are indicated in the usual way.</note>
             </msItem>
           </msContents>
           <physDesc>
+            <p>In its present state it is made up of parts of four vellum manuscripts, the defects of which are supplied by paper leaves.</p>
             <objectDesc form="codex">
               <supportDesc material="mixed">
+                <extent>
+                  <measure type="composition" unit="leaf" quantity="214">214 ff.</measure>
+                </extent>
                 <extent>
                   <measure unit="leaf" quantity="214">214 ff.</measure>
                   <dimensions/>
@@ -117,10 +143,10 @@
               </supportDesc>
             </objectDesc>
             <decoDesc>
-              <decoNote type="illustration" xml:id="decoNote1">
+              <decoNote xml:id="decoNote1" type="illustration">
                 <desc>On<locus from="1b" to="1b">fol. 1b</locus>there is a cross:<!-- INSERT IMAGE -->, i.e.<foreign xml:lang="grc">φῶς ζωή</foreign>.</desc>
               </decoNote>
-              <decoNote type="illustration" xml:id="decoNote2">
+              <decoNote xml:id="decoNote2" type="illustration">
                 <desc>On<locus from="214a" to="214a">fol. 214 a</locus>there is another cross, the words forming which are a specimen of barbarous Greek.<!-- INSERT IMAGE -->
                   <quote>“The cross, the weapon of the Christian.”</quote>
                 </desc>
@@ -128,7 +154,7 @@
             </decoDesc>
             <additions>
               <list>
-                <item n="1" xml:id="addition1">
+                <item xml:id="addition1" n="1">
                   <locus from="213b" to="213b"/>
                   <p>On fol. 213bis the following note, written by<ref target="#p5handNote1">the above-mentioned Samuel</ref>, relating to the book in its present form.</p>
                   <p>
@@ -143,26 +169,23 @@
               <p>In the binding of this volume there have been preserved, though in a mutilated condition, two very ancient Arabic documents. The one,<locus from="1a" to="1a">fol. 1 a</locus>, written in an almost Kūfic character, is a patent of manumission (<!-- NEEDS ARABIC -->), granted by the amīr<persName>Ahmad ibn Tūlūn</persName>to<persName>Ahmad ibn Karā</persName>(<!-- NEEDS ARABIC-->), and therefore dating from between<origDate notBefore-custom="0250" notAfter-custom="0270" datingMethod="Hijri-qamari">A. H. 250 and 270</origDate>,<origDate notBefore="0864" notAfter="0883" calendar="Gregorian">A.D. 864 and 883</origDate>.</p>
               <p>The other,<locus from="214b" to="214b">fol. 214b</locus>, written in a current naskhī, appears to be a statement of the amount of tax due by certain places or communities in Egypt for the years 294 and 295 of the Hijra, dated<date when-custom="0296" datingMethod="Hijri-qamari">A.H. 296</date>,<date when="0909" calendar="Gregorian">A.D. 909</date>.</p>
             </accMat>
-            <!-- Should there be other mark-up to this? -->
           </physDesc>
-          <additional>
-            <adminInfo>
-              <note>In its present state it is made up of parts of four vellum manuscripts, the defects of which are supplied by paper leaves.</note>
-            </adminInfo>
-          </additional>
-          <msPart n="1" xml:id="Part1">
+          <msPart xml:id="Part1" n="1">
             <msIdentifier>
               <idno type="URI">http://syriaca.org/manuscript/1161</idno>
               <altIdentifier>
                 <idno type="BL-Shelfmark">Add. 12,137, foll. 2–177</idno>
               </altIdentifier>
               <altIdentifier>
+                <idno type="BL-Shelfmark-display">London, BL, Add. 12,137, foll. 2–177</idno>
+              </altIdentifier>
+              <altIdentifier>
                 <idno type="BL-Shelmark-simplified">BL Add MS 12137, foll. 2-177</idno>
               </altIdentifier>
             </msIdentifier>
-            <head xmlns="'http://www.tei-c.org/ns/1.0'">
-              <note xmlns="http://www.tei-c.org/ns/1.0" type="contents-note">This manuscript contains: The four Gospels according to the Peshitta version. In total, including sub-sections, this manuscript contains 5 items. N.B., items have been renumbered by the editors and may not reflect Wright's original numeration.</note>
-              <listRelation xmlns="http://www.tei-c.org/ns/1.0" type="Wright-BL-Taxonomy">
+            <head>
+              <note type="contents-note">This manuscript contains: The four Gospels according to the Peshitta version. In total, including sub-sections, this manuscript contains 5 items.</note>
+              <listRelation type="Wright-BL-Taxonomy">
                 <relation name="dcterms:type" ref="http://purl.org/dc/terms/type" active="http://syriaca.org/manuscript/1161" passive="#bible-nt">
                   <desc>New Testament</desc>
                 </relation>
@@ -177,27 +200,27 @@
             <msContents>
               <summary/>
               <textLang mainLang="syr">Syriac</textLang>
-              <msItem n="1" xml:id="p1a1" defective="true">
+              <msItem xml:id="p1a1" n="1" defective="true">
                 <locus from="2b" to="177b">Foll. 2b-177b</locus>
                 <title ref="http://syriaca.org/work/71" type="supplied">The four Gospels according to the Peshitta version</title>
-                <msItem n="2" xml:id="p1b1">
+                <note>The lessons are indicated by<foreign xml:lang="syr">ܩ</foreign>on the margins, with the appropriate rubric at the top of the column, and<foreign xml:lang="syr">ܫ</foreign>at the end.</note>
+                <msItem xml:id="p1b1" n="2">
                   <locus from="2b" to="61b">Foll. 2b-61b</locus>
                   <title ref="http://syriaca.org/work/72" type="supplied">The Gospel of S. Matthew, according to the Peshitta version</title>
                 </msItem>
-                <msItem n="3" xml:id="p1b2">
+                <msItem xml:id="p1b2" n="3">
                   <locus from="61b" to="99a">Foll. 61b-99a</locus>
                   <title ref="http://syriaca.org/work/73" type="supplied">The Gospel of S. Mark, according to the Peshitta version</title>
                 </msItem>
-                <msItem n="4" xml:id="p1b3">
+                <msItem xml:id="p1b3" n="4">
                   <locus from="99a" to="163b">Foll. 99a-163b</locus>
                   <title ref="http://syriaca.org/work/74" type="supplied">The Gospel of S. Luke, according to the Peshitta version</title>
                 </msItem>
-                <msItem n="5" xml:id="p1b4" defective="true">
+                <msItem xml:id="p1b4" n="5" defective="true">
                   <locus from="163b" to="177b">Foll. 163b-177b</locus>
                   <title ref="http://syriaca.org/work/75" type="supplied">The Gospel of S. John, according to the Peshitta version</title>
                   <note>As far as ch. vi. 52.</note>
                 </msItem>
-                <note>The lessons are indicated by<foreign xml:lang="syr">ܩ</foreign>on the margins, with the appropriate rubric at the top of the column, and<foreign xml:lang="syr">ܫ</foreign>at the end.</note>
               </msItem>
             </msContents>
             <physDesc>
@@ -208,7 +231,6 @@
               Each page is divided into two columns, of from 22 to 25 lines.
                 <note type="incomplete" resp="http://syriaca.org" xml:lang="en">The original description of this manuscript by William Wright includes characters, symbols, or illustrations which cannot be represented. Please consult the attached image, <ref target="https://archive.org/details/catalogueofsyria01brituoft/page/50/mode/2up">vol. 1, p. 50</ref>.</note>
               </p>
-              <!--JA: Insert arithmetical figures-->
               <objectDesc form="codex">
                 <supportDesc material="perg">
                   <support>
@@ -267,14 +289,13 @@
               <additions>
                 <note type="proofreader-note">N.B., folio location may not be available for some items below.</note>
                 <list>
-                  <item n="1" xml:id="p1addition1">
+                  <item xml:id="p1addition1" n="1">
                     <p>A later hand has employed the letters of the alphabet for signing the quires.</p>
                   </item>
-                  <item n="2" xml:id="p1addition2">
+                  <item xml:id="p1addition2" n="2">
                     <p>Vowels have been added in<locus from="1" to="61">the first 61 leaves</locus>by a much later hand (<foreign xml:lang="syr">ܰ, ܶ, ܺ, ܳ</foreign>, , or, , , ,).</p>
-                    <!-- NEED VOWELS -->
                   </item>
-                  <item n="3" xml:id="p1addition3">
+                  <item xml:id="p1addition3" n="3">
                     <p>Many lessons have been noted by two later hands, one of which has introduced a marginal division of the Gospels into sections. Of these there are 22 in<ref target="#p1b1">S. Matthew</ref>, 13 in<ref target="#p1b2">S. Mark</ref>, 23 in<ref target="#p1b3">S. Luke</ref>, and 6 in the remaining portion of<ref target="#p1b4">S. John</ref>.</p>
                   </item>
                 </list>
@@ -297,8 +318,6 @@
                       <ref target="#Wrightpart1">Wright's Catalogue</ref>
                     </bibl>. abbreviated by the Syriaca.org editors.</source>
                 </recordHist>
-                <availability status="restricted"/>
-                <custodialHist/>
                 <note/>
               </adminInfo>
               <listBibl>
@@ -309,24 +328,28 @@
                   <date>1870</date>
                   <ptr target="http://syriaca.org/bibl/8"/>
                   <citedRange unit="entry">LXXV. I.</citedRange>
-                  <citedRange unit="pp">I:50</citedRange>
+                  <citedRange unit="pp">1:50</citedRange>
+                <ref type="internet-archive-pdf" target="https://archive.org/details/catalogueofsyria01brituoft/page/50"/>
                 </bibl>
               </listBibl>
             </additional>
           </msPart>
-          <msPart n="2" xml:id="Part2">
+          <msPart xml:id="Part2" n="2">
             <msIdentifier>
               <idno type="URI">http://syriaca.org/manuscript/1162</idno>
               <altIdentifier>
                 <idno type="BL-Shelfmark">Add. 12,137, foll. 178–179, 186</idno>
               </altIdentifier>
               <altIdentifier>
+                <idno type="BL-Shelfmark-display">London, BL, Add. 12,137, foll. 178–179, 186</idno>
+              </altIdentifier>
+              <altIdentifier>
                 <idno type="BL-Shelmark-simplified">BL Add MS 12137, foll. 178-179, 186</idno>
               </altIdentifier>
             </msIdentifier>
-            <head xmlns="'http://www.tei-c.org/ns/1.0'">
-              <note xmlns="http://www.tei-c.org/ns/1.0" type="contents-note">This manuscript contains: The Gospel of S. John, according to the Peshitta version. In total, including sub-sections, this manuscript contains 1 items. N.B., items have been renumbered by the editors and may not reflect Wright's original numeration.</note>
-              <listRelation xmlns="http://www.tei-c.org/ns/1.0" type="Wright-BL-Taxonomy">
+            <head>
+              <note type="contents-note">This manuscript contains: The Gospel of S. John, according to the Peshitta version. In total, including sub-sections, this manuscript contains 1 items.</note>
+              <listRelation type="Wright-BL-Taxonomy">
                 <relation name="dcterms:type" ref="http://purl.org/dc/terms/type" active="http://syriaca.org/manuscript/1162" passive="#bible-nt">
                   <desc>New Testament</desc>
                 </relation>
@@ -341,7 +364,7 @@
             <msContents>
               <summary/>
               <textLang mainLang="syr">Syriac</textLang>
-              <msItem n="1" xml:id="p2a1" defective="true">
+              <msItem xml:id="p2a1" n="1" defective="true">
                 <locus from="178" to="179">Foll. 178-179,</locus>
                 <locus from="186" to="186">and 186.</locus>
                 <title ref="http://syriaca.org/work/75" type="supplied">The Gospel of S. John, according to the Peshitta version</title>
@@ -351,7 +374,7 @@
             <physDesc>
               <p>Three vellum leaves, about 10 1/8 in. by 8.
               Each page is divided into two columns, of from 23 to 25 lines. </p>
-              <objectDesc form="codex">
+              <objectDesc form="unspecified">
                 <supportDesc material="perg">
                   <support>
                     <material>Vellum</material>
@@ -392,7 +415,7 @@
                 <note type="proofreader-note">N.B., folio location may not be available for some items below.</note>
                 <p/>
                 <list>
-                  <item n="1" xml:id="p2addition1">
+                  <item xml:id="p2addition1" n="1">
                     <p>Some lessons are indicated on the margins by two later hands, as in<ref target="#Part1 #p1addition3">no. I</ref>.</p>
                   </item>
                 </list>
@@ -418,8 +441,6 @@
                       <ref target="#Wrightpart2">Wright's Catalogue</ref>
                     </bibl>. abbreviated by the Syriaca.org editors.</source>
                 </recordHist>
-                <availability status="restricted"/>
-                <custodialHist/>
                 <note/>
               </adminInfo>
               <listBibl>
@@ -430,24 +451,28 @@
                   <date>1870</date>
                   <ptr target="http://syriaca.org/bibl/8"/>
                   <citedRange unit="entry">LXXV. II.</citedRange>
-                  <citedRange unit="pp">I:51</citedRange>
+                  <citedRange unit="pp">1:51</citedRange>
+                <ref type="internet-archive-pdf" target="https://archive.org/details/catalogueofsyria01brituoft/page/51"/>
                 </bibl>
               </listBibl>
             </additional>
           </msPart>
-          <msPart n="3" xml:id="Part3">
+          <msPart xml:id="Part3" n="3">
             <msIdentifier>
               <idno type="URI">http://syriaca.org/manuscript/1163</idno>
               <altIdentifier>
                 <idno type="BL-Shelfmark">Add. 12,173, foll. 187–207</idno>
               </altIdentifier>
               <altIdentifier>
+                <idno type="BL-Shelfmark-display">London, BL, Add. 12,173, foll. 187–207</idno>
+              </altIdentifier>
+              <altIdentifier>
                 <idno type="BL-Shelmark-simplified">BL Add MS 12173, foll. 187-207</idno>
               </altIdentifier>
             </msIdentifier>
-            <head xmlns="'http://www.tei-c.org/ns/1.0'">
-              <note xmlns="http://www.tei-c.org/ns/1.0" type="contents-note">This manuscript contains: The Gospel of S. John, according to the Peshitta version. In total, including sub-sections, this manuscript contains 1 items. N.B., items have been renumbered by the editors and may not reflect Wright's original numeration.</note>
-              <listRelation xmlns="http://www.tei-c.org/ns/1.0" type="Wright-BL-Taxonomy">
+            <head>
+              <note type="contents-note">This manuscript contains: The Gospel of S. John, according to the Peshitta version. In total, including sub-sections, this manuscript contains 1 items.</note>
+              <listRelation type="Wright-BL-Taxonomy">
                 <relation name="dcterms:type" ref="http://purl.org/dc/terms/type" active="http://syriaca.org/manuscript/1163" passive="#bible-nt">
                   <desc>New Testament</desc>
                 </relation>
@@ -462,7 +487,7 @@
             <msContents>
               <summary/>
               <textLang mainLang="syr">Syriac</textLang>
-              <msItem n="1" xml:id="p3a1" defective="true">
+              <msItem xml:id="p3a1" n="1" defective="true">
                 <locus from="187" to="207">Foll. 187-207</locus>
                 <title ref="http://syriaca.org/work/75" type="supplied">The Gospel of S. John, according to the Peshitta version</title>
                 <note>ch. x. 20—xix. 29</note>
@@ -512,7 +537,7 @@
               <additions>
                 <note type="proofreader-note">N.B., folio location may not be available for some items below.</note>
                 <list>
-                  <item n="1" xml:id="p3addition1">
+                  <item xml:id="p3addition1" n="1">
                     <p>Other lessons have been noted on the margins by several hands of later date. The word<foreign xml:lang="syr">ܢܘܣܝܐ</foreign>in red, on the<locus from="196b" to="196b">lower margin of fol. 196 b</locus>, means<quote>“trial of the pen,”</quote>
                       <quote xml:lang="syr">ܢܘܣܝܐ ܕܚܨܪܐ</quote>, or<quote>“trial of the ink,”</quote>
                       <quote xml:lang="syr">ܢܘܣܝܐ ܕܕܝܘܬܐ</quote>.</p>
@@ -540,8 +565,6 @@
                       <ref target="#Wrightpart3">Wright's Catalogue</ref>
                     </bibl>. abbreviated by the Syriaca.org editors.</source>
                 </recordHist>
-                <availability status="restricted"/>
-                <custodialHist/>
                 <note/>
               </adminInfo>
               <listBibl>
@@ -552,24 +575,28 @@
                   <date>1870</date>
                   <ptr target="http://syriaca.org/bibl/8"/>
                   <citedRange unit="entry">LXXV. III.</citedRange>
-                  <citedRange unit="pp">I:51</citedRange>
+                  <citedRange unit="pp">1:51</citedRange>
+                <ref type="internet-archive-pdf" target="https://archive.org/details/catalogueofsyria01brituoft/page/51"/>
                 </bibl>
               </listBibl>
             </additional>
           </msPart>
-          <msPart n="4" xml:id="Part4">
+          <msPart xml:id="Part4" n="4">
             <msIdentifier>
               <idno type="URI">http://syriaca.org/manuscript/1164</idno>
               <altIdentifier>
                 <idno type="BL-Shelfmark">Add. 12,137, foll. 212–213</idno>
               </altIdentifier>
               <altIdentifier>
+                <idno type="BL-Shelfmark-display">London, BL, Add. 12,137, foll. 212–213</idno>
+              </altIdentifier>
+              <altIdentifier>
                 <idno type="BL-Shelmark-simplified">BL Add MS 12137, foll. 212-213</idno>
               </altIdentifier>
             </msIdentifier>
-            <head xmlns="'http://www.tei-c.org/ns/1.0'">
-              <note xmlns="http://www.tei-c.org/ns/1.0" type="contents-note">This manuscript contains: The Gospel of S. John, according to the Peshitta version. In total, including sub-sections, this manuscript contains 1 items. N.B., items have been renumbered by the editors and may not reflect Wright's original numeration.</note>
-              <listRelation xmlns="http://www.tei-c.org/ns/1.0" type="Wright-BL-Taxonomy">
+            <head>
+              <note type="contents-note">This manuscript contains: The Gospel of S. John, according to the Peshitta version. In total, including sub-sections, this manuscript contains 1 items.</note>
+              <listRelation type="Wright-BL-Taxonomy">
                 <relation name="dcterms:type" ref="http://purl.org/dc/terms/type" active="http://syriaca.org/manuscript/1164" passive="#bible-nt">
                   <desc>New Testament</desc>
                 </relation>
@@ -584,7 +611,7 @@
             <msContents>
               <summary/>
               <textLang mainLang="syr">Syriac</textLang>
-              <msItem n="1" xml:id="p4a1" defective="true">
+              <msItem xml:id="p4a1" n="1" defective="true">
                 <locus from="212" to="213">Foll. 212-213</locus>
                 <title ref="http://syriaca.org/work/75" type="supplied">The Gospel of S. John, according to the Peshitta version</title>
                 <note>ch. xxi. 12 to the end</note>
@@ -599,7 +626,7 @@
             <physDesc>
               <p>Two vellum leaves about 10 1/8 in. by 8.
               Each page is divided into two columns, of 23 or 24 lines. </p>
-              <objectDesc form="codex">
+              <objectDesc form="unspecified">
                 <supportDesc material="perg">
                   <support>
                     <material>Vellum</material>
@@ -651,11 +678,11 @@
               <decoDesc/>
               <additions>
                 <list>
-                  <item n="2" xml:id="p4addition2">
+                  <item xml:id="p4addition1" n="1">
                     <locus from="213a" to="213a"/>
                     <p>A later hand has placed<foreign xml:lang="syr">ܕ̄</foreign>on the margin, opposite<foreign xml:lang="syr">ܬܠܬܐ</foreign>, and added<foreign xml:lang="syr">ܘܐܦ ܡܪܩܘܣ</foreign>.</p>
                   </item>
-                  <item n="3" xml:id="p4addition3">
+                  <item xml:id="p4addition2" n="2">
                     <label>Colophon</label>
                     <locus from="213a" to="213a"/>
                     <p>After the usual doxology, there follow two notes, but both have been erased, so as to be now almost illegible. The first begins:</p>
@@ -671,11 +698,11 @@
                         </listPlace>, mentioned by<bibl>Assemani, Bibl. Orient., t. ii. Dissert. de Monophys., art. ix.</bibl>] used diligence and . . . this book . . .”</quote>
                     </p>
                   </item>
-                  <item n="4" xml:id="p4addition4">
+                  <item xml:id="p4addition3" n="3">
                     <locus from="213a" to="213a"/>
                     <p>Of the other only a few unimportant words can be deciphered.</p>
                   </item>
-                  <item n="5" xml:id="p4addition5">
+                  <item xml:id="p4addition4" n="4">
                     <locus from="213b" to="213b"/>
                     <p>On fol. 213b are two notes, the one stating that this book belonged to the<placeName>convent of S. Mary Deipara</placeName>, the other that it was bound by one<persName>Ephraim</persName>, a stranger or guest (<foreign xml:lang="syr">ܐܟܣܢܝܐ</foreign>,<foreign xml:lang="grc">ξένος</foreign>) in that convent, from the<placeName>convent of Sergius</placeName>near<placeName>Balad</placeName>(<foreign xml:lang="syr">ܒܠܕ</foreign>,<foreign xml:lang="ar">
                         <!-- NEEDS ARABIC -->
@@ -718,8 +745,6 @@
                       <ref target="#Wrightpart4">Wright's Catalogue</ref>
                     </bibl>. abbreviated by the Syriaca.org editors.</source>
                 </recordHist>
-                <availability status="restricted"/>
-                <custodialHist/>
                 <note/>
               </adminInfo>
               <listBibl>
@@ -730,24 +755,28 @@
                   <date>1870</date>
                   <ptr target="http://syriaca.org/bibl/8"/>
                   <citedRange unit="entry">LXXV. IV.</citedRange>
-                  <citedRange unit="pp">I:51</citedRange>
+                  <citedRange unit="pp">1:51</citedRange>
+                <ref type="internet-archive-pdf" target="https://archive.org/details/catalogueofsyria01brituoft/page/51"/>
                 </bibl>
               </listBibl>
             </additional>
           </msPart>
-          <msPart n="5" xml:id="Part5">
+          <msPart xml:id="Part5" n="5">
             <msIdentifier>
               <idno type="URI">http://syriaca.org/manuscript/1165</idno>
               <altIdentifier>
                 <idno type="BL-Shelfmark">Add. 12,137, foll. 19, 180–185, 208–211</idno>
               </altIdentifier>
               <altIdentifier>
+                <idno type="BL-Shelfmark-display">London, BL, Add. 12,137, foll. 19, 180–185, 208–211</idno>
+              </altIdentifier>
+              <altIdentifier>
                 <idno type="BL-Shelmark-simplified">BL Add MS 12137, foll. 19, 180-185, 208-211</idno>
               </altIdentifier>
             </msIdentifier>
-            <head xmlns="'http://www.tei-c.org/ns/1.0'">
-              <note xmlns="http://www.tei-c.org/ns/1.0" type="contents-note">This manuscript contains: The Gospel of S. Matthew, according to the Peshitta version ; The Gospel of S. John, according to the Peshitta version. In total, including sub-sections, this manuscript contains 2 items. N.B., items have been renumbered by the editors and may not reflect Wright's original numeration.</note>
-              <listRelation xmlns="http://www.tei-c.org/ns/1.0" type="Wright-BL-Taxonomy">
+            <head>
+              <note type="contents-note">This manuscript contains: The Gospel of S. Matthew, according to the Peshitta version; The Gospel of S. John, according to the Peshitta version. In total, including sub-sections, this manuscript contains 2 items.</note>
+              <listRelation type="Wright-BL-Taxonomy">
                 <relation name="dcterms:type" ref="http://purl.org/dc/terms/type" active="http://syriaca.org/manuscript/1165" passive="#bible-nt">
                   <desc>New Testament</desc>
                 </relation>
@@ -762,12 +791,12 @@
             <msContents>
               <summary/>
               <textLang mainLang="syr">Syriac</textLang>
-              <msItem n="1" xml:id="p5a1" defective="true">
+              <msItem xml:id="p5a1" n="1" defective="true">
                 <locus from="19" to="19">Fol. 19</locus>
                 <title ref="http://syriaca.org/work/72" type="supplied">The Gospel of S. Matthew, according to the Peshitta version</title>
                 <note>ch. x. 10—26</note>
               </msItem>
-              <msItem n="2" xml:id="p5a2" defective="true">
+              <msItem xml:id="p5a2" n="2" defective="true">
                 <locus from="180" to="185">Foll. 180-185 and</locus>
                 <locus from="208" to="211">208-211.</locus>
                 <title ref="http://syriaca.org/work/75" type="supplied">The Gospel of S. John, according to the Peshitta version</title>
@@ -824,15 +853,7 @@
               <summary/>
               <origin>
                 <origDate notBefore="1000" notAfter="1100">11th century</origDate>
-                <origPlace>
-                  <p>
-                    <listPlace>
-                      <place>
-                        <placeName>Gozartā</placeName>
-                        <placeName xml:lang="syr">ܓܘܙܪܬܐ</placeName>
-                      </place>
-                    </listPlace>in<placeName>Egypt</placeName>
-                  </p>
+                <origPlace>Gozartā (<foreign xml:lang="syr">ܓܘܙܪܬܐ</foreign>) in Egypt
                 </origPlace>
               </origin>
               <provenance/>
@@ -845,8 +866,6 @@
                       <ref target="#Wrightpart5">Wright's Catalogue</ref>
                     </bibl>. abbreviated by the Syriaca.org editors.</source>
                 </recordHist>
-                <availability status="restricted"/>
-                <custodialHist/>
                 <note/>
               </adminInfo>
               <listBibl>
@@ -857,7 +876,8 @@
                   <date>1870</date>
                   <ptr target="http://syriaca.org/bibl/8"/>
                   <citedRange unit="entry">LXXV. V.</citedRange>
-                  <citedRange unit="pp">I:51-52</citedRange>
+                  <citedRange unit="pp">1:51-52</citedRange>
+                <ref type="internet-archive-pdf" target="https://archive.org/details/catalogueofsyria01brituoft/page/51"/>
                 </bibl>
               </listBibl>
             </additional>
@@ -1043,6 +1063,10 @@
       </textClass>
     </profileDesc>
     <revisionDesc status="draft">
+      <change who="http://syriaca.org/documentation/editors.xml#kurban" when="2023-04-21-05:00">CHANGED: added or corrected folio extent values</change>
+      <change who="http://syriaca.org/documentation/editors.xml#zzhang" when="2023-01-13-06:00">ADDED: added missing locus information for msItems</change>
+      <change who="http://syriaca.org/documentation/editors.xml#cchen" when="2023-01-13-06:00">CHANGED: updated incorrect form and/or material support designation</change>
+      <change who="http://syriaca.org/documentation/editors.xml#aahn" when="2023-01-13-06:00">ADDED: added decoNote elements for decorations</change>
       <change who="http://syriaca.org/documentation/editors.xml#thannah" when="2013-07-23">Created: file</change>
       <change who="http://syriaca.org/documentation/editors.xml#dgreeson" when="2013-08-25">Initial edit</change>
       <change who="http://syriaca.org/documentation/editors.xml#dgreeson" when="2013-08-26">Title edits</change>

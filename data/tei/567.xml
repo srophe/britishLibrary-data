@@ -15,6 +15,7 @@
         <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A. Michelson</editor>
         <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#raydin">Robert Aydin</editor>
         <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#eyonan">Eliana Yonan</editor>
+        <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#jarnwine">Justin Arnwine</editor>
         <respStmt>
           <resp>Created by</resp>
           <name type="person" ref="http://syriaca.org/documentation/editors.xml#eyonan">Eliana Yonan</name>
@@ -43,6 +44,23 @@
           <resp>English text entry and proofreading by</resp>
           <name type="org" ref="http://syriaca.org/documentation/editors.xml#uasyriacaresearchgroup">Syriac Research Group, University of Alabama</name>
         </respStmt>
+      <respStmt>
+          <resp>Form and material support designations edited by</resp>
+          <name type="person" ref="http://syriaca.org/documentation/editors.xml#cchen">Claire Chen</name>
+        </respStmt>
+        <respStmt>
+          <resp>Syriaca.org URIs for authors edited by</resp>
+          <name type="person" ref="http://syriaca.org/documentation/editors.xml#jarnwine">Justin Arnwine</name>
+        </respStmt>
+        <respStmt>
+          <resp>Syriaca.org URIs for authors checked by</resp>
+          <name type="person" ref="http://syriaca.org/documentation/editors.xml#aahn">Alexys Ahn</name>
+          <name type="person" ref="http://syriaca.org/documentation/editors.xml#jdalfonso">Joseph DAlfonso</name>
+        </respStmt>
+      <respStmt>
+          <resp>Folio extent edited by</resp>
+          <name type="person" ref="http://syriaca.org/documentation/editors.xml#kurban">Kurt Urban</name>
+        </respStmt>
       </titleStmt>
       <editionStmt>
         <edition n="1.0"/>
@@ -56,7 +74,7 @@
             <p>Distributed under a Creative Commons Attribution 3.0 Unported License</p>
           </licence>
         </availability>
-        <date calendar="Gregorian"/>
+        <date calendar="Gregorian">2023-04-21-05:00</date>
       </publicationStmt>
       <sourceDesc>
         <msDesc xml:id="manuscript-567">
@@ -70,6 +88,9 @@
               <idno type="BL-Shelfmark">Add. 14,701</idno>
             </altIdentifier>
             <altIdentifier>
+              <idno type="BL-Shelfmark-display">London, BL, Add. 14,701</idno>
+            </altIdentifier>
+            <altIdentifier>
               <idno type="BL-Shelmark-simplified">BL Add MS 14701</idno>
             </altIdentifier>
             <altIdentifier>
@@ -81,9 +102,9 @@
               <idno type="Wright-BL-Roman">CCCXXXV</idno>
             </altIdentifier>
           </msIdentifier>
-          <head xmlns="'http://www.tei-c.org/ns/1.0'">
-            <note xmlns="http://www.tei-c.org/ns/1.0" type="contents-note">This manuscript contains: Jacob, Ephraim. A collection of Choral Services, including hymns and prayers of Jacob and Ephraim, for the festivals of the whole year. In total, including sub-sections, this manuscript contains 50 items. N.B., items have been renumbered by the editors and may not reflect Wright's original numeration.</note>
-            <listRelation xmlns="http://www.tei-c.org/ns/1.0" type="Wright-BL-Taxonomy">
+          <head>
+            <note type="contents-note">This manuscript contains: Jacob, Ephraim. A collection of Choral Services, including hymns and prayers of Jacob and Ephraim, for the festivals of the whole year. In total, including sub-sections, this manuscript contains 50 items.</note>
+            <listRelation type="Wright-BL-Taxonomy">
               <relation name="dcterms:type" ref="http://purl.org/dc/terms/type" active="http://syriaca.org/manuscript/567" passive="#choral">
                 <desc>Choral Books</desc>
               </relation>
@@ -92,13 +113,13 @@
           <msContents>
             <textLang mainLang="syr"/>
             <msItem xml:id="a1" n="1">
+              <locus from="2b"/>
               <author>Jacob</author>
-              <author>Ephraim</author>
+              <author ref="http://syriaca.org/person/13">Ephraim</author>
               <title>A collection of Choral Services, including hymns and prayers
                 of <persName>Jacob</persName> and <persName>Ephraim</persName>, for the festivals of the whole
                 year</title>
               <rubric xml:lang="syr">ܡܓܡܥܢܝܬܐ </rubric>
-              <!-- missing Arabic here -->
               <msItem xml:id="b1" n="2">
                 <locus from="2b"/>
                 <title xml:lang="en">The Consecration of the Church</title>
@@ -376,9 +397,9 @@
                         are much torn. The quires, signed with letters, are 25 in number. There are
                         from 14 to 20 lines in each page.</p>
             <objectDesc form="codex">
-              <supportDesc material="perg">
+              <supportDesc material="chart">
                 <extent>
-                  <measure unit="content_pending" quantity="-1"/>
+                  <measure type="composition" unit="leaf" quantity="245">245 ff.</measure>
                 </extent>
                 <foliation/>
                 <collation/>
@@ -397,11 +418,11 @@
               </layoutDesc>
             </objectDesc>
             <handDesc hands="2">
-              <handNote medium="unknown" xml:id="handNote1" scope="major" script="syr">
+              <handNote xml:id="handNote1" medium="unknown" scope="major" script="syr">
                 <desc>The writing is good and regular. This manuscript is dated <date>A. Gr. 1574</date>, <date>A.D. 1263</date>.</desc>
               </handNote>
-              <handNote medium="unknown" xml:id="handNote2" scope="minor" script="syr">
-              <desc>See additions.</desc>
+              <handNote xml:id="handNote2" medium="unknown" scope="minor" script="syr">
+                <desc>See additions.</desc>
               </handNote>
             </handDesc>
             <additions>
@@ -419,14 +440,14 @@
                     </quote>
                   </p>
                 </item>
-                <item>
+                <item xml:id="addition2" n="2">
                   <label>Colophon</label>
                   <locus from="245a"/>
                   <p>
                     <quote xml:lang="syr">ܫܠܡܬ ܡܓܡܥܢܝܬܐ ܐܝܟ ܡܨܝܢܘܬܗ ܕܟܬܘܒܐ ܡܚܝܠܐ</quote>
                   </p>
                 </item>
-                <item>
+                <item xml:id="addition3" n="3">
                   <locus from="245"/>
                   <p>On the same page as <ref>the colophon</ref> there is a note, giving the date, <date>A. Gr. 1574</date>, <date>A.D. 1263</date>
                   </p>
@@ -434,7 +455,7 @@
                     <quote xml:lang="syr">ܒܫ̈ܢܬ ܐ̈ܠܦ ܘܚ̈ܡܫܡ̈ܐܐ ܘܫ̈ܒܥܝܢ ܘܐܪ̈ܒܥܫ̈ܢܝܢ ܐܣܬܝܟܬ݂݀ ܡܓܡܢܝܬܐ <foreign xml:lang="en">(sic)</foreign> ܗܕܐ ܥܠ ܐܝ̈ܕܝ ܚܛܝܐ ܘܢܦܬܐ ܘܟܘܦܪܐ ܕܟܠܢ̣ܫ ܡܪܝܐ ܢܥܒܕ ܪ̈ܚܡܐ ܥܠ ܚܛܝܐ ܕܣܪܛ ܏ܘܫ</quote>
                   </p>
                 </item>
-                <item>
+                <item xml:id="addition4" n="4">
                   <locus from="3a"/>
                   <p>On fol. 3 a, a reader, one <persName>Joseph</persName>, has recorded his name:</p>
                   <p>
@@ -443,7 +464,7 @@
                     </quote>
                   </p>
                 </item>
-                <item>
+                <item xml:id="addition5" n="5">
                   <locus from="116a"/>
                   <p>On fol. 116 a, a reader, <persName>Ibrāhīm, the son of the priest <persName>'Isā</persName>
                     </persName>, has recorded his name:</p>
@@ -453,7 +474,7 @@
                     </quote>
                   </p>
                 </item>
-                <item>
+                <item xml:id="addition6" n="6">
                   <locus from="119b"/>
                   <p>On fol. 119 b, a reader, <persName>'Amir ibn Mansūr of <placeName>Hims</placeName>
                     </persName>, has recorded his name:</p>
@@ -477,7 +498,7 @@
             <origin>
               <origDate when="1263">A.D. 1263</origDate>
               <origDate datingMethod="Seleucid" when-custom="1574">A. Gr. 1574</origDate>
-              <origPlace>convent of S. Mary Deipara</origPlace>
+              <origPlace>The convent of S. Mary Deipara</origPlace>
             </origin>
             <provenance/>
             <acquisition/>
@@ -486,14 +507,14 @@
             <adminInfo>
               <recordHist>
                 <source>Manuscript description based on<bibl>
-                    <ref target="#Wright">Wright's
+                    <ref target="#Wrightpart">Wright's
                       Catalogue</ref>
                   </bibl>. abbreviated by the Syriaca.org editors.</source>
               </recordHist>
               <note/>
             </adminInfo>
             <listBibl>
-              <bibl xml:id="Wright">
+              <bibl xml:id="Wrightpart">
                 <author>William Wright</author>
                 <title xml:lang="en">Catalogue of Syriac Manuscripts in the British Museum Acquired
                   since the Year 1838</title>
@@ -502,6 +523,7 @@
                 <ptr target="http://syriaca.org/bibl/8"/>
                 <citedRange unit="entry">CCCXXXV</citedRange>
                 <citedRange unit="pp">1:278-279</citedRange>
+              <ref type="internet-archive-pdf" target="https://archive.org/details/catalogueofsyria01brituoft/page/278"/>
               </bibl>
             </listBibl>
           </additional>
@@ -669,6 +691,9 @@
       </textClass>
     </profileDesc>
     <revisionDesc status="draft">
+      <change who="http://syriaca.org/documentation/editors.xml#kurban" when="2023-04-21-05:00">CHANGED: added or corrected folio extent values</change>
+      <change who="http://syriaca.org/documentation/editors.xml#cchen" when="2023-01-13-06:00">CHANGED: updated incorrect form and/or material support designation</change>
+      <change who="http://syriaca.org/documentation/editors.xml#jarnwine" when="2023-01-13-06:00">ADDED: supplied and corrected Syriaca.org URIs for authors</change>
       <change who="http://syriaca.org/documentation/editors.xml#srophe-util" when="2021-06-09-05:00">CHANGED: deleted empty elements and attributes</change>
       <change who="http://syriaca.org/documentation/editors.xml#srophe-util" when="2021-06-09-05:00">CHANGED: Added project metadata; metadata from Wright Decoder; msItem, handDesc, and additions enumeration; Wright Taxonomy designation</change>
       <change who="http://syriaca.org/documentation/editors.xml#eyonan">Initial TEI encoding.</change>

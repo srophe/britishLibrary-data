@@ -44,6 +44,10 @@
           <resp>English text entry and proofreading by</resp>
           <name type="org" ref="http://syriaca.org/documentation/editors.xml#uasyriacaresearchgroup">Syriac Research Group, University of Alabama</name>
         </respStmt>
+      <respStmt>
+          <resp>Folio extent edited by</resp>
+          <name type="person" ref="http://syriaca.org/documentation/editors.xml#kurban">Kurt Urban</name>
+        </respStmt>
       </titleStmt>
       <editionStmt>
         <edition n="1.0"/>
@@ -57,7 +61,7 @@
             <p>Distributed under a Creative Commons Attribution 3.0 Unported License</p>
           </licence>
         </availability>
-        <date calendar="Gregorian"/>
+        <date calendar="Gregorian">2023-04-21-05:00</date>
       </publicationStmt>
       <sourceDesc>
         <msDesc xml:id="manuscript-571">
@@ -69,6 +73,9 @@
             <idno type="URI">http://syriaca.org/manuscript/571</idno>
             <altIdentifier>
               <idno type="BL-Shelfmark">Add. 14,705</idno>
+            </altIdentifier>
+            <altIdentifier>
+              <idno type="BL-Shelfmark-display">London, BL, Add. 14,705</idno>
             </altIdentifier>
             <altIdentifier>
               <idno type="BL-Shelmark-simplified">BL Add MS 14705</idno>
@@ -84,9 +91,9 @@
               <idno type="Wright-BL-Roman">CCXLV</idno>
             </altIdentifier>
           </msIdentifier>
-          <head xmlns="'http://www.tei-c.org/ns/1.0'">
-            <note xmlns="http://www.tei-c.org/ns/1.0" type="contents-note">This manuscript contains: A Nestorian Lectionary from the Old and New Testaments, for the Sundays and Festivals of the whole year. In total, including sub-sections, this manuscript contains 38 items. N.B., items have been renumbered by the editors and may not reflect Wright's original numeration.</note>
-            <listRelation xmlns="http://www.tei-c.org/ns/1.0" type="Wright-BL-Taxonomy">
+          <head>
+            <note type="contents-note">This manuscript contains: A Nestorian Lectionary from the Old and New Testaments, for the Sundays and Festivals of the whole year. In total, including sub-sections, this manuscript contains 38 items.</note>
+            <listRelation type="Wright-BL-Taxonomy">
               <relation name="dcterms:type" ref="http://purl.org/dc/terms/type" active="http://syriaca.org/manuscript/571" passive="#lectionaries">
                 <desc>Lectionaries</desc>
               </relation>
@@ -310,6 +317,9 @@
                         perhaps misplaced. </p>
             <objectDesc form="codex">
               <supportDesc material="chart">
+                <extent>
+                  <measure type="composition" unit="leaf" quantity="84">84 ff.</measure>
+                </extent>
                 <foliation/>
                 <collation/>
                 <condition>
@@ -329,7 +339,7 @@
               </supportDesc>
             </objectDesc>
             <handDesc hands="1">
-              <handNote medium="unknown" xml:id="handNote1" scope="sole" script="syr">
+              <handNote xml:id="handNote1" medium="unknown" scope="sole" script="syr">
                 <desc>The writing is good and regular, of the <origDate>xith cent.,</origDate> with
                   numerous Syriac vowels and accents. </desc>
               </handNote>
@@ -349,13 +359,13 @@
             <adminInfo>
               <recordHist>
                 <source>Manuscript description based on<bibl>
-                    <ref target="#Wright">Wright's Catalogue</ref>
+                    <ref target="#Wrightpart">Wright's Catalogue</ref>
                   </bibl>. abbreviated by the Syriaca.org editors.</source>
               </recordHist>
               <note/>
             </adminInfo>
             <listBibl>
-              <bibl xml:id="Wright">
+              <bibl xml:id="Wrightpart">
                 <author>William Wright</author>
                 <title xml:lang="en">Catalogue of Syriac Manuscripts in the British Museum Acquired
                   since the Year 1838</title>
@@ -364,6 +374,7 @@
                 <ptr target="http://syriaca.org/bibl/8"/>
                 <citedRange unit="entry">CCXLV</citedRange>
                 <citedRange unit="pp">1:181-182</citedRange>
+              <ref type="internet-archive-pdf" target="https://archive.org/details/catalogueofsyria01brituoft/page/181"/>
               </bibl>
             </listBibl>
           </additional>
@@ -531,6 +542,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc status="draft">
+      <change who="http://syriaca.org/documentation/editors.xml#kurban" when="2023-04-21-05:00">CHANGED: added or corrected folio extent values</change>
       <change who="http://syriaca.org/documentation/editors.xml#srophe-util" when="2020-04-30-05:00">CHANGED: deleted empty elements and attributes</change>
       <change who="http://syriaca.org/documentation/editors.xml#srophe-util" when="2020-04-30-05:00">CHANGED: Added project metadata; metadata from Wright Decoder; msItem, handDesc, and additions enumeration; Wright Taxonomy designation</change>
       <change who="http://syriaca.org/documentation/editors.xml#lruth" when="2020-02-19">Initial TEI

@@ -38,6 +38,18 @@
           <resp>English text entry and proofreading by</resp>
           <name type="org" ref="http://syriaca.org/documentation/editors.xml#uasyriacaresearchgroup">Syriac Research Group, University of Alabama</name>
         </respStmt>
+      <respStmt>
+          <resp>Decoration information encoded by</resp>
+          <name type="person" ref="http://syriaca.org/documentation/editors.xml#aahn">Alexys Ahn</name>
+        </respStmt>
+        <respStmt>
+          <resp>Decorations identified and categorized by</resp>
+          <name type="person" ref="http://syriaca.org/documentation/editors.xml#bmaczka">Beth Maczka</name>
+        </respStmt>
+      <respStmt>
+          <resp>Folio extent edited by</resp>
+          <name type="person" ref="http://syriaca.org/documentation/editors.xml#kurban">Kurt Urban</name>
+        </respStmt>
       </titleStmt>
       <editionStmt>
         <edition n="1.0"/>
@@ -52,9 +64,7 @@
             <p>Distributed under a Creative Commons Attribution 3.0 Unported License</p>
           </licence>
         </availability>
-        <date calendar="Gregorian">
-          <!-- Our date of publication of this XML document-->
-        </date>
+        <date calendar="Gregorian">2023-04-21-05:00</date>
       </publicationStmt>
       <sourceDesc>
         <msDesc xml:id="manuscript-105" xml:lang="en">
@@ -68,6 +78,9 @@
               <idno type="BL-Shelfmark">Add. 14,441</idno>
             </altIdentifier>
             <altIdentifier>
+              <idno type="BL-Shelfmark-display">London, BL, Add. 14,441</idno>
+            </altIdentifier>
+            <altIdentifier>
               <idno type="BL-Shelmark-simplified">BL Add MS 14441</idno>
             </altIdentifier>
             <altIdentifier>
@@ -79,9 +92,9 @@
               <idno type="Wright-BL-Roman">LXI</idno>
             </altIdentifier>
           </msIdentifier>
-          <head xmlns="'http://www.tei-c.org/ns/1.0'">
-            <note xmlns="http://www.tei-c.org/ns/1.0" type="contents-note">This manuscript contains: The book of Isaiah, according to the recension ofJacob ofEdessa. In total, including sub-sections, this manuscript contains 1 items. N.B., items have been renumbered by the editors and may not reflect Wright's original numeration.</note>
-            <listRelation xmlns="http://www.tei-c.org/ns/1.0" type="Wright-BL-Taxonomy">
+          <head>
+            <note type="contents-note">This manuscript contains: The book of Isaiah, according to the recension ofJacob ofEdessa. In total, including sub-sections, this manuscript contains 1 items.</note>
+            <listRelation type="Wright-BL-Taxonomy">
               <relation name="dcterms:type" ref="http://purl.org/dc/terms/type" active="http://syriaca.org/manuscript/105" passive="#bible-ot">
                 <desc>Old Testament</desc>
               </relation>
@@ -90,7 +103,7 @@
           <msContents>
             <summary/>
             <textLang mainLang="syr">Syriac</textLang>
-            <msItem n="1" xml:id="a1" defective="true">
+            <msItem xml:id="a1" n="1" defective="true">
               <locus from="1" to="62">Foll. 1-62</locus>
               <title ref="http://syriaca.org/work/156" type="supplied">The book of Isaiah, according to the recension of<persName ref="http://syriaca.org/person/113">Jacob of<placeName>Edessa</placeName>
                 </persName>
@@ -101,7 +114,7 @@
             </msItem>
           </msContents>
           <physDesc>
-            <p> Vellum, about 9 7/8 in. by 6 5/8, consisting of 62 leaves, some of which are much stained and torn, especially foll. 2, 21, 22, 40, and 60—62. The quires are signed with letters, but only ܘand ܝܒare complete, leaves having been lost both at the beginning and end, as well as after foll. 1, 2, 3, 4, 12, 40, 41, 42, 50 and 61. Each page has from 20 to 21 lines. This manuscript is written in a large, beautiful Estrangela, by the same hand as Add. 14,429, about A.D. 719 </p>
+            <p> Vellum, about 9 7/8 in. by 6 5/8, consisting of 62 leaves, some of which are much stained and torn, especially foll. 2, 21, 22, 40, and 60—62. The quires are signed with letters, but only ܘ and ܝܒ are complete, leaves having been lost both at the beginning and end, as well as after foll. 1, 2, 3, 4, 12, 40, 41, 42, 50 and 61. Each page has from 20 to 24 lines. </p>
             <objectDesc form="codex">
               <supportDesc material="perg">
                 <support>
@@ -145,14 +158,14 @@
             <handDesc hands="4">
               <handNote xml:id="handNote1" scope="major" script="syr-Syre" medium="unknown">
                 <desc>This manuscript is written in a large, beautiful Estrangela, by the same hand as <bibl>Add. 14,429<ptr target="http://syriaca.org/manuscript/85"/>
-                  </bibl>, about<origDate when="0719" calendar="Gregorian">A.D. 719</origDate>.</desc>
+                  </bibl>, about <origDate when="0719" calendar="Gregorian">A.D. 719</origDate>.</desc>
               </handNote>
               <handNote xml:id="handNote2" scope="minor" script="syr" medium="red-ink">
-                <desc>Lessons in red ink.<ref target="#addition1">See additions.</ref>
+                <desc>Lessons in red ink. <ref target="#addition1">See additions.</ref>
                 </desc>
               </handNote>
               <handNote xml:id="handNote3" scope="minor" script="grc" medium="unknown">
-                <desc>Rather elegant Greek characters.<ref target="#addition2">See additions.</ref>
+                <desc>Rather elegant Greek characters. <ref target="#addition2">See additions.</ref>
                 </desc>
               </handNote>
               <handNote xml:id="handNote4" scope="minor" script="syr" medium="unknown">
@@ -161,20 +174,22 @@
                 </desc>
               </handNote>
             </handDesc>
-            <decoDesc/>
+            <decoDesc>
+              <decoNote xml:id="decoNote1" type="rubrication"/>
+            </decoDesc>
             <additions>
               <note type="proofreader-note">N.B., folio location may not be available for some items below.</note>
               <list>
-                <item n="1" xml:id="addition1">
+                <item xml:id="addition1" n="1">
                   <ref target="#a1 #handNote2"/>
                   <p>The lessons are indicated on the margins in red ink, the end of each being marked by the letter<foreign xml:lang="syr">ܫ</foreign>.</p>
                 </item>
-                <item n="2" xml:id="addition2">
+                <item xml:id="addition2" n="2">
                   <locus from="14b" to="14b"/>
                   <ref target="#handNote3"/>
                   <p>On the margin of fol. 14b the words<foreign xml:lang="grc">ΔΑΙΔΑΝ</foreign>and<foreign xml:lang="grc">ΔΑΙΔΑΝΙΜ</foreign>are written.</p>
                 </item>
-                <item n="3" xml:id="addition3">
+                <item xml:id="addition3" n="3">
                   <ref target="#handNote4"/>
                   <p>There are many various readings and notes throughout the volume.</p>
                 </item>
@@ -195,22 +210,21 @@
             <adminInfo>
               <recordHist>
                 <source>Manuscript description based on<bibl>
-                    <ref target="#Wright">Wright's Catalogue</ref>
+                    <ref target="#Wrightpart">Wright's Catalogue</ref>
                   </bibl>. abbreviated by the Syriaca.org editors.</source>
               </recordHist>
-              <availability status="restricted"/>
-              <custodialHist/>
               <note/>
             </adminInfo>
             <listBibl>
-              <bibl xml:id="Wright">
+              <bibl xml:id="Wrightpart">
                 <author>William Wright</author>
                 <title xml:lang="en">Catalogue of Syriac Manuscripts in the British Museum Acquired since the Year 1838</title>
                 <pubPlace>London</pubPlace>
                 <date>1870</date>
                 <ptr target="http://syriaca.org/bibl/8"/>
                 <citedRange unit="entry">LXI</citedRange>
-                <citedRange unit="pp">I:39</citedRange>
+                <citedRange unit="pp">1:39</citedRange>
+              <ref type="internet-archive-pdf" target="https://archive.org/details/catalogueofsyria01brituoft/page/39"/>
               </bibl>
             </listBibl>
           </additional>
@@ -378,6 +392,8 @@
       </textClass>
     </profileDesc>
     <revisionDesc status="draft">
+      <change who="http://syriaca.org/documentation/editors.xml#kurban" when="2023-04-21-05:00">CHANGED: added or corrected folio extent values</change>
+      <change who="http://syriaca.org/documentation/editors.xml#aahn" when="2023-01-13-06:00">ADDED: added decoNote elements for decorations</change>
       <change who="http://syriaca.org/documentation/editors.xml#thannah" when="2013-07-16">CREATED: file</change>
       <change who="http://syriaca.org/documentation/editors.xml#dgreeson" when="2013-09-06">Initial edit</change>
       <change who="http://syriaca.org/documentation/editors.xml#pgmiller" when="2016-07-06">Changed: Files moved to srophe-app-data/data/manuscripts/tei repository.</change>

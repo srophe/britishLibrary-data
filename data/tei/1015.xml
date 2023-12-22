@@ -1,9 +1,9 @@
 <?oxygen RNGSchema="http://syriaca.org/documentation/syriaca-tei-main.rnc" type="compact"?>
 <?xml-stylesheet type="text/css" href="https://raw.githubusercontent.com/srophe/wright-catalogue/master/parameters/tei.css"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
-   <teiHeader>
-      <fileDesc>
-         <titleStmt>
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
         <title level="a" xml:lang="en">London, BL, Add. 17232</title>
         <title xml:lang="en" level="m">A Digital Catalogue of Syriac Manuscripts in the British Library</title>
         <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
@@ -43,11 +43,15 @@
           <resp>English text entry and proofreading by</resp>
           <name type="org" ref="http://syriaca.org/documentation/editors.xml#uasyriacaresearchgroup">Syriac Research Group, University of Alabama</name>
         </respStmt>
+      <respStmt>
+          <resp>Folio extent edited by</resp>
+          <name type="person" ref="http://syriaca.org/documentation/editors.xml#kurban">Kurt Urban</name>
+        </respStmt>
       </titleStmt>
-         <editionStmt>
+      <editionStmt>
         <edition n="1.0"/>
       </editionStmt>
-         <publicationStmt>
+      <publicationStmt>
         <authority>Syriaca.org: The Syriac Reference Portal</authority>
         <idno type="URI">http://syriaca.org/manuscript/1015/tei</idno>
         <availability>
@@ -56,11 +60,11 @@
             <p>Distributed under a Creative Commons Attribution 3.0 Unported License</p>
           </licence>
         </availability>
-        <date calendar="Gregorian"/>
+        <date calendar="Gregorian">2023-04-21-05:00</date>
       </publicationStmt>
-         <sourceDesc>
-            <msDesc xml:id="manuscript-1015">
-               <msIdentifier>
+      <sourceDesc>
+        <msDesc xml:id="manuscript-1015">
+          <msIdentifier>
             <country>United Kingdom</country>
             <settlement>London</settlement>
             <repository>British Library</repository>
@@ -68,6 +72,9 @@
             <idno type="URI">http://syriaca.org/manuscript/1015</idno>
             <altIdentifier>
               <idno type="BL-Shelfmark">Add. 17,232</idno>
+            </altIdentifier>
+            <altIdentifier>
+              <idno type="BL-Shelfmark-display">London, BL, Add. 17,232</idno>
             </altIdentifier>
             <altIdentifier>
               <idno type="BL-Shelmark-simplified">BL Add MS 17232</idno>
@@ -81,22 +88,24 @@
               <idno type="Wright-BL-Roman">CCCCLXIX</idno>
             </altIdentifier>
           </msIdentifier>
-          <head xmlns="'http://www.tei-c.org/ns/1.0'">
-            <note xmlns="http://www.tei-c.org/ns/1.0" type="contents-note">This manuscript contains: It is entitled a ܦܪܕܝܣܐ, "Paradise," or ܒܝܬ ܓܐܙܐ,"Treasury" (fol. 496 b), and contains a large collection of hymns, chants, and prayers, for various occasions. In total, including sub-sections, this manuscript contains 33 items. N.B., items have been renumbered by the editors and may not reflect Wright's original numeration.</note>
-            <listRelation xmlns="http://www.tei-c.org/ns/1.0" type="Wright-BL-Taxonomy">
+          <head>
+            <note type="contents-note">This manuscript contains: It is entitled a ܦܪܕܝܣܐ, "Paradise," or ܒܝܬ ܓܐܙܐ,"Treasury" (fol. 496 b), and contains a large collection of hymns, chants, and prayers, for various occasions. In total, including sub-sections, this manuscript contains 33 items.</note>
+            <listRelation type="Wright-BL-Taxonomy">
               <relation name="dcterms:type" ref="http://purl.org/dc/terms/type" active="http://syriaca.org/manuscript/1015" passive="#hymns">
                 <desc>Hymns</desc>
               </relation>
             </listRelation>
           </head>
-               <msContents>
+          <msContents>
             <textLang mainLang="syr"/>
             <msItem xml:id="a1" n="1" defective="true">
+              <locus from="1a"/>
               <title xml:lang="en">It is entitled a <foreign xml:lang="syr">ܦܪܕܝܣܐ</foreign>,
                         "Paradise," or<foreign xml:lang="syr"> ܒܝܬ ܓܐܙܐ</foreign>,"Treasury" (fol. 496 b), and
                         contains a large collection of hymns, chants, and prayers, for various
                         occasions.</title>
               <msItem xml:id="b1" n="2">
+                <locus from="1a"/>
                 <title xml:lang="en">The <foreign xml:lang="syr">ܡ̈ܥܢܝܬܐ</foreign> or hymns of <persName>Severus, patriarch of
                            <placeName ref="http://syriaca.org/place/10">Antioch</placeName>
                   </persName>, 351
@@ -328,7 +337,7 @@
               </msItem>
             </msItem>
           </msContents>
-               <physDesc>
+          <physDesc>
             <p>Paper, about 8 1/4 in. by 6 3/8, consisting of 497 leaves, many
                                     of which are stained with oil, and others much torn, especially
                                     foll. 1 —5, 12—14, 19, 235—238, 242, 343—346, 359, 360, and 491.
@@ -339,10 +348,10 @@
                                     234, 235, 236, 238, 239, 240, 241, 244, 245, 255, 265, 327, 338,
                                     343, 351, 371, and 381. There are from 22 to 30 lines in each
                                     page.</p>
-                  <objectDesc form="codex">
+            <objectDesc form="codex">
                      <supportDesc material="chart">
                         <extent>
-                           <measure unit="content_pending" quantity="-1"/>
+                           <measure type="composition" unit="leaf" quantity="497">497 ff.</measure>
                         </extent>
                         <foliation/>
                         <collation/>
@@ -364,12 +373,12 @@
                         </condition>
                      </supportDesc>
                   </objectDesc>
-                  <handDesc hands="1">
-              <handNote medium="unknown" xml:id="handNote1" scope="major" script="syr">
-                        <desc>This manuscript is written in a good, regular, current hand.</desc>
-                     </handNote>
+            <handDesc hands="1">
+              <handNote xml:id="handNote1" medium="unknown" scope="major" script="syr">
+                <desc>This manuscript is written in a good, regular, current hand.</desc>
+              </handNote>
             </handDesc>
-                  <additions>
+            <additions>
               <note type="proofreader-note">N.B., folio location may not be available for some items below.</note>
               <p/>
               <list>
@@ -421,9 +430,9 @@
                 </item>
               </list>
             </additions>
-                  <accMat/>
-               </physDesc>
-               <history>
+            <accMat/>
+          </physDesc>
+          <history>
                   <origin>
                      <origDate calendar="Gregorian" when="1210">It is dated A.D.
                         1210.</origDate>
@@ -434,18 +443,18 @@
                   <provenance/>
                   <acquisition/>
                </history>
-               <additional>
+          <additional>
             <adminInfo>
               <recordHist>
                 <source>Manuscript description based on<bibl>
-                    <ref target="#Wright">Wright's
+                    <ref target="#Wrightpart">Wright's
                       Catalogue</ref>
                   </bibl>. abbreviated by the Syriaca.org editors.</source>
               </recordHist>
               <note/>
             </adminInfo>
             <listBibl>
-              <bibl xml:id="Wright">
+              <bibl xml:id="Wrightpart">
                 <author>William Wright</author>
                 <title xml:lang="en">Catalogue of Syriac Manuscripts in the British Museum Acquired
                   since the Year 1838</title>
@@ -454,13 +463,14 @@
                 <ptr target="http://syriaca.org/bibl/8"/>
                 <citedRange unit="entry">CCCCLXIX</citedRange>
                 <citedRange unit="pp">1:371-374</citedRange>
+              <ref type="internet-archive-pdf" target="https://archive.org/details/catalogueofsyria01brituoft/page/371"/>
               </bibl>
             </listBibl>
           </additional>
-            </msDesc>
-         </sourceDesc>
-      </fileDesc>
-      <encodingDesc>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
       <editorialDecl>
         <interpretation>
           <p>Description is based on Wright's Catalogue without consultation of physical
@@ -591,7 +601,7 @@
         </taxonomy>
       </classDecl>
     </encodingDesc>
-      <profileDesc>
+    <profileDesc>
       <langUsage>
         <language ident="syr">Unvocalized Syriac of any variety or period</language>
         <language ident="syr-Syre">Syriac in Estrangela</language>
@@ -620,7 +630,8 @@
         </keywords>
       </textClass>
     </profileDesc>
-      <revisionDesc status="draft">
+    <revisionDesc status="draft">
+      <change who="http://syriaca.org/documentation/editors.xml#kurban" when="2023-04-21-05:00">CHANGED: added or corrected folio extent values</change>
          <change who="http://syriaca.org/documentation/editors.xml#srophe-util" when="2020-04-23-05:00">CHANGED: deleted empty elements and attributes</change>
       <change who="http://syriaca.org/documentation/editors.xml#srophe-util" when="2020-04-23-05:00">CHANGED: Added project metadata; metadata from Wright Decoder; msItem, handDesc, and additions enumeration; Wright Taxonomy designation</change>
       <change who="http://syriaca.org/documentation/editors.xml#jpagan" when="2020-03-01">Initial
@@ -629,11 +640,11 @@
          <change type="planned" subtype="checkSyriac">The Syriac copied from the Word Document needs
             to be checked for accuracy</change>
       </revisionDesc>
-   </teiHeader>
-   <facsimile>
+  </teiHeader>
+  <facsimile>
       <formula>Content pending</formula>
    </facsimile>
-   <text>
+  <text>
       <body>
          <bibl>Content pending</bibl>
       </body>

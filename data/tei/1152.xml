@@ -1,9 +1,9 @@
 <?oxygen RNGSchema="http://syriaca.org/documentation/syriaca-tei-main.rnc" type="compact"?>
 <?xml-stylesheet type="text/css" href="https://raw.githubusercontent.com/srophe/wright-catalogue/master/parameters/tei.css"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
-   <teiHeader>
-      <fileDesc>
-         <titleStmt>
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
         <title level="a" xml:lang="en"/>
         <title xml:lang="en" level="m">A Digital Catalogue of Syriac Manuscripts in the British Library</title>
         <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
@@ -43,11 +43,19 @@
           <resp>English text entry and proofreading by</resp>
           <name type="org" ref="http://syriaca.org/documentation/editors.xml#uasyriacaresearchgroup">Syriac Research Group, University of Alabama</name>
         </respStmt>
+      <respStmt>
+          <resp>Locus information for manuscript items added by</resp>
+          <name type="person" ref="http://syriaca.org/documentation/editors.xml#zzhang">Ziyan Zhang</name>
+        </respStmt>
+      <respStmt>
+          <resp>Folio extent edited by</resp>
+          <name type="person" ref="http://syriaca.org/documentation/editors.xml#kurban">Kurt Urban</name>
+        </respStmt>
       </titleStmt>
-         <editionStmt>
+      <editionStmt>
         <edition n="1.0"/>
       </editionStmt>
-         <publicationStmt>
+      <publicationStmt>
         <authority>Syriaca.org: The Syriac Reference Portal</authority>
         <idno type="URI">http://syriaca.org/manuscript/1152/tei</idno>
         <availability>
@@ -56,11 +64,11 @@
             <p>Distributed under a Creative Commons Attribution 3.0 Unported License</p>
           </licence>
         </availability>
-        <date calendar="Gregorian"/>
+        <date calendar="Gregorian">2023-04-21-05:00</date>
       </publicationStmt>
-         <sourceDesc>
-            <msDesc xml:id="manuscript-1152">
-               <msIdentifier>
+      <sourceDesc>
+        <msDesc xml:id="manuscript-1152">
+          <msIdentifier>
             <country>United Kingdom</country>
             <settlement>London</settlement>
             <repository>British Library</repository>
@@ -68,6 +76,9 @@
             <idno type="URI">http://syriaca.org/manuscript/1152</idno>
             <altIdentifier>
               <idno type="BL-Shelfmark"/>
+            </altIdentifier>
+            <altIdentifier>
+              <idno type="BL-Shelfmark-display">London, BL, </idno>
             </altIdentifier>
             <altIdentifier>
               <idno type="BL-Shelmark-simplified"/>
@@ -81,21 +92,21 @@
               <idno type="Wright-BL-Roman">CCCV</idno>
             </altIdentifier>
           </msIdentifier>
-          <head xmlns="'http://www.tei-c.org/ns/1.0'">
-            <note xmlns="http://www.tei-c.org/ns/1.0" type="contents-note">This manuscript contains: The Order of the Solemnization of Matrimony. ; Taking of Hands in Karshūnī. ; A short tract on Humility. ; The form of Absolution, in Karshūnī. In total, including sub-sections, this manuscript contains 12 items. N.B., items have been renumbered by the editors and may not reflect Wright's original numeration.</note>
-            <listRelation xmlns="http://www.tei-c.org/ns/1.0" type="Wright-BL-Taxonomy">
+          <head>
+            <note type="contents-note">This manuscript contains: The Order of the Solemnization of Matrimony.; Taking of Hands in Karshūnī.; A short tract on Humility.; The form of Absolution, in Karshūnī. In total, including sub-sections, this manuscript contains 12 items.</note>
+            <listRelation type="Wright-BL-Taxonomy">
               <relation name="dcterms:type" ref="http://purl.org/dc/terms/type" active="http://syriaca.org/manuscript/1152" passive="#sacerdotals">
                 <desc>Sacerdotals</desc>
               </relation>
             </listRelation>
           </head>
-               <msContents>
+          <msContents>
             <textLang mainLang="syr"/>
             <msItem xml:id="a1" n="1" defective="true">
               <locus from="2b"/>
               <title xml:lang="en">The Order of the Solemnization of
                         Matrimony.</title>
-              <rubric xml:lang="syr-Syrn">ܒܫܸܡ ܐܒ̣ܐ ܣܓ̣ܝ̣ܕ ܐܘܼܣܝܵܐ̣. ܘܲܒܪܐ ܚܲܝܠܹܗ ܡܬ݂ܘܿܡܵܝܐ.
+              <rubric xml:lang="syr">ܒܫܸܡ ܐܒ̣ܐ ܣܓ̣ܝ̣ܕ ܐܘܼܣܝܵܐ̣. ܘܲܒܪܐ ܚܲܝܠܹܗ ܡܬ݂ܘܿܡܵܝܐ.
                         ܘܪܘܼܚܐ ܢܵܦܘܿܩܵܐ ܚܲܝܵܐ̣.ܬܠܵܬ̣ܵܐ ܩܢܘ̈ܡܐ ܚܲܕ ܡܵܪܝܐ܀ ܡܫܲܪܹܐ ܥܲܒ̣ܕܵܐ ܚܲܛܵܝܐ̣.
                         ܕܢܸܟ݂ܬ݁ܘܿܒ݂ ܛܲܟ݂ܣܵܐ ܕܡܟ݂ܘܼܪܝܐ. ܕܒ̈ܢܝ ܥܵܠܡܐ ܒܫܘܼܡܠܝܐ̣. ܡܵܪܢ ܡܲܢܲܥܝܢܝ
                         ܠܫܘܼܡܠܵܝܐ ܒܪ̈ܚܡܝܟ ܐܘܿ ܒܲܪܥܸܠܵܝܐ</rubric>
@@ -109,19 +120,20 @@
               <msItem xml:id="b2" n="3">
                 <locus to="10" from="4b">Foll. 4b-10</locus>
                 <title xml:lang="en">The Benediction of the Garments.</title>
-                <rubric xml:lang="syr-Syrn">ܛܲܟ݂ܣܵܐ ܕܥܲܠ ܡܵܐܢܹ̈ܐ ܕܩܘܕܵܫ ܡܵܐܢܹ̈ܐ</rubric>
+                <rubric xml:lang="syr">ܛܲܟ݂ܣܵܐ ܕܥܲܠ ܡܵܐܢܹ̈ܐ ܕܩܘܕܵܫ ܡܵܐܢܹ̈ܐ</rubric>
                 <rubric xml:lang="syr">ܛܲܟ݂ܣܵܐ</rubric>
               </msItem>
               <msItem xml:id="b3" n="4">
                 <locus to="14" from="10b">Foll. 10b-14</locus>
                 <title xml:lang="en">The Marriage.</title>
-                <rubric xml:lang="syr-Syrn">ܛܲܟ݂ܣܵܐ ܕܲܡܟ݂ܘܼܪܝܵܐ</rubric>
+                <rubric xml:lang="syr">ܛܲܟ݂ܣܵܐ ܕܲܡܟ݂ܘܼܪܝܵܐ</rubric>
               </msItem>
               <msItem xml:id="b4" n="5">
                 <locus to="22" from="15a">Foll. 15a-22</locus>
                 <title xml:lang="en">The ceremony of Coronation.</title>
-                <rubric xml:lang="syr-Syrn">ܛܲܟ݂ܣܵܐ ܕܟ݂ܘܼܠܵܠܵܐ</rubric>
+                <rubric xml:lang="syr">ܛܲܟ݂ܣܵܐ ܕܟ݂ܘܼܠܵܠܵܐ</rubric>
                 <msItem xml:id="c1" n="6">
+                  <locus to="22" from="15a">Foll. 15a-22</locus>
                   <title xml:lang="en">Containing a lesson from the <bibl>Gospel of
                               <persName ref="http://syriaca.org/person/1826">S. John</persName>, ch. ii. 1—11</bibl>, written in
                               Karshūnī.</title>
@@ -131,18 +143,19 @@
               <msItem xml:id="b5" n="7">
                 <locus to="24" from="23a">Foll. 23a-24</locus>
                 <title xml:lang="en">The Benediction of the Bridegroom.</title>
-                <rubric xml:lang="syr-Syrn">ܒܘܼܪܟ݁ܬ݂ܵܐ ܕܚܲܬ݂ܢܵܐ </rubric>
+                <rubric xml:lang="syr">ܒܘܼܪܟ݁ܬ݂ܵܐ ܕܚܲܬ݂ܢܵܐ </rubric>
               </msItem>
               <msItem xml:id="b6" n="8">
                 <locus to="27" from="25a">Foll. 25a-27</locus>
                 <title xml:lang="en">The Benediction of the Bride.</title>
-                <rubric xml:lang="syr-Syrn">ܒܘܼܪܟ݁ܬ݂ܵܐ ܕܟܲܠܬ݂ܐ</rubric>
+                <rubric xml:lang="syr">ܒܘܼܪܟ݁ܬ݂ܵܐ ܕܟܲܠܬ݂ܐ</rubric>
                 <note>This and the previous benediction are alphabetical prayers.</note>
               </msItem>
               <msItem xml:id="b7" n="9">
+                <locus from="27"/>
                 <title xml:lang="en">The Knotting (or Setting up) of the Bridal
                            Chamber.</title>
-                <rubric xml:lang="syr-Syrn"> ܒܘܼܪܵܟ ܩ̣ܛܪ ܓܢܘܿܢܵܐ</rubric>
+                <rubric xml:lang="syr"> ܒܘܼܪܵܟ ܩ̣ܛܪ ܓܢܘܿܢܵܐ</rubric>
                 <rubric xml:lang="syr">ܛܲܟ݂ܣܵܐ ܕܩ̣ܛܪ ܓܢܘܿܢܵܐ</rubric>
                 <note xml:lang="en">Compare <bibl>Denzinger, Ritus Orientalium, t. ii., p. 420</bibl>; <bibl>Badger, The Nestorians and their Rituals, t. ii., p.244</bibl>.</note>
               </msItem>
@@ -157,7 +170,7 @@
             <msItem xml:id="a3" n="11">
               <locus to="36" from="34b">Foll. 34b-36</locus>
               <title xml:lang="en">A short tract on Humility.</title>
-              <rubric xml:lang="syr-Syrn">ܥܲܠ ܡܲܟ݁ܝ̣ܟܘܼܬ݂ܵܐ ܕܒܲܐܝܠܹܝܢ ܫܡܵܗܹ̈ܐ ܫܲܡܗܘܼܗ̇
+              <rubric xml:lang="syr">ܥܲܠ ܡܲܟ݁ܝ̣ܟܘܼܬ݂ܵܐ ܕܒܲܐܝܠܹܝܢ ܫܡܵܗܹ̈ܐ ܫܲܡܗܘܼܗ̇
                         ܝ̣ܚܝ̣ܕ̈ܝܐ ܘܒܲܕܹܩܘ ܠܢ ܥܲܠ ܫܘܼܦܪܹ̈ܝܗ̇ ܘܝܲܩܪܘܿܗ</rubric>
               <incipit xml:lang="syr"> ܡܵܪܢ ܠܡܲܟ݁ܝ̣ܟܘܼܬ݂ܵܐ ܐܲܪܥܵܐ ܕܝܵܪܬܘܼܬܵܐ ܕܡܲܠܟ݁ܘܼܬ݂ ܫܡܲܝܐ
                         ܡܠ̣ܟ܀</incipit>
@@ -170,12 +183,15 @@
                 ܟܲܛܝّ̣ܬܟ. ܘܝܲܪܫܸܕܟ݁ ܐܸܠܵܝ ܐܲܠܚܲܝܵܐܬ݁ ܐܲܠܕܵܐܝܡܹܗ ܐܵܡܝ̣ܢ܀</incipit>
             </msItem>
           </msContents>
-               <physDesc>
+          <physDesc>
             <p>Paper, about 8 1/2 in. by 5 5/8, consisting of 37 leaves. The
                                     quires, signed with letters, are four in number. There are 18
                                     lines in each page. </p>
-                  <objectDesc form="codex">
+            <objectDesc form="codex">
                      <supportDesc material="chart">
+                <extent>
+                  <measure type="composition" unit="leaf" quantity="37">37 ff.</measure>
+                </extent>
                         <foliation/>
                         <collation/>
                         <condition>
@@ -189,23 +205,23 @@
                         </condition>
                      </supportDesc>
                   </objectDesc>
-                  <handDesc hands="2">
-              <handNote medium="unknown" xml:id="handNote1" scope="major" script="syr-Syrn">
-                        <desc>This volume is written in a good, regular, Nestorian character, with
+            <handDesc hands="2">
+              <handNote xml:id="handNote1" medium="unknown" scope="major" script="syr-Syrn">
+                <desc>This volume is written in a good, regular, Nestorian character, with
                            numerous vowel-points, etc.</desc>
-                     </handNote>
-              <handNote medium="unknown" xml:id="handNote2" scope="minor" script="ar-Syrc">
-                        <desc>Fol. 22 is a later insertion.</desc>
-                     </handNote>
+              </handNote>
+              <handNote xml:id="handNote2" medium="unknown" scope="minor" script="ar-Syrc">
+                <desc>Fol. 22 is a later insertion.</desc>
+              </handNote>
             </handDesc>
-                  <additions>
+            <additions>
               <note type="proofreader-note">N.B., folio location may not be available for some items below.</note>
               <p/>
               <list>
                 <item xml:id="addition1" n="1">
                   <label>Colophon</label>
-                           <locus/>
-                           <p>The colophon, fol. 31 a, states that the book was written, <date calendar="Gregorian" when="1683">A.D. 1683</date>,
+                  <locus/>
+                  <p>The colophon, fol. 31 a, states that the book was written, <date calendar="Gregorian" when="1683">A.D. 1683</date>,
                               by the (Roman Catholic) <persName ref="http://syriaca.org/person/812">patriarch Joseph I</persName>., <note>See
                                  <bibl>Assemani, Bibl. Or., t. ii., p. 457; Le Quien, Or. Christ., t.ii., col. 1161.</bibl>
                     </note> in the city of <placeName ref="http://syriaca.org/place/8">Amid</placeName>. </p>
@@ -219,28 +235,28 @@
                                  ܫܸܡܥܘܿܢܵܝܬܐ. ܘܥܲܫܝ̣ܢܬ݀ ܒܟ݂ܵܪܘܿܙܘܼܬܵܐ ܦܵܘܠܘܿܣܵܝܬܵܐ. ܐܵܡܸܕ ܕܣܝ̣ܡܵܐ
                                  ܘܒܲܢܝܵܐ ܠܥܹܠ ܡ̣ܢ ܕܸܩܠܬ݂ ܢܲܗܪܵܐ ܥܕܹܢܵܝܐ ܏ܘܫ.</quote>
                   </p>
-                        </item>
+                </item>
                 <item xml:id="addition2" n="2">
-                           <locus/>
-                           <p>On fol. 1 a there is a note in Italian, enumerating the contents of
+                  <locus/>
+                  <p>On fol. 1 a there is a note in Italian, enumerating the contents of
                               the book.</p>
-                           <p>
+                  <p>
                               <quote xml:lang="it">"<persName ref="http://syriaca.org/person/812">Joseph I</persName>. Libro msto
                                  caldaico, in lingua caldaica ed arabica, in 8. contiene 1. Il Rito
                                  intiero de Matrimonij, cioe benedizione delle vesti," etc.</quote>
                            </p>
-                        </item>
+                </item>
                 <item xml:id="addition3" n="3">
-                           <locus/>
-                           <p>This book once belonged to <persName>Dr. Adam Clarke</persName>. See
+                  <locus/>
+                  <p>This book once belonged to <persName>Dr. Adam Clarke</persName>. See
                               the <bibl>Catalogue of his MSS. by <persName>J. B. B.
                                     Clarke</persName>, p. 202, no. 247</bibl>.</p>
-                        </item>
+                </item>
               </list>
             </additions>
-                  <accMat/>
-               </physDesc>
-               <history>
+            <accMat/>
+          </physDesc>
+          <history>
                   <origin>
                      <origDate when="1683">It is dated A.D.
                         1683.</origDate>
@@ -249,18 +265,18 @@
                   <provenance/>
                   <acquisition/>
                </history>
-               <additional>
+          <additional>
             <adminInfo>
               <recordHist>
                 <source>Manuscript description based on<bibl>
-                    <ref target="#Wright">Wright's
+                    <ref target="#Wrightpart">Wright's
                       Catalogue</ref>
                   </bibl>. abbreviated by the Syriaca.org editors.</source>
               </recordHist>
               <note/>
             </adminInfo>
             <listBibl>
-              <bibl xml:id="Wright">
+              <bibl xml:id="Wrightpart">
                 <author>William Wright</author>
                 <title xml:lang="en">Catalogue of Syriac Manuscripts in the British Museum Acquired
                   since the Year 1838</title>
@@ -269,13 +285,14 @@
                 <ptr target="http://syriaca.org/bibl/8"/>
                 <citedRange unit="entry">CCCV</citedRange>
                 <citedRange unit="pp">1:237-239</citedRange>
+              <ref type="internet-archive-pdf" target="https://archive.org/details/catalogueofsyria01brituoft/page/237"/>
               </bibl>
             </listBibl>
           </additional>
-            </msDesc>
-         </sourceDesc>
-      </fileDesc>
-      <encodingDesc>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
       <editorialDecl>
         <interpretation>
           <p>Description is based on Wright's Catalogue without consultation of physical
@@ -406,7 +423,7 @@
         </taxonomy>
       </classDecl>
     </encodingDesc>
-      <profileDesc>
+    <profileDesc>
       <langUsage>
         <language ident="syr">Unvocalized Syriac of any variety or period</language>
         <language ident="syr-Syre">Syriac in Estrangela</language>
@@ -435,7 +452,9 @@
         </keywords>
       </textClass>
     </profileDesc>
-      <revisionDesc status="draft">
+    <revisionDesc status="draft">
+      <change who="http://syriaca.org/documentation/editors.xml#kurban" when="2023-04-21-05:00">CHANGED: added or corrected folio extent values</change>
+      <change who="http://syriaca.org/documentation/editors.xml#zzhang" when="2023-01-13-06:00">ADDED: added missing locus information for msItems</change>
          <change who="http://syriaca.org/documentation/editors.xml#srophe-util" when="2020-04-24-05:00">CHANGED: deleted empty elements and attributes</change>
       <change who="http://syriaca.org/documentation/editors.xml#srophe-util" when="2020-04-24-05:00">CHANGED: Added project metadata; metadata from Wright Decoder; msItem, handDesc, and additions enumeration; Wright Taxonomy designation</change>
       <change who="http://syriaca.org/documentation/editors.xml#jpagan" when="2020-02-17">Initial
@@ -444,11 +463,11 @@
             needs to be checked.</change>
          <change type="planned" subtype="syriac">Add in missing Syriac characters.</change>
       </revisionDesc>
-   </teiHeader>
-   <facsimile>
+  </teiHeader>
+  <facsimile>
       <formula>Content pending</formula>
    </facsimile>
-   <text>
+  <text>
       <body>
          <bibl>Content pending</bibl>
       </body>

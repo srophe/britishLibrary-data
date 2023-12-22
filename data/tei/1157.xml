@@ -1,9 +1,9 @@
 <?oxygen RNGSchema="http://syriaca.org/documentation/syriaca-tei-main.rnc" type="compact"?>
 <?xml-stylesheet type="text/css" href="https://raw.githubusercontent.com/srophe/wright-catalogue/master/parameters/tei.css"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
-   <teiHeader>
-      <fileDesc>
-         <titleStmt>
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
         <title level="a" xml:lang="en"/>
         <title xml:lang="en" level="m">A Digital Catalogue of Syriac Manuscripts in the British Library</title>
         <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
@@ -43,11 +43,15 @@
           <resp>English text entry and proofreading by</resp>
           <name type="org" ref="http://syriaca.org/documentation/editors.xml#uasyriacaresearchgroup">Syriac Research Group, University of Alabama</name>
         </respStmt>
+      <respStmt>
+          <resp>Folio extent edited by</resp>
+          <name type="person" ref="http://syriaca.org/documentation/editors.xml#kurban">Kurt Urban</name>
+        </respStmt>
       </titleStmt>
-         <editionStmt>
+      <editionStmt>
         <edition n="1.0"/>
       </editionStmt>
-         <publicationStmt>
+      <publicationStmt>
         <authority>Syriaca.org: The Syriac Reference Portal</authority>
         <idno type="URI">http://syriaca.org/manuscript/1157/tei</idno>
         <availability>
@@ -56,11 +60,11 @@
             <p>Distributed under a Creative Commons Attribution 3.0 Unported License</p>
           </licence>
         </availability>
-        <date calendar="Gregorian"/>
+        <date calendar="Gregorian">2023-04-21-05:00</date>
       </publicationStmt>
-         <sourceDesc>
-            <msDesc xml:id="manuscript-1157">
-               <msIdentifier>
+      <sourceDesc>
+        <msDesc xml:id="manuscript-1157">
+          <msIdentifier>
             <country>United Kingdom</country>
             <settlement>London</settlement>
             <repository>British Library</repository>
@@ -68,6 +72,9 @@
             <idno type="URI">http://syriaca.org/manuscript/1157</idno>
             <altIdentifier>
               <idno type="BL-Shelfmark"/>
+            </altIdentifier>
+            <altIdentifier>
+              <idno type="BL-Shelfmark-display">London, BL, </idno>
             </altIdentifier>
             <altIdentifier>
               <idno type="BL-Shelmark-simplified"/>
@@ -81,15 +88,15 @@
               <idno type="Wright-BL-Roman">CCCIV</idno>
             </altIdentifier>
           </msIdentifier>
-          <head xmlns="'http://www.tei-c.org/ns/1.0'">
-            <note xmlns="http://www.tei-c.org/ns/1.0" type="contents-note">This manuscript contains: Maronite Offices, chiefly in Syriac, with Karshuni translations of some portions. In total, including sub-sections, this manuscript contains 17 items. N.B., items have been renumbered by the editors and may not reflect Wright's original numeration.</note>
-            <listRelation xmlns="http://www.tei-c.org/ns/1.0" type="Wright-BL-Taxonomy">
+          <head>
+            <note type="contents-note">This manuscript contains: Maronite Offices, chiefly in Syriac, with Karshuni translations of some portions. In total, including sub-sections, this manuscript contains 17 items.</note>
+            <listRelation type="Wright-BL-Taxonomy">
               <relation name="dcterms:type" ref="http://purl.org/dc/terms/type" active="http://syriaca.org/manuscript/1157" passive="#sacerdotals">
                 <desc>Sacerdotals</desc>
               </relation>
             </listRelation>
           </head>
-               <msContents>
+          <msContents>
             <textLang mainLang="syr"/>
             <msItem xml:id="a1" n="1" defective="false">
               <locus to="171" from="1">Foll. 1-171</locus>
@@ -196,13 +203,16 @@
               </msItem>
             </msItem>
           </msContents>
-               <physDesc>
+          <physDesc>
             <p>Paper, about 8 7/8 in. by 6 1/4, consisting of 171 leaves. The
                                     quires have no signatures. There are from 17 to 23 lines in each
                                     page. In the first and larger half of the volume (foll. 3—104),
                                     each page is divided into two columns; in the other, not. </p>
-                  <objectDesc form="codex">
+            <objectDesc form="codex">
                      <supportDesc material="chart">
+                <extent>
+                  <measure type="composition" unit="leaf" quantity="171">171 ff.</measure>
+                </extent>
                         <foliation/>
                         <collation/>
                         <condition>
@@ -217,19 +227,19 @@
                         </condition>
                      </supportDesc>
                   </objectDesc>
-                  <handDesc hands="1">
-              <handNote medium="unknown" xml:id="handNote1" scope="sole" script="syr">
-                        <desc>This manuscript is written in a rather inelegant hand.</desc>
-                     </handNote>
+            <handDesc hands="1">
+              <handNote xml:id="handNote1" medium="unknown" scope="sole" script="syr">
+                <desc>This manuscript is written in a rather inelegant hand.</desc>
+              </handNote>
             </handDesc>
-                  <additions>
+            <additions>
               <note type="proofreader-note">N.B., folio location may not be available for some items below.</note>
               <p/>
               <list>
                 <item xml:id="addition1" n="1">
                   <label>Colophon</label>
-                           <locus/>
-                           <p>At the end of the first part of the volume, on fol. 105 a, there is a
+                  <locus/>
+                  <p>At the end of the first part of the volume, on fol. 105 a, there is a
                               note, which states that it was written by <persName>Maryam (Mary)</persName>, the
                                  daughter of the priest <persName>Yūhannān</persName> or
                                  <persName>Hannā</persName>
@@ -241,7 +251,7 @@
                     , <date calendar="Gregorian" when="1701">A.D. 1701</date>. See,
                                  <bibl>Stephanus II. See Le Quien, Oriens Christ., t. iii, col.
                                  72</bibl>.</p>
-                           <p>
+                  <p>
                     <quote xml:lang="syr">ܟܡܠܬ ܗܕܐ ܐܠܫܪܛܘܢܝܗ ܐܠܬܝ ܬܚܘَܝ̣ ܪܣܐܡܗ̈ ܕܪܓܐܬ ܐܠܟܢܝܣܗ ܐܠܬܝ
                       ܦܣ̈ܠܛܐ ܘܩܪܘܝܐ ܕܐܘܦܕܝܩܢܐ ܘܡܫܡܫܢܐ ܕܐܪܟܕܝܩܢ ܘܩܫܝܫܐ ܘܦܪܝܕܝܘܛܐ ܥܠܝ ܝَܕّ ܐܡܪܐܗ ܟܐܛܝܗ
                       ܐܠܟܣܠܐܢܗ ܦܝ ܐܦܐܥܐܠ(sic) ܐܠܟܝܪ ܡܪܝܡ ܐܠܪܐܗܒܗ ܡܢ ܕܝܪ ܡܐܪ ܝܚܢܐ ܚܪܐܫ. ܒܢܬ ܐܠܟܘܪܝ
@@ -253,37 +263,37 @@
                       ܠܣܟ̣ܕܪ(sic) ܐܒܢ ܦܝܠܒܘܣ ܐܠܝܘܢܐܢܝ. ܘܠܣܢܗ̈ ܐ܏ܩܝܒ ܠܗܐܓܪܗ ܐܠܡܣܠܡܝܢ. ܘܠܐܒܘܢܐ ܐܕܡ
                       ܙܒܦ܏ܕܝܚ. ܦܝ ܐܘܠ ܝܘܡ ܡܢ ܫܗܪ ܟܐܢܘܢ ܐܠܬܐܢܝ ܝܘܡ ܟ݂ܬܐܢܗ̈ ܪܒܢܐ ܝܣܘܥ ܐܠܡܣ. </quote>
                   </p>
-                        </item>
+                </item>
                 <item xml:id="addition2" n="2">
                   <label>Colophon</label>
-                           <locus/>
-                           <p>Similarly, on fol. 85 a.</p>
-                           <p>
+                  <locus/>
+                  <p>Similarly, on fol. 85 a.</p>
+                  <p>
                               <quote xml:lang="syr">ܫܠ̣ܡ ܕܥܠ ܐܝ̈ܕܝ ܚܛܝ̇ܬܐ ܣ̇ܓܝ ܡܢ ܟܠ ܐ̱ܢܫ ܘܡܬܩܪܝܐ
                                  ܫܡܗ̇ ܡܪܝܡ ܡܢ ܩܪܝܬܐ ܡܒܪܟܬܐ ܕܪܥܘܢ ܒܪܬܗ̇ ܟܘܪܝܐ(sic) ܝܘܚܢܢ ܡܢ ܒܝܬܐ
                                  ܓܪܒܝܝܐ ܫܢܬ ܐ܏ܥܐ ܡܪ̈ܢܝܐ.</quote>
                            </p>
-                        </item>
+                </item>
                 <item xml:id="addition3" n="3">
                   <label>Colophon</label>
-                           <locus/>
-                           <p>At the end of the second part, fol. 171 a, is the following note,
+                  <locus/>
+                  <p>At the end of the second part, fol. 171 a, is the following note,
                               giving the date <date calendar="Gregorian" when="1702">A.D. 1702</date>. </p>
-                           <p>
+                  <p>
                               <quote xml:lang="syr">ܐܟ݁ܬܡܠܘ ܗܘَܠܐܝ ܐܠܟܬܟ݁ܐܪܝܣ ܐܠܕܝܢ ܗَܡ ܐܠܒܝܥܗ.
                       ܘܐܠܡܕܒܚ ܘܐܠܡܥܡܘܕܝܗ ܘܐܠܛܒܠܝܬ ܘܐܠܬܬܒܝܬ. ܥܠܝ ܝܕ ܐܚܩܪ ܐܠܢܐܣ ܡܪܝܐܡ ܐܠܪܐܗܒܗ ܒܢܬ
                       ܐܠܟ݂ܘܪܝ ܚܢܐ ܡܢ ܩܪܝܗ̈ ܕܪܥܘܢ ܘܟ݁ܐܢ ܦܝ ܬܐܪܝܟ ܣܢܗ̈ ܐ܏ܥܒ ܪܒܐܢ.</quote>
                            </p>
-                        </item>
+                </item>
                 <item xml:id="addition4" n="4">
                   <locus/>
                   <p>Fol. 1 a contains some account of the contents of this volume in French.</p>
                 </item>
               </list>
             </additions>
-                  <accMat/>
-               </physDesc>
-               <history>
+            <accMat/>
+          </physDesc>
+          <history>
                   <origin>
                      <origDate from="1701" to="1702">It is dated
                         A.D. 1701-2. </origDate>
@@ -292,18 +302,18 @@
                   <provenance/>
                   <acquisition/>
                </history>
-               <additional>
+          <additional>
             <adminInfo>
               <recordHist>
                 <source>Manuscript description based on<bibl>
-                    <ref target="#Wright">Wright's
+                    <ref target="#Wrightpart">Wright's
                       Catalogue</ref>
                   </bibl>. abbreviated by the Syriaca.org editors.</source>
               </recordHist>
               <note/>
             </adminInfo>
             <listBibl>
-              <bibl xml:id="Wright">
+              <bibl xml:id="Wrightpart">
                 <author>William Wright</author>
                 <title xml:lang="en">Catalogue of Syriac Manuscripts in the British Museum Acquired
                   since the Year 1838</title>
@@ -312,13 +322,14 @@
                 <ptr target="http://syriaca.org/bibl/8"/>
                 <citedRange unit="entry">CCCIV</citedRange>
                 <citedRange unit="pp">1:236-237</citedRange>
+              <ref type="internet-archive-pdf" target="https://archive.org/details/catalogueofsyria01brituoft/page/236"/>
               </bibl>
             </listBibl>
           </additional>
-            </msDesc>
-         </sourceDesc>
-      </fileDesc>
-      <encodingDesc>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
       <editorialDecl>
         <interpretation>
           <p>Description is based on Wright's Catalogue without consultation of physical
@@ -449,7 +460,7 @@
         </taxonomy>
       </classDecl>
     </encodingDesc>
-      <profileDesc>
+    <profileDesc>
       <langUsage>
         <language ident="syr">Unvocalized Syriac of any variety or period</language>
         <language ident="syr-Syre">Syriac in Estrangela</language>
@@ -478,7 +489,8 @@
         </keywords>
       </textClass>
     </profileDesc>
-      <revisionDesc status="draft">
+    <revisionDesc status="draft">
+      <change who="http://syriaca.org/documentation/editors.xml#kurban" when="2023-04-21-05:00">CHANGED: added or corrected folio extent values</change>
          <change who="http://syriaca.org/documentation/editors.xml#srophe-util" when="2020-04-24-05:00">CHANGED: deleted empty elements and attributes</change>
       <change who="http://syriaca.org/documentation/editors.xml#srophe-util" when="2020-04-24-05:00">CHANGED: Added project metadata; metadata from Wright Decoder; msItem, handDesc, and additions enumeration; Wright Taxonomy designation</change>
       <change who="http://syriaca.org/documentation/editors.xml#jpagan" when="2020-02-08">Initial
@@ -486,11 +498,11 @@
          <change type="planned" subtype="arabic">Add missing Arabic text. LR: Double check Arabic
         vowels. Arabic text has been added</change>
       </revisionDesc>
-   </teiHeader>
-   <facsimile>
+  </teiHeader>
+  <facsimile>
       <formula>Content pending</formula>
    </facsimile>
-   <text>
+  <text>
       <body>
          <bibl>Content pending</bibl>
       </body>

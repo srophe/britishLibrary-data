@@ -1,6 +1,6 @@
 <?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/srophe-app/documentation/enrich-syriaca.rnc" type="application/relax-ng-compact-syntax"?>
 <?xml-stylesheet type="text/css" href="SRPEnrichCSS.css"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -42,6 +42,10 @@
           <resp>English text entry and proofreading by</resp>
           <name type="org" ref="http://syriaca.org/documentation/editors.xml#uasyriacaresearchgroup">Syriac Research Group, University of Alabama</name>
         </respStmt>
+      <respStmt>
+          <resp>Folio extent edited by</resp>
+          <name type="person" ref="http://syriaca.org/documentation/editors.xml#kurban">Kurt Urban</name>
+        </respStmt>
       </titleStmt>
       <editionStmt>
         <edition n="1.0"/>
@@ -56,9 +60,7 @@
             <p>Distributed under a Creative Commons Attribution 3.0 Unported License</p>
           </licence>
         </availability>
-        <date calendar="Gregorian">
-          <!-- Our date of publication of this XML document-->
-        </date>
+        <date calendar="Gregorian">2023-04-21-05:00</date>
       </publicationStmt>
       <sourceDesc>
         <msDesc xml:id="manuscript-114" xml:lang="en">
@@ -72,12 +74,15 @@
               <idno type="BL-Shelfmark">Add. 14,444</idno>
             </altIdentifier>
             <altIdentifier>
+              <idno type="BL-Shelfmark-display">London, BL, Add. 14,444</idno>
+            </altIdentifier>
+            <altIdentifier>
               <idno type="BL-Shelmark-simplified">BL Add MS 14444</idno>
             </altIdentifier>
           </msIdentifier>
-          <head xmlns="'http://www.tei-c.org/ns/1.0'">
-            <note xmlns="http://www.tei-c.org/ns/1.0" type="contents-note">This manuscript record does not have a summary list of contents. For composite manuscripts, the list of contents can be found under each individual part.</note>
-            <listRelation xmlns="http://www.tei-c.org/ns/1.0" type="Wright-BL-Taxonomy"/>
+          <head>
+            <note type="contents-note">This manuscript record does not have a summary list of contents. For composite manuscripts, the list of contents can be found under each individual part.</note>
+            <listRelation type="Wright-BL-Taxonomy"/>
             <listRelation type="composite-to-parts">
               <desc>This composite manuscript consists of 2 distinct parts:</desc>
               <relation name="syriaca:has-unspecified-codicological-part" ref="#syriaca:has-unspecified-codicological-part" active="http://syriaca.org/manuscript/114" passive="http://syriaca.org/manuscript/115">
@@ -88,11 +93,14 @@
               </relation>
             </listRelation>
           </head>
-          <msPart n="1" xml:id="Part1">
+          <msPart xml:id="Part1" n="1">
             <msIdentifier>
               <idno type="URI">http://syriaca.org/manuscript/115</idno>
               <altIdentifier>
                 <idno type="BL-Shelfmark">Add. 14,444, foll. 1–24</idno>
+              </altIdentifier>
+              <altIdentifier>
+                <idno type="BL-Shelfmark-display">London, BL, Add. 14,444, foll. 1–24</idno>
               </altIdentifier>
               <altIdentifier>
                 <idno type="BL-Shelmark-simplified">BL Add MS 14444, foll. 1-24</idno>
@@ -106,9 +114,9 @@
                 <idno type="Wright-BL-Roman">VI</idno>
               </altIdentifier>
             </msIdentifier>
-            <head xmlns="'http://www.tei-c.org/ns/1.0'">
-              <note xmlns="http://www.tei-c.org/ns/1.0" type="contents-note">This manuscript contains: Fragments of the book of Genesis, according to the Peshitta version. In total, including sub-sections, this manuscript contains 1 items. N.B., items have been renumbered by the editors and may not reflect Wright's original numeration.</note>
-              <listRelation xmlns="http://www.tei-c.org/ns/1.0" type="Wright-BL-Taxonomy">
+            <head>
+              <note type="contents-note">This manuscript contains: Fragments of the book of Genesis, according to the Peshitta version. In total, including sub-sections, this manuscript contains 1 items.</note>
+              <listRelation type="Wright-BL-Taxonomy">
                 <relation name="dcterms:type" ref="http://purl.org/dc/terms/type" active="http://syriaca.org/manuscript/115" passive="#bible-ot">
                   <desc>Old Testament</desc>
                 </relation>
@@ -123,7 +131,7 @@
             <msContents>
               <summary/>
               <textLang mainLang="syr">Syriac</textLang>
-              <msItem n="1" xml:id="p1a1" defective="true">
+              <msItem xml:id="p1a1" n="1" defective="true">
                 <locus from="1" to="24b">Foll. 1-24b</locus>
                 <title type="supplied" ref="http://syriaca.org/work/1">Fragments of the book of Genesis, according to the Peshitta version</title>
                 <rubric xml:lang="syr">[ܒܪܝܬܐ ܣ̣ܦܪܐ ܩܕܡܝܐ [ܕܐܘܪܝܬܐ<locus from="1" to="1"/>
@@ -188,7 +196,7 @@
               <additions>
                 <note type="proofreader-note">N.B., folio location may not be available for some items below.</note>
                 <list>
-                  <item n="1" xml:id="p1addition1">
+                  <item xml:id="p1addition1" n="1">
                     <p>Some of the lessons have beenadded on the margin by a much later hand.</p>
                   </item>
                 </list>
@@ -213,8 +221,6 @@
                     </bibl>.
                     abbreviated by the Syriaca.org project team.</source>
                 </recordHist>
-                <availability status="restricted"/>
-                <custodialHist/>
                 <note/>
               </adminInfo>
               <listBibl>
@@ -226,15 +232,19 @@
                   <ptr target="http://syriaca.org/bibl/8"/>
                   <citedRange unit="entry">VI</citedRange>
                   <citedRange unit="pp">1:6</citedRange>
+                <ref type="internet-archive-pdf" target="https://archive.org/details/catalogueofsyria01brituoft/page/6"/>
                 </bibl>
               </listBibl>
             </additional>
           </msPart>
-          <msPart n="2" xml:id="Part2">
+          <msPart xml:id="Part2" n="2">
             <msIdentifier>
               <idno type="URI">http://syriaca.org/manuscript/116</idno>
               <altIdentifier>
                 <idno type="BL-Shelfmark">Add. 14,444, foll. 25–38</idno>
+              </altIdentifier>
+              <altIdentifier>
+                <idno type="BL-Shelfmark-display">London, BL, Add. 14,444, foll. 25–38</idno>
               </altIdentifier>
               <altIdentifier>
                 <idno type="BL-Shelmark-simplified">BL Add MS 14444, foll. 25-38</idno>
@@ -248,9 +258,9 @@
                 <idno type="Wright-BL-Roman">X</idno>
               </altIdentifier>
             </msIdentifier>
-            <head xmlns="'http://www.tei-c.org/ns/1.0'">
-              <note xmlns="http://www.tei-c.org/ns/1.0" type="contents-note">This manuscript contains: Index to the lessons in the books ofLeviticusandJob ; Fragments of the book of Leviticus, according to the Peshitta version. In total, including sub-sections, this manuscript contains 2 items. N.B., items have been renumbered by the editors and may not reflect Wright's original numeration.</note>
-              <listRelation xmlns="http://www.tei-c.org/ns/1.0" type="Wright-BL-Taxonomy">
+            <head>
+              <note type="contents-note">This manuscript contains: Index to the lessons in the books ofLeviticusandJob; Fragments of the book of Leviticus, according to the Peshitta version. In total, including sub-sections, this manuscript contains 2 items.</note>
+              <listRelation type="Wright-BL-Taxonomy">
                 <relation name="dcterms:type" ref="http://purl.org/dc/terms/type" active="http://syriaca.org/manuscript/116" passive="#bible-ot">
                   <desc>Old Testament</desc>
                 </relation>
@@ -265,12 +275,12 @@
             <msContents>
               <summary/>
               <textLang mainLang="syr">Syriac</textLang>
-              <msItem n="1" xml:id="p2a1">
+              <msItem xml:id="p2a1" n="1">
                 <locus from="25" to="25">Fol. 25</locus>
                 <title type="supplied">Index to the lessons in the books of<title type="supplied" ref="http://syriaca.org/work/3">Leviticus</title>and<title type="supplied" ref="http://syriaca.org/work/18">Job</title>
                 </title>
               </msItem>
-              <msItem n="2" xml:id="p2a2" defective="true">
+              <msItem xml:id="p2a2" n="2" defective="true">
                 <locus from="26" to="38">foll. 26-38</locus>
                 <title type="supplied" ref="http://syriaca.org/work/3">Fragments of the book of Leviticus, according to the Peshitta version</title>
                 <rubric xml:lang="syr">ܣ̣ܦܪܐ ܕܟܗ̈ܢܐ<locus from="26" to="26"/>
@@ -335,7 +345,7 @@
               <additions>
                 <note type="proofreader-note">N.B., folio location may not be available for some items below.</note>
                 <list>
-                  <item n="1" xml:id="p2addition1">
+                  <item xml:id="p2addition1" n="1">
                     <p>The lessons appear to have been marked on the margins (e.g. foll.<locus from="33b" to="33b">33b</locus>) by a later hand.</p>
                   </item>
                 </list>
@@ -360,8 +370,6 @@
                     </bibl>.
                     abbreviated by the Syriaca.org project team.</source>
                 </recordHist>
-                <availability status="restricted"/>
-                <custodialHist/>
                 <note/>
               </adminInfo>
               <listBibl>
@@ -372,7 +380,8 @@
                   <date>1870</date>
                   <ptr target="http://syriaca.org/bibl/8"/>
                   <citedRange unit="entry">X</citedRange>
-                  <citedRange unit="pp">I:8</citedRange>
+                  <citedRange unit="pp">1:8</citedRange>
+                <ref type="internet-archive-pdf" target="https://archive.org/details/catalogueofsyria01brituoft/page/8"/>
                 </bibl>
               </listBibl>
             </additional>
@@ -541,6 +550,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc status="draft">
+      <change who="http://syriaca.org/documentation/editors.xml#kurban" when="2023-04-21-05:00">CHANGED: added or corrected folio extent values</change>
       <change who="http://syriaca.org/documentation/editors.xml#jarnwine" when="2022-05-05">Updates to physDesc for Part2</change>
       <change who="http://syriaca.org/documentation/editors.xml#thannah" when="2013-02-26">Created: file</change>
       <change who="http://syriaca.org/documentation/editors.xml#thannah" when="2013-11-16">Initial edit: re-entered additions, cleaned up manuscript item listings.</change>

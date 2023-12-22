@@ -1,9 +1,9 @@
 <?oxygen RNGSchema="http://syriaca.org/documentation/syriaca-tei-main.rnc" type="compact"?>
 <?xml-stylesheet type="text/css" href="https://raw.githubusercontent.com/srophe/wright-catalogue/master/parameters/tei.css"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
-   <teiHeader>
-      <fileDesc>
-         <titleStmt>
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
         <title level="a" xml:lang="en">London, BL, Add. 12164</title>
         <title xml:lang="en" level="m">A Digital Catalogue of Syriac Manuscripts in the British Library</title>
         <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
@@ -15,6 +15,7 @@
         <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A. Michelson</editor>
         <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#raydin">Robert Aydin</editor>
         <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#jpagan">Jessica Pagan</editor>
+        <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#jarnwine">Justin Arnwine</editor>
         <respStmt>
           <resp>Created by</resp>
           <name type="person" ref="http://syriaca.org/documentation/editors.xml#jpagan">Jessica Pagan</name>
@@ -43,11 +44,24 @@
           <resp>English text entry and proofreading by</resp>
           <name type="org" ref="http://syriaca.org/documentation/editors.xml#uasyriacaresearchgroup">Syriac Research Group, University of Alabama</name>
         </respStmt>
+      <respStmt>
+          <resp>Syriaca.org URIs for authors edited by</resp>
+          <name type="person" ref="http://syriaca.org/documentation/editors.xml#jarnwine">Justin Arnwine</name>
+        </respStmt>
+        <respStmt>
+          <resp>Syriaca.org URIs for authors checked by</resp>
+          <name type="person" ref="http://syriaca.org/documentation/editors.xml#aahn">Alexys Ahn</name>
+          <name type="person" ref="http://syriaca.org/documentation/editors.xml#jdalfonso">Joseph DAlfonso</name>
+        </respStmt>
+      <respStmt>
+          <resp>Folio extent edited by</resp>
+          <name type="person" ref="http://syriaca.org/documentation/editors.xml#kurban">Kurt Urban</name>
+        </respStmt>
       </titleStmt>
-         <editionStmt>
+      <editionStmt>
         <edition n="1.0"/>
       </editionStmt>
-         <publicationStmt>
+      <publicationStmt>
         <authority>Syriaca.org: The Syriac Reference Portal</authority>
         <idno type="URI">http://syriaca.org/manuscript/44/tei</idno>
         <availability>
@@ -56,11 +70,11 @@
             <p>Distributed under a Creative Commons Attribution 3.0 Unported License</p>
           </licence>
         </availability>
-        <date calendar="Gregorian"/>
+        <date calendar="Gregorian">2023-04-21-05:00</date>
       </publicationStmt>
-         <sourceDesc>
-            <msDesc xml:id="manuscript-44">
-               <msIdentifier>
+      <sourceDesc>
+        <msDesc xml:id="manuscript-44">
+          <msIdentifier>
             <country>United Kingdom</country>
             <settlement>London</settlement>
             <repository>British Library</repository>
@@ -68,6 +82,9 @@
             <idno type="URI">http://syriaca.org/manuscript/44</idno>
             <altIdentifier>
               <idno type="BL-Shelfmark">Add. 12,164</idno>
+            </altIdentifier>
+            <altIdentifier>
+              <idno type="BL-Shelfmark-display">London, BL, Add. 12,164</idno>
             </altIdentifier>
             <altIdentifier>
               <idno type="BL-Shelmark-simplified">BL Add MS 12164</idno>
@@ -81,15 +98,15 @@
               <idno type="Wright-BL-Roman">DCLXXVI</idno>
             </altIdentifier>
           </msIdentifier>
-          <head xmlns="'http://www.tei-c.org/ns/1.0'">
-            <note xmlns="http://www.tei-c.org/ns/1.0" type="contents-note">This manuscript contains: Philoxenus of Mabūg. A treatise of Philoxenus of Mabūg, showing that one Person of the Holy Trinity became incarnate and suffered for us. In total, including sub-sections, this manuscript contains 80 items. N.B., items have been renumbered by the editors and may not reflect Wright's original numeration.</note>
-            <listRelation xmlns="http://www.tei-c.org/ns/1.0" type="Wright-BL-Taxonomy">
+          <head>
+            <note type="contents-note">This manuscript contains: Philoxenus of Mabūg. A treatise of Philoxenus of Mabūg, showing that one Person of the Holy Trinity became incarnate and suffered for us. In total, including sub-sections, this manuscript contains 80 items.</note>
+            <listRelation type="Wright-BL-Taxonomy">
               <relation name="dcterms:type" ref="http://purl.org/dc/terms/type" active="http://syriaca.org/manuscript/44" passive="#theo-single">
                 <desc>Individual Authors</desc>
               </relation>
             </listRelation>
           </head>
-               <msContents>
+          <msContents>
             <summary/>
             <textLang mainLang="syr"/>
             <msItem xml:id="a1" n="1" defective="true">
@@ -163,7 +180,7 @@
                 </msItem>
                 <msItem xml:id="c3" n="8">
                   <locus from="133b"/>
-                  <author>Athanasius</author>
+                  <author ref="http://syriaca.org/person/354">Athanasius</author>
                   <title xml:lang="en">Testimony of <persName>Athanasius</persName>
                   </title>
                   <msItem xml:id="d1" n="9">
@@ -192,6 +209,7 @@
                   </msItem>
                 </msItem>
                 <msItem xml:id="c4" n="14">
+                  <locus from="135b"/>
                   <author ref="http://syriaca.org/person/2786">Atticus of Constantinople
                   </author>
                   <title xml:lang="en">Testimony of <persName ref="http://syriaca.org/person/2786">Atticus of <placeName ref="http://syriaca.org/place/586">Constantinople</placeName>
@@ -209,6 +227,7 @@
                   </msItem>
                 </msItem>
                 <msItem xml:id="c5" n="17">
+                  <locus from="134a"/>
                   <author ref="http://syriaca.org/person/376">Basil</author>
                   <title xml:lang="en">Testimony of <persName ref="http://syriaca.org/person/376">Basil</persName>
                   </title>
@@ -249,6 +268,7 @@
                   </msItem>
                 </msItem>
                 <msItem xml:id="c6" n="25">
+                  <locus from="131a"/>
                   <author ref="http://syriaca.org/person/573">Chrysostom</author>
                   <title xml:lang="en">Testimony of <persName ref="http://syriaca.org/person/573">Chrysostom</persName>
                   </title>
@@ -293,6 +313,7 @@
                   </msItem>
                 </msItem>
                 <msItem xml:id="c7" n="34">
+                  <locus from="132a"/>
                   <author ref="http://syriaca.org/person/430">Cyril of Alexandria
                   </author>
                   <title xml:lang="en">Testimony of <persName ref="http://syriaca.org/person/430">Cyril of <placeName ref="http://syriaca.org/place/572">Alexandria</placeName>
@@ -349,6 +370,7 @@
                   </msItem>
                 </msItem>
                 <msItem xml:id="c8" n="45">
+                  <locus from="130a"/>
                   <author ref="http://syriaca.org/person/13">Ephraim</author>
                   <title xml:lang="en">Testimony of <persName ref="http://syriaca.org/person/13">Ephraim</persName>
                   </title>
@@ -442,6 +464,7 @@
                   </msItem>
                 </msItem>
                 <msItem xml:id="c9" n="64">
+                  <locus from="131b"/>
                   <author ref="http://syriaca.org/person/481">Eusebius of Emesa
                   </author>
                   <title xml:lang="en">Testimony of <persName ref="http://syriaca.org/person/481">Eusebius of <placeName ref="http://syriaca.org/place/215">Emesa</placeName>
@@ -494,6 +517,7 @@
                   </msItem>
                 </msItem>
                 <msItem xml:id="c10" n="74">
+                  <locus from="135a"/>
                   <author ref="http://syriaca.org/person/511">Gregory (Nazianzen)</author>
                   <title xml:lang="en">Testimony of <persName ref="http://syriaca.org/person/511">Gregory (Nazianzen)</persName>
                   </title>
@@ -511,6 +535,7 @@
                   </msItem>
                 </msItem>
                 <msItem xml:id="c11" n="78">
+                  <locus from="135b"/>
                   <author ref="http://syriaca.org/person/2507">Theophilus of Alexandria
                   </author>
                   <title xml:lang="en">Testimony of <persName ref="http://syriaca.org/person/2507">Theophilus of <placeName ref="http://syriaca.org/place/572">Alexandria</placeName>
@@ -531,15 +556,18 @@
               </msItem>
             </msItem>
           </msContents>
-               <physDesc>
+          <physDesc>
             <p>Vellum, about 12 1/4 in. by 9 1/2, consisting of 141 leaves,
                                     some of which, near the beginning and end, are slightly stained
                                     and torn. The quires, 15 in number, are signed with arithmetical
                                     figures. One leaf is wanting after fol. 42, and apparently three
                                     leaves after fol. 136. Each page is divided into three columns,
                                     of from 37 to 44 lines.</p>
-                  <objectDesc form="codex">
+            <objectDesc form="codex">
                      <supportDesc material="perg">
+                <extent>
+                  <measure type="composition" unit="leaf" quantity="141">141 ff.</measure>
+                </extent>
                         <foliation/>
                         <collation/>
                         <condition>
@@ -556,53 +584,53 @@
                         </condition>
                      </supportDesc>
                   </objectDesc>
-                  <handDesc hands="2">
+            <handDesc hands="2">
               <handNote xml:id="handNote1" scope="major" script="syr" medium="unknown">
-                        <desc>This manuscript is written in a beautiful Edessene hand of the <date>vith
+                <desc>This manuscript is written in a beautiful Edessene hand of the <date>vith
                            cent.</date>
                 </desc>
-                     </handNote>
+              </handNote>
               <handNote xml:id="handNote2" scope="minor" script="syr" medium="unknown">
-                        <desc>See additions.</desc>
-                     </handNote>
+                <desc>See additions.</desc>
+              </handNote>
             </handDesc>
-                  <additions>
+            <additions>
               <note type="proofreader-note">N.B., folio location may not be available for some items below.</note>
               <p/>
               <list>
                 <item xml:id="addition1" n="1">
-                           <locus from="1a"/>
-                           <p>On fol. 1 a there is a note in the handwriting of <persName ref="http://syriaca.org/person/647">Moses of <placeName ref="http://syriaca.org/place/142">Nisibis</placeName>
+                  <locus from="1a"/>
+                  <p>On fol. 1 a there is a note in the handwriting of <persName ref="http://syriaca.org/person/647">Moses of <placeName ref="http://syriaca.org/place/142">Nisibis</placeName>
                     </persName>, to the usual effect, dated <date>A. Gr. 1243</date>, <date>A.D. 932</date>.</p>
-                        </item>
+                </item>
                 <item xml:id="addition2" n="2">
-                           <p>In this manuscript citations from other writers are indicated, not
+                  <p>In this manuscript citations from other writers are indicated, not
                               only by the mark .. <!--need symbol here--> before each line, but also
                               by the letter <foreign xml:lang="syr">ܒ</foreign> at the beginning and the letter <foreign xml:lang="syr">ܡ</foreign> at the end.</p>
-                        </item>
+                </item>
               </list>
             </additions>
-                  <accMat/>
-               </physDesc>
-               <history>
+            <accMat/>
+          </physDesc>
+          <history>
                   <origin>
                     <origDate notBefore="0500" notAfter="0600" calendar="Gregorian">vith cent.</origDate>
                   </origin>
                   <provenance/>
                   <acquisition/>
                </history>
-               <additional>
+          <additional>
             <adminInfo>
               <recordHist>
                 <source>Manuscript description based on<bibl>
-                    <ref target="#Wright">Wright's
+                    <ref target="#Wrightpart">Wright's
                       Catalogue</ref>
                   </bibl>. abbreviated by the Syriaca.org editors.</source>
               </recordHist>
               <note/>
             </adminInfo>
             <listBibl>
-              <bibl xml:id="Wright">
+              <bibl xml:id="Wrightpart">
                 <author>William Wright</author>
                 <title xml:lang="en">Catalogue of Syriac Manuscripts in the British Museum Acquired
                   since the Year 1838</title>
@@ -611,13 +639,14 @@
                 <ptr target="http://syriaca.org/bibl/8"/>
                 <citedRange unit="entry">DCLXXVI</citedRange>
                 <citedRange unit="pp">2:527-529</citedRange>
+              <ref type="internet-archive-pdf" target="https://archive.org/details/catalogueofsyria02brituoft/page/527"/>
               </bibl>
             </listBibl>
           </additional>
-            </msDesc>
-         </sourceDesc>
-      </fileDesc>
-      <encodingDesc>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
       <editorialDecl>
         <interpretation>
           <p>Description is based on Wright's Catalogue without consultation of physical
@@ -748,7 +777,7 @@
         </taxonomy>
       </classDecl>
     </encodingDesc>
-      <profileDesc>
+    <profileDesc>
       <langUsage>
         <language ident="syr">Unvocalized Syriac of any variety or period</language>
         <language ident="syr-Syre">Syriac in Estrangela</language>
@@ -777,18 +806,20 @@
         </keywords>
       </textClass>
     </profileDesc>
-      <revisionDesc status="draft">
+    <revisionDesc status="draft">
+      <change who="http://syriaca.org/documentation/editors.xml#kurban" when="2023-04-21-05:00">CHANGED: added or corrected folio extent values</change>
+      <change who="http://syriaca.org/documentation/editors.xml#jarnwine" when="2023-01-13-06:00">ADDED: supplied and corrected Syriaca.org URIs for authors</change>
          <change who="http://syriaca.org/documentation/editors.xml#srophe-util" when="2020-03-13-05:00">CHANGED: Added project metadata; metadata from Wright Decoder; msItem, handDesc, and additions enumeration; Wright Taxonomy designation</change>
       <change who="http://syriaca.org/documentation/editors.xml#jpagan" when="2019-12-23">Initial TEI
             encoding.</change>
          <change type="planned" subtype="arabic">Add missing Arabic text.</change>
          <change type="planned" subtype="missing">Missing symbols; see comments above</change>
       </revisionDesc>
-   </teiHeader>
-   <facsimile>
+  </teiHeader>
+  <facsimile>
       <formula>Content pending</formula>
    </facsimile>
-   <text>
+  <text>
       <body>
          <bibl>Content pending</bibl>
       </body>

@@ -1,9 +1,9 @@
 <?oxygen RNGSchema="http://syriaca.org/documentation/syriaca-tei-main.rnc" type="compact"?>
 <?xml-stylesheet type="text/css" href="https://raw.githubusercontent.com/srophe/wright-catalogue/master/parameters/tei.css"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
-   <teiHeader>
-      <fileDesc>
-         <titleStmt>
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
         <title level="a" xml:lang="en">London, BL, Add. 23596</title>
         <title xml:lang="en" level="m">A Digital Catalogue of Syriac Manuscripts in the British Library</title>
         <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
@@ -15,6 +15,7 @@
         <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A. Michelson</editor>
         <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#raydin">Robert Aydin</editor>
         <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#jpagan">Jessica Pagan</editor>
+        <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#jarnwine">Justin Arnwine</editor>
         <respStmt>
           <resp>Created by</resp>
           <name type="person" ref="http://syriaca.org/documentation/editors.xml#jpagan">Jessica Pagan</name>
@@ -43,11 +44,28 @@
           <resp>English text entry and proofreading by</resp>
           <name type="org" ref="http://syriaca.org/documentation/editors.xml#uasyriacaresearchgroup">Syriac Research Group, University of Alabama</name>
         </respStmt>
+      <respStmt>
+          <resp>Locus information for manuscript items added by</resp>
+          <name type="person" ref="http://syriaca.org/documentation/editors.xml#zzhang">Ziyan Zhang</name>
+        </respStmt>
+        <respStmt>
+          <resp>Syriaca.org URIs for authors edited by</resp>
+          <name type="person" ref="http://syriaca.org/documentation/editors.xml#jarnwine">Justin Arnwine</name>
+        </respStmt>
+        <respStmt>
+          <resp>Syriaca.org URIs for authors checked by</resp>
+          <name type="person" ref="http://syriaca.org/documentation/editors.xml#aahn">Alexys Ahn</name>
+          <name type="person" ref="http://syriaca.org/documentation/editors.xml#jdalfonso">Joseph DAlfonso</name>
+        </respStmt>
+      <respStmt>
+          <resp>Folio extent edited by</resp>
+          <name type="person" ref="http://syriaca.org/documentation/editors.xml#kurban">Kurt Urban</name>
+        </respStmt>
       </titleStmt>
-         <editionStmt>
+      <editionStmt>
         <edition n="1.0"/>
       </editionStmt>
-         <publicationStmt>
+      <publicationStmt>
         <authority>Syriaca.org: The Syriac Reference Portal</authority>
         <idno type="URI">http://syriaca.org/manuscript/1141/tei</idno>
         <availability>
@@ -56,11 +74,11 @@
             <p>Distributed under a Creative Commons Attribution 3.0 Unported License</p>
           </licence>
         </availability>
-        <date calendar="Gregorian"/>
+        <date calendar="Gregorian">2023-04-21-05:00</date>
       </publicationStmt>
-         <sourceDesc>
-            <msDesc xml:id="manuscript-1141">
-               <msIdentifier>
+      <sourceDesc>
+        <msDesc xml:id="manuscript-1141">
+          <msIdentifier>
             <country>United Kingdom</country>
             <settlement>London</settlement>
             <repository>British Library</repository>
@@ -68,6 +86,9 @@
             <idno type="URI">http://syriaca.org/manuscript/1141</idno>
             <altIdentifier>
               <idno type="BL-Shelfmark">Add. 23,596</idno>
+            </altIdentifier>
+            <altIdentifier>
+              <idno type="BL-Shelfmark-display">London, BL, Add. 23,596</idno>
             </altIdentifier>
             <altIdentifier>
               <idno type="BL-Shelmark-simplified">BL Add MS 23596</idno>
@@ -81,17 +102,18 @@
               <idno type="Wright-BL-Roman">DCCXXIV</idno>
             </altIdentifier>
           </msIdentifier>
-          <head xmlns="'http://www.tei-c.org/ns/1.0'">
-            <note xmlns="http://www.tei-c.org/ns/1.0" type="contents-note">This manuscript contains: Gregory bar Hebraeus.. The ܐܘܨܪ ܐܪ̈ܙܐ, or "Horreum Mysteriorum," of Gregory bar Hebraeus. ; a list of the works of Gregory bar Hebraeus, with a few particulars regarding his life ; . In total, including sub-sections, this manuscript contains 36 items. N.B., items have been renumbered by the editors and may not reflect Wright's original numeration.</note>
-            <listRelation xmlns="http://www.tei-c.org/ns/1.0" type="Wright-BL-Taxonomy">
+          <head>
+            <note type="contents-note">This manuscript contains: Gregory bar Hebraeus.. The ܐܘܨܪ ܐܪ̈ܙܐ, or "Horreum Mysteriorum," of Gregory bar Hebraeus.; a list of the works of Gregory bar Hebraeus, with a few particulars regarding his life; . In total, including sub-sections, this manuscript contains 36 items.</note>
+            <listRelation type="Wright-BL-Taxonomy">
               <relation name="dcterms:type" ref="http://purl.org/dc/terms/type" active="http://syriaca.org/manuscript/1141" passive="#theo-single">
                 <desc>Individual Authors</desc>
               </relation>
             </listRelation>
           </head>
-               <msContents>
+          <msContents>
             <textLang mainLang="syr"/>
             <msItem xml:id="a1" n="1" defective="true">
+              <locus from="1b"/>
               <author ref="http://syriaca.org/person/239">Gregory bar Hebraeus.</author>
               <title xml:lang="en">The <foreign xml:lang="syr">ܐܘܨܪ ܐܪ̈ܙܐ</foreign>, or "Horreum
                         Mysteriorum," of <persName ref="http://syriaca.org/person/239">Gregory bar Hebraeus</persName>.</title>
@@ -235,6 +257,7 @@
               </msItem>
             </msItem>
             <msItem xml:id="a2" n="32">
+              <locus from="421"/>
               <title xml:lang="en">a list of the works of <persName ref="http://syriaca.org/person/239">Gregory bar
                            Hebraeus</persName>, with a few particulars regarding his life</title>
               <quote xml:lang="syr">ܫܡ̈ܗܐ ܕܟܬܒ̈ܐ ܕܣܵܡ ܣܘܪܝܐܝܬ ܘܐܪܐܒܐܝܬ ܒܥܕܬܐ ܗ̣ܘ ܡܲܦܪܝܢܐ ܏ܩܕ
@@ -244,9 +267,11 @@
                            268</bibl> seqq.</note>
             </msItem>
             <msItem xml:id="a3" n="33">
+              <locus from="207"/>
               <note>Fol. 207 does not, strictly speaking, belong to this manuscript, being in
                         a different hand-writing.</note>
               <msItem xml:id="b3" n="34">
+                <locus from="207"/>
                 <title xml:lang="en">A list of the prophets, from
                            <persName ref="http://syriaca.org/person/1829">Job</persName> down to <persName>Malachi</persName>, with
                            the names of the kings under whom they flourished; a list of the Jewish
@@ -257,11 +282,13 @@
                 <rubric xml:lang="syr">ܥܠ ܩܕܝܡܘܬ ܕܢܒܹܝܐ ܚܕ ܡܢ ܚܒܪܗ</rubric>
               </msItem>
               <msItem xml:id="b4" n="35">
+                <locus from="207"/>
                 <title xml:lang="en">Interpretations of the names of the
                            prophets.</title>
                 <rubric xml:lang="syr">ܬܘܒ ܦܘܫܩ ܫܡܵܗܸ̈ܐ ܕܢܒ̈ܝܐ ܕܝܠܢܐܝܬ ܕܟܠ ܡܢܗܘܢ.</rubric>
               </msItem>
               <msItem xml:id="b5" n="36">
+                <locus from="207"/>
                 <title xml:lang="en">A list of the works of <persName ref="http://syriaca.org/person/239">Gregory bar
                               Hebraeus</persName>, etc., similar to that mentioned above.</title>
                 <rubric xml:lang="syr">ܫܡ̈ܗܐ ܕܟܬ̈ܒܐ ܕܣܡ ܣܘܪܝܐܝܬ ܘܐܪܒܐܝܬ ܒܥܕܬܐ ܗ̣ܘ ܡܲܦܪܝܢܐ
@@ -269,12 +296,15 @@
               </msItem>
             </msItem>
           </msContents>
-               <physDesc>
+          <physDesc>
             <p>Paper, about 12 3/8 in. by 8 1/4, consisting of 422 leaves. The
                                     quires, signed with letters as far as <foreign xml:lang="syr">ܠܐ</foreign>, fol. 308 b, are 42 in
                                     number. There are from 23 to 35 lines in each page.</p>
-                  <objectDesc form="codex">
+            <objectDesc form="codex">
                      <supportDesc material="chart">
+                <extent>
+                  <measure type="composition" unit="leaf" quantity="422">422 ff.</measure>
+                </extent>
                         <foliation/>
                         <collation/>
                         <condition>
@@ -288,13 +318,13 @@
                         </condition>
                      </supportDesc>
                   </objectDesc>
-                  <handDesc hands="1">
-              <handNote medium="unknown" xml:id="handNote1" scope="sole" script="syr">
-                        <desc>This volume is written in a good, regular hand, with many Greek and
+            <handDesc hands="1">
+              <handNote xml:id="handNote1" medium="unknown" scope="sole" script="syr">
+                <desc>This volume is written in a good, regular hand, with many Greek and
                            Syriac vowels.</desc>
-                     </handNote>
+              </handNote>
             </handDesc>
-                  <additions>
+            <additions>
               <note type="proofreader-note">N.B., folio location may not be available for some items below.</note>
               <p/>
               <list>
@@ -325,10 +355,10 @@
                 </item>
                 <item xml:id="addition2" n="2">
                   <label>Colophon</label>
-                           <locus/>
-                           <p>There is a similar note on fol. 303 b, at the end of the book of
+                  <locus/>
+                  <p>There is a similar note on fol. 303 b, at the end of the book of
                                  <persName>Daniel</persName>.</p>
-                           <p>
+                  <p>
                               <quote xml:lang="syr">ܫܠܸܶܡ ܟܬܵܒܵܐ ܕܕܢܝܐܝܠ ܥܡ ܫܲܪܟܐ ܕܕܝܐܬܹܝܩܹܝ
                                  ܥܲܬܝܼܩܬܵܐ ܡܢ ܟܬܵܒܐ ܕܐܘܨܪ̈ܐ ܘܠܐܠܗܐ ܣܓ݂ܝܼܕ ܐܝܩܪܗ ܕܚܲܝܠ ܘܥܲܕܪ ܘܐܫܦܥ
                                  ܛܝܒܘܬܗ ܥܲܠ ܕܘܝܘܬܝ ܫܘܒܚܐ ܠܥ̇ܠܡܝܢ ܐܡܝܢ ܒܐܝ̣ܕ̈ܝ ܣܝܠܘܒܐ ܣܠܝܡܐܢ ܒܲܪ
@@ -336,30 +366,30 @@
                                  ܡ܏ܩܕ ܐܠܝܐܣ ܘܝܘܣܦ ܘܐܠܝܐ ܫ܏ܢ̣ܬ݀ ܒ܏ܝܗ ܝ܏ܘ ܒ̇ܥܐ ܐܢ̣ܐ ܡܢ ܟܠ ܐܚܐ ܦܪܘܫܐ
                                  ܢܨܲܠܐ ܥܠܝܗܘܢ ܘ܏ܫ.</quote>
                            </p>
-                        </item>
+                </item>
                 <item xml:id="addition3" n="3">
-                           <locus/>
-                           <p>On fol. 422 b there is also an Arabic note, stating that the
+                  <locus/>
+                  <p>On fol. 422 b there is also an Arabic note, stating that the
                                  maphrian <persName>Elias</persName> purchased this book, and gave
                               it to <persName>Colonel Taylor</persName>, <date calendar="Gregorian" when="1829">A.D. 1829</date>.</p>
-                           <p>
+                  <p>
                               <quote xml:lang="ar">قد اشتريتوا انا الفقير مفريان الياس هذا الكتاب
                       اوصر روزي وهديتهُ الي عزيزنا المحترم مصطر تلي بك في سنة ١٨٢٩ مسيحيه،</quote>
                            </p>
-                        </item>
+                </item>
                 <item xml:id="addition4" n="4">
-                           <locus/>
-                           <p>Fol. 207 does not, strictly speaking, belong to this manuscript, being
+                  <locus/>
+                  <p>Fol. 207 does not, strictly speaking, belong to this manuscript, being
                               in a different hand-writing. </p>
-                           <p>
+                  <p>
                               <quote xml:lang="syr"/>
                            </p>
-                        </item>
+                </item>
               </list>
             </additions>
-                  <accMat/>
-               </physDesc>
-               <history>
+            <accMat/>
+          </physDesc>
+          <history>
                   <origin>
                      <origDate when="1720">It is dated A. Gr.
                         2031, A.D. 1720.</origDate>
@@ -369,18 +399,18 @@
                   <provenance/>
                   <acquisition/>
                </history>
-               <additional>
+          <additional>
             <adminInfo>
               <recordHist>
                 <source>Manuscript description based on<bibl>
-                    <ref target="#Wright">Wright's
+                    <ref target="#Wrightpart">Wright's
                       Catalogue</ref>
                   </bibl>. abbreviated by the Syriaca.org editors.</source>
               </recordHist>
               <note/>
             </adminInfo>
             <listBibl>
-              <bibl xml:id="Wright">
+              <bibl xml:id="Wrightpart">
                 <author>William Wright</author>
                 <title xml:lang="en">Catalogue of Syriac Manuscripts in the British Museum Acquired
                   since the Year 1838</title>
@@ -389,13 +419,14 @@
                 <ptr target="http://syriaca.org/bibl/8"/>
                 <citedRange unit="entry">DCCXXIV</citedRange>
                 <citedRange unit="pp">2:626-628</citedRange>
+              <ref type="internet-archive-pdf" target="https://archive.org/details/catalogueofsyria02brituoft/page/626"/>
               </bibl>
             </listBibl>
           </additional>
-            </msDesc>
-         </sourceDesc>
-      </fileDesc>
-      <encodingDesc>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
       <editorialDecl>
         <interpretation>
           <p>Description is based on Wright's Catalogue without consultation of physical
@@ -526,7 +557,7 @@
         </taxonomy>
       </classDecl>
     </encodingDesc>
-      <profileDesc>
+    <profileDesc>
       <langUsage>
         <language ident="syr">Unvocalized Syriac of any variety or period</language>
         <language ident="syr-Syre">Syriac in Estrangela</language>
@@ -555,17 +586,20 @@
         </keywords>
       </textClass>
     </profileDesc>
-      <revisionDesc status="draft">
+    <revisionDesc status="draft">
+      <change who="http://syriaca.org/documentation/editors.xml#kurban" when="2023-04-21-05:00">CHANGED: added or corrected folio extent values</change>
+      <change who="http://syriaca.org/documentation/editors.xml#zzhang" when="2023-01-13-06:00">ADDED: added missing locus information for msItems</change>
+      <change who="http://syriaca.org/documentation/editors.xml#jarnwine" when="2023-01-13-06:00">ADDED: supplied and corrected Syriaca.org URIs for authors</change>
          <change who="http://syriaca.org/documentation/editors.xml#srophe-util" when="2020-04-29-05:00">CHANGED: deleted empty elements and attributes</change>
       <change who="http://syriaca.org/documentation/editors.xml#srophe-util" when="2020-04-29-05:00">CHANGED: Added project metadata; metadata from Wright Decoder; msItem, handDesc, and additions enumeration; Wright Taxonomy designation</change>
       <change who="http://syriaca.org/documentation/editors.xml#jpagan" when="2020-02-08">Initial
             TEI encoding.</change>
       </revisionDesc>
-   </teiHeader>
-   <facsimile>
+  </teiHeader>
+  <facsimile>
       <formula>Content pending</formula>
    </facsimile>
-   <text>
+  <text>
       <body>
          <bibl>Content pending</bibl>
       </body>

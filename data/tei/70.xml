@@ -1,5 +1,5 @@
-<?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/srophe-app/documentation/enrich-syriaca.rnc" type="application/relax-ng-compact-syntax"?>
-<?xml-stylesheet type="text/css" href="SRPEnrichCSSDemo.css"?>
+<?oxygen RNGSchema="http://syriaca.org/documentation/syriaca-tei-main.rnc" type="compact"?>
+<?xml-stylesheet type="text/css" href="https://raw.githubusercontent.com/srophe/wright-catalogue/master/parameters/tei.css"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
   <teiHeader>
     <fileDesc>
@@ -15,6 +15,7 @@
         <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#dgreeson">Daniel J. Greeson</editor>
         <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#thannah">Tucker D. Hannah</editor>
         <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#raydin">Robert Aydin</editor>
+        <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#jarnwine">Justin Arnwine</editor>
         <respStmt>
           <resp>Created by</resp>
           <name type="person" ref="http://syriaca.org/documentation/editors.xml#thannah">Tucker Hannah</name>
@@ -62,6 +63,19 @@
           <resp>English text entry and proofreading by</resp>
           <name type="org" ref="http://syriaca.org/documentation/editors.xml#uasyriacaresearchgroup">Syriac Research Group, University of Alabama</name>
         </respStmt>
+      <respStmt>
+          <resp>Syriaca.org URIs for authors edited by</resp>
+          <name type="person" ref="http://syriaca.org/documentation/editors.xml#jarnwine">Justin Arnwine</name>
+        </respStmt>
+        <respStmt>
+          <resp>Syriaca.org URIs for authors checked by</resp>
+          <name type="person" ref="http://syriaca.org/documentation/editors.xml#aahn">Alexys Ahn</name>
+          <name type="person" ref="http://syriaca.org/documentation/editors.xml#jdalfonso">Joseph DAlfonso</name>
+        </respStmt>
+      <respStmt>
+          <resp>Folio extent edited by</resp>
+          <name type="person" ref="http://syriaca.org/documentation/editors.xml#kurban">Kurt Urban</name>
+        </respStmt>
       </titleStmt>
       <editionStmt>
         <edition n="1.0"/>
@@ -69,16 +83,14 @@
       <publicationStmt>
         <pubPlace/>
         <authority>Syriaca.org: The Syriac Reference Portal</authority>
-        <idno type="URI">http://syriaca.org/manuscript/70/source</idno>
+        <idno type="URI">http://syriaca.org/manuscript/70/tei</idno>
         <availability>
           <p/>
           <licence target="http://creativecommons.org/licenses/by/3.0/">
             <p>Distributed under a Creative Commons Attribution 3.0 Unported License</p>
           </licence>
         </availability>
-        <date calendar="Gregorian">
-          <!-- Our date of publication of this XML document-->
-        </date>
+        <date calendar="Gregorian">2023-04-21-05:00</date>
       </publicationStmt>
       <sourceDesc>
         <msDesc xml:id="manuscript-70" xml:lang="en">
@@ -92,12 +104,23 @@
               <idno type="BL-Shelfmark">Add. 12,174</idno>
             </altIdentifier>
             <altIdentifier>
+              <idno type="BL-Shelfmark-display">London, BL, Add. 12,174</idno>
+            </altIdentifier>
+            <altIdentifier>
               <idno type="BL-Shelmark-simplified">BL Add MS 12174</idno>
             </altIdentifier>
+            <altIdentifier>
+              <collection>William Wright, Catalogue of the Syriac Manuscripts in the British Museum Acquired since the Year 1838</collection>
+              <idno type="Wright-BL-Arabic">960</idno>
+            </altIdentifier>
+            <altIdentifier>
+              <collection>William Wright, Catalogue of the Syriac Manuscripts in the British Museum Acquired since the Year 1838</collection>
+              <idno type="Wright-BL-Roman">DCCCCLX</idno>
+            </altIdentifier>
           </msIdentifier>
-          <head xmlns="'http://www.tei-c.org/ns/1.0'">
-            <note xmlns="http://www.tei-c.org/ns/1.0" type="contents-note">This manuscript contains: Lives of Saints and Fathers of the Church. In total, including sub-sections, this manuscript contains 83 items. N.B., items have been renumbered by the editors and may not reflect Wright's original numeration.</note>
-            <listRelation xmlns="http://www.tei-c.org/ns/1.0" type="Wright-BL-Taxonomy">
+          <head>
+            <note type="contents-note">This manuscript contains: Lives of Saints and Fathers of the Church. In total, including sub-sections, this manuscript contains 83 items.</note>
+            <listRelation type="Wright-BL-Taxonomy">
               <relation name="dcterms:type" ref="http://purl.org/dc/terms/type" active="http://syriaca.org/manuscript/70" passive="#lives">
                 <desc/>
               </relation>
@@ -105,14 +128,13 @@
           </head>
           <msContents>
             <summary/>
-            <!--Note: Do not manually enter summary. We will automatically generate this from the @class later-->
             <textLang mainLang="syr">Syriac</textLang>
-            <msItem n="1" xml:id="a1" defective="true">
+            <msItem xml:id="a1" n="1" defective="true">
               <locus from="1a" to="452">Foll. 1a-452</locus>
               <title type="supplied">Lives of Saints and Fathers of the Church</title>
-              <msItem n="2" xml:id="b1" defective="true">
+              <msItem xml:id="b1" n="2" defective="true">
                 <locus from="1a" to="18">Foll. 1a-18</locus>
-                <author>Samuel</author>
+                <author ref="http://syriaca.org/person/29">Samuel</author>
                 <title type="supplied">Life of<persName>Bar-sauma, the founder of the sect of the Jacobites</persName>
                 </title>
                 <quote xml:lang="syr">ܗܠܝܢ ܕܝܢ ܣܘܥܪ̈ܢܐ ܕܢ̣ܨ̈ܚܢܘܗܝ ܕܐܬܠܝܛܐ ܒܪܨܘܡܐ̣ ܟܬ̣ܒ ܐܢܘܢ ܫܡܘܐܝܠ ܩܫܝܫܐ. ܗ̇ܘ ܕܐܝܬܘܗܝ ܗܘܐ ܚܕ ܡܢ ܬܠܡ̈ܝܕܘܗܝ ܩܕܡ̈ܝܐ ܏ܕܩܕ ܒܪܨܘܡܐ. ܐܦ ܚܢܢ ܕܝܢ ܟܠܢ̇ ܝ̇ܕܥܝܢܢ. ܕܗܠܝܢ ܟܠܗܝܢ ܒܫܪܪܐ ܟ̈ܬܝܒܢ. ܟܬ̣ܒ ܬܘܒ ܗ̣ܘ ܗܢܐ ܫܡܘܐܝܠ ܩܫܝܫܐ̣. ܡܕܪ̈ܫܐ ܘܡܐܡܪ̈ܐ ܐܚܪ̈ܢܐ ܡܛܠܬܗ ܏ܕܩܕ ܒܪܨܘܡܐ. ܘܟܬ̣ܒ ܬܘܒ ܡܐܡܪ̈ܐ ܘܡܕܪ̈ܫܐ ܬܘܪ̈ܓܡܐ ܣ̈ܓܝܐܐ̣ ܥܠ ܗܝܡܢܘܬܐ̣ ܘܥܠ ܟܠ ܫܪ̈ܒܝܢ. ܘܠܘܩܒܠ ܟܠܗܝܢ ܕܚ̈ܠ̣ܬܐ. ܘܥܠ ܦܘܫ̈ܩܐ ܫܦܝܪ̈ܐ ܕܟ̈ܬܒܐ. ܘܚܢܢ ܕܝܢ ܥܒ̣̈ܕܘܗܝ ܕܡܫܝܚܐ: ܕܚ̇ܬ݂ܡܢܢ ܟܬܒܐ ܗܢܐ̣. ܡ̇ܘܡܝܢܢ ܠܟܘܢ ܐܚ̈ܝܢ ܒܐܠܗܐ ܐܚܝ̣ܕ ܟܠ܆ ܕܠܐ ܐܢܫ ܢ̇ܡ̣ܪܚ ܘܢܚ̇ܒ̣ܠ܇ ܐܦܢ ܚܕܐ ܡܢ ܡ̈ܠܘܗܝ ܬܩ̈ܢܬܐ. ܘܟܠ ܡ̇ܢ ܕܟ݁ܬܒ ܡܢ ܨܚܚܐ ܗܢܐ̣. ܢܗܘܐ ܟ݁ܬܒ ܠܗܠܝܢ ܟܠܗܝܢ ܥܕܡܐ ܠܗܪܟܐ.<locus from="18a" to="18a"/>
@@ -123,9 +145,9 @@
                 <note>See<bibl>Assemani, Bibl. Or., t. ii., p. 296</bibl>
                 </note>
               </msItem>
-              <msItem n="3" xml:id="b2" defective="true">
+              <msItem xml:id="b2" n="3" defective="true">
                 <locus from="18b" to="48">Foll. 18b-48</locus>
-                <author>
+                <author ref="http://syriaca.org/person/31">
                   <persName>
                     <choice>
                       <reg>Cosmas</reg>
@@ -147,7 +169,7 @@
                 <note>This copy is slightly imperfect, two leaves being lost near the end, after<locus from="47" to="47">fol. 47</locus>; but the deficiency can be supplied from<bibl>Add. 14,484</bibl>.<!-- Needs to be added to physDesc as well -->
                 </note>
               </msItem>
-              <msItem n="4" xml:id="b3">
+              <msItem xml:id="b3" n="4">
                 <locus from="48a" to="78">Foll. 48a-78</locus>
                 <title type="supplied">Life of<persName>Peter the Iberian (Petrus Iberus), bishop of<placeName>Gaza</placeName>and<placeName>Maiuma</placeName>
                   </persName>
@@ -156,7 +178,7 @@
                 </rubric>
                 <note>It was composed by one of his disciples, whose name is not, however, mentioned.</note>
               </msItem>
-              <msItem n="5" xml:id="b4">
+              <msItem xml:id="b4" n="5">
                 <locus from="78b" to="84">Foll. 78b-84</locus>
                 <title type="supplied">Life of<persName>Mar Asius (Asya), or the Physician</persName>
                 </title>
@@ -167,7 +189,7 @@
                 <note>This name was given him at his birth for the reason quoted above,<locus from="79b" to="79b">fol. 79 b, first col.</locus>
                 </note>
               </msItem>
-              <msItem n="6" xml:id="b5">
+              <msItem xml:id="b5" n="6">
                 <locus from="84a" to="87">Foll. 84a-87</locus>
                 <title type="supplied">Life of<persName>John, abbat of the convent of Aphtunaya, called in the subscription John bar Aphtunaya ,<foreign xml:lang="syr">ܝܘܚܢܢ ܒܪ ܐܦܬܘܢܝܐ</foreign>
                   </persName>
@@ -177,7 +199,7 @@
                 <note>Written by one of his disciples</note>
                 <note>See<bibl>Assemani, Bibl. Or., t. ii., p. 54</bibl>; and compare the<bibl>Dissert. de Monophysitis in the same volume, art. ix., Kennesrin</bibl>.</note>
               </msItem>
-              <msItem n="7" xml:id="b6">
+              <msItem xml:id="b6" n="7">
                 <locus from="87b" to="90">Foll. 87b-90</locus>
                 <title type="supplied">Anecdotes of<persName>Macarius of<placeName>Alexandria</placeName>
                   </persName>
@@ -188,9 +210,9 @@
                 </incipit>
                 <note>collected from the work of Palladius (compare the<bibl>Acta Sanctorum for January, tom. i., pp. 85—89</bibl>).</note>
               </msItem>
-              <msItem n="8" xml:id="b7">
+              <msItem xml:id="b7" n="8">
                 <locus from="90a" to="98">Foll. 90a-98</locus>
-                <author>
+                <author ref="http://syriaca.org/person/2817">
                   <persName>Paul</persName>
                 </author>
                 <title type="supplied">Life of<persName>Aaron</persName>
@@ -204,7 +226,7 @@
                     </person>
                   </listPerson>and<persName>Anastasia</persName>, wealthy citizens of<placeName>Serug</placeName>, and lived to the age of 118 years, dying<date when-custom="0648" datingMethod="Seleucid">A. Gr. 648</date>,<date when="0337" calendar="Gregorian">A.D. 337</date>.</note>
               </msItem>
-              <msItem n="9" xml:id="b8">
+              <msItem xml:id="b8" n="9">
                 <locus from="98b" to="110a">Foll. 98b-110a</locus>
                 <author/>
                 <title type="supplied">Life of<persName>Abhai, bishop of Nicaea</persName>, who lived in the reigns of<persName>Arcadius</persName>,<persName>Honorius</persName>and<persName>Theodosius</persName>
@@ -217,9 +239,9 @@
                   </placeName>near<placeName>Maridin</placeName>, and was learned in both the Aramaic and Greek languages. Owing to the disordered state of most copies of this life, it was revised by<persName>Michael the Great, patriarch of<placeName>Antioch</placeName>
                   </persName>(see<bibl>Assemani, Bibl. Or. t. ii., p. 363</bibl>),<date when-custom="1496" datingMethod="Seleucid">A. Gr. 1496</date>,<date when="1185" calendar="Gregorian">A.D. 1185</date>, only a few years before this manuscript was written</note>
               </msItem>
-              <msItem n="10" xml:id="b9">
+              <msItem xml:id="b9" n="10">
                 <locus from="110a" to="124">Foll. 110a-124</locus>
-                <author>
+                <author ref="http://syriaca.org/person/2797">
                   <persName>Leontius, bishop of<placeName>Neapolis</placeName>in<placeName>Cyprus</placeName>
                   </persName>
                 </author>
@@ -228,7 +250,7 @@
                 </rubric>
                 <note>See the<bibl>Acta Sanctorum for July, t. i., p. 136</bibl>.</note>
               </msItem>
-              <msItem n="11" xml:id="b10">
+              <msItem xml:id="b10" n="11">
                 <locus from="124a" to="125">Foll. 124a-125</locus>
                 <title type="supplied">Life of<persName>Paul, surnamed the Simple (<foreign>ܦܫܝܛܐ</foreign>), the disciple of<persName>Antony</persName>
                   </persName>
@@ -239,9 +261,9 @@
                 </note>
                 <note>Compare<bibl>Rosweyde, Vitae Patrum, pp. 730—31</bibl>.</note>
               </msItem>
-              <msItem n="12" xml:id="b11">
+              <msItem xml:id="b11" n="12">
                 <locus from="125a" to="130">Foll. 125a-130</locus>
-                <author>Amphilochius, bishop of<placeName>Iconium</placeName>
+                <author ref="http://syriaca.org/person/2784">Amphilochius, bishop of<placeName>Iconium</placeName>
                 </author>
                 <title type="supplied">Life of<persName>Basil, bishop of<placeName>Caesarea</placeName>in<placeName>Cappadocia</placeName>
                   </persName>
@@ -254,9 +276,9 @@
                 <note>It is not the same as the life given in the<bibl>Acta Sanctorum for June, t. ii., p. 938</bibl>
                 </note>
               </msItem>
-              <msItem n="13" xml:id="b12">
+              <msItem xml:id="b12" n="13">
                 <locus from="130a" to="137a">Foll. 130a-137a</locus>
-                <author>Gregory of<placeName>Caesarea</placeName>in<placeName>Cappadocia</placeName>
+                <author ref="http://syriaca.org/person/2798">Gregory of<placeName>Caesarea</placeName>in<placeName>Cappadocia</placeName>
                 </author>
                 <title type="supplied">Life of<persName>Gregory Nazianzen</persName>
                 </title>
@@ -269,7 +291,7 @@
                 </note>
                 <note>Foll.<locus from="137b" to="138a">137 b and 138 a</locus>have consequently been left blank, in the hope of procuring another copy from which to complete the transcript.</note>
               </msItem>
-              <msItem n="14" xml:id="b13">
+              <msItem xml:id="b13" n="14">
                 <locus from="138b" to="141">Foll. 138b-141</locus>
                 <title type="supplied">Anecdotes of<persName>Nicolaus, bishop of<placeName>Myra</placeName>, in<placeName>Lycia</placeName>
                   </persName>
@@ -280,7 +302,7 @@
                 </incipit>
                 <note>Compare<bibl>Surius, De Probatis Sanctorum Vitis, ed. 1618, t. iv., Decemb., p. 185</bibl>, near the foot.</note>
               </msItem>
-              <msItem n="15" xml:id="b14" defective="unknown">
+              <msItem xml:id="b14" n="15" defective="unknown">
                 <locus from="141a" to="142">Foll. 141a-142</locus>
                 <title type="supplied">Narrative of the death of<persName>Theodosius, bishop of<placeName>Jerusalem</placeName>
                   </persName>, and<persName>the monk Romanus</persName>
@@ -289,9 +311,9 @@
                 </rubric>
                 <note>This is probably an extract from<bibl>the Ecclesiastical History of Zacharias Rhetor (see no. 15)</bibl>. See the text in<bibl>Land, Anecdota Syriaca, t. iii., p. 341</bibl>; and compare<bibl>Assemani, Bibl. Or., t. ii., p. 55</bibl>, and<bibl>Mai, Scriptorum Vett. Nova Collectio, t. x., p. 333</bibl>.</note>
               </msItem>
-              <msItem n="16" xml:id="b15">
+              <msItem xml:id="b15" n="16">
                 <locus from="142b" to="145b">Foll. 142b-145b</locus>
-                <author>
+                <author ref="http://syriaca.org/person/58">
                   <persName>Zacharias Rhetor</persName>
                 </author>
                 <title type="supplied">Life of<persName>Isaiah, abbat of<placeName>Scete</placeName>
@@ -305,7 +327,7 @@
                 </note>
                 <note>This life has been edited by<bibl>Land in his Anecdota Syriaca, t. iii., p. 346</bibl>.</note>
               </msItem>
-              <msItem n="17" xml:id="b16">
+              <msItem xml:id="b16" n="17">
                 <locus from="145b" to="152">Foll. 145b-152</locus>
                 <author ref="http://syriaca.org/person/42">Jacob of<placeName ref="http://syriaca.org/place/48">Batnae</placeName>
                 </author>
@@ -316,9 +338,9 @@
                 </rubric>
                 <note>Instead of ܚܢܻܝܢܴܐ, the manuscript had originally ܚܢܢܝܐ, but the corrector has written just over the word: $ܗܕܐ ܬܫܥܝܬܐ ܕ܏ܩܕ ܚܢܻܝܢܐ ܐܝܬܝܗ̇ ܘܠܘ ܕܚ̣ܰܢܢܝܐ.. He died A. Gr. 811, A.D. 500.</note>
               </msItem>
-              <msItem n="18" xml:id="b17">
+              <msItem xml:id="b17" n="18">
                 <locus from="152a" to="165">Foll. 152a-165</locus>
-                <author>Elias</author>
+                <author ref="http://syriaca.org/person/63">Elias</author>
                 <title type="supplied">Life of<persName>John</persName>, bishop of<placeName ref="http://syriaca.org/place/200">Tella</placeName>, written by his constant companion<persName>Elias</persName>, at the request of<persName>Sergius</persName>and<persName>Paul</persName>
                 </title>
                 <rubric xml:lang="syr">ܬܘܒ ܬܫܥܝܬܐ̣. ܕܚܣܝܐ ܘܡ̤ܠܐ ܛ̇ܘ̈ܒܐ̇. ܝܘܚܢܢ ܐܦܝܣܩܘܦܐ ܕܬܠܐ ܡܕܝܢܬܐ. ܕܗܝ ܗܕܐ ܐ̈ܢܫܝܢ ܦ̇ܪ̈ܘܫܐ ܐܦܝ̣ܣܘ̣. ܒܚܦ̣ܝܛܘܬܐ ܣܓܝܐܬܐ. ܠܐܝܢܐ ܕܥܡܗ ܕܩܕܝܫܐ ܙ̇ܒ̣ܢܐ ܝܕܝܥ̣ܐ ܥܡܪ. ܕܬܬܟ̣ܬܒ ܠܥܘܕܪܢܐ ܕܣ̈ܓܝܐܐ̣ ܡ̇ܚ̈ܒܢܘܗܝ ܕܫܪܪܐ. ܠܐ̈ܚܐ ܪ̈ܘܚܢܐ ܘܪܚ̈ܡܝ ܒܟܠܡܕܡ ܠܡܫܝܚܐ: ܡܪܝ ܣܪܓܝܣ ܘܡܪܝ ܦܘܠܐ̣ ܒ̈ܢܝ ܚܐܪ̈ܐ ܒܫܪܪܐ. ܐܠܝܐ ܣ̇ܓܘܕܟܘܢ. ܒܡܪܢ ܫܠ̇ܡ. ܏ܘܫ..<locus from="152a" to="152a"/>
@@ -329,9 +351,9 @@
                 <listBibl>
                   <bibl>see Assemani, Bibl. Or., t. ii., p. 53</bibl>
                 </listBibl>
-                <msItem n="19" xml:id="b18">
+                <msItem xml:id="c1" n="19">
                   <locus from="165b" to="175">Foll. 165b-175</locus>
-                  <author>
+                  <author ref="http://syriaca.org/person/958">
                     <persName ref="http://syriaca.org/person/958">Eusebius</persName>of<placeName ref="http://syriaca.org/place/178">Samosata</placeName>
                   </author>
                   <title type="supplied">Life of<persName ref="http://syriaca.org/person/958">Eusebius</persName>of<placeName ref="http://syriaca.org/place/178">Samosata</placeName>, who suffered during the persecution of<persName>Valens</persName>
@@ -339,7 +361,7 @@
                   <rubric xml:lang="syr">ܬܘܒ ܬܫܥܝܬܐ ܕܕܘܒ̇ܪ ܚ̈ܝܘܗܝ܆ ܕܚܣܝܐ ܕܐܠܗܐ̇. ܩܕܝܫܐ ܡܪܝ ܐܣܘܒܝܘܣ ܐܦܝܣܩܘܦܐ ܓܒܝܐ̣. ܘܡܝܛܪܘܦܘܠܝܛܝܣ ܕܫܡܝܫܛ ܡܕܝܢܬܐ..<locus from="165b" to="165b"/>
                   </rubric>
                 </msItem>
-                <msItem n="20" xml:id="b19">
+                <msItem xml:id="c2" n="20">
                   <locus from="175a" to="179">Foll. 175a-179</locus>
                   <title type="supplied">Martyrdom of<persName>Cyprian</persName>, bishop of<placeName ref="http://syriaca.org/place/10">Antioch</placeName>, and of the virgin<persName>Justa</persName>, in the reign of<persName>Diocletian</persName>, at<placeName ref="http://syriaca.org/place/502">Nicomedia</placeName>
                   </title>
@@ -349,7 +371,7 @@
                     <bibl>See Add. 12,142<ptr target="http://syriaca.org/manuscript/16"/>, <citedRange unit="fol" from="74">fol. 74</citedRange>
                     </bibl>.</note>
                 </msItem>
-                <msItem n="21" xml:id="b20">
+                <msItem xml:id="c3" n="21">
                   <locus from="179b" to="182">Foll. 179b-182</locus>
                   <title type="supplied">History of<persName>Andronicus</persName>and his wife<persName>Athanasia</persName>
                   </title>
@@ -359,20 +381,20 @@
                     <bibl>See Add. 12,172<ptr target="http://syriaca.org/manuscript/64"/>, <citedRange unit="fol" from="48b">fol. 48 b</citedRange>
                     </bibl>.</note>
                 </msItem>
-                <msItem n="22" xml:id="b21">
+                <msItem xml:id="c4" n="22">
                   <locus from="182a" to="183">Foll. 182-183</locus>
                   <title type="supplied">Story of a merchant of the village of<placeName>Paddana</placeName>,<placeName xml:lang="syr">ܦܕܢܐ</placeName>, near<placeName ref=" http://syriaca.org/place/216">Harran</placeName>, who went annually on business to<placeName ref="http://syriaca.org/place/586">Constantinople</placeName>, and of what passed between him and the wife of a patricius</title>
                   <rubric xml:lang="syr">ܬܫܥܝܬܐ ܕܥܠ ܬܓܪܐ ܚܕ. ܕܗܘ̣ܬ ܒܡܕܝܢܬ̇ ܡ̇ܠ̣ܟܘܬܐ ܩܘܣܛܢܛܝܢܘܦܘܠܝܣ.<locus from="182a" to="182a"/>
                   </rubric>
                 </msItem>
-                <msItem n="23" xml:id="b22">
+                <msItem xml:id="c5" n="23">
                   <locus from="183b" to="184">Foll. 183b-184</locus>
                   <title type="supplied">Anecdotes of<persName>Daniel</persName>, abbat of<placeName>Scete</placeName>
                   </title>
                   <rubric xml:lang="syr">ܬܘܒ ܬܫܥܝܬܐ ܘܕܘܒܪ̈ܐ. ܕܚܣܝܐ ܘܫ̇ܘܐ ܠܕܘܟܪܢܐ ܛ̇ܒܐ̇. ܐܒ̇ܐ ܕܢܝܐܝܠ ܪܝܫܐ ܕܐܣܩܝܛܝܣ.<locus from="183b" to="183b"/>
                   </rubric>
                 </msItem>
-                <msItem n="24" xml:id="b23">
+                <msItem xml:id="c6" n="24">
                   <locus from="184a" to="185">Foll. 184a-185</locus>
                   <title type="supplied">Story of<persName>Eulogius</persName>, who tended a leper for fifteen years</title>
                   <rubric xml:lang="syr">ܢ̣ܨܚܢܗ ܕܛܘܒܢܐ ܐܘܠܓ ܗ̇ܘ ܕܫ̇ܡܫ ܠܗ̇ܘ ܐܪܝܢܐ ܕܡܣܲܪܚ ܗܘܐ ܟܠܗ ܦܓܪܗ܆ ܡܛܠ ܡܫܝܚܐ.<locus from="184a" to="184a"/>
@@ -381,9 +403,9 @@
                     <bibl>Compare Rosweyde, Vitae Patrum, pp. 673, seqq., 728, and 950.</bibl>
                   </listBibl>
                 </msItem>
-                <msItem n="25" xml:id="b24">
+                <msItem xml:id="c7" n="25">
                   <locus from="185b" to="188">Foll. 185b-188</locus>
-                  <author>Hieronymus</author>
+                  <author ref="http://syriaca.org/person/857">Hieronymus</author>
                   <title type="supplied">Life of<persName>Malchus</persName>the solitary</title>
                   <rubric xml:lang="syr">ܬܘܒ ܬܫܥܝܬܐ ܕܛܘܒܢܐ ܡ̇ܠ̣ܟܘܣ ܝܚܝܕܝܐ.<locus from="185b" to="185b"/>
                   </rubric>
@@ -391,7 +413,7 @@
                     <bibl>See Rosweyde, Vitae Patrum, p. 93.</bibl>
                   </listBibl>
                 </msItem>
-                <msItem n="26" xml:id="b25">
+                <msItem xml:id="c8" n="26">
                   <locus from="188b" to="190">Foll. 188b-190</locus>
                   <title type="supplied">Anecdotes of<persName>Martinianus</persName>the soli¬tary</title>
                   <rubric xml:lang="syr">ܬܘܒ ܬܫܥܝܬܐ ܕܢܨ̇ܝܚܐ ܡܪܛܝܢܝܢܐ ܝܚܝܕܝܐ.<locus from="188b" to="188b"/>
@@ -400,19 +422,19 @@
                     <bibl>Compare Surius, Vitae Sanctorum, ed. 1617, t. i., Febr., pp. 131 and 133.</bibl>
                   </listBibl>
                 </msItem>
-                <msItem n="27" xml:id="b26">
+                <msItem xml:id="c9" n="27">
                   <locus from="190a" to="190a">Foll. 190a-190a</locus>
                   <title type="supplied">Anecdote of<persName>Eugenius</persName>the Egyptian and his wife</title>
                   <rubric xml:lang="syr">ܬܫܥܝܬܐ ܕܥܠ ܐܘܓܢܝܣ ܡܨܪܝܐ.<locus from="190a" to="190a"/>
                   </rubric>
                 </msItem>
-                <msItem n="28" xml:id="b27">
+                <msItem xml:id="c10" n="28">
                   <locus from="190b" to="190b">Foll. 190b-190b</locus>
                   <title type="supplied">Story of a man in prison, his wife, and a thief</title>
                   <rubric xml:lang="syr">ܬܫܥܝܬܐ ܕܥܠ ܓܒܪܐ ܚܕ ܕܒܝܬ ܐܣܝܪ̈ܐ.<locus from="190b" to="190b"/>
                   </rubric>
                 </msItem>
-                <msItem n="29" xml:id="b28">
+                <msItem xml:id="c11" n="29">
                   <locus from="190b" to="195">Foll. 190b-195</locus>
                   <author ref="http://syriaca.org/person/668">Palladius</author>
                   <title type="supplied">Anecdotes of Apollo and Amun, from the work of<persName ref="http://syriaca.org/person/668">Palladius</persName>
@@ -423,7 +445,7 @@
                     <bibl>See Rosweyde, Vitae Patrum, pp. 460—66 and pp. 747—52.</bibl>
                   </listBibl>
                 </msItem>
-                <msItem n="30" xml:id="b29">
+                <msItem xml:id="c12" n="30">
                   <locus from="195b" to="197">Foll. 195b-197</locus>
                   <author ref="http://syriaca.org/person/668">Palladius</author>
                   <title type="supplied">Anecdotes of<persName>Paphnutius</persName>, from the work of<persName ref="http://syriaca.org/person/668">Palladius</persName>
@@ -434,7 +456,7 @@
                     <bibl>Compare Rosweyde, Vitae Patrum, pp. 473, seqq.</bibl>
                   </listBibl>
                 </msItem>
-                <msItem n="31" xml:id="b30">
+                <msItem xml:id="c13" n="31">
                   <locus from="197a" to="200">Foll. 197a-200</locus>
                   <author ref="http://syriaca.org/person/668">Palladius</author>
                   <title type="supplied">Story of<persName>Copres</persName>and<persName>Patermutius</persName>, from the work of<persName ref="http://syriaca.org/person/668">Palladius</persName>
@@ -445,7 +467,7 @@
                     <bibl>Compare Rosweyde, Vitae Patrum, pp. 466, seqq.</bibl>
                   </listBibl>
                 </msItem>
-                <msItem n="32" xml:id="b31" defective="false">
+                <msItem xml:id="c14" n="32" defective="false">
                   <locus from="200a" to="200a">Fol. 200a</locus>
                   <author ref="http://syriaca.org/person/668"/>
                   <title type="supplied">Story of Apollo (or Apollonius) the younger, from the
@@ -458,7 +480,7 @@
                     <bibl>Rosweyde, Vitae Patrum, p. 476.</bibl>
                   </listBibl>
                 </msItem>
-                <msItem n="33" xml:id="b32" defective="false">
+                <msItem xml:id="c15" n="33" defective="false">
                   <locus from="200b" to="205">Foll. 200b-205</locus>
                   <author/>
                   <title type="supplied">History of the emperor Constantine, showing how he was
@@ -471,7 +493,7 @@
                   <note>Compare to<bibl>Add. 17,202, Fol. 25b</bibl>
                   </note>
                 </msItem>
-                <msItem n="34" xml:id="b33" defective="false">
+                <msItem xml:id="c16" n="34" defective="false">
                   <locus from="205a" to="209">Foll. 205a-209</locus>
                   <author/>
                   <title type="supplied">Story of a merchant named Mark, who died in a strange
@@ -494,7 +516,7 @@
                         ܓܐܙܐ</quote>
                   </note>
                 </msItem>
-                <msItem n="35" xml:id="b34" defective="false">
+                <msItem xml:id="c17" n="35" defective="false">
                   <locus from="209b" to="214">Foll. 209b-214</locus>
                   <author xml:lang="en" type="supplied">
                     <persName>Jeremiah the prophet</persName>
@@ -519,7 +541,7 @@
                   <colophon/>
                   <note>The whole story is merely a vision of the said Zosimus.</note>
                 </msItem>
-                <msItem n="36" xml:id="b35" defective="false">
+                <msItem xml:id="c18" n="36" defective="false">
                   <locus from="214a" to="227a">Foll. 214a-227</locus>
                   <author/>
                   <title type="supplied">Account of an image of our Saviour, set up by the Jews
@@ -538,7 +560,7 @@
                         ܣ̇ܓܝ ܫܠ̇ܡ</quote>
                   </note>
                 </msItem>
-                <msItem n="37" xml:id="b36" defective="false">
+                <msItem xml:id="c19" n="37" defective="false">
                   <locus from="227a" to="235">Foll. 227a-235</locus>
                   <author/>
                   <title type="supplied">Life of Abraham, surnamed "of the lofty mountain," the
@@ -559,7 +581,7 @@
                     <bibl>Assemani, Bibl. Or., t. ii., p. 1.</bibl>
                   </listBibl>
                 </msItem>
-                <msItem n="38" xml:id="b37" defective="false">
+                <msItem xml:id="c20" n="38" defective="false">
                   <locus from="235a" to="244">Foll. 235a-244</locus>
                   <author/>
                   <title type="supplied">Life of Eulogius the Egyptian ascetic, to whom a lion
@@ -572,7 +594,7 @@
                   </incipit>
                   <colophon/>
                 </msItem>
-                <msItem n="39" xml:id="b38" defective="false">
+                <msItem xml:id="c21" n="39" defective="false">
                   <locus from="244b" to="246">Foll. 244b-246</locus>
                   <author/>
                   <title type="supplied">Story of Gerasimus and his lion</title>
@@ -586,7 +608,7 @@
                     <bibl>Rosweyde, Vitae Patrum, p. 887</bibl>
                   </listBibl>
                 </msItem>
-                <msItem n="40" xml:id="b39" defective="false">
+                <msItem xml:id="c22" n="40" defective="false">
                   <locus from="246b" to="253">Foll. 246b-253</locus>
                   <author/>
                   <title type="supplied">Life of Isaiah of Haleb, or Aleppo, the last of the 72
@@ -602,7 +624,7 @@
                   </incipit>
                   <colophon/>
                 </msItem>
-                <msItem n="41" xml:id="b40" defective="false">
+                <msItem xml:id="c23" n="41" defective="false">
                   <locus from="253b" to="259">Foll. 253b-259</locus>
                   <author/>
                   <title type="supplied">Life of Yareth of Alexandria, who was born about<date when-custom="0503" datingMethod="Seleucid">A. Gr. 503</date>,<date calendar="Gregorian" when="0192">A.D. 192</date>
@@ -617,7 +639,7 @@
                   </incipit>
                   <colophon/>
                 </msItem>
-                <msItem n="42" xml:id="b41" defective="false">
+                <msItem xml:id="c24" n="42" defective="false">
                   <locus from="259a" to="276">Foll. 259a-276</locus>
                   <author/>
                   <title type="supplied">Life of<persName>Eugenius the Egyptian</persName>, the first who introduced
@@ -643,7 +665,7 @@
                     <bibl>Acta Sanctt. Martyrum, t. i., p. 92</bibl>
                   </listBibl>
                 </msItem>
-                <msItem n="43" xml:id="b42" defective="false">
+                <msItem xml:id="c25" n="43" defective="false">
                   <locus from="276a" to="279">Foll. 276a-279</locus>
                   <author ref="http://syriaca.org/person/74"/>
                   <title type="supplied">Life of John the Nazirite, who was in his youth a monk of the<placeName>convent of Zukenin</placeName>
@@ -659,7 +681,7 @@
                     <bibl>Land, Anecdota Syr., t. ii., p. 22</bibl>
                   </listBibl>
                 </msItem>
-                <msItem n="44" xml:id="b43" defective="false">
+                <msItem xml:id="c26" n="44" defective="false">
                   <locus from="279a" to="280">Foll. 279a-280</locus>
                   <author/>
                   <title type="supplied">The death of S. John the Evangelist</title>
@@ -670,7 +692,7 @@
                     <bibl>Tischendorf, Acta Apostol. Apocrypha, p. 272, from chap. 15 to the end</bibl>
                   </listBibl>
                 </msItem>
-                <msItem n="45" xml:id="b44" defective="false">
+                <msItem xml:id="c27" n="45" defective="false">
                   <locus from="280a" to="283">Foll. 280a-283</locus>
                   <author/>
                   <title type="supplied">Life of Clement, the disciple of S. Peter</title>
@@ -680,7 +702,7 @@
                   </incipit>
                   <colophon/>
                 </msItem>
-                <msItem n="46" xml:id="b45" defective="false">
+                <msItem xml:id="c28" n="46" defective="false">
                   <locus from="283a" to="285">Foll. 283a-285</locus>
                   <author ref="http://syriaca.org/person/781"/>
                   <title type="supplied">Life of<persName ref="http://syriaca.org/person/811">Jacob, bishop of Nisibis</persName>, from the Philotheus of<persName ref="http://syriaca.org/person/781">Theodoret</persName>
@@ -692,7 +714,7 @@
                     <bibl>Schulze, t. iii., p. 1108</bibl>
                   </listBibl>
                 </msItem>
-                <msItem n="47" xml:id="b46">
+                <msItem xml:id="c29" n="47">
                   <locus from="285a" to="285">Fol. 285a-285</locus>
                   <author/>
                   <title type="supplied">Life of<persName ref="http://syriaca.org/person/42">Jacob, bishop of<placeName ref="http://syriaca.org/place/48">Batnae</placeName>
@@ -702,22 +724,22 @@
                   </rubric>
                   <note>See<bibl>Abbeloos, De Vita et Scriptis S. Jacobi (1867), pp. 89, 102, and 311</bibl>, and the<bibl>Acta Sanctorum for October, t. xii., pp. 824, seqq</bibl>.; and compare<bibl>Assemani, Bibl. Or., t. i., p. 286</bibl>.</note>
                 </msItem>
-                <msItem n="48" xml:id="b47">
+                <msItem xml:id="c30" n="48">
                   <locus from="285b" to="291">Fol. 285b-291</locus>
                   <author/>
                   <title type="supplied"/>
-                  <msItem n="49" xml:id="c1">
+                  <msItem xml:id="d1" n="49">
                     <locus from="285b" to="291">Fol. 285b-291</locus>
-                    <author>John, bishop of<placeName>Asia</placeName>
+                    <author ref="http://syriaca.org/person/74">John, bishop of<placeName>Asia</placeName>
                     </author>
                     <title type="supplied">Life of<persName ref="http://syriaca.org/person/69">Jacob Baradaeus</persName>, bishop of<placeName ref="http://syriaca.org/place/78">Edessa</placeName>, from whom the sect of the<orgName>Jacobites</orgName>took its name</title>
                     <rubric xml:lang="syr">ܬܘܒ ܬܫܥܝܬܐ ܕܥܠ ܩܕܝܫܐ ܡܪܝ ܝܥܩܘܒ ܐܦܝܣܩܘܦܐ ܕܐܘܪܗܝ. ܡܐܠܠܘܢ ܕܝܢ̣ ܕܟܠܗܘܢ ܬܪ̈ܝܨܝ ܏ܫܘ: ܗ̇ܘ ܕܡܬܝ̣ܕܥ<sic>ܒܘܪܕܥܢܐ̣</sic>. ܘܐܦ ܡܛܠܬܗ ܐܬܟ݁ܢ̣ܝܢܢ ܝܥܩܘܒ̈ܝܐ. ܡ̇ܟܬܒܐ ܕܝܢ̣ ܠܩܕܝܫܐ ܝܘܚܢܢ ܕܐܣܝܐ̇ ܡܬ̇ܠܡܕ ܚ̈ܢܦܐ̣. ܘܡ̇ܟܬܒ ܬܫܥ̈ܝܬܐ ܕܥܕܬܐ.<locus from="285b"/>
                     </rubric>
                     <note>See<bibl>Assemani, Bibl. Or., t. ii., p. 62</bibl>and<bibl>Land, Anecd. Syr., t. ii., p. 35 of the introduction, and p. 364</bibl>.</note>
                   </msItem>
-                  <msItem n="49" xml:id="c2">
+                  <msItem xml:id="d2" n="50">
                     <locus from="291a" to="291">Fol. 291a-291</locus>
-                    <author>Cyriacus, bishop of<placeName>Maridin</placeName>
+                    <author ref="http://syriaca.org/person/3518">Cyriacus, bishop of<placeName>Maridin</placeName>
                     </author>
                     <title type="supplied">A short account of the translation of the remains of<persName ref="http://syriaca.org/person/69">Jacob Baradaeus</persName>from the<placeName>convent of Cassianus</placeName>(?),<foreign xml:lang="syr">ܩܣܝܢ</foreign>, on the confines of<placeName ref="http://syriaca.org/place/7">Egypt</placeName>, to that of<placeName>Pesilta</placeName>, near<placeName ref="http://syriaca.org/place/200">Tella de-Mauzelath</placeName>or<placeName ref="http://syriaca.org/place/200">Constantina</placeName>,<date when-custom="0933" datingMethod="Seleucid">A. Gr. 933</date>,<date when="0622" calendar="Gregorian">A.D. 622</date>
                     </title>
@@ -725,11 +747,11 @@
                     </rubric>
                   </msItem>
                 </msItem>
-                <msItem n="50" xml:id="b48">
+                <msItem xml:id="c31" n="51">
                   <locus from="291b" to="294">Fol. 291b-294</locus>
                   <author/>
                   <title type="supplied"/>
-                  <msItem n="51" xml:id="c3">
+                  <msItem xml:id="d3" n="52">
                     <locus from="291b" to="292">291b-292</locus>
                     <author/>
                     <title type="supplied">Account of the Invention of the holy Cross, for the first time, by<persName>Protonice</persName>, the wife of<persName>Claudius Caesar</persName>, when<persName>S. James (Jacob)</persName>, the brother of our Lord, was bishop of<placeName ref="http://syriaca.org/place/104">Jerusalem</placeName>
@@ -738,7 +760,7 @@
                     </rubric>
                     <note>See<bibl>Add. 14,654, fol. 32</bibl>. In the time of<persName>Trajan</persName>it was again concealed by the<orgName>Jews</orgName>, and remained so till the days of<persName>Jude (<foreign xml:lang="syr">ܝܗܘܕܐ</foreign>)</persName>, the fifteenth bishop of<placeName ref="http://syriaca.org/place/104">Jerusalem</placeName>.</note>
                   </msItem>
-                  <msItem n="52" xml:id="c4">
+                  <msItem xml:id="d4" n="53">
                     <locus from="292b" to="294">Fol. 292b-294</locus>
                     <author/>
                     <title type="supplied">Account of the Invention of the holy Cross, for the second time, by the empress<persName>Helena</persName>, the mother of<persName>Constantine</persName>
@@ -749,7 +771,7 @@
                     </incipit>
                   </msItem>
                 </msItem>
-                <msItem n="53" xml:id="b49">
+                <msItem xml:id="c32" n="54">
                   <locus from="294b" to="299">Fol. 294b-299</locus>
                   <author/>
                   <title type="supplied">Martyrdom of<persName>Sergius</persName>and<persName>Bacchus</persName>, in the reign of<persName>Maximian</persName>
@@ -758,7 +780,7 @@
                   </rubric>
                   <note>See<bibl>Surius, Vitae Sanctorum, t. iv., Oct. 7, p. 99</bibl>.</note>
                 </msItem>
-                <msItem n="54" xml:id="b50">
+                <msItem xml:id="c33" n="55">
                   <locus from="299b" to="303">Fol. 299b-303</locus>
                   <author/>
                   <title type="supplied">Martyrdom of<persName>Romanus</persName>and another youth, under<persName>Diocletian</persName>and<persName>Maximian</persName>
@@ -769,7 +791,7 @@
                   </incipit>
                   <note>Date of the martyrdom, the 18th of the second Teshrin. Compare<bibl>the Martyrologium Romanum, ed. 1845, p. 224, Nov. 18</bibl>.</note>
                 </msItem>
-                <msItem n="55" xml:id="b51">
+                <msItem xml:id="c34" n="56">
                   <locus from="303a" to="306">Fol. 303a-306</locus>
                   <author/>
                   <title type="supplied">Martyrdom of<persName>Mamas</persName>, his father<persName>Theodotus</persName>, and his mother<persName>Rufina</persName>
@@ -778,13 +800,12 @@
                   </rubric>
                   <note>Compare<bibl>Surius, Vitae Sanctorum, t. iii., Aug. 17, p. 173</bibl>.</note>
                 </msItem>
-                <msItem n="56" xml:id="b52">
+                <msItem xml:id="c35" n="57">
                   <locus from="306a" to="311">Fol. 306a-311</locus>
                   <author/>
                   <title type="supplied">Martyrdom of<persName>Christopher</persName>and others, in<date when="0251" calendar="Gregorian">the third year of the reign of<persName>Decius</persName>
                     </date>
                   </title>
-                  <!-- Is this an accurate assumption for the third year of the reign of Decius? -->
                   <rubric xml:lang="syr">ܬܫܥܝܬܐ ܐܘܟܝܬ ܣܗܕܘܬܐ ܏ܕܩܕ ܡܪܝ ܟܪܝܣܛܘܦܘܪܘܣ ܒܪܒܪܝܐ. ܘܕܣܗ̈ܕܐ ܩ̈ܕܝܫܐ ܕܥܡܗ.<locus from="306a"/>
                   </rubric>
                   <note>
@@ -811,7 +832,7 @@
                     <p>Compare<bibl>the Acta Sanctorum for July, t. yi., pp. 125, seqq., especially pp. 139, 140</bibl>.</p>
                   </note>
                 </msItem>
-                <msItem n="57" xml:id="b53">
+                <msItem xml:id="c36" n="58">
                   <locus from="311b" to="316">Fol. 311b-316</locus>
                   <author/>
                   <title type="supplied">Martyrdom of<persName>Placidas</persName>, with his wife and children, in the reign of<persName>Adrian</persName>
@@ -835,17 +856,16 @@
                       </choice>
                     </persName>. See<bibl>the Acta Sanctorum for September, t. vi., p. 123</bibl>.</note>
                 </msItem>
-                <msItem n="58" xml:id="b54">
+                <msItem xml:id="c37" n="59">
                   <locus from="316a" to="322">Fol. 316a-322</locus>
                   <author/>
                   <title type="supplied">Martyrdom of<persName>'Abdu 'l-Masih</persName>, formerly a<orgName>Jew</orgName>named<persName>Asher ben Levi, of<placeName ref="http://syriaca.org/place/184">Singar</placeName>
                     </persName>, about the year 701,<date notBefore="0375" notAfter="0405" calendar="Gregorian">A.D. 390</date>
                   </title>
-                  <!-- What dating method is to be used for the year 701? -->
                   <incipit xml:lang="syr">ܬܘܒ ܬܫܥܝܬܐ ܐܘܟܝܬ ܣܗܕܘܬܐ̣. ܕܓܒܪܐ ܕܐܠܗܐ ܥ̣ܒܕܠܡܝܣܝܚ. ܕܗ̣ܘܐ ܥܒ̣ܕܐ ܕܡܫܝܚܐ. ܕܐܝ܏ܬܘ ܗܘܐ ܫܡܗ܆ ܐܫܝܪ ܒܪ ܠܘܝ ܝܘܕܝܐ̣. ܕܡܢ ܫܝܓܪ ܡܕܝܢܬܐ܀ ܒܫܢܬ̇ ܫܒܥܡܐܐ ܘܚܕܐ ܐܝܟ ܡܢ̣ܝܢܐ ܕܝܘ̈ܢܝܐ. ܟܕ ܥܕܟܝܠ ܡܓܘܫܘܬܐ ܢܨ̇ܚܐ ܗܘܬ ܒܐܬܪܐ ܕܦܪ̈ܣܝܐ: ܘܓ̈ܠ̣ܝܢ ܗ̈ܘܝ ܐܦܝ̈ܗ̇ ܕܝܘܕܝܘܬܐ ܐܦ ܒܐܬܪܐ ܕܫܝܓܪ̈ܝܐ̣. ܓܒܪܐ ܕܝܢ ܝܘܕܝܐ ܐܝܬ ܗܘܐ ܡܢ ܫܝܓܪ ܡܕܝܢܬܐ̇. ܘܐܝܬ ܗܘܐ ܠܗ ܩܢ̈ܝܢܐ̣ ܘܥ̇ܒܕܬܐ ܣܓܝܐܬܐ. ܘܡܫ̇ܪܬܚ ܗܘܐ ܒܥܘܬܪܐ ܪܒܐ. ܘܫܡܗ ܗܘܐ̣ ܠܘܝ. ܘܪܝܫܐ ܗܘܐ ܕܝܘ̈ܕܝܐ. ܘܐܝܬ ܗܘܐ ܠܗ ܒ̈ܢܝܐ. ܘܠܟܠܚܕ ܡܢܗܘܢ̣ ܪܥ̇ܝܘܬܐ ܡܢ ܩܢܝܢܗ ܐܓܥ̣ܠ. ܘܗ̇ܘ ܙܥܘܪܐ ܡܢܗܘܢ ܐܝܟ ܒܪ ܚܕܥܣܪ̈ܐ ܫ̈ܢܝܢ ܝܬܝܪ ܚܣܝܪܐ ܐܝܬܘܗܝ ܗܘܐ. ܘܫܡܗ ܗܘܐ̣ ܐܫܝܪ. ܏ܘܫ.<locus from="316a"/>
                   </incipit>
                 </msItem>
-                <msItem n="59" xml:id="b55">
+                <msItem xml:id="c38" n="60">
                   <locus from="322a" to="328">Fol. 322a-328</locus>
                   <author/>
                   <title type="supplied">Martyrdom of<persName>Theodore</persName>
@@ -865,7 +885,7 @@
                     <p>In that city he suffered martyrdom in the reign of<persName>Julian</persName>. Compare<bibl>Acta Sanctorum for Febr., t. ii., p. 28</bibl>.</p>
                   </note>
                 </msItem>
-                <msItem n="60" xml:id="b56">
+                <msItem xml:id="c39" n="61">
                   <locus from="328a" to="341">Fol. 328a-341</locus>
                   <author/>
                   <title type="supplied">Martyrdom of<persName>Stratonice</persName>, the daughter of<persName>Apollonius</persName>, and of<persName>Seleucus</persName>her betrothed, at<placeName ref="http://syriaca.org/place/439">Cyzicus</placeName>, in the time of<persName>Numerianus</persName>
@@ -874,7 +894,7 @@
                   </rubric>
                   <note>See<bibl>Assemani, Acta Martyrum, pars 2, p. 68</bibl>.</note>
                 </msItem>
-                <msItem n="61" xml:id="b57">
+                <msItem xml:id="c40" n="62">
                   <locus from="341b" to="344">Fol. 341b-344</locus>
                   <author/>
                   <title type="supplied">Martyrdom of<persName>Babylas</persName>, bishop of<placeName ref="http://syriaca.org/place/10">Antioch</placeName>, and of three youths, in the time of<persName>Numerianus</persName>and<persName>Carus</persName>
@@ -883,7 +903,7 @@
                   </rubric>
                   <note>See<bibl>Acta Sanctorum for January, t. ii., p. 571</bibl>.</note>
                 </msItem>
-                <msItem n="62" xml:id="b58">
+                <msItem xml:id="c41" n="63">
                   <locus from="344b" to="347">Fol. 344b-347</locus>
                   <author/>
                   <title type="supplied">Martyrdom of<persName>Onesimus</persName>, the disciple of<persName>S. Paul</persName>
@@ -892,9 +912,9 @@
                   </rubric>
                   <note>See<bibl>Surius, Vitae Sanctorum, t. i., Febr., p. 160</bibl>.</note>
                 </msItem>
-                <msItem n="63" xml:id="b59">
+                <msItem xml:id="c42" n="64">
                   <locus from="347b" to="356">Fol. 347b-356</locus>
-                  <author>Gabriel of<foreign xml:lang="syr">ܣܢܪܙܘ</foreign>
+                  <author ref="http://syriaca.org/person/998">Gabriel of<foreign xml:lang="syr">ܣܢܪܙܘ</foreign>
                   </author>
                   <title type="supplied">History of the martyrs of<placeName>
                       <choice>
@@ -911,17 +931,17 @@
                   </rubric>
                   <note>The author is Gabriel, surnamed Tauretha,<foreign xml:lang="syr">ܬܰܘܪܬܳܐ</foreign>, of<placeName xml:lang="syr">ܣܝܪܙܘܪ</placeName>, as he is called by<bibl>Assemani, Bibl. Or., t. iii., pars i., p. 456</bibl>.</note>
                 </msItem>
-                <msItem n="64" xml:id="b60">
+                <msItem xml:id="c43" n="65">
                   <locus from="356a" to="372">Fol. 356a-372</locus>
                   <author/>
-                  <title type="supplied">Martyrdom of<persName>Simeon bar Sabba'e</persName>, archbishop and catholicus of the<orgName>Eastern Church</orgName>, and of other bishops, priests, deacons, religious and lay persons</title>
+                  <title type="supplied" ref="http://syriaca.org/work/264">Martyrdom of<persName>Simeon bar Sabba'e</persName>, archbishop and catholicus of the<orgName>Eastern Church</orgName>, and of other bishops, priests, deacons, religious and lay persons</title>
                   <rubric xml:lang="syr">
                     <sic>ܬܘܒ ܬܫܥܝܬܐ ܕܥܠ ܛܘܒܢܐ ܫܡܥܘܢ̇ ܪܝܫܐ ܕܐܦܝ̈ܣܩܘܦܐ ܕܥܕܬܐ ܕܡܕܢܚܐ. ܘܕܐ̈ܦܝ܏ܣܩܘ ܘܩ̈ܫܝܫܐ. ܘܡܫ̈ܡܫܢܐ. ܘܒ̈ܢܝ ܩܝ̇ܡܐ. ܘܡܗ̈ܝܡܢܐ̣. ܕܐܣ̣ܗܕܘ ܒܗ ܒܪܕܘܦ̣ܝܐ ܕܡܬܝ̣ܕܥ ܫܡܥܘܢ ܒܪ ܨ̈ܒܥܐ. ܒܪܟܡܪܝ܀ ܐܬ̇ܝܢܢ ܠܢ ܡܟܝܠ ܠܘܬ ܬܫܥܝܬܐ ܚܢ̣ܝܓܬܐ ܕܩܛ̣ܠܗ ܕܣܗܕܐ ܩܕܝܫܐ ܕܐܠܗܐ̣. ܡܪܝ ܫܡܥܘܢ ܪܝܫ ܐܦܝ̈ܣܩܘܦܐ ܘܩܐܬܘܠܝܩܐ ܕܥܕܬܐ ܕܡܕܢܚܐ. ܕܗ̣ܘ ܩܕܡܝܐ ܐܬܢ̇ܨܚ ܒܐܪܥܐ ܕܡ̇ܕܢܚܐ̣. ܒܣܗܕܘܬܐ ܛ̇ܒܬܐ ܕܐܠܗܐ. ܕܒܗ ܟܕ ܒܗ ܒܡܐܡܪܢ ܗܢܐ ܢܬܥ̣ܗܕ܆ ܘܐܦ ܠܣܗܕܘܬܐ ܕܓܕܝܗܒ ܘܕܣܘܒܝܢܐ ܐ̈ܦ܏ܝܣ ܕܒܝܬ ܠܦܛ. ܘܕܝܘܚܢܢ ܐܦ܏ܝܣ ܕܗܘܪܡܝܙܐ ܐܪܙܫܝܪ ܘܒܘܠܝܕܥ ܐܦܝܣܩܘܦܐ ܕܦܪܬ ܕܡܝܫܢ. ܘܝܘܚܢܢ ܐܦܝܣܩܘܦܐ ܕܟܪܟܐ ܕܡܝܫܢ. ܘܬܫ̈ܥܝܢ ܘܫܒ̈ܥܐ ܏ܩ̈ܫܝ ܘܡܫ̈ܡܫܢܐ. ܘܓܘܫܬܐܙܕ ܪܝܫ ܡܗ̈ܝܡܢܐ̣. ܕܐܝܬܘܗܝ ܗܘܐ ܕܪܓܗ ܐܪܙܒܕ. ܘܕܦܳܘܣܻܝ. ܩܰܪܓܒܷܕ ܕܐܝܬܘܗܝ ܕܪܓܗ ܪܝܫ ܐܘܡ̈ܢܐ. ܘܕܒܪܬܗ ܒܪܬ ܩܝ̇ܡܐ ܕܥܡܗ ܕܛܘܒܢܐ ܫܡܥܘܢ ܐܬܟ݁ܠܠܘ ܒܣܗܕܘܬܐ ܛ̇ܒܬܐ ܕܐܠܗܐ.</sic>
                     <locus from="356a"/>
                   </rubric>
                   <note>See<bibl>Assemani, Bibl. Or., t. i., pp. 1 and 185</bibl>. Compare<bibl>Assemani, Acta Martyrum, pars 1, p. 10</bibl>.</note>
                 </msItem>
-                <msItem n="65" xml:id="b61" defective="true">
+                <msItem xml:id="c44" n="66" defective="true">
                   <locus from="372a" to="378">Foll. 372b-378a</locus>
                   <title type="supplied">Martyrdom of<persName>Posī, Pusices or
                       Pusicius</persName>whose father was a Grecian captive</title>
@@ -931,7 +951,7 @@
                   <note>Compare<bibl>Assemani, Acta Martyrum, pars 1, p. 35.</bibl>
                   </note>
                 </msItem>
-                <msItem n="66" xml:id="b62">
+                <msItem xml:id="c45" n="67">
                   <locus from="378a" to="380">Foll. 378a-380</locus>
                   <title type="supplied">Martyrdom of<persName>Martha, the daughter of<persName>Posī</persName>
                     </persName>
@@ -941,7 +961,7 @@
                   <note>Compare<bibl>Assemani, Acta Martyrum, pars 1, p. 36.</bibl>
                   </note>
                 </msItem>
-                <msItem n="67" xml:id="b63">
+                <msItem xml:id="c46" n="68">
                   <locus from="380a" to="381">Foll. 380a-381</locus>
                   <title type="supplied">Martyrdom of<persName>Shahdōst the Catholicus</persName>, the successor of<persName>Simeon bar Sabbā'ē</persName>and others</title>
                   <rubric xml:lang="syr">ܬܘܒ ܣܗܕܘܬܐ ܕܩܕܝܫܐ ܡܪܝ ܫܗܕܘܣܬ܆ ܩܐܬܘܠܝܩܐ̣. ܘܕܗ̇ܢܘܢ ܕܥܡܗ.<locus from="380a" to="380a"/>
@@ -949,7 +969,7 @@
                   <note>See<bibl>Assemani, Bibl. Or., t. i., p. 188</bibl>.</note>
                   <note>See<bibl>Assemani, Acta Martyrum, pars 1, p. 88</bibl>, and<bibl>Acta Sanctorum for Febr., t. iii., p. 176</bibl>.</note>
                 </msItem>
-                <msItem n="68" xml:id="b64">
+                <msItem xml:id="c47" n="69">
                   <locus from="381a" to="382">Foll. 381a-382</locus>
                   <title type="supplied">Martyrdom of<persName>Tarbū, or Tarbula, the sister of<persName ref="&quot;">Simeon bar Sabbā'ē</persName>
                     </persName>, her sister, and her maidservant</title>
@@ -958,7 +978,7 @@
                   <note>See<bibl>Assemani, Bibl. Or., t. i., p. 187</bibl>.</note>
                   <note>See<bibl>Assemani, Acta Martyrum, pars 1, p. 54</bibl>, and<bibl>Acta Sanctorum for April, t. iii., p. 21</bibl>.</note>
                 </msItem>
-                <msItem n="69" xml:id="b65">
+                <msItem xml:id="c48" n="70">
                   <locus from="382a" to="383">Foll. 382a-383</locus>
                   <title type="supplied">Martyrdom of 120 martyrs</title>
                   <rubric xml:lang="syr">ܬܘܒ ܣܗܕܘܬܐ ܕܡ̈ܐܐ ܘܥܣܪ̈ܝܢ ܣܗ̈ܕܐ ܩܕܝ̈ܫܐ.<locus from="382a" to="382a"/>
@@ -968,7 +988,7 @@
                   <note>See<bibl>Assemani, Acta Martyrum, pars 1, p. 150.</bibl>
                   </note>
                 </msItem>
-                <msItem n="70" xml:id="b66">
+                <msItem xml:id="c49" n="71">
                   <locus from="383a" to="388">Foll. 383a-388</locus>
                   <title type="supplied">Martyrdom of<persName>Phetion</persName>, in the ninth year of the reign of<persName>Yezdegerd</persName>
                   </title>
@@ -978,7 +998,7 @@
                   </quote>
                   <note>On<locus from="388a" to="388a">fol. 388a</locus>we find a short sketch of his career.</note>
                 </msItem>
-                <msItem n="71" xml:id="b67">
+                <msItem xml:id="c50" n="72">
                   <locus from="388a" to="395">Foll. 388a-395</locus>
                   <title type="supplied">Life of<persName>Ma'īn of<placeName ref="http://syriaca.org/place/184">Singar</placeName>
                     </persName>, one of the generals of<persName>Sapor, king of Persia</persName>, who was converted by seeing the steadfastness of the Christian martyrs (in particular of<quote xml:lang="syr">
@@ -994,7 +1014,7 @@
                     <!-- Arabic text or Persian? Needed -->
                   </quote>
                 </msItem>
-                <msItem n="72" xml:id="b68">
+                <msItem xml:id="c51" n="73">
                   <locus from="395a" to="397">Foll. 395a-397</locus>
                   <title type="supplied">Martyrdom of<listPerson>
                       <person>
@@ -1008,7 +1028,7 @@
                   <note>Compare<bibl>the Acta Sanctorum for Sept., t. ii., pp. 507, 508, especially § 6.</bibl>
                   </note>
                 </msItem>
-                <msItem n="73" xml:id="b69">
+                <msItem xml:id="c52" n="74">
                   <locus from="397a" to="400">Foll. 397a-400</locus>
                   <title type="supplied">Some account of the physicians<persName>Cosmas</persName>and<persName>Damian</persName>; their marvellous cures; their accusation before the emperor<persName>Carinus</persName>(<quote xml:lang="syr">
                       <persName>ܘܪܝܢܝܘܣ</persName>
@@ -1018,7 +1038,7 @@
                   <note>Compare<bibl>the Acta Sanctorum for Sept., t. vii., p. 434, §§ 36—38.</bibl>
                   </note>
                 </msItem>
-                <msItem n="74" xml:id="b70">
+                <msItem xml:id="c53" n="75">
                   <locus from="400a" to="411">Foll. 400a-411</locus>
                   <title type="supplied">Martyrdom of<persName>Behnām</persName>.</title>
                   <rubric xml:lang="syr">ܬܘܒ ܬܫܥܝܬܐ ܕܢܨܝܚ ܫܘܦܪ̈ܐ ܘܣܗܕܐ ܓܒ̣ܝܐ ܡܪܝ ܒܗܢܡ̣. ܛ̇ܪܕ ܫܐ̈ܕܐ.<locus from="400a" to="400a"/>
@@ -1034,7 +1054,7 @@
                     </quote>Matthew was succeeded by<persName>Zacchaeus</persName>(<quote xml:lang="syr">
                       <persName>ܙ̇ܟ̣ܝ</persName>
                       <locus from="408b" to="408b"/>
-                    </quote>), , during whose time, under the direction of his<foreign xml:lang="grc">δευτεράριος</foreign>, (<quote xml:lang="syre">ܬܪܝܢܐ</quote>),<persName>Abraham</persName>, the<persName>mother of Behnām</persName>erected the monastery afterwards called the<placeName>monastery of Abraham</placeName>, or of<quote xml:lang="syre">
+                    </quote>), , during whose time, under the direction of his<foreign xml:lang="grc">δευτεράριος</foreign>, (<quote xml:lang="syre">ܬܪܝܢܐ</quote>),<persName>Abraham</persName>, the<persName>mother of Behnām</persName>erected the monastery afterwards called the<placeName>monastery of Abraham</placeName>, or of<quote xml:lang="syr">
                       <placeName>ܟܘ̈ܟܝܬܐ</placeName>
                       <locus from="409a" to="409a"/>
                     </quote>, from the name of the spot where it stood and also the<placeName>monastery of Beth-Gubbā</placeName>(<quote xml:lang="syr">
@@ -1042,7 +1062,7 @@
                       <locus from="410b" to="410b"/>
                     </quote>), where the relics of Behnām and Sarah were deposited.</note>
                 </msItem>
-                <msItem n="75" xml:id="b71">
+                <msItem xml:id="c54" n="76">
                   <locus from="411b" to="424">Foll. 411b-424</locus>
                   <title type="supplied">Life of<persName>Jacob the Egyptian recluse</persName>
                   </title>
@@ -1082,7 +1102,7 @@
                     </quote>
                   </note>
                 </msItem>
-                <msItem n="76" xml:id="b72">
+                <msItem xml:id="c55" n="77">
                   <locus from="424a" to="426">Foll. 424a-426</locus>
                   <title type="supplied">Martyrdom of<persName>Leontius the soldier</persName>
                     <quote xml:lang="syr">ܦ̇ܠܚܐ</quote>), from the place called<quote xml:lang="syr">
@@ -1094,7 +1114,7 @@
                   <rubric xml:lang="syr">ܬܘܒ ܟ݁ܬܒܝܢܢ ܢ̣ܨܚܢܐ ܕܣܗ̈ܕܐ ܩ̈ܕܝܫܐ. ܠܐܘܢܛܝܘܣ̣ ܘܢܨܝܚܐ ܦܘܦܠܝܘܣ̣ ܨܠܘܬܗܘܢ ܥܡܢ<locus from="424a" to="424a"/>
                   </rubric>
                 </msItem>
-                <msItem n="77" xml:id="b73">
+                <msItem xml:id="c56" n="78">
                   <locus from="426a" to="430">Foll. 426a-430</locus>
                   <title type="supplied">Martyrdom of<persName>Ṭalyā</persName>
                   </title>
@@ -1113,7 +1133,7 @@
                       <placeName ref=" http://syriaca.org/place/52">ܓܷܒܠܷܝܗ̇ ܡܕܝܢܬܐ ܕܥܠ ܣܦ̇ܪ ܝ̇ܰܡ̣ܐ</placeName>
                     </quote>), who put both him and his parents to death.</note>
                 </msItem>
-                <msItem n="78" xml:id="b74">
+                <msItem xml:id="c57" n="79">
                   <locus from="430a" to="438">Foll. 430a-438</locus>
                   <title type="supplied">Martyrdom of<persName>Probus</persName>,<persName>Tarachus</persName>, and<persName>Andronicus</persName>
                   </title>
@@ -1122,7 +1142,7 @@
                   <note>See<bibl>the Acta Sanctorum for October., t. v., p. 566.</bibl>
                   </note>
                 </msItem>
-                <msItem n="79" xml:id="b75">
+                <msItem xml:id="c58" n="80">
                   <locus from="438a" to="445">Foll. 438a-445</locus>
                   <title ref="http://syriaca.org/work/63" type="supplied">Discourse, ascribed to<persName ref="http://syriaca.org/person/577">Josephus</persName>, on<persName>Eleazar</persName>,<persName>Shamūnī</persName>, and<persName>her seven sons</persName>, generally known as "the fourth book of the Maccabees"</title>
                   <title ref="http://syriaca.org/work/63" type="supplied">The Fourth Book of the Maccabees</title>
@@ -1132,7 +1152,7 @@
                   <note type="errata">Wright's attribution of 4 Maccabees to Josephus represents an ancient Christian tradition which has now been rejected by most scholars on stylistic grounds.</note>
                   <note type="incerta">It is not clear here which version of 4 Maccabees this texts contains.</note>
                 </msItem>
-                <msItem n="80" xml:id="b76">
+                <msItem xml:id="c59" n="81">
                   <locus from="445a" to="448">Foll. 445a-448</locus>
                   <title type="supplied">History of<persName>Thecla</persName>, the betrothed of<persName>Thamyris</persName>, and the disciple of<persName>S. Paul</persName>
                   </title>
@@ -1145,13 +1165,13 @@
                   </note>
                   <note>This history is wrongly numbered<quote xml:lang="syr">ܥܗ</quote>in the manuscript.</note>
                 </msItem>
-                <msItem n="81" xml:id="b77">
+                <msItem xml:id="c60" n="82">
                   <locus from="448b" to="449">Foll. 448b-449</locus>
                   <title type="supplied">Story of a virgin of<placeName ref="http://syriaca.org/place/53">Caesarea in Palestine</placeName>, who fell, and falsely accused the lector or cantor (<quote xml:lang="syr">ܩ̇ܪܘܝܐ</quote>or<quote xml:lang="syr">ܦܣܠܛܝܣ</quote>)<persName>Eustathius</persName>of being the father of her child.</title>
                   <note>The leaf is much mutilated.<!-- This should go in the physical description as well. -->
                   </note>
                 </msItem>
-                <msItem n="82" xml:id="b78">
+                <msItem xml:id="c61" n="83">
                   <locus from="449a" to="452">Foll. 449a-452</locus>
                   <title type="supplied">Part of an apocryphal work, entitled "the history of the decease of the<persName ref="http://syriaca.org/person/624">blessed Mother of God</persName>,"</title>
                   <title type="supplied">The History of the Decease of the<persName ref="http://syriaca.org/person/624">Blessed Mother of God</persName>
@@ -1166,28 +1186,129 @@
               </msItem>
             </msItem>
           </msContents>
-          <physDesc/>
+          <physDesc>
+            <p>Vellum, about 19 in. by 12 1/2, consisting of 452 leaves, of which some are much stained and torn, especially foll. 1—4, 9, 10, 120, 443, and 448. Originally it had 50 quires, but the whole of <foreign xml:lang="syr">ܐ</foreign> is now wanting, as also the whole of <foreign xml:lang="syr">ܓ</foreign>, except the first leaf (fol. 10). Leaves are likewise missing after foll. 9, 47, 443, 444, 446, 447, 448, and 451. The quires are signed with letters. Each page is divided into two columns, with the exception of foll. 251, 254 b, 255 a, and 321—330, which have three. The number of lines in each column varies from 38 to 50. Foll. 137 b and 138 a, as well as portions of foll. 54 b and 340 b, have been intentionally left blank.</p>
+            <objectDesc form="codex">
+              <supportDesc material="perg">
+                <extent>
+                  <measure type="composition" unit="leaf" quantity="452">452 ff.</measure>
+                </extent>
+              </supportDesc>
+            </objectDesc>
+            <handDesc>
+              <handNote xml:id="handNote1" scope="major" script="syr" medium="unknown">
+                <desc>This manuscript is written in a good, regular hand, and dated <date>A. Gr. 1508</date>, <date>A.D. 1197</date>
+                </desc>
+              </handNote>
+              <handNote xml:id="handNote2" scope="minor" script="syr" medium="unknown">
+                <desc>See additions.</desc>
+              </handNote>
+            </handDesc>
+            <additions>
+              <p/>
+              <list>
+                <item xml:id="addition1" n="1">
+                  <locus from="452b"/>
+                  <p>On fol. 452 b there are two notes, both in the handwriting of the scribe. The first is an attestation by <persName>Michael the Great, patri­arch of Antioch (A. Gr. 1478—1511)</persName>, that this book was written at the expense of <persName>the deacon #Saliba, of <placeName>the monastery of Bar-ṣauma at Melitene</placeName>
+                    </persName> (see <bibl>Assemani, Bibl. Or., t. ii., Dissert. de Monophys., art. ix., monast. Barsumae</bibl>), to be deposited in <placeName>the library of that convent</placeName>, in the <date>year of the Greeks, 1508</date>, <date>A.D. 1197</date>.</p>
+                  <p>
+                    <quote xml:lang="syr">ܡܛܠ ܕܝܢ ܕܟܠ ܕܫ̇ܐܠ ܢ̇ܣܒ܆ ܘܟܠ ܕܒ̇ܥܐ ܡܫܟܚ܇ ܐܝܟ ܦܣܩܐ ܫܪܝܪܐ ܕܡܠܬܐ ܡܪܢܝܬܐ. ܒܕܓܘܢ ܟܕ ܒܪܓܬܐ ܝܡܝܢܝܬܐ: ܐܨܛܠܒ̣ ܕܢܥܒ̣ܕ ܠܗ ܥܘܗܕܢܐ ܛ̇ܒܐ: ܨܠܝܒܐ ܕܝܪܝܐ ܪܚ̇ܡ ܐܠܗܐ ܘܡܫܡܫܢܐ ܢܟܦܐ: ܗܢܐ ܕܡܢ ܛܠܝܘܬܗ ܒܗ ܒܥܘܡܪܐ ܩܕܝܫܐ ܕܡܪܝ ܒܪܨܘܡܐ ܪܝܫܐ ܕܐܒ̈ܝܠܐ ܘܫܘܒܗܪܐ ܕܝܢ ܕܟܠܗ̇ ܥܕܬܐ ܬܪܝܨܬ̇ ܏ܫܘ ܐܬܪܒܝ: ܘܒܗ̣ ܐܬܬܠܡܕ. ܗܢܝܐܝܬ ܘܚܕܝܐܝܬ ܡܢ ܡܐ ܕܙ̇ܢܬ̇ ܠܗ ܛܝܒܘܬܐ. ܠܟܬܒܐ ܗܢܐ ܬ̇ܩ̣ܢ. ܡܛܠ ܕܕܐܝܟ ܗܢܐ ܒܠܚܘܕ ܚܣܝܪ ܗܘܐ ܒܒܝܒܠܘܬܝܩܝ ܕܝܠܗ ܕܥܘܡܪܐ. ܘܟܕ ܒܗ̇ ܒܛܝܒܘܬܐ ܕܐܠܗܐ ܘܒܨܠܘܬܗ ܕܩܕܝܫܐ ܐܫܬܡܠܝ ܒܬܫܪܝܢ ܩܕܝܡ ܕܫܢܬ̇ ܏ܐܢ̇ܚ: ܘܫ̇ܟ̣ܢܗ ܚܘܝܚܐܝܬ ܠܗ ܠܗܝܟܠܐ. ܡܙܕܩܝܢܢ ܘܡܫܪܪܝܢܢ ܒܫܘܠܛܢܐ ܫܠܝܚܝܐ̣. ܕܢܬ̣ܢܛܪ ܥܘܗܕܢܐ ܕܝܠܗ ܕܨܠܝܒܐ ܕܐܡܝܪ ܡܢ ܠܥܠ ܘܡܬܬܘܕܥ ܕܡܰܒܪܺܝܩ̣ܰܢ (؟) ܒܗ ܒܗܝܟܠܐ ܟܗܢܝܐ̣. ܟܡܐ ܕܗ̣ܘ ܥܘܡܪܐ ܢܛܝܪ ܒܥܡ̇ܘܪ̈ܐ ܬܪ̈ܝܨܝ ܏ܫ̣ܘ. ܐܝܟܢܐ ܕܬܗ̣ܘܐ ܠܗ ܘܠܐܒܗ̈ܘܗܝ ܫܘܬܦܘܬܐ ܒܩܘܪܒ ܩܘܪ̈ܒܢܐ ܘܒܬܫܡ̈ܫܬܐ ܕܠܝܠܝ ܐܝܡܡ. ܟܬ̇ܒܬ ܗܠܝܢ ܘܫ̇ܪܪܬ ܒܐܝ̣̈ܕܝܐ ܕܝܠܝ ܒܝܬܝ̈ܬܐ. ܐ̇ܢܐ ܡܝܟܐܝܠ ܣܒܐ ܡܚܝܠܐ̣. ܘܕܒܪܚ̈ܡ̣ܐ ܕܐܠܗܐ ܦܐܛܪܝܪܟܝܣ܇ ܕܟܘܪܣܝܐ ܫܠܝܚܝܐ ܗ̇ܘ ܕܐܢܛܝܘܟܝܐ ܘܣܘܪܝܐ. ܐܝܟܢܐ ܕܒܟܠ ܕܪ ܘܕܪ. ܟܠܗܘܢ ܐܝܠܝܢ ܕܢ̇ܛܪܝܢ ܘܡܫܡܫܝܢ: ܘܡܨܠܝܢ ܥܠ ܟܠ ܕܐܫܬܘܬܦ܆ ܘܐܦ ܗ̣ܢܘܢ ܢܬܚܣܘܢ. ܡܬܚܡܝܢܢ ܕܝܢ ܒܦܣܩܐ. ܕܠܐ ܐܢܫ ܢܦܩܝܘܗܝ ܡܢܗ ܕܥܘܡܪܐ̣. ܒܙܢܐ ܡܕܡ. ܐܠܐ ܡ̇ܢ ܕܨ̇ܒܐ ܕܢܨ̇ܚ ܡܢܗ ܩܠܝܠ ܐܘ ܣ̇ܓܝ̣. ܒܗ ܒܥܘܡܪܐ ܫܠܝܛ ܒܠܚܘܕ. ܟܠ ܕܝܢ ܕܦ̇ܓܥ ܘܡܨ̇ܠܐ ܢܡܘܣܐܝܬ̣. ܐܝܟ ܨܠܘܬܗ ܢܩܒܠ ܥܦܝܦܐܝܬ</quote>
+                  </p>
+                </item>
+                <item xml:id="addition2" n="2">
+                  <locus from="452b"/>
+                  <label>Colophon</label>
+                  <p>On fol. 452 b there are two notes, both in the handwriting of the scribe. The second note states that the book was written by <persName>a monk named Joseph, a cousin of the above mentioned <persName>#Saliba</persName>, resident at the time in <placeName>the convent of #Abu #Ghalib ($ܐܒܘܓܠܒ)</placeName>
+                    </persName>, whence he was summoned for the purpose.</p>
+                  <p>
+                    <quote xml:lang="syr">ܟܕ ܕܝܢ ܨܒ̣ܐ ܘܪܬ̣ܚ ܒܪܘܚܐ ܩܕܝܫܐ ܘܐܦ ܒܗܝܡܢܘܬܐ ܫܪܝܪܬܐ: ܗ̣ܘ
+                      ܐܚܘܢ ܪܘܚܢܝܐ ܒܡܫܝܚܐ ܘܒܪ ܥܡܬܐ ܕܝܠܝ ܪܒܢ ܨܠܝܒܐ ܕܝܪܝܐ ܪܚ̇ܡ ܐܠܗܐ ܘ܏ܡܫܡـ ܢܟܦܐ
+                      ܘܟܚ̣ܝܕܐ. ܘܐܒܝ ܪܘܚܢܝܐ ܕܠܐ ܚܛܝ̣ܬܐ: ܘܒܪܝܟܗ ܕܡܪܝܐ̣ ܢܛܝ̣ܪ ܒܐܠܗܐ. ܫܕܪ ܐܝ̣ܬܝ ܠܝ ܠܗܢܐ
+                      ܕܘܿܝܐ ܘܗ̣ܕܝܘܛܐ ܘܙܥܘܪܐ ܕܟܪ̈ܝܣܛܝܢܐ ܘܥܒ̣ܕܐ ܒܨܝܪܐ ܕܡܗ̈ܝܡܢܐ̣. ܝܘܣܦ ܚܛܝܐ ܘܐܟܣܢܝܐ
+                      ܘܫܚ̣ܠܐ ܕܕܝܪ̈ܝܐ̣ ܘܕܒܫܡܐ ܏ܩܫܝ. ܕܙܒܢܐܝܬ ܒܕܝܪܐ ܕܐܒܘܓܠܒ ܡܬܬܘܬܒ ܗ̇ܘܝܬ: ܘܒܟܬܝܒܬܐ ܗܕܐ
+                      ܡܚܝ̣ܠܬܐ̣ ܗܕܝܘܛܐܝܬ ܡܣ̇ܪܛ ܗ̇ܘܝܬ. ܘܐܬ݀ܝܬ ܠܗܢܐ ܥܘܡܪܐ ܏ܩܕ. ܕܪܒܐ ܒܥ̇ܢܘ̈ܝܐ ܡܪܢ ܡܪܝ
+                      ܒܪܨܘܡܐ. ܘܥܠ ܥܘܕܪܢܐ ܕܨ̈ܠܘܬܗ̣ ܣܒܪܐ ܕܚ̈ܝܝ ܫ̇ܕܝܬ: ܘܒܟܬܒܐ ܗܢܐ ܫܲܪܝܬ ܒܗܝܡܢܘܬܐ
+                      ܫܪܝܪܬܐ. ܘܒܥ̣ܕܪܐ ܕܨ̈ܠܘܬܗ ܕܩܕܝܫܐ: ܘܕܐܒܘܢ ܛܘܒܬܢܐ ܘܩܕܝܫ ܒܟܠ ܡܪܝ ܡܟܐܝܠ ܦܐܛܪܝܪܟܐ
+                      ܩܕܝܫܐ ܕܗ̣ܘ ܫ̇ܪܝ ܘܗ̣ܘ ܫܠܡ: ܘܒܣ̈ܓܝܐܬܐ ܚܲܝܠܢܝ ܘܐܠܦ̣ܢܝ ܒܟܬܝܒܬܐ ܐܝܟ ܕܠܒܪܐ̣. ܘܐܦܢ ܠܐ
+                      ܫ̇ܘܐ ܗ̇ܘܝܬ: ܫ̇ܡ̣ܠܝܬ ܠܗ ܠܟܬܒܐ ܐܝܟ ܚܲܝܠܝ ܬܚܘܒܐ̣ ܗܟܘܬ ܒܗ ܒܥܘܡܪܐ ܗܢܐ ܩܕܝܫܐ ܕܐܡܝ̣ܪ.
+                      ܒ̇ܥܐ ܕܝܢ ܘܡܬܟܫܦ ܐܢ̣ܐ ܠܟܠܗܘܢ ܐܒ̈ܗܝ ܘܐܚ̈ܝ ܪ̈ܘܚܢܝܐ ܘܩ̇ܪ̈ܘܝܐ ܡܗܝܪ̈ܐ ܕܦܓܥܝܢ ܒܟܬܒܐ
+                      ܗܢܐ ܕܐܒ̈ܗܬܐ ܩ̈ܕܝܫܐ̣. ܕܠܐ ܢܥ̣ܕܠܘܢ ܠܝ ܠܕܘܝܐ ܘܡܣܟܢܐ ܘܡܠܸܐ ܚܒܪ̈ܬܐ ܘܣ̈ܢܝܬܐ. ܥܠ ܠܐ
+                      ܡܛܟܣܘܬܐ ܕܟܬܝܒܬܐ̣. ܡܛܠ ܕܝܬܝܪ ܡܢ ܟܠ ܒ̣ܪ̈ܝܐ ܕܡ̈ܠܝܠܐ ܚܣܝܪ ܐܢܐ. ܒܢܦܫܐ ܒܦܓܪܐ ܒܗܘܢܐ
+                      ܘܒܟܠܗܝܢ ܝܡ̈ܝܢܝܬܐ ܘܕܠܡܪܝܐ ܫܦܪ̈ܢ. ܘܗܫܐ ܡܦܝ̣ܣ ܐܢ̣ܐ ܘܡܬܚ̇ܢܓ ܐܢܐ ܒܚܫܐ. ܕܠܦܘ̈ܕܐ
+                      ܩܪ̈ܝܚܐ ܘܕܓܠܸܝܢ ܠܓܘܐ ܬ݀ܬܪܨܘܢ. ܘܠܚܣܝܪ̈ܘܬܐ ܕܩܢܘܡܝ ܠܐ ܬܥ̣ܕܠܘܢ. ܐܠܐ ܨ̇ܠܘ ܥܠܝ ܒܚܘܼܒܐ
+                      ܘܒܦܪܘܫܘܬܐ. ܘܐܝܟ ܨܠܘܬܟܘܢ ܬܩܲܒܠܘܢ ܥܦ̣ܝܦܐܝܬ. ܗ̈ܘ̣ܝ ܕܝܢ ܗܠܝܢ ܘܐܫܬܡ̈ܠܝܝܢ ܒܡܥܕܪܢܘܬ
+                      ܒܛܝܠ̣ܘܬܐ ܐܠܗܝܬܐ. ܒܫܢܬ ܐ̈ܠܦ ܘܚܡܫ̈ܡܐܐ ܘܬܡ̈ܢܐ ܕܝܘ̈ܢܝܐ. ܒܝܘ̈ܡܝ ܪ̈ܥܘܬܐ ܒܚܝܪ̈ܐ ܕܥܕܬܐ
+                      ܩܕܝܫܬܐ. ܡܪܝ ܡܝܟܐܝܠ ܦܐܛܪܝܪܟܐ ܩܕܝܫܐ. ܘܣܒܐ ܐܠܗܝܐ. ܘܥܲܡܘܕܐ ܕܥܕܬܐ ܩܕܝܫܬܐ ܘܫܘܒܗܪܐ
+                      ܕܟܪ̈ܝܣܛܝܢܐ ܫܪܝܪܝܐ. ܘܡܪܝ ܐܝܘܢܢܝܣ ܕܡܨܪܝܢ<note xml:lang="en">
+                        <bibl>John VI. See
+                          Renaudot, Hist. Patr. Alexandr. Jacobit., p. 554, and Le Quien, Oriens
+                          Christ., t. ii., col. 488</bibl>
+                      </note> ܢܩ̣ܝܡ ܐܢܘܢ ܐܠܗܐ ܒܥܕܬܐ ܩܕܝܫܬܐ ܐܡܝܢ.
+                      ܘܒܕܪܐ ܬܘܒ ܕܕܝܪ̈ܝܐ ܪ̈ܚ̇ܡܝ ܐܠܗܐ ܘܡܕܒܪ̈ܢܐ ܕܥܘܡܪܐ ܗܢܐ ܏ܩܕ ܕܢ̇ܨ[ܝܚ ܫܘ]ܦܪ̈ܐ ܡܪܝ
+                      ܒܪܨܘܡܐ. ܒܪܝܫܐ ܡ̇ܢ ܘܩܕܡܝܐ ܪܒܢ ܒܐܣܝܠ ܣܒܐ ܘܡܠܦܢܐ ܏ܩܕ. ܘܪܒܢ ܨܠܝܒܐ ܪܝܫܕܝܪܐ ܘܣܒܐ
+                      ܒܪܝܟܐ. ܘܪܒܢ ܠܥܙܪ ܪܝܫܕܝܪܐ. ܘܪܒܢ ܨܠܝܒܐ ܪܝܫܕܝܪܐ ܕܝܠܗ̇ ܕܫ̇ܢܬܐ ܕܗܘܼ ܒܪ ܩܪܚܐ
+                      ܘܡܒ̇ܢܝܢܐ ܕܥܘܡܪܐ. ܘܪܒܢ ܝܫܘܥ ܪܝܫܕܝܪܐ. ܘܪܒܢ ܙܟ̇ܐ ܪܝܫܕܝܪܐ ܘܪܒܢ ܒܐܣܝܠ ܙܥܘܪܐ ܘܡܠܦܢܐ
+                      ܏ܩܕ. ܘܪܒܢ ܒܪܨܘܡܐ ܪܝܫܕܝܪܐ. ܘܪܒܢ ܒܐܣܝܠ ܪܝܫܕܝܪܐ ܘܪܒܢ ܡܘܒܪܟ ܪܝܫܕܝܪܐ. ܥܡ ܫܪܟܐ
+                      ܕܕܝܪ̈ܝܐ ܩܕܝ̈ܫܐ ܘ܏ܩ̈ܫܝ ܙܗ̈ܝܐ ܘܕܚ̈ܠܝ ܐܠܗܐ ܪܒܢ ܡܝܟܐܝܠ ܨ̇ܝܕܐ. ܘܪܒܢ ܡܝܟܝܠ. ܘܪܒܢ
+                      ܒܪܨܘܡܐ ܨ̇ܝ̣ܪܐ. ܘܪܒܢ ܐܒܘܠܦܪܓ. ܘܪܒܢ ܨܠܝܒܐ ܩܘܢܝܐ. ܘܪܒܢ ܣܗܕܐ. ܘܪܒܢ ܬܐܘܕܘܪܘܣ ܕܣܝܠܐ.
+                      ܘܪܒܢ ܡܝܟܝܠ. ܘܪܒܢ ܕܢܚ̣ܐ. ܘܪܒܢ ܠܥܙܪ ܕܡܦܪܝܢܐ. ܘܪܒܢ ܐܒܪܗܡ. ܘܪܒܢ ܠܥܙܪ. ܥܡ ܫܪܟܐ
+                      ܕܕܝܪ̈ܝܐ ܩܕ̈ܝܫܐ ܘܣ̈ܒܐ ܒܪ̈ܝܟܐ. ܘܩ̇ܝ̈ܘܡܐ ܕܥܘܡܪܐ ܗܢܐ ܘܒܝܬܐ ܕܟܪ̈ܝܣܛܝܢܐ ܘܒܝܬ ܓܲܘܣܐ
+                      ܕܡܗ̈ܝܡܢܐ. ܏ܘܫ</quote>
+                  </p>
+                </item>
+                <item xml:id="addition3" n="3">
+                  <locus from="452b"/>
+                  <p>Between these two notes is inserted, in the same handwriting, a prayer for the monk who bound the volume:</p>
+                  <p>
+                    <quote xml:lang="syr">ܢܥ̣ܒܕ ܕܝܢ ܡܪܢ ܪ̈ܚܡ̣ܐ ܘܚ̣ܢܢܐ. ܥܠ ܐܚܘܢ ܪܘܚܢܝܐ ܪܒܢ ܩܘܦܪ ܕܝܪܝܐ ܢܟܦܐ. ܘܚܟܝܡ ܒܕܚ̣ܠܬ݀ ܐܠܗܐ. ܕܕܒܩܗ ܠܟܬܒܐ</quote>
+                  </p>
+                </item>
+                <item xml:id="addition4" n="4">
+                  <locus from="175a"/>
+                  <p>On the margin of fol. 175 a the scribe has written the words <quote xml:lang="syr">ܢܘܣܝܐ ܕܪܩ ܘܕܟܬܝܒܬܐ</quote>, "trial of the vellum and the writing"</p>
+                </item>
+                <item xml:id="addition5" n="5">
+                  <locus from="424b"/>
+                  <p>On the margin of fol. 424 b the scribe has written <quote xml:lang="syr">ܪܩ ܒܝܫܐ</quote>, "bad vellum"</p>
+                </item>
+                <item xml:id="addition6" n="6">
+                  <locus from="259a"/>
+                  <p>On the margin of fol. 259 a there is re­corded the name of a reader called <persName>John</persName>,</p>
+                  <p>
+                    <quote xml:lang="syr">ܝܘܚܢܢ ܚܛܝܐ</quote>
+                  </p>
+                </item>
+              </list>
+            </additions>
+          </physDesc>
+          <history>
+            <origin>
+              <origDate calendar="Gregorian" when="1197">A.D. 1197</origDate>
+              <origDate datingMethod="Seleucid" when-custom="1508">A. Gr. 1508</origDate>
+              <origPlace ref="http://syriaca.org/place/224" xml:lang="en">The monastery of Bar-ṣauma at Melitene</origPlace>
+            </origin>
+            <provenance/>
+            <acquisition/>
+          </history>
           <additional>
             <adminInfo>
               <recordHist>
                 <source>Manuscript description based on<bibl>
-                    <ref target="#Wright">Wright's Catalogue</ref>
+                    <ref target="#Wrightpart">Wright's Catalogue</ref>
                   </bibl>. abbreviated by the Syriaca.org editors.</source>
               </recordHist>
-              <availability status="restricted"/>
-              <custodialHist/>
               <note/>
             </adminInfo>
             <listBibl>
-              <bibl xml:id="Wright">
-                <!-- Note that this <bibl> entry is identified as Wrightpart1 since Part 2 will use a different cited range. -->
+              <bibl xml:id="Wrightpart">
                 <author>William Wright</author>
                 <title xml:lang="en">Catalogue of Syriac Manuscripts in the British Museum Acquired since the Year 1838</title>
                 <pubPlace>London</pubPlace>
                 <date>1870</date>
                 <ptr target="http://syriaca.org/bibl/8"/>
                 <citedRange unit="entry">DCCCCLX</citedRange>
-                <citedRange unit="pp">III:1123-1139</citedRange>
+                <citedRange unit="pp">3:1123-1139</citedRange>
+              <ref type="internet-archive-pdf" target="https://archive.org/details/catalogueofsyria03brituoft/page/1123"/>
               </bibl>
             </listBibl>
           </additional>
@@ -1355,6 +1476,9 @@
       </textClass>
     </profileDesc>
     <revisionDesc status="draft">
+      <change who="http://syriaca.org/documentation/editors.xml#kurban" when="2023-04-21-05:00">CHANGED: added or corrected folio extent values</change>
+      <change who="http://syriaca.org/documentation/editors.xml#wpotter" when="2023-04-21-06:00">ADDED: Physical description and additions information</change>
+      <change who="http://syriaca.org/documentation/editors.xml#jarnwine" when="2023-01-13-06:00">ADDED: supplied and corrected Syriaca.org URIs for authors</change>
       <change who="http://syriaca.org/documentation/editors.xml#jnquiroz" when="2014-11-11">Created: file items b16-b30</change>
       <change who="http://syriaca.org/documentation/editors.xml#thannah" when="2014-11-11">Created: file items b1-b15</change>
       <change who="http://syriaca.org/documentation/editors.xml#kkotewall" when="2014-11-11">Created: file items b31-b45</change>

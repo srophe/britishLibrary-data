@@ -44,6 +44,10 @@
           <resp>English text entry and proofreading by</resp>
           <name type="org" ref="http://syriaca.org/documentation/editors.xml#uasyriacaresearchgroup">Syriac Research Group, University of Alabama</name>
         </respStmt>
+      <respStmt>
+          <resp>Folio extent edited by</resp>
+          <name type="person" ref="http://syriaca.org/documentation/editors.xml#kurban">Kurt Urban</name>
+        </respStmt>
       </titleStmt>
       <editionStmt>
         <edition n="1.0"/>
@@ -57,7 +61,7 @@
             <p>Distributed under a Creative Commons Attribution 3.0 Unported License</p>
           </licence>
         </availability>
-        <date calendar="Gregorian"/>
+        <date calendar="Gregorian">2023-04-21-05:00</date>
       </publicationStmt>
       <sourceDesc>
         <msDesc xml:id="manuscript-565">
@@ -69,6 +73,9 @@
             <idno type="URI">http://syriaca.org/manuscript/565</idno>
             <altIdentifier>
               <idno type="BL-Shelfmark">Add. 14,699</idno>
+            </altIdentifier>
+            <altIdentifier>
+              <idno type="BL-Shelfmark-display">London, BL, Add. 14,699</idno>
             </altIdentifier>
             <altIdentifier>
               <idno type="BL-Shelmark-simplified">BL Add MS 14699</idno>
@@ -84,9 +91,9 @@
               <idno type="Wright-BL-Roman">CCCLXXIV</idno>
             </altIdentifier>
           </msIdentifier>
-          <head xmlns="'http://www.tei-c.org/ns/1.0'">
-            <note xmlns="http://www.tei-c.org/ns/1.0" type="contents-note">This manuscript contains: The Order of the Resurrection of our Lord, arranged in eight parts, according to the eight tones, and comprising anthems (ܥܢܝ̈ܢܐ), canons (ܩܢܘ̈ܢܐ), hymns of several kinds (ܩ̈ܠܐ, ܡܕܪ̈ܫܐ , ܣܘ̈ܓܝܬܐ), and prayers (ܒܥ̈ܘܬܐ) of Ephraim and Jacob ; An Order for two or more persons, whose commemoration falls on the same day, or for Martyrs in general ; An Order for the Commemoration of Abba Bishoi or Pisoes. In total, including sub-sections, this manuscript contains 11 items. N.B., items have been renumbered by the editors and may not reflect Wright's original numeration.</note>
-            <listRelation xmlns="http://www.tei-c.org/ns/1.0" type="Wright-BL-Taxonomy">
+          <head>
+            <note type="contents-note">This manuscript contains: The Order of the Resurrection of our Lord, arranged in eight parts, according to the eight tones, and comprising anthems (ܥܢܝ̈ܢܐ), canons (ܩܢܘ̈ܢܐ), hymns of several kinds (ܩ̈ܠܐ, ܡܕܪ̈ܫܐ , ܣܘ̈ܓܝܬܐ), and prayers (ܒܥ̈ܘܬܐ) of Ephraim and Jacob; An Order for two or more persons, whose commemoration falls on the same day, or for Martyrs in general; An Order for the Commemoration of Abba Bishoi or Pisoes. In total, including sub-sections, this manuscript contains 11 items.</note>
+            <listRelation type="Wright-BL-Taxonomy">
               <relation name="dcterms:type" ref="http://purl.org/dc/terms/type" active="http://syriaca.org/manuscript/565" passive="#choral">
                 <desc>Choral Books</desc>
               </relation>
@@ -169,6 +176,9 @@
                         letters, are 14 in number. There are from 15 to 19 lines in each page.</p>
             <objectDesc form="codex">
               <supportDesc material="perg">
+                <extent>
+                  <measure type="composition" unit="leaf" quantity="136">136 ff.</measure>
+                </extent>
                 <foliation/>
                 <collation/>
                 <condition>
@@ -183,10 +193,10 @@
               </supportDesc>
             </objectDesc>
             <handDesc hands="2">
-              <handNote medium="unknown" xml:id="handNote1" scope="major" script="syr">
+              <handNote xml:id="handNote1" medium="unknown" scope="major" script="syr">
                 <desc>This volume is written in a large, regular hand, dated <origDate when-custom="1603" datingMethod="Seleucid">A. Gr. 1603</origDate>, <origDate when="1292" calendar="Gregorian">A.D. 1292</origDate>.</desc>
               </handNote>
-              <handNote medium="unknown" xml:id="handNote2" scope="minor" script="syr">
+              <handNote xml:id="handNote2" medium="unknown" scope="minor" script="syr">
                 <desc>See Additions.</desc>
               </handNote>
             </handDesc>
@@ -277,13 +287,13 @@
             <adminInfo>
               <recordHist>
                 <source>Manuscript description based on<bibl>
-                    <ref target="#Wright">Wright's Catalogue</ref>
+                    <ref target="#Wrightpart">Wright's Catalogue</ref>
                   </bibl>. abbreviated by the Syriaca.org editors.</source>
               </recordHist>
               <note/>
             </adminInfo>
             <listBibl>
-              <bibl xml:id="Wright">
+              <bibl xml:id="Wrightpart">
                 <author>William Wright</author>
                 <title xml:lang="en">Catalogue of Syriac Manuscripts in the British Museum Acquired
                   since the Year 1838</title>
@@ -292,6 +302,7 @@
                 <ptr target="http://syriaca.org/bibl/8"/>
                 <citedRange unit="entry">CCCLXXIV</citedRange>
                 <citedRange unit="pp">1:304-306</citedRange>
+              <ref type="internet-archive-pdf" target="https://archive.org/details/catalogueofsyria01brituoft/page/304"/>
               </bibl>
             </listBibl>
           </additional>
@@ -459,6 +470,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc status="draft">
+      <change who="http://syriaca.org/documentation/editors.xml#kurban" when="2023-04-21-05:00">CHANGED: added or corrected folio extent values</change>
       <change who="http://syriaca.org/documentation/editors.xml#srophe-util" when="2020-04-06-05:00">CHANGED: deleted empty elements and attributes</change>
       <change who="http://syriaca.org/documentation/editors.xml#srophe-util" when="2020-04-06-05:00">CHANGED: Added project metadata; metadata from Wright Decoder; msItem, handDesc, and additions enumeration; Wright Taxonomy designation</change>
       <change who="http://syriaca.org/documentation/editors.xml#lruth" when="2020-03-12">Initial TEI

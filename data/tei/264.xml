@@ -43,6 +43,10 @@
           <resp>English text entry and proofreading by</resp>
           <name type="org" ref="http://syriaca.org/documentation/editors.xml#uasyriacaresearchgroup">Syriac Research Group, University of Alabama</name>
         </respStmt>
+      <respStmt>
+          <resp>Folio extent edited by</resp>
+          <name type="person" ref="http://syriaca.org/documentation/editors.xml#kurban">Kurt Urban</name>
+        </respStmt>
       </titleStmt>
       <editionStmt>
         <edition n="1.0"/>
@@ -57,9 +61,7 @@
             <p>Distributed under a Creative Commons Attribution 3.0 Unported License</p>
           </licence>
         </availability>
-        <date calendar="Gregorian">
-          <!-- Our date of publication of this XML document-->
-        </date>
+        <date calendar="Gregorian">2023-04-21-05:00</date>
       </publicationStmt>
       <sourceDesc>
         <msDesc xml:id="manuscript-264" xml:lang="en">
@@ -73,6 +75,9 @@
               <idno type="BL-Shelfmark">Add. 14,537</idno>
             </altIdentifier>
             <altIdentifier>
+              <idno type="BL-Shelfmark-display">London, BL, Add. 14,537</idno>
+            </altIdentifier>
+            <altIdentifier>
               <idno type="BL-Shelmark-simplified">BL Add MS 14537</idno>
             </altIdentifier>
             <altIdentifier>
@@ -84,9 +89,9 @@
               <idno type="Wright-BL-Roman">DCCCLXVIII</idno>
             </altIdentifier>
           </msIdentifier>
-          <head xmlns="'http://www.tei-c.org/ns/1.0'">
-            <note xmlns="http://www.tei-c.org/ns/1.0" type="contents-note">This manuscript contains: Dialogue between a pupil (ܬܠܡܝܕܐ) and a teacher (ܡܠܦܢܐ), regarding various passages of Scripture, points in Scriptural history, and kindred topics. In total, including sub-sections, this manuscript contains 1 items. N.B., items have been renumbered by the editors and may not reflect Wright's original numeration.</note>
-            <listRelation xmlns="http://www.tei-c.org/ns/1.0" type="Wright-BL-Taxonomy">
+          <head>
+            <note type="contents-note">This manuscript contains: Dialogue between a pupil (ܬܠܡܝܕܐ) and a teacher (ܡܠܦܢܐ), regarding various passages of Scripture, points in Scriptural history, and kindred topics. In total, including sub-sections, this manuscript contains 1 items.</note>
+            <listRelation type="Wright-BL-Taxonomy">
               <relation name="dcterms:type" ref="http://purl.org/dc/terms/type" active="http://syriaca.org/manuscript/264" passive="#theo-anonymous">
                 <desc>Anonymous Works</desc>
               </relation>
@@ -94,9 +99,8 @@
           </head>
           <msContents>
             <summary/>
-            <!--Note: Do not manually enter summary. We will automatically generate this from the @class later-->
             <textLang mainLang="syr">Syriac</textLang>
-            <msItem n="1" xml:id="a1" defective="true">
+            <msItem xml:id="a1" n="1" defective="true">
               <locus from="1a" to="85">1a-85</locus>
               <author/>
               <title type="supplied">Dialogue between a pupil (ܬܠܡܝܕܐ) and a teacher (ܡܠܦܢܐ), regarding various passages of Scripture, points in Scriptural history, and kindred topics</title>
@@ -181,15 +185,13 @@
             <adminInfo>
               <recordHist>
                 <source>Manuscript description based on<bibl>
-                    <ref target="#Wright">Wright's Catalogue</ref>
+                    <ref target="#Wrightpart">Wright's Catalogue</ref>
                   </bibl>. abbreviated by the Syriaca.org editors.</source>
               </recordHist>
-              <availability status="restricted"/>
-              <custodialHist/>
               <note/>
             </adminInfo>
             <listBibl>
-              <bibl xml:id="Wright">
+              <bibl xml:id="Wrightpart">
                 <author>William Wright</author>
                 <title xml:lang="en">Catalogue of Syriac Manuscripts in the British Museum Acquired since the Year 1838</title>
                 <pubPlace>London</pubPlace>
@@ -197,6 +199,7 @@
                 <ptr target="http://syriaca.org/bibl/8"/>
                 <citedRange unit="entry">DCCCLXVIII</citedRange>
                 <citedRange unit="pp">2:1017-1018</citedRange>
+              <ref type="internet-archive-pdf" target="https://archive.org/details/catalogueofsyria02brituoft/page/1017"/>
               </bibl>
             </listBibl>
           </additional>
@@ -364,6 +367,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc status="draft">
+      <change who="http://syriaca.org/documentation/editors.xml#kurban" when="2023-04-21-05:00">CHANGED: added or corrected folio extent values</change>
       <change who="http://syriaca.org/documentation/editors.xml#?" when="2015-04-08">Created: file</change>
       <!-- @when takes entries in the form "YYYY-MM-DD" -->
       <change type="planned" subtype="uri">Needs Addition of work URIs.</change>

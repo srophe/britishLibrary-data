@@ -1,9 +1,9 @@
 <?oxygen RNGSchema="http://syriaca.org/documentation/syriaca-tei-main.rnc" type="compact"?>
 <?xml-stylesheet type="text/css" href="https://raw.githubusercontent.com/srophe/wright-catalogue/master/parameters/tei.css"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
-   <teiHeader>
-      <fileDesc>
-         <titleStmt>
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
         <title level="a" xml:lang="en">London, BL, Add. 17176</title>
         <title xml:lang="en" level="m">A Digital Catalogue of Syriac Manuscripts in the British Library</title>
         <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
@@ -43,11 +43,15 @@
           <resp>English text entry and proofreading by</resp>
           <name type="org" ref="http://syriaca.org/documentation/editors.xml#uasyriacaresearchgroup">Syriac Research Group, University of Alabama</name>
         </respStmt>
+      <respStmt>
+          <resp>Folio extent edited by</resp>
+          <name type="person" ref="http://syriaca.org/documentation/editors.xml#kurban">Kurt Urban</name>
+        </respStmt>
       </titleStmt>
-         <editionStmt>
+      <editionStmt>
         <edition n="1.0"/>
       </editionStmt>
-         <publicationStmt>
+      <publicationStmt>
         <authority>Syriaca.org: The Syriac Reference Portal</authority>
         <idno type="URI">http://syriaca.org/manuscript/828/tei</idno>
         <availability>
@@ -56,11 +60,11 @@
             <p>Distributed under a Creative Commons Attribution 3.0 Unported License</p>
           </licence>
         </availability>
-        <date calendar="Gregorian"/>
+        <date calendar="Gregorian">2023-04-21-05:00</date>
       </publicationStmt>
-         <sourceDesc>
-            <msDesc xml:id="manuscript-828">
-               <msIdentifier>
+      <sourceDesc>
+        <msDesc xml:id="manuscript-828">
+          <msIdentifier>
             <country>United Kingdom</country>
             <settlement>London</settlement>
             <repository>British Library</repository>
@@ -68,6 +72,9 @@
             <idno type="URI">http://syriaca.org/manuscript/828</idno>
             <altIdentifier>
               <idno type="BL-Shelfmark">Add. 17,176</idno>
+            </altIdentifier>
+            <altIdentifier>
+              <idno type="BL-Shelfmark-display">London, BL, Add. 17,176</idno>
             </altIdentifier>
             <altIdentifier>
               <idno type="BL-Shelmark-simplified">BL Add MS 17176</idno>
@@ -81,17 +88,18 @@
               <idno type="Wright-BL-Roman">DCCCCXXIV</idno>
             </altIdentifier>
           </msIdentifier>
-          <head xmlns="'http://www.tei-c.org/ns/1.0'">
-            <note xmlns="http://www.tei-c.org/ns/1.0" type="contents-note">This manuscript contains: The Histories of the Egyptian Solitaries by Palladius, in two parts. In total, including sub-sections, this manuscript contains 3 items. N.B., items have been renumbered by the editors and may not reflect Wright's original numeration.</note>
-            <listRelation xmlns="http://www.tei-c.org/ns/1.0" type="Wright-BL-Taxonomy">
+          <head>
+            <note type="contents-note">This manuscript contains: The Histories of the Egyptian Solitaries by Palladius, in two parts. In total, including sub-sections, this manuscript contains 3 items.</note>
+            <listRelation type="Wright-BL-Taxonomy">
               <relation name="dcterms:type" ref="http://purl.org/dc/terms/type" active="http://syriaca.org/manuscript/828" passive="#lives-collect">
                 <desc>Collected Lives</desc>
               </relation>
             </listRelation>
           </head>
-               <msContents>
+          <msContents>
             <textLang mainLang="syr"/>
             <msItem xml:id="a1" n="1" defective="true">
+              <locus from="2b"/>
               <title xml:lang="en">The Histories of the Egyptian Solitaries by
                         <persName ref="http://syriaca.org/person/668">Palladius</persName>, in two parts.</title>
               <msItem xml:id="b1" n="2">
@@ -119,15 +127,18 @@
               </msItem>
             </msItem>
           </msContents>
-               <physDesc>
+          <physDesc>
             <p>Vellum, about 9 3/8 in. by 5 7/8, consisting of 98 leaves, a few
                                     of which are slightly soiled and torn, especially the first two
                                     and the last two. The quires, signed with both letters and
                                     arithmetical figures (fol. 40, :<foreign xml:lang="syr">ܥ</foreign> :
                                        <foreign xml:lang="syr">ܗ</foreign> : ) are ten in number. Each page is
                                     divided into two columns, of from 29 to 34 lines.</p>
-                  <objectDesc form="codex">
+            <objectDesc form="codex">
                      <supportDesc material="perg">
+                <extent>
+                  <measure type="composition" unit="leaf" quantity="98">98 ff.</measure>
+                </extent>
                         <foliation/>
                         <collation/>
                         <condition>
@@ -144,87 +155,87 @@
                         </condition>
                      </supportDesc>
                   </objectDesc>
-                  <handDesc hands="2">
-              <handNote medium="unknown" xml:id="handNote1" scope="major" script="syr-Syre">
-                        <desc>This volume is written in a fine Estrangela.</desc>
-                     </handNote>
-              <handNote medium="unknown" xml:id="handNote2" scope="minor" script="syr">
-                        <desc>See additions.</desc>
-                     </handNote>
+            <handDesc hands="2">
+              <handNote xml:id="handNote1" medium="unknown" scope="major" script="syr-Syre">
+                <desc>This volume is written in a fine Estrangela.</desc>
+              </handNote>
+              <handNote xml:id="handNote2" medium="unknown" scope="minor" script="syr">
+                <desc>See additions.</desc>
+              </handNote>
             </handDesc>
-                  <additions>
+            <additions>
               <note type="proofreader-note">N.B., folio location may not be available for some items below.</note>
               <note type="proofreader-note">N.B., items below may have been listed out of folio order in Wright's catalogue.</note>
               <p/>
               <list>
                 <item xml:id="addition1" n="1">
                   <label>Colophon</label>
-                           <locus from="97b"/>
-                           <p>After the doxology, on fol. 97 b, we find a note, informing us that
+                  <locus from="97b"/>
+                  <p>After the doxology, on fol. 97 b, we find a note, informing us that
                               the manuscript was written by one <persName>Elias</persName>, in the
                               <date>year 427 of the era of <placeName ref="http://syriaca.org/place/40">Bostra</placeName>
                     </date> (see above), for the
                                  <placeName>convent of -</placeName>, in the time of its abbat and
                               founder <persName>Mar –</persName>.</p>
-                           <p>
+                  <p>
                     <quote xml:lang="syr">ܫܢܬ ܐܪܒܥ ܡܐܐ ܘܥܣܪܝܢ ܘܫܒܥ ܕܗܦܪܟܝܐ ܕܒܘܨܪ݂. ܐܫܬܠܡ ܟܬܒܐ ܗܢܐ ܒܝܪܚ ܚܙܝܪܢ̣. ܒܐܪܒܥܣܪܐ
                                  ܒܗ ܒܝܪܚܐ. ܒܕܝܪܐ ܩܕܝܫܬܐ . . . ܒܝܘ̈ܡܝ ܡܝܬܪܐ ܘܕܚ̇ܠ ܠܐܠܗܐ ܡܪܝ . . .
                                  ܪܝܫܕܝܪܐ ܘܣܝܘܡܗ ܕܥܘܡܪܐ. ܕܟܠ ܡ̇ܢ ܕܩ̇ܪܐ ܒܗ ܢܨܠܐ ܥܠ ܐܠܝܐ ܚܛܝܐ ܕܟܬܒ
                                  ܕܢܬܢܚܢܢ ܒܝܘܡ ܕܝܢܐ ܐܝܢ ܘܐܡܝܢ. ܐܠܗܐ ܫܝܢ ܥܕܬܐ ܕܒܟܠ ܐܬܪ ܐܝܢ
                                  ܘܐܡܝܢ</quote>
                   </p>
-                        </item>
+                </item>
                 <item xml:id="addition2" n="2">
-                           <locus/>
-                           <p>Another, but still ancient, hand has added the words.</p>
-                           <p>
+                  <locus/>
+                  <p>Another, but still ancient, hand has added the words.</p>
+                  <p>
                               <quote xml:lang="syr">ܘܐܡܝܢ ܘܐܡܝܢ ܛܡܐܟܗܛ</quote>
                            </p>
-                        </item>
+                </item>
                 <item xml:id="addition3" n="3">
-                           <locus/>
-                           <p>The last of which, read by the alphabet of<persName>
+                  <locus/>
+                  <p>The last of which, read by the alphabet of<persName>
                                  Bardesanes</persName>, gives the name
                               <persName>Stephen</persName>.</p>
-                           <p>
+                  <p>
                               <quote xml:lang="syr">ܐܣܛܦܢܐ</quote>
                            </p>
-                        </item>
+                </item>
                 <item xml:id="addition4" n="4">
-                           <locus from="1a"/>
-                           <p>A more recent note, on fol. 1 <hi rend="italic">a</hi>, states that
+                  <locus from="1a"/>
+                  <p>A more recent note, on fol. 1 <hi rend="italic">a</hi>, states that
                               the book was presented to the <placeName ref="http://syriaca.org/place/360">convent of S. Mary
                                  Deipara</placeName> by one <persName>Yeshua' bar Moses</persName>,
                               from a place called <foreign xml:lang="syr">ܬܠܐ ܕܟܢܡ</foreign>. </p>
-                           <p>
+                  <p>
                               <quote xml:lang="syr">ܐܝܬܘܗܝ ܟܬܒܐ ܗܢܐ ܕܕܝܪܐ ܕܝܠܕܬ ܐܠܗܐ ܕܣܘܪ̈ܝܝܐ
                                  ܕܒܡܕܒܪܐ ܕܐܝܣ̈ܩܝܛܝ. ܫܟܢܗ ܕܝܢ ܘܝܗܒܗ ܠܕܝܪܐ ܗܕܐ ܡܪܝ ܝܫܘܥ ܒܪ ܡܘܫܐ ܕܡܢ
                                  ܬܠܐ ܕܟܢܡ. ܟܠ ܕܝܢ ܕܫ̇ܩܠ ܠܗ ܏ܘܫ</quote>
                            </p>
-                        </item>
+                </item>
                 <item xml:id="addition5" n="5">
-                           <locus from="2a"/>
-                           <p>On fol. 2 a there is a short index of lessons from the Gospels for the
+                  <locus from="2a"/>
+                  <p>On fol. 2 a there is a short index of lessons from the Gospels for the
                               Sundays in Lent, written in a hand of about the <date calendar="Gregorian" notBefore="0900" notAfter-custom="1000">xth cent.</date>; and on
                               foll. 97 b and 98 a we find the passage <bibl>1 Samuel, ch. xvi.
                                  1—1</bibl>1, inelegantly written, but of about the same date.</p>
-                           <p>
+                  <p>
                               <quote xml:lang="syr"/>
                            </p>
-                        </item>
+                </item>
                 <item xml:id="addition6" n="6">
-                           <locus from="98b"/>
-                           <p>The writing on fol. 98 b is too much effaced to admit of
+                  <locus from="98b"/>
+                  <p>The writing on fol. 98 b is too much effaced to admit of
                               decipherment.</p>
-                           <p>
+                  <p>
                               <quote xml:lang="syr"/>
                            </p>
-                        </item>
+                </item>
               </list>
             </additions>
-                  <accMat/>
-               </physDesc>
-               <history>
+            <accMat/>
+          </physDesc>
+          <history>
                   <origin>
                      <origDate when="0532">It is dated in the
                         year 427 of the era of <placeName ref="http://syriaca.org/place/40">Bostra</placeName> (which began A.D. 106), or A.D. 532.</origDate>
@@ -233,18 +244,18 @@
                   <provenance/>
                   <acquisition/>
                </history>
-               <additional>
+          <additional>
             <adminInfo>
               <recordHist>
                 <source>Manuscript description based on<bibl>
-                    <ref target="#Wright">Wright's
+                    <ref target="#Wrightpart">Wright's
                       Catalogue</ref>
                   </bibl>. abbreviated by the Syriaca.org editors.</source>
               </recordHist>
               <note/>
             </adminInfo>
             <listBibl>
-              <bibl xml:id="Wright">
+              <bibl xml:id="Wrightpart">
                 <author>William Wright</author>
                 <title xml:lang="en">Catalogue of Syriac Manuscripts in the British Museum Acquired
                   since the Year 1838</title>
@@ -253,13 +264,14 @@
                 <ptr target="http://syriaca.org/bibl/8"/>
                 <citedRange unit="entry">DCCCCXXIV</citedRange>
                 <citedRange unit="pp">3:1072-1073</citedRange>
+              <ref type="internet-archive-pdf" target="https://archive.org/details/catalogueofsyria03brituoft/page/1072"/>
               </bibl>
             </listBibl>
           </additional>
-            </msDesc>
-         </sourceDesc>
-      </fileDesc>
-      <encodingDesc>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
       <editorialDecl>
         <interpretation>
           <p>Description is based on Wright's Catalogue without consultation of physical
@@ -390,7 +402,7 @@
         </taxonomy>
       </classDecl>
     </encodingDesc>
-      <profileDesc>
+    <profileDesc>
       <langUsage>
         <language ident="syr">Unvocalized Syriac of any variety or period</language>
         <language ident="syr-Syre">Syriac in Estrangela</language>
@@ -419,7 +431,8 @@
         </keywords>
       </textClass>
     </profileDesc>
-      <revisionDesc status="draft">
+    <revisionDesc status="draft">
+      <change who="http://syriaca.org/documentation/editors.xml#kurban" when="2023-04-21-05:00">CHANGED: added or corrected folio extent values</change>
          <change who="http://syriaca.org/documentation/editors.xml#srophe-util" when="2020-04-29-05:00">CHANGED: deleted empty elements and attributes</change>
       <change who="http://syriaca.org/documentation/editors.xml#srophe-util" when="2020-04-29-05:00">CHANGED: Added project metadata; metadata from Wright Decoder; msItem, handDesc, and additions enumeration; Wright Taxonomy designation</change>
       <change who="http://syriaca.org/documentation/editors.xml#jpagan" when="2020-03-09">Initial
@@ -427,11 +440,11 @@
          <change type="planned" subtype="checkSyriac">The Syriac copied from the Word Document needs
             to be checked for accuracy</change>
       </revisionDesc>
-   </teiHeader>
-   <facsimile>
+  </teiHeader>
+  <facsimile>
       <formula>Content pending</formula>
    </facsimile>
-   <text>
+  <text>
       <body>
          <bibl>Content pending</bibl>
       </body>

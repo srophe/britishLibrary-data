@@ -1,9 +1,9 @@
 <?oxygen RNGSchema="http://syriaca.org/documentation/syriaca-tei-main.rnc" type="compact"?>
 <?xml-stylesheet type="text/css" href="https://raw.githubusercontent.com/srophe/wright-catalogue/master/parameters/tei.css"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
-   <teiHeader>
-      <fileDesc>
-         <titleStmt>
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
         <title level="a" xml:lang="en">London, BL, Add. 17250</title>
         <title xml:lang="en" level="m">A Digital Catalogue of Syriac Manuscripts in the British Library</title>
         <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
@@ -43,11 +43,15 @@
           <resp>English text entry and proofreading by</resp>
           <name type="org" ref="http://syriaca.org/documentation/editors.xml#uasyriacaresearchgroup">Syriac Research Group, University of Alabama</name>
         </respStmt>
+      <respStmt>
+          <resp>Folio extent edited by</resp>
+          <name type="person" ref="http://syriaca.org/documentation/editors.xml#kurban">Kurt Urban</name>
+        </respStmt>
       </titleStmt>
-         <editionStmt>
+      <editionStmt>
         <edition n="1.0"/>
       </editionStmt>
-         <publicationStmt>
+      <publicationStmt>
         <authority>Syriaca.org: The Syriac Reference Portal</authority>
         <idno type="URI">http://syriaca.org/manuscript/1042/tei</idno>
         <availability>
@@ -56,11 +60,11 @@
             <p>Distributed under a Creative Commons Attribution 3.0 Unported License</p>
           </licence>
         </availability>
-        <date calendar="Gregorian"/>
+        <date calendar="Gregorian">2023-04-21-05:00</date>
       </publicationStmt>
-         <sourceDesc>
-            <msDesc xml:id="manuscript-1042">
-               <msIdentifier>
+      <sourceDesc>
+        <msDesc xml:id="manuscript-1042">
+          <msIdentifier>
             <country>United Kingdom</country>
             <settlement>London</settlement>
             <repository>British Library</repository>
@@ -68,6 +72,9 @@
             <idno type="URI">http://syriaca.org/manuscript/1042</idno>
             <altIdentifier>
               <idno type="BL-Shelfmark">Add. 17,250</idno>
+            </altIdentifier>
+            <altIdentifier>
+              <idno type="BL-Shelfmark-display">London, BL, Add. 17,250</idno>
             </altIdentifier>
             <altIdentifier>
               <idno type="BL-Shelmark-simplified">BL Add MS 17250</idno>
@@ -81,15 +88,15 @@
               <idno type="Wright-BL-Roman">CCCXCV</idno>
             </altIdentifier>
           </msIdentifier>
-          <head xmlns="'http://www.tei-c.org/ns/1.0'">
-            <note xmlns="http://www.tei-c.org/ns/1.0" type="contents-note">This manuscript contains: Services for the canonical hours of the ferial days (ܢܓܗܐ, ܠܠܝܐ, and ܨܦܪܐ). In total, including sub-sections, this manuscript contains 7 items. N.B., items have been renumbered by the editors and may not reflect Wright's original numeration.</note>
-            <listRelation xmlns="http://www.tei-c.org/ns/1.0" type="Wright-BL-Taxonomy">
+          <head>
+            <note type="contents-note">This manuscript contains: Services for the canonical hours of the ferial days (ܢܓܗܐ, ܠܠܝܐ, and ܨܦܪܐ). In total, including sub-sections, this manuscript contains 7 items.</note>
+            <listRelation type="Wright-BL-Taxonomy">
               <relation name="dcterms:type" ref="http://purl.org/dc/terms/type" active="http://syriaca.org/manuscript/1042" passive="#choral">
                 <desc>Choral Books</desc>
               </relation>
             </listRelation>
           </head>
-               <msContents>
+          <msContents>
             <textLang mainLang="syr"/>
             <msItem xml:id="a1" n="1" defective="true">
               <locus to="80" from="1">Foll. 1-80</locus>
@@ -128,7 +135,7 @@
               </msItem>
             </msItem>
           </msContents>
-               <physDesc>
+          <physDesc>
             <p>Paper, about 6 3/4 in. by 5, consisting of 80 leaves, some of
                                     which are much stained and torn, especially foll. 1, 10, 25, 43,
                                     65, 72, and 80. The quires, originally at least 12 in number,
@@ -138,10 +145,10 @@
                                     are missing; there are lacunae after foll. 10, 18, 35, 42, 64,
                                     and 72; and more than a quire is wanting at the end. The number
                                     of lines in each page varies from 14 to 19.</p>
-                  <objectDesc form="codex">
+            <objectDesc form="codex">
                      <supportDesc material="chart">
                         <extent>
-                           <measure unit="content_pending" quantity="-1"/>
+                           <measure type="composition" unit="leaf" quantity="80">80 ff.</measure>
                         </extent>
                         <foliation/>
                         <collation/>
@@ -165,38 +172,38 @@
                         <p>Content pending</p>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc hands="2">
-              <handNote medium="unknown" xml:id="handNote1" scope="major" script="syr">
-                        <desc>The writing is good and regular of the <date calendar="Gregorian" notBefore="0700" notAfter="0800">xiiith cent</date>.</desc>
-                     </handNote>
-              <handNote medium="unknown" xml:id="handNote2" scope="minor" script="syr">
-                        <desc>Foll. 11—25 are a later addition. </desc>
-                     </handNote>
+            <handDesc hands="2">
+              <handNote xml:id="handNote1" medium="unknown" scope="major" script="syr">
+                <desc>The writing is good and regular of the <date calendar="Gregorian" notBefore="0700" notAfter="0800">xiiith cent</date>.</desc>
+              </handNote>
+              <handNote xml:id="handNote2" medium="unknown" scope="minor" script="syr">
+                <desc>Foll. 11—25 are a later addition. </desc>
+              </handNote>
             </handDesc>
-                  <additions>
+            <additions>
               <note type="proofreader-note">N.B., folio location may not be available for some items below.</note>
               <p/>
               <list>
                 <item xml:id="addition1" n="1">
-                           <locus/>
-                           <p>On fol. 37 b, at the end of <title>the services for Wednesday</title>, the scribe
+                  <locus/>
+                  <p>On fol. 37 b, at the end of <title>the services for Wednesday</title>, the scribe
                               mentions the name of his teacher <persName>rabban
                               Isaiah</persName>.</p>
-                           <p>
+                  <p>
                     <quote xml:lang="syr">ܨܰܠܘ ܥܠܝ ܘܥܠ ܐܒܗ̈ܝ ܕܦܓܪ܀ ܘܥܠ ܪܒܢ ܐܫܥܝܐ ܡܠܦܢܐ ܕܝܠܝ.</quote>
                   </p>
-                        </item>
+                </item>
               </list>
             </additions>
-                  <bindingDesc>
+            <bindingDesc>
                      <p>Content pending</p>
                   </bindingDesc>
-                  <sealDesc>
+            <sealDesc>
                      <p>Content pending</p>
                   </sealDesc>
-                  <accMat/>
-               </physDesc>
-               <history>
+            <accMat/>
+          </physDesc>
+          <history>
                   <origin>
                      <origDate/>
                      <origPlace/>
@@ -204,18 +211,18 @@
                   <provenance/>
                   <acquisition/>
                </history>
-               <additional>
+          <additional>
             <adminInfo>
               <recordHist>
                 <source>Manuscript description based on<bibl>
-                    <ref target="#Wright">Wright's
+                    <ref target="#Wrightpart">Wright's
                       Catalogue</ref>
                   </bibl>. abbreviated by the Syriaca.org editors.</source>
               </recordHist>
               <note/>
             </adminInfo>
             <listBibl>
-              <bibl xml:id="Wright">
+              <bibl xml:id="Wrightpart">
                 <author>William Wright</author>
                 <title xml:lang="en">Catalogue of Syriac Manuscripts in the British Museum Acquired
                   since the Year 1838</title>
@@ -224,13 +231,14 @@
                 <ptr target="http://syriaca.org/bibl/8"/>
                 <citedRange unit="entry">CCCXCV</citedRange>
                 <citedRange unit="pp">1:313-314</citedRange>
+              <ref type="internet-archive-pdf" target="https://archive.org/details/catalogueofsyria01brituoft/page/313"/>
               </bibl>
             </listBibl>
           </additional>
-            </msDesc>
-         </sourceDesc>
-      </fileDesc>
-      <encodingDesc>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
       <editorialDecl>
         <interpretation>
           <p>Description is based on Wright's Catalogue without consultation of physical
@@ -361,7 +369,7 @@
         </taxonomy>
       </classDecl>
     </encodingDesc>
-      <profileDesc>
+    <profileDesc>
       <langUsage>
         <language ident="syr">Unvocalized Syriac of any variety or period</language>
         <language ident="syr-Syre">Syriac in Estrangela</language>
@@ -390,7 +398,8 @@
         </keywords>
       </textClass>
     </profileDesc>
-      <revisionDesc status="draft">
+    <revisionDesc status="draft">
+      <change who="http://syriaca.org/documentation/editors.xml#kurban" when="2023-04-21-05:00">CHANGED: added or corrected folio extent values</change>
          <change who="http://syriaca.org/documentation/editors.xml#srophe-util" when="2021-07-09-05:00">CHANGED: deleted empty elements and attributes</change>
       <change who="http://syriaca.org/documentation/editors.xml#srophe-util" when="2021-07-09-05:00">CHANGED: Added project metadata; metadata from Wright Decoder; msItem, handDesc, and additions enumeration; Wright Taxonomy designation</change>
       <change who="http://syriaca.org/documentation/editors.xml#jpagan" when="2020-02-22">Initial
@@ -398,11 +407,11 @@
          <change type="planned" subtype="arabic">Add missing Arabic text.</change>
          <change type="planned" subtype="syriac">Add in missing Syriac characters.</change>
       </revisionDesc>
-   </teiHeader>
-   <facsimile>
+  </teiHeader>
+  <facsimile>
       <formula>Content pending</formula>
    </facsimile>
-   <text>
+  <text>
       <body>
          <bibl>Content pending</bibl>
       </body>

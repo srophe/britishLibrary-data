@@ -15,6 +15,7 @@
         <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A. Michelson</editor>
         <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#raydin">Robert Aydin</editor>
         <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#rbrasoveanu">Roman Brasoveanu</editor>
+        <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#jarnwine">Justin Arnwine</editor>
         <respStmt>
           <resp>Created by</resp>
           <name type="person" ref="http://syriaca.org/documentation/editors.xml#rbrasoveanu">Roman Brasoveanu</name>
@@ -43,6 +44,19 @@
           <resp>English text entry and proofreading by</resp>
           <name type="org" ref="http://syriaca.org/documentation/editors.xml#uasyriacaresearchgroup">Syriac Research Group, University of Alabama</name>
         </respStmt>
+      <respStmt>
+          <resp>Syriaca.org URIs for authors edited by</resp>
+          <name type="person" ref="http://syriaca.org/documentation/editors.xml#jarnwine">Justin Arnwine</name>
+        </respStmt>
+        <respStmt>
+          <resp>Syriaca.org URIs for authors checked by</resp>
+          <name type="person" ref="http://syriaca.org/documentation/editors.xml#aahn">Alexys Ahn</name>
+          <name type="person" ref="http://syriaca.org/documentation/editors.xml#jdalfonso">Joseph DAlfonso</name>
+        </respStmt>
+      <respStmt>
+          <resp>Folio extent edited by</resp>
+          <name type="person" ref="http://syriaca.org/documentation/editors.xml#kurban">Kurt Urban</name>
+        </respStmt>
       </titleStmt>
       <editionStmt>
         <edition n="1.0"/>
@@ -56,7 +70,7 @@
             <p>Distributed under a Creative Commons Attribution 3.0 Unported License</p>
           </licence>
         </availability>
-        <date calendar="Gregorian"/>
+        <date calendar="Gregorian">2023-04-21-05:00</date>
       </publicationStmt>
       <sourceDesc>
         <msDesc xml:id="manuscript-202">
@@ -70,6 +84,9 @@
               <idno type="BL-Shelfmark">Add. 14,508</idno>
             </altIdentifier>
             <altIdentifier>
+              <idno type="BL-Shelfmark-display">London, BL, Add. 14,508</idno>
+            </altIdentifier>
+            <altIdentifier>
               <idno type="BL-Shelmark-simplified">BL Add MS 14508</idno>
             </altIdentifier>
             <altIdentifier>
@@ -81,9 +98,9 @@
               <idno type="Wright-BL-Roman">CCCCXIV</idno>
             </altIdentifier>
           </msIdentifier>
-          <head xmlns="'http://www.tei-c.org/ns/1.0'">
-            <note xmlns="http://www.tei-c.org/ns/1.0" type="contents-note">This manuscript contains: John of Damascus, Cosmas. The Octôechus of the services of Sunday and of the ferial days, according to the Malkite use. In total, including sub-sections, this manuscript contains 9 items. N.B., items have been renumbered by the editors and may not reflect Wright's original numeration.</note>
-            <listRelation xmlns="http://www.tei-c.org/ns/1.0" type="Wright-BL-Taxonomy">
+          <head>
+            <note type="contents-note">This manuscript contains: John of Damascus, Cosmas. The Octôechus of the services of Sunday and of the ferial days, according to the Malkite use. In total, including sub-sections, this manuscript contains 9 items.</note>
+            <listRelation type="Wright-BL-Taxonomy">
               <relation name="dcterms:type" ref="http://purl.org/dc/terms/type" active="http://syriaca.org/manuscript/202" passive="#choral">
                 <desc>Choral Books</desc>
               </relation>
@@ -93,7 +110,7 @@
             <textLang mainLang="syr"/>
             <msItem xml:id="a1" n="1" defective="true">
               <locus from="1a"/>
-              <author>John of Damascus</author>
+              <author ref="http://syriaca.org/person/575">John of Damascus</author>
               <author>Cosmas</author>
               <title xml:lang="en">The Octôechus of the services of Sunday and of the ferial
                 days, according to the Malkite use</title>
@@ -157,7 +174,7 @@
             <objectDesc form="codex">
               <supportDesc material="perg">
                 <extent>
-                  <measure unit="content_pending" quantity="-1"/>
+                  <measure type="composition" unit="leaf" quantity="155">155 ff.</measure>
                 </extent>
                 <foliation/>
                 <collation/>
@@ -180,13 +197,13 @@
               </layoutDesc>
             </objectDesc>
             <handDesc hands="1">
-              <handNote medium="unknown" xml:id="handNote1" scope="sole" script="syr">
+              <handNote xml:id="handNote1" medium="unknown" scope="sole" script="syr">
                 <desc>This volume is written in a good, regular hand of the <date>xith or xiith cent.</date>
                 </desc>
               </handNote>
             </handDesc>
             <decoDesc>
-              <decoNote xml:id="decoNote1" type="ornamentation">Green paint has been often used in the rubrics and other ornaments of this volume.</decoNote>
+              <decoNote xml:id="decoNote1" type="ornamentation"/>
             </decoDesc>
             <additions/>
             <bindingDesc>
@@ -209,14 +226,14 @@
             <adminInfo>
               <recordHist>
                 <source>Manuscript description based on<bibl>
-                    <ref target="#Wright">Wright's
+                    <ref target="#Wrightpart">Wright's
                       Catalogue</ref>
                   </bibl>. abbreviated by the Syriaca.org editors.</source>
               </recordHist>
               <note/>
             </adminInfo>
             <listBibl>
-              <bibl xml:id="Wright">
+              <bibl xml:id="Wrightpart">
                 <author>William Wright</author>
                 <title xml:lang="en">Catalogue of Syriac Manuscripts in the British Museum Acquired
                   since the Year 1838</title>
@@ -225,6 +242,7 @@
                 <ptr target="http://syriaca.org/bibl/8"/>
                 <citedRange unit="entry">CCCCXIV</citedRange>
                 <citedRange unit="pp">1:324-325</citedRange>
+              <ref type="internet-archive-pdf" target="https://archive.org/details/catalogueofsyria01brituoft/page/324"/>
               </bibl>
             </listBibl>
           </additional>
@@ -392,6 +410,8 @@
       </textClass>
     </profileDesc>
     <revisionDesc status="draft">
+      <change who="http://syriaca.org/documentation/editors.xml#kurban" when="2023-04-21-05:00">CHANGED: added or corrected folio extent values</change>
+      <change who="http://syriaca.org/documentation/editors.xml#jarnwine" when="2023-01-13-06:00">ADDED: supplied and corrected Syriaca.org URIs for authors</change>
       <change who="http://syriaca.org/documentation/editors.xml#srophe-util" when="2021-08-17-04:00">CHANGED: deleted empty elements and attributes</change>
       <change who="http://syriaca.org/documentation/editors.xml#srophe-util" when="2021-08-17-04:00">CHANGED: Added project metadata; metadata from Wright Decoder; msItem, handDesc, and additions enumeration; Wright Taxonomy designation</change>
       <change who="http://syriaca.org/documentation/editors.xml#rbrasoveanu">Initial TEI encoding.</change>
