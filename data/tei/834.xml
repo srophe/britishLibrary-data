@@ -1,4 +1,7 @@
-<?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/srophe-app/documentation/enrich-syriaca.rnc" type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/css" href="SRPEnrichCSS.css"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+<?xml-model href="https://raw.githubusercontent.com/srophe/britishLibrary/main/documentation/schema/out/Syriacamsdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/srophe/britishLibrary/main/documentation/schema/out/Syriacamsdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet href="https://raw.githubusercontent.com/srophe/wright-catalogue/master/parameters/tei.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="manuscript_834">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -23,13 +26,7 @@
                     <resp>Based on the work of</resp>
                     <name type="person" ref="https://bl.syriac.uk/documentation/editors.xml#wwright">William Wright</name>
                 </respStmt>
-                <respStmt>
-                    <resp>Edited by</resp>
-                    <name type="person" ref="https://bl.syriac.uk/documentation/editors.xml#">
-            <!-- Editor's first initial and surname follow "#" (e.g., "...#dmichelson") -->
-            <!--Initial editor's name here -->
-                    </name>
-                </respStmt>
+                
                 <respStmt>
                     <resp>Syriac text entered by</resp>
                     <name type="person" ref="https://bl.syriac.uk/documentation/editors.xml#raydin">Robert Aydin</name>
@@ -68,11 +65,9 @@
                 <edition n="1.0"/>
             </editionStmt>
       <publicationStmt>
-                <pubPlace/>
                 <authority>Syriaca.org: The Syriac Reference Portal</authority>
                 <idno type="URI">https://bl.syriac.uk/ms/834/tei</idno>
                 <availability>
-                    <p/>
                     <licence target="http://creativecommons.org/licenses/by/3.0/">
                         <p>Distributed under a Creative Commons Attribution 3.0 Unported License</p>
                     </licence>
@@ -80,7 +75,7 @@
                 <date calendar="Gregorian">2023-04-21-05:00</date>
             </publicationStmt>
       <sourceDesc>
-        <msDesc xml:id="manuscript-834" xml:lang="en">
+        <msDesc xml:id="manuscript-834">
           <msIdentifier>
                         <country>United Kingdom</country>
                         <settlement>London</settlement>
@@ -94,12 +89,11 @@
               <idno type="BL-Shelfmark-display">London, BL, Add. 17,182</idno>
             </altIdentifier>
             <altIdentifier>
-              <idno type="BL-Shelmark-simplified">BL Add MS 17182</idno>
+              <idno type="BL-Shelfmark-simplified">BL Add MS 17182</idno>
             </altIdentifier>
                     </msIdentifier>
           <head>
             <note type="contents-note">This manuscript record does not have a summary list of contents. For composite manuscripts, the list of contents can be found under each individual part.</note>
-            <listRelation type="Wright-BL-Taxonomy"/>
             <listRelation type="composite-to-parts">
               <desc>This composite manuscript consists of 3 distinct parts:</desc>
               <relation name="syriaca:has-unspecified-codicological-part" ref="#syriaca:has-unspecified-codicological-part" active="https://bl.syriac.uk/ms/834" passive="https://bl.syriac.uk/ms/835">
@@ -123,7 +117,7 @@
                 <idno type="BL-Shelfmark-display">London, BL, Add. 17,182, foll. 1–99</idno>
               </altIdentifier>
               <altIdentifier>
-                <idno type="BL-Shelmark-simplified">BL Add MS 17182, foll. 1-99</idno>
+                <idno type="BL-Shelfmark-simplified">BL Add MS 17182, foll. 1-99</idno>
               </altIdentifier>
                             <altIdentifier>
                                 <collection>William Wright, Catalogue of the Syriac Manuscripts in the British Museum Acquired since the Year 1838</collection>
@@ -137,119 +131,137 @@
             <head>
               <note type="contents-note">This manuscript contains: Aphraates. The first part of the works of Aphraates. In total, including sub-sections, this manuscript contains 12 items.</note>
               <listRelation type="Wright-BL-Taxonomy">
-                <relation name="dcterms:type" ref="http://purl.org/dc/terms/type" active="https://bl.syriac.uk/ms/835" passive="#theology">
-                  <desc/>
-                </relation>
+                <relation name="dcterms:type" ref="http://purl.org/dc/terms/type" active="https://bl.syriac.uk/ms/835" passive="#theology"/>
               </listRelation>
               <listRelation type="part-to-composite">
                 <desc>This unit is a part of a composite manuscript:</desc>
-                <relation name="syriaca:is-unspecified-codicological-part-of" ref="#syriaca:is-unspecified-codicological-part-of" active="https://bl.syriac.uk/ms/835" passive="https://bl.syriac.uk/ms/834">
-                  <relation/>
-                </relation>
+                <relation name="syriaca:is-unspecified-codicological-part-of" ref="#syriaca:is-unspecified-codicological-part-of" active="https://bl.syriac.uk/ms/835" passive="https://bl.syriac.uk/ms/834"/>
               </listRelation>
             </head>
             <msContents>
-              <summary/>
               <textLang mainLang="syr">Syriac</textLang>
               <msItem xml:id="p1a1" n="1" defective="true">
                 <locus from="1a" to="99b">Foll. 1a-99b</locus>
-                <author ref="http://syriaca.org/person/10">Aphraates</author>
-                <title type="supplied">The first part of the works of Aphraates</title>
+                <author ref="http://syriaca.org/person/10">
+                  <persName xml:lang="en">Aphraates</persName>
+                </author>
+                <title xml:lang="en">The first part of the works of Aphraates</title>
                 <finalRubric xml:lang="syr">ܫܠܡ ܠܡܟܬܒ ܒܟܬܒܐ ܗܢܐ ܐܓܪ̈ܬܐ ܩܕܡ̈ܝܬܐ ܕܚܟܝܡܐ ܦܪܣܝܐ. ܕܗܘܝܢ ܒܡܢܝܢܐ ܥܣܪ. ܫܘܒܚܐ ܠܐܒܐ. ܏ܘܫ.<locus from="99a" to="99a"/>
                                 </finalRubric>
                 <colophon>
                                     <ref target="#p1addition1">See additions.</ref>
                                 </colophon>
-                <note/>
                 <msItem xml:id="p1b1" n="2" defective="true">
                   <locus from="1" to="2a">Foll. 1-2a</locus>
-                  <author ref="http://syriaca.org/person/10">Aphrahat</author>
-                  <title type="supplied">An Introductory Letter</title>
+                  <author ref="http://syriaca.org/person/10">
+                    <persName xml:lang="en">Aphrahat</persName>
+                  </author>
+                  <title xml:lang="en">An Introductory Letter</title>
                   <note>Of the introductory letter only a very small portion remains.</note>
                 </msItem>
                 <msItem xml:id="p1b2" n="3" defective="unknown">
                   <locus from="2a" to="11">Foll. 2a-11</locus>
-                  <title type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">Part of the first part of the works of Aphraates</title>
-                  <author ref="http://syriaca.org/person/10">Aphrahat</author>
-                  <title type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">Part of the first part of the works of Aphraates</title>
+                  <title xml:lang="en">Part of the first part of the works of Aphraates</title>
+                  <author ref="http://syriaca.org/person/10">
+                    <persName xml:lang="en">Aphrahat</persName>
+                  </author>
+                  <title xml:lang="en">Part of the first part of the works of Aphraates</title>
                   <rubric xml:lang="syr">ܬܚܘܝܬܐ ܕܗܝܡܢܘܬܐ<locus from="2a" to="2a"/>
                                     </rubric>
                   <note>
-                                        <locus from="7" to="7">Fol. 7</locus>is a later insertion, of about the<date from="0800" to="0900" calendar="Gregorian">ixth cent</date>.</note>
+                                        <locus from="7" to="7">Fol. 7</locus> is a later insertion, of about the <date from="0800" to="0900" calendar="Gregorian">ixth cent</date>.</note>
                 </msItem>
                 <msItem xml:id="p1b3" n="4" defective="unknown">
                   <locus from="11b" to="23">Foll. 11b-23</locus>
-                  <title type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">Part of the first part of the works of Aphraates</title>
-                  <author ref="http://syriaca.org/person/10">Aphrahat</author>
-                  <title type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">Part of the first part of the works of Aphraates</title>
+                  <title xml:lang="en">Part of the first part of the works of Aphraates</title>
+                  <author ref="http://syriaca.org/person/10">
+                    <persName xml:lang="en">Aphrahat</persName>
+                  </author>
+                  <title xml:lang="en">Part of the first part of the works of Aphraates</title>
                   <rubric xml:lang="syr">ܬܚܘܝܬܐ ܕܚܘܒܐ<locus from="11b" to="11b"/>
                                     </rubric>
                 </msItem>
                 <msItem xml:id="p1b4" n="5" defective="unknown">
                   <locus from="23a" to="31">Foll. 23a-31</locus>
-                  <title type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">Part of the first part of the works of Aphraates</title>
-                  <author ref="http://syriaca.org/person/10">Aphrahat</author>
-                  <title type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">Part of the first part of the works of Aphraates</title>
+                  <title xml:lang="en">Part of the first part of the works of Aphraates</title>
+                  <author ref="http://syriaca.org/person/10">
+                    <persName xml:lang="en">Aphrahat</persName>
+                  </author>
+                  <title xml:lang="en">Part of the first part of the works of Aphraates</title>
                   <rubric xml:lang="syr">ܬܚܘܝܬܐ ܕܨܘܡܐ<locus from="23a" to="23a"/>
                                     </rubric>
                 </msItem>
                 <msItem xml:id="p1b5" n="6" defective="true">
                   <locus from="31b" to="42">Foll. 31b-42</locus>
-                  <title type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">Part of the first part of the works of Aphraates</title>
-                  <author ref="http://syriaca.org/person/10">Aphrahat</author>
-                  <title type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">Part of the first part of the works of Aphraates</title>
+                  <title xml:lang="en">Part of the first part of the works of Aphraates</title>
+                  <author ref="http://syriaca.org/person/10">
+                    <persName xml:lang="en">Aphrahat</persName>
+                  </author>
+                  <title xml:lang="en">Part of the first part of the works of Aphraates</title>
                   <rubric xml:lang="syr">ܬܚܘܝܬܐ ܕܨܠܘܬܐ<locus from="31b" to="31b"/>
                                     </rubric>
                   <note>Imperfect.</note>
                 </msItem>
                 <msItem xml:id="p1b6" n="7" defective="true">
                   <locus from="42a" to="50">Foll. 42a-50</locus>
-                  <title type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">Part of the first part of the works of Aphraates</title>
-                  <author ref="http://syriaca.org/person/10">Aphrahat</author>
-                  <title type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">Part of the first part of the works of Aphraates</title>
+                  <title xml:lang="en">Part of the first part of the works of Aphraates</title>
+                  <author ref="http://syriaca.org/person/10">
+                    <persName xml:lang="en">Aphrahat</persName>
+                  </author>
+                  <title xml:lang="en">Part of the first part of the works of Aphraates</title>
                   <rubric xml:lang="syr">ܬܚܘܝܬܐ ܕܩܪ̈ܒܐ<locus from="42a" to="42a"/>
                                     </rubric>
                   <note>Imperfect.</note>
                 </msItem>
                 <msItem xml:id="p1b7" n="8" defective="true">
                   <locus from="50a" to="66">Foll. 50a-66</locus>
-                  <title type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">Part of the first part of the works of Aphraates</title>
-                  <author ref="http://syriaca.org/person/10">Aphrahat</author>
-                  <title type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">Part of the first part of the works of Aphraates</title>
+                  <title xml:lang="en">Part of the first part of the works of Aphraates</title>
+                  <author ref="http://syriaca.org/person/10">
+                    <persName xml:lang="en">Aphrahat</persName>
+                  </author>
+                  <title xml:lang="en">Part of the first part of the works of Aphraates</title>
                   <rubric xml:lang="syr">ܬܚܘܝܬܐ ܕܒ̈ܢܝ ܩܝܡܐ<locus from="50a" to="50a"/>
                                     </rubric>
                   <note>Imperfect.</note>
                 </msItem>
                 <msItem xml:id="p1b8" n="9" defective="true">
                   <locus from="66a" to="75">Foll. 66a-75</locus>
-                  <title type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">Part of the first part of the works of Aphraates</title>
-                  <author ref="http://syriaca.org/person/10">Aphrahat</author>
-                  <title type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">Part of the first part of the works of Aphraates</title>
+                  <title xml:lang="en">Part of the first part of the works of Aphraates</title>
+                  <author ref="http://syriaca.org/person/10">
+                    <persName xml:lang="en">Aphrahat</persName>
+                  </author>
+                  <title xml:lang="en">Part of the first part of the works of Aphraates</title>
                   <rubric xml:lang="syr">ܬܚܘܝܬܐ ܕܬ̈ܝܒܐ<locus from="66a" to="66a"/>
                                     </rubric>
                   <note>Imperfect.</note>
                 </msItem>
                 <msItem xml:id="p1b9" n="10" defective="unknown">
                   <locus from="75a" to="85">Foll. 75a-85</locus>
-                  <title type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">Part of the first part of the works of Aphraates</title>
-                  <author ref="http://syriaca.org/person/10">Aphrahat</author>
-                  <title type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">Part of the first part of the works of Aphraates</title>
+                  <title xml:lang="en">Part of the first part of the works of Aphraates</title>
+                  <author ref="http://syriaca.org/person/10">
+                    <persName xml:lang="en">Aphrahat</persName>
+                  </author>
+                  <title xml:lang="en">Part of the first part of the works of Aphraates</title>
                   <rubric xml:lang="syr">ܬܚܘܝܬܐ ܕܚܝܬ ܡܝ̈ܬܐ<locus from="75a" to="75a"/>
                                     </rubric>
                 </msItem>
                 <msItem xml:id="p1b10" n="11" defective="unknown">
                   <locus from="85b" to="93">Foll. 85b-93</locus>
-                  <title type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">Part of the first part of the works of Aphraates</title>
-                  <author ref="http://syriaca.org/person/10">Aphrahat</author>
-                  <title type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">Part of the first part of the works of Aphraates</title>
+                  <title xml:lang="en">Part of the first part of the works of Aphraates</title>
+                  <author ref="http://syriaca.org/person/10">
+                    <persName xml:lang="en">Aphrahat</persName>
+                  </author>
+                  <title xml:lang="en">Part of the first part of the works of Aphraates</title>
                   <rubric xml:lang="syr">ܬܚܘܝܬܐ ܕܡܟܝܟܘܬܐ<locus from="85b" to="85b"/>
                                     </rubric>
                 </msItem>
                 <msItem xml:id="p1b11" n="12" defective="unknown">
                   <locus from="93b" to="99">Foll. 93b-99</locus>
-                  <title type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">Part of the first part of the works of Aphraates</title>
-                  <author ref="http://syriaca.org/person/10">Aphrahat</author>
-                  <title type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">Part of the first part of the works of Aphraates</title>
+                  <title xml:lang="en">Part of the first part of the works of Aphraates</title>
+                  <author ref="http://syriaca.org/person/10">
+                    <persName xml:lang="en">Aphrahat</persName>
+                  </author>
+                  <title xml:lang="en">Part of the first part of the works of Aphraates</title>
                   <rubric xml:lang="syr">ܬܚܘܝܬܐ ܕܪ̈ܥܘܬܐ<locus from="93b" to="93b"/>
                                     </rubric>
                 </msItem>
@@ -265,96 +277,79 @@
                                     </support>
                                     <extent>
                                         <measure type="composition" unit="leaf" quantity="99">99 ff.</measure>
-                                        <dimensions type="leaf" unit="in">
-                                            <height>
-                                                <measure type="height" quantity="10.25" unit="in">10 1/4</measure>
-                                            </height>
-                                            <width>
-                                                <measure type="width" quantity="8.125" unit="in">8 1/8</measure>
-                                            </width>
-                                        </dimensions>
+                                        <dimensions type="leaf" unit="inch">
+                      <height quantity="10.25">10 1/4</height>
+                      <width quantity="8.125">8 1/8</width>
+                    </dimensions>
                                     </extent>
-                                    <foliation type="ancient"/>
                                     <collation>
-                                        <p>The quires, 13 in number, were originally signed with both letters and arithmetical figures (e.g. fol.<locus from="16a">16a</locus>,<foreign xml:lang="syr">ܓ</foreign>and<!-- Need Arabic figures here! -->), but in most cases either one, or the other, or both have disappeared.</p>
+                                        <p>The quires, 13 in number, were originally signed with both letters and arithmetical figures (e.g. fol.<locus from="16a">16a</locus>, <foreign xml:lang="syr">ܓ</foreign> and<!-- Need Arabic figures here! -->), but in most cases either one, or the other, or both have disappeared.</p>
                                     </collation>
                                     <condition>
                                         <list>
                                             <item>
-                                                <p>Some of the leaves are much stained and torn, especially foll.<locus from="1" to="2">1, 2</locus>,<locus from="8">8</locus>,<locus from="40" to="42">40-42</locus>, and<locus from="99">99</locus>.</p>
+                                                <p>Some of the leaves are much stained and torn, especially foll.<locus from="1" to="2">1, 2</locus>, <locus from="8">8</locus>, <locus from="40" to="42">40-42</locus>, and <locus from="99">99</locus>.</p>
                                             </item>
                                             <item>
-                                                <p>Leaves are wanting after foll.<locus from="1">1</locus>,<locus from="42">42</locus>,<locus from="43">43</locus>,<locus from="51">51</locus>, and<locus from="73">73</locus>.</p>
+                                                <p>Leaves are wanting after foll.<locus from="1">1</locus>, <locus from="42">42</locus>, <locus from="43">43</locus>, <locus from="51">51</locus>, and <locus from="73">73</locus>.</p>
                                             </item>
                                         </list>
                                     </condition>
                                 </supportDesc>
                                 <layoutDesc>
                                     <layout columns="2" writtenLines="23 26">
-                                        <locus from="" to=""/>
                                         <p>Each page is divided into two columns, of from 23 to 26 lines.</p>
                                     </layout>
                                 </layoutDesc>
                             </objectDesc>
               <handDesc hands="7">
                 <handNote xml:id="p1handNote1" scope="major" script="syr-Syre" medium="unknown">
-                  <desc>This manuscript is written in a good, regular, though by no means elegant Estrangela, and dated A. Gr. 785, A.D. 474.<ref target="#p1addition1">See additions.</ref>
-                                    </desc>
-                </handNote>
+                  This manuscript is written in a good, regular, though by no means elegant Estrangela, and dated A. Gr. 785, A.D. 474.<ref target="#p1addition1">See additions.</ref>
+                                    </handNote>
                 <handNote xml:id="p1handNote2" scope="minor" script="syr" medium="unknown">
-                  <desc>See additions.<ref target="#p1addition2"/>
-                                    </desc>
-                </handNote>
+                  See additions.<ref target="#p1addition2"/>
+                                    </handNote>
                 <handNote xml:id="p1handNote3" scope="minor" script="syr" medium="unknown">
-                  <desc>See additions.<ref target="#p1addition3"/>
-                                    </desc>
-                </handNote>
+                  See additions.<ref target="#p1addition3"/>
+                                    </handNote>
                 <handNote xml:id="p1handNote4" scope="minor" script="syr" medium="unknown">
-                  <desc>See additions.<ref target="#p1addition4"/>
-                                    </desc>
-                </handNote>
+                  See additions.<ref target="#p1addition4"/>
+                                    </handNote>
                 <handNote xml:id="p1handNote5" scope="minor" script="ar" medium="unknown">
-                  <desc>See additions.<ref target="#p1addition5 #p1addition6"/>
-                                    </desc>
-                </handNote>
+                  See additions.<ref target="#p1addition5 #p1addition6"/>
+                                    </handNote>
                 <handNote xml:id="p1handNote6" scope="minor" script="cop" medium="unknown">
-                  <desc>See additions.<ref target="#p1addition7"/>
-                                    </desc>
-                </handNote>
+                  See additions.<ref target="#p1addition7"/>
+                                    </handNote>
                 <handNote xml:id="p1handNote7" scope="minor" script="syr" medium="unknown">
-                  <desc>See additions.<ref target="#p1addition8"/>
-                                    </desc>
-                </handNote>
+                  See additions.<ref target="#p1addition8"/>
+                                    </handNote>
               </handDesc>
               <decoDesc>
-                <decoNote xml:id="p1decoNote1" type="ornamentation" medium="black-ink">
-                  <p>Fol.<locus from="1b">1b</locus>contains one or two ornamental designs in black ink.</p>
+                <decoNote type="ornamentation">
+                  Fol. <locus from="1b">1b</locus> contains one or two ornamental designs in black ink
                 </decoNote>
               </decoDesc>
               <additions>
                 <note type="proofreader-note">N.B., folio location may not be available for some items below.</note>
                 <note type="proofreader-note">N.B., items below may have been listed out of folio order in Wright's catalogue.</note>
-                <p/>
                 <list>
-                  <item xml:id="p1addition1" n="1" syriaca-tags="scribal-colophon ownership-inscription">
+                  <item xml:id="p1addition1" n="1">
                     <label>Colophon</label>
+                    <label>Ownership Inscription</label>
                     <locus from="99b" to="99b"/>
-                    <p>On fol. 99b, there is a note, written by the scribe in a more cursive character, which states that this book was purchased by<persName>
-                                                <foreign xml:lang="syr">ܡܪܝ ܡܢܝܡ</foreign>(<foreign xml:lang="grk">Μόνιμος</foreign>?)</persName>, priest of the church in the village of<foreign xml:lang="syr">ܚܪܝܫܬܐ</foreign>(perhaps<placeName>
+                    <p>On fol. 99b, there is a note, written by the scribe in a more cursive character, which states that this book was purchased by <persName>
+                                                <foreign xml:lang="syr">ܡܪܝ ܡܢܝܡ</foreign>(<foreign xml:lang="grc">Μόνιμος</foreign>?)</persName>, priest of the church in the village of <foreign xml:lang="syr">ܚܪܝܫܬܐ</foreign>(perhaps <placeName>
                         <!-- Need Arabic here -->
-                                            </placeName>, near<placeName>Damascus</placeName>, on the road to<placeName>Ḥimṣ</placeName>), in the year<origDate when-custom="0785" calendar="Seleucid">785</origDate>(<origDate when="0474" calendar="Gregorian">A.D. 474</origDate>), when<persName>Timotheus</persName>was bishop of that place and<persName>Monimus</persName>was periodeutes. The book itself was written in<placeName>Edessa</placeName>
+                                            </placeName>, near <placeName>Damascus</placeName>, on the road to <placeName>Ḥimṣ</placeName>), in the year <date when-custom="0785" calendar="Seleucid">785</date>(<date when="0474" calendar="Gregorian">A.D. 474</date>), when <persName>Timotheus</persName> was bishop of that place and <persName>Monimus</persName> was periodeutes. The book itself was written in <placeName>Edessa</placeName>
                                         </p>
                     <p>
                                             <quote xml:lang="syr">ܙܒܢ ܟܬܒܐ ܗܢܐ ܓܒܝܐ ܕܐܠܗܐ ܡܪܝ ܡܢܝܡ ܩܫܝܫܐ ܕܥܕܬܐ ܕܚܪܝܫܬܐ ܩܪܝܬܐ ܕܡܢ . . . ܕܩܕܫ . . ܐ ܠܢܝܚܐ ܘܩܪܝܢܐ ܕܟܠܗܘܢ ܚܒܝܒ̈ܘܗܝ. ܒܝܘ̈ܡܝ ܡܝܬܪܐ ܘܪܚܡ ܠܡܫܝܚܐ ܡܪܝ ܛܝܡܬܐܐ ܐܦܝܣܩܘܦܐ ܘܡܪܝ ܡܘܢܡܐ ܦܪܝܗܕܘܛܐ. ܕܡܫܝܚܐ ܒܨ̈ܠܘܬܐ ܕܟܠܗܘܢ ܩܕ̈ܝܫܘܗܝ ܢܥܒܕ ܪ̈ܚܡܐ ܥܠ ܥܘܡܪܗ ܘܥܠ ܩܢܝܢܗ ܘܒܥܠܡܐ ܕܥܬܝܕ ܢܬܠ ܠܗ ܫܘܒܩܢܐ ܕܚ̈ܛܗܐ ܠܥܠܡܝܢ. ܐܫܬܠܡ ܕܝܢ ܟܬܒܐ ܗܢܐ ܒܝܪܚ ܐܝܠܘܠ ܕܫܢܬ ܫܒܥܡܐܐ ܘܬܡܢܐܝܢ ܘܚܡܫ ܒܐܘܪܗܝ ܡܕܝܢܬܐ ܕܒܝܬ ܢܗܪܝܢ.</quote>
                                         </p>
                   </item>
                   <item xml:id="p1addition2" n="2">
-                    <locus from="" to=""/>
                     <ref target="#p1handNote2"/>
-                    <p>A later hand has erroneously numbered the quires from<foreign xml:lang="syr">ܐ</foreign>to<foreign xml:lang="syr">ܝܒ</foreign>.</p>
-                    <p>
-                                            <quote xml:lang="syr"/>
-                                        </p>
+                    <p>A later hand has erroneously numbered the quires from <foreign xml:lang="syr">ܐ</foreign> to <foreign xml:lang="syr">ܝܒ</foreign>.</p>
                   </item>
                   <item xml:id="p1addition3" n="3">
                     <locus from="99b" to="99b"/>
@@ -395,32 +390,29 @@
                   </item>
                 </list>
               </additions>
-              <bindingDesc/>
-              <sealDesc/>
-              <accMat/>
-            </physDesc>
+              </physDesc>
             <history>
                             <origin>
-                                <origDate when="0474" calendar="Gregorian">A.D. 474</origDate>
-                                <origDate when-custom="0785" datingMethod="Seleucid">A. Gr. 785</origDate>
+                <origDate calendar="Gregorian" when="0474">AD 474</origDate>
+                <origDate calendar="Seleucid" datingMethod="Seleucid" when-custom="0785">AG 785</origDate>
+                                
+                                
                                 <origPlace>Edessa</origPlace>
                             </origin>
                             <provenance>
-                                <p>
+                                
                                     <ref target="#p1addition3 #p1addition4">See additions</ref>
-                                </p>
+                                
                             </provenance>
-                            <acquisition/>
-                        </history>
+                            </history>
             <additional>
               <adminInfo>
                 <recordHist>
-                  <source>Manuscript description based on<bibl>
+                  <source>Manuscript description based on <bibl>
                       <ref target="#Wrightpart1">Wright's Catalogue</ref>
                     </bibl>. abbreviated by the Syriaca.org editors.</source>
                 </recordHist>
-                <note/>
-              </adminInfo>
+                </adminInfo>
               <listBibl>
                 <bibl xml:id="Wrightpart1">
                   <author>William Wright</author>
@@ -429,7 +421,7 @@
                   <date>1870</date>
                   <ptr target="http://syriaca.org/bibl/8"/>
                   <citedRange unit="entry">DXXIX</citedRange>
-                  <citedRange unit="pp">2:403-404</citedRange>
+                  <citedRange unit="p">2:403-404</citedRange>
                 <ref type="internet-archive-pdf" target="https://archive.org/details/catalogueofsyria02brituoft/page/403"/>
                 </bibl>
               </listBibl>
@@ -445,7 +437,7 @@
                 <idno type="BL-Shelfmark-display">London, BL, Add. 17,182, foll. 100–175</idno>
               </altIdentifier>
               <altIdentifier>
-                <idno type="BL-Shelmark-simplified">BL Add MS 17182, foll. 100-175</idno>
+                <idno type="BL-Shelfmark-simplified">BL Add MS 17182, foll. 100-175</idno>
               </altIdentifier>
                             <altIdentifier>
                                 <collection>William Wright, Catalogue of the Syriac Manuscripts in the British Museum Acquired since the Year 1838</collection>
@@ -459,120 +451,138 @@
             <head>
               <note type="contents-note">This manuscript contains: Aphraates. The second part of the works of Aphraates; viz. homilies ii-xxii, and the treatise on "the Cluster.". In total, including sub-sections, this manuscript contains 12 items.</note>
               <listRelation type="Wright-BL-Taxonomy">
-                <relation name="dcterms:type" ref="http://purl.org/dc/terms/type" active="https://bl.syriac.uk/ms/836" passive="#theology">
-                  <desc/>
-                </relation>
+                <relation name="dcterms:type" ref="http://purl.org/dc/terms/type" active="https://bl.syriac.uk/ms/836" passive="#theology"/>
               </listRelation>
               <listRelation type="part-to-composite">
                 <desc>This unit is a part of a composite manuscript:</desc>
-                <relation name="syriaca:is-unspecified-codicological-part-of" ref="#syriaca:is-unspecified-codicological-part-of" active="https://bl.syriac.uk/ms/836" passive="https://bl.syriac.uk/ms/834">
-                  <relation/>
-                </relation>
+                <relation name="syriaca:is-unspecified-codicological-part-of" ref="#syriaca:is-unspecified-codicological-part-of" active="https://bl.syriac.uk/ms/836" passive="https://bl.syriac.uk/ms/834"/>
               </listRelation>
             </head>
             <msContents>
-              <summary/>
               <textLang mainLang="syr">Syriac</textLang>
               <msItem xml:id="p2a1" n="1" defective="true">
                 <locus from="100a" to="174b">Foll. 100a-174b</locus>
-                <author ref="http://syriaca.org/person/10">Aphraates</author>
-                <title type="supplied">The second part of the works of Aphraates; viz. homilies ii-xxii, and the treatise on "the Cluster."</title>
-                <finalRubric xml:lang="syr">ܫܠܡ ܠܡܟܬܒ ܒܟܬܒܐ ܗܢܐ ܐܓܪ̈ܬܐ ܟܘܠܗܝܢ . . . ܘܡܪܝ ܝܥܩܘܒ ܚܟܝܡܐ ܦܪܣܝܐ. ܕܗܘܝܢ ܒܡܢܝܢܐ ܥܣܪܝܐ ܘܬܪ̈ܬܝܢ ܥܠ ܐܠܦ ܒܝܬ ܘܚܕܐ ܕܥܠ ܛܘܛܝܬܐ . ܘ . ܘ . ܫܘܒܚܐ ܠܐܒܐ. ܏ܘܫ.<note>The scribe wrote the words<foreign xml:lang="syr">ܕܡܪܝ ܝܥܩܘܒ</foreign>by mistake twice, and then erased them. The letters<foreign xml:lang="syr">ܘܒ</foreign>are still quite distinct.</note>
+                <author ref="http://syriaca.org/person/10">
+                  <persName xml:lang="en">Aphraates</persName>
+                </author>
+                <title xml:lang="en">The second part of the works of Aphraates; viz. homilies ii-xxii, and the treatise on "the Cluster."</title>
+                <finalRubric xml:lang="syr">ܫܠܡ ܠܡܟܬܒ ܒܟܬܒܐ ܗܢܐ ܐܓܪ̈ܬܐ ܟܘܠܗܝܢ . . . ܘܡܪܝ ܝܥܩܘܒ ܚܟܝܡܐ ܦܪܣܝܐ. ܕܗܘܝܢ ܒܡܢܝܢܐ ܥܣܪܝܐ ܘܬܪ̈ܬܝܢ ܥܠ ܐܠܦ ܒܝܬ ܘܚܕܐ ܕܥܠ ܛܘܛܝܬܐ . ܘ . ܘ . ܫܘܒܚܐ ܠܐܒܐ. ܏ܘܫ.<note>The scribe wrote the words <foreign xml:lang="syr">ܕܡܪܝ ܝܥܩܘܒ</foreign> by mistake twice, and then erased them. The letters <foreign xml:lang="syr">ܘܒ</foreign> are still quite distinct.</note>
                                     <locus from="174a" to="174a"/>
                                 </finalRubric>
                 <colophon>
                                     <ref target="#p2addition1"/>See additions.</colophon>
                 <note>The <foreign xml:lang="syr">ܬܚܘܝܬܐ ܕܓܙܘܪܬܐ</foreign> and <foreign xml:lang="syr">ܬܚܘܝܬܐ ܕܦܨܚܐ</foreign> are entirely lost.</note>
-                <listBibl>
-                                    <bibl>Land, Aneed. Syr., t. i., plate v., no. 12</bibl>
-                                </listBibl>
+                <note>Cf. <bibl>Land, Aneed. Syr., t. i., plate v., no. 12</bibl>
+                </note>
                 <msItem xml:id="p2b1" n="2" defective="true">
                   <locus from="100a" to="102">Foll. 100a-102</locus>
-                  <title type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">Part of the second part of the works of Aphraates; viz. homilies ii-xxii, and the treatise on "the Cluster."</title>
-                  <author ref="http://syriaca.org/person/10">Aphrahat</author>
-                  <title type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">Part of the second part of the works of Aphraates; viz. homilies ii-xxii, and the treatise on "the Cluster."</title>
+                  <title xml:lang="en">Part of the second part of the works of Aphraates; viz. homilies ii-xxii, and the treatise on "the Cluster."</title>
+                  <author ref="http://syriaca.org/person/10">
+                    <persName xml:lang="en">Aphrahat</persName>
+                  </author>
+                  <title xml:lang="en">Part of the second part of the works of Aphraates; viz. homilies ii-xxii, and the treatise on "the Cluster."</title>
                   <rubric xml:lang="syr">ܬܚܘܝܬܐ ܕܫܒܬܐ<locus from="100a" to="100a"/>
                                     </rubric>
                   <note>Imperfect at the beginning.</note>
                 </msItem>
                 <msItem xml:id="p2b2" n="3" defective="true">
                   <locus from="102b" to="118">Foll. 102b-118</locus>
-                  <title type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">Part of the second part of the works of Aphraates; viz. homilies ii-xxii, and the treatise on "the Cluster."</title>
-                  <author ref="http://syriaca.org/person/10">Aphrahat</author>
-                  <title type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">Part of the second part of the works of Aphraates; viz. homilies ii-xxii, and the treatise on "the Cluster."</title>
+                  <title xml:lang="en">Part of the second part of the works of Aphraates; viz. homilies ii-xxii, and the treatise on "the Cluster."</title>
+                  <author ref="http://syriaca.org/person/10">
+                    <persName xml:lang="en">Aphrahat</persName>
+                  </author>
+                  <title xml:lang="en">Part of the second part of the works of Aphraates; viz. homilies ii-xxii, and the treatise on "the Cluster."</title>
                   <rubric xml:lang="syr">ܬܚܘܝܬܐ ܝܕ ܕܦܝܣܐ<locus from="102b" to="102b"/>
                                     </rubric>
                   <note>Imperfect.</note>
                 </msItem>
                 <msItem xml:id="p2b3" n="4" defective="unknown">
                   <locus from="118a" to="122">Foll. 118a-122</locus>
-                  <title type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">Part of the second part of the works of Aphraates; viz. homilies ii-xxii, and the treatise on "the Cluster."</title>
-                  <author ref="http://syriaca.org/person/10">Aphrahat</author>
-                  <title type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">Part of the second part of the works of Aphraates; viz. homilies ii-xxii, and the treatise on "the Cluster."</title>
+                  <title xml:lang="en">Part of the second part of the works of Aphraates; viz. homilies ii-xxii, and the treatise on "the Cluster."</title>
+                  <author ref="http://syriaca.org/person/10">
+                    <persName xml:lang="en">Aphrahat</persName>
+                  </author>
+                  <title xml:lang="en">Part of the second part of the works of Aphraates; viz. homilies ii-xxii, and the treatise on "the Cluster."</title>
                   <rubric xml:lang="syr">ܕܥܠ ܦܘܪܫ ܡܐ̈ܟܠܬܐ<locus from="118a" to="118a"/>
                                     </rubric>
                 </msItem>
                 <msItem xml:id="p2b4" n="5" defective="unknown">
                   <locus from="122a" to="125">Foll. 122a-125</locus>
-                  <title type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">Part of the second part of the works of Aphraates; viz. homilies ii-xxii, and the treatise on "the Cluster."</title>
-                  <author ref="http://syriaca.org/person/10">Aphrahat</author>
-                  <title type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">Part of the second part of the works of Aphraates; viz. homilies ii-xxii, and the treatise on "the Cluster."</title>
+                  <title xml:lang="en">Part of the second part of the works of Aphraates; viz. homilies ii-xxii, and the treatise on "the Cluster."</title>
+                  <author ref="http://syriaca.org/person/10">
+                    <persName xml:lang="en">Aphrahat</persName>
+                  </author>
+                  <title xml:lang="en">Part of the second part of the works of Aphraates; viz. homilies ii-xxii, and the treatise on "the Cluster."</title>
                   <rubric xml:lang="syr">ܬܚܘܝܬܐ ܕܫܬܥܣܪ̈ܐ ܕܥܠ ܥܡܡ̈ܐ ܕܗܘܘ ܚܠܦ ܥܡܐ<locus from="122a" to="122a"/>
                                     </rubric>
                 </msItem>
                 <msItem xml:id="p2b5" n="6" defective="unknown">
                   <locus from="125a" to="128">Foll. 125a-128</locus>
-                  <title type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">Part of the second part of the works of Aphraates; viz. homilies ii-xxii, and the treatise on "the Cluster."</title>
-                  <author ref="http://syriaca.org/person/10">Aphrahat</author>
-                  <title type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">Part of the second part of the works of Aphraates; viz. homilies ii-xxii, and the treatise on "the Cluster."</title>
+                  <title xml:lang="en">Part of the second part of the works of Aphraates; viz. homilies ii-xxii, and the treatise on "the Cluster."</title>
+                  <author ref="http://syriaca.org/person/10">
+                    <persName xml:lang="en">Aphrahat</persName>
+                  </author>
+                  <title xml:lang="en">Part of the second part of the works of Aphraates; viz. homilies ii-xxii, and the treatise on "the Cluster."</title>
                   <rubric xml:lang="syr">ܬܚܘܝܬܐ  ܕܢܚܘܐ ܥܠ ܡܫܝܚܐ ܕܒܪܗ ܗ̣ܘ ܕܐܠܗܐ<locus from="125a" to="125a"/>
                                     </rubric>
                 </msItem>
                 <msItem xml:id="p2b6" n="7" defective="unknown">
                   <locus from="128b" to="131">Foll. 128b-131</locus>
-                  <title type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">Part of the second part of the works of Aphraates; viz. homilies ii-xxii, and the treatise on "the Cluster."</title>
-                  <author ref="http://syriaca.org/person/10">Aphrahat</author>
-                  <title type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">Part of the second part of the works of Aphraates; viz. homilies ii-xxii, and the treatise on "the Cluster."</title>
+                  <title xml:lang="en">Part of the second part of the works of Aphraates; viz. homilies ii-xxii, and the treatise on "the Cluster."</title>
+                  <author ref="http://syriaca.org/person/10">
+                    <persName xml:lang="en">Aphrahat</persName>
+                  </author>
+                  <title xml:lang="en">Part of the second part of the works of Aphraates; viz. homilies ii-xxii, and the treatise on "the Cluster."</title>
                   <rubric xml:lang="syr">ܬܚܘܝܬܐ ܝܚ ܕܠܘܩܒܠ ܝܗ̈ܘܕܝܐ ܘܥܠ ܒܬܘܠܘܬܐ ܘܩܕܝܫܘܬܐ<locus from="128b" to="128b"/>
                                     </rubric>
                 </msItem>
                 <msItem xml:id="p2b7" n="8" defective="unknown">
                   <locus from="131b" to="136">Foll. 131b-136</locus>
-                  <title type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">Part of the second part of the works of Aphraates; viz. homilies ii-xxii, and the treatise on "the Cluster."</title>
-                  <author ref="http://syriaca.org/person/10">Aphrahat</author>
-                  <title type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">Part of the second part of the works of Aphraates; viz. homilies ii-xxii, and the treatise on "the Cluster."</title>
+                  <title xml:lang="en">Part of the second part of the works of Aphraates; viz. homilies ii-xxii, and the treatise on "the Cluster."</title>
+                  <author ref="http://syriaca.org/person/10">
+                    <persName xml:lang="en">Aphrahat</persName>
+                  </author>
+                  <title xml:lang="en">Part of the second part of the works of Aphraates; viz. homilies ii-xxii, and the treatise on "the Cluster."</title>
                   <rubric xml:lang="syr">ܐܓܪܬܐ ܕܠܘܩܒܠ ܝܗܘ̈ܕܝܐ ܥܠ ܕܐܡܪܝܢ ܕܩܝܡ ܗ̣ܘ ܠܗܘܢ ܠܡܬܟܢܫܘ<locus from="131b" to="131b"/>
                                     </rubric>
                 </msItem>
                 <msItem xml:id="p2b8" n="9" defective="unknown">
                   <locus from="136b" to="141">Foll. 136b-141</locus>
-                  <title type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">Part of the second part of the works of Aphraates; viz. homilies ii-xxii, and the treatise on "the Cluster."</title>
-                  <author ref="http://syriaca.org/person/10">Aphrahat</author>
-                  <title type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">Part of the second part of the works of Aphraates; viz. homilies ii-xxii, and the treatise on "the Cluster."</title>
+                  <title xml:lang="en">Part of the second part of the works of Aphraates; viz. homilies ii-xxii, and the treatise on "the Cluster."</title>
+                  <author ref="http://syriaca.org/person/10">
+                    <persName xml:lang="en">Aphrahat</persName>
+                  </author>
+                  <title xml:lang="en">Part of the second part of the works of Aphraates; viz. homilies ii-xxii, and the treatise on "the Cluster."</title>
                   <rubric xml:lang="syr">ܬܚܘܝܬܐ ܕܥܠ ܦܘܪܢܣܐ ܕܡ̈ܣܟܢܐ<locus from="136b" to="136b"/>
                                     </rubric>
                 </msItem>
                 <msItem xml:id="p2b9" n="10" defective="unknown">
                   <locus from="141a" to="147">Foll. 141a-147</locus>
-                  <title type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">Part of the second part of the works of Aphraates; viz. homilies ii-xxii, and the treatise on "the Cluster."</title>
-                  <author ref="http://syriaca.org/person/10">Aphrahat</author>
-                  <title type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">Part of the second part of the works of Aphraates; viz. homilies ii-xxii, and the treatise on "the Cluster."</title>
+                  <title xml:lang="en">Part of the second part of the works of Aphraates; viz. homilies ii-xxii, and the treatise on "the Cluster."</title>
+                  <author ref="http://syriaca.org/person/10">
+                    <persName xml:lang="en">Aphrahat</persName>
+                  </author>
+                  <title xml:lang="en">Part of the second part of the works of Aphraates; viz. homilies ii-xxii, and the treatise on "the Cluster."</title>
                   <rubric xml:lang="syr">ܬܚܘܝܬܐ ܕܪܕܘܦܝܐ<locus from="141a" to="141a"/>
                                     </rubric>
                 </msItem>
                 <msItem xml:id="p2b10" n="11" defective="unknown">
                   <locus from="147b" to="155">Foll. 147b-155</locus>
-                  <title type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">Part of the second part of the works of Aphraates; viz. homilies ii-xxii, and the treatise on "the Cluster."</title>
-                  <author ref="http://syriaca.org/person/10">Aphrahat</author>
-                  <title type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">Part of the second part of the works of Aphraates; viz. homilies ii-xxii, and the treatise on "the Cluster."</title>
+                  <title xml:lang="en">Part of the second part of the works of Aphraates; viz. homilies ii-xxii, and the treatise on "the Cluster."</title>
+                  <author ref="http://syriaca.org/person/10">
+                    <persName xml:lang="en">Aphrahat</persName>
+                  </author>
+                  <title xml:lang="en">Part of the second part of the works of Aphraates; viz. homilies ii-xxii, and the treatise on "the Cluster."</title>
                   <rubric xml:lang="syr">ܬܚܘܝܬܐ ܕܡܘܬܐ ܘܕܙܒ̈ܢܐ ܐܚܪ̈ܝܐ<locus from="147b" to="147b"/>
                                     </rubric>
                 </msItem>
                 <msItem xml:id="p2b11" n="12" defective="unknown">
                   <locus from="155a" to="174">Foll. 155a-174</locus>
-                  <title type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">Part of the second part of the works of Aphraates; viz. homilies ii-xxii, and the treatise on "the Cluster."</title>
-                  <author ref="http://syriaca.org/person/10">Aphrahat</author>
-                  <title type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">Part of the second part of the works of Aphraates; viz. homilies ii-xxii, and the treatise on "the Cluster."</title>
+                  <title xml:lang="en">Part of the second part of the works of Aphraates; viz. homilies ii-xxii, and the treatise on "the Cluster."</title>
+                  <author ref="http://syriaca.org/person/10">
+                    <persName xml:lang="en">Aphrahat</persName>
+                  </author>
+                  <title xml:lang="en">Part of the second part of the works of Aphraates; viz. homilies ii-xxii, and the treatise on "the Cluster."</title>
                   <rubric xml:lang="syr">ܬܚܘܝܬܐ ܕܛܘܛܝܬܐ<locus from="155a" to="155a"/>
                                     </rubric>
                 </msItem>
@@ -594,23 +604,18 @@
                                     </support>
                                     <extent>
                                         <measure type="composition" unit="leaf" quantity="75">75 ff.</measure>
-                                        <dimensions type="leaf" unit="in">
-                                            <height>
-                                                <measure type="height" quantity="9.875" unit="in">9 7/8</measure>
-                                            </height>
-                                            <width>
-                                                <measure type="width" quantity="8.25" unit="in">8 1/4</measure>
-                                            </width>
-                                        </dimensions>
+                                        <dimensions type="leaf" unit="inch">
+                      <height quantity="9.875">9 7/8</height>
+                      <width quantity="8.25">8 1/4</width>
+                    </dimensions>
                                     </extent>
-                                    <foliation type="ancient"/>
                                     <collation>
                                         <p>The quires were once probably 12 in number.</p>
                                     </collation>
                                     <condition>
                                         <list>
                                             <item>
-                                                <p>A few leaves are slightly stained and torn, especially foll.<locus from="100" to="102">100-102</locus>and<locus from="173" to="175">173-175</locus>.</p>
+                                                <p>A few leaves are slightly stained and torn, especially foll.<locus from="100" to="102">100-102</locus> and <locus from="173" to="175">173-175</locus>.</p>
                                             </item>
                                             <item>
                                                 <p>Of the quires, the first two are lost, and the third is imperfect, a leaf being missing after fol.<locus from="105">105</locus>
@@ -634,25 +639,23 @@
                             </objectDesc>
               <handDesc hands="3">
                 <handNote xml:id="p2handNote1" scope="major" script="syr-Syre" medium="unknown">
-                  <desc>This manuscript is written in a fine, regular Estrangela, and dated A. Gr. 823, A. D. 512.</desc>
+                  This manuscript is written in a fine, regular Estrangela, and dated A. Gr. 823, A. D. 512.
                 </handNote>
                 <handNote xml:id="p2handNote2" scope="minor" script="syr" medium="unknown">
-                  <desc>One Abraham bar Nonnus has recorded his name.</desc>
+                  One Abraham bar Nonnus has recorded his name.
                 </handNote>
                 <handNote xml:id="p2handNote3" scope="sole" script="la" medium="unknown">
-                  <desc>Each side of fol.<locus from="175a" to="175b">175</locus>is in ancient Latin characters, not later than the<date notAfter="0600" calendar="Gregorian">vith</date>cent.</desc>
+                  Each side of fol.<locus from="175a" to="175b">175</locus> is in ancient Latin characters, not later than the <date notAfter="0600" calendar="Gregorian">vith</date> cent.
                 </handNote>
               </handDesc>
-              <decoDesc/>
               <additions>
                 <note type="proofreader-note">N.B., items below may have been listed out of folio order in Wright's catalogue.</note>
-                <p/>
                 <list>
                   <item xml:id="p2addition1" n="1">
                     <label>Colophon</label>
                     <locus from="174b" to="174b"/>
                     <ref target="#p2handNote1"/>
-                    <p>On fol. 174 b there is a long note written by the scribe in a more cursive character. See<bibl>Land, Aneed. Syr., t. i., plate v., no. 12</bibl>. It contained the date A. Gr.<origDate when-custom="0823" datingMethod="Seleucid">823</origDate>, A.D.<origDate when="0512" calendar="Gregorian">512</origDate>, as well as the name of the owner of the manuscript and of his convent; but these latter particulars have been erased.</p>
+                    <p>On fol. 174 b there is a long note written by the scribe in a more cursive character. See <bibl>Land, Aneed. Syr., t. i., plate v., no. 12</bibl>. It contained the date A. Gr.<date when-custom="0823" datingMethod="Seleucid">823</date>, A.D.<date when="0512" calendar="Gregorian">512</date>, as well as the name of the owner of the manuscript and of his convent; but these latter particulars have been erased.</p>
                     <p>
                                             <quote xml:lang="syr">ܕܘܟܪܢܐ ܛܒܐ ܘܥܘܗܕܢܐ ܫܦܝܪܐ ܩܕܡ . . ܐ ܡܫܒܐܚ ܕܬܠܝܬܝܘܬܐ ܢܗܘܐ ܠܒܪܚܐܪ̈ܐ ܘܪܚܡ ܐܠܗܐ . . . ܘܥܒܕܐ . . . ܘܐܬܚܦܛ ܘܣܡ ܠܗ ܣܝܡܬܐ ܗܕܐ ܡܝܬܪܬܐ ܕܡܪܝ ܝܥܩܘܒ ܚܟܝܡܐ ܦܪܣܝܐ ܒܝܬ ܣܒ . . . ܕܕܝܪܐ ܒܝܬ ܡܪܝ . . . ܕܐܝܬ ܒܗ̇ ܒܩܪܝܬܐ . . . ܝܫܘܥ ܡܫܝܚܐ ܢܩܒܠ ܩܘܪܒܢܗ ܢܫܦܪ ܩܕܡܘܗܝ ܢܕܪܗ ܐܝܟ ܕܗܒܝܠ ܩܕܝܫܐ ܘܐܝܟ ܕܟܠܗܘܢ ܐܒܘ̈ܬܐ ܕܫܦܪܘ ܩܕܡܘܗܝ. ܏ܘܫ. ܟܬܝܒ ܒܫܢܬ ܬܡܢܡܐܐ ܘܥܣܪܝܢ ܘܬܠܬ ܒܕܝܘ̈ܢܝܐ ܒܝܪܚ ܟܢܘܢ ܐܚܪܝ.</quote>
                                         </p>
@@ -667,29 +670,23 @@
                   </item>
                 </list>
               </additions>
-              <bindingDesc/>
-              <sealDesc/>
-              <accMat/>
-            </physDesc>
+              </physDesc>
             <history>
-                            <summary/>
                             <origin>
-                                <origDate when="0512" calendar="Gregorian">A.D. 512.</origDate>
-                                <origDate when-custom="0823" datingMethod="Seleucid">A. Gr. 823</origDate>
-                                <origPlace/>
+                <origDate calendar="Gregorian" when="0512">AD 512</origDate>
+                <origDate calendar="Seleucid" datingMethod="Seleucid" when-custom="0823">AG 823</origDate>
+                                
+                                
                             </origin>
-                            <provenance/>
-                            <acquisition/>
-                        </history>
+                            </history>
             <additional>
               <adminInfo>
                 <recordHist>
-                  <source>Manuscript description based on<bibl>
+                  <source>Manuscript description based on <bibl>
                       <ref target="#Wrightpart2">Wright's Catalogue</ref>
                     </bibl>. abbreviated by the Syriaca.org editors.</source>
                 </recordHist>
-                <note/>
-              </adminInfo>
+                </adminInfo>
               <listBibl>
                 <bibl xml:id="Wrightpart2">
                   <author>William Wright</author>
@@ -698,7 +695,7 @@
                   <date>1870</date>
                   <ptr target="http://syriaca.org/bibl/8"/>
                   <citedRange unit="entry">DXXX</citedRange>
-                  <citedRange unit="pp">2:404-405</citedRange>
+                  <citedRange unit="p">2:404-405</citedRange>
                 <ref type="internet-archive-pdf" target="https://archive.org/details/catalogueofsyria02brituoft/page/404"/>
                 </bibl>
               </listBibl>
@@ -714,7 +711,7 @@
                 <idno type="BL-Shelfmark-display">London, BL, Add. 17,182, fol. 175</idno>
               </altIdentifier>
               <altIdentifier>
-                <idno type="BL-Shelmark-simplified">BL Add MS 17182, fol. 175</idno>
+                <idno type="BL-Shelfmark-simplified">BL Add MS 17182, fol. 175</idno>
               </altIdentifier>
                             <altIdentifier>
                                 <collection>William Wright, Catalogue of the Syriac Manuscripts in the British Museum Acquired since the Year 1838</collection>
@@ -734,29 +731,26 @@
               </listRelation>
               <listRelation type="part-to-composite">
                 <desc>This unit is a part of a composite manuscript:</desc>
-                <relation name="syriaca:is-unspecified-codicological-part-of" ref="#syriaca:is-unspecified-codicological-part-of" active="https://bl.syriac.uk/ms/1184" passive="https://bl.syriac.uk/ms/834">
-                  <relation/>
-                </relation>
+                <relation name="syriaca:is-unspecified-codicological-part-of" ref="#syriaca:is-unspecified-codicological-part-of" active="https://bl.syriac.uk/ms/1184" passive="https://bl.syriac.uk/ms/834"/>
               </listRelation>
             </head>
             <msContents>
-              <summary/>
               <textLang mainLang="la">Latin</textLang>
               <msItem xml:id="p3a1" n="1" defective="true">
                 <locus from="175a" to="175a">Foll. 175a</locus>
                 
-                <title ref="http://syriaca.org/work/218" type="supplied">The Gospel of S. Luke, xii. 23, 24</title>
+                <title ref="http://syriaca.org/work/218" xml:lang="en">The Gospel of S. Luke, xii. 23, 24</title>
                 <quote xml:lang="la">
                                     <p>ESCA ET CORPUS</p>
                                     <p>QUAM VESTIME</p>
                                     <p>
-                                        <supplied reason="unknown" resp="https://bl.syriac.uk/documentation/editors.xml#wwright">NTUM</supplied>CONSI</p>
+                                        <supplied reason="unknown" resp="https://bl.syriac.uk/documentation/editors.xml#wwright">NTUM</supplied> CONSI</p>
                                 </quote>
               </msItem>
               <msItem xml:id="p3a2" n="2" defective="true">
                 <locus from="175b" to="175b">Foll. 175b</locus>
                 
-                <title ref="http://syriaca.org/work/218" type="supplied">The Gospel of S. Luke, xii. 32</title>
+                <title ref="http://syriaca.org/work/218" xml:lang="en">The Gospel of S. Luke, xii. 32</title>
                 <quote xml:lang="la">
                                     <p>QUIA COMPLACU</p>
                                     <p>IT PATRI VESTRO</p>
@@ -768,24 +762,18 @@
             <physDesc>
               <p>This folio is a small piece of vellum, 4 3/8 in. by 2 1/4,
                             unfortunately torn in the middle and saturated with oil.</p>
-              <objectDesc form="unspecified">
+              <objectDesc form="other">
                                 <supportDesc material="perg">
                                     <support>
                                         <material>Vellum</material>
                                     </support>
                                     <extent>
                                         <measure type="composition" unit="leaf" quantity="1">1 f.</measure>
-                                        <dimensions type="leaf" unit="in">
-                                            <height>
-                                                <measure type="height" quantity="4.375" unit="in">4 3/8</measure>
-                                            </height>
-                                            <width>
-                                                <measure type="width" quantity="2.25" unit="in">2 1/4</measure>
-                                            </width>
-                                        </dimensions>
+                                        <dimensions type="leaf" unit="inch">
+                      <height quantity="4.375">4 3/8</height>
+                      <width quantity="2.25">2 1/4</width>
+                    </dimensions>
                                     </extent>
-                                    <foliation type="ancient"/>
-                                    <collation/>
                                     <condition>
                                         <list>
                                             <item>
@@ -803,33 +791,24 @@
                             </objectDesc>
               <handDesc hands="3">
                 <handNote xml:id="p3handNote1" scope="sole" script="la" medium="unknown">
-                  <desc>Each side of fol.<locus from="175a" to="175b">175</locus>is in ancient Latin characters, not later than the<date notAfter="0600" calendar="Gregorian">vith</date>cent.</desc>
+                  Each side of fol.<locus from="175a" to="175b">175</locus> is in ancient Latin characters, not later than the <date notAfter="0600" calendar="Gregorian">vith</date> cent.
                 </handNote>
               </handDesc>
-              <decoDesc/>
-              <additions/>
-              <bindingDesc/>
-              <sealDesc/>
-              <accMat/>
-            </physDesc>
+              </physDesc>
             <history>
-                            <summary/>
                             <origin>
-                                <origDate notAfter="0600" calendar="Gregorian">Not later than the vith cent.</origDate>
-                                <origPlace/>
+                <origDate calendar="Gregorian" notBefore="0400" notAfter="0600">Not later than the 6th century</origDate>
+                                
                             </origin>
-                            <provenance/>
-                            <acquisition/>
-                        </history>
+                            </history>
             <additional>
               <adminInfo>
                 <recordHist>
-                  <source>Manuscript description based on<bibl>
+                  <source>Manuscript description based on <bibl>
                       <ref target="#Wrightpart3">Wright's Catalogue</ref>
                     </bibl>. abbreviated by the Syriaca.org editors.</source>
                 </recordHist>
-                <note/>
-              </adminInfo>
+                </adminInfo>
               <listBibl>
                 <bibl xml:id="Wrightpart3">
                   <author>William Wright</author>
@@ -838,7 +817,7 @@
                   <date>1870</date>
                   <ptr target="http://syriaca.org/bibl/8"/>
                   <citedRange unit="entry">DXXX</citedRange>
-                  <citedRange unit="pp">2:405</citedRange>
+                  <citedRange unit="p">2:405</citedRange>
                 <ref type="internet-archive-pdf" target="https://archive.org/details/catalogueofsyria02brituoft/page/405"/>
                 </bibl>
               </listBibl>
@@ -862,141 +841,148 @@
             </editorialDecl>
             <classDecl>
                 <taxonomy xml:id="Wright-BL-Taxonomy">
-                    <bibl>
-                        
-                        <ptr target="http://syriaca.org/documentation/Wright-BL-Taxonomy.html"/>
-                    </bibl>
-                    <category xml:id="biblical-manuscripts">
-                        <category xml:id="bible-ot">
+          <bibl>
+            <ptr target="http://syriaca.org/documentation/Wright-BL-Taxonomy.html"/>
+          </bibl>
+          <category xml:id="biblical-manuscripts">
+            <category xml:id="bible-ot">
               <catDesc>Old Testament</catDesc>
             </category>
-                        <category xml:id="bible-nt">
+            <category xml:id="bible-nt">
               <catDesc>New Testament</catDesc>
             </category>
-                        <category xml:id="bible-apocrypha">
+            <category xml:id="bible-apocrypha">
               <catDesc>Apocrypha</catDesc>
             </category>
-                        <category xml:id="bible-punctuation">
+            <category xml:id="bible-punctuation">
               <catDesc>Punctuation</catDesc>
             </category>
-                    </category>
-                    <category xml:id="service-books">
-                        <category xml:id="psalter">
+          </category>
+          <category xml:id="service-books">
+            <category xml:id="psalter">
               <catDesc>Psalters</catDesc>
             </category>
-                        <category xml:id="lectionaries">
+            <category xml:id="lectionaries">
               <catDesc>Lectionaries</catDesc>
             </category>
-                        <category xml:id="missals">
+            <category xml:id="missals">
               <catDesc>Missals</catDesc>
             </category>
-                        <category xml:id="sacerdotals">
+            <category xml:id="sacerdotals">
               <catDesc>Sacerdotals</catDesc>
             </category>
-                        <category xml:id="choral">
+            <category xml:id="choral">
               <catDesc>Choral Books</catDesc>
             </category>
-                        <category xml:id="hymns">
+            <category xml:id="hymns">
               <catDesc>Hymns</catDesc>
             </category>
-                        <category xml:id="prayers">
+            <category xml:id="prayers">
               <catDesc>Prayers</catDesc>
             </category>
-                        <category xml:id="funerals">
+            <category xml:id="funerals">
               <catDesc>Funeral Services</catDesc>
             </category>
-                    </category>
-                    <category xml:id="theology">
-                        <category xml:id="theo-single">
+          </category>
+          <category xml:id="theology">
+            <category xml:id="theo-single">
               <catDesc>Individual Authors</catDesc>
             </category>
-                        <category xml:id="theo-collected">
+            <category xml:id="theo-collected">
               <catDesc>Collected Authors</catDesc>
             </category>
-                        <category xml:id="theo-catenae">
+            <category xml:id="theo-catenae">
               <catDesc>Catenae Patrum and Demonstrations against Heresies</catDesc>
             </category>
-                        <category xml:id="theo-anonymous">
+            <category xml:id="theo-anonymous">
               <catDesc>Anonymous Works</catDesc>
             </category>
-                        <category xml:id="theo-council">
+            <category xml:id="theo-council">
               <catDesc>Councils of the Church and Ecclesiastical Canons</catDesc>
             </category>
-                    </category>
-                    <category xml:id="wright-history">
-                        <category xml:id="history">
+          </category>
+          <category xml:id="wright-history">
+            <category xml:id="history">
               <catDesc>History</catDesc>
             </category>
-                    </category>
-                    <category xml:id="lives">
-                        <category xml:id="lives-collect">
+          </category>
+          <category xml:id="lives">
+            <category xml:id="lives-collect">
               <catDesc>Collected Lives</catDesc>
             </category>
-                        <category xml:id="lives-single">
+            <category xml:id="lives-single">
               <catDesc>Single Lives</catDesc>
             </category>
-                    </category>
-                    <category xml:id="scientific-lit">
-                        <category xml:id="sci-logic">
+          </category>
+          <category xml:id="scientific-lit">
+            <category xml:id="sci-logic">
               <catDesc>Logic and Rhetoric</catDesc>
             </category>
-                        <category xml:id="sci-grammar">
+            <category xml:id="sci-grammar">
               <catDesc>Grammar and Lexicography</catDesc>
             </category>
-                        <category xml:id="sci-ethics">
+            <category xml:id="sci-ethics">
               <catDesc>Ethics</catDesc>
             </category>
-                        <category xml:id="sci-medicine">
+            <category xml:id="sci-medicine">
               <catDesc>Medicine</catDesc>
             </category>
-                        <category xml:id="sci-agriculture">
+            <category xml:id="sci-agriculture">
               <catDesc>Agriculture</catDesc>
             </category>
-                        <category xml:id="sci-chemistry">
+            <category xml:id="sci-chemistry">
               <catDesc>Chemistry</catDesc>
             </category>
-                        <category xml:id="sci-natural-history">
+            <category xml:id="sci-natural-history">
               <catDesc>Natural History</catDesc>
             </category>
-                    </category>
-                    <category xml:id="wright-fly-leaves">
-                        <category xml:id="fly-leaves">
+          </category>
+          <category xml:id="wright-fly-leaves">
+            <category xml:id="fly-leaves">
               <catDesc>Fly Leaves</catDesc>
             </category>
-                    </category>
-                    <category xml:id="appendices">
-                        <category xml:id="appendix-a">
+          </category>
+          <category xml:id="appendices">
+            <category xml:id="appendix-a">
               <catDesc>Appendix A</catDesc>
             </category>
-                        <category xml:id="appendix-b">
+            <category xml:id="appendix-b">
               <catDesc>Appendix B</catDesc>
             </category>
-                    </category>
-                  <category xml:id="unclassified">
-                    <catDesc>Unclassified</catDesc>
-                  </category>
-                </taxonomy>
+          </category>
+          <category xml:id="unclassified">
+            <catDesc>Unclassified</catDesc>
+          </category>
+        </taxonomy>
             </classDecl>
         </encodingDesc>
     <profileDesc>
             <langUsage>
-                <language ident="syr">Unvocalized Syriac of any variety or period</language>
-                <language ident="syr-Syre">Syriac in Estrangela</language>
-                <language ident="syr-Syrj">Vocalized West Syriac</language>
-                <language ident="syr-Syrn">Vocalized East Syriac</language>
-                <language ident="syr-x-syrm">Melkite Syriac</language>
-                <language ident="qhy-x-cpas">Palestinian Syriac</language>
-                <language ident="ar-Syrc">Unvocalized or Undetermined Arabic Garshuni</language>
-                <language ident="ar-Syrj">Arabic Garshuni in Vocalized West Syriac Script</language>
-                <language ident="ar-Syrn">Arabic Garshuni in Vocalized East Syriac Script</language>
-                <language ident="en">English</language>
-                <language ident="ar">Arabic</language>
-                <language ident="fr">French</language>
-                <language ident="de">German</language>
-                <language ident="la">Latin</language>
-                <language ident="grc">Ancient Greek</language>
-                <language ident="cop">Coptic</language>
-            </langUsage>
+        <language ident="ar">Arabic</language>
+        <language ident="ar-Syrc">Arabic Garshuni</language>
+        <language ident="ar-Syrn">Arabic Garshuni in East Syriac script</language>
+        <language ident="cop">Coptic</language>
+        <language ident="de">German</language>
+        <language ident="en">English</language>
+        <language ident="fr">French</language>
+        <language ident="grc">Ancient Greek</language>
+        <language ident="he">Hebrew</language>
+        <language ident="hy">Armenian</language>
+        <language ident="it">Italian</language>
+        <language ident="la">Latin</language>
+        <language ident="syr">Syriac</language>
+        <language ident="syr-Arab">Syriac Garshuni in Arabic script</language>
+        <language ident="syr-Syre">Syriac in Estrangela script</language>
+        <language ident="syr-Syrj">Syriac in West Syriac script</language>
+        <language ident="syr-Syrn">Syriac in East Syriac script</language>
+        <language ident="syr-x-syrm">Syriac in Melkite Syriac script</language>
+        <language ident="tr">Turkish</language>
+        <language ident="tr-Syrc">Turkish Garshuni</language>
+        <language ident="qhy-x-cpas">Christian Palestinian Aramaic script</language>
+        <language ident="xcl">Classical Armenian</language>
+        <language ident="und">Undetermined</language>
+        <language ident="mul">Multiple languages</language>
+      </langUsage>
             <textClass>
                 <keywords scheme="#Wright-BL-Taxonomy">
                     <list>
@@ -1025,17 +1011,15 @@
             <change who="https://bl.syriac.uk/documentation/editors.xml#jarnwine" when="2014-01-09">Created: file</change>
             <change who="https://bl.syriac.uk/documentation/editors.xml#jarnwine" when="2014-04-08">Deleted extraneous items in additions and msItems. Checked that colophon is reflected in the ref.</change>
             <change who="https://bl.syriac.uk/documentation/editors.xml#jarnwine" when="2014-05-07">Added @syriaca-tags to describe colophon</change>
-            <change type="planned" subtype="arabic">Add missing Arabic text.</change>
-            <change type="planned" subtype="uri">Needs Addition of work URIs.</change>
+            <change type="planned" subtype="arabic" who="https://bl.syriac.uk/documentation/editors.xml#smbl-general-editors">Add missing Arabic text.</change>
+            <change type="planned" subtype="uri" who="https://bl.syriac.uk/documentation/editors.xml#smbl-general-editors">Needs Addition of work URIs.</change>
             <change who="https://bl.syriac.uk/documentation/editors.xml#pgmiller" when="2016-07-06">Changed: Files moved to srophe-app-data/data/manuscripts/tei repository.</change>
         </revisionDesc>
   </teiHeader>
-  <facsimile>
-        <graphic/>
-    </facsimile>
   <text>
         <body>
             <p/>
+      <!--Body paragraph provided for document validation.-->
         </body>
     </text>
 </TEI>

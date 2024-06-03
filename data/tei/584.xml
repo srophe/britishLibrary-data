@@ -1,4 +1,7 @@
-<?oxygen RNGSchema="http://syriaca.org/documentation/syriaca-tei-main.rnc" type="compact"?><?xml-stylesheet type="text/css" href="https://raw.githubusercontent.com/srophe/wright-catalogue/master/parameters/tei.css"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+<?xml-model href="https://raw.githubusercontent.com/srophe/britishLibrary/main/documentation/schema/out/Syriacamsdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/srophe/britishLibrary/main/documentation/schema/out/Syriacamsdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet href="https://raw.githubusercontent.com/srophe/wright-catalogue/master/parameters/tei.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="manuscript_584">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -54,7 +57,6 @@
         <authority>Syriaca.org: The Syriac Reference Portal</authority>
         <idno type="URI">https://bl.syriac.uk/ms/584/tei</idno>
         <availability>
-          <p/>
           <licence target="http://creativecommons.org/licenses/by/3.0/">
             <p>Distributed under a Creative Commons Attribution 3.0 Unported License</p>
           </licence>
@@ -76,7 +78,7 @@
               <idno type="BL-Shelfmark-display">London, BL, Add. 14,712</idno>
             </altIdentifier>
             <altIdentifier>
-              <idno type="BL-Shelmark-simplified">BL Add MS 14712</idno>
+              <idno type="BL-Shelfmark-simplified">BL Add MS 14712</idno>
             </altIdentifier>
             <altIdentifier>
               <collection>William Wright, Catalogue of the Syriac Manuscripts in the British Museum Acquired since the Year 1838</collection>
@@ -96,13 +98,13 @@
             </listRelation>
           </head>
           <msContents>
-            <textLang mainLang="syr"/>
+            <textLang mainLang="syr">Syriac</textLang>
             <msItem xml:id="a1" n="1" defective="true">
-              <locus to="111" from="1a"/>
+              <locus from="1a" to="111"/>
               <title xml:lang="en">Greek and Syrian Canons for the second half of the
                 year</title>
-              <msItem xml:id="b1" n="2">
-                <locus to="90" from="1a"/>
+              <msItem xml:id="b1" n="2" defective="true">
+                <locus from="1a" to="90"/>
                 <title xml:lang="en">The Resurrection, arranged according to the eight
                   tones</title>
                 <msItem xml:id="c1" n="3" defective="true">
@@ -148,7 +150,7 @@
                 <locus from="73b"/>
                 <title xml:lang="en">The Ascension</title>
               </msItem>
-              <msItem xml:id="b4" n="13">
+              <msItem xml:id="b4" n="13" defective="true">
                 <locus from="81b"/>
                 <title xml:lang="en">Pentecost or Whitsun Day</title>
                 <msItem xml:id="c9" n="14" defective="true">
@@ -158,7 +160,7 @@
               </msItem>
               <msItem xml:id="b5" n="15">
                 <locus from="91a"/>
-                <title xml:lang="en">The Decease of <persName ref="http://syriaca.org/person/624">the blessed Virgin</persName>
+                <title xml:lang="en">The Decease of the blessed Virgin
                 </title>
                 <rubric xml:lang="syr">ܛܟܣܐ ܕܥܠ ܫܘܢܝܗ̇ ܕܝܠܕܬ ܐܠܗܐ ܡܪܝܡ</rubric>
               </msItem>
@@ -170,13 +172,13 @@
               <msItem xml:id="b7" n="17">
                 <locus from="109b"/>
                 <title xml:lang="en">Contains part of a prayer for the Commemoration of
-                    <persName>Bar-saumā</persName>
+                    Bar-saumā
                 </title>
               </msItem>
               <msItem xml:id="b8" n="18">
-                <locus to="111" from="110"/>
-                <title xml:lang="en">Contains part of the Anaphora of <persName ref="http://syriaca.org/person/212">Dionysius bar Salībī</persName>, bishop of
-                    <placeName ref="http://syriaca.org/place/8">Amid</placeName>
+                <locus from="110" to="111"/>
+                <title xml:lang="en">Contains part of the Anaphora of Dionysius bar Salībī, bishop of
+                    Amid
                 </title>
                 <rubric xml:lang="syr">ܐܢܐܦܘܪܐ ܏ܕܩܕ ܡܪܝ ܕܝܘܢܘܣܝܘܣ ܐܦܝܣܩܦܐ ܕܐܡܝܕ ܡܕܝܢܬܐ ܕܗ̣ܘ ܝܥܩܘܒ ܒܪ
                   ܨܠܝܒܝ </rubric>
@@ -192,8 +194,6 @@
                 <extent>
                   <measure type="composition" unit="leaf" quantity="111">111 ff.</measure>
                 </extent>
-                <foliation/>
-                <collation/>
                 <condition>
                   <list>
                     <item>
@@ -207,22 +207,17 @@
             </objectDesc>
             <handDesc hands="3">
               <handNote xml:id="handNote1" medium="unknown" scope="major" script="syr">
-                <desc>This volume is written in a rather inelegant hand of the <date notBefore="1200" notAfter="1300">xiiith cent</date>. The name of the scribe is
+                This volume is written in a rather inelegant hand of the <date notBefore="1200" notAfter="1300">xiiith cent</date>. The name of the scribe is
                   recorded on <locus from="27a">foll. 27 a</locus> and <locus from="66a">66
                     a</locus>, and more fully on <locus from="51a">fol. 51 a</locus>,
-                    <persName>Yeshūa' bar Phetion</persName>.</desc>
-              </handNote>
+                    <persName>Yeshūa' bar Phetion</persName>.</handNote>
               <handNote xml:id="handNote2" medium="unknown" scope="minor" script="syr">
-                <desc>Part of a prayer for the Commemoration of <persName>Bar-saumā</persName>,
-                  written in a rude hand of later date.</desc>
-              </handNote>
+                Part of a prayer for the Commemoration of <persName>Bar-saumā</persName>,
+                  written in a rude hand of later date.</handNote>
               <handNote xml:id="handNote3" medium="unknown" scope="minor" script="syr">
-                <desc>Part of the Anaphora of <persName ref="http://syriaca.org/person/212">Dionysius bar Salībī, bishop of <placeName ref="http://syriaca.org/place/8">Amid</placeName>
-                  </persName>, written in a fair hand of the <date notBefore="1200" notAfter="1300">xiiith cent</date>.</desc>
-              </handNote>
+                Part of the Anaphora of <persName ref="http://syriaca.org/person/212">Dionysius bar Salībī, bishop of <placeName ref="http://syriaca.org/place/8">Amid</placeName></persName>, written in a fair hand of the <date notBefore="1200" notAfter="1300">xiiith cent</date>.</handNote>
             </handDesc>
             <additions>
-              <p/>
               <list>
                 <item xml:id="addition1" n="1">
                   <label>Colophon</label>
@@ -235,25 +230,21 @@
                 </item>
               </list>
             </additions>
-            <accMat/>
-          </physDesc>
+            </physDesc>
           <history>
             <origin>
-              <origDate notBefore="1200" notAfter="1300">the xiiith cent.</origDate>
-              <origPlace/>
+              <origDate calendar="Gregorian" notBefore="1200" notAfter="1300">13th century</origDate>
+              
             </origin>
-            <provenance/>
-            <acquisition/>
-          </history>
+            </history>
           <additional>
             <adminInfo>
               <recordHist>
-                <source>Manuscript description based on<bibl>
+                <source>Manuscript description based on <bibl>
                     <ref target="#Wrightpart">Wright's Catalogue</ref>
                   </bibl>. abbreviated by the Syriaca.org editors.</source>
               </recordHist>
-              <note/>
-            </adminInfo>
+              </adminInfo>
             <listBibl>
               <bibl xml:id="Wrightpart">
                 <author>William Wright</author>
@@ -263,7 +254,7 @@
                 <date>1870</date>
                 <ptr target="http://syriaca.org/bibl/8"/>
                 <citedRange unit="entry">CCCXLVI</citedRange>
-                <citedRange unit="pp">1:291-292</citedRange>
+                <citedRange unit="p">1:291-292</citedRange>
               <ref type="internet-archive-pdf" target="https://archive.org/details/catalogueofsyria01brituoft/page/291"/>
               </bibl>
             </listBibl>
@@ -287,7 +278,6 @@
       <classDecl>
         <taxonomy xml:id="Wright-BL-Taxonomy">
           <bibl>
-            
             <ptr target="http://syriaca.org/documentation/Wright-BL-Taxonomy.html"/>
           </bibl>
           <category xml:id="biblical-manuscripts">
@@ -404,22 +394,30 @@
     </encodingDesc>
     <profileDesc>
       <langUsage>
-        <language ident="syr">Unvocalized Syriac of any variety or period</language>
-        <language ident="syr-Syre">Syriac in Estrangela</language>
-        <language ident="syr-Syrj">Vocalized West Syriac</language>
-        <language ident="syr-Syrn">Vocalized East Syriac</language>
-        <language ident="syr-x-syrm">Melkite Syriac</language>
-        <language ident="qhy-x-cpas">Palestinian Syriac</language>
-        <language ident="ar-Syrc">Unvocalized or Undetermined Arabic Garshuni</language>
-        <language ident="ar-Syrj">Arabic Garshuni in Vocalized West Syriac Script</language>
-        <language ident="ar-Syrn">Arabic Garshuni in Vocalized East Syriac Script</language>
-        <language ident="en">English</language>
         <language ident="ar">Arabic</language>
-        <language ident="fr">French</language>
-        <language ident="de">German</language>
-        <language ident="la">Latin</language>
-        <language ident="grc">Ancient Greek</language>
+        <language ident="ar-Syrc">Arabic Garshuni</language>
+        <language ident="ar-Syrn">Arabic Garshuni in East Syriac script</language>
         <language ident="cop">Coptic</language>
+        <language ident="de">German</language>
+        <language ident="en">English</language>
+        <language ident="fr">French</language>
+        <language ident="grc">Ancient Greek</language>
+        <language ident="he">Hebrew</language>
+        <language ident="hy">Armenian</language>
+        <language ident="it">Italian</language>
+        <language ident="la">Latin</language>
+        <language ident="syr">Syriac</language>
+        <language ident="syr-Arab">Syriac Garshuni in Arabic script</language>
+        <language ident="syr-Syre">Syriac in Estrangela script</language>
+        <language ident="syr-Syrj">Syriac in West Syriac script</language>
+        <language ident="syr-Syrn">Syriac in East Syriac script</language>
+        <language ident="syr-x-syrm">Syriac in Melkite Syriac script</language>
+        <language ident="tr">Turkish</language>
+        <language ident="tr-Syrc">Turkish Garshuni</language>
+        <language ident="qhy-x-cpas">Christian Palestinian Aramaic script</language>
+        <language ident="xcl">Classical Armenian</language>
+        <language ident="und">Undetermined</language>
+        <language ident="mul">Multiple languages</language>
       </langUsage>
       <textClass>
         <keywords scheme="#Wright-BL-Taxonomy">
@@ -436,19 +434,17 @@
       <change who="https://bl.syriac.uk/documentation/editors.xml#srophe-util" when="2020-04-06-05:00">CHANGED: Added project metadata; metadata from Wright Decoder; msItem, handDesc, and additions enumeration; Wright Taxonomy designation</change>
       <change who="https://bl.syriac.uk/documentation/editors.xml#lruth" when="2020-01-30">Initial TEI
         encoding.</change>
-      <change type="planned" subtype="question">Question in Word Doc to be Addressed: What is
+      <change type="planned" subtype="question" who="https://bl.syriac.uk/documentation/editors.xml#smbl-general-editors">Question in Word Doc to be Addressed: What is
         q[PP2]q ?</change>
-      <change type="planned" subtype="checkSyriac">The Syriac copied from the Word Document needs to
+      <change type="planned" subtype="checkSyriac" who="https://bl.syriac.uk/documentation/editors.xml#smbl-general-editors">The Syriac copied from the Word Document needs to
         be checked for accuracy. Won't let me copy paste correctly because of brackets on #1 The
         Ressurection.</change>
     </revisionDesc>
   </teiHeader>
-  <facsimile>
-    <formula>Content pending</formula>
-  </facsimile>
   <text>
     <body>
-      <bibl>Content pending</bibl>
+      <p/>
+      <!--Body paragraph provided for document validation.-->
     </body>
   </text>
 </TEI>

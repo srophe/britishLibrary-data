@@ -1,4 +1,7 @@
-<?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/srophe-app/documentation/enrich-syriaca.rnc" type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/css" href="SRPEnrichCSS.css"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+<?xml-model href="https://raw.githubusercontent.com/srophe/britishLibrary/main/documentation/schema/out/Syriacamsdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/srophe/britishLibrary/main/documentation/schema/out/Syriacamsdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet href="https://raw.githubusercontent.com/srophe/wright-catalogue/master/parameters/tei.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="manuscript_169">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -76,7 +79,6 @@
         <authority>Syriaca.org: The Syriac Reference Portal</authority>
         <idno type="URI">https://bl.syriac.uk/ms/169/tei</idno>
         <availability>
-          <p/>
           <licence target="http://creativecommons.org/licenses/by/3.0/">
             <p>Distributed under a Creative Commons Attribution 3.0 Unported License</p>
           </licence>
@@ -98,12 +100,11 @@
               <idno type="BL-Shelfmark-display">London, BL, Add. 14,484</idno>
             </altIdentifier>
             <altIdentifier>
-              <idno type="BL-Shelmark-simplified">BL Add MS 14484</idno>
+              <idno type="BL-Shelfmark-simplified">BL Add MS 14484</idno>
             </altIdentifier>
           </msIdentifier>
           <head>
             <note type="contents-note">This manuscript record does not have a summary list of contents. For composite manuscripts, the list of contents can be found under each individual part.</note>
-            <listRelation type="Wright-BL-Taxonomy"/>
             <listRelation type="composite-to-parts">
               <desc>This composite manuscript consists of 6 distinct parts:</desc>
               <relation name="syriaca:has-unspecified-codicological-part" ref="#syriaca:has-unspecified-codicological-part" active="https://bl.syriac.uk/ms/169" passive="https://bl.syriac.uk/ms/170">
@@ -136,7 +137,7 @@
                 <idno type="BL-Shelfmark-display">London, BL, Add. 14,484, foll. 1–8</idno>
               </altIdentifier>
               <altIdentifier>
-                <idno type="BL-Shelmark-simplified">BL Add MS 14484, foll. 1-8</idno>
+                <idno type="BL-Shelfmark-simplified">BL Add MS 14484, foll. 1-8</idno>
               </altIdentifier>
               <altIdentifier>
                 <collection>William Wright, Catalogue of the Syriac Manuscripts in the British Museum Acquired since the Year 1838</collection>
@@ -148,7 +149,7 @@
               </altIdentifier>
             </msIdentifier>
             <head>
-              <note type="contents-note">This manuscript contains: Portions of an apocryph, of which the running title is "the Obsequies of my Lady Mary". In total, including sub-sections, this manuscript contains 1 items.</note>
+              <note type="contents-note">This manuscript contains: Portions of an apocryph, of which the running title is "the Obsequies of my Lady Mary". In total, including sub-sections, this manuscript contains 1 item.</note>
               <listRelation type="Wright-BL-Taxonomy">
                 <relation name="dcterms:type" ref="http://purl.org/dc/terms/type" active="https://bl.syriac.uk/ms/170" passive="#bible-apocrypha">
                   <desc>Apocrypha</desc>
@@ -156,23 +157,20 @@
               </listRelation>
               <listRelation type="part-to-composite">
                 <desc>This unit is a part of a composite manuscript:</desc>
-                <relation name="syriaca:is-unspecified-codicological-part-of" ref="#syriaca:is-unspecified-codicological-part-of" active="https://bl.syriac.uk/ms/170" passive="https://bl.syriac.uk/ms/169">
-                  <relation/>
-                </relation>
+                <relation name="syriaca:is-unspecified-codicological-part-of" ref="#syriaca:is-unspecified-codicological-part-of" active="https://bl.syriac.uk/ms/170" passive="https://bl.syriac.uk/ms/169"/>
               </listRelation>
             </head>
             <msContents>
-              <summary/>
               <textLang mainLang="syr">Syriac</textLang>
               <msItem xml:id="p1a1" n="1" defective="true">
                 <locus from="1" to="8">Foll. 1-8</locus>
-                <title type="supplied">Portions of an apocryph, of which the running title is "the Obsequies of my Lady Mary"</title>
+                <title xml:lang="en">Portions of an apocryph, of which the running title is "the Obsequies of my Lady Mary"</title>
                 <rubric xml:lang="syr">
                   <fw type="header">ܠܘܘܝܗ̇ ܕܡܪܬܝ ܡܪܝܡ<locus from="5b" to="5b"/>
                     <locus from="6b" to="6b"/>
                   </fw>
                 </rubric>
-                <note>The text has been published, with an English translation, in<bibl>Wright's "Contributions to the Apocryphal Literature of the N. T.”</bibl>
+                <note>The text has been published, with an English translation, in <bibl>Wright's "Contributions to the Apocryphal Literature of the N. T.”</bibl>
                 </note>
               </msItem>
             </msContents>
@@ -185,28 +183,22 @@
                   </support>
                   <extent>
                     <measure type="composition" unit="leaf" quantity="8">8 ff.</measure>
-                    <dimensions type="leaf" unit="in">
-                      <height>
-                        <measure type="height" quantity="10.75" unit="in">10 3/4</measure>
-                      </height>
-                      <width>
-                        <measure type="width" quantity="8.25" unit="in">8 1/4</measure>
-                      </width>
+                    <dimensions type="leaf" unit="inch">
+                      <height quantity="10.75">10 3/4</height>
+                      <width quantity="8.25">8 1/4</width>
                     </dimensions>
                   </extent>
-                  <foliation/>
-                  <collation/>
                   <condition>
                     <list>
                       <item>
-                        <p>Most of the leaves are much stained and mutilated, especially foll.<locus from="1" to="1">1</locus>,<locus from="6" to="8">6, 7, and 8</locus>.</p>
+                        <p>Most of the leaves are much stained and mutilated, especially foll.<locus from="1" to="1">1</locus>, <locus from="6" to="8">6, 7, and 8</locus>.</p>
                       </item>
                       <item>
-                        <p>It is imperfect at the beginning and end, and there are considerable lacunae after foll.<locus from="5" to="5">5</locus>and<locus from="7" to="7">7</locus>.</p>
+                        <p>It is imperfect at the beginning and end, and there are considerable lacunae after foll.<locus from="5" to="5">5</locus> and <locus from="7" to="7">7</locus>.</p>
                       </item>
                       <item>
-                        <p>Other fragments of it exist as palimpsest leaves in<bibl>Add. 14,665, foll. 21— 24<ptr target="https://bl.syriac.uk/ms/1185"/>
-                          </bibl>, and<bibl>Add. 17,137, foll. 6—11<ptr target="https://bl.syriac.uk/ms/1186"/>
+                        <p>Other fragments of it exist as palimpsest leaves in <bibl>Add. 14,665, foll. 21— 24<ptr target="https://bl.syriac.uk/ms/1185"/>
+                          </bibl>, and <bibl>Add. 17,137, foll. 6—11<ptr target="https://bl.syriac.uk/ms/1186"/>
                           </bibl>.</p>
                       </item>
                     </list>
@@ -220,31 +212,24 @@
               </objectDesc>
               <handDesc hands="1">
                 <handNote xml:id="p1handNote1" scope="sole" script="syr-Syre" medium="unknown">
-                  <desc>The writing is a good, regular Estrangela of the<origDate notBefore="0400" notAfter="0600">5th or 6th century</origDate>.</desc>
+                  The writing is a good, regular Estrangela of the <date notBefore="0400" notAfter="0600">5th or 6th century</date>.
                 </handNote>
               </handDesc>
-              <decoDesc/>
-              <additions/>
-              <bindingDesc/>
-              <sealDesc/>
-              <accMat/>
-            </physDesc>
+              </physDesc>
             <history>
               <origin>
-                <origDate notBefore="0400" notAfter="0600">5th or 6th century</origDate>
+                <origDate calendar="Gregorian" notBefore="0400" notAfter="0600">5th or 6th century</origDate>
+                
               </origin>
-              <provenance/>
-              <acquisition/>
-            </history>
+              </history>
             <additional>
               <adminInfo>
                 <recordHist>
-                  <source>Manuscript description based on<bibl>
+                  <source>Manuscript description based on <bibl>
                       <ref target="#Wrightpart1">Wright's Catalogue</ref>
                     </bibl>. abbreviated by the Syriaca.org editors.</source>
                 </recordHist>
-                <note/>
-              </adminInfo>
+                </adminInfo>
               <listBibl>
                 <bibl xml:id="Wrightpart1">
                   <author>William Wright</author>
@@ -253,7 +238,7 @@
                   <date>1870</date>
                   <ptr target="http://syriaca.org/bibl/8"/>
                   <citedRange unit="entry">CLVIII</citedRange>
-                  <citedRange unit="pp">1:99</citedRange>
+                  <citedRange unit="p">1:99</citedRange>
                 <ref type="internet-archive-pdf" target="https://archive.org/details/catalogueofsyria01brituoft/page/99"/>
                 </bibl>
               </listBibl>
@@ -269,7 +254,7 @@
                 <idno type="BL-Shelfmark-display">London, BL, Add. 14,484, foll. 9–11, upper text</idno>
               </altIdentifier>
               <altIdentifier>
-                <idno type="BL-Shelmark-simplified">BL Add MS 14484, foll. 9-11, upper text</idno>
+                <idno type="BL-Shelfmark-simplified">BL Add MS 14484, foll. 9-11, upper text</idno>
               </altIdentifier>
               <altIdentifier>
                 <collection>William Wright, Catalogue of the Syriac Manuscripts in the British Museum Acquired since the Year 1838</collection>
@@ -281,7 +266,7 @@
               </altIdentifier>
             </msIdentifier>
             <head>
-              <note type="contents-note">This manuscript contains: Part of an apocryph, entitled "the history of the holy Mother of God, the Virgin.". In total, including sub-sections, this manuscript contains 1 items.</note>
+              <note type="contents-note">This manuscript contains: Part of an apocryph, entitled "the history of the holy Mother of God, the Virgin.". In total, including sub-sections, this manuscript contains 1 item.</note>
               <listRelation type="Wright-BL-Taxonomy">
                 <relation name="dcterms:type" ref="http://purl.org/dc/terms/type" active="https://bl.syriac.uk/ms/171" passive="#bible-apocrypha">
                   <desc>Apocrypha</desc>
@@ -289,17 +274,14 @@
               </listRelation>
               <listRelation type="part-to-composite">
                 <desc>This unit is a part of a composite manuscript:</desc>
-                <relation name="syriaca:is-unspecified-codicological-part-of" ref="#syriaca:is-unspecified-codicological-part-of" active="https://bl.syriac.uk/ms/171" passive="https://bl.syriac.uk/ms/169">
-                  <relation/>
-                </relation>
+                <relation name="syriaca:is-unspecified-codicological-part-of" ref="#syriaca:is-unspecified-codicological-part-of" active="https://bl.syriac.uk/ms/171" passive="https://bl.syriac.uk/ms/169"/>
               </listRelation>
             </head>
             <msContents>
-              <summary/>
-              <textLang mainLang="syr"/>
+              <textLang mainLang="syr">Syriac</textLang>
               <msItem xml:id="p2a1" n="1" defective="true">
                 <locus from="9" to="11">Foll. 9-11</locus>
-                <title type="supplied">Part of an apocryph, entitled "the history of the holy Mother of God, the Virgin."</title>
+                <title xml:lang="en">Part of an apocryph, entitled "the history of the holy Mother of God, the Virgin."</title>
                 <rubric xml:lang="syr">ܬܫܥܝܬܐ ܕܩܕܝܫܬܐ ܝܠܕܬ ܐܠܗܐ ܒܬܘܠܬܐ<locus from="9"/>
                 </rubric>
                 <note>The text has been published in <bibl>Wright's "Contributions to the Apocryphal Literature of the N. T."</bibl>
@@ -313,13 +295,11 @@
                   <extent>
                     <measure type="composition" unit="leaf" quantity="3">3 ff.</measure>
                   </extent>
-                  <foliation/>
-                  <collation/>
                   <condition>
                     <list>
                       <item>
                         <p>Vellum, about 9 3/4 in. by 7, consisting of three palimpsest leaves 
-                        (see <bibl>Add. 14,484, foll. 9—11, lower text<ptr target="https://bl.syriac.uk/ms/1181"/>
+                        (see <bibl>Add. 14,484, foll. 9—11, lower text <ptr target="https://bl.syriac.uk/ms/1181"/>
                           </bibl>).
                         There are 32 or 33 lines on each page, except on fol. 11 a, 
                         which has been left unfinished.
@@ -328,38 +308,27 @@
                     </list>
                   </condition>
                 </supportDesc>
-                <layoutDesc>
-                  <p>Content pending</p>
-                </layoutDesc>
-              </objectDesc>
+                </objectDesc>
               <handDesc hands="1">
                 <handNote xml:id="p2handNote1" scope="sole" script="syr" medium="unknown">
-                  <desc>The writing is good and regular, of the <origDate notBefore="0900" notAfter="1100">xth or xith century</origDate>.</desc>
+                  The writing is good and regular, of the <date notBefore="0900" notAfter="1100">xth or xith century</date>.
                 </handNote>
               </handDesc>
-              <decoDesc/>
-              <additions/>
-              <bindingDesc/>
-              <sealDesc/>
-              <accMat/>
-            </physDesc>
+              </physDesc>
             <history>
-              <summary/>
               <origin>
-                <origDate notBefore="0900" notAfter="1100">xth or xith century</origDate>
+                <origDate calendar="Gregorian" notBefore="0900" notAfter="1100">10th or 11th century</origDate>
+                
               </origin>
-              <provenance/>
-              <acquisition/>
-            </history>
+              </history>
             <additional>
               <adminInfo>
                 <recordHist>
-                  <source>Manuscript description based on<bibl>
+                  <source>Manuscript description based on <bibl>
                       <ref target="#Wrightpart2">Wright's Catalogue</ref>
                     </bibl>. abbreviated by the Syriaca.org editors.</source>
                 </recordHist>
-                <note/>
-              </adminInfo>
+                </adminInfo>
               <listBibl>
                 <bibl xml:id="Wrightpart2">
                   <author>William Wright</author>
@@ -368,7 +337,7 @@
                   <date>1870</date>
                   <ptr target="http://syriaca.org/bibl/8"/>
                   <citedRange unit="entry">CLIX</citedRange>
-                  <citedRange unit="pp">1:99-100</citedRange>
+                  <citedRange unit="p">1:99-100</citedRange>
                 <ref type="internet-archive-pdf" target="https://archive.org/details/catalogueofsyria01brituoft/page/99"/>
                 </bibl>
               </listBibl>
@@ -384,7 +353,7 @@
                 <idno type="BL-Shelfmark-display">London, BL, Add. 14,484, foll. 9–11, lower text</idno>
               </altIdentifier>
               <altIdentifier>
-                <idno type="BL-Shelmark-simplified">BL Add MS 14484, foll. 9-11, lower text</idno>
+                <idno type="BL-Shelfmark-simplified">BL Add MS 14484, foll. 9-11, lower text</idno>
               </altIdentifier>
               <altIdentifier>
                 <collection>William Wright, Catalogue of the Syriac Manuscripts in the British Museum Acquired since the Year 1838</collection>
@@ -398,34 +367,29 @@
             <head>
               <note type="contents-note">This manuscript contains: Unspecified contents. In total, including sub-sections, this manuscript contains 2 items.</note>
               <listRelation type="Wright-BL-Taxonomy">
-                <relation name="dcterms:type" ref="http://purl.org/dc/terms/type" active="https://bl.syriac.uk/ms/1181" passive="#unclassified">
-                  <desc/>
-                </relation>
+                <relation name="dcterms:type" ref="http://purl.org/dc/terms/type" active="https://bl.syriac.uk/ms/1181" passive="#unclassified"/>
               </listRelation>
               <listRelation type="part-to-composite">
                 <desc>This unit is a part of a composite manuscript:</desc>
-                <relation name="syriaca:is-unspecified-codicological-part-of" ref="#syriaca:is-unspecified-codicological-part-of" active="https://bl.syriac.uk/ms/1181" passive="https://bl.syriac.uk/ms/169">
-                  <relation/>
-                </relation>
+                <relation name="syriaca:is-unspecified-codicological-part-of" ref="#syriaca:is-unspecified-codicological-part-of" active="https://bl.syriac.uk/ms/1181" passive="https://bl.syriac.uk/ms/169"/>
               </listRelation>
             </head>
             <msContents>
-              <summary/>
-              <textLang mainLang="syr"/>
+              <textLang mainLang="syr">Syriac</textLang>
               <msItem xml:id="p3a1" n="1" defective="true">
                 <locus from="9" to="11"/>
                 <title xml:lang="en">Unspecified contents</title>
                 <note>The more ancient text is too thoroughly washed out to be legible, at least on foll. 9,10, and 11 a.</note>
                 <msItem xml:id="p3b1" n="2" defective="true">
                   <locus from="11b"/>
-                  <title type="supplied">A diagram for finding the commencement of Lent, etc., with an explanation of its use</title>
+                  <title xml:lang="en">A diagram for finding the commencement of Lent, etc., with an explanation of its use</title>
                   <note>Also much effaced.</note>
                 </msItem>
               </msItem>
             </msContents>
             <physDesc>
               <p>Vellum, about 9 3/4 in. by 7, consisting of three palimpsest leaves 
-                        (see <bibl>Add. 14,484, foll. 9—11, upper text<ptr target="https://bl.syriac.uk/ms/171"/>
+                        (see <bibl>Add. 14,484, foll. 9—11, upper text <ptr target="https://bl.syriac.uk/ms/171"/>
                           </bibl>).                       
                         </p>
               <objectDesc form="codex">
@@ -433,51 +397,38 @@
                   <extent>
                     <measure type="composition" unit="leaf" quantity="3">3 ff.</measure>
                   </extent>
-                  <foliation/>
-                  <collation/>
                   <condition>
                     <list>
                       <item>
                         <p>Vellum, about 9 3/4 in. by 7, consisting of three palimpsest leaves 
-                        (see <bibl>Add. 14,484, foll. 9—11, upper text<ptr target="https://bl.syriac.uk/ms/171"/>
+                        (see <bibl>Add. 14,484, foll. 9—11, upper text <ptr target="https://bl.syriac.uk/ms/171"/>
                           </bibl>).                       
                         </p>
                       </item>                      
                     </list>
                   </condition>
                 </supportDesc>
-                <layoutDesc>
-                  <p>Content pending</p>
-                </layoutDesc>
-              </objectDesc>
+                </objectDesc>
               <handDesc hands="1">
                 <handNote xml:id="p3handNote1" scope="sole" script="syr" medium="unknown">
-                  <desc>The more ancient text seems to be of the<origDate notBefore="0800" notAfter="0900">ixth century</origDate>.</desc>
+                  The more ancient text seems to be of the <date notBefore="0800" notAfter="0900">ixth century</date>.
                 </handNote>
               </handDesc>
-              <decoDesc/>
-              <additions/>
-              <bindingDesc/>
-              <sealDesc/>
-              <accMat/>
-            </physDesc>
+              </physDesc>
             <history>
-              <summary/>
               <origin>
-                <origDate notBefore="0800" notAfter="0900">ixth century</origDate>
+                <origDate calendar="Gregorian" notBefore="0800" notAfter="0900">9th century</origDate>
+                
               </origin>
-              <provenance/>
-              <acquisition/>
-            </history>
+              </history>
             <additional>
               <adminInfo>
                 <recordHist>
-                  <source>Manuscript description based on<bibl>
+                  <source>Manuscript description based on <bibl>
                       <ref target="#Wrightpart3">Wright's Catalogue</ref>
                     </bibl>. abbreviated by the Syriaca.org editors.</source>
                 </recordHist>
-                <note/>
-              </adminInfo>
+                </adminInfo>
               <listBibl>
                 <bibl xml:id="Wrightpart3">
                   <author>William Wright</author>
@@ -486,7 +437,7 @@
                   <date>1870</date>
                   <ptr target="http://syriaca.org/bibl/8"/>
                   <citedRange unit="entry">CLIX</citedRange>
-                  <citedRange unit="pp">1:99-100</citedRange>
+                  <citedRange unit="p">1:99-100</citedRange>
                 <ref type="internet-archive-pdf" target="https://archive.org/details/catalogueofsyria01brituoft/page/99"/>
                 </bibl>
               </listBibl>
@@ -502,7 +453,7 @@
                 <idno type="BL-Shelfmark-display">London, BL, Add. 14,484, foll. 12–47</idno>
               </altIdentifier>
               <altIdentifier>
-                <idno type="BL-Shelmark-simplified">BL Add MS 14484, foll. 12-47</idno>
+                <idno type="BL-Shelfmark-simplified">BL Add MS 14484, foll. 12-47</idno>
               </altIdentifier>
               <altIdentifier>
                 <collection>William Wright, Catalogue of the Syriac Manuscripts in the British Museum Acquired since the Year 1838</collection>
@@ -522,49 +473,46 @@
               </listRelation>
               <listRelation type="part-to-composite">
                 <desc>This unit is a part of a composite manuscript:</desc>
-                <relation name="syriaca:is-unspecified-codicological-part-of" ref="#syriaca:is-unspecified-codicological-part-of" active="https://bl.syriac.uk/ms/172" passive="https://bl.syriac.uk/ms/169">
-                  <relation/>
-                </relation>
+                <relation name="syriaca:is-unspecified-codicological-part-of" ref="#syriaca:is-unspecified-codicological-part-of" active="https://bl.syriac.uk/ms/172" passive="https://bl.syriac.uk/ms/169"/>
               </listRelation>
             </head>
             <msContents>
-              <summary/>
               <textLang mainLang="syr">Syriac</textLang>
               <msItem xml:id="p4a1" n="1" defective="true">
                 <locus from="12a" to="14b">Foll. 12a-14b</locus>
-                <title ref="http://syriaca.org/work/214" type="supplied">Part of the Protevangelium Jacobi, commencing, in ch. xvii. of the Greek text</title>
+                <title ref="http://syriaca.org/work/214" xml:lang="en">Part of the Protevangelium Jacobi, commencing, in ch. xvii. of the Greek text</title>
                 <incipit xml:lang="syr">ܒܪܡ ܕܝܢ ܝܘܡܗ ܕܡܪܝܐ ܢܥ̣ܒܕ ܐܝܟ ܕܨܒ̇ܐ<locus from="12a" to="12a"/>
                 </incipit>
                 <finalRubric xml:lang="syr">ܫܠܡ ܡܘܠܕܗ ܕܡܪܢ ܘܐܝܠܝܕܘܬܗ ܕܡܪܬܝ ܡܪܝܡ.<locus from="14b" to="14b"/>
                 </finalRubric>
-                <note>See<bibl>Fabricius, Codex Apocryphus N. T., t. i. p. 103,<foreign xml:lang="grc">αὐτὴ ἡ ἡμἑρα κυρἱου ποιἡσει ὡς βούλεται</foreign>
+                <note>See <bibl>Fabricius, Codex Apocryphus N. T., t. i. p. 103,<foreign xml:lang="grc">αὐτὴ ἡ ἡμἑρα κυρἱου ποιἡσει ὡς βούλεται</foreign>
                   </bibl>;<bibl>Thilo, Codex Apocryphus  N. T. t. i. p. 236</bibl>;<bibl>Tischendorf, Evangelia Apocrypha, p. 31</bibl>;<bibl>Cowper, The Apocryphal Gospels, p. 18</bibl>.</note>
-                <note>The Syriac text has been published in<bibl>Wright's "Contributions to the Apocryphal Literature of the N. T.” (London, 1865)</bibl>. See also<bibl>Tischendorf, Apocalypses Apocrypha (Leipzig, 1866), p. 41, etc.</bibl>, and<bibl>Cowper, The Apocryphal Gospels, p. lii</bibl>.</note>
+                <note>The Syriac text has been published in <bibl>Wright's "Contributions to the Apocryphal Literature of the N. T.” (London, 1865)</bibl>. See also <bibl>Tischendorf, Apocalypses Apocrypha (Leipzig, 1866), p. 41, etc.</bibl>, and <bibl>Cowper, The Apocryphal Gospels, p. lii</bibl>.</note>
               </msItem>
               <msItem xml:id="p4a2" n="2" defective="true">
                 <locus from="14b" to="18">Foll. 14b-18</locus>
-                <title type="supplied">The Childhood of our Lord Jesus, the so-called Evangelium Thomae Israelitae, with the omission of the first chapter of the Greek text</title>
+                <title xml:lang="en">The Childhood of our Lord Jesus, the so-called Evangelium Thomae Israelitae, with the omission of the first chapter of the Greek text</title>
                 <rubric xml:lang="syr">ܛܠܝܘܬܗ ܕܡܪܢ ܝܫܘܥ<locus from="14b" to="14b"/>
                 </rubric>
                 <note>
                   <bibl>Fabricus, t. i. p. 159</bibl>;<bibl>Thilo, t. i. p. 279</bibl>;<bibl>Tischendorf, Evang. Apocr, pp. 134—149</bibl>;<bibl>Cowper, The Apocryphal Gospels, pp. 152, 448</bibl>.</note>
-                <note>See<bibl>Wright's Contributions</bibl>,<bibl>Tischendorf’s Apocalypses Apocryphae, p. liii., etc.</bibl>, and<bibl>Cowper, pp. lxxv. and cx</bibl>.</note>
+                <note>See <bibl>Wright's Contributions</bibl>, <bibl>Tischendorf’s Apocalypses Apocryphae, p. liii., etc.</bibl>, and <bibl>Cowper, pp. lxxv. and cx</bibl>.</note>
               </msItem>
               <msItem xml:id="p4a3" n="3">
                 <locus from="18b" to="47a">Foll. 18b-47a</locus>
-                <title type="supplied">The Departure of my Lady Mary from this world, in six books</title>
+                <title xml:lang="en">The Departure of my Lady Mary from this world, in six books</title>
                 <rubric xml:lang="syr">ܡܦܩܢܗ̇ ܕܡܪܬܝ ܡܪܝܡ ܕܡܢ ܥܠܡܐ ܗܢܐ<locus from="18b" to="18b"/>
                 </rubric>
                 <finalRubric xml:lang="syr">
                   <locus from="47a" to="47a"/>ܫܠܡ ܠܡܟܬܒ ܒܟܬܒܐ ܗܢܐ ܣܦܪ̈ܐ ܫܬܐ ܕܡܦܩܢܗ̇ ܕܡܪܬܝ ܡܪܝܡ ܕܡܢ ܥܠܡܐ ܘܝܠܝܕܘܬܗ ܘܛܠܝܘܬܗ ܕܡܪܢ ܝܫܘܥ ܡܫܝܚܐ.</finalRubric>
-                <note>Of this apocryph there is another copy, among various Lives of Saints, in<bibl>Add. 14,732, fol. 2 b<ptr target="https://bl.syriac.uk/ms/640"/>
-                  </bibl>, with the title,<foreign xml:lang="syr">ܬܫܥܝ̣ܬܐ ܕܝ̇ܠܕܬ݀ ܐܠܗܐ ܡ̇ܪܝܡ</foreign>. It has been edited, with an English translation and notes, in the<bibl>Journal of Sacred Literature, 4th Series, vol. vi. and vii., 1865</bibl>.</note>
-                <note>Other redactions of it may be found in<bibl>Add. 14,484, foll. 9—11 (see no. CLIX)<ptr target="https://bl.syriac.uk/ms/171 #Part2"/>
-                  </bibl>, and in<bibl>Add. 12,174, fol. 449 a<ptr target="https://bl.syriac.uk/ms/70"/>
+                <note>Of this apocryph there is another copy, among various Lives of Saints, in <bibl>Add. 14,732, fol. 2 b <ptr target="https://bl.syriac.uk/ms/640"/>
+                  </bibl>, with the title,<foreign xml:lang="syr">ܬܫܥܝ̣ܬܐ ܕܝ̇ܠܕܬ݀ ܐܠܗܐ ܡ̇ܪܝܡ</foreign>. It has been edited, with an English translation and notes, in the <bibl>Journal of Sacred Literature, 4th Series, vol. vi. and vii., 1865</bibl>.</note>
+                <note>Other redactions of it may be found in <bibl>Add. 14,484, foll. 9—11 (see no. CLIX)<ptr target="https://bl.syriac.uk/ms/171 #Part2"/>
+                  </bibl>, and in <bibl>Add. 12,174, fol. 449 a <ptr target="https://bl.syriac.uk/ms/70"/>
                   </bibl>, which is a volume of Lives of Saints.</note>
-                <note>An Arabic recension has been published by<bibl>Enger (Elberfeld, 1854), under the title of " Joannis Apostoli de Transitu Beatae Mariae Virginis Liber;"</bibl>and the corresponding Greek and Latin texts have been edited by<bibl>Tischendorf in his Apocalypses Apocryphae, p. xxxiv., etc., and p. 95, etc.</bibl>
+                <note>An Arabic recension has been published by <bibl>Enger (Elberfeld, 1854), under the title of " Joannis Apostoli de Transitu Beatae Mariae Virginis Liber;"</bibl> and the corresponding Greek and Latin texts have been edited by <bibl>Tischendorf in his Apocalypses Apocryphae, p. xxxiv., etc., and p. 95, etc.</bibl>
                 </note>
-                <note>A cognate work is the<foreign xml:lang="syr">ܠܘܘܝܗ̇ ܕܡܪܬܝ ܡܪܝܡ</foreign>,<bibl>Add.14,484, foll. 1—8 (see no. CLVIII)<ptr target="https://bl.syriac.uk/ms/170 #Part1"/>
+                <note>A cognate work is the <foreign xml:lang="syr">ܠܘܘܝܗ̇ ܕܡܪܬܝ ܡܪܝܡ</foreign>, <bibl>Add.14,484, foll. 1—8 (see no. CLVIII)<ptr target="https://bl.syriac.uk/ms/170 #Part1"/>
                   </bibl>.</note>
               </msItem>
             </msContents>
@@ -577,18 +525,13 @@
                   </support>
                   <extent>
                     <measure type="composition" unit="leaf" quantity="36">36 ff.</measure>
-                    <dimensions type="leaf" unit="in">
-                      <height>
-                        <measure type="height" quantity="10.5" unit="in">10 1/2</measure>
-                      </height>
-                      <width>
-                        <measure type="width" quantity="8.375" unit="in">8 3/8</measure>
-                      </width>
+                    <dimensions type="leaf" unit="inch">
+                      <height quantity="10.5">10 1/2</height>
+                      <width quantity="8.375">8 3/8</width>
                     </dimensions>
                   </extent>
-                  <foliation/>
                   <collation>
-                    <p>The quires, originally signed with both letters and arithmetical figures (fol.<locus from="21a" to="21a">21 a</locus>,<foreign xml:lang="syr">ܓ</foreign>),  are five in number.</p>
+                    <p>The quires, originally signed with both letters and arithmetical figures (fol.<locus from="21a" to="21a">21 a</locus>, <foreign xml:lang="syr">ܓ</foreign>),  are five in number.</p>
                   </collation>
                   <condition>
                     <list>
@@ -609,32 +552,24 @@
               </objectDesc>
               <handDesc hands="1">
                 <handNote xml:id="p4handNote1" scope="sole" script="syr-Syre" medium="unknown">
-                  <desc>This manuscript is written in a fine, regular Estrangela of the<origDate notBefore="0500" notAfter="0600">6th century</origDate>.</desc>
+                  This manuscript is written in a fine, regular Estrangela of the <date notBefore="0500" notAfter="0600">6th century</date>.
                 </handNote>
               </handDesc>
-              <decoDesc/>
-              <additions/>
-              <bindingDesc/>
-              <sealDesc/>
-              <accMat/>
-            </physDesc>
+              </physDesc>
             <history>
-              <summary/>
               <origin>
-                <origDate notBefore="0500" notAfter="0600">6th century</origDate>
+                <origDate calendar="Gregorian" notBefore="0500" notAfter="0600">6th century</origDate>
+                
               </origin>
-              <provenance/>
-              <acquisition/>
-            </history>
+              </history>
             <additional>
               <adminInfo>
                 <recordHist>
-                  <source>Manuscript description based on<bibl>
+                  <source>Manuscript description based on <bibl>
                       <ref target="#Wrightpart4">Wright's Catalogue</ref>
                     </bibl>. abbreviated by the Syriaca.org editors.</source>
                 </recordHist>
-                <note/>
-              </adminInfo>
+                </adminInfo>
               <listBibl>
                 <bibl xml:id="Wrightpart4">
                   <author>William Wright</author>
@@ -643,7 +578,7 @@
                   <date>1870</date>
                   <ptr target="http://syriaca.org/bibl/8"/>
                   <citedRange unit="entry">CLVII</citedRange>
-                  <citedRange unit="pp">1:98-99</citedRange>
+                  <citedRange unit="p">1:98-99</citedRange>
                 <ref type="internet-archive-pdf" target="https://archive.org/details/catalogueofsyria01brituoft/page/98"/>
                 </bibl>
               </listBibl>
@@ -663,7 +598,7 @@
                 <idno type="BL-Shelfmark-display">London, BL, Add. 14,484, foll. 48–133</idno>
               </altIdentifier>
               <altIdentifier>
-                <idno type="BL-Shelmark-simplified">BL Add MS 14484, foll. 48-133</idno>
+                <idno type="BL-Shelfmark-simplified">BL Add MS 14484, foll. 48-133</idno>
               </altIdentifier>
             <altIdentifier>
               <collection>William Wright, Catalogue of the Syriac Manuscripts in the British Museum Acquired since the Year 1838</collection>
@@ -683,35 +618,33 @@
               </listRelation>
               <listRelation type="part-to-composite">
                 <desc>This unit is a part of a composite manuscript:</desc>
-                <relation name="syriaca:is-unspecified-codicological-part-of" ref="#syriaca:is-unspecified-codicological-part-of" active="https://bl.syriac.uk/ms/173" passive="https://bl.syriac.uk/ms/169">
-                  <relation/>
-                </relation>
+                <relation name="syriaca:is-unspecified-codicological-part-of" ref="#syriaca:is-unspecified-codicological-part-of" active="https://bl.syriac.uk/ms/173" passive="https://bl.syriac.uk/ms/169"/>
               </listRelation>
             </head>
             <msContents>
-              <summary/>
-              <textLang mainLang="syr"/>
+              <textLang mainLang="syr">Syriac</textLang>
               <msItem xml:id="p5a1" n="1">
                 <locus from="48b"/>
-                <author ref="http://syriaca.org/person/31">Cosmas</author>
-                <title xml:lang="en">The Acts of <persName ref="http://syriaca.org/person/744">Simeon Stylites</persName>
+                <author ref="http://syriaca.org/person/31">
+                  <persName xml:lang="en">Cosmas</persName>
+                </author>
+                <title xml:lang="en">The Acts of Simeon Stylites
               </title>
                 <rubric xml:lang="syr">ܢܨܚܢܗ ܕܡܪܝ ܫܡܥܘܢ ܪܫܐ ܕܐ̈ܒܝܠܐ</rubric>
                 <note>The text is substantially the same as that published by Assemani in the
                   <bibl>Acta SS. Martyrum, t. ii., p. 268</bibl>, but the verbal differences are
-                very considerable. See <bibl>Add. 12,174<ptr target="https://bl.syriac.uk/ms/70"/>, no. <citedRange unit="">2</citedRange>
+                very considerable. See <bibl>Add. 12,174<ptr target="https://bl.syriac.uk/ms/70"/>, no. <citedRange unit="entry">2</citedRange>
                   </bibl>.<!--JA: Attribute unit in element citedRange requires Wright's numbering-->
               </note>
               </msItem>
               <msItem xml:id="p5a2" n="2">
                 <locus from="130b"/>
-                <title xml:lang="en">Precepts and Admonitions of the blessed <persName ref="http://syriaca.org/person/744">Mar
-                  Simeon</persName>
+                <title xml:lang="en">Precepts and Admonitions of the blessed Mar Simeon
               </title>
                 <rubric xml:lang="syr">ܦܘ̈ܩܕܢܐ ܘܙܘܗܪ̈ܐ ܕܡܪܝ ܫܡܥܘܢ ܛܘܒܢܐ</rubric>
                 <incipit xml:lang="syr">ܐ̈ܚܝ ܘܒ̈ܢܝ ܘܚ̈ܒܝܒܝ. ܟܬܝܒ ܒܟ̈ܬܒܐ ܩܕܝ̈ܫܐ. ܕܐܪܝܐ ܢܗܡ ܡܢ ܠܐ ܢܕܚܠ
                 <choice>
-                    <orig>ܡܪ̈ܡܪ̈ܘܬܐ</orig>
+                    <sic>ܡܪ̈ܡܪ̈ܘܬܐ</sic>
                     <corr>ܡܪ̈ܐ ܡܪ̈ܘܬܐ</corr>
                   </choice> ܐܢ ܪܓܙ. ܐܝܕܐ ܗܝ ܒܪܝܬܐ ܕܪ̈ܘܚܢܐ ܐܘ ܕܦܓܪ̈ܢܐ ܕܬܣܝܒܪ. ܘܗܫܐ ܒ̈ܢܝ.
                 ܐܢܐ ܫܡܥܘܢ ܒܨܝܪܐ ܡܠܟ ܐܢܐ ܠܟܘܢ ܕܬܩܪܒܘܢ ܬܝܒܘܬܐ ܠܘܬ ܐܠܗܐ ܡܪܚܡܢܐ. ܏ܘܫ.</incipit>
@@ -724,8 +657,6 @@
                 <extent>
                   <measure type="composition" unit="leaf" quantity="86">86 ff.</measure>
                 </extent>
-                <foliation/>
-                <collation/>
                 <condition>
                   <list>
                     <item>
@@ -739,16 +670,12 @@
                   </list>
                 </condition>
               </supportDesc>
-              <layoutDesc>
-                <p>Content pending</p>
-              </layoutDesc>
-            </objectDesc>
+              </objectDesc>
               <handDesc hands="1">
                 <handNote xml:id="p5handNote1" medium="unknown" scope="sole" script="syr-Syre">
-                  <desc>This manuscript is written in a fine Estrangela of the
-                        <origDate notBefore="0500" notAfter="0600">vith cent.</origDate>
-                  </desc>
-                </handNote>
+                  This manuscript is written in a fine Estrangela of the
+                        <date notBefore="0500" notAfter="0600">vith cent.</date>
+                  </handNote>
               </handDesc>
               <additions>
                 <list>
@@ -762,23 +689,13 @@
                   </item>
                 </list>
               </additions>
-              <bindingDesc>
-              <p>Content pending</p>
-            </bindingDesc>
-              <sealDesc>
-              <p>Content pending</p>
-            </sealDesc>
-              <accMat/>
-            </physDesc>
+              </physDesc>
             <history>
             <origin>
-              <origDate notBefore="0500" notAfter="0600">vith
-                cent.</origDate>
-              <origPlace/>
+                <origDate calendar="Gregorian" notBefore="0500" notAfter="0600">6th century</origDate>
+              
             </origin>
-            <provenance/>
-            <acquisition/>
-          </history>
+            </history>
             <additional>
               <adminInfo>
                 <recordHist>
@@ -787,8 +704,7 @@
                             Catalogue</ref>
                     </bibl>, abbreviated by the Syriaca.org editors.</source>
                 </recordHist>
-                <note/>
-              </adminInfo>
+                </adminInfo>
               <listBibl>
                 <bibl xml:id="Wrightpart5">
                   <author>William Wright</author>
@@ -798,7 +714,7 @@
                   <date>1870</date>
                   <ptr target="http://syriaca.org/bibl/8"/>
                   <citedRange unit="entry">DCCCCLXXXII</citedRange>
-                  <citedRange unit="pp">3:1152</citedRange>
+                  <citedRange unit="p">3:1152</citedRange>
                 <ref type="internet-archive-pdf" target="https://archive.org/details/catalogueofsyria03brituoft/page/1152"/>
                 </bibl>
               </listBibl>
@@ -818,7 +734,7 @@
                 <idno type="BL-Shelfmark-display">London, BL, Add. 14,484, foll. 134–152</idno>
               </altIdentifier>
               <altIdentifier>
-                <idno type="BL-Shelmark-simplified">BL Add MS 14484, foll. 134-152</idno>
+                <idno type="BL-Shelfmark-simplified">BL Add MS 14484, foll. 134-152</idno>
               </altIdentifier>
             <altIdentifier>
               <collection>William Wright, Catalogue of the Syriac Manuscripts in the British Museum Acquired since the Year 1838</collection>
@@ -830,7 +746,7 @@
             </altIdentifier>
           </msIdentifier>
             <head>
-              <note type="contents-note">This manuscript contains: Cosmas. Portions of the Acts of Simeon Stylites. In total, including sub-sections, this manuscript contains 1 items.</note>
+              <note type="contents-note">This manuscript contains: Cosmas. Portions of the Acts of Simeon Stylites. In total, including sub-sections, this manuscript contains 1 item.</note>
               <listRelation type="Wright-BL-Taxonomy">
                 <relation name="dcterms:type" ref="http://purl.org/dc/terms/type" active="https://bl.syriac.uk/ms/174" passive="#lives-single">
                   <desc>Single Lives</desc>
@@ -838,18 +754,17 @@
               </listRelation>
               <listRelation type="part-to-composite">
                 <desc>This unit is a part of a composite manuscript:</desc>
-                <relation name="syriaca:is-unspecified-codicological-part-of" ref="#syriaca:is-unspecified-codicological-part-of" active="https://bl.syriac.uk/ms/174" passive="https://bl.syriac.uk/ms/169">
-                  <relation/>
-                </relation>
+                <relation name="syriaca:is-unspecified-codicological-part-of" ref="#syriaca:is-unspecified-codicological-part-of" active="https://bl.syriac.uk/ms/174" passive="https://bl.syriac.uk/ms/169"/>
               </listRelation>
             </head>
             <msContents>
-              <summary/>
-              <textLang mainLang="syr"/>
+              <textLang mainLang="syr">Syriac</textLang>
               <msItem xml:id="p6a1" n="1" defective="true">
                 <locus from="134"/>
-                <author ref="http://syriaca.org/person/31">Cosmas</author>
-                <title xml:lang="en">Portions of the Acts of <persName ref="http://syriaca.org/person/744">Simeon Stylites</persName>
+                <author ref="http://syriaca.org/person/31">
+                  <persName xml:lang="en">Cosmas</persName>
+                </author>
+                <title xml:lang="en">Portions of the Acts of Simeon Stylites
               </title>
                 <rubric xml:lang="syr">ܢܨܚܢܗ ܕܡܪܝ ܫܡܥܘܢ</rubric>
               </msItem>
@@ -861,8 +776,6 @@
                 <extent>
                   <measure type="composition" unit="leaf" quantity="19">19 ff.</measure>
                 </extent>
-                <foliation/>
-                <collation/>
                 <condition>
                   <list>
                     <item>
@@ -878,21 +791,16 @@
                   </list>
                 </condition>
               </supportDesc>
-              <layoutDesc>
-                <p>Content pending</p>
-              </layoutDesc>
-            </objectDesc>
+              </objectDesc>
               <handDesc hands="4">
                 <handNote xml:id="p6handNote1" medium="unknown" scope="major" script="syr-Syre">
-                  <desc>The writing is a fine, regular Estrangela of the <origDate notBefore="0500" notAfter="0600">vith cent.</origDate>
-                  </desc>
-                </handNote>
-                <handNote xml:id="p6handNote2" medium="unknown" scope="minor" script="mixed">
-                  <desc>See additions.</desc>
+                  The writing is a fine, regular Estrangela of the <date notBefore="0500" notAfter="0600">vith cent.</date>
+                  </handNote>
+                <handNote xml:id="p6handNote2" medium="unknown" scope="minor" script="mul">
+                  See additions.
                 </handNote>
               </handDesc>
               <additions>
-                <p/>
                 <list>
                   <item xml:id="p6addition1" n="1">
                     <locus from="152a"/>
@@ -903,10 +811,10 @@
                     <quote xml:lang="syr">ܐܝܬܘܗܝ] ܟܬܒܐ ܗܢܐ ܕܢܨܚܢܗ ܕܛܘܒܢܐ ܡܪܝ ܫܡܥܘܢ ܕܐܣܛܘܢܗ̣. ܠܗܝܟܠܐ ܩܕܝܫܐ ܕܝܠܗ
                       ܕܛܘܒܢܐ ܡܪܝ ܫܡܥܘܢ̇. ܕܐܝܬ ܒܝܬ ܬܠܬ (؟) . . . ܐ. ܕܙܒܢܗ ܠܗ ܡܢ ܕܐܠܗܐ ܘܡܢ ܕܝܠܗ̣. ܫܡܫܐ
                       ܡܪܝ <choice>
-                          <orig>ܫⲉܥܘܢ</orig>
+                          <sic>ܫⲉܥܘܢ</sic>
                           <corr resp="https://bl.syriac.uk/documentation/editors.xml#raydin">ܫܡܥܘܢ</corr>
                         </choice> . . . ܕܝܠܗ ܕܗܝܟܠܐ ܩܕܝܫܐ. ܏ܘܫ.</quote>
-                      <note type="incomplete" resp="http://syriaca.org" xml:lang="en">The original description of this manuscript by William Wright includes characters, symbols, or illustrations which cannot be represented. Please consult the attached image, <ref target="https://archive.org/details/catalogueofsyria03brituoft/page/1152/mode/2up">vol. 3, p. 1152</ref>.</note>
+                      <note type="incomplete" resp="https://bl.syriac.uk/documentation/editors.xml#smbl-general-editors" xml:lang="en">The original description of this manuscript by William Wright includes characters, symbols, or illustrations which cannot be represented. Please consult the attached image, <ref target="https://archive.org/details/catalogueofsyria03brituoft/page/1152/mode/2up">vol. 3, p. 1152</ref>.</note>
                       <!--JA: The Coptic vowel eie (ⲉ) is mirrored in Wright's catalogue and could not be represented in the XML at this time.-->
                     </p>
                   </item>
@@ -934,7 +842,7 @@
                         الكرماٮى<lb/>
                         واٮرهىم ٮں حسىٮ<lb/>
                       </p>
-                      <note type="incomplete" resp="http://syriaca.org" xml:lang="en">The original description of this manuscript by William Wright includes characters, symbols, or illustrations which cannot be represented. Please consult the attached image, <ref target="https://archive.org/details/catalogueofsyria03brituoft/page/1152/mode/2up">vol. 3, p. 1152</ref>.</note>
+                      <note type="incomplete" resp="https://bl.syriac.uk/documentation/editors.xml#smbl-general-editors" xml:lang="en">The original description of this manuscript by William Wright includes characters, symbols, or illustrations which cannot be represented. Please consult the attached image, <ref target="https://archive.org/details/catalogueofsyria03brituoft/page/1152/mode/2up">vol. 3, p. 1152</ref>.</note>
                     </quote>
                   </p>
                     <p>These may be read and translated as follows:--
@@ -945,8 +853,8 @@
                         بسم الاب و[الابن وروح القدس]<lb/>
                         تنيَّح حُسَيْب (؟) بن يحيا رحمه الله [في]<lb/>
                         اربعة وعشرين <choice>
-                            <orig>خلان</orig>
-                            <corr resp="https://bl.syriac.uk/documentation/editors.xml#wwright">(خلون)</corr>
+                            <sic>خلان</sic>
+                            <corr resp="https://bl.syriac.uk/documentation/editors.xml#wwright">خلون</corr>
                           </choice> من تشرين....<lb/>
                         سنة <foreign xml:lang="cop">���</foreign> في حساب [العرب]<lb/>
                         يوم الاحد رحمه الله وجازا[ه]<lb/>
@@ -961,13 +869,13 @@
                         الكرماني<lb/>
                         وابرهيم بن حسيب<lb/>                        
                       </p>
-                      <note type="incomplete" resp="http://syriaca.org" xml:lang="en">The original description of this manuscript by William Wright includes characters, symbols, or illustrations which cannot be represented. Please consult the attached image, <ref target="https://archive.org/details/catalogueofsyria03brituoft/page/1153/mode/2up">vol. 3, p. 1153</ref>.</note>
+                      <note type="incomplete" resp="https://bl.syriac.uk/documentation/editors.xml#smbl-general-editors" xml:lang="en">The original description of this manuscript by William Wright includes characters, symbols, or illustrations which cannot be represented. Please consult the attached image, <ref target="https://archive.org/details/catalogueofsyria03brituoft/page/1153/mode/2up">vol. 3, p. 1153</ref>.</note>
                     </quote>
                   </p>
                     <p>"In the name of the Father, and of the Son, and of the Holy Spirit.
                       <persName>Hosaib (?) ibn Yahya</persName>, God have mercy on him, went to rest
                     (<foreign xml:lang="syr">ܐܬܢܝܚ</foreign>) when 24 nights were passed of the ... Teshrin, in the year <date datingMethod="Hijri-qamari" when-custom="0214">214</date>
-                      <note type="footnote">Coptic figures: �=200, �=10, �=4.<note type="incomplete" resp="http://syriaca.org" xml:lang="en">The original description of this manuscript by William Wright includes characters, symbols, or illustrations which cannot be represented. Please consult the attached image, <ref target="https://archive.org/details/catalogueofsyria03brituoft/page/1153/mode/2up">vol. 3, p. 1153</ref>.</note>
+                      <note type="footnote">Coptic figures: �=200, �=10, �=4.<note type="incomplete" resp="https://bl.syriac.uk/documentation/editors.xml#smbl-general-editors" xml:lang="en">The original description of this manuscript by William Wright includes characters, symbols, or illustrations which cannot be represented. Please consult the attached image, <ref target="https://archive.org/details/catalogueofsyria03brituoft/page/1153/mode/2up">vol. 3, p. 1153</ref>.</note>
                       </note>
                     according to the reckoning of the Arabs (<date calendar="Gregorian" notBefore="0829" notAfter="0830">A.D. 829—30</date>), on Sunday. God have
                     mercy on him and reward him. <persName>Habbuba</persName> (?) went to rest, God
@@ -991,22 +899,13 @@
                   </item>
                 </list>
               </additions>
-              <bindingDesc>
-              <p>Content pending</p>
-            </bindingDesc>
-              <sealDesc>
-              <p>Content pending</p>
-            </sealDesc>
-              <accMat/>
-            </physDesc>
+              </physDesc>
             <history>
             <origin>
-              <origDate notBefore="0500" notAfter="0600">vith cent.</origDate>
-              <origPlace/>
+                <origDate calendar="Gregorian" notBefore="0500" notAfter="0600">6th century</origDate>
+              
             </origin>
-            <provenance/>
-            <acquisition/>
-          </history>
+            </history>
             <additional>
               <adminInfo>
                 <recordHist>
@@ -1015,8 +914,7 @@
                             Catalogue</ref>
                     </bibl>, abbreviated by the Syriaca.org editors.</source>
                 </recordHist>
-                <note/>
-              </adminInfo>
+                </adminInfo>
               <listBibl>
                 <bibl xml:id="Wrightpart6">
                   <author>William Wright</author>
@@ -1026,7 +924,7 @@
                   <date>1870</date>
                   <ptr target="http://syriaca.org/bibl/8"/>
                   <citedRange unit="entry">DCCCCLXXXIII</citedRange>
-                  <citedRange unit="pp">3:1152-1153</citedRange>
+                  <citedRange unit="p">3:1152-1153</citedRange>
                 <ref type="internet-archive-pdf" target="https://archive.org/details/catalogueofsyria03brituoft/page/1152"/>
                 </bibl>
               </listBibl>
@@ -1051,7 +949,6 @@
       <classDecl>
         <taxonomy xml:id="Wright-BL-Taxonomy">
           <bibl>
-            
             <ptr target="http://syriaca.org/documentation/Wright-BL-Taxonomy.html"/>
           </bibl>
           <category xml:id="biblical-manuscripts">
@@ -1168,22 +1065,30 @@
     </encodingDesc>
     <profileDesc>
       <langUsage>
-        <language ident="syr">Unvocalized Syriac of any variety or period</language>
-        <language ident="syr-Syre">Syriac in Estrangela</language>
-        <language ident="syr-Syrj">Vocalized West Syriac</language>
-        <language ident="syr-Syrn">Vocalized East Syriac</language>
-        <language ident="syr-x-syrm">Melkite Syriac</language>
-        <language ident="qhy-x-cpas">Palestinian Syriac</language>
-        <language ident="ar-Syrc">Unvocalized or Undetermined Arabic Garshuni</language>
-        <language ident="ar-Syrj">Arabic Garshuni in Vocalized West Syriac Script</language>
-        <language ident="ar-Syrn">Arabic Garshuni in Vocalized East Syriac Script</language>
-        <language ident="en">English</language>
         <language ident="ar">Arabic</language>
-        <language ident="fr">French</language>
-        <language ident="de">German</language>
-        <language ident="la">Latin</language>
-        <language ident="grc">Ancient Greek</language>
+        <language ident="ar-Syrc">Arabic Garshuni</language>
+        <language ident="ar-Syrn">Arabic Garshuni in East Syriac script</language>
         <language ident="cop">Coptic</language>
+        <language ident="de">German</language>
+        <language ident="en">English</language>
+        <language ident="fr">French</language>
+        <language ident="grc">Ancient Greek</language>
+        <language ident="he">Hebrew</language>
+        <language ident="hy">Armenian</language>
+        <language ident="it">Italian</language>
+        <language ident="la">Latin</language>
+        <language ident="syr">Syriac</language>
+        <language ident="syr-Arab">Syriac Garshuni in Arabic script</language>
+        <language ident="syr-Syre">Syriac in Estrangela script</language>
+        <language ident="syr-Syrj">Syriac in West Syriac script</language>
+        <language ident="syr-Syrn">Syriac in East Syriac script</language>
+        <language ident="syr-x-syrm">Syriac in Melkite Syriac script</language>
+        <language ident="tr">Turkish</language>
+        <language ident="tr-Syrc">Turkish Garshuni</language>
+        <language ident="qhy-x-cpas">Christian Palestinian Aramaic script</language>
+        <language ident="xcl">Classical Armenian</language>
+        <language ident="und">Undetermined</language>
+        <language ident="mul">Multiple languages</language>
       </langUsage>
       <textClass>
         <keywords scheme="#Wright-BL-Taxonomy">
@@ -1232,20 +1137,14 @@
       <change who="https://bl.syriac.uk/documentation/editors.xml#thannah" when="2013-10-25">[https://bl.syriac.uk/ms/169]: Created: file</change>
       <change who="https://bl.syriac.uk/documentation/editors.xml#rbrasoveanu">[https://bl.syriac.uk/ms/173]: Initial TEI encoding.</change>
       <change who="https://bl.syriac.uk/documentation/editors.xml#rbrasoveanu">[https://bl.syriac.uk/ms/174]: Initial TEI encoding.</change>
-      <change type="planned" subtype="arithmetical">[https://bl.syriac.uk/ms/169]: Enter arithmetical figures.</change>
-      <change type="planned" subtype="consultation">[https://bl.syriac.uk/ms/169]: Wright's description of Part3 is so incomplete that the physical manuscript needs to be consulted and redescribed.</change>
+      <change type="planned" subtype="arithmetical" who="https://bl.syriac.uk/documentation/editors.xml#smbl-general-editors">[https://bl.syriac.uk/ms/169]: Enter arithmetical figures.</change>
+      <change type="planned" subtype="consultation" who="https://bl.syriac.uk/documentation/editors.xml#smbl-general-editors">[https://bl.syriac.uk/ms/169]: Wright's description of Part3 is so incomplete that the physical manuscript needs to be consulted and redescribed.</change>
     </revisionDesc>
   </teiHeader>
-  <facsimile>
-    <!-- facsimile information about the manuscript -->
-    <graphic/>
-    <!-- Alternatively you could provide 'surface' elements with more than one image per surface, and optionally with 'zone' 
-      elements to give coordinates for any special areas of interest -->
-  </facsimile>
   <text>
     <body>
-      <!-- If you had a transcription of the manuscript you would put it here -->
       <p/>
+      <!--Body paragraph provided for document validation.-->
     </body>
   </text>
 </TEI>

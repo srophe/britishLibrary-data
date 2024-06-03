@@ -1,4 +1,7 @@
-<?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/srophe-app/documentation/enrich-syriaca.rnc" type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/css" href="SRPEnrichCSS.css"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+<?xml-model href="https://raw.githubusercontent.com/srophe/britishLibrary/main/documentation/schema/out/Syriacamsdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/srophe/britishLibrary/main/documentation/schema/out/Syriacamsdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet href="https://raw.githubusercontent.com/srophe/wright-catalogue/master/parameters/tei.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="manuscript_1005">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -20,13 +23,7 @@
           <resp>Based on the work of</resp>
           <name type="person" ref="https://bl.syriac.uk/documentation/editors.xml#wwright">William Wright</name>
         </respStmt>
-        <respStmt>
-          <resp>Edited by</resp>
-          <name type="person" ref="https://bl.syriac.uk/documentation/editors.xml#">
-            <!-- Editor's first initial and surname follow "#" (e.g., "...#dmichelson") -->
-            <!--Initial editor's name here -->
-          </name>
-        </respStmt>
+        
         <respStmt>
           <resp>Syriac text entered by</resp>
           <name type="person" ref="https://bl.syriac.uk/documentation/editors.xml#raydin">Robert Aydin</name>
@@ -52,11 +49,9 @@
         <edition n="1.0"/>
       </editionStmt>
       <publicationStmt>
-        <pubPlace/>
         <authority>Syriaca.org: The Syriac Reference Portal</authority>
         <idno type="URI">https://bl.syriac.uk/ms/1005/tei</idno>
         <availability>
-          <p/>
           <licence target="http://creativecommons.org/licenses/by/3.0/">
             <p>Distributed under a Creative Commons Attribution 3.0 Unported License</p>
           </licence>
@@ -64,7 +59,7 @@
         <date calendar="Gregorian">2023-04-21-05:00</date>
       </publicationStmt>
       <sourceDesc>
-        <msDesc xml:id="manuscript-1005" xml:lang="en">
+        <msDesc xml:id="manuscript-1005">
           <msIdentifier>
             <country>United Kingdom</country>
             <settlement>London</settlement>
@@ -78,12 +73,11 @@
               <idno type="BL-Shelfmark-display">London, BL, Add. 17,228</idno>
             </altIdentifier>
             <altIdentifier>
-              <idno type="BL-Shelmark-simplified">BL Add MS 17228</idno>
+              <idno type="BL-Shelfmark-simplified">BL Add MS 17228</idno>
             </altIdentifier>
           </msIdentifier>
           <head>
             <note type="contents-note">This manuscript record does not have a summary list of contents. For composite manuscripts, the list of contents can be found under each individual part.</note>
-            <listRelation type="Wright-BL-Taxonomy"/>
             <listRelation type="composite-to-parts">
               <desc>This composite manuscript consists of 2 distinct parts:</desc>
               <relation name="syriaca:has-unspecified-codicological-part" ref="#syriaca:has-unspecified-codicological-part" active="https://bl.syriac.uk/ms/1005" passive="https://bl.syriac.uk/ms/1006">
@@ -104,7 +98,7 @@
                 <idno type="BL-Shelfmark-display">London, BL, Add. 17,228, foll. 1–37</idno>
               </altIdentifier>
               <altIdentifier>
-                <idno type="BL-Shelmark-simplified">BL Add MS 17228, foll. 1-37</idno>
+                <idno type="BL-Shelfmark-simplified">BL Add MS 17228, foll. 1-37</idno>
               </altIdentifier>
               <altIdentifier>
                 <collection>William Wright, Catalogue of the Syriac Manuscripts in the British Museum Acquired since the Year 1838</collection>
@@ -124,77 +118,74 @@
               </listRelation>
               <listRelation type="part-to-composite">
                 <desc>This unit is a part of a composite manuscript:</desc>
-                <relation name="syriaca:is-unspecified-codicological-part-of" ref="#syriaca:is-unspecified-codicological-part-of" active="https://bl.syriac.uk/ms/1006" passive="https://bl.syriac.uk/ms/1005">
-                  <relation/>
-                </relation>
+                <relation name="syriaca:is-unspecified-codicological-part-of" ref="#syriaca:is-unspecified-codicological-part-of" active="https://bl.syriac.uk/ms/1006" passive="https://bl.syriac.uk/ms/1005"/>
               </listRelation>
             </head>
             <msContents>
-              <summary/>
               <textLang mainLang="syr">Syriac</textLang>
               <msItem xml:id="p1a1" n="1" defective="true">
                 <locus from="1a" to="29">Foll. 1a-29</locus>
-                <title ref="http://syriaca.org/work/159" type="supplied">Extracts from the Pauline Epistles, according to the Peshitta ver¬sion</title>
+                <title ref="http://syriaca.org/work/159" xml:lang="en">Extracts from the Pauline Epistles, according to the Peshitta ver¬sion</title>
                 <msItem xml:id="p1b1" n="2" defective="true">
                   <locus from="1a" to="6">Foll. 1a-6</locus>
-                  <title ref="http://syriaca.org/work/78" type="supplied">1 Corinthians</title>
+                  <title ref="http://syriaca.org/work/78" xml:lang="en">1 Corinthians</title>
                   <note>Imperfect.</note>
                 </msItem>
                 <msItem xml:id="p1b2" n="3">
                   <locus from="6a" to="8">Foll. 6a-8</locus>
-                  <title ref="http://syriaca.org/work/79" type="supplied">2 Corinthians</title>
+                  <title ref="http://syriaca.org/work/79" xml:lang="en">2 Corinthians</title>
                 </msItem>
                 <msItem xml:id="p1b3" n="4">
                   <locus from="8b" to="10">Foll. 8b-10</locus>
-                  <title ref="http://syriaca.org/work/80" type="supplied">Galatians</title>
+                  <title ref="http://syriaca.org/work/80" xml:lang="en">Galatians</title>
                 </msItem>
                 <msItem xml:id="p1b4" n="5">
                   <locus from="10b" to="13">Foll. 10b-13</locus>
-                  <title ref="http://syriaca.org/work/81" type="supplied">Ephesians</title>
+                  <title ref="http://syriaca.org/work/81" xml:lang="en">Ephesians</title>
                 </msItem>
                 <msItem xml:id="p1b5" n="6">
                   <locus from="13b" to="15">Foll. 13b-15</locus>
-                  <title ref="http://syriaca.org/work/82" type="supplied">Philippians</title>
+                  <title ref="http://syriaca.org/work/82" xml:lang="en">Philippians</title>
                 </msItem>
                 <msItem xml:id="p1b6" n="7">
                   <locus from="15b" to="17">Foll. 15b-17</locus>
-                  <title ref="http://syriaca.org/work/83" type="supplied">Colossians</title>
+                  <title ref="http://syriaca.org/work/83" xml:lang="en">Colossians</title>
                 </msItem>
                 <msItem xml:id="p1b7" n="8">
                   <locus from="17b" to="18">Foll. 17b-18</locus>
-                  <title ref="http://syriaca.org/work/84" type="supplied">1 Thessalonians</title>
+                  <title ref="http://syriaca.org/work/84" xml:lang="en">1 Thessalonians</title>
                 </msItem>
                 <msItem xml:id="p1b8" n="9">
                   <locus from="18b" to="18b">Fol. 18b</locus>
-                  <title ref="http://syriaca.org/work/85" type="supplied">2 Thessalonians</title>
+                  <title ref="http://syriaca.org/work/85" xml:lang="en">2 Thessalonians</title>
                 </msItem>
                 <msItem xml:id="p1b9" n="10">
                   <locus from="18b" to="21">Foll. 18b-21</locus>
-                  <title ref="http://syriaca.org/work/86" type="supplied">1 Timothy</title>
+                  <title ref="http://syriaca.org/work/86" xml:lang="en">1 Timothy</title>
                 </msItem>
                 <msItem xml:id="p1b10" n="11">
                   <locus from="21a" to="22">Foll. 21a-22</locus>
-                  <title ref="http://syriaca.org/work/87" type="supplied">2 Timothy</title>
+                  <title ref="http://syriaca.org/work/87" xml:lang="en">2 Timothy</title>
                 </msItem>
                 <msItem xml:id="p1b11" n="12">
                   <locus from="22a" to="24">Foll. 22a-24</locus>
-                  <title ref="http://syriaca.org/work/88" type="supplied">Titus</title>
+                  <title ref="http://syriaca.org/work/88" xml:lang="en">Titus</title>
                 </msItem>
                 <msItem xml:id="p1b12" n="13">
                   <locus from="24a" to="29">Foll. 24a-29</locus>
-                  <title ref="http://syriaca.org/work/90" type="supplied">Hebrews</title>
+                  <title ref="http://syriaca.org/work/90" xml:lang="en">Hebrews</title>
                 </msItem>
               </msItem>
               <msItem xml:id="p1a2" n="14" defective="true">
                 <locus from="29b" to="37">Foll. 29b-37</locus>
-                <title ref="http://syriaca.org/work/160" type="supplied">Extracts from Apostolic Epistles according to the Peshitta version</title>
+                <title ref="http://syriaca.org/work/160" xml:lang="en">Extracts from Apostolic Epistles according to the Peshitta version</title>
                 <msItem xml:id="p1b13" n="15">
                   <locus from="29b" to="34">Foll. 29b-34</locus>
-                  <title ref="http://syriaca.org/work/91" type="supplied">The Epistle of S. James</title>
+                  <title ref="http://syriaca.org/work/91" xml:lang="en">The Epistle of S. James</title>
                 </msItem>
                 <msItem xml:id="p1b14" n="16" defective="true">
                   <locus from="34a" to="37">Foll. 34a-37</locus>
-                  <title ref="http://syriaca.org/work/92" type="supplied">The first Epistle of S. Peter</title>
+                  <title ref="http://syriaca.org/work/92" xml:lang="en">The first Epistle of S. Peter</title>
                   <note>Imperfect.</note>
                 </msItem>
               </msItem>
@@ -208,16 +199,11 @@
                   </support>
                   <extent>
                     <measure type="composition" unit="leaf" quantity="37">37 ff.</measure>
-                    <dimensions type="leaf" unit="in">
-                      <height>
-                        <measure type="height" quantity="8.25" unit="in">8 1/4</measure>
-                      </height>
-                      <width>
-                        <measure type="width" quantity="5.625" unit="in">5 5/8</measure>
-                      </width>
+                    <dimensions type="leaf" unit="inch">
+                      <height quantity="8.25">8 1/4</height>
+                      <width quantity="5.625">5 5/8</width>
                     </dimensions>
                   </extent>
-                  <foliation/>
                   <collation>
                     <p>The quires, signed with letters, were originally six in number.</p>
                   </collation>
@@ -227,7 +213,7 @@
                         <p>The first of the leaves is much soiled and torn.</p>
                       </item>
                       <item>
-                        <p>The first and last leaves are wanting, and the second is imperfect, there being a lacuna after<locus from="1" to="1">fol. 1</locus>.</p>
+                        <p>The first and last leaves are wanting, and the second is imperfect, there being a lacuna after <locus from="1" to="1">fol. 1</locus>.</p>
                       </item>
                     </list>
                   </condition>
@@ -240,31 +226,24 @@
               </objectDesc>
               <handDesc hands="1">
                 <handNote xml:id="p1handNote1" scope="sole" script="syr" medium="unknown">
-                  <desc>This manuscript is written in a good, regular hand of the<origDate notBefore="1200" notAfter="1300">13th century</origDate>.</desc>
+                  This manuscript is written in a good, regular hand of the <date notBefore="1200" notAfter="1300">13th century</date>.
                 </handNote>
               </handDesc>
-              <decoDesc/>
-              <additions/>
-              <bindingDesc/>
-              <sealDesc/>
-              <accMat/>
-            </physDesc>
+              </physDesc>
             <history>
               <origin>
-                <origDate notBefore="1200" notAfter="1300">13th century</origDate>
+                <origDate calendar="Gregorian" notBefore="1200" notAfter="1300">13th century</origDate>
+                
               </origin>
-              <provenance/>
-              <acquisition/>
-            </history>
+              </history>
             <additional>
               <adminInfo>
                 <recordHist>
-                  <source>Manuscript description based on<bibl>
+                  <source>Manuscript description based on <bibl>
                       <ref target="#Wrightpart1">Wright's Catalogue</ref>
                     </bibl>. abbreviated by the Syriaca.org editors.</source>
                 </recordHist>
-                <note/>
-              </adminInfo>
+                </adminInfo>
               <listBibl>
                 <bibl xml:id="Wrightpart1">
                   <author>William Wright</author>
@@ -273,7 +252,7 @@
                   <date>1870</date>
                   <ptr target="http://syriaca.org/bibl/8"/>
                   <citedRange unit="entry">CLIII</citedRange>
-                  <citedRange unit="pp">1:96</citedRange>
+                  <citedRange unit="p">1:96</citedRange>
                 <ref type="internet-archive-pdf" target="https://archive.org/details/catalogueofsyria01brituoft/page/96"/>
                 </bibl>
               </listBibl>
@@ -289,7 +268,7 @@
                 <idno type="BL-Shelfmark-display">London, BL, Add. 17,228, foll. 38–64</idno>
               </altIdentifier>
               <altIdentifier>
-                <idno type="BL-Shelmark-simplified">BL Add MS 17228, foll. 38-64</idno>
+                <idno type="BL-Shelfmark-simplified">BL Add MS 17228, foll. 38-64</idno>
               </altIdentifier>
               <altIdentifier>
                 <collection>William Wright, Catalogue of the Syriac Manuscripts in the British Museum Acquired since the Year 1838</collection>
@@ -309,28 +288,25 @@
               </listRelation>
               <listRelation type="part-to-composite">
                 <desc>This unit is a part of a composite manuscript:</desc>
-                <relation name="syriaca:is-unspecified-codicological-part-of" ref="#syriaca:is-unspecified-codicological-part-of" active="https://bl.syriac.uk/ms/1007" passive="https://bl.syriac.uk/ms/1005">
-                  <relation/>
-                </relation>
+                <relation name="syriaca:is-unspecified-codicological-part-of" ref="#syriaca:is-unspecified-codicological-part-of" active="https://bl.syriac.uk/ms/1007" passive="https://bl.syriac.uk/ms/1005"/>
               </listRelation>
             </head>
             <msContents>
-              <summary/>
               <textLang mainLang="syr">Syriac</textLang>
-              <msItem xml:id="p2a1" n="1" defective="unknown">
+              <msItem xml:id="p2a1" n="1">
                 <locus from="38b" to="64">Foll. 38b-64</locus>
-                <title ref="http://syriaca.org/work/160" type="supplied">The three Catholic Epistles, according to the Peshitta version</title>
+                <title ref="http://syriaca.org/work/160" xml:lang="en">The three Catholic Epistles, according to the Peshitta version</title>
                 <msItem xml:id="p2b1" n="2">
                   <locus from="38b" to="49">Foll. 38b-49</locus>
-                  <title ref="http://syriaca.org/work/91" type="supplied">The Epistle of S. James</title>
+                  <title ref="http://syriaca.org/work/91" xml:lang="en">The Epistle of S. James</title>
                 </msItem>
                 <msItem xml:id="p2b2" n="3">
                   <locus from="49b" to="61">Foll. 49b-61</locus>
-                  <title ref="http://syriaca.org/work/92" type="supplied">The first Epistle of S. Peter</title>
+                  <title ref="http://syriaca.org/work/92" xml:lang="en">The first Epistle of S. Peter</title>
                 </msItem>
                 <msItem xml:id="p2b3" n="4" defective="unknown">
                   <locus from="61b" to="64">Foll. 61b-64</locus>
-                  <title ref="http://syriaca.org/work/94" type="supplied">The first Epistle of S. John</title>
+                  <title ref="http://syriaca.org/work/94" xml:lang="en">The first Epistle of S. John</title>
                   <note>Ending with ch. ii. 19.</note>
                 </msItem>
               </msItem>
@@ -344,16 +320,11 @@
                   </support>
                   <extent>
                     <measure type="composition" unit="leaf" quantity="27">27 ff.</measure>
-                    <dimensions type="leaf" unit="in">
-                      <height>
-                        <measure type="height" quantity="8.25" unit="in">8 1/4</measure>
-                      </height>
-                      <width>
-                        <measure type="width" quantity="5.5" unit="in">5 1/2</measure>
-                      </width>
+                    <dimensions type="leaf" unit="inch">
+                      <height quantity="8.25">8 1/4</height>
+                      <width quantity="5.5">5 1/2</width>
                     </dimensions>
                   </extent>
-                  <foliation/>
                   <collation>
                     <p>The quires, signed with letters, were probably four in number.</p>
                   </collation>
@@ -376,32 +347,24 @@
               </objectDesc>
               <handDesc hands="1">
                 <handNote xml:id="p2handNote1" scope="sole" script="syr" medium="unknown">
-                  <desc>This manuscript is written in a good, regular hand of the<origDate notBefore="1200" notAfter="1300">13th century</origDate>.</desc>
+                  This manuscript is written in a good, regular hand of the <date notBefore="1200" notAfter="1300">13th century</date>.
                 </handNote>
               </handDesc>
-              <decoDesc/>
-              <additions/>
-              <bindingDesc/>
-              <sealDesc/>
-              <accMat/>
-            </physDesc>
+              </physDesc>
             <history>
-              <summary/>
               <origin>
-                <origDate notBefore="1200" notAfter="1300">13th century</origDate>
+                <origDate calendar="Gregorian" notBefore="1200" notAfter="1300">13th century</origDate>
+                
               </origin>
-              <provenance/>
-              <acquisition/>
-            </history>
+              </history>
             <additional>
               <adminInfo>
                 <recordHist>
-                  <source>Manuscript description based on<bibl>
+                  <source>Manuscript description based on <bibl>
                       <ref target="#Wrightpart2">Wright's Catalogue</ref>
                     </bibl>. abbreviated by the Syriaca.org editors.</source>
                 </recordHist>
-                <note/>
-              </adminInfo>
+                </adminInfo>
               <listBibl>
                 <bibl xml:id="Wrightpart2">
                   <author>William Wright</author>
@@ -410,7 +373,7 @@
                   <date>1870</date>
                   <ptr target="http://syriaca.org/bibl/8"/>
                   <citedRange unit="entry">CXXXI</citedRange>
-                  <citedRange unit="pp">1:83</citedRange>
+                  <citedRange unit="p">1:83</citedRange>
                 <ref type="internet-archive-pdf" target="https://archive.org/details/catalogueofsyria01brituoft/page/83"/>
                 </bibl>
               </listBibl>
@@ -435,7 +398,6 @@
       <classDecl>
         <taxonomy xml:id="Wright-BL-Taxonomy">
           <bibl>
-            
             <ptr target="http://syriaca.org/documentation/Wright-BL-Taxonomy.html"/>
           </bibl>
           <category xml:id="biblical-manuscripts">
@@ -552,22 +514,30 @@
     </encodingDesc>
     <profileDesc>
       <langUsage>
-        <language ident="syr">Unvocalized Syriac of any variety or period</language>
-        <language ident="syr-Syre">Syriac in Estrangela</language>
-        <language ident="syr-Syrj">Vocalized West Syriac</language>
-        <language ident="syr-Syrn">Vocalized East Syriac</language>
-        <language ident="syr-x-syrm">Melkite Syriac</language>
-        <language ident="qhy-x-cpas">Palestinian Syriac</language>
-        <language ident="ar-Syrc">Unvocalized or Undetermined Arabic Garshuni</language>
-        <language ident="ar-Syrj">Arabic Garshuni in Vocalized West Syriac Script</language>
-        <language ident="ar-Syrn">Arabic Garshuni in Vocalized East Syriac Script</language>
-        <language ident="en">English</language>
         <language ident="ar">Arabic</language>
-        <language ident="fr">French</language>
-        <language ident="de">German</language>
-        <language ident="la">Latin</language>
-        <language ident="grc">Ancient Greek</language>
+        <language ident="ar-Syrc">Arabic Garshuni</language>
+        <language ident="ar-Syrn">Arabic Garshuni in East Syriac script</language>
         <language ident="cop">Coptic</language>
+        <language ident="de">German</language>
+        <language ident="en">English</language>
+        <language ident="fr">French</language>
+        <language ident="grc">Ancient Greek</language>
+        <language ident="he">Hebrew</language>
+        <language ident="hy">Armenian</language>
+        <language ident="it">Italian</language>
+        <language ident="la">Latin</language>
+        <language ident="syr">Syriac</language>
+        <language ident="syr-Arab">Syriac Garshuni in Arabic script</language>
+        <language ident="syr-Syre">Syriac in Estrangela script</language>
+        <language ident="syr-Syrj">Syriac in West Syriac script</language>
+        <language ident="syr-Syrn">Syriac in East Syriac script</language>
+        <language ident="syr-x-syrm">Syriac in Melkite Syriac script</language>
+        <language ident="tr">Turkish</language>
+        <language ident="tr-Syrc">Turkish Garshuni</language>
+        <language ident="qhy-x-cpas">Christian Palestinian Aramaic script</language>
+        <language ident="xcl">Classical Armenian</language>
+        <language ident="und">Undetermined</language>
+        <language ident="mul">Multiple languages</language>
       </langUsage>
       <textClass>
         <keywords scheme="#Wright-BL-Taxonomy">
@@ -590,16 +560,10 @@
       <change who="https://bl.syriac.uk/documentation/editors.xml#pgmiller" when="2016-07-06">Changed: Files moved to srophe-app-data/data/manuscripts/tei repository.</change>
     </revisionDesc>
   </teiHeader>
-  <facsimile>
-    <!-- facsimile information about the manuscript -->
-    <graphic/>
-    <!-- Alternatively you could provide 'surface' elements with more than one image per surface, and optionally with 'zone' 
-      elements to give coordinates for any special areas of interest -->
-  </facsimile>
   <text>
     <body>
-      <!-- If you had a transcription of the manuscript you would put it here -->
       <p/>
+      <!--Body paragraph provided for document validation.-->
     </body>
   </text>
 </TEI>

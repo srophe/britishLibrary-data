@@ -1,4 +1,7 @@
-<?oxygen RNGSchema="http://syriaca.org/documentation/syriaca-tei-main.rnc" type="compact"?><?xml-stylesheet type="text/css" href="https://raw.githubusercontent.com/srophe/wright-catalogue/master/parameters/tei.css"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+<?xml-model href="https://raw.githubusercontent.com/srophe/britishLibrary/main/documentation/schema/out/Syriacamsdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/srophe/britishLibrary/main/documentation/schema/out/Syriacamsdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet href="https://raw.githubusercontent.com/srophe/wright-catalogue/master/parameters/tei.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="manuscript_785">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -68,7 +71,6 @@
         <authority>Syriaca.org: The Syriac Reference Portal</authority>
         <idno type="URI">https://bl.syriac.uk/ms/785/tei</idno>
         <availability>
-          <p/>
           <licence target="http://creativecommons.org/licenses/by/3.0/">
             <p>Distributed under a Creative Commons Attribution 3.0 Unported License</p>
           </licence>
@@ -90,12 +92,11 @@
               <idno type="BL-Shelfmark-display">London, BL, Add. 17,156</idno>
             </altIdentifier>
             <altIdentifier>
-              <idno type="BL-Shelmark-simplified">BL Add MS 17156</idno>
+              <idno type="BL-Shelfmark-simplified">BL Add MS 17156</idno>
             </altIdentifier>
           </msIdentifier>
           <head>
             <note type="contents-note">This manuscript record does not have a summary list of contents. For composite manuscripts, the list of contents can be found under each individual part.</note>
-            <listRelation type="Wright-BL-Taxonomy"/>
             <listRelation type="composite-to-parts">
               <desc>This composite manuscript consists of 3 distinct parts:</desc>
               <relation name="syriaca:has-unspecified-codicological-part" ref="#syriaca:has-unspecified-codicological-part" active="https://bl.syriac.uk/ms/785" passive="https://bl.syriac.uk/ms/786">
@@ -123,7 +124,7 @@
                 <idno type="BL-Shelfmark-display">London, BL, Add. 17,156, foll. 1–12</idno>
               </altIdentifier>
               <altIdentifier>
-                <idno type="BL-Shelmark-simplified">BL Add MS 17156, foll. 1-12</idno>
+                <idno type="BL-Shelfmark-simplified">BL Add MS 17156, foll. 1-12</idno>
               </altIdentifier>
             <altIdentifier>
               <collection>William Wright, Catalogue of the Syriac Manuscripts in the British Museum Acquired since the Year 1838</collection>
@@ -143,42 +144,35 @@
               </listRelation>
               <listRelation type="part-to-composite">
                 <desc>This unit is a part of a composite manuscript:</desc>
-                <relation name="syriaca:is-unspecified-codicological-part-of" ref="#syriaca:is-unspecified-codicological-part-of" active="https://bl.syriac.uk/ms/786" passive="https://bl.syriac.uk/ms/785">
-                  <relation/>
-                </relation>
+                <relation name="syriaca:is-unspecified-codicological-part-of" ref="#syriaca:is-unspecified-codicological-part-of" active="https://bl.syriac.uk/ms/786" passive="https://bl.syriac.uk/ms/785"/>
               </listRelation>
             </head>
             <msContents>
-              <summary/>
-              <textLang mainLang="syr"/>
+              <textLang mainLang="syr">Syriac</textLang>
               <msItem xml:id="p1a1" n="1" defective="true">
                 <locus from="1" to="12"/>
                 <author ref="http://syriaca.org/person/99">
-                  <persName xml:lang="en" type="supplied" ref="http://syriaca.org/person/99">Severus Sabocht, bishop
-                                    of Kinnesrin</persName>
+                  <persName xml:lang="en" type="supplied">Severus Sabocht, bishop of Kinnesrin</persName>
                 </author>
-                <title xml:lang="en">Works of <persName ref="http://syriaca.org/person/99">Severus Sabocht, bishop
-                                    of Kinnesrin</persName> (see <bibl>Assemani, Bibl. Or., t. ii.,
-                                    p. 335</bibl>)</title>
+                <title xml:lang="en">Works of Severus Sabocht, bishop of Kinnesrin</title>
+                <note>See <bibl>Assemani, Bibl. Or., t. ii., p. 335</bibl>.</note>
                 <msItem xml:id="p1b1" n="2" defective="true">
                   <locus from="1" to="2"/>
-                  <author ref="http://syriaca.org/person/99">
-                    <persName xml:lang="en" type="supplied" ref="http://syriaca.org/person/99">Severus Sabocht, bishop
-                                    of Kinnesrin</persName>
+                  <author ref="http://syriaca.org/person/99" role="https://syriaca.org/documentation/author-editor-roles.xml#disputed">
+                    <persName xml:lang="en" type="supplied">Severus Sabocht, bishop of Kinnesrin</persName>
                   </author>
-                  <title xml:lang="en">Fragments of a commentary on the <title xml:lang="grc">Περὶ ἑρμηνείας</title> of
-                                        <persName ref=" http://syriaca.org/person/342">Aristotle</persName>
+                  <title xml:lang="en">Fragments of a commentary on the Περὶ ἑρμηνείας of
+                                        Aristotle
                 </title>
                   <note>This may, however, be the work of some other author.</note>
                 </msItem>
                 <msItem xml:id="p1b2" n="3" defective="true">
                   <locus from="3a" to="5b"/>
                   <author ref="http://syriaca.org/person/99">
-                    <persName xml:lang="en" type="supplied" ref="http://syriaca.org/person/99">Severus Sabocht, bishop
-                                    of Kinnesrin</persName>
+                    <persName xml:lang="en" type="supplied">Severus Sabocht, bishop of Kinnesrin</persName>
                   </author>
                   <title xml:lang="en">A treatise on the Syllogisms in the
-                                    <title xml:lang="la">Analytica (Priora)</title> of <persName ref="http://syriaca.org/person/342">Aristotle</persName>
+                                    Analytica (Priora) of Aristotle
                 </title>
                   <finalRubric xml:lang="syr">
                     <locus from="5b" to="5b"/>
@@ -193,12 +187,10 @@
                 <msItem xml:id="p1b3" n="4">
                   <locus from="5b" to="11a"/>
                   <author ref="http://syriaca.org/person/99">
-                    <persName xml:lang="en" type="supplied" ref="http://syriaca.org/person/99">Severus Sabocht, bishop
-                                    of Kinnesrin</persName>
+                    <persName xml:lang="en" type="supplied">Severus Sabocht, bishop of Kinnesrin</persName>
                   </author>
-                  <title xml:lang="en">A letter to <persName>Jonas, the
-                                        periodeutes</persName>, explanatory of some points in the
-                                    <title xml:lang="la">Ars Rhetorica</title> of <persName ref=" http://syriaca.org/person/342">Aristotle</persName>
+                  <title xml:lang="en">A letter to Jonas, the periodeutes, explanatory of some points in the
+                                    Ars Rhetorica of Aristotle
                 </title>
                   <rubric xml:lang="syr">
                     <locus from="5b" to="5b"/>ܬܘܒ ܐܝܓܪܬܐ ܕܚܣܝܐ ܣܐܘܪܐ ܣܒܘܟܬ ܐܦܝܣܩܦܐ
@@ -215,12 +207,11 @@
                 <msItem xml:id="p1b4" n="5" defective="true">
                   <locus from="11a" to="12"/>
                   <author ref="http://syriaca.org/person/99">
-                    <persName xml:lang="en" type="supplied" ref="http://syriaca.org/person/99">Severus Sabocht, bishop
-                                    of Kinnesrin</persName>
+                    <persName xml:lang="en" type="supplied">Severus Sabocht, bishop of Kinnesrin</persName>
                   </author>
                   <title xml:lang="en">A letter to the priest
-                                        <persName>Aitilaha</persName> on certain terms in the
-                                    treatise <title xml:lang="grc">Περὶ ἑρμηνείας</title>
+                                        Aitilaha on certain terms in the
+                                    treatise Περὶ ἑρμηνείας
                   </title>
                   <rubric xml:lang="syr">ܐܓܪܬܐ ܕܚܣܝܐ ܣܐܘܪܐ ܣܒܘܟܬ. ܡܛܠ ܒ̈ܢܬ ܩ̈ܠܐ ܡ̣ܕܡ
                                     ܕܒܟܬܒܐ ܕܦܪܝܪܡܢܝܐܣ. ܠܘܬ ܩܫܝܫܐ ܐܝܬܝܠܗܐ</rubric>
@@ -236,13 +227,11 @@
                                                 <quote xml:lang="syr">ܟܐ</quote> , but there are considerable lacunae after foll.
                                                 1 and 2. Each page is divided into two columns, of
                                                 from 27 to 30 lines.</p>
-              <objectDesc form="unspecified">
+              <objectDesc form="other">
                             <supportDesc material="perg">
                                 <extent>
                                     <measure type="composition" unit="leaf" quantity="12">12 ff.</measure>
                                 </extent>
-                                <foliation/>
-                                <collation/>
                                 <condition>
                                     <list>
                                         <item>
@@ -256,50 +245,35 @@
                                     </list>
                                 </condition>
                             </supportDesc>
-                            <layoutDesc>
-                                <p>Content pending</p>
-                            </layoutDesc>
-                        </objectDesc>
+                            </objectDesc>
               <handDesc hands="1">
                 <handNote xml:id="p1handNote1" medium="unknown" scope="sole" script="syr">
-                  <desc>The writing is neat and regular, and seems to be of the <origDate notBefore="0800" notAfter="0900">ixth cent</origDate>.</desc>
+                  The writing is neat and regular, and seems to be of the <date notBefore="0800" notAfter="0900">ixth cent</date>.
                 </handNote>
               </handDesc>
               <decoDesc>
-                <decoNote xml:id="p1decoNote1" type="ornamentation">
+                <decoNote type="ornamentation">
                   <locus from="4b" to="4b"/>
                   <locus from="5b" to="5b"/>
                   <locus from="9a" to="9a"/>
-                  <desc>These leaves are decorated with interlaced ornaments and figures of birds; e.g. foll. 4b, 5b, and 9a.</desc>
+                  These leaves are decorated with interlaced ornaments and figures of birds; e.g. foll. 4b, 5b, and 9a.
                 </decoNote>
               </decoDesc>
-              <additions/>
-              <bindingDesc>
-                            <p>Content pending</p>
-                        </bindingDesc>
-              <sealDesc>
-                            <p>Content pending</p>
-                        </sealDesc>
-              <accMat/>
-            </physDesc>
+              </physDesc>
             <history>
-                        <origin>
-                            <origDate/>
-                            <origPlace/>
-                        </origin>
-                        <provenance/>
-                        <acquisition/>
-                    </history>
+              <origin>
+                <origDate calendar="Gregorian" notBefore="0800" notAfter="0900">9th century</origDate>
+              </origin>
+            </history>
             <additional>
               <adminInfo>
                 <recordHist>
-                  <source>Manuscript description based on<bibl>
+                  <source>Manuscript description based on <bibl>
                       <ref target="#Wrightpart1">Wright's
                       Catalogue</ref>
                     </bibl>. abbreviated by the Syriaca.org editors.</source>
                 </recordHist>
-                <note/>
-              </adminInfo>
+                </adminInfo>
               <listBibl>
                 <bibl xml:id="Wrightpart1">
                   <author>William Wright</author>
@@ -309,7 +283,7 @@
                   <date>1870</date>
                   <ptr target="http://syriaca.org/bibl/8"/>
                   <citedRange unit="entry">DCCCCLXXXIX</citedRange>
-                  <citedRange unit="pp">3:1162-1163</citedRange>
+                  <citedRange unit="p">3:1162-1163</citedRange>
                 <ref type="internet-archive-pdf" target="https://archive.org/details/catalogueofsyria03brituoft/page/1162"/>
                 </bibl>
               </listBibl>
@@ -329,7 +303,7 @@
                 <idno type="BL-Shelfmark-display">London, BL, Add. 17,156, foll. 13–15</idno>
               </altIdentifier>
               <altIdentifier>
-                <idno type="BL-Shelmark-simplified">BL Add MS 17156, foll. 13-15</idno>
+                <idno type="BL-Shelfmark-simplified">BL Add MS 17156, foll. 13-15</idno>
               </altIdentifier>
             <altIdentifier>
               <collection>William Wright, Catalogue of the Syriac Manuscripts in the British Museum Acquired since the Year 1838</collection>
@@ -349,34 +323,37 @@
               </listRelation>
               <listRelation type="part-to-composite">
                 <desc>This unit is a part of a composite manuscript:</desc>
-                <relation name="syriaca:is-unspecified-codicological-part-of" ref="#syriaca:is-unspecified-codicological-part-of" active="https://bl.syriac.uk/ms/787" passive="https://bl.syriac.uk/ms/785">
-                  <relation/>
-                </relation>
+                <relation name="syriaca:is-unspecified-codicological-part-of" ref="#syriaca:is-unspecified-codicological-part-of" active="https://bl.syriac.uk/ms/787" passive="https://bl.syriac.uk/ms/785"/>
               </listRelation>
             </head>
             <msContents>
-              <summary/>
-              <textLang mainLang="syr"/>
+              <textLang mainLang="syr">Syriac</textLang>
               <msItem xml:id="p2a1" n="1" defective="true">
                 <locus from="13a" to="15b"/>
-                <author ref="http://syriaca.org/person/496">Galen</author>
+                <author ref="http://syriaca.org/person/496">
+                  <persName xml:lang="en">Galen</persName>
+                </author>
                 <title xml:lang="en">The remnants of a manuscript of the works of
-                                    <persName ref="http://syriaca.org/person/496" xml:lang="en" type="supplied">Galen</persName>, probably in the translation of
-                                    <persName ref="http://syriaca.org/person/49" xml:lang="en" type="supplied">Sergius of Rās-'ain</persName>.</title>
+                                    Galen, probably in the translation of
+                                    Sergius of Rās-'ain.</title>
                 <msItem xml:id="p2b1" n="2">
                   <locus from="13a" to="13b"/>
-                  <author ref="http://syriaca.org/person/496">Galen</author>
+                  <author ref="http://syriaca.org/person/496">
+                    <persName xml:lang="en">Galen</persName>
+                  </author>
                   <title ref="http://syriaca.org/work/9734" xml:lang="en">Part of the
-                                    "<title xml:lang="la">Ars medica</title>"</title>
+                                    "Ars medica"</title>
                   <note>It contains from ch. xxviii., near the end, <quote xml:lang="grc">εἰ μὲν γὰρ παχυμερές ἐστιν, οὐχ ὁδοιπορήσει μέχρι βάθους πολλοῦ</quote>, to ch. XXX
                                     <quote xml:lang="grc">μαλακὸν δὲ καὶ παιδικὸν ὀστοῦν καὶ συμφῦναι δυνατόν. σπάνιος δὲ καὶ ἡ τοῦδε τοῦ πάθους γένεσις ἄνευ συμπλοκῆς</quote>. See <bibl>Opera, ed. Kuhn, t. i., pp. 384—87</bibl>; <bibl>Sachau, Inedita Syriaca, p. 91</bibl>.
                 </note>
                 </msItem>
                 <msItem xml:id="p2b2" n="3">
                   <locus from="14a" to="14b"/>
-                  <author ref="http://syriaca.org/person/496">Galen</author>
+                  <author ref="http://syriaca.org/person/496">
+                    <persName xml:lang="en">Galen</persName>
+                  </author>
                   <title ref="http://syriaca.org/work/9734" xml:lang="en">Another
-                                    portion of the same <ref target="#b1">work</ref>
+                                    portion of the same work
                   </title>
                   <note>It contains from ch. xxiii., near the end, <quote xml:lang="grc">τῷ δὲ ἤτοι μηδ' ὅλως δεομένῳ προσφερόμενον, ἢ οὐκ ἐν τῷ προσήκοντι μέτρῳ, νοσῶδες καθίσταται</quote>
                                     to the end of ch. xxiv. See <bibl>Opera, t. i., pp. 369—72</bibl>; <bibl>Sachau, Ined.
@@ -385,8 +362,10 @@
                 </msItem>
                 <msItem xml:id="p2b3" n="4" defective="true">
                   <locus from="15a" to="15b"/>
-                  <author ref="http://syriaca.org/person/496">Galen</author>
-                  <title xml:lang="en">Part of the treatise "<title xml:lang="la">de Alimentorum Facultatibus</title>"</title>
+                  <author ref="http://syriaca.org/person/496">
+                    <persName xml:lang="en">Galen</persName>
+                  </author>
+                  <title xml:lang="en">Part of the treatise "de Alimentorum Facultatibus"</title>
                   <note>It contains Book ii., from the end of ch. lviii., <quote xml:lang="grc">τροφὴν μέντοι τῷ σώματι δίδωσιν ὀλίγην τε καὶ οὐκ εὔχυμον</quote>, to
                                     the middle of ch. lxi., <quote xml:lang="grc">ὥσπερ γὰρ ἐπ' ἄλλων φυτῶν τὸ πλεῖστον τῆς οὐσίας ἔν τε τοῖς καυλοῖς καὶ τοῖς στελέχεσιν, κ.τ.λ.</quote>. See <bibl>Opera, t. vi., pp. 613— 47</bibl>; <bibl>Sachau,
                                         Ined. Syr., p. 94</bibl>.</note>
@@ -403,13 +382,11 @@
                                                 13—15). The last leaf signed ܝܒ is much torn. Each
                                                 page is divided into two columns, of from 32 to 35
                                                 lines.</p>
-              <objectDesc form="unspecified">
+              <objectDesc form="other">
                             <supportDesc material="perg">
                                 <extent>
                                     <measure type="composition" unit="leaf" quantity="3">3 ff.</measure>
                                 </extent>
-                                <foliation/>
-                                <collation/>
                                 <condition>
                                     <list>
                                         <item>
@@ -422,43 +399,27 @@
                                     </list>
                                 </condition>
                             </supportDesc>
-                            <layoutDesc>
-                                <p>Content pending</p>
-                            </layoutDesc>
-                        </objectDesc>
+                            </objectDesc>
               <handDesc hands="1">
                 <handNote xml:id="p2handNote1" medium="unknown" scope="sole" script="syr">
-                  <desc>These leaves are written in a fine, regular hand of about the <origDate notBefore="0700" notAfter="0800">viiith cent</origDate>
-                  </desc>
-                </handNote>
+                  These leaves are written in a fine, regular hand of about the <date notBefore="0700" notAfter="0800">viiith cent</date>
+                  </handNote>
               </handDesc>
-              <additions/>
-              <bindingDesc>
-                            <p>Content pending</p>
-                        </bindingDesc>
-              <sealDesc>
-                            <p>Content pending</p>
-                        </sealDesc>
-              <accMat/>
-            </physDesc>
+              </physDesc>
             <history>
-                        <origin>
-                            <origDate/>
-                            <origPlace/>
-                        </origin>
-                        <provenance/>
-                        <acquisition/>
-                    </history>
+              <origin>
+                <origDate calendar="Gregorian" notBefore="0650" notAfter="0850">ca. 8th century</origDate>
+              </origin>
+            </history>
             <additional>
               <adminInfo>
                 <recordHist>
-                  <source>Manuscript description based on<bibl>
+                  <source>Manuscript description based on <bibl>
                       <ref target="#Wrightpart2">Wright's
                       Catalogue</ref>
                     </bibl>. abbreviated by the Syriaca.org editors.</source>
                 </recordHist>
-                <note/>
-              </adminInfo>
+                </adminInfo>
               <listBibl>
                 <bibl xml:id="Wrightpart2">
                   <author>William Wright</author>
@@ -468,7 +429,7 @@
                   <date>1870</date>
                   <ptr target="http://syriaca.org/bibl/8"/>
                   <citedRange unit="entry">MV</citedRange>
-                  <citedRange unit="pp">3:1187-1188</citedRange>
+                  <citedRange unit="p">3:1187-1188</citedRange>
                 <ref type="internet-archive-pdf" target="https://archive.org/details/catalogueofsyria03brituoft/page/1187"/>
                 </bibl>
               </listBibl>
@@ -488,7 +449,7 @@
                 <idno type="BL-Shelfmark-display">London, BL, Add. 17,156, foll. 16–31</idno>
               </altIdentifier>
               <altIdentifier>
-                <idno type="BL-Shelmark-simplified">BL Add MS 17156, foll. 16-31</idno>
+                <idno type="BL-Shelfmark-simplified">BL Add MS 17156, foll. 16-31</idno>
               </altIdentifier>
             <altIdentifier>
               <collection>William Wright, Catalogue of the Syriac Manuscripts in the British Museum Acquired since the Year 1838</collection>
@@ -508,13 +469,11 @@
               </listRelation>
               <listRelation type="part-to-composite">
                 <desc>This unit is a part of a composite manuscript:</desc>
-                <relation name="syriaca:is-unspecified-codicological-part-of" ref="#syriaca:is-unspecified-codicological-part-of" active="https://bl.syriac.uk/ms/788" passive="https://bl.syriac.uk/ms/785">
-                  <relation/>
-                </relation>
+                <relation name="syriaca:is-unspecified-codicological-part-of" ref="#syriaca:is-unspecified-codicological-part-of" active="https://bl.syriac.uk/ms/788" passive="https://bl.syriac.uk/ms/785"/>
               </listRelation>
             </head>
             <msContents>
-              <textLang mainLang="syr"/>
+              <textLang mainLang="syr">Syriac</textLang>
               <msItem xml:id="p3a1" n="1" defective="true">
                 <locus from="16a" to="31b"/>
                 <title xml:lang="en">Portions of Services for Passion Week</title>
@@ -536,13 +495,13 @@
                 </msItem>
                 <msItem xml:id="p3b3" n="4" defective="true">
                   <locus from="20a" to="21"/>
-                  <title xml:lang="en">On the denial of <persName>S. Peter</persName>
+                  <title xml:lang="en">On the denial of S. Peter
                   </title>
                   <rubric xml:lang="syr">ܥܠ ܟܦܘܪܝܗ ܕܫܡܥܘܢ ܪܝܫܐ ܕܫ̈ܠܝܚܐ</rubric>
                 </msItem>
                 <msItem xml:id="p3b4" n="5" defective="true">
                   <locus from="21a" to="23"/>
-                  <title xml:lang="en">On <persName>Judas</persName> the Traitor</title>
+                  <title xml:lang="en">On Judas the Traitor</title>
                   <rubric xml:lang="syr">ܥܠ ܝܗܘܕܐ ܡܫ̇ܠܡܢܐ</rubric>
                 </msItem>
                 <msItem xml:id="p3b5" n="6" defective="true">
@@ -553,10 +512,11 @@
                 </msItem>
                 <msItem xml:id="p3b6" n="7">
                   <locus from="24b" to="27"/>
-                  <author ref="http://syriaca.org/person/42">Jacob of
-                                        Batnae</author>
-                  <title xml:lang="en">A sūgīthā of <persName>Jacob of
-                                            Batnae</persName>
+                  <author ref="http://syriaca.org/person/42">
+                    <persName xml:lang="en">Jacob of
+                                        Batnae</persName>
+                  </author>
+                  <title xml:lang="en">A sūgīthā of Jacob of Batnae
                   </title>
                   <rubric xml:lang="syr">ܣܘܓܝܬܐ ܕܡܪܝܥܩܘܒ</rubric>
                 </msItem>
@@ -577,13 +537,11 @@
                                                 most of which are stained and torn (Add. 17,156,
                                                 foll. 16—31). The number of lines in each page
                                                 varies from 28 to 31.</p>
-              <objectDesc form="unspecified">
+              <objectDesc form="other">
                             <supportDesc material="perg">
                                 <extent>
                                     <measure type="composition" unit="leaf" quantity="16">16 ff.</measure>
                                 </extent>
-                                <foliation/>
-                                <collation/>
                                 <condition>
                                     <list>
                                         <item>
@@ -595,44 +553,28 @@
                                     </list>
                                 </condition>
                             </supportDesc>
-                            <layoutDesc>
-                                <p>Content pending</p>
-                            </layoutDesc>
-                        </objectDesc>
+                            </objectDesc>
               <handDesc hands="1">
                 <handNote xml:id="p3handNote1" medium="unknown" scope="sole" script="syr">
-                  <desc>The writing is good and regular, of about the <origDate notBefore="0900" notAfter="1000">xth cent</origDate>.</desc>
+                  The writing is good and regular, of about the <date notBefore="0900" notAfter="1000">xth cent</date>.
                 </handNote>
               </handDesc>
               <additions>
                 <note type="proofreader-note">N.B., folio location may not be available for some items below.</note>
-                <p/>
                 <list>
                   <item xml:id="p3addition1" n="1">
-                    <locus/>
-                    <p/>
                     <p>
                     <quote xml:lang="syr"/>
                   </p>
                   </item>
                 </list>
               </additions>
-              <bindingDesc>
-                            <p>Content pending</p>
-                        </bindingDesc>
-              <sealDesc>
-                            <p>Content pending</p>
-                        </sealDesc>
-              <accMat/>
-            </physDesc>
+              </physDesc>
             <history>
-                        <origin>
-                            <origDate/>
-                            <origPlace/>
-                        </origin>
-                        <provenance/>
-                        <acquisition/>
-                    </history>
+              <origin>
+                <origDate calendar="Gregorian" notBefore="0850" notAfter="1050">ca. 10th century</origDate>
+              </origin>
+            </history>
             <additional>
               <adminInfo>
                 <recordHist>
@@ -641,8 +583,7 @@
                             Catalogue</ref>
                     </bibl>, abbreviated by the Syriaca.org editors.</source>
                 </recordHist>
-                <note/>
-              </adminInfo>
+                </adminInfo>
               <listBibl>
                 <bibl xml:id="Wrightpart3">
                   <author>William Wright</author>
@@ -652,7 +593,7 @@
                   <date>1870</date>
                   <ptr target="http://syriaca.org/bibl/8"/>
                   <citedRange unit="entry">CCCLXVII</citedRange>
-                  <citedRange unit="pp">1:302</citedRange>
+                  <citedRange unit="p">1:302</citedRange>
                 <ref type="internet-archive-pdf" target="https://archive.org/details/catalogueofsyria01brituoft/page/302"/>
                 </bibl>
               </listBibl>
@@ -677,7 +618,6 @@
       <classDecl>
         <taxonomy xml:id="Wright-BL-Taxonomy">
           <bibl>
-            
             <ptr target="http://syriaca.org/documentation/Wright-BL-Taxonomy.html"/>
           </bibl>
           <category xml:id="biblical-manuscripts">
@@ -794,22 +734,30 @@
     </encodingDesc>
     <profileDesc>
       <langUsage>
-        <language ident="syr">Unvocalized Syriac of any variety or period</language>
-        <language ident="syr-Syre">Syriac in Estrangela</language>
-        <language ident="syr-Syrj">Vocalized West Syriac</language>
-        <language ident="syr-Syrn">Vocalized East Syriac</language>
-        <language ident="syr-x-syrm">Melkite Syriac</language>
-        <language ident="qhy-x-cpas">Palestinian Syriac</language>
-        <language ident="ar-Syrc">Unvocalized or Undetermined Arabic Garshuni</language>
-        <language ident="ar-Syrj">Arabic Garshuni in Vocalized West Syriac Script</language>
-        <language ident="ar-Syrn">Arabic Garshuni in Vocalized East Syriac Script</language>
-        <language ident="en">English</language>
         <language ident="ar">Arabic</language>
-        <language ident="fr">French</language>
-        <language ident="de">German</language>
-        <language ident="la">Latin</language>
-        <language ident="grc">Ancient Greek</language>
+        <language ident="ar-Syrc">Arabic Garshuni</language>
+        <language ident="ar-Syrn">Arabic Garshuni in East Syriac script</language>
         <language ident="cop">Coptic</language>
+        <language ident="de">German</language>
+        <language ident="en">English</language>
+        <language ident="fr">French</language>
+        <language ident="grc">Ancient Greek</language>
+        <language ident="he">Hebrew</language>
+        <language ident="hy">Armenian</language>
+        <language ident="it">Italian</language>
+        <language ident="la">Latin</language>
+        <language ident="syr">Syriac</language>
+        <language ident="syr-Arab">Syriac Garshuni in Arabic script</language>
+        <language ident="syr-Syre">Syriac in Estrangela script</language>
+        <language ident="syr-Syrj">Syriac in West Syriac script</language>
+        <language ident="syr-Syrn">Syriac in East Syriac script</language>
+        <language ident="syr-x-syrm">Syriac in Melkite Syriac script</language>
+        <language ident="tr">Turkish</language>
+        <language ident="tr-Syrc">Turkish Garshuni</language>
+        <language ident="qhy-x-cpas">Christian Palestinian Aramaic script</language>
+        <language ident="xcl">Classical Armenian</language>
+        <language ident="und">Undetermined</language>
+        <language ident="mul">Multiple languages</language>
       </langUsage>
       <textClass>
         <keywords scheme="#Wright-BL-Taxonomy">
@@ -846,16 +794,14 @@
       <change who="https://bl.syriac.uk/documentation/editors.xml#ecgeitner" when="2021-05-23">[https://bl.syriac.uk/ms/787]: Initial TEI encoding.</change>
       <change who="https://bl.syriac.uk/documentation/editors.xml#ecgeitner" when="2021-05-12">[https://bl.syriac.uk/ms/786]: Initial TEI encoding.</change>
       <change who="https://bl.syriac.uk/documentation/editors.xml#ecgeitner">[https://bl.syriac.uk/ms/788]: Initial TEI encoding.</change>
-      <change type="planned" subtype="greek">[https://bl.syriac.uk/ms/786]: Add in missing Greek characters.</change>
-      <change type="planned" subtype="greek">[https://bl.syriac.uk/ms/787]: Add in missing Greek characters.</change>
+      <change type="planned" subtype="greek" who="https://bl.syriac.uk/documentation/editors.xml#smbl-general-editors">[https://bl.syriac.uk/ms/786]: Add in missing Greek characters.</change>
+      <change type="planned" subtype="greek" who="https://bl.syriac.uk/documentation/editors.xml#smbl-general-editors">[https://bl.syriac.uk/ms/787]: Add in missing Greek characters.</change>
     </revisionDesc>
   </teiHeader>
-  <facsimile>
-        <formula>Content pending</formula>
-    </facsimile>
   <text>
         <body>
-            <bibl>Content pending</bibl>
+            <p/>
+      <!--Body paragraph provided for document validation.-->
         </body>
     </text>
 </TEI>

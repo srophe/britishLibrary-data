@@ -1,4 +1,7 @@
-<?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/srophe-app/documentation/enrich-syriaca.rnc" type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/css" href="SRPEnrichCSS.css"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+<?xml-model href="https://raw.githubusercontent.com/srophe/britishLibrary/main/documentation/schema/out/Syriacamsdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/srophe/britishLibrary/main/documentation/schema/out/Syriacamsdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet href="https://raw.githubusercontent.com/srophe/wright-catalogue/master/parameters/tei.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="manuscript_274">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -22,13 +25,7 @@
           <resp>Based on the work of</resp>
           <name type="person" ref="https://bl.syriac.uk/documentation/editors.xml#wwright">William Wright</name>
         </respStmt>
-        <respStmt>
-          <resp>Edited by</resp>
-          <name type="person" ref="https://bl.syriac.uk/documentation/editors.xml#">
-            <!-- Editor's first initial and surname follow "#" (e.g., "...#dmichelson") -->
-            <!--Initial editor's name here -->
-          </name>
-        </respStmt>
+        
         <respStmt>
           <resp>Syriac text entered by</resp>
           <name type="person" ref="https://bl.syriac.uk/documentation/editors.xml#raydin">Robert Aydin</name>
@@ -63,11 +60,9 @@
         <edition n="1.0"/>
       </editionStmt>
       <publicationStmt>
-        <pubPlace/>
         <authority>Syriaca.org: The Syriac Reference Portal</authority>
         <idno type="URI">https://bl.syriac.uk/ms/274/tei</idno>
         <availability>
-          <p/>
           <licence target="http://creativecommons.org/licenses/by/3.0/">
             <p>Distributed under a Creative Commons Attribution 3.0 Unported License</p>
           </licence>
@@ -75,7 +70,7 @@
         <date calendar="Gregorian">2023-04-21-05:00</date>
       </publicationStmt>
       <sourceDesc>
-        <msDesc xml:id="manuscript-274" xml:lang="en">
+        <msDesc xml:id="manuscript-274">
           <msIdentifier>
             <country>United Kingdom</country>
             <settlement>London</settlement>
@@ -89,12 +84,11 @@
               <idno type="BL-Shelfmark-display">London, BL, Add. 14,543</idno>
             </altIdentifier>
             <altIdentifier>
-              <idno type="BL-Shelmark-simplified">BL Add MS 14543</idno>
+              <idno type="BL-Shelfmark-simplified">BL Add MS 14543</idno>
             </altIdentifier>
           </msIdentifier>
           <head>
             <note type="contents-note">This manuscript record does not have a summary list of contents. For composite manuscripts, the list of contents can be found under each individual part.</note>
-            <listRelation type="Wright-BL-Taxonomy"/>
             <listRelation type="composite-to-parts">
               <desc>This composite manuscript consists of 2 distinct parts:</desc>
               <relation name="syriaca:has-unspecified-codicological-part" ref="#syriaca:has-unspecified-codicological-part" active="https://bl.syriac.uk/ms/274" passive="https://bl.syriac.uk/ms/1189">
@@ -115,7 +109,7 @@
                 <idno type="BL-Shelfmark-display">London, BL, Add. 14,543, fol. 1a</idno>
               </altIdentifier>
               <altIdentifier>
-                <idno type="BL-Shelmark-simplified">BL Add MS 14543, fol. 1a</idno>
+                <idno type="BL-Shelfmark-simplified">BL Add MS 14543, fol. 1a</idno>
               </altIdentifier>
               <altIdentifier>
                 <collection>William Wright, Catalogue of the Syriac Manuscripts in the British Museum Acquired since the Year 1838</collection>
@@ -127,7 +121,7 @@
               </altIdentifier>
             </msIdentifier>
             <head>
-              <note type="contents-note">This manuscript contains: Simeon (of Harrān?). A hymn for the Dead by Simeon (of Ḥarrān?)If the name of Ḥarrān be rightly read, this must be Simeon I. See Le Quien, Oriens Christ., t. ii., col. 1503. In total, including sub-sections, this manuscript contains 1 items.</note>
+              <note type="contents-note">This manuscript contains: Simeon (of Harrān?). A hymn for the Dead by Simeon (of Ḥarrān?)If the name of Ḥarrān be rightly read, this must be Simeon I. See Le Quien, Oriens Christ., t. ii., col. 1503. In total, including sub-sections, this manuscript contains 1 item.</note>
               <listRelation type="Wright-BL-Taxonomy">
                 <relation name="dcterms:type" ref="http://purl.org/dc/terms/type" active="https://bl.syriac.uk/ms/1189" passive="#hymns">
                   <desc>Hymns</desc>
@@ -135,19 +129,19 @@
               </listRelation>
               <listRelation type="part-to-composite">
                 <desc>This unit is a part of a composite manuscript:</desc>
-                <relation name="syriaca:is-unspecified-codicological-part-of" ref="#syriaca:is-unspecified-codicological-part-of" active="https://bl.syriac.uk/ms/1189" passive="https://bl.syriac.uk/ms/274">
-                  <relation/>
-                </relation>
+                <relation name="syriaca:is-unspecified-codicological-part-of" ref="#syriaca:is-unspecified-codicological-part-of" active="https://bl.syriac.uk/ms/1189" passive="https://bl.syriac.uk/ms/274"/>
               </listRelation>
             </head>
             <msContents>
-              <summary/>
               <textLang mainLang="syr">Syriac</textLang>
               <msItem xml:id="p1a1" n="1" defective="true">
                 <locus from="1a" to="1a">Fol. 1a</locus>
-                <author ref="http://syriaca.org/person/1473">Simeon (of Harrān?)</author>
-                <title type="supplied">A hymn for the Dead by Simeon (of Ḥarrān?)<note type="footnote">If the name of Ḥarrān be rightly read, this must be <persName>Simeon I</persName>. See <bibl>Le Quien, Oriens Christ., t. ii., col. 1503</bibl>.</note>
+                <author ref="http://syriaca.org/person/1473">
+                  <persName xml:lang="en">Simeon (of Harrān?)</persName>
+                </author>
+                <title xml:lang="en">A hymn for the Dead by Simeon (of Ḥarrān?)
                 </title>
+                <note type="footnote">If the name of Ḥarrān be rightly read, this must be <persName>Simeon I</persName>. See <bibl>Le Quien, Oriens Christ., t. ii., col. 1503</bibl>.</note>
                 <rubric xml:lang="syr">ܕܥܢ̈ܝܕܐ ܕܐܡܝܪ ܠܛܘܒܢܐ ܡܪܝܫܡܥܘܢ ܕܚܖ<supplied reason="unknown" resp="https://bl.syriac.uk/documentation/editors.xml#wwright">ܢ</supplied>
                   <locus from="1a"/>
                 </rubric>
@@ -166,17 +160,11 @@
                   </support>
                   <extent>
                     <measure type="composition" unit="leaf" quantity="1">1 f.</measure>
-                    <dimensions type="leaf" unit="in">
-                      <height>
-                        <measure type="height" quantity="9.875" unit="in">9 7/8</measure>
-                      </height>
-                      <width>
-                        <measure type="width" quantity="6.25" unit="in">6 1/4</measure>
-                      </width>
+                    <dimensions type="leaf" unit="inch">
+                      <height quantity="9.875">9 7/8</height>
+                      <width quantity="6.25">6 1/4</width>
                     </dimensions>
                   </extent>
-                  <foliation/>
-                  <collation/>
                   <condition>
                     <list>
                       <item>
@@ -193,32 +181,24 @@
               </objectDesc>
               <handDesc hands="1">
                 <handNote xml:id="p1handNote1" scope="sole" script="syr-Syre" medium="unknown">
-                  <desc>The writing is cursive, but seems to be of <origDate notBefore="0500" notAfter="0600" calendar="Gregorian">nearly the same date as the rest of the manuscript</origDate>.</desc>
+                  The writing is cursive, but seems to be of <date notBefore="0500" notAfter="0600" calendar="Gregorian">nearly the same date as the rest of the manuscript</date>.
                 </handNote>
               </handDesc>
-              <decoDesc/>
-              <additions/>
-              <bindingDesc/>
-              <sealDesc/>
-              <accMat/>
-            </physDesc>
+              </physDesc>
             <history>
               <origin>
-                <origDate notBefore="0500" notAfter="0600">Nearly the same date as the rest of the manuscript</origDate>
-                <origPlace/>
+                <origDate calendar="Gregorian" notBefore="0450" notAfter="0650">ca. 6th century</origDate>
+                
               </origin>
-              <provenance/>
-              <acquisition/>
-            </history>
+              </history>
             <additional>
               <adminInfo>
                 <recordHist>
-                  <source>Manuscript description based on<bibl>
+                  <source>Manuscript description based on <bibl>
                       <ref target="#Wrightpart1">Wright's Catalogue</ref>
                     </bibl>. abbreviated by the Syriaca.org editors.</source>
                 </recordHist>
-                <note/>
-              </adminInfo>
+                </adminInfo>
               <listBibl>
                 <bibl xml:id="Wrightpart1">
                   <author>William Wright</author>
@@ -227,7 +207,7 @@
                   <date>1870</date>
                   <ptr target="http://syriaca.org/bibl/8"/>
                   <citedRange unit="entry">DL</citedRange>
-                  <citedRange unit="pp">2:420</citedRange>
+                  <citedRange unit="p">2:420</citedRange>
                 <ref type="internet-archive-pdf" target="https://archive.org/details/catalogueofsyria02brituoft/page/420"/>
                 </bibl>
               </listBibl>
@@ -243,7 +223,7 @@
                 <idno type="BL-Shelfmark-display">London, BL, Add. 14,543, foll. 1b–147</idno>
               </altIdentifier>
               <altIdentifier>
-                <idno type="BL-Shelmark-simplified">BL Add MS 14543, foll. 1b-147</idno>
+                <idno type="BL-Shelfmark-simplified">BL Add MS 14543, foll. 1b-147</idno>
               </altIdentifier>
               <altIdentifier>
                 <collection>William Wright, Catalogue of the Syriac Manuscripts in the British Museum Acquired since the Year 1838</collection>
@@ -257,131 +237,127 @@
             <head>
               <note type="contents-note">This manuscript contains: Basil of Caesarea. Discourses of Basil of Caesarea. In total, including sub-sections, this manuscript contains 10 items.</note>
               <listRelation type="Wright-BL-Taxonomy">
-                <relation name="dcterms:type" ref="http://purl.org/dc/terms/type" active="https://bl.syriac.uk/ms/1190" passive="#theology">
-                  <desc/>
-                </relation>
+                <relation name="dcterms:type" ref="http://purl.org/dc/terms/type" active="https://bl.syriac.uk/ms/1190" passive="#theology"/>
               </listRelation>
               <listRelation type="part-to-composite">
                 <desc>This unit is a part of a composite manuscript:</desc>
-                <relation name="syriaca:is-unspecified-codicological-part-of" ref="#syriaca:is-unspecified-codicological-part-of" active="https://bl.syriac.uk/ms/1190" passive="https://bl.syriac.uk/ms/274">
-                  <relation/>
-                </relation>
+                <relation name="syriaca:is-unspecified-codicological-part-of" ref="#syriaca:is-unspecified-codicological-part-of" active="https://bl.syriac.uk/ms/1190" passive="https://bl.syriac.uk/ms/274"/>
               </listRelation>
             </head>
             <msContents>
-              <summary/>
               <textLang mainLang="syr">Syriac</textLang>
               <msItem xml:id="p2a1" n="1" defective="true">
                 <locus from="1b" to="147">Foll. 1b-147</locus>
-                <author ref="http://syriaca.org/person/376">Basil of Caesarea</author>
-                <title type="supplied">Discourses of Basil of Caesarea</title>
+                <author ref="http://syriaca.org/person/376">
+                  <persName xml:lang="en">Basil of Caesarea</persName>
+                </author>
+                <title xml:lang="en">Discourses of Basil of Caesarea</title>
                 <msItem xml:id="p2b1" n="2" defective="true">
                   <locus from="1b" to="20">Foll. 1b-20</locus>
-                  <author ref="http://syriaca.org/person/376">Basil of Caesarea</author>
-                  <title type="supplied">On Deuteron. xv. 9</title>
+                  <author ref="http://syriaca.org/person/376">
+                    <persName xml:lang="en">Basil of Caesarea</persName>
+                  </author>
+                  <title xml:lang="en">On Deuteron. xv. 9</title>
                   <rubric xml:lang="syr">[ܡـ]ـܐܡܪܐ ܕܡܪܝ ܒܣܝܠܝܣ ܐܦܣܩܘܦܐ [ܕ]ܐܬܡܠܠ ܥܠ ܦܬ̈ܓܡܐ ܕܡܢ ܬܢܝܢ ܢܡܘܣܐ ܕܐܡܝܪ ܕܐܙܕܗܪ ܕܠܡܐ ܢܗܘܐ ܦܬܓܡܐ ܕܥܘܠܐ  , ,  ܒܠܒܟ ܠܡܚܙܐ ܢܦܫܟ ܘܠܡܬܒܝܢܘ ܒܩܢܘܡܟ<locus from="1b"/>
                   </rubric>
                   <rubric xml:lang="syr">ܥܠ ܕܐܬܒܩܐ ܒܩܢܘܡܟ<locus from="1b"/>
                   </rubric>
-                  <note>It is imperfect, a leaf being lost after fol.<locus from="7">7</locus>, which contained from<bibl>p. 27, A, of the Greek text, to p. 28, B</bibl>.</note>
-                  <listBibl>
-                    <bibl>Opera (Paris, 1839), t. ii. p. 22</bibl>
-                    <bibl>Migne, Patrol. Gr., t. xxxi., col. 197</bibl>
-                  </listBibl>
+                  <note>It is imperfect, a leaf being lost after fol.<locus from="7">7</locus>, which contained from <bibl>p. 27, A, of the Greek text, to p. 28, B</bibl>.</note>
+                  <note>Cf. <bibl>Opera (Paris, 1839), t. ii. p. 22</bibl>; <bibl>Migne, Patrol. Gr., t. xxxi., col. 197</bibl>
+                  </note>
                 </msItem>
                 <msItem xml:id="p2b2" n="3">
                   <locus from="20a" to="36">Foll. 20a-36</locus>
-                  <author ref="http://syriaca.org/person/376">Basil of Caesarea</author>
-                  <title type="supplied">On Baptism</title>
+                  <author ref="http://syriaca.org/person/376">
+                    <persName xml:lang="en">Basil of Caesarea</persName>
+                  </author>
+                  <title xml:lang="en">On Baptism</title>
                   <rubric xml:lang="syr">ܡܐܡܪܐ ܕܥܠ ܡܥܡܘܕܝܬܐ<locus from="20a"/>
                   </rubric>
-                  <listBibl>
-                    <bibl>Opera, t. ii. p. 158</bibl>
-                    <bibl>Migne, t. xxxi., col. 423</bibl>
-                  </listBibl>
+                  <note>Cf. <bibl>Opera, t. ii. p. 158</bibl>; <bibl>Migne, t. xxxi., col. 423</bibl>
+                  </note>
                 </msItem>
                 <msItem xml:id="p2b3" n="4">
                   <locus from="36b" to="50">Foll. 36b-50</locus>
-                  <author ref="http://syriaca.org/person/376">Basil of Caesarea</author>
-                  <title type="supplied">On the Study of the writings of the<supplied reason="unknown" resp="https://bl.syriac.uk/documentation/editors.xml#wwright">Greek</supplied>Philosophers</title>
+                  <author ref="http://syriaca.org/person/376">
+                    <persName xml:lang="en">Basil of Caesarea</persName>
+                  </author>
+                  <title xml:lang="en">On the Study of the writings of the <supplied reason="unknown" resp="https://bl.syriac.uk/documentation/editors.xml#wwright">Greek</supplied> Philosophers</title>
                   <rubric xml:lang="syr">ܡܐܡܪܐ ܥܠ ܬܩ̈ܢܬܐ ܕܦܝܠܣ̈ܦܐ<locus from="36b"/>
                   </rubric>
-                  <listBibl>
-                    <bibl>Opera, t. ii., p. 243<supplied reason="unknown" resp="https://bl.syriac.uk/documentation/editors.xml#wwright">
-                        <title>ad Adolescentes</title>, etc.</supplied>
-                    </bibl>
-                    <bibl>Migne, t. xxxi., col. 563</bibl>
-                  </listBibl>
+                  <note>Cf. <bibl>Opera, t. ii., p. 243, <title>ad Adolescentes</title>, etc.
+                    </bibl>; <bibl>Migne, t. xxxi., col. 563</bibl>
+                  </note>
                 </msItem>
                 <msItem xml:id="p2b4" n="5" defective="true">
                   <locus from="50b" to="107a">Foll. 50b-107a</locus>
-                  <author ref="http://syriaca.org/person/376">Basil of Caesarea</author>
-                  <title type="supplied">On the Holy Spirit</title>
+                  <author ref="http://syriaca.org/person/376">
+                    <persName xml:lang="en">Basil of Caesarea</persName>
+                  </author>
+                  <title xml:lang="en">On the Holy Spirit</title>
                   <rubric xml:lang="syr">ܠܘܩܒܠ ܐܝܠܝܢ ܕܡܒܨܪܝܢ ܬܫܡܫܬܗ ܕܒܪܐ ܕܐܠܗܐ ܡܢ ܕܐܒܘܗܝ ܘܡܬܚܬܝܢ ܠܪܘܚܐ ܕܩܘܕܫܐ ܠܫܘܥܒܕܐ.<locus from="50b"/>
                   </rubric>
                   <finalRubric xml:lang="syr">ܫܠܡ ܡܐܡܪܐ ܕܥܠ ܫܘܡܠܝܐ ܕܬܠܝܬܝܘܬܐ ܕܚܕ ܟܝܢܐ ܕܚܕܐ ܬܫܒܘܚܬܐ ܕܚܕ ܨܒܝܢܐ ܒܩ̈ܢܘܡܐ ܬܠܬܐ.<locus from="107a"/>
                   </finalRubric>
-                  <note>It is imperfect, as two quires are wanting after fol.<locus from="87">87</locus>, which contained from<bibl>p. 40, D, to p. 61, E</bibl>; and another after fol.<locus from="97">97</locus>, containing from<bibl>p. 74, E, to p. 85, B, of the Paris edition</bibl>.</note>
-                  <listBibl>
-                    <bibl>Opera, t. iii., p. 1</bibl>
-                    <bibl>Migne, t. xxxii., col. 67</bibl>
-                  </listBibl>
+                  <note>It is imperfect, as two quires are wanting after fol.<locus from="87">87</locus>, which contained from <bibl>p. 40, D, to p. 61, E</bibl>; and another after fol.<locus from="97">97</locus>, containing from <bibl>p. 74, E, to p. 85, B, of the Paris edition</bibl>.</note>
+                  <note>Cf. <bibl>Opera, t. iii., p. 1</bibl>; <bibl>Migne, t. xxxii., col. 67</bibl>
+                  </note>
                 </msItem>
                 <msItem xml:id="p2b5" n="6">
                   <locus from="107b" to="116">Foll. 107b-116</locus>
-                  <author ref="http://syriaca.org/person/376">Basil of Caesarea</author>
-                  <title type="supplied">The first homily on Lent</title>
+                  <author ref="http://syriaca.org/person/376">
+                    <persName xml:lang="en">Basil of Caesarea</persName>
+                  </author>
+                  <title xml:lang="en">The first homily on Lent</title>
                   <rubric xml:lang="syr">ܡܐܡܪܐ ܕܥܠ ܨܘܡܐ<locus from="107b"/>
                   </rubric>
-                  <listBibl>
-                    <bibl>Opera, t. ii., p. 1</bibl>
-                    <bibl>Migne, t. xxxi., col. 163</bibl>
-                  </listBibl>
+                  <note>Cf. <bibl>Opera, t. ii., p. 1</bibl>; <bibl>Migne, t. xxxi., col. 163</bibl>
+                  </note>
                 </msItem>
                 <msItem xml:id="p2b6" n="7">
                   <locus from="116b" to="127">Foll. 116b-127</locus>
-                  <author ref="http://syriaca.org/person/376">Basil of Caesarea</author>
-                  <title type="supplied">On Anger and Wrath</title>
+                  <author ref="http://syriaca.org/person/376">
+                    <persName xml:lang="en">Basil of Caesarea</persName>
+                  </author>
+                  <title xml:lang="en">On Anger and Wrath</title>
                   <rubric xml:lang="syr">ܡܐܡܪܐ ܕܥܠ ܚܡܬܐ ܘܪܘܓܙܐ<locus from="116b"/>
                   </rubric>
-                  <listBibl>
-                    <bibl>Opera, t. ii., p. 116</bibl>
-                    <bibl>Migne, t. xxxi., col. 353</bibl>
-                  </listBibl>
+                  <note>Cf. <bibl>Opera, t. ii., p. 116</bibl>; <bibl>Migne, t. xxxi., col. 353</bibl>
+                  </note>
                 </msItem>
                 <msItem xml:id="p2b7" n="8">
                   <locus from="127b" to="134">Foll. 127b-134</locus>
-                  <author ref="http://syriaca.org/person/376">Basil of Caesarea</author>
-                  <title type="supplied">The first homily on Faith</title>
+                  <author ref="http://syriaca.org/person/376">
+                    <persName xml:lang="en">Basil of Caesarea</persName>
+                  </author>
+                  <title xml:lang="en">The first homily on Faith</title>
                   <rubric xml:lang="syr">ܡܐܡܪܐ ܕܥܠ ܗܝܡܢܘܬܐ<locus from="127b"/>
                   </rubric>
-                  <listBibl>
-                    <bibl>Opera, t. ii., p. 182</bibl>
-                    <bibl>Migne, t. xxxi., col. 463</bibl>
-                  </listBibl>
+                  <note>Cf. <bibl>Opera, t. ii., p. 182</bibl>; <bibl>Migne, t. xxxi., col. 463</bibl>
+                  </note>
                 </msItem>
                 <msItem xml:id="p2b8" n="9">
                   <locus from="134a" to="141">Foll. 134a-141</locus>
-                  <author ref="http://syriaca.org/person/376">Basil of Caesarea</author>
-                  <title type="supplied">The second homily on Faith</title>
+                  <author ref="http://syriaca.org/person/376">
+                    <persName xml:lang="en">Basil of Caesarea</persName>
+                  </author>
+                  <title xml:lang="en">The second homily on Faith</title>
                   <rubric xml:lang="syr">ܡܐܡܪܐ ܕܬܪ̈ܝܢ ܕܥܠ ܗܝܡܢܘܬܐ<locus from="134a"/>
                   </rubric>
-                  <listBibl>
-                    <bibl>Opera, t. ii., p. 867</bibl>
-                    <bibl>Migne, t. xxxi., col. 1487</bibl>
-                  </listBibl>
+                  <note>Cf. <bibl>Opera, t. ii., p. 867</bibl>; <bibl>Migne, t. xxxi., col. 1487</bibl>
+                  </note>
                 </msItem>
                 <msItem xml:id="p2b9" n="10" defective="true">
                   <locus from="141a" to="147">Foll. 141a-147</locus>
-                  <author ref="http://syriaca.org/person/376">Basil of Caesarea</author>
-                  <title type="supplied">Homily on Psalm I</title>
+                  <author ref="http://syriaca.org/person/376">
+                    <persName xml:lang="en">Basil of Caesarea</persName>
+                  </author>
+                  <title xml:lang="en">Homily on Psalm I</title>
                   <rubric xml:lang="syr">ܡܐܡܪܐ ܥܠ ܬܠܬܐ ܦܬ̈ܓܡܝܢ ܩܕܡܝܐ ܕܛܘܒܘܗܝ ܠܓܒܪܐ ܕܒܐܘܪܚܐ ܕܥܘ̈ܠܐ ܠܐ ܗܠܟ<locus from="141a"/>
                   </rubric>
-                  <note>It is imperfect, ending at<bibl>p. 133, A, of the Paris edition</bibl>.</note>
-                  <listBibl>
-                    <bibl>Opera, t. i., p. 127</bibl>
-                    <bibl>Migne, t. xxix., col. 209</bibl>
-                  </listBibl>
+                  <note>It is imperfect, ending at <bibl>p. 133, A, of the Paris edition</bibl>.</note>
+                  <note>Cf. <bibl>Opera, t. i., p. 127</bibl>; <bibl>Migne, t. xxix., col. 209</bibl>
+                  </note>
                 </msItem>
               </msItem>
             </msContents>
@@ -398,16 +374,11 @@
                   </support>
                   <extent>
                     <measure type="composition" unit="leaf" quantity="146">146 ff.</measure>
-                    <dimensions type="leaf" unit="in">
-                      <height>
-                        <measure type="height" quantity="9.875" unit="in">9 7/8</measure>
-                      </height>
-                      <width>
-                        <measure type="width" quantity="6.25" unit="in">6 1/4</measure>
-                      </width>
+                    <dimensions type="leaf" unit="inch">
+                      <height quantity="9.875">9 7/8</height>
+                      <width quantity="6.25">6 1/4</width>
                     </dimensions>
                   </extent>
-                  <foliation/>
                   <collation>
                     <p>The quires, now signed with letters, are 15 in number.</p>
                   </collation>
@@ -430,33 +401,24 @@
               </objectDesc>
               <handDesc hands="1">
                 <handNote xml:id="p2handNote1" scope="sole" script="syr-Syre" medium="unknown">
-                  <desc>The writing is a neat, regular Estrangela of the<origDate notBefore="0500" notAfter="0600" calendar="Gregorian">vith cent</origDate>.</desc>
+                  The writing is a neat, regular Estrangela of the <date notBefore="0500" notAfter="0600" calendar="Gregorian">vith cent</date>.
                 </handNote>
               </handDesc>
-              <decoDesc/>
-              <additions/>
-              <bindingDesc/>
-              <sealDesc/>
-              <accMat/>
-            </physDesc>
+              </physDesc>
             <history>
-              <summary/>
               <origin>
-                <origDate notBefore="0500" notAfter="0600" calendar="Gregorian">vith cent</origDate>
-                <origPlace/>
+                <origDate calendar="Gregorian" notBefore="0500" notAfter="0600">6th century</origDate>
+                
               </origin>
-              <provenance/>
-              <acquisition/>
-            </history>
+              </history>
             <additional>
               <adminInfo>
                 <recordHist>
-                  <source>Manuscript description based on<bibl>
+                  <source>Manuscript description based on <bibl>
                       <ref target="#Wrightpart2">Wright's Catalogue</ref>
                     </bibl>. abbreviated by the Syriaca.org editors.</source>
                 </recordHist>
-                <note/>
-              </adminInfo>
+                </adminInfo>
               <listBibl>
                 <bibl xml:id="Wrightpart2">
                   <author>William Wright</author>
@@ -465,7 +427,7 @@
                   <date>1870</date>
                   <ptr target="http://syriaca.org/bibl/8"/>
                   <citedRange unit="entry">DL</citedRange>
-                  <citedRange unit="pp">2:419-420</citedRange>
+                  <citedRange unit="p">2:419-420</citedRange>
                 <ref type="internet-archive-pdf" target="https://archive.org/details/catalogueofsyria02brituoft/page/419"/>
                 </bibl>
               </listBibl>
@@ -490,7 +452,6 @@
       <classDecl>
         <taxonomy xml:id="Wright-BL-Taxonomy">
           <bibl>
-            
             <ptr target="http://syriaca.org/documentation/Wright-BL-Taxonomy.html"/>
           </bibl>
           <category xml:id="biblical-manuscripts">
@@ -607,22 +568,30 @@
     </encodingDesc>
     <profileDesc>
       <langUsage>
-        <language ident="syr">Unvocalized Syriac of any variety or period</language>
-        <language ident="syr-Syre">Syriac in Estrangela</language>
-        <language ident="syr-Syrj">Vocalized West Syriac</language>
-        <language ident="syr-Syrn">Vocalized East Syriac</language>
-        <language ident="syr-x-syrm">Melkite Syriac</language>
-        <language ident="qhy-x-cpas">Palestinian Syriac</language>
-        <language ident="ar-Syrc">Unvocalized or Undetermined Arabic Garshuni</language>
-        <language ident="ar-Syrj">Arabic Garshuni in Vocalized West Syriac Script</language>
-        <language ident="ar-Syrn">Arabic Garshuni in Vocalized East Syriac Script</language>
-        <language ident="en">English</language>
         <language ident="ar">Arabic</language>
-        <language ident="fr">French</language>
-        <language ident="de">German</language>
-        <language ident="la">Latin</language>
-        <language ident="grc">Ancient Greek</language>
+        <language ident="ar-Syrc">Arabic Garshuni</language>
+        <language ident="ar-Syrn">Arabic Garshuni in East Syriac script</language>
         <language ident="cop">Coptic</language>
+        <language ident="de">German</language>
+        <language ident="en">English</language>
+        <language ident="fr">French</language>
+        <language ident="grc">Ancient Greek</language>
+        <language ident="he">Hebrew</language>
+        <language ident="hy">Armenian</language>
+        <language ident="it">Italian</language>
+        <language ident="la">Latin</language>
+        <language ident="syr">Syriac</language>
+        <language ident="syr-Arab">Syriac Garshuni in Arabic script</language>
+        <language ident="syr-Syre">Syriac in Estrangela script</language>
+        <language ident="syr-Syrj">Syriac in West Syriac script</language>
+        <language ident="syr-Syrn">Syriac in East Syriac script</language>
+        <language ident="syr-x-syrm">Syriac in Melkite Syriac script</language>
+        <language ident="tr">Turkish</language>
+        <language ident="tr-Syrc">Turkish Garshuni</language>
+        <language ident="qhy-x-cpas">Christian Palestinian Aramaic script</language>
+        <language ident="xcl">Classical Armenian</language>
+        <language ident="und">Undetermined</language>
+        <language ident="mul">Multiple languages</language>
       </langUsage>
       <textClass>
         <keywords scheme="#Wright-BL-Taxonomy">
@@ -644,18 +613,16 @@
       <change who="https://bl.syriac.uk/documentation/editors.xml#jarnwine" when="2023-01-13-06:00">ADDED: supplied and corrected Syriaca.org URIs for authors</change>
       <change who="https://bl.syriac.uk/documentation/editors.xml#jarnwine" when="2022-05-10">Updates to physDesc for Part1 and Part2</change>
       <change who="https://bl.syriac.uk/documentation/editors.xml#jarnwine" when="2014-02-17">Created: file</change>
-      <change type="planned" subtype="uri">Needs Addition of work URIs.</change>
-      <change type="planned" subtype="uri">
-        <ref target="#Part1">msPart1</ref>needs URI.</change>
+      <change type="planned" subtype="uri" who="https://bl.syriac.uk/documentation/editors.xml#smbl-general-editors">Needs Addition of work URIs.</change>
+      <change type="planned" subtype="uri" who="https://bl.syriac.uk/documentation/editors.xml#smbl-general-editors">
+        <ref target="#Part1">msPart1</ref> needs URI.</change>
       <change who="https://bl.syriac.uk/documentation/editors.xml#pgmiller" when="2016-07-06">Changed: Files moved to srophe-app-data/data/manuscripts/tei repository.</change>
     </revisionDesc>
   </teiHeader>
-  <facsimile>
-    <graphic/>
-  </facsimile>
   <text>
     <body>
       <p/>
+      <!--Body paragraph provided for document validation.-->
     </body>
   </text>
 </TEI>

@@ -1,4 +1,7 @@
-<?oxygen RNGSchema="http://syriaca.org/documentation/syriaca-tei-main.rnc" type="compact"?><?xml-stylesheet type="text/css" href="https://raw.githubusercontent.com/srophe/wright-catalogue/master/parameters/tei.css"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+<?xml-model href="https://raw.githubusercontent.com/srophe/britishLibrary/main/documentation/schema/out/Syriacamsdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/srophe/britishLibrary/main/documentation/schema/out/Syriacamsdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet href="https://raw.githubusercontent.com/srophe/wright-catalogue/master/parameters/tei.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="manuscript_179">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -21,10 +24,7 @@
           <resp>Based on the work of</resp>
           <name type="person" ref="https://bl.syriac.uk/documentation/editors.xml#wwright">William Wright</name>
         </respStmt>
-        <respStmt>
-          <resp>Edited by</resp>
-          <name type="person" ref="https://bl.syriac.uk/documentation/editors.xml#"/>
-        </respStmt>
+        
         <respStmt>
           <resp>Syriac text entered by</resp>
           <name type="person" ref="https://bl.syriac.uk/documentation/editors.xml#raydin">Robert Aydin</name>
@@ -53,7 +53,6 @@
         <authority>Syriaca.org: The Syriac Reference Portal</authority>
         <idno type="URI">https://bl.syriac.uk/ms/179/tei</idno>
         <availability>
-          <p/>
           <licence target="http://creativecommons.org/licenses/by/3.0/">
             <p>Distributed under a Creative Commons Attribution 3.0 Unported License</p>
           </licence>
@@ -75,7 +74,7 @@
               <idno type="BL-Shelfmark-display">London, BL, Add. 14,489</idno>
             </altIdentifier>
             <altIdentifier>
-              <idno type="BL-Shelmark-simplified">BL Add MS 14489</idno>
+              <idno type="BL-Shelfmark-simplified">BL Add MS 14489</idno>
             </altIdentifier>
             <altIdentifier>
               <collection>William Wright, Catalogue of the Syriac Manuscripts in the British Museum Acquired since the Year 1838</collection>
@@ -95,8 +94,8 @@
             </listRelation>
           </head>
           <msContents>
-            <textLang mainLang="syr"/>
-            <msItem xml:id="a1" n="1">
+            <textLang mainLang="syr">Syriac</textLang>
+            <msItem xml:id="a1" n="1" defective="true">
               <locus from="1a"/>
               <title xml:lang="en">A Lectionary from the Gospels, arranged according to the
                 Malkite or Greek use, and called a Synaxarion of Lessons</title>
@@ -128,8 +127,8 @@
                 </msItem>
                 <msItem xml:id="c5" n="7">
                   <locus from="4a"/>
-                  <title xml:lang="en">Thursday, the feast of <persName>S. James</persName>
-                    and <persName>S. John</persName>
+                  <title xml:lang="en">Thursday, the feast of S. James
+                    and S. John
                   </title>
                   <rubric xml:lang="syr">ܝܘܡ: ܏ܗ : ܒ܏ܫܒ ܕܢܝ̇ܚܬܐ ܘܥܐܕܐ ܕܫ̈ܠܝܚܐ ܝܥܩܘܒ ܘܝܘܚܢܢ</rubric>
                 </msItem>
@@ -413,8 +412,6 @@
                 <extent>
                   <measure type="composition" unit="leaf" quantity="187">187 ff.</measure>
                 </extent>
-                <foliation/>
-                <collation/>
                 <condition>
                   <list>
                     <item>
@@ -430,15 +427,13 @@
             </objectDesc>
             <handDesc hands="2">
               <handNote xml:id="handNote1" medium="unknown" scope="major" script="syr">
-                <desc>This volume is written in a good, regular hand, and dated A. Gr. 1357, A.D.
-                  1046.</desc>
-              </handNote>
+                This volume is written in a good, regular hand, and dated A. Gr. 1357, A.D.
+                  1046.</handNote>
               <handNote xml:id="handNote2" medium="unknown" scope="minor" script="syr">
-                <desc>See additions. </desc>
+                See additions. 
               </handNote>
             </handDesc>
             <additions>
-              <p/>
               <list>
                 <item xml:id="addition1" n="1">
                   <locus from="186a"/>
@@ -508,28 +503,26 @@
                 </item>
               </list>
             </additions>
-            <accMat/>
-          </physDesc>
+            </physDesc>
           <history>
             <origin>
-              <origDate calendar="Gregorian" when="1046">A.D. 1046</origDate>
-              <origDate datingMethod="Seleucid" when-custom="1357">A. Gr. 1357</origDate>
+              <origDate calendar="Gregorian" when="1046">AD 1046</origDate>
+              <origDate calendar="Seleucid" datingMethod="Seleucid" when-custom="1357">AG 1357</origDate>
+              
+              
               <origPlace>The convent of Elias, on the Black Mountain called the
                 Boar's Head, near Antioch</origPlace>
             </origin>
-            <provenance/>
-            <acquisition/>
-          </history>
+            </history>
           <additional>
             <adminInfo>
               <recordHist>
-                <source>Manuscript description based on<bibl>
+                <source>Manuscript description based on <bibl>
                     <ref target="#Wrightpart">Wright's
                       Catalogue</ref>
                   </bibl>. abbreviated by the Syriaca.org editors.</source>
               </recordHist>
-              <note/>
-            </adminInfo>
+              </adminInfo>
             <listBibl>
               <bibl xml:id="Wrightpart">
                 <author>William Wright</author>
@@ -539,7 +532,7 @@
                 <date>1870</date>
                 <ptr target="http://syriaca.org/bibl/8"/>
                 <citedRange unit="entry">CCLI</citedRange>
-                <citedRange unit="pp">1:200-202</citedRange>
+                <citedRange unit="p">1:200-202</citedRange>
               <ref type="internet-archive-pdf" target="https://archive.org/details/catalogueofsyria01brituoft/page/200"/>
               </bibl>
             </listBibl>
@@ -563,7 +556,6 @@
       <classDecl>
         <taxonomy xml:id="Wright-BL-Taxonomy">
           <bibl>
-            
             <ptr target="http://syriaca.org/documentation/Wright-BL-Taxonomy.html"/>
           </bibl>
           <category xml:id="biblical-manuscripts">
@@ -680,22 +672,30 @@
     </encodingDesc>
     <profileDesc>
       <langUsage>
-        <language ident="syr">Unvocalized Syriac of any variety or period</language>
-        <language ident="syr-Syre">Syriac in Estrangela</language>
-        <language ident="syr-Syrj">Vocalized West Syriac</language>
-        <language ident="syr-Syrn">Vocalized East Syriac</language>
-        <language ident="syr-x-syrm">Melkite Syriac</language>
-        <language ident="qhy-x-cpas">Palestinian Syriac</language>
-        <language ident="ar-Syrc">Unvocalized or Undetermined Arabic Garshuni</language>
-        <language ident="ar-Syrj">Arabic Garshuni in Vocalized West Syriac Script</language>
-        <language ident="ar-Syrn">Arabic Garshuni in Vocalized East Syriac Script</language>
-        <language ident="en">English</language>
         <language ident="ar">Arabic</language>
-        <language ident="fr">French</language>
-        <language ident="de">German</language>
-        <language ident="la">Latin</language>
-        <language ident="grc">Ancient Greek</language>
+        <language ident="ar-Syrc">Arabic Garshuni</language>
+        <language ident="ar-Syrn">Arabic Garshuni in East Syriac script</language>
         <language ident="cop">Coptic</language>
+        <language ident="de">German</language>
+        <language ident="en">English</language>
+        <language ident="fr">French</language>
+        <language ident="grc">Ancient Greek</language>
+        <language ident="he">Hebrew</language>
+        <language ident="hy">Armenian</language>
+        <language ident="it">Italian</language>
+        <language ident="la">Latin</language>
+        <language ident="syr">Syriac</language>
+        <language ident="syr-Arab">Syriac Garshuni in Arabic script</language>
+        <language ident="syr-Syre">Syriac in Estrangela script</language>
+        <language ident="syr-Syrj">Syriac in West Syriac script</language>
+        <language ident="syr-Syrn">Syriac in East Syriac script</language>
+        <language ident="syr-x-syrm">Syriac in Melkite Syriac script</language>
+        <language ident="tr">Turkish</language>
+        <language ident="tr-Syrc">Turkish Garshuni</language>
+        <language ident="qhy-x-cpas">Christian Palestinian Aramaic script</language>
+        <language ident="xcl">Classical Armenian</language>
+        <language ident="und">Undetermined</language>
+        <language ident="mul">Multiple languages</language>
       </langUsage>
       <textClass>
         <keywords scheme="#Wright-BL-Taxonomy">
@@ -713,16 +713,14 @@
       <change who="https://bl.syriac.uk/documentation/editors.xml#srophe-util" when="2020-03-13-05:00">CHANGED: Added project metadata; metadata from Wright Decoder; msItem, handDesc, and additions enumeration; Wright Taxonomy designation</change>
       <change who="https://bl.syriac.uk/documentation/editors.xml#akelly" when="2020-02-16">Initial
         TEI encoding.</change>
-      <change type="planned" subtype="greek">Add in missing Greek characters. See comment in
+      <change type="planned" subtype="greek" who="https://bl.syriac.uk/documentation/editors.xml#smbl-general-editors">Add in missing Greek characters. See comment in
         additions. </change>
     </revisionDesc>
   </teiHeader>
-  <facsimile>
-    <formula>Content pending</formula>
-  </facsimile>
   <text>
     <body>
-      <bibl>Content pending</bibl>
+      <p/>
+      <!--Body paragraph provided for document validation.-->
     </body>
   </text>
 </TEI>

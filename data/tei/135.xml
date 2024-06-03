@@ -1,4 +1,7 @@
-<?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/srophe-app/documentation/enrich-syriaca.rnc" type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/css" href="SRPEnrichCSS.css"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+<?xml-model href="https://raw.githubusercontent.com/srophe/britishLibrary/main/documentation/schema/out/Syriacamsdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/srophe/britishLibrary/main/documentation/schema/out/Syriacamsdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet href="https://raw.githubusercontent.com/srophe/wright-catalogue/master/parameters/tei.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="manuscript_135">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -49,11 +52,9 @@
         <edition n="1.0"/>
       </editionStmt>
       <publicationStmt>
-        <pubPlace/>
         <authority>Syriaca.org: The Syriac Reference Portal</authority>
         <idno type="URI">https://bl.syriac.uk/ms/135/tei</idno>
         <availability>
-          <p/>
           <licence target="http://creativecommons.org/licenses/by/3.0/">
             <p>Distributed under a Creative Commons Attribution 3.0 Unported License</p>
           </licence>
@@ -61,7 +62,7 @@
         <date calendar="Gregorian">2023-04-21-05:00</date>
       </publicationStmt>
       <sourceDesc>
-        <msDesc xml:id="manuscript-135" xml:lang="en">
+        <msDesc xml:id="manuscript-135">
           <msIdentifier>
             <country>United Kingdom</country>
             <settlement>London</settlement>
@@ -75,7 +76,7 @@
               <idno type="BL-Shelfmark-display">London, BL, Add. 14,460</idno>
             </altIdentifier>
             <altIdentifier>
-              <idno type="BL-Shelmark-simplified">BL Add MS 14460</idno>
+              <idno type="BL-Shelfmark-simplified">BL Add MS 14460</idno>
             </altIdentifier>
             <altIdentifier>
               <collection>William Wright, Catalogue of the Syriac Manuscripts in the British Museum Acquired since the Year 1838</collection>
@@ -95,50 +96,49 @@
             </listRelation>
           </head>
           <msContents>
-            <summary/>
             <textLang mainLang="syr">Syriac</textLang>
-            <msItem xml:id="a1" n="1">
+            <msItem xml:id="a1" n="1" defective="true">
               <locus from="1" to="104">Foll. 1-104</locus>
-              <title type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">The four Gospels according to the Peshitta version, prefixed by a hymn or prayer</title>
+              <title xml:lang="en">The four Gospels according to the Peshitta version, prefixed by a hymn or prayer</title>
               <colophon>
                 <ref target="#addition3">See additions.</ref>
               </colophon>
               <msItem xml:id="b1" n="2">
                 <locus from="1a" to="1a">Fol. 1a</locus>
-                <title type="supplied">Seems, so far as it is legible, to be part of a hymn or prayer</title>
+                <title xml:lang="en">Seems, so far as it is legible, to be part of a hymn or prayer</title>
               </msItem>
               <msItem xml:id="b2" n="3" defective="true">
                 <locus from="1b" to="104a">Foll. 1b-104a</locus>
-                <title ref="http://syriaca.org/work/71" type="supplied">The four Gospels according to the Peshitta version</title>
+                <title ref="http://syriaca.org/work/71" xml:lang="en">The four Gospels according to the Peshitta version</title>
                 <colophon>
                   <ref target="#addition3">See additions.</ref>
                 </colophon>
                 <note>The larger sections are marked on the margins.</note>
                 <msItem xml:id="c1" n="4" defective="true">
                   <locus from="1b" to="29">Foll. 1b-29</locus>
-                  <title ref="http://syriaca.org/work/72" type="supplied">Matthew</title>
+                  <title ref="http://syriaca.org/work/72" xml:lang="en">Matthew</title>
                   <note>The missing portion is ch. vii. 18—viii. 26.</note>
                 </msItem>
                 <msItem xml:id="c2" n="5">
                   <locus from="29b" to="46">Foll. 29b-46</locus>
-                  <title ref="http://syriaca.org/work/73" type="supplied">Mark</title>
+                  <title ref="http://syriaca.org/work/73" xml:lang="en">Mark</title>
                 </msItem>
                 <msItem xml:id="c3" n="6">
                   <locus from="46a" to="78">Foll. 46a-78</locus>
-                  <title ref="http://syriaca.org/work/74" type="supplied">Luke</title>
+                  <title ref="http://syriaca.org/work/74" xml:lang="en">Luke</title>
                   <rubric xml:lang="syr">ܐܘܢܓܠܝܘܢ ܩܕܝܫܐ ܕܝܫܘܥ ܡܫܝܚܐ ܟܪܘܙܘܬܐ ܕܛܘܒܢܐ ܠܘܩܐ<choice>
                       <orig>ܚ</orig>
                       <reg>ܚܕ</reg>
                     </choice>ܡܢ ܫܒܥܝܢ<choice>
                       <orig>ܫܠܝ̈</orig>
                       <reg>ܫܠܝ̈ܚܐ</reg>
-                    </choice>.<locus from="46a" to="46a"/>
+                    </choice>. <locus from="46a" to="46a"/>
                   </rubric>
                 </msItem>
                 <msItem xml:id="c4" n="7">
                   <locus from="78a" to="104a">Foll. 78a-104a</locus>
-                  <title ref="http://syriaca.org/work/75" type="supplied">John</title>
-                  <finalRubric type="doxology">At the end of the subscription to the last Gospel, fol. 104 a, we have the doxology:<quote xml:lang="syr">ܫܘܒܚܐ ܡܢ ܟܠ ܥܠ ܟܠ ܠܡܪܝܐ ܟܠ ܡܫܡܠܐ ܟܠ ܒܫܘܡܠܝܗ ܐܡܝܢ.</quote>
+                  <title ref="http://syriaca.org/work/75" xml:lang="en">John</title>
+                  <finalRubric xml:lang="syr" type="doxology">At the end of the subscription to the last Gospel, fol. 104 a, we have the doxology:<quote xml:lang="syr">ܫܘܒܚܐ ܡܢ ܟܠ ܥܠ ܟܠ ܠܡܪܝܐ ܟܠ ܡܫܡܠܐ ܟܠ ܒܫܘܡܠܝܗ ܐܡܝܢ.</quote>
                     <locus from="104a" to="104a"/>
                   </finalRubric>
                 </msItem>
@@ -154,26 +154,21 @@
                 </support>
                 <extent>
                   <measure type="composition" unit="leaf" quantity="104">104 ff.</measure>
-                  <dimensions type="leaf" unit="in">
-                    <height>
-                      <measure type="height" quantity="7.5" unit="in">7 1/2 in.</measure>
-                    </height>
-                    <width>
-                      <measure type="width" quantity="4.875" unit="in">4 7/8 in.</measure>
-                    </width>
+                  <dimensions type="leaf" unit="inch">
+                    <height quantity="7.5">7 1/2</height>
+                    <width quantity="4.875">4 7/8</width>
                   </dimensions>
                 </extent>
-                <foliation/>
                 <collation>
                   <p>The quires, 11 in number, are now signed with letters; what the original signatures were, if any, does not appear.</p>
                 </collation>
                 <condition>
                   <list>
                     <item>
-                      <p>Some leaves are slightly stained and torn, especially foll.<locus from="1" to="11">1 —11</locus>,<locus from="28" to="29">28, 29</locus>, and<locus from="101" to="104">101 — 104</locus>.</p>
+                      <p>Some leaves are slightly stained and torn, especially foll.<locus from="1" to="11">1 —11</locus>, <locus from="28" to="29">28, 29</locus>, and <locus from="101" to="104">101 — 104</locus>.</p>
                     </item>
                     <item>
-                      <p>A leaf is wanting after<locus from="6" to="6">fol. 6</locus>.</p>
+                      <p>A leaf is wanting after <locus from="6" to="6">fol. 6</locus>.</p>
                     </item>
                   </list>
                 </condition>
@@ -186,21 +181,16 @@
             </objectDesc>
             <handDesc hands="3">
               <handNote xml:id="handNote1" scope="major" script="syr-Syrn" medium="unknown">
-                <desc>This manuscript is written in a small and beautiful Nestorian Estrangela, and dated<origDate when-custom="0911" datingMethod="Seleucid">A. Gr. 911</origDate>,<origDate when="0600" calendar="Gregorian">A.D. 600</origDate>.<ref target="#addition3">See additions.</ref>
-                </desc>
-              </handNote>
+                This manuscript is written in a small and beautiful Nestorian Estrangela, and dated <date when-custom="0911" datingMethod="Seleucid">A. Gr. 911</date>, <date when="0600" calendar="Gregorian">A.D. 600</date>. <ref target="#addition3">See additions.</ref>
+                </handNote>
               <handNote xml:id="handNote2" scope="minor" script="syr" medium="unknown">
-                <desc>A modern hand. Responsible for<ref target="#a1">writing on<locus from="1a" to="1a">fol. 1a</locus>
-                  </ref>.<ref target="#addition2 #addition4">See additions also.</ref>
-                </desc>
-              </handNote>
+                A modern hand. Responsible for <ref target="#a1">writing on <locus from="1a" to="1a">fol. 1a</locus>
+                  </ref>. <ref target="#addition2 #addition4">See additions also.</ref>
+                </handNote>
               <handNote xml:id="handNote3" scope="minor" script="syr" medium="unknown">
-                <desc>
-                  <ref target="#addition1">See additions.</ref>
-                </desc>
-              </handNote>
+                <ref target="#addition1">See additions.</ref>
+                </handNote>
             </handDesc>
-            <decoDesc/>
             <additions>
               <note type="proofreader-note">N.B., folio location may not be available for some items below.</note>
               <list>
@@ -208,18 +198,19 @@
                   <p>Lessons have been noted in many places by later hands.</p>
                 </item>
                 <item xml:id="addition2" n="2">
-                  <p>Several pages have been re-touched by a modern hand, especially<locus from="29a" to="29a">fol. 29 a</locus>.</p>
+                  <p>Several pages have been re-touched by a modern hand, especially <locus from="29a" to="29a">fol. 29 a</locus>.</p>
                 </item>
-                <item xml:id="addition3" n="3" syriaca-tags="doxology scribal-colophon">
+                <item xml:id="addition3" n="3">
                   <label>Colophon</label>
                   <locus from="104a" to="104a"/>
-                  <p>Under the doxology, there stands a note, partially effaced and torn, which states that the volume was written at<placeName>Tel-Dīnawar</placeName>in the<placeName>district of Beth-Nūhadrā</placeName>, [See<bibl>Assemani, Bibl. Orient., t. iii. Pars 2, pag. DCCXLIII., art. Dinur</bibl>, and<bibl>pag. DCCLXIX., art. Nuhadra</bibl>. He is mistaken in his identification of the latter with Nehardea]<origDate when-custom="0911" datingMethod="Seleucid">A. Gr. 911</origDate>,<origDate when="0600" calendar="Gregorian">A.D. 600</origDate>, in the tenth year of the reign of<listPerson>
-                      <person>
-                        <persName>Khusrau</persName>
-                        <persName>(Parwīz,</persName>
-                        <persName>Chosroes II.</persName>
-                      </person>
-                    </listPerson>,<date notBefore="0591" notAfter="0628" calendar="Gregorian">A.D. 591— 628</date>). From this note we learn too that there was a<placeName>Nestorian school or college at<placeName>Dīnawar</placeName>
+                  <p>Under the doxology, there stands a note, partially effaced and torn, which states that the volume was written at 
+                    <placeName>Tel-Dīnawar</placeName> in the <placeName>district of Beth-Nūhadrā</placeName>, 
+                    [See <bibl>Assemani, Bibl. Orient., t. iii. Pars 2, pag. DCCXLIII., art. Dinur</bibl>, and <bibl>pag. DCCLXIX., art. Nuhadra</bibl>. 
+                    He is mistaken in his identification of the latter with Nehardea] <date when-custom="0911" datingMethod="Seleucid">A. Gr. 911</date>, 
+                    <date when="0600" calendar="Gregorian">A.D. 600</date>, in the tenth year of the reign of 
+                    <persName>Khusrau</persName>
+                    (<persName>Parwīz</persName>, <persName>Chosroes II</persName>, <date notBefore="0591" notAfter="0628" calendar="Gregorian">A.D. 591— 628</date>). 
+                    From this note we learn too that there was a <placeName>Nestorian school or college at <placeName>Dīnawar</placeName>
                     </placeName>.</p>
                   <quote xml:lang="syr">
                     <p>ܐܫܬܠܡ ܕܝܢ ܟܬܒܐ ܗܢܐ ܕܐܘܢܓܠܝܘܢ ܡـ[ܩܕܫܐ ܒ]ܫ[ܢܬ] ܬܫܥܡܐܐ ܘܚܕܥܣܪܐ ܒܕܝ̈ܘܢܝܐ. ܕܐܝܬܝܗ̇ ܒܕ . . . ܫܢܬ ܥܣܪ ܕܟܘܣܪܘ ܡܠܟ ܡ̈ܠܟܐ ܒܬܠܕܝܢܘ[ܪ]. ܕܒܐܬܪܐ ܕܒܝܬ ܢܘܗܕܪܐ. ܒܡܠܦܢܘܬܐ ܕܡ̈ـ . . ܘܕܚ̈ܠܝ ܠܐܠܗܐ ܡܪܝ ܒܕܒܘ (؟) ܩܫܝܫܐ ܘܡـ . . . ܐܠܗ̈ܝܐ. ܘܡܪܝ ܚܒܝܒܝ ܡـ[ܩܪܝܢـ]ܐ. ܘ. . . ܩܫܝܫܐ ܡܗܓܝܢܐ. ܘܡܪܝ ܙܟܪܝܐ ܕ . . . ܕܐܣܟܘܠܐ. ܘܝܘܣܦ ܕܘܟܣ. ܫܘܒܚܐ ܠܗ̇ܘ ܟܝܢܐ ܣܓܝܕܐ ܕܫ[ܪܝ]. . . ܘܫܠܡ ܥܡܢ ܒܡܪܚܡܢܘܬܗ ܒܪܝ . . . ܠܫܡܗ ܠܥܠܡܝܢ ܐܡܝܢ܀</p>
@@ -228,33 +219,29 @@
                 </item>
                 <item xml:id="addition4" n="4">
                   <locus from="106b" to="106b"/>
-                  <p>The modern writing on fol. 106b is a statement of the number of<foreign xml:lang="syr">ܦ̈ܬܓܡܐ</foreign>or versicles in<ref target="#a2">the four Gospels</ref>.</p>
+                  <p>The modern writing on fol. 106b is a statement of the number of <foreign xml:lang="syr">ܦ̈ܬܓܡܐ</foreign> or versicles in <ref target="#a2">the four Gospels</ref>.</p>
                 </item>
               </list>
             </additions>
-            <bindingDesc/>
-            <sealDesc/>
-            <accMat/>
-          </physDesc>
+            </physDesc>
           <history>
             <origin>
-              <origDate when-custom="0911" datingMethod="Seleucid">A. Gr. 911</origDate>
-              <origDate when="0600" calendar="Gregorian">A.D. 600</origDate>
+              <origDate calendar="Seleucid" datingMethod="Seleucid" when-custom="0911">AG 911</origDate>
+              <origDate calendar="Gregorian" when="0600">AD 600</origDate>
+              
+              
               <origPlace>Tel-Dīnawar in the <placeName>district of Beth-Nūhadrā</placeName>
               </origPlace>
             </origin>
-            <provenance/>
-            <acquisition/>
-          </history>
+            </history>
           <additional>
             <adminInfo>
               <recordHist>
-                <source>Manuscript description based on<bibl>
+                <source>Manuscript description based on <bibl>
                     <ref target="#Wrightpart">Wright's Catalogue</ref>
                   </bibl>. abbreviated by the Syriaca.org editors.</source>
               </recordHist>
-              <note/>
-            </adminInfo>
+              </adminInfo>
             <listBibl>
               <bibl xml:id="Wrightpart">
                 <author>William Wright</author>
@@ -263,7 +250,7 @@
                 <date>1870</date>
                 <ptr target="http://syriaca.org/bibl/8"/>
                 <citedRange unit="entry">LXXVI</citedRange>
-                <citedRange unit="pp">1:52-53</citedRange>
+                <citedRange unit="p">1:52-53</citedRange>
               <ref type="internet-archive-pdf" target="https://archive.org/details/catalogueofsyria01brituoft/page/52"/>
               </bibl>
             </listBibl>
@@ -287,7 +274,6 @@
       <classDecl>
         <taxonomy xml:id="Wright-BL-Taxonomy">
           <bibl>
-            
             <ptr target="http://syriaca.org/documentation/Wright-BL-Taxonomy.html"/>
           </bibl>
           <category xml:id="biblical-manuscripts">
@@ -404,22 +390,30 @@
     </encodingDesc>
     <profileDesc>
       <langUsage>
-        <language ident="syr">Unvocalized Syriac of any variety or period</language>
-        <language ident="syr-Syre">Syriac in Estrangela</language>
-        <language ident="syr-Syrj">Vocalized West Syriac</language>
-        <language ident="syr-Syrn">Vocalized East Syriac</language>
-        <language ident="syr-x-syrm">Melkite Syriac</language>
-        <language ident="qhy-x-cpas">Palestinian Syriac</language>
-        <language ident="ar-Syrc">Unvocalized or Undetermined Arabic Garshuni</language>
-        <language ident="ar-Syrj">Arabic Garshuni in Vocalized West Syriac Script</language>
-        <language ident="ar-Syrn">Arabic Garshuni in Vocalized East Syriac Script</language>
-        <language ident="en">English</language>
         <language ident="ar">Arabic</language>
-        <language ident="fr">French</language>
-        <language ident="de">German</language>
-        <language ident="la">Latin</language>
-        <language ident="grc">Ancient Greek</language>
+        <language ident="ar-Syrc">Arabic Garshuni</language>
+        <language ident="ar-Syrn">Arabic Garshuni in East Syriac script</language>
         <language ident="cop">Coptic</language>
+        <language ident="de">German</language>
+        <language ident="en">English</language>
+        <language ident="fr">French</language>
+        <language ident="grc">Ancient Greek</language>
+        <language ident="he">Hebrew</language>
+        <language ident="hy">Armenian</language>
+        <language ident="it">Italian</language>
+        <language ident="la">Latin</language>
+        <language ident="syr">Syriac</language>
+        <language ident="syr-Arab">Syriac Garshuni in Arabic script</language>
+        <language ident="syr-Syre">Syriac in Estrangela script</language>
+        <language ident="syr-Syrj">Syriac in West Syriac script</language>
+        <language ident="syr-Syrn">Syriac in East Syriac script</language>
+        <language ident="syr-x-syrm">Syriac in Melkite Syriac script</language>
+        <language ident="tr">Turkish</language>
+        <language ident="tr-Syrc">Turkish Garshuni</language>
+        <language ident="qhy-x-cpas">Christian Palestinian Aramaic script</language>
+        <language ident="xcl">Classical Armenian</language>
+        <language ident="und">Undetermined</language>
+        <language ident="mul">Multiple languages</language>
       </langUsage>
       <textClass>
         <keywords scheme="#Wright-BL-Taxonomy">
@@ -442,16 +436,10 @@
       <change who="https://bl.syriac.uk/documentation/editors.xml#pgmiller" when="2016-07-06">Changed: Files moved to srophe-app-data/data/manuscripts/tei repository.</change>
     </revisionDesc>
   </teiHeader>
-  <facsimile>
-    <!-- facsimile information about the manuscript -->
-    <graphic/>
-    <!-- Alternatively you could provide 'surface' elements with more than one image per surface, and optionally with 'zone' 
-      elements to give coordinates for any special areas of interest -->
-  </facsimile>
   <text>
     <body>
-      <!-- If you had a transcription of the manuscript you would put it here -->
       <p/>
+      <!--Body paragraph provided for document validation.-->
     </body>
   </text>
 </TEI>

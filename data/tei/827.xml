@@ -1,4 +1,7 @@
-<?oxygen RNGSchema="http://syriaca.org/documentation/syriaca-tei-main.rnc" type="compact"?><?xml-stylesheet type="text/css" href="https://raw.githubusercontent.com/srophe/wright-catalogue/master/parameters/tei.css"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+<?xml-model href="https://raw.githubusercontent.com/srophe/britishLibrary/main/documentation/schema/out/Syriacamsdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/srophe/britishLibrary/main/documentation/schema/out/Syriacamsdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet href="https://raw.githubusercontent.com/srophe/wright-catalogue/master/parameters/tei.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="manuscript_827">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -54,7 +57,6 @@
         <authority>Syriaca.org: The Syriac Reference Portal</authority>
         <idno type="URI">https://bl.syriac.uk/ms/827/tei</idno>
         <availability>
-          <p/>
           <licence target="http://creativecommons.org/licenses/by/3.0/">
             <p>Distributed under a Creative Commons Attribution 3.0 Unported License</p>
           </licence>
@@ -76,7 +78,7 @@
               <idno type="BL-Shelfmark-display">London, BL, Add. 17,175</idno>
             </altIdentifier>
             <altIdentifier>
-              <idno type="BL-Shelmark-simplified">BL Add MS 17175</idno>
+              <idno type="BL-Shelfmark-simplified">BL Add MS 17175</idno>
             </altIdentifier>
             <altIdentifier>
               <collection>William Wright, Catalogue of the Syriac Manuscripts in the British Museum Acquired since the Year 1838</collection>
@@ -88,7 +90,7 @@
             </altIdentifier>
           </msIdentifier>
           <head>
-            <note type="contents-note">This manuscript contains: Part of an Abridgment of the, "Illustrations of the Book of the Paradise.". In total, including sub-sections, this manuscript contains 1 items.</note>
+            <note type="contents-note">This manuscript contains: Part of an Abridgment of the, "Illustrations of the Book of the Paradise.". In total, including sub-sections, this manuscript contains 1 item.</note>
             <listRelation type="Wright-BL-Taxonomy">
               <relation name="dcterms:type" ref="http://purl.org/dc/terms/type" active="https://bl.syriac.uk/ms/827" passive="#lives-collect">
                 <desc>Collected Lives</desc>
@@ -96,7 +98,7 @@
             </listRelation>
           </head>
           <msContents>
-            <textLang mainLang="syr"/>
+            <textLang mainLang="syr">Syriac</textLang>
             <msItem xml:id="a1" n="1" defective="true">
               <title xml:lang="en">Part of an Abridgment of the, "Illustrations of the
                         Book of the Paradise."</title>
@@ -119,8 +121,6 @@
                 <extent>
                   <measure type="composition" unit="leaf" quantity="66">66 ff.</measure>
                 </extent>
-                        <foliation/>
-                        <collation/>
                         <condition>
                            <list>
                               <item>
@@ -137,35 +137,28 @@
                   </objectDesc>
             <handDesc hands="2">
               <handNote xml:id="handNote1" medium="unknown" scope="major" script="syr">
-                <desc>This manuscript is written in a good, regular hand of the <date calendar="Gregorian" notBefore="0900" notAfter="1000">xth
-                              cent</date>.</desc>
-              </handNote>
+                This manuscript is written in a good, regular hand of the <date calendar="Gregorian" notBefore="0900" notAfter="1000">xth
+                              cent</date>.</handNote>
               <handNote xml:id="handNote2" medium="unknown" scope="minor" script="syr">
-                <desc>Foll. 41 and 48 are more recent and apparently palimpsest.</desc>
+                Foll. 41 and 48 are more recent and apparently palimpsest.
               </handNote>
             </handDesc>
-            <additions> </additions>
-            <accMat/>
-          </physDesc>
+            </physDesc>
           <history>
                   <origin>
-                     <origDate notBefore="0900" notAfter="1000">xth
-                        cent.</origDate>
-                     <origPlace/>
+              <origDate calendar="Gregorian" notBefore="0900" notAfter="1000">10th century</origDate>
+                     
                   </origin>
-                  <provenance/>
-                  <acquisition/>
-               </history>
+                  </history>
           <additional>
             <adminInfo>
               <recordHist>
-                <source>Manuscript description based on<bibl>
+                <source>Manuscript description based on <bibl>
                     <ref target="#Wrightpart">Wright's
                       Catalogue</ref>
                   </bibl>. abbreviated by the Syriaca.org editors.</source>
               </recordHist>
-              <note/>
-            </adminInfo>
+              </adminInfo>
             <listBibl>
               <bibl xml:id="Wrightpart">
                 <author>William Wright</author>
@@ -175,7 +168,7 @@
                 <date>1870</date>
                 <ptr target="http://syriaca.org/bibl/8"/>
                 <citedRange unit="entry">DCCCCXXXII</citedRange>
-                <citedRange unit="pp">3:1080</citedRange>
+                <citedRange unit="p">3:1080</citedRange>
               <ref type="internet-archive-pdf" target="https://archive.org/details/catalogueofsyria03brituoft/page/1080"/>
               </bibl>
             </listBibl>
@@ -199,7 +192,6 @@
       <classDecl>
         <taxonomy xml:id="Wright-BL-Taxonomy">
           <bibl>
-            
             <ptr target="http://syriaca.org/documentation/Wright-BL-Taxonomy.html"/>
           </bibl>
           <category xml:id="biblical-manuscripts">
@@ -316,22 +308,30 @@
     </encodingDesc>
     <profileDesc>
       <langUsage>
-        <language ident="syr">Unvocalized Syriac of any variety or period</language>
-        <language ident="syr-Syre">Syriac in Estrangela</language>
-        <language ident="syr-Syrj">Vocalized West Syriac</language>
-        <language ident="syr-Syrn">Vocalized East Syriac</language>
-        <language ident="syr-x-syrm">Melkite Syriac</language>
-        <language ident="qhy-x-cpas">Palestinian Syriac</language>
-        <language ident="ar-Syrc">Unvocalized or Undetermined Arabic Garshuni</language>
-        <language ident="ar-Syrj">Arabic Garshuni in Vocalized West Syriac Script</language>
-        <language ident="ar-Syrn">Arabic Garshuni in Vocalized East Syriac Script</language>
-        <language ident="en">English</language>
         <language ident="ar">Arabic</language>
-        <language ident="fr">French</language>
-        <language ident="de">German</language>
-        <language ident="la">Latin</language>
-        <language ident="grc">Ancient Greek</language>
+        <language ident="ar-Syrc">Arabic Garshuni</language>
+        <language ident="ar-Syrn">Arabic Garshuni in East Syriac script</language>
         <language ident="cop">Coptic</language>
+        <language ident="de">German</language>
+        <language ident="en">English</language>
+        <language ident="fr">French</language>
+        <language ident="grc">Ancient Greek</language>
+        <language ident="he">Hebrew</language>
+        <language ident="hy">Armenian</language>
+        <language ident="it">Italian</language>
+        <language ident="la">Latin</language>
+        <language ident="syr">Syriac</language>
+        <language ident="syr-Arab">Syriac Garshuni in Arabic script</language>
+        <language ident="syr-Syre">Syriac in Estrangela script</language>
+        <language ident="syr-Syrj">Syriac in West Syriac script</language>
+        <language ident="syr-Syrn">Syriac in East Syriac script</language>
+        <language ident="syr-x-syrm">Syriac in Melkite Syriac script</language>
+        <language ident="tr">Turkish</language>
+        <language ident="tr-Syrc">Turkish Garshuni</language>
+        <language ident="qhy-x-cpas">Christian Palestinian Aramaic script</language>
+        <language ident="xcl">Classical Armenian</language>
+        <language ident="und">Undetermined</language>
+        <language ident="mul">Multiple languages</language>
       </langUsage>
       <textClass>
         <keywords scheme="#Wright-BL-Taxonomy">
@@ -349,16 +349,14 @@
       <change who="https://bl.syriac.uk/documentation/editors.xml#srophe-util" when="2020-04-29-05:00">CHANGED: Added project metadata; metadata from Wright Decoder; msItem, handDesc, and additions enumeration; Wright Taxonomy designation</change>
       <change who="https://bl.syriac.uk/documentation/editors.xml#jpagan" when="2020-03-09">Initial
             TEI encoding.</change>
-         <change type="planned" subtype="checkSyriac">The Syriac copied from the Word Document needs
+         <change type="planned" subtype="checkSyriac" who="https://bl.syriac.uk/documentation/editors.xml#smbl-general-editors">The Syriac copied from the Word Document needs
             to be checked for accuracy</change>
       </revisionDesc>
   </teiHeader>
-  <facsimile>
-      <formula>Content pending</formula>
-   </facsimile>
   <text>
       <body>
-         <bibl>Content pending</bibl>
+         <p/>
+      <!--Body paragraph provided for document validation.-->
       </body>
    </text>
 </TEI>

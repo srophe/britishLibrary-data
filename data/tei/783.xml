@@ -1,4 +1,7 @@
-<?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/srophe-app/documentation/enrich-syriaca.rnc" type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/css" href="SRPEnrichCSS.css"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+<?xml-model href="https://raw.githubusercontent.com/srophe/britishLibrary/main/documentation/schema/out/Syriacamsdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/srophe/britishLibrary/main/documentation/schema/out/Syriacamsdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet href="https://raw.githubusercontent.com/srophe/wright-catalogue/master/parameters/tei.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="manuscript_783">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -58,11 +61,9 @@
         <edition n="1.0"/>
       </editionStmt>
       <publicationStmt>
-        <pubPlace/>
         <authority>Syriaca.org: The Syriac Reference Portal</authority>
         <idno type="URI">https://bl.syriac.uk/ms/783/tei</idno>
         <availability>
-          <p/>
           <licence target="http://creativecommons.org/licenses/by/3.0/">
             <p>Distributed under a Creative Commons Attribution 3.0 Unported License</p>
           </licence>
@@ -70,7 +71,7 @@
         <date calendar="Gregorian">2023-04-21-05:00</date>
       </publicationStmt>
       <sourceDesc>
-        <msDesc xml:id="manuscript-783" xml:lang="en">
+        <msDesc xml:id="manuscript-783">
           <msIdentifier>
             <country>United Kingdom</country>
             <settlement>London</settlement>
@@ -84,7 +85,7 @@
               <idno type="BL-Shelfmark-display">London, BL, Add. 17,154</idno>
             </altIdentifier>
             <altIdentifier>
-              <idno type="BL-Shelmark-simplified">BL Add MS 17154</idno>
+              <idno type="BL-Shelfmark-simplified">BL Add MS 17154</idno>
             </altIdentifier>
             <altIdentifier>
               <collection>William Wright, Catalogue of the Syriac Manuscripts in the British Museum Acquired since the Year 1838</collection>
@@ -98,13 +99,10 @@
           <head>
             <note type="contents-note">This manuscript contains: Sergius Grammaticus, Severus of Antioch. The correspondence of Sergius Grammaticus andSeverus of Antioch, regarding the doctrine of the Two Natures in Christ. In total, including sub-sections, this manuscript contains 8 items.</note>
             <listRelation type="Wright-BL-Taxonomy">
-              <relation name="dcterms:type" ref="http://purl.org/dc/terms/type" active="https://bl.syriac.uk/ms/783" passive="#theology">
-                <desc/>
-              </relation>
+              <relation name="dcterms:type" ref="http://purl.org/dc/terms/type" active="https://bl.syriac.uk/ms/783" passive="#theology"/>
             </listRelation>
           </head>
           <msContents>
-            <summary/>
             <textLang mainLang="syr">Syriac</textLang>
             <msItem xml:id="a1" n="1">
               <locus from="1" to="52">Foll. 1-52</locus>
@@ -115,15 +113,17 @@
                 <persName>Severus of
                 Antioch</persName>
               </author>
-              <title type="supplied">The correspondence of <persName xml:lang="en" type="supplied">Sergius Grammaticus</persName> and <persName ref="http://syriaca.org/person/51" xml:lang="en" type="uniform">Severus of Antioch</persName>, regarding the doctrine of the Two Natures in Christ</title>
-              <note>The writings of <persName ref="http://syriaca.org/person/430">Cyril of Alexandria</persName> are quoted on almost every page of these letters. The other authorities cited are: <persName>Amphilochius</persName>, <title>epist. to <persName>Seleucus</persName>
-                </title>, <locus from="44b">fol. 44 b</locus>; <persName>Andrew of Samosata</persName>, <locus from="28a">fol. 28 a</locus>; <persName ref="http://syriaca.org/person/342">Aristotle</persName>, foll.<locus from="36b">36 b</locus>, <locus from="44a">44 a</locus>; <persName ref="http://syriaca.org/person/354">Athanasius</persName>, foll.<locus from="21a">21 a</locus>, <locus from="26a">26 a</locus>, <locus from="43a">43 a</locus>; <persName ref="http://syriaca.org/person/845">Basil</persName>; <persName ref="http://syriaca.org/person/573">Chrysostom</persName>; <persName ref="http://syriaca.org/person/451">Diodorus of Tarsus</persName>, <locus from="17b">fol. 17 b</locus>; <persName>Dioscorus of Alexandria</persName>, <title>epist. to <persName>Domnus of Antioch</persName>
-                </title>, <locus from="32a">fol. 32 a</locus>; <persName>Eustathius of Antioch</persName>, <title>Commentary on<abbr>Ps.</abbr>
-                  <expan>Psalm</expan>xcii.</title>, <locus from="42b">fol. 42 b</locus>; <persName ref="http://syriaca.org/person/511">Gregory Nazianzen</persName>; <persName>Julius of Rome</persName>, foll.<locus from="7b">7 b</locus>, <locus from="27b">27 b</locus>; <persName>Leo of Rome</persName>, <locus from="49b">fol. 49 b</locus>; <persName ref="http://syriaca.org/person/655">Nestorius</persName>, foll. <locus from="24b">24 b</locus>, <locus from="49b">49 b</locus>; <persName ref="http://syriaca.org/person/781">Theodoret</persName>, <locus from="49b">fol. 49 b</locus>; and <title>the Acts of the Council of Chalcedon</title>, <locus from="50a">fol. 50 a</locus>.</note>
+              <title xml:lang="en">The correspondence of Sergius Grammaticus and Severus of Antioch, regarding the doctrine of the Two Natures in Christ</title>
+              <note>The writings of <persName ref="http://syriaca.org/person/430">Cyril of Alexandria</persName> are quoted on almost every page of these letters. The other authorities cited are: <persName>Amphilochius</persName>, <title>epist. to Seleucus
+                </title>, <locus from="44b">fol. 44 b</locus>; <persName>Andrew of Samosata</persName>, <locus from="28a">fol. 28 a</locus>; <persName ref="http://syriaca.org/person/342">Aristotle</persName>, foll.<locus from="36b">36 b</locus>, <locus from="44a">44 a</locus>; <persName ref="http://syriaca.org/person/354">Athanasius</persName>, foll.<locus from="21a">21 a</locus>, <locus from="26a">26 a</locus>, <locus from="43a">43 a</locus>; <persName ref="http://syriaca.org/person/845">Basil</persName>; <persName ref="http://syriaca.org/person/573">Chrysostom</persName>; <persName ref="http://syriaca.org/person/451">Diodorus of Tarsus</persName>, <locus from="17b">fol. 17 b</locus>; <persName>Dioscorus of Alexandria</persName>, <title>epist. to Domnus of Antioch
+                </title>, <locus from="32a">fol. 32 a</locus>; <persName>Eustathius of Antioch</persName>, <title>Commentary on <choice>
+                    <abbr>Ps.</abbr>
+                  <expan>Psalm</expan>
+                  </choice> xcii.</title>, <locus from="42b">fol. 42 b</locus>; <persName ref="http://syriaca.org/person/511">Gregory Nazianzen</persName>; <persName>Julius of Rome</persName>, foll.<locus from="7b">7 b</locus>, <locus from="27b">27 b</locus>; <persName>Leo of Rome</persName>, <locus from="49b">fol. 49 b</locus>; <persName ref="http://syriaca.org/person/655">Nestorius</persName>, foll. <locus from="24b">24 b</locus>, <locus from="49b">49 b</locus>; <persName ref="http://syriaca.org/person/781">Theodoret</persName>, <locus from="49b">fol. 49 b</locus>; and <title>the Acts of the Council of Chalcedon</title>, <locus from="50a">fol. 50 a</locus>.</note>
               <msItem xml:id="b1" n="2">
                 <locus from="1b" to="2">Foll. 1b-2</locus>
                 
-                <title type="supplied">The first letter of <persName>Sergius</persName> to <persName ref="http://syriaca.org/person/51">Severus</persName>
+                <title xml:lang="en">The first letter of Sergius to Severus
                 </title>
                 <rubric xml:lang="syr">
                   <sic>ܐܓܪܬܐ ܩܕܡܝܬܐ ܕܣܪܓܝܣ ܓܪܡܛܝܩܘܣ̣. ܠܘܬ ܚܣܝܐ ܣܐܘܪܐ ܦܛܪܝܪܟܐ ܕܐܢܛܝܟܝܐ̇. ܕܒܗ̇ ܫܐ̇ܠ ܕܐܝܟܢ ܙܕܩ̇ ܕܢܬܪܥܘܢ ܗܠܝܢ ܕܡܢ ܬܪ̈ܝܢ ܟܝ̈ܢܝܢ ܡܫܒܚܝܢ ܕܐܝܬܘܗܝ ܡܫܝܚܐ. ܟܕ ܐܬܚܫܚܘ ܒܫܡܐ ܕܐܢܛܘܢܝܢܐ ܐܦܣܩܦܐ ܕܚܠܒ. ܘܫܠܚ̣ ܗܟܢܐ.</sic>
@@ -136,7 +136,7 @@
                   <persName>Severus of
                   Antioch</persName>
                 </author>
-                <title type="supplied">The reply of <persName ref="http://syriaca.org/person/51">Severus</persName>
+                <title xml:lang="en">The reply of Severus
                 </title>
                 <rubric xml:lang="syr">ܦܚܡܐ ܕܐܓܪܬܐ ܕܩܕܝܫܐ ܘܛܘܒܬܢܐ ܣܐܘܪܐ ܪܫܐ ܕܐܦܝ̈ܣܩܦܐ ܘܦܛܪܝܪܟܐ ܕܐܢܛܝܟܝܐ̣. ܠܘܬ ܢܟܦܐ ܣܪܓܝܣ ܓܪܡܛܝܩܘܣ̇. ܕܫܐ̇ܠ ܡܛܠ ܕܝ̈ܠܝܬܐ ܘܡܥܒ̈ܕܢܘܬܐ ܘܡܛܠ ܚ̈ܫܐ ܦܪ̈ܘܩܝܐ<locus from="2b" to="2b"/>
                 </rubric>
@@ -144,7 +144,7 @@
               <msItem xml:id="b3" n="4">
                 <locus from="11a" to="14">Foll 11a-14</locus>
                 
-                <title type="supplied">The second letter of <persName>Sergius</persName> to <persName ref="http://syriaca.org/person/51">Severus</persName>
+                <title xml:lang="en">The second letter of Sergius to Severus
                 </title>
                 <rubric xml:lang="syr">ܐܓܪܬܐ ܕܬܪ̈ܬܝܢ ܕܣܪܓܝܣ ܓܪܡܛܝܩܘܣ̣. ܠܘܬܗ ܕܦܛܪܝܪܟܐ ܡܪܝ ܣܐܘܪܐ<locus from="11a" to="11a"/>
                 </rubric>
@@ -155,7 +155,7 @@
                   <persName>Severus of
                   Antioch</persName>
                 </author>
-                <title type="supplied">The reply of <persName ref="http://syriaca.org/person/51">Severus</persName>
+                <title xml:lang="en">The reply of Severus
                 </title>
                 <rubric xml:lang="syr">ܬܘܒ ܕܝܠܗ ܕܦܛܪܝܪܟܐ ܣܐܘܪܐ̣. ܐܓܪܬܐ ܕܬܪ̈ܬܝܢ ܨܐܕܘܗܝ ܕܣܪܓܝܣ ܓܪܡܛܝܩܘܣ..<locus from="14b" to="14b"/>
                 </rubric>
@@ -163,7 +163,7 @@
               <msItem xml:id="b5" n="6">
                 <locus from="33b" to="39">Foll. 33b-39</locus>
                 
-                <title type="supplied">The third letter of <persName>Sergius</persName> to <persName ref="http://syriaca.org/person/51">Severus</persName>
+                <title xml:lang="en">The third letter of Sergius to Severus
                 </title>
                 <rubric xml:lang="syr">ܐܓܪܬܐ ܕܬܠܬ ܕܝܠܗ ܕܣܪܓܝܣ ܓܪܡܛܝܩܘܣ̣. ܠܘܬܗ ܕܚܣܝܐ ܣܐܘܪܐ ܦܛܪܝܪܟܐ<locus from="33b" to="33b"/>
                 </rubric>
@@ -174,14 +174,14 @@
                   <persName>Severus of
                   Antioch</persName>
                 </author>
-                <title type="supplied">The reply of <persName ref="http://syriaca.org/person/51">Severus</persName>
+                <title xml:lang="en">The reply of Severus
                 </title>
                 <rubric xml:lang="syr">ܐܓܪܬܐ ܕܬܠܬ ܕܝܠܗ ܟܕ ܕܝܠܗ ܕܦܛܪܝܪܟܐ ܣܐܘܪܐ̣ ܨܐܕܘܗܝ ܕܓܪܡܛܝܩܘܣ<locus from="39a" to="48"/>Foll. 39a-48</rubric>
               </msItem>
               <msItem xml:id="b7" n="8">
                 <locus from="48b" to="52b">Foll. 48b-52b</locus>
                 
-                <title type="supplied">The Apology of <persName>Sergius</persName>
+                <title xml:lang="en">The Apology of Sergius
                 </title>
                 <rubric xml:lang="syr">ܕܝܠܗ ܟܕ ܕܝܠܗ ܕܣܪܓܝܣ̣. ܠܘܬܗ ܕܦܛܪܝܪܟܐ ܣܐܘܪܐ<locus from="48b" to="48b"/>
                 </rubric>
@@ -201,16 +201,11 @@
                 </support>
                 <extent>
                   <measure type="composition" unit="leaf" quantity="52">52 ff.</measure>
-                  <dimensions type="leaf" unit="in">
-                    <height>
-                      <measure type="height" quantity="9.875" unit="in">9 7/8 in</measure>
-                    </height>
-                    <width>
-                      <measure type="width" quantity="6.625" unit="in">6 5/8 in</measure>
-                    </width>
+                  <dimensions type="leaf" unit="inch">
+                    <height quantity="9.875">9 7/8</height>
+                    <width quantity="6.625">6 5/8</width>
                   </dimensions>
                 </extent>
-                <foliation type="ancient"/>
                 <collation>
                   <p>The quires, signed with letters, are 6 in number.</p>
                 </collation>
@@ -231,21 +226,17 @@
             </objectDesc>
             <handDesc hands="2">
               <handNote xml:id="handNote1" scope="major" script="syr-Syre" medium="unknown">
-                <desc>This volume is written in a good, regular Estrangělā of the <origDate notBefore="0600" notAfter="0700" calendar="Gregorian">viith cent</origDate>.</desc>
+                This volume is written in a good, regular Estrangělā of the <date notBefore="0600" notAfter="0700" calendar="Gregorian">viith cent</date>.
               </handNote>
               <handNote xml:id="handNote2" scope="minor" script="syr">
-                <desc>
-                  <ref target="#addition1">See additions</ref>
-                </desc>
-              </handNote>
+                <ref target="#addition1">See additions</ref>
+                </handNote>
             </handDesc>
-            <decoDesc/>
             <additions>
-              <p/>
               <list>
                 <item xml:id="addition1" n="1">
                   <locus from="1a" to="1a"/>
-                  <p>According to a note on fol. 1a, the book was presented to the <placeName ref="http://syriaca.org/place/360">convent of S. Mary Deipara</placeName>by one <persName>Michael bar Kattā'ē</persName>.</p>
+                  <p>According to a note on fol. 1a, the book was presented to the <placeName ref="http://syriaca.org/place/360">convent of S. Mary Deipara</placeName> by one <persName>Michael bar Kattā'ē</persName>.</p>
                   <p>
                     <quote xml:lang="syr">
                       <supplied reason="unknown" resp="https://bl.syriac.uk/documentation/editors.xml#wwright">ܐܝܬܘ</supplied>ܗܝ ܟܬܒܐ ܗܢܐ ܕܡܝܟܐܝܠ ܒܪ ܩ̈ܛܥܐ: ܕܫܟܢܗ ܠܕܝܪܐ ܕܣܘܪ̈ܝܝܐ ܕܒܡܕܒܪܐ ܕܐܣ̈ܩܝܛܐ ܕܡܨܪ̈ܝܢ܀ ܕܐܠܗܐ ܢܢܝܚ ܢܦܫܗ ܒܐܘ̈ܢܐ ܕܟ̈ܐܢܐ ܘܕܙܕܝ̈ܩܐ. ܘܢܟܬܘܒ ܫܡܗ ܒܣܦܪܐ ܕܚ̈ܝܐ. ܏ܘܫ.</quote>
@@ -253,26 +244,21 @@
                 </item>
               </list>
             </additions>
-            <bindingDesc/>
-            <sealDesc/>
-            <accMat/>
-          </physDesc>
+            </physDesc>
           <history>
             <origin>
-              <origDate notBefore="0600" notAfter="0700" calendar="Gregorian">viith cent.</origDate>
+              <origDate calendar="Gregorian" notBefore="0600" notAfter="0700">7th century</origDate>
+              
             </origin>
-            <provenance/>
-            <acquisition/>
-          </history>
+            </history>
           <additional>
             <adminInfo>
               <recordHist>
-                <source>Manuscript description based on<bibl>
+                <source>Manuscript description based on <bibl>
                     <ref target="#Wrightpart">Wright's Catalogue</ref>
                   </bibl>. abbreviated by the Syriaca.org editors.</source>
               </recordHist>
-              <note/>
-            </adminInfo>
+              </adminInfo>
             <listBibl>
               <bibl xml:id="Wrightpart">
                 <author>William Wright</author>
@@ -281,7 +267,7 @@
                 <date>1870</date>
                 <ptr target="http://syriaca.org/bibl/8"/>
                 <citedRange unit="entry">DCXCI</citedRange>
-                <citedRange unit="pp">2:557-558</citedRange>
+                <citedRange unit="p">2:557-558</citedRange>
               <ref type="internet-archive-pdf" target="https://archive.org/details/catalogueofsyria02brituoft/page/557"/>
               </bibl>
             </listBibl>
@@ -305,7 +291,6 @@
       <classDecl>
         <taxonomy xml:id="Wright-BL-Taxonomy">
           <bibl>
-            
             <ptr target="http://syriaca.org/documentation/Wright-BL-Taxonomy.html"/>
           </bibl>
           <category xml:id="biblical-manuscripts">
@@ -422,22 +407,30 @@
     </encodingDesc>
     <profileDesc>
       <langUsage>
-        <language ident="syr">Unvocalized Syriac of any variety or period</language>
-        <language ident="syr-Syre">Syriac in Estrangela</language>
-        <language ident="syr-Syrj">Vocalized West Syriac</language>
-        <language ident="syr-Syrn">Vocalized East Syriac</language>
-        <language ident="syr-x-syrm">Melkite Syriac</language>
-        <language ident="qhy-x-cpas">Palestinian Syriac</language>
-        <language ident="ar-Syrc">Unvocalized or Undetermined Arabic Garshuni</language>
-        <language ident="ar-Syrj">Arabic Garshuni in Vocalized West Syriac Script</language>
-        <language ident="ar-Syrn">Arabic Garshuni in Vocalized East Syriac Script</language>
-        <language ident="en">English</language>
         <language ident="ar">Arabic</language>
-        <language ident="fr">French</language>
-        <language ident="de">German</language>
-        <language ident="la">Latin</language>
-        <language ident="grc">Ancient Greek</language>
+        <language ident="ar-Syrc">Arabic Garshuni</language>
+        <language ident="ar-Syrn">Arabic Garshuni in East Syriac script</language>
         <language ident="cop">Coptic</language>
+        <language ident="de">German</language>
+        <language ident="en">English</language>
+        <language ident="fr">French</language>
+        <language ident="grc">Ancient Greek</language>
+        <language ident="he">Hebrew</language>
+        <language ident="hy">Armenian</language>
+        <language ident="it">Italian</language>
+        <language ident="la">Latin</language>
+        <language ident="syr">Syriac</language>
+        <language ident="syr-Arab">Syriac Garshuni in Arabic script</language>
+        <language ident="syr-Syre">Syriac in Estrangela script</language>
+        <language ident="syr-Syrj">Syriac in West Syriac script</language>
+        <language ident="syr-Syrn">Syriac in East Syriac script</language>
+        <language ident="syr-x-syrm">Syriac in Melkite Syriac script</language>
+        <language ident="tr">Turkish</language>
+        <language ident="tr-Syrc">Turkish Garshuni</language>
+        <language ident="qhy-x-cpas">Christian Palestinian Aramaic script</language>
+        <language ident="xcl">Classical Armenian</language>
+        <language ident="und">Undetermined</language>
+        <language ident="mul">Multiple languages</language>
       </langUsage>
       <textClass>
         <keywords scheme="#Wright-BL-Taxonomy">
@@ -452,18 +445,16 @@
     <revisionDesc status="draft">
       <change who="https://bl.syriac.uk/documentation/editors.xml#kurban" when="2023-04-21-05:00">CHANGED: added or corrected folio extent values</change>
       <change who="https://bl.syriac.uk/documentation/editors.xml#jarnwine" when="2023-01-13-06:00">ADDED: supplied and corrected Syriaca.org URIs for authors</change>
-      <change who="https://bl.syriac.uk/documentation/editors.xml#kkotewall" when="">Created: file</change>
+      <change who="https://bl.syriac.uk/documentation/editors.xml#kkotewall">Created: file</change>
       <change who="https://bl.syriac.uk/documentation/editors.xml#jarnwine" when="2014-10-07">Edited: file</change>
-      <change type="planned" subtype="uri">Needs Addition of work URIs.</change>
+      <change type="planned" subtype="uri" who="https://bl.syriac.uk/documentation/editors.xml#smbl-general-editors">Needs Addition of work URIs.</change>
       <change who="https://bl.syriac.uk/documentation/editors.xml#pgmiller" when="2016-07-06">Changed: Files moved to srophe-app-data/data/manuscripts/tei repository.</change>
     </revisionDesc>
   </teiHeader>
-  <facsimile>
-    <graphic/>
-  </facsimile>
   <text>
     <body>
       <p/>
+      <!--Body paragraph provided for document validation.-->
     </body>
   </text>
 </TEI>

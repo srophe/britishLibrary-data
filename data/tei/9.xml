@@ -1,4 +1,7 @@
-<?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/srophe-app/documentation/enrich-syriaca.rnc" type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/css" href="SRPEnrichCSS.css"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+<?xml-model href="https://raw.githubusercontent.com/srophe/britishLibrary/main/documentation/schema/out/Syriacamsdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/srophe/britishLibrary/main/documentation/schema/out/Syriacamsdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet href="https://raw.githubusercontent.com/srophe/wright-catalogue/master/parameters/tei.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="manuscript_9">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -7,7 +10,7 @@
         <funder>The National Endowment for the Humanities</funder>
         <funder>The Andrew W. Mellon Foundation</funder>
         <principal>David A. Michelson</principal>
-        <editor role="general-editor" ref="https://bl.syriac.uk/documentation/editors.xml#dmichelson">David A. michelson</editor>
+        <editor role="general-editor" ref="https://bl.syriac.uk/documentation/editors.xml#dmichelson">David A. Michelson</editor>
         <editor role="creator" ref="https://bl.syriac.uk/documentation/editors.xml#dmichelson">David A. Michelson</editor>
         <editor role="creator" ref="https://bl.syriac.uk/documentation/editors.xml#dgreeson">Daniel J. Greeson</editor>
         <editor role="creator" ref="https://bl.syriac.uk/documentation/editors.xml#thannah">Tucker D. Hannah</editor>
@@ -61,11 +64,9 @@
         <edition n="1.0"/>
       </editionStmt>
       <publicationStmt>
-        <pubPlace/>
         <authority>Syriaca.org: The Syriac Reference Portal</authority>
         <idno type="URI">https://bl.syriac.uk/ms/9/tei</idno>
         <availability>
-          <p/>
           <licence target="http://creativecommons.org/licenses/by/3.0/">
             <p>Distributed under a Creative Commons Attribution 3.0 Unported License</p>
           </licence>
@@ -73,7 +74,7 @@
         <date calendar="Gregorian">2023-04-21-05:00</date>
       </publicationStmt>
       <sourceDesc>
-        <msDesc xml:id="manuscript-9" xml:lang="en">
+        <msDesc xml:id="manuscript-9">
           <msIdentifier>
             <country>United Kingdom</country>
             <settlement>London</settlement>
@@ -87,7 +88,7 @@
               <idno type="BL-Shelfmark-display">London, BL, Add. 12,137</idno>
             </altIdentifier>
             <altIdentifier>
-              <idno type="BL-Shelmark-simplified">BL Add MS 12137</idno>
+              <idno type="BL-Shelfmark-simplified">BL Add MS 12137</idno>
             </altIdentifier>
             <altIdentifier>
               <collection>William Wright, Catalogue of the Syriac Manuscripts in the British Museum Acquired since the Year 1838</collection>
@@ -99,8 +100,7 @@
             </altIdentifier>
           </msIdentifier>
           <head>
-            <note type="contents-note">This manuscript contains: The text exhibits the Ammonian sections, each being referred to the proper canon of Eusebius. In total, including sub-sections, this manuscript contains 1 items.</note>
-            <listRelation type="Wright-BL-Taxonomy"/>
+            <note type="contents-note">This manuscript contains: The text exhibits the Ammonian sections, each being referred to the proper canon of Eusebius. In total, including sub-sections, this manuscript contains 1 item.</note>
             <listRelation type="composite-to-parts">
               <desc>This composite manuscript consists of 5 distinct parts:</desc>
               <relation name="syriaca:has-unspecified-codicological-part" ref="#syriaca:has-unspecified-codicological-part" active="https://bl.syriac.uk/ms/9" passive="https://bl.syriac.uk/ms/1161">
@@ -121,9 +121,10 @@
             </listRelation>
           </head>
           <msContents>
+            <textLang mainLang="syr">Syriac</textLang>
             <msItem xml:id="a1" n="1">
               <locus from="19"/>
-              <title type="supplied" ref="http://syriaca.org/work/180">The text exhibits the Ammonian sections, each being referred to the proper canon of Eusebius.</title>
+              <title ref="http://syriaca.org/work/180" xml:lang="en">The text exhibits the Ammonian sections, each being referred to the proper canon of Eusebius.</title>
               <note>The lessons are indicated in the usual way.</note>
             </msItem>
           </msContents>
@@ -134,38 +135,34 @@
                 <extent>
                   <measure type="composition" unit="leaf" quantity="214">214 ff.</measure>
                 </extent>
-                <extent>
-                  <measure unit="leaf" quantity="214">214 ff.</measure>
-                  <dimensions/>
-                </extent>
               </supportDesc>
             </objectDesc>
             <decoDesc>
-              <decoNote xml:id="decoNote1" type="illustration">
-                <desc>On<locus from="1b" to="1b">fol. 1b</locus>there is a cross:<!-- INSERT IMAGE -->, i.e.<foreign xml:lang="grc">φῶς ζωή</foreign>.</desc>
+              <decoNote type="illustration">
+                On <locus from="1b" to="1b">fol. 1b</locus> there is a cross:<!-- INSERT IMAGE -->, i.e.<foreign xml:lang="grc">φῶς ζωή</foreign>.
               </decoNote>
-              <decoNote xml:id="decoNote2" type="illustration">
-                <desc>On<locus from="214a" to="214a">fol. 214 a</locus>there is another cross, the words forming which are a specimen of barbarous Greek.<!-- INSERT IMAGE -->
-                  <quote>“The cross, the weapon of the Christian.”</quote>
-                </desc>
+              <decoNote type="illustration">
+                On <locus from="214a" to="214a">fol. 214 a</locus> there is another cross, the words forming which are a specimen of barbarous Greek.<!-- INSERT IMAGE -->
+                  <quote xml:lang="en">“The cross, the weapon of the Christian.”</quote>
+                
               </decoNote>
             </decoDesc>
             <additions>
               <list>
                 <item xml:id="addition1" n="1">
                   <locus from="213b" to="213b"/>
-                  <p>On fol. 213bis the following note, written by<ref target="#p5handNote1">the above-mentioned Samuel</ref>, relating to the book in its present form.</p>
+                  <p>On fol. 213bis the following note, written by <ref target="#p5handNote1">the above-mentioned Samuel</ref>, relating to the book in its present form.</p>
                   <p>
                     <quote xml:lang="syr">ܟ̇ܢ̣ܫ ܘܕܒܩ ܠܟܬܒܐ ܗܢܐ ܩܕܝܫܐ ܫܡܘܐܠ ܐܟܣܢܝܐ. ܘܐܝܬܘܗܝ ܕܡܬܝܕܥ̇ ܚܒܝܫܝܐ ܒܓܘܙܪܬܐ. ܒܐܪܥܐ ܕܡܨܪܝܢ. ܘܟܢܫܬܗ ܡܢ ܡܨܪܝܢ. ܘܐܝܬܘܗܝ ܕܕܝܪܐ ܕܒܝܬ ܝ̇ܠܕܬ ܐܠܗܐ ܕܒܡܕܒܪܐ ܕܐܒܐ ܡܩܪܝ. ܘܡܪܝܐ ܢܚ̇ܣ̣ܐ ܠܟܠ ܕܡܗ̇ܦܟ ܠܗ. ܠܗ̇ ܠܕܝܪܐ ܕܐܡܪܝܐ. ܡܢ ܠܥܠ. ܘܡܪܝܐ ܢܚܣܐ ܠܟܠ ܕܐܫܬܘܦ. (sic) ܐܢ ܒܚܪܝܬܐ ܘܐܢ ܒܩܕܡܝܬܐ. ܘܟܠ ܐܢܫ ܐܝܟ ܨܠܘܬܗ ܦܬ݂ܩ (sic) ܐܡܝܢ ܘܐܡܝܢ♱</quote>
                   </p>
                   <p>
-                    <quote>"Samuel, a stranger, known as the recluse in Gozartā, in Egypt, collected and bound this holy book. And I collected it from Egypt. And it belongs to the convent of the Mother of God, which is in the desert of Abbā Macarius;”</quote>etc.</p>
+                    <quote xml:lang="en">Samuel, a stranger, known as the recluse in Gozartā, in Egypt, collected and bound this holy book. And I collected it from Egypt. And it belongs to the convent of the Mother of God, which is in the desert of Abbā Macarius;”</quote> etc.</p>
                 </item>
               </list>
             </additions>
             <accMat>
-              <p>In the binding of this volume there have been preserved, though in a mutilated condition, two very ancient Arabic documents. The one,<locus from="1a" to="1a">fol. 1 a</locus>, written in an almost Kūfic character, is a patent of manumission (<!-- NEEDS ARABIC -->), granted by the amīr<persName>Ahmad ibn Tūlūn</persName>to<persName>Ahmad ibn Karā</persName>(<!-- NEEDS ARABIC-->), and therefore dating from between<origDate notBefore-custom="0250" notAfter-custom="0270" datingMethod="Hijri-qamari">A. H. 250 and 270</origDate>,<origDate notBefore="0864" notAfter="0883" calendar="Gregorian">A.D. 864 and 883</origDate>.</p>
-              <p>The other,<locus from="214b" to="214b">fol. 214b</locus>, written in a current naskhī, appears to be a statement of the amount of tax due by certain places or communities in Egypt for the years 294 and 295 of the Hijra, dated<date when-custom="0296" datingMethod="Hijri-qamari">A.H. 296</date>,<date when="0909" calendar="Gregorian">A.D. 909</date>.</p>
+              <p>In the binding of this volume there have been preserved, though in a mutilated condition, two very ancient Arabic documents. The one,<locus from="1a" to="1a">fol. 1 a</locus>, written in an almost Kūfic character, is a patent of manumission (<!-- NEEDS ARABIC -->), granted by the amīr <persName>Ahmad ibn Tūlūn</persName> to <persName>Ahmad ibn Karā</persName>(<!-- NEEDS ARABIC-->), and therefore dating from between <date notBefore-custom="0250" notAfter-custom="0270" datingMethod="Hijri-qamari">A. H. 250 and 270</date>, <date notBefore="0864" notAfter="0883" calendar="Gregorian">A.D. 864 and 883</date>.</p>
+              <p>The other,<locus from="214b" to="214b">fol. 214b</locus>, written in a current naskhī, appears to be a statement of the amount of tax due by certain places or communities in Egypt for the years 294 and 295 of the Hijra, dated <date when-custom="0296" datingMethod="Hijri-qamari">A.H. 296</date>, <date when="0909" calendar="Gregorian">A.D. 909</date>.</p>
             </accMat>
           </physDesc>
           <msPart xml:id="Part1" n="1">
@@ -178,7 +175,7 @@
                 <idno type="BL-Shelfmark-display">London, BL, Add. 12,137, foll. 2–177</idno>
               </altIdentifier>
               <altIdentifier>
-                <idno type="BL-Shelmark-simplified">BL Add MS 12137, foll. 2-177</idno>
+                <idno type="BL-Shelfmark-simplified">BL Add MS 12137, foll. 2-177</idno>
               </altIdentifier>
             </msIdentifier>
             <head>
@@ -190,33 +187,30 @@
               </listRelation>
               <listRelation type="part-to-composite">
                 <desc>This unit is a part of a composite manuscript:</desc>
-                <relation name="syriaca:is-unspecified-codicological-part-of" ref="#syriaca:is-unspecified-codicological-part-of" active="https://bl.syriac.uk/ms/1161" passive="https://bl.syriac.uk/ms/9">
-                  <relation/>
-                </relation>
+                <relation name="syriaca:is-unspecified-codicological-part-of" ref="#syriaca:is-unspecified-codicological-part-of" active="https://bl.syriac.uk/ms/1161" passive="https://bl.syriac.uk/ms/9"/>
               </listRelation>
             </head>
             <msContents>
-              <summary/>
               <textLang mainLang="syr">Syriac</textLang>
               <msItem xml:id="p1a1" n="1" defective="true">
                 <locus from="2b" to="177b">Foll. 2b-177b</locus>
-                <title ref="http://syriaca.org/work/71" type="supplied">The four Gospels according to the Peshitta version</title>
-                <note>The lessons are indicated by<foreign xml:lang="syr">ܩ</foreign>on the margins, with the appropriate rubric at the top of the column, and<foreign xml:lang="syr">ܫ</foreign>at the end.</note>
+                <title ref="http://syriaca.org/work/71" xml:lang="en">The four Gospels according to the Peshitta version</title>
+                <note>The lessons are indicated by <foreign xml:lang="syr">ܩ</foreign> on the margins, with the appropriate rubric at the top of the column, and <foreign xml:lang="syr">ܫ</foreign> at the end.</note>
                 <msItem xml:id="p1b1" n="2">
                   <locus from="2b" to="61b">Foll. 2b-61b</locus>
-                  <title ref="http://syriaca.org/work/72" type="supplied">The Gospel of S. Matthew, according to the Peshitta version</title>
+                  <title ref="http://syriaca.org/work/72" xml:lang="en">The Gospel of S. Matthew, according to the Peshitta version</title>
                 </msItem>
                 <msItem xml:id="p1b2" n="3">
                   <locus from="61b" to="99a">Foll. 61b-99a</locus>
-                  <title ref="http://syriaca.org/work/73" type="supplied">The Gospel of S. Mark, according to the Peshitta version</title>
+                  <title ref="http://syriaca.org/work/73" xml:lang="en">The Gospel of S. Mark, according to the Peshitta version</title>
                 </msItem>
                 <msItem xml:id="p1b3" n="4">
                   <locus from="99a" to="163b">Foll. 99a-163b</locus>
-                  <title ref="http://syriaca.org/work/74" type="supplied">The Gospel of S. Luke, according to the Peshitta version</title>
+                  <title ref="http://syriaca.org/work/74" xml:lang="en">The Gospel of S. Luke, according to the Peshitta version</title>
                 </msItem>
                 <msItem xml:id="p1b4" n="5" defective="true">
                   <locus from="163b" to="177b">Foll. 163b-177b</locus>
-                  <title ref="http://syriaca.org/work/75" type="supplied">The Gospel of S. John, according to the Peshitta version</title>
+                  <title ref="http://syriaca.org/work/75" xml:lang="en">The Gospel of S. John, according to the Peshitta version</title>
                   <note>As far as ch. vi. 52.</note>
                 </msItem>
               </msItem>
@@ -227,7 +221,7 @@
               figures (e.g. �, fol. 40; ��; fol. 50; ��, fol. 60; ���, fol. 70; ���,  fol. 80);
               but a later hand has employed the letters of the alphabet for this purpose.
               Each page is divided into two columns, of from 22 to 25 lines.
-                <note type="incomplete" resp="http://syriaca.org" xml:lang="en">The original description of this manuscript by William Wright includes characters, symbols, or illustrations which cannot be represented. Please consult the attached image, <ref target="https://archive.org/details/catalogueofsyria01brituoft/page/50/mode/2up">vol. 1, p. 50</ref>.</note>
+                <note type="incomplete" resp="https://bl.syriac.uk/documentation/editors.xml#smbl-general-editors" xml:lang="en">The original description of this manuscript by William Wright includes characters, symbols, or illustrations which cannot be represented. Please consult the attached image, <ref target="https://archive.org/details/catalogueofsyria01brituoft/page/50/mode/2up">vol. 1, p. 50</ref>.</note>
               </p>
               <objectDesc form="codex">
                 <supportDesc material="perg">
@@ -236,16 +230,11 @@
                   </support>
                   <extent>
                     <measure type="composition" unit="leaf" quantity="176">176 ff.</measure>
-                    <dimensions type="leaf" unit="in">
-                      <height>
-                        <measure type="height" quantity="10.75" unit="in">10 3/4 in.</measure>
-                      </height>
-                      <width>
-                        <measure type="width" quantity="8.25" unit="in">8 1/4 in.</measure>
-                      </width>
+                    <dimensions type="leaf" unit="inch">
+                      <height quantity="10.75">10 3/4</height>
+                      <width quantity="8.25">8 1/4</width>
                     </dimensions>
                   </extent>
-                  <foliation/>
                   <collation>
                     <p>The quires, 18 in number, were originally signed with arithmetical figures (e.g. ,<locus from="40" to="40">fol. 40</locus>; ;<locus from="50" to="50">fol. 50</locus>; ,<locus from="60" to="60">fol. 60</locus>; ,<locus from="70" to="70">fol. 70</locus>; ,<locus from="80" to="80">fol. 80</locus>)</p>
                     <!-- NEEDS ARABIC -->
@@ -253,7 +242,7 @@
                   <condition>
                     <list>
                       <item>
-                        <p>A<locus from="19" to="19">missing leaf</locus>, containing<ref target="#p1b1">S. Matthew</ref>x. 10 — 26, has been supplied on<material>paper</material>. See below,<ref target="#Part5">no. V</ref>.</p>
+                        <p>A<locus from="19" to="19">missing leaf</locus>, containing <ref target="#p1b1">S. Matthew</ref> x. 10 — 26, has been supplied on <material>paper</material>. See below,<ref target="#Part5">no. V</ref>.</p>
                       </item>
                     </list>
                   </condition>
@@ -266,24 +255,18 @@
               </objectDesc>
               <handDesc hands="4">
                 <handNote xml:id="p1handNote1" scope="major" script="syr-Syre" medium="unknown">
-                  <desc>The writing is a fine Estrangela of the <origDate notBefore="0500" notAfter="0700">6th or 7th century</origDate>.</desc>
+                  The writing is a fine Estrangela of the <date notBefore="0500" notAfter="0700">6th or 7th century</date>.
                 </handNote>
                 <handNote xml:id="p1handNote2" scope="minor" script="syr" medium="unknown">
-                  <desc>
-                    <ref target="#p1addition1">See additions.</ref>
-                  </desc>
-                </handNote>
+                  <ref target="#p1addition1">See additions.</ref>
+                  </handNote>
                 <handNote xml:id="p1handNote3" scope="minor" script="syr-Syrj" medium="unknown">
-                  <desc>Vowels added.<ref target="#p1addition2">See additions.</ref>
-                  </desc>
-                </handNote>
+                  Vowels added.<ref target="#p1addition2">See additions.</ref>
+                  </handNote>
                 <handNote xml:id="p1handNote4" scope="minor" script="syr" medium="unknown">
-                  <desc>
-                    <ref target="#p1addition3">See additions.</ref>
-                  </desc>
-                </handNote>
+                  <ref target="#p1addition3">See additions.</ref>
+                  </handNote>
               </handDesc>
-              <decoDesc/>
               <additions>
                 <note type="proofreader-note">N.B., folio location may not be available for some items below.</note>
                 <list>
@@ -291,33 +274,28 @@
                     <p>A later hand has employed the letters of the alphabet for signing the quires.</p>
                   </item>
                   <item xml:id="p1addition2" n="2">
-                    <p>Vowels have been added in<locus from="1" to="61">the first 61 leaves</locus>by a much later hand (<foreign xml:lang="syr">ܰ, ܶ, ܺ, ܳ</foreign>, , or, , , ,).</p>
+                    <p>Vowels have been added in <locus from="1" to="61">the first 61 leaves</locus> by a much later hand (<foreign xml:lang="syr">ܰ, ܶ, ܺ, ܳ</foreign>, , or, , , ,).</p>
                   </item>
                   <item xml:id="p1addition3" n="3">
-                    <p>Many lessons have been noted by two later hands, one of which has introduced a marginal division of the Gospels into sections. Of these there are 22 in<ref target="#p1b1">S. Matthew</ref>, 13 in<ref target="#p1b2">S. Mark</ref>, 23 in<ref target="#p1b3">S. Luke</ref>, and 6 in the remaining portion of<ref target="#p1b4">S. John</ref>.</p>
+                    <p>Many lessons have been noted by two later hands, one of which has introduced a marginal division of the Gospels into sections. Of these there are 22 in <ref target="#p1b1">S. Matthew</ref>, 13 in <ref target="#p1b2">S. Mark</ref>, 23 in <ref target="#p1b3">S. Luke</ref>, and 6 in the remaining portion of <ref target="#p1b4">S. John</ref>.</p>
                   </item>
                 </list>
               </additions>
-              <bindingDesc/>
-              <sealDesc/>
-              <accMat/>
-            </physDesc>
+              </physDesc>
             <history>
               <origin>
-                <origDate notBefore="0500" notAfter="0700">6th or 7th century</origDate>
+                <origDate calendar="Gregorian" notBefore="0500" notAfter="0700">6th or 7th century</origDate>
+                
               </origin>
-              <provenance/>
-              <acquisition/>
-            </history>
+              </history>
             <additional>
               <adminInfo>
                 <recordHist>
-                  <source>Manuscript description based on<bibl>
+                  <source>Manuscript description based on <bibl>
                       <ref target="#Wrightpart1">Wright's Catalogue</ref>
                     </bibl>. abbreviated by the Syriaca.org editors.</source>
                 </recordHist>
-                <note/>
-              </adminInfo>
+                </adminInfo>
               <listBibl>
                 <bibl xml:id="Wrightpart1">
                   <author>William Wright</author>
@@ -326,7 +304,7 @@
                   <date>1870</date>
                   <ptr target="http://syriaca.org/bibl/8"/>
                   <citedRange unit="entry">LXXV. I.</citedRange>
-                  <citedRange unit="pp">1:50</citedRange>
+                  <citedRange unit="p">1:50</citedRange>
                 <ref type="internet-archive-pdf" target="https://archive.org/details/catalogueofsyria01brituoft/page/50"/>
                 </bibl>
               </listBibl>
@@ -342,11 +320,11 @@
                 <idno type="BL-Shelfmark-display">London, BL, Add. 12,137, foll. 178–179, 186</idno>
               </altIdentifier>
               <altIdentifier>
-                <idno type="BL-Shelmark-simplified">BL Add MS 12137, foll. 178-179, 186</idno>
+                <idno type="BL-Shelfmark-simplified">BL Add MS 12137, foll. 178-179, 186</idno>
               </altIdentifier>
             </msIdentifier>
             <head>
-              <note type="contents-note">This manuscript contains: The Gospel of S. John, according to the Peshitta version. In total, including sub-sections, this manuscript contains 1 items.</note>
+              <note type="contents-note">This manuscript contains: The Gospel of S. John, according to the Peshitta version. In total, including sub-sections, this manuscript contains 1 item.</note>
               <listRelation type="Wright-BL-Taxonomy">
                 <relation name="dcterms:type" ref="http://purl.org/dc/terms/type" active="https://bl.syriac.uk/ms/1162" passive="#bible-nt">
                   <desc>New Testament</desc>
@@ -354,44 +332,34 @@
               </listRelation>
               <listRelation type="part-to-composite">
                 <desc>This unit is a part of a composite manuscript:</desc>
-                <relation name="syriaca:is-unspecified-codicological-part-of" ref="#syriaca:is-unspecified-codicological-part-of" active="https://bl.syriac.uk/ms/1162" passive="https://bl.syriac.uk/ms/9">
-                  <relation/>
-                </relation>
+                <relation name="syriaca:is-unspecified-codicological-part-of" ref="#syriaca:is-unspecified-codicological-part-of" active="https://bl.syriac.uk/ms/1162" passive="https://bl.syriac.uk/ms/9"/>
               </listRelation>
             </head>
             <msContents>
-              <summary/>
               <textLang mainLang="syr">Syriac</textLang>
               <msItem xml:id="p2a1" n="1" defective="true">
                 <locus from="178" to="179">Foll. 178-179,</locus>
                 <locus from="186" to="186">and 186.</locus>
-                <title ref="http://syriaca.org/work/75" type="supplied">The Gospel of S. John, according to the Peshitta version</title>
+                <title ref="http://syriaca.org/work/75" xml:lang="en">The Gospel of S. John, according to the Peshitta version</title>
                 <note>ch. vi. 35 — ch. vii. 2, and ch. x. 3—20.</note>
               </msItem>
             </msContents>
             <physDesc>
               <p>Three vellum leaves, about 10 1/8 in. by 8.
               Each page is divided into two columns, of from 23 to 25 lines. </p>
-              <objectDesc form="unspecified">
+              <objectDesc form="other">
                 <supportDesc material="perg">
                   <support>
                     <material>Vellum</material>
                   </support>
                   <extent>
                     <measure type="composition" unit="leaf" quantity="3">3 ff.</measure>
-                    <dimensions type="leaf" unit="in">
-                      <height>
-                        <measure type="height" quantity="10.125" unit="in">10 1/8 in.</measure>
-                      </height>
-                      <width>
-                        <measure type="width" quantity="8" unit="in">8 in.</measure>
-                      </width>
+                    <dimensions type="leaf" unit="inch">
+                      <height quantity="10.125">10 1/8</height>
+                      <width quantity="8">8</width>
                     </dimensions>
                   </extent>
-                  <foliation/>
-                  <collation/>
-                  <condition/>
-                </supportDesc>
+                  </supportDesc>
                 <layoutDesc>
                   <layout columns="2" writtenLines="23 25">
                     <p>Each page is divided into two columns, of from 23 to 25 lines.</p>
@@ -400,47 +368,38 @@
               </objectDesc>
               <handDesc hands="2">
                 <handNote xml:id="p2handNote1" scope="major" script="syr-Syre" medium="unknown">
-                  <desc>Written in a fine Estrangela of the <origDate notBefore="0500" notAfter="0600">6th century</origDate>.</desc>
+                  Written in a fine Estrangela of the <date notBefore="0500" notAfter="0600">6th century</date>.
                 </handNote>
                 <handNote xml:id="p2handNote2" scope="minor" script="syr" medium="unknown">
-                  <desc>
-                    <ref target="#p2addition1">See additions.</ref>
-                  </desc>
-                </handNote>
+                  <ref target="#p2addition1">See additions.</ref>
+                  </handNote>
               </handDesc>
-              <decoDesc/>
               <additions>
                 <note type="proofreader-note">N.B., folio location may not be available for some items below.</note>
-                <p/>
                 <list>
                   <item xml:id="p2addition1" n="1">
-                    <p>Some lessons are indicated on the margins by two later hands, as in<ref target="#Part1 #p1addition3">no. I</ref>.</p>
+                    <p>Some lessons are indicated on the margins by two later hands, as in <ref target="#Part1 #p1addition3">no. I</ref>.</p>
                   </item>
                 </list>
               </additions>
-              <bindingDesc/>
-              <sealDesc/>
               <accMat>
-                <p>Regarding the<material>paper</material>leaves<locus from="180" to="185">foll. 180—185</locus>, see<ref target="#Part5">no. V</ref>.</p>
+                <p>Regarding the <material>paper</material> leaves <locus from="180" to="185">foll. 180—185</locus>, see <ref target="#Part5">no. V</ref>.</p>
               </accMat>
             </physDesc>
             <history>
-              <summary/>
               <origin>
-                <origDate notBefore="0500" notAfter="0600">6th century</origDate>
+                <origDate calendar="Gregorian" notBefore="0500" notAfter="0600">6th century</origDate>
+                
               </origin>
-              <provenance/>
-              <acquisition/>
-            </history>
+              </history>
             <additional>
               <adminInfo>
                 <recordHist>
-                  <source>Manuscript description based on<bibl>
+                  <source>Manuscript description based on <bibl>
                       <ref target="#Wrightpart2">Wright's Catalogue</ref>
                     </bibl>. abbreviated by the Syriaca.org editors.</source>
                 </recordHist>
-                <note/>
-              </adminInfo>
+                </adminInfo>
               <listBibl>
                 <bibl xml:id="Wrightpart2">
                   <author>William Wright</author>
@@ -449,7 +408,7 @@
                   <date>1870</date>
                   <ptr target="http://syriaca.org/bibl/8"/>
                   <citedRange unit="entry">LXXV. II.</citedRange>
-                  <citedRange unit="pp">1:51</citedRange>
+                  <citedRange unit="p">1:51</citedRange>
                 <ref type="internet-archive-pdf" target="https://archive.org/details/catalogueofsyria01brituoft/page/51"/>
                 </bibl>
               </listBibl>
@@ -465,11 +424,11 @@
                 <idno type="BL-Shelfmark-display">London, BL, Add. 12,173, foll. 187–207</idno>
               </altIdentifier>
               <altIdentifier>
-                <idno type="BL-Shelmark-simplified">BL Add MS 12173, foll. 187-207</idno>
+                <idno type="BL-Shelfmark-simplified">BL Add MS 12173, foll. 187-207</idno>
               </altIdentifier>
             </msIdentifier>
             <head>
-              <note type="contents-note">This manuscript contains: The Gospel of S. John, according to the Peshitta version. In total, including sub-sections, this manuscript contains 1 items.</note>
+              <note type="contents-note">This manuscript contains: The Gospel of S. John, according to the Peshitta version. In total, including sub-sections, this manuscript contains 1 item.</note>
               <listRelation type="Wright-BL-Taxonomy">
                 <relation name="dcterms:type" ref="http://purl.org/dc/terms/type" active="https://bl.syriac.uk/ms/1163" passive="#bible-nt">
                   <desc>New Testament</desc>
@@ -477,19 +436,16 @@
               </listRelation>
               <listRelation type="part-to-composite">
                 <desc>This unit is a part of a composite manuscript:</desc>
-                <relation name="syriaca:is-unspecified-codicological-part-of" ref="#syriaca:is-unspecified-codicological-part-of" active="https://bl.syriac.uk/ms/1163" passive="https://bl.syriac.uk/ms/9">
-                  <relation/>
-                </relation>
+                <relation name="syriaca:is-unspecified-codicological-part-of" ref="#syriaca:is-unspecified-codicological-part-of" active="https://bl.syriac.uk/ms/1163" passive="https://bl.syriac.uk/ms/9"/>
               </listRelation>
             </head>
             <msContents>
-              <summary/>
               <textLang mainLang="syr">Syriac</textLang>
               <msItem xml:id="p3a1" n="1" defective="true">
                 <locus from="187" to="207">Foll. 187-207</locus>
-                <title ref="http://syriaca.org/work/75" type="supplied">The Gospel of S. John, according to the Peshitta version</title>
+                <title ref="http://syriaca.org/work/75" xml:lang="en">The Gospel of S. John, according to the Peshitta version</title>
                 <note>ch. x. 20—xix. 29</note>
-                <note>The end of one lesson is marked in the text by the word<foreign xml:lang="syr">ܫܠܡ</foreign>(<locus from="187a" to="187a">fol. 187 a</locus>).</note>
+                <note>The end of one lesson is marked in the text by the word <foreign xml:lang="syr">ܫܠܡ</foreign>(<locus from="187a" to="187a">fol. 187 a</locus>).</note>
               </msItem>
             </msContents>
             <physDesc>
@@ -502,19 +458,12 @@
                   </support>
                   <extent>
                     <measure type="composition" unit="leaf" quantity="21">21 ff.</measure>
-                    <dimensions type="leaf" unit="in">
-                      <height>
-                        <measure type="height" quantity="10.5" unit="in">10 1/2 in.</measure>
-                      </height>
-                      <width>
-                        <measure type="width" quantity="8.125" unit="in">8 1/8 in.</measure>
-                      </width>
+                    <dimensions type="leaf" unit="inch">
+                      <height quantity="10.5">10 1/2</height>
+                      <width quantity="8.125">8 1/8</width>
                     </dimensions>
                   </extent>
-                  <foliation/>
-                  <collation/>
-                  <condition/>
-                </supportDesc>
+                  </supportDesc>
                 <layoutDesc>
                   <layout columns="2" writtenLines="22 24">
                     <p>Each page is divided into two columns, of from 22 to 24 lines.</p>
@@ -523,48 +472,40 @@
               </objectDesc>
               <handDesc hands="2">
                 <handNote xml:id="p3handNote1" scope="major" script="syr-Syre" medium="unknown">
-                  <desc>Written in a good, regular Estrangela of the <origDate notBefore="0500" notAfter="0600">6th century</origDate>.</desc>
+                  Written in a good, regular Estrangela of the <date notBefore="0500" notAfter="0600">6th century</date>.
                 </handNote>
                 <handNote xml:id="p3handNote2" scope="minor" script="syr" medium="red-ink">
-                  <desc>
-                    <ref target="#p3addition1">See additions.</ref>
-                  </desc>
-                </handNote>
+                  <ref target="#p3addition1">See additions.</ref>
+                  </handNote>
               </handDesc>
-              <decoDesc/>
               <additions>
                 <note type="proofreader-note">N.B., folio location may not be available for some items below.</note>
                 <list>
                   <item xml:id="p3addition1" n="1">
-                    <p>Other lessons have been noted on the margins by several hands of later date. The word<foreign xml:lang="syr">ܢܘܣܝܐ</foreign>in red, on the<locus from="196b" to="196b">lower margin of fol. 196 b</locus>, means<quote>“trial of the pen,”</quote>
-                      <quote xml:lang="syr">ܢܘܣܝܐ ܕܚܨܪܐ</quote>, or<quote>“trial of the ink,”</quote>
+                    <p>Other lessons have been noted on the margins by several hands of later date. The word <foreign xml:lang="syr">ܢܘܣܝܐ</foreign> in red, on the <locus from="196b" to="196b">lower margin of fol. 196 b</locus>, means <quote xml:lang="en">“trial of the pen,”</quote>
+                      <quote xml:lang="syr">ܢܘܣܝܐ ܕܚܨܪܐ</quote>, or <quote xml:lang="en">“trial of the ink,”</quote>
                       <quote xml:lang="syr">ܢܘܣܝܐ ܕܕܝܘܬܐ</quote>.</p>
                   </item>
                 </list>
               </additions>
-              <bindingDesc/>
-              <sealDesc/>
               <accMat>
-                <p>Regarding the<material>paper</material>leaves<locus from="208" to="211">foll. 208—211</locus>, see<ref target="#Part5">no. V</ref>.</p>
+                <p>Regarding the <material>paper</material> leaves <locus from="208" to="211">foll. 208—211</locus>, see <ref target="#Part5">no. V</ref>.</p>
               </accMat>
             </physDesc>
             <history>
-              <summary/>
               <origin>
-                <origDate notBefore="0500" notAfter="0600">6th century</origDate>
+                <origDate calendar="Gregorian" notBefore="0500" notAfter="0600">6th century</origDate>
+                
               </origin>
-              <provenance/>
-              <acquisition/>
-            </history>
+              </history>
             <additional>
               <adminInfo>
                 <recordHist>
-                  <source>Manuscript description based on<bibl>
+                  <source>Manuscript description based on <bibl>
                       <ref target="#Wrightpart3">Wright's Catalogue</ref>
                     </bibl>. abbreviated by the Syriaca.org editors.</source>
                 </recordHist>
-                <note/>
-              </adminInfo>
+                </adminInfo>
               <listBibl>
                 <bibl xml:id="Wrightpart3">
                   <author>William Wright</author>
@@ -573,7 +514,7 @@
                   <date>1870</date>
                   <ptr target="http://syriaca.org/bibl/8"/>
                   <citedRange unit="entry">LXXV. III.</citedRange>
-                  <citedRange unit="pp">1:51</citedRange>
+                  <citedRange unit="p">1:51</citedRange>
                 <ref type="internet-archive-pdf" target="https://archive.org/details/catalogueofsyria01brituoft/page/51"/>
                 </bibl>
               </listBibl>
@@ -589,11 +530,11 @@
                 <idno type="BL-Shelfmark-display">London, BL, Add. 12,137, foll. 212–213</idno>
               </altIdentifier>
               <altIdentifier>
-                <idno type="BL-Shelmark-simplified">BL Add MS 12137, foll. 212-213</idno>
+                <idno type="BL-Shelfmark-simplified">BL Add MS 12137, foll. 212-213</idno>
               </altIdentifier>
             </msIdentifier>
             <head>
-              <note type="contents-note">This manuscript contains: The Gospel of S. John, according to the Peshitta version. In total, including sub-sections, this manuscript contains 1 items.</note>
+              <note type="contents-note">This manuscript contains: The Gospel of S. John, according to the Peshitta version. In total, including sub-sections, this manuscript contains 1 item.</note>
               <listRelation type="Wright-BL-Taxonomy">
                 <relation name="dcterms:type" ref="http://purl.org/dc/terms/type" active="https://bl.syriac.uk/ms/1164" passive="#bible-nt">
                   <desc>New Testament</desc>
@@ -601,49 +542,39 @@
               </listRelation>
               <listRelation type="part-to-composite">
                 <desc>This unit is a part of a composite manuscript:</desc>
-                <relation name="syriaca:is-unspecified-codicological-part-of" ref="#syriaca:is-unspecified-codicological-part-of" active="https://bl.syriac.uk/ms/1164" passive="https://bl.syriac.uk/ms/9">
-                  <relation/>
-                </relation>
+                <relation name="syriaca:is-unspecified-codicological-part-of" ref="#syriaca:is-unspecified-codicological-part-of" active="https://bl.syriac.uk/ms/1164" passive="https://bl.syriac.uk/ms/9"/>
               </listRelation>
             </head>
             <msContents>
-              <summary/>
               <textLang mainLang="syr">Syriac</textLang>
               <msItem xml:id="p4a1" n="1" defective="true">
                 <locus from="212" to="213">Foll. 212-213</locus>
-                <title ref="http://syriaca.org/work/75" type="supplied">The Gospel of S. John, according to the Peshitta version</title>
+                <title ref="http://syriaca.org/work/75" xml:lang="en">The Gospel of S. John, according to the Peshitta version</title>
                 <note>ch. xxi. 12 to the end</note>
                 <finalRubric xml:lang="syr">ܫܠܡ ܠܡܟܬܒ ܐܘܢܓܠܝܘܢ ܩܕܝܫܐ ܟܪܘܙܘܬܐ ܕܝܘܚܢܢ ܫܠܝܚܐ ܚܕ ܡܢ ܬܪ̈ܥܣܪ ܕܡܠܠ ܝܘܢܐܝܬ ܒܐܦܣܣ. ܫܠܡ ܠܡܟܬܒ ܒܟܬܒܐ ܗܢܐ ܐܘ̈ܢܓܠܣܛܐ ܬܠܬܐ ܡܬܝ ܠܘܩܐ ܝܘܚܢܢ. .<locus from="213a"/>
                 </finalRubric>
-                <note>The manuscript, therefore, from which these two leaves were taken, contained only the three Gospels of<bibl>S. Matthew<ptr target="http://syriaca.org/work/72"/>
-                  </bibl>,<bibl>S. Luke<ptr target="http://syriaca.org/work/74"/>
-                  </bibl>and<bibl>S. John<ptr target="http://syriaca.org/work/75"/>
+                <note>The manuscript, therefore, from which these two leaves were taken, contained only the three Gospels of <bibl>S. Matthew <ptr target="http://syriaca.org/work/72"/>
+                  </bibl>, <bibl>S. Luke <ptr target="http://syriaca.org/work/74"/>
+                  </bibl> and <bibl>S. John <ptr target="http://syriaca.org/work/75"/>
                   </bibl>.</note>
               </msItem>
             </msContents>
             <physDesc>
               <p>Two vellum leaves about 10 1/8 in. by 8.
               Each page is divided into two columns, of 23 or 24 lines. </p>
-              <objectDesc form="unspecified">
+              <objectDesc form="other">
                 <supportDesc material="perg">
                   <support>
                     <material>Vellum</material>
                   </support>
                   <extent>
                     <measure type="composition" unit="leaf" quantity="2">2 ff.</measure>
-                    <dimensions type="leaf" unit="in">
-                      <height>
-                        <measure type="height" quantity="10.125" unit="in">10 1/8 in.</measure>
-                      </height>
-                      <width>
-                        <measure type="width" quantity="8" unit="in">8 in.</measure>
-                      </width>
+                    <dimensions type="leaf" unit="inch">
+                      <height quantity="10.125">10 1/8</height>
+                      <width quantity="8">8</width>
                     </dimensions>
                   </extent>
-                  <foliation/>
-                  <collation/>
-                  <condition/>
-                </supportDesc>
+                  </supportDesc>
                 <layoutDesc>
                   <layout columns="2" writtenLines="23 24">
                     <p>Each page is divided into two columns, of 23 or 24 lines.</p>
@@ -652,33 +583,26 @@
               </objectDesc>
               <handDesc hands="5">
                 <handNote xml:id="p4handNote1" scope="major" script="syr-Syre" medium="unknown">
-                  <desc>Written in a good, regular Estrangela of the <origDate notBefore="0700" notAfter="0800">8th century</origDate>.<ref target="#p4addition1">See additions.</ref>
-                  </desc>
-                </handNote>
+                  Written in a good, regular Estrangela of the <date notBefore="0700" notAfter="0800">8th century</date>. <ref target="#p4addition1">See additions.</ref>
+                  </handNote>
                 <handNote xml:id="p4handNote2" scope="minor" script="syr" medium="unknown">
-                  <desc>
-                    <ref target="#p4addition2">See additions.</ref>
-                  </desc>
-                </handNote>
+                  <ref target="#p4addition2">See additions.</ref>
+                  </handNote>
                 <handNote xml:id="p4handNote3" scope="minor" script="syr" medium="unknown">
-                  <desc>In a current hand.<ref target="#p4addition3">See additions.</ref>
-                  </desc>
-                </handNote>
+                  In a current hand.<ref target="#p4addition3">See additions.</ref>
+                  </handNote>
                 <handNote xml:id="p4handNote4" scope="minor" script="syr-Syre" medium="unknown">
-                  <desc>In Estrangela.<ref target="#p4addition4">See additions.</ref>
-                  </desc>
-                </handNote>
+                  In Estrangela.<ref target="#p4addition4">See additions.</ref>
+                  </handNote>
                 <handNote xml:id="p4handNote5" scope="minor" script="syr" medium="unknown">
-                  <desc>Written in a good, current hand of the<date notBefore="0900" notAfter="1000">10th century</date>.<ref target="#p4addition5">See additions.</ref>
-                  </desc>
-                </handNote>
+                  Written in a good, current hand of the <date notBefore="0900" notAfter="1000">10th century</date>. <ref target="#p4addition5">See additions.</ref>
+                  </handNote>
               </handDesc>
-              <decoDesc/>
               <additions>
                 <list>
                   <item xml:id="p4addition1" n="1">
                     <locus from="213a" to="213a"/>
-                    <p>A later hand has placed<foreign xml:lang="syr">ܕ̄</foreign>on the margin, opposite<foreign xml:lang="syr">ܬܠܬܐ</foreign>, and added<foreign xml:lang="syr">ܘܐܦ ܡܪܩܘܣ</foreign>.</p>
+                    <p>A later hand has placed <foreign xml:lang="syr">ܕ̄</foreign> on the margin, opposite <foreign xml:lang="syr">ܬܠܬܐ</foreign>, and added <foreign xml:lang="syr">ܘܐܦ ܡܪܩܘܣ</foreign>.</p>
                   </item>
                   <item xml:id="p4addition2" n="2">
                     <label>Colophon</label>
@@ -688,12 +612,10 @@
                       <quote xml:lang="syr">ܐܬܚܦܛ ܕܝܢ . . . ܟܬܒܐ ܗܢܐ ܡܪܝ ܝܘܚܢܢ ܩܫܝܫܐ ܡܢ ܥܘܡܪܐ ܩܕܝܫܐ ܕܡܪܝ ܗܒܝܠ ܛܘܒܢܐ. . .</quote>
                     </p>
                     <p>
-                      <quote>"<persName>Mār John the priest</persName>, from the holy<placeName>convent of the blessed Mār Abel</placeName>, [probably the<placeName>convent of Mār Abel</placeName>in<listPlace>
-                          <place>
-                            <placeName>Ma’dān,</placeName>
-                            <placeName xml:lang="syr">ܡܥܪܢ</placeName>
-                          </place>
-                        </listPlace>, mentioned by<bibl>Assemani, Bibl. Orient., t. ii. Dissert. de Monophys., art. ix.</bibl>] used diligence and . . . this book . . .”</quote>
+                      <quote xml:lang="en">
+                        <persName>Mār John the priest</persName>, from the holy <placeName>convent of the blessed Mār Abel</placeName>, 
+                        [probably the <placeName>convent of Mār Abel</placeName> in <placeName>Ma’dān</placeName>, <placeName xml:lang="syr">ܡܥܪܢ</placeName>, 
+                        mentioned by <bibl>Assemani, Bibl. Orient., t. ii. Dissert. de Monophys., art. ix.</bibl>] used diligence and . . . this book . . .</quote>
                     </p>
                   </item>
                   <item xml:id="p4addition3" n="3">
@@ -702,9 +624,9 @@
                   </item>
                   <item xml:id="p4addition4" n="4">
                     <locus from="213b" to="213b"/>
-                    <p>On fol. 213b are two notes, the one stating that this book belonged to the<placeName>convent of S. Mary Deipara</placeName>, the other that it was bound by one<persName>Ephraim</persName>, a stranger or guest (<foreign xml:lang="syr">ܐܟܣܢܝܐ</foreign>,<foreign xml:lang="grc">ξένος</foreign>) in that convent, from the<placeName>convent of Sergius</placeName>near<placeName>Balad</placeName>(<foreign xml:lang="syr">ܒܠܕ</foreign>,<foreign xml:lang="ar">
+                    <p>On fol. 213b are two notes, the one stating that this book belonged to the <placeName>convent of S. Mary Deipara</placeName>, the other that it was bound by one <persName>Ephraim</persName>, a stranger or guest (<foreign xml:lang="syr">ܐܟܣܢܝܐ</foreign>, <foreign xml:lang="grc">ξένος</foreign>) in that convent, from the <placeName>convent of Sergius</placeName> near <placeName>Balad</placeName>(<foreign xml:lang="syr">ܒܠܕ</foreign>, <foreign xml:lang="ar">
                         <!-- NEEDS ARABIC -->
-                      </foreign>). See<bibl>Assemani, Bibl. Orient. t. ii. Dissert. de Monophys., art. ix., Balada and Monasterium S. Sergii</bibl>.</p>
+                      </foreign>). See <bibl>Assemani, Bibl. Orient. t. ii. Dissert. de Monophys., art. ix., Balada and Monasterium S. Sergii</bibl>.</p>
                     <p>
                       <quote xml:lang="syr">ܕܒܩ ܘܨܒܬ ܠܟܬܒܐ ܗܢܐ ܐܦܪܝܡ ܐܟܣܢܝܐ ܡܢ ܥܘܡܪܐ ܕܩܕܝܫܐ ܡܪܝ ܣܐܪܓܝܣ ܕܒܐܬܪ ܕܥܪ̈ܒܝܐ ܘܒܠܕ ܡܪܝܐ ܢܚܣܐ ܠܗ ܘܠܟܠ ܕܐܫܬܘܬܦ. ܐܡܝܢ..</quote>
                     </p>
@@ -714,37 +636,26 @@
                   </item>
                 </list>
               </additions>
-              <bindingDesc>
-                <binding xml:id="p4binding1" contemporary="unknown">
-                  <p>
-                    <ref target="#p4addition5">See additions.</ref>
-                  </p>
-                </binding>
-              </bindingDesc>
-              <sealDesc/>
-              <accMat/>
-            </physDesc>
+              </physDesc>
             <history>
-              <summary/>
               <origin>
-                <origDate notBefore="0700" notAfter="0800">8th century</origDate>
+                <origDate calendar="Gregorian" notBefore="0700" notAfter="0800">8th century</origDate>
+                
               </origin>
               <provenance>
-                <p>
+                
                   <ref target="#p4addition5">See additions.</ref>
-                </p>
+                
               </provenance>
-              <acquisition/>
-            </history>
+              </history>
             <additional>
               <adminInfo>
                 <recordHist>
-                  <source>Manuscript description based on<bibl>
+                  <source>Manuscript description based on <bibl>
                       <ref target="#Wrightpart4">Wright's Catalogue</ref>
                     </bibl>. abbreviated by the Syriaca.org editors.</source>
                 </recordHist>
-                <note/>
-              </adminInfo>
+                </adminInfo>
               <listBibl>
                 <bibl xml:id="Wrightpart4">
                   <author>William Wright</author>
@@ -753,7 +664,7 @@
                   <date>1870</date>
                   <ptr target="http://syriaca.org/bibl/8"/>
                   <citedRange unit="entry">LXXV. IV.</citedRange>
-                  <citedRange unit="pp">1:51</citedRange>
+                  <citedRange unit="p">1:51</citedRange>
                 <ref type="internet-archive-pdf" target="https://archive.org/details/catalogueofsyria01brituoft/page/51"/>
                 </bibl>
               </listBibl>
@@ -769,7 +680,7 @@
                 <idno type="BL-Shelfmark-display">London, BL, Add. 12,137, foll. 19, 180–185, 208–211</idno>
               </altIdentifier>
               <altIdentifier>
-                <idno type="BL-Shelmark-simplified">BL Add MS 12137, foll. 19, 180-185, 208-211</idno>
+                <idno type="BL-Shelfmark-simplified">BL Add MS 12137, foll. 19, 180-185, 208-211</idno>
               </altIdentifier>
             </msIdentifier>
             <head>
@@ -781,23 +692,20 @@
               </listRelation>
               <listRelation type="part-to-composite">
                 <desc>This unit is a part of a composite manuscript:</desc>
-                <relation name="syriaca:is-unspecified-codicological-part-of" ref="#syriaca:is-unspecified-codicological-part-of" active="https://bl.syriac.uk/ms/1165" passive="https://bl.syriac.uk/ms/9">
-                  <relation/>
-                </relation>
+                <relation name="syriaca:is-unspecified-codicological-part-of" ref="#syriaca:is-unspecified-codicological-part-of" active="https://bl.syriac.uk/ms/1165" passive="https://bl.syriac.uk/ms/9"/>
               </listRelation>
             </head>
             <msContents>
-              <summary/>
               <textLang mainLang="syr">Syriac</textLang>
               <msItem xml:id="p5a1" n="1" defective="true">
                 <locus from="19" to="19">Fol. 19</locus>
-                <title ref="http://syriaca.org/work/72" type="supplied">The Gospel of S. Matthew, according to the Peshitta version</title>
+                <title ref="http://syriaca.org/work/72" xml:lang="en">The Gospel of S. Matthew, according to the Peshitta version</title>
                 <note>ch. x. 10—26</note>
               </msItem>
               <msItem xml:id="p5a2" n="2" defective="true">
                 <locus from="180" to="185">Foll. 180-185 and</locus>
                 <locus from="208" to="211">208-211.</locus>
-                <title ref="http://syriaca.org/work/75" type="supplied">The Gospel of S. John, according to the Peshitta version</title>
+                <title ref="http://syriaca.org/work/75" xml:lang="en">The Gospel of S. John, according to the Peshitta version</title>
                 <note>ch. vii. 2 — x. 3 ; ch. xix. 29—xxi. 12</note>
               </msItem>
             </msContents>
@@ -811,19 +719,12 @@
                   </support>
                   <extent>
                     <measure type="composition" unit="leaf" quantity="11">11 ff.</measure>
-                    <dimensions type="leaf" unit="in">
-                      <height>
-                        <measure type="height" quantity="10.375" unit="in">10 3/8 in.</measure>
-                      </height>
-                      <width>
-                        <measure type="width" quantity="8" unit="in">8 in.</measure>
-                      </width>
+                    <dimensions type="leaf" unit="inch">
+                      <height quantity="10.375">10 3/8</height>
+                      <width quantity="8">8</width>
                     </dimensions>
                   </extent>
-                  <foliation/>
-                  <collation/>
-                  <condition/>
-                </supportDesc>
+                  </supportDesc>
                 <layoutDesc>
                   <layout columns="2">
                     <p>Written in double columns</p>
@@ -832,40 +733,30 @@
               </objectDesc>
               <handDesc hands="1">
                 <handNote xml:id="p5handNote1" scope="sole" script="syr-Syre" medium="unknown">
-                  <desc>Written in a rude Estrangela, by one<persName>Samuel (bar<persName>Cyriacus</persName>)</persName>, a recluse of<listPlace>
-                      <place>
-                        <placeName>Gozartā</placeName>
-                        <placeName>(ܓܘܙܪܬܐ)</placeName>
-                      </place>
-                    </listPlace>in<placeName>Egypt</placeName>, towards the end of the <origDate notBefore="1000" notAfter="1100">11th century</origDate>.<ref target="addition1">See additions at top.</ref>
-                  </desc>
-                </handNote>
+                  Written in a rude Estrangela, by one <persName>Samuel (bar <persName>Cyriacus</persName>)</persName>, 
+                    a recluse of <placeName>Gozartā</placeName>, <placeName>(ܓܘܙܪܬܐ)</placeName>
+                    in <placeName>Egypt</placeName>, towards the end of the <date notBefore="1000" notAfter="1100">11th century</date>. 
+                    <ref target="addition1">See additions at top</ref>.
+                  </handNote>
               </handDesc>
-              <decoDesc/>
-              <additions/>
-              <bindingDesc/>
-              <sealDesc/>
-              <accMat/>
-            </physDesc>
+              </physDesc>
             <history>
-              <summary/>
               <origin>
-                <origDate notBefore="1000" notAfter="1100">11th century</origDate>
-                <origPlace>Gozartā (<foreign xml:lang="syr">ܓܘܙܪܬܐ</foreign>) in Egypt
+                <origDate calendar="Gregorian" notBefore="1000" notAfter="1100">11th century</origDate>
+                
+                <origPlace>
+                  Gozartā (<foreign xml:lang="syr">ܓܘܙܪܬܐ</foreign>) in <placeName ref="http://syriaca.org/place/715">Egypt</placeName>
                 </origPlace>
               </origin>
-              <provenance/>
-              <acquisition/>
-            </history>
+              </history>
             <additional>
               <adminInfo>
                 <recordHist>
-                  <source>Manuscript description based on<bibl>
+                  <source>Manuscript description based on <bibl>
                       <ref target="#Wrightpart5">Wright's Catalogue</ref>
                     </bibl>. abbreviated by the Syriaca.org editors.</source>
                 </recordHist>
-                <note/>
-              </adminInfo>
+                </adminInfo>
               <listBibl>
                 <bibl xml:id="Wrightpart5">
                   <author>William Wright</author>
@@ -874,7 +765,7 @@
                   <date>1870</date>
                   <ptr target="http://syriaca.org/bibl/8"/>
                   <citedRange unit="entry">LXXV. V.</citedRange>
-                  <citedRange unit="pp">1:51-52</citedRange>
+                  <citedRange unit="p">1:51-52</citedRange>
                 <ref type="internet-archive-pdf" target="https://archive.org/details/catalogueofsyria01brituoft/page/51"/>
                 </bibl>
               </listBibl>
@@ -899,7 +790,6 @@
       <classDecl>
         <taxonomy xml:id="Wright-BL-Taxonomy">
           <bibl>
-            
             <ptr target="http://syriaca.org/documentation/Wright-BL-Taxonomy.html"/>
           </bibl>
           <category xml:id="biblical-manuscripts">
@@ -1016,22 +906,30 @@
     </encodingDesc>
     <profileDesc>
       <langUsage>
-        <language ident="syr">Unvocalized Syriac of any variety or period</language>
-        <language ident="syr-Syre">Syriac in Estrangela</language>
-        <language ident="syr-Syrj">Vocalized West Syriac</language>
-        <language ident="syr-Syrn">Vocalized East Syriac</language>
-        <language ident="syr-x-syrm">Melkite Syriac</language>
-        <language ident="qhy-x-cpas">Palestinian Syriac</language>
-        <language ident="ar-Syrc">Unvocalized or Undetermined Arabic Garshuni</language>
-        <language ident="ar-Syrj">Arabic Garshuni in Vocalized West Syriac Script</language>
-        <language ident="ar-Syrn">Arabic Garshuni in Vocalized East Syriac Script</language>
-        <language ident="en">English</language>
         <language ident="ar">Arabic</language>
-        <language ident="fr">French</language>
-        <language ident="de">German</language>
-        <language ident="la">Latin</language>
-        <language ident="grc">Ancient Greek</language>
+        <language ident="ar-Syrc">Arabic Garshuni</language>
+        <language ident="ar-Syrn">Arabic Garshuni in East Syriac script</language>
         <language ident="cop">Coptic</language>
+        <language ident="de">German</language>
+        <language ident="en">English</language>
+        <language ident="fr">French</language>
+        <language ident="grc">Ancient Greek</language>
+        <language ident="he">Hebrew</language>
+        <language ident="hy">Armenian</language>
+        <language ident="it">Italian</language>
+        <language ident="la">Latin</language>
+        <language ident="syr">Syriac</language>
+        <language ident="syr-Arab">Syriac Garshuni in Arabic script</language>
+        <language ident="syr-Syre">Syriac in Estrangela script</language>
+        <language ident="syr-Syrj">Syriac in West Syriac script</language>
+        <language ident="syr-Syrn">Syriac in East Syriac script</language>
+        <language ident="syr-x-syrm">Syriac in Melkite Syriac script</language>
+        <language ident="tr">Turkish</language>
+        <language ident="tr-Syrc">Turkish Garshuni</language>
+        <language ident="qhy-x-cpas">Christian Palestinian Aramaic script</language>
+        <language ident="xcl">Classical Armenian</language>
+        <language ident="und">Undetermined</language>
+        <language ident="mul">Multiple languages</language>
       </langUsage>
       <textClass>
         <keywords scheme="#Wright-BL-Taxonomy">
@@ -1070,24 +968,18 @@
       <change who="https://bl.syriac.uk/documentation/editors.xml#dgreeson" when="2013-08-26">Title edits</change>
       <change who="https://bl.syriac.uk/documentation/editors.xml#thannah" when="2013-10-07">Updated decoNote type</change>
       <change who="https://bl.syriac.uk/documentation/editors.xml#jarnwine" when="2014-04-08">Changed addition1 to finalRubric and note.</change>
-      <change type="planned" subtype="arabic">Add missing Arabic text.</change>
-      <change type="planned" subtype="vocalization">Enter vocalization.</change>
-      <change type="planned" subtype="question">Question in Word Doc to be Addressed.</change>
-      <change type="planned" subtype="missing">Missing images.</change>
+      <change type="planned" subtype="arabic" who="https://bl.syriac.uk/documentation/editors.xml#smbl-general-editors">Add missing Arabic text.</change>
+      <change type="planned" subtype="vocalization" who="https://bl.syriac.uk/documentation/editors.xml#smbl-general-editors">Enter vocalization.</change>
+      <change type="planned" subtype="question" who="https://bl.syriac.uk/documentation/editors.xml#smbl-general-editors">Question in Word Doc to be Addressed.</change>
+      <change type="planned" subtype="missing" who="https://bl.syriac.uk/documentation/editors.xml#smbl-general-editors">Missing images.</change>
       <change who="https://bl.syriac.uk/documentation/editors.xml#pgmiller" when="2016-07-06">Changed: Files moved to srophe-app-data/data/manuscripts/tei repository.</change>
       <change who="https://bl.syriac.uk/documentation/editors.xml#jarnwine" when="2022-05-09">Updates to physDesc for Part1-Part5</change>
     </revisionDesc>
   </teiHeader>
-  <facsimile>
-    <!-- facsimile information about the manuscript -->
-    <graphic/>
-    <!-- Alternatively you could provide 'surface' elements with more than one image per surface, and optionally with 'zone' 
-      elements to give coordinates for any special areas of interest -->
-  </facsimile>
   <text>
     <body>
-      <!-- If you had a transcription of the manuscript you would put it here -->
       <p/>
+      <!--Body paragraph provided for document validation.-->
     </body>
   </text>
 </TEI>

@@ -1,4 +1,7 @@
-<?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/srophe-app/documentation/enrich-syriaca.rnc" type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/css" href="SRPEnrichCSS.css"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+<?xml-model href="https://raw.githubusercontent.com/srophe/britishLibrary/main/documentation/schema/out/Syriacamsdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/srophe/britishLibrary/main/documentation/schema/out/Syriacamsdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet href="https://raw.githubusercontent.com/srophe/wright-catalogue/master/parameters/tei.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="manuscript_539">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -60,11 +63,9 @@
         <edition n="1.0"/>
       </editionStmt>
       <publicationStmt>
-        <pubPlace/>
         <authority>Syriaca.org: The Syriac Reference Portal</authority>
         <idno type="URI">https://bl.syriac.uk/ms/539/tei</idno>
         <availability>
-          <p/>
           <licence target="http://creativecommons.org/licenses/by/3.0/">
             <p>Distributed under a Creative Commons Attribution 3.0 Unported License</p>
           </licence>
@@ -72,7 +73,7 @@
         <date calendar="Gregorian">2023-04-21-05:00</date>
       </publicationStmt>
       <sourceDesc>
-        <msDesc xml:id="manuscript-714" xml:lang="en">
+        <msDesc xml:id="manuscript-539">
           <msIdentifier>
             <country>United Kingdom</country>
             <settlement>London</settlement>
@@ -86,12 +87,11 @@
               <idno type="BL-Shelfmark-display">London, BL, Add. 14,683</idno>
             </altIdentifier>
             <altIdentifier>
-              <idno type="BL-Shelmark-simplified">BL Add MS 14683</idno>
+              <idno type="BL-Shelfmark-simplified">BL Add MS 14683</idno>
             </altIdentifier>
           </msIdentifier>
           <head>
             <note type="contents-note">This manuscript record does not have a summary list of contents. For composite manuscripts, the list of contents can be found under each individual part.</note>
-            <listRelation type="Wright-BL-Taxonomy"/>
             <listRelation type="composite-to-parts">
               <desc>This composite manuscript consists of 2 distinct parts:</desc>
               <relation name="syriaca:has-unspecified-codicological-part" ref="#syriaca:has-unspecified-codicological-part" active="https://bl.syriac.uk/ms/539" passive="https://bl.syriac.uk/ms/1195">
@@ -104,8 +104,7 @@
           </head>
           <history>
             <provenance>It is unclear from Wright's description if this is a composite manuscript which was later joined together or if perhaps it was originally a single manuscript which was later divided and circulated in two parts. Further consultation of the manuscript may clarify this question.</provenance>
-            <acquisition/>
-          </history>
+            </history>
           <msPart xml:id="Part1" n="1">
             <msIdentifier>
               <idno type="URI">https://bl.syriac.uk/ms/1195</idno>
@@ -116,7 +115,7 @@
                 <idno type="BL-Shelfmark-display">London, BL, Add. 14,683, foll. 1–102</idno>
               </altIdentifier>
               <altIdentifier>
-                <idno type="BL-Shelmark-simplified">BL Add MS 14683, foll. 1-102</idno>
+                <idno type="BL-Shelfmark-simplified">BL Add MS 14683, foll. 1-102</idno>
               </altIdentifier>
               <altIdentifier>
                 <collection>William Wright, Catalogue of the Syriac Manuscripts in the British Museum Acquired since the Year 1838</collection>
@@ -130,69 +129,75 @@
             <head>
               <note type="contents-note">This manuscript contains: John Chrysostom. The third part of a Commentary on the Pauline Epistles, abridged and compiled from the commentary ofJohn Chrysostom, byRabban Lazarus of Beth-Kandasawho probably flourished aboutA.D. 774.; Account of the generations, races, and years, fromAdamdown to the present day. In total, including sub-sections, this manuscript contains 7 items.</note>
               <listRelation type="Wright-BL-Taxonomy">
-                <relation name="dcterms:type" ref="http://purl.org/dc/terms/type" active="https://bl.syriac.uk/ms/1195" passive="#theology">
-                  <desc/>
-                </relation>
+                <relation name="dcterms:type" ref="http://purl.org/dc/terms/type" active="https://bl.syriac.uk/ms/1195" passive="#theology"/>
               </listRelation>
               <listRelation type="part-to-composite">
                 <desc>This unit is a part of a composite manuscript:</desc>
-                <relation name="syriaca:is-unspecified-codicological-part-of" ref="#syriaca:is-unspecified-codicological-part-of" active="https://bl.syriac.uk/ms/1195" passive="https://bl.syriac.uk/ms/539">
-                  <relation/>
-                </relation>
+                <relation name="syriaca:is-unspecified-codicological-part-of" ref="#syriaca:is-unspecified-codicological-part-of" active="https://bl.syriac.uk/ms/1195" passive="https://bl.syriac.uk/ms/539"/>
               </listRelation>
             </head>
             <msContents>
-              <summary/>
               <textLang mainLang="syr">Syriac</textLang>
               <msItem xml:id="p1a1" n="1" defective="true">
                 <locus from="1" to="102">Foll. 1-102</locus>
-                <author ref="http://syriaca.org/person/573">John Chrysostom</author>
-                <title type="supplied">The third part of a Commentary on the Pauline Epistles, abridged and compiled from the commentary of<persName ref="http://syriaca.org/person/573">John Chrysostom</persName>, by<persName ref="http://syriaca.org/person/136">Rabban Lazarus of Beth-Kandasa</persName>who probably flourished about<date when="0774" calendar="Gregorian">A.D. 774</date>.</title>
-                <rubric xml:lang="syr">ܦܠܓܘܬܐ ܕܬܠܬ ܕܟܬܒܐ ܕܢܘܗܪܐ ܕܫܠܝܚܐ ܐܠܗܝܐ ܦܐܘܠܘܣ. ܕܡܟܢܫ ܠܡ̈ܠܦܢܐ ܓ̈ܒܝܐ ܘܡܐܪ̈ܙܢܐ ܒܚܝܪ̈ܐ<locus/>
-                </rubric>
+                <author ref="http://syriaca.org/person/573">
+                  <persName xml:lang="en">John Chrysostom</persName>
+                </author>
+                <title xml:lang="en">The third part of a Commentary on the Pauline Epistles, abridged and compiled from the commentary of John Chrysostom, by Rabban Lazarus of Beth-Kandasa who probably flourished about A.D. 774.</title>
+                <rubric xml:lang="syr">ܦܠܓܘܬܐ ܕܬܠܬ ܕܟܬܒܐ ܕܢܘܗܪܐ ܕܫܠܝܚܐ ܐܠܗܝܐ ܦܐܘܠܘܣ. ܕܡܟܢܫ ܠܡ̈ܠܦܢܐ ܓ̈ܒܝܐ ܘܡܐܪ̈ܙܢܐ ܒܚܝܪ̈ܐ</rubric>
                 <colophon>
                   <ref target="#p1addition1">See additions.</ref>
                 </colophon>
                 <msItem xml:id="p1b1" n="2" defective="true">
                   <locus from="2b" to="23b">Foll. 2b-23b</locus>
-                  <author ref="http://syriaca.org/person/573">John Chrysostom</author>
-                  <title type="supplied">Galatians</title>
+                  <author ref="http://syriaca.org/person/573">
+                    <persName xml:lang="en">John Chrysostom</persName>
+                  </author>
+                  <title xml:lang="en">Galatians</title>
                   <note>Imperfect at the end, terminating with ch. vi. 11, 12. 
                     Wright conjectures that the commentary on Ephesians 
                     may have followed but notes that it is now altogether 
-                    wanting. See<ref target="#p1addition2">additions</ref>.</note>
+                    wanting. See <ref target="#p1addition2">additions</ref>.</note>
                 </msItem>
                 <msItem xml:id="p1b2" n="3" defective="true">
                   <locus from="24a" to="39">Foll. 24a-39</locus>
-                  <author ref="http://syriaca.org/person/573">John Chrysostom</author>
-                  <title type="supplied">Philippians</title>
+                  <author ref="http://syriaca.org/person/573">
+                    <persName xml:lang="en">John Chrysostom</persName>
+                  </author>
+                  <title xml:lang="en">Philippians</title>
                   <note>Imperfect at the beginning, commencing with ch. i. 12.</note>
                 </msItem>
                 <msItem xml:id="p1b3" n="4">
                   <locus from="39a" to="58">Foll. 39a-58</locus>
-                  <author ref="http://syriaca.org/person/573">John Chrysostom</author>
-                  <title type="supplied">Colossians</title>
+                  <author ref="http://syriaca.org/person/573">
+                    <persName xml:lang="en">John Chrysostom</persName>
+                  </author>
+                  <title xml:lang="en">Colossians</title>
                 </msItem>
                 <msItem xml:id="p1b4" n="5">
                   <locus from="58a" to="80">Foll. 58a-80</locus>
-                  <author ref="http://syriaca.org/person/573">John Chrysostom</author>
-                  <title type="supplied">1 Thessalonians</title>
+                  <author ref="http://syriaca.org/person/573">
+                    <persName xml:lang="en">John Chrysostom</persName>
+                  </author>
+                  <title xml:lang="en">1 Thessalonians</title>
                 </msItem>
                 <msItem xml:id="p1b5" n="6">
                   <locus from="80b" to="92">Foll. 80b-92</locus>
-                  <author ref="http://syriaca.org/person/573">John Chrysostom</author>
-                  <title type="supplied">2 Thessalonians</title>
+                  <author ref="http://syriaca.org/person/573">
+                    <persName xml:lang="en">John Chrysostom</persName>
+                  </author>
+                  <title xml:lang="en">2 Thessalonians</title>
                 </msItem>
               </msItem>
               <msItem xml:id="p1a2" n="7">
                 <locus from="93a" to="102b">Foll. 93a-102b</locus>
                 
-                <title type="supplied">Account of the generations, races, and years, from<persName>Adam</persName>down to the present day.</title>
+                <title xml:lang="en">Account of the generations, races, and years, from Adam down to the present day.</title>
                 <rubric xml:lang="syr">ܫܘܘܕܥܐ ܕܐܝܟܢܐ ܐܝܬܝܗܘܢ ܕܪ̈ܐ ܘܫܪ̈ܒܐ ܘܫ̈ܢܝܐ ܕܡܢ ܐܕܡ ܥܕܡܐ ܠܝܘܡܢܐ<locus from="93a" to="93a"/>
                 </rubric>
                 <incipit xml:lang="syr">ܡܛܠ ܕܝܢ ܕܙܕܩ̇ ܗܘ ܠܡܫ̈ܡܫܢܐ ܕܫܪܪܐ ܕܢܬܥܬܕܘܢ ܒܟܠܗܝܢ ܕܥܗܢܢ ܠܫܪܪܐ̣. ܐܬܒܛܠ ܠܝ ܕܐܦ ܥܠ ܗܕܐ ܐܚ̈ܝ ܘܚ̈ܒܝܒܝ̣. ܕܒܦܣܝܩܬܐ ܡܢ ܟܬܒ̈ܐ ܩ̈ܕܝܫܐ ܢܟܢܫ ܐܝܠܝܢ ܕܥܗܢܢ ܘܢ̇ܒܢܐ. ܚܦܝܛܘܬܟܘܢ. ܐܝܟܢܐ ܕܒ̈ܬܚܘܝܬܐ ܙܥܘܪ̈ܝܬܐ ܢܫܬܟܚ ܠܘܬܢ ܫܪܪܐ ܕܐܝܠܝܢ ܕܐܠܨܐܝܬ ܡܬ݀ܒܥܝܢ. ܘܢܒܛܠ ܚܪܝܢܐ ܕܡܬܝܠܕ ܡܢ ܠܐ ܝܕܥܬܐ ܘܡܥܡܛ ܠܡܕܥܐ ܕܩܢܝ̈ܘܗܝ. ܕܚܢܢ ܐܝܠܝܢ ܕܒܪܚܡܬ݀ ܫܪܪܐ ܨܒܝܢܢ ܠܡܕܥܗ ܠܫܪܪܐ̣. ܢܕܥ ܦܘܠܓܐ [ܕ]ܥ̈ܡܡܐ ܘܫܪ̈ܒܬܐ ܕܐܒܗ̈ܬܐ. ܘܐܘ . . . ܐ ܕܬܘܬܒܘܬ. ܘܕܡܕܒܪܢܘܬܐ. ܕܕ̈ܝ̇ܢܐ. ܘܙ̈ܒܢܐ ܕܡ̈ܠܟܐ ܘܕܢ̈ܒܝܐ. ܘܐܝܠܝܢ ܗܘܘ ܒܝ̈ܘܡܝ ܐܝܠܝܢ ܡ̈ܠܟܐ. ܘܫ̈ܒܝܐ ܕܗܘܘ ܠܥܡܐ̣. ܒܝ̈ܘܡܝ ܐܝܠܝܢ ܡ̈ܠܟܐ ܘܕܝ̈ܢ̇ܐ ܘܐܝܠܝܢ ܟܗ̈ܢܐ. ܘܐܝܟܢܐ ܡܬܝܒܠ ܙܪܥܐ ܕܐܒ̈ܗܬܐ ܘܡܫܬܠܡ ܒܡܫܝܚܐ. ܘܟܡܐ ܫ̈ܢܝܢ ܡܬܡܢܝܢ ܡܢ ܬܪ̈ܡܝܬܗ ܕܥܠܡܐ ܘܥܕܡܐ ܠܝܘܡܢܐ. ܟܠܗܝܢ ܗܟܝܠ ܐܝܟ ܕܒܦܣܝܩܬܐ ܢܚܘܐ̣. ܠܘ ܒܐܘܡܢܘܬܐ ܕܢܦܫܢ̇ ܐܠܐ ܒܣܗܕܘܬܐ ܕܡܢ ܟ̈ܬܒܐ<locus from="93a" to="93a"/>
                 </incipit>
-                <note>The compiler brings down the narrative to the accession of the<name>'Abbaside</name>caliph<persName>Mohammed el Mahdi</persName>,<date when-custom="1085" datingMethod="Seleucid">A. Gr. 1085</date>,<date when="0774" calendar="Gregorian">A.D. 774</date>fol.<locus from="101b">101b</locus>:<quote xml:lang="syr">ܘܒܫܢܬ ܐܠܦܐ ܘܬܡܢܝܢ<supplied reason="unknown" resp="https://bl.syriac.uk/documentation/editors.xml#wwright">ܘܚܡܫ</supplied>ܒܬܫܥܐ ܒܐܝܪܚ ܬܫܪܝ ܚܪܝ ܐܡܠܟ ܡܚܡܛ<sic>ܐܠܡܗܝ</sic>ܒܪܗ.</quote>
+                <note>The compiler brings down the narrative to the accession of the <persName>'Abbaside caliph Mohammed el Mahdi</persName>, <date when-custom="1085" datingMethod="Seleucid">A. Gr. 1085</date>, <date when="0774" calendar="Gregorian">A.D. 774</date> fol.<locus from="101b">101b</locus>:<quote xml:lang="syr">ܘܒܫܢܬ ܐܠܦܐ ܘܬܡܢܝܢ<supplied reason="unknown" resp="https://bl.syriac.uk/documentation/editors.xml#wwright">ܘܚܡܫ</supplied>ܒܬܫܥܐ ܒܐܝܪܚ ܬܫܪܝ ܚܪܝ ܐܡܠܟ ܡܚܡܛ<sic>ܐܠܡܗܝ</sic>ܒܪܗ.</quote>
                 </note>
               </msItem>
             </msContents>
@@ -212,18 +217,13 @@
                   </support>
                   <extent>
                     <measure type="composition" unit="leaf" quantity="102">102 ff.</measure>
-                    <dimensions type="leaf" unit="in">
-                      <height>
-                        <measure type="height" quantity="10" unit="in">10</measure>
-                      </height>
-                      <width>
-                        <measure type="width" quantity="6.75" unit="in">6 3/4</measure>
-                      </width>
+                    <dimensions type="leaf" unit="inch">
+                      <height quantity="10">10</height>
+                      <width quantity="6.75">6 3/4</width>
                     </dimensions>
                   </extent>
-                  <foliation/>
                   <collation>
-                    <p>The quires were originally 24 in number; viz. 12 in the<ref target="#Part1">first part</ref>, foll.<locus from="1" to="102">1-102</locus>, of which the 3rd, 4th and 5th are missing; and 12 in the<ref target="#Part2">second part</ref>, foll.<locus from="103" to="141">103-141</locus>, of which the first 8 are lost and the 9th is imperfect. In the<ref target="#Part1">first part</ref>, the quires are signed with Syriac and Greek letters.</p>
+                    <p>The quires were originally 24 in number; viz. 12 in the <ref target="#Part1">first part</ref>, foll.<locus from="1" to="102">1-102</locus>, of which the 3rd, 4th and 5th are missing; and 12 in the <ref target="#Part2">second part</ref>, foll.<locus from="103" to="141">103-141</locus>, of which the first 8 are lost and the 9th is imperfect. In the <ref target="#Part1">first part</ref>, the quires are signed with Syriac and Greek letters.</p>
                   </collation>
                   <condition>
                     <list>
@@ -239,29 +239,22 @@
               </objectDesc>
               <handDesc hands="3">
                 <handNote xml:id="p1handNote1" scope="major" script="syr" medium="unknown">
-                  <desc>This volume is written in a good, regular hand of the<origDate notBefore="0900" notAfter="1000" calendar="Gregorian">xth cent</origDate>. See<ref target="#p1addition1">additions</ref>.</desc>
+                  This volume is written in a good, regular hand of the <date notBefore="0900" notAfter="1000" calendar="Gregorian">xth cent</date>. See <ref target="#p1addition1">additions</ref>.
                 </handNote>
                 <handNote xml:id="p1handNote2" scope="minor" script="ar" medium="unknown">
-                  <desc>
-                    <ref target="p1addition2">See additions.</ref>
-                  </desc>
-                </handNote>
+                  <ref target="p1addition2">See additions.</ref>
+                  </handNote>
                 <handNote xml:id="p1handNote3" scope="minor" script="syr" medium="unknown">
-                  <desc>
-                    <ref target="p1addition3">See additions.</ref>
-                  </desc>
-                </handNote>
+                  <ref target="p1addition3">See additions.</ref>
+                  </handNote>
               </handDesc>
-              <decoDesc/>
               <additions>
                 <note type="proofreader-note">N.B., items below may have been listed out of folio order in Wright's catalogue.</note>
-                <p/>
                 <list>
                   <item xml:id="p1addition1" n="1">
                     <label>Colophon</label>
                     <locus from="92b"/>
-                    <p>On fol. 92b there is a note, stating that this part of the manuscript was written by<persName>Harith bar Sisin of<placeName>Sanbat</placeName>
-                      </persName>(see<ref target="https://bl.syriac.uk/ms/538">Add. 14,682</ref>):</p>
+                    <p>On fol. 92b there is a note, stating that this part of the manuscript was written by <persName>Harith bar Sisin of <placeName>Sanbat</placeName></persName>(see <ref target="https://bl.syriac.uk/ms/538">Add. 14,682</ref>):</p>
                     <p>
                       <quote xml:lang="syr">ܐܝܟ ܕܠܬܫܒܘܚܬܐ ܕܡܪܝܐ: ܗ̇ܘ ܕܒܗ ܘܡܢܗ ܘܒܐܝ̈ܕܘܗܝ ܟܠ ܛܒܬܐ ܡܫܪܝܐ ܘܠܘܬܗ ܗ̇ܦܟܐ ܦܢܝܐ: ܘܠܫܘܫܛܐ ܕܟܠܗܝܢ ܝܡ̈ܝܢܝܬܐ: ܐܬܚܦܛ ܒܝܨܝܦܘܬܐ ܣܓܝܐܬܐ ܘܪܚܡܬ ܥܡܠܐ. ܘܩܢܐ ܠܟܬܒܐ ܗܢܐ ܕܦܘܫܩܐ ܕܫܠܝܚܐ ܐܠܗܝܐ ܕܐܝ܏ܬܘ ܦܠܓܘܬܐ ܕܬܠܬ. ܚܐܪܝܬ ܒܪ ܡܪܝ<sic>ܣܝܢ</sic>ܕܣܢܒܛ ܟܕ ܟܬܒܗ ܒܐܝ܏ܕܘ. ܐܝܟ ܕܠܝܘܬܪܢܐ ܟܝܬ ܘܦܘܪܩܢܐ ܕܚ̈ܝܐ ܕܝܠܗ. ܏ܘܫ.</quote>
                     </p>
@@ -277,34 +270,28 @@
                   </item>
                   <item xml:id="p1addition3" n="3">
                     <locus from="102a"/>
-                    <p>On fol. 102a there is a note, stating that the book was presented to the<placeName>convent of S. Mary Deipara</placeName>, when<persName>Saliba</persName>was abbat, by the patriarch<persName>Abraham</persName>(or<persName>Ephraim</persName>, who sat<date from="0977" to="0981" calendar="Gregorian">A.D. 977-981</date>; see<bibl>Renaudot, Hist. Patr. Alexandr. Jacobit., p. 366</bibl>):</p>
+                    <p>On fol. 102a there is a note, stating that the book was presented to the <placeName>convent of S. Mary Deipara</placeName>, when <persName>Saliba</persName> was abbat, by the patriarch <persName>Abraham</persName>(or <persName>Ephraim</persName>, who sat <date from="0977" to="0981" calendar="Gregorian">A.D. 977-981</date>; See <bibl>Renaudot, Hist. Patr. Alexandr. Jacobit., p. 366</bibl>):</p>
                     <p>
                       <quote xml:lang="syr">ܐܝܬܘܗܝ ܟܬܒܐ ܗܢܐ ܕܕܝܪܐ ܕܒܝܬ ܝܠܕܬ ܐܠܗܐ ܕܒܡܕܒܪܐ ܕܣܩ̈ܛܐ ܫܟܢܗ<sic>ܕܐܢ</sic>ܐܒܪܗܡ<sic>ܦܛܝܪܝܪܟܝܣ</sic>ܒܝ̈ܘܡܝ ܨܠܝܒܐ ܪܝܫܕܝܪܐ ܡܢܛܪ ܠܗ ܐܠܗܐ ܘܥܠ ܚܪܡܐ ܢܥܒܪ ܟܠ ܕܡܦܩܠܗ ܡܢ ܡܕܒܪܐ ܕܣܩܝܛܐ.</quote>
                     </p>
                   </item>
                 </list>
               </additions>
-              <bindingDesc/>
-              <sealDesc/>
-              <accMat/>
-            </physDesc>
+              </physDesc>
             <history>
               <origin>
-                <origDate notBefore="0900" notAfter="1000" calendar="Gregorian">xth cent.</origDate>
-                <origPlace/>
+                <origDate calendar="Gregorian" notBefore="0900" notAfter="1000">10th century</origDate>
+                
               </origin>
-              <provenance/>
-              <acquisition/>
-            </history>
+              </history>
             <additional>
               <adminInfo>
                 <recordHist>
-                  <source>Manuscript description based on<bibl>
+                  <source>Manuscript description based on <bibl>
                       <ref target="#Wrightpart1">Wright's Catalogue</ref>
                     </bibl>. abbreviated by the Syriaca.org editors.</source>
                 </recordHist>
-                <note/>
-              </adminInfo>
+                </adminInfo>
               <listBibl>
                 <bibl xml:id="Wrightpart1">
                   <author>William Wright</author>
@@ -313,7 +300,7 @@
                   <date>1870</date>
                   <ptr target="http://syriaca.org/bibl/8"/>
                   <citedRange unit="entry">DCCXIV</citedRange>
-                  <citedRange unit="pp">2:610-612</citedRange>
+                  <citedRange unit="p">2:610-612</citedRange>
                 <ref type="internet-archive-pdf" target="https://archive.org/details/catalogueofsyria02brituoft/page/610"/>
                 </bibl>
               </listBibl>
@@ -329,7 +316,7 @@
                 <idno type="BL-Shelfmark-display">London, BL, Add. 14,683, foll. 103–141</idno>
               </altIdentifier>
               <altIdentifier>
-                <idno type="BL-Shelmark-simplified">BL Add MS 14683, foll. 103-141</idno>
+                <idno type="BL-Shelfmark-simplified">BL Add MS 14683, foll. 103-141</idno>
               </altIdentifier>
               <altIdentifier>
                 <collection>William Wright, Catalogue of the Syriac Manuscripts in the British Museum Acquired since the Year 1838</collection>
@@ -343,34 +330,32 @@
             <head>
               <note type="contents-note">This manuscript contains: John Chrysostom. The fourth part of a Commentary on the Pauline Epistles, abridged and compiled from the commentary ofJohn Chrysostom, byRabban Lazarus of Beth-Kandasawho probably flourished aboutA.D. 774. In total, including sub-sections, this manuscript contains 2 items.</note>
               <listRelation type="Wright-BL-Taxonomy">
-                <relation name="dcterms:type" ref="http://purl.org/dc/terms/type" active="https://bl.syriac.uk/ms/1196" passive="#theology">
-                  <desc/>
-                </relation>
+                <relation name="dcterms:type" ref="http://purl.org/dc/terms/type" active="https://bl.syriac.uk/ms/1196" passive="#theology"/>
               </listRelation>
               <listRelation type="part-to-composite">
                 <desc>This unit is a part of a composite manuscript:</desc>
-                <relation name="syriaca:is-unspecified-codicological-part-of" ref="#syriaca:is-unspecified-codicological-part-of" active="https://bl.syriac.uk/ms/1196" passive="https://bl.syriac.uk/ms/539">
-                  <relation/>
-                </relation>
+                <relation name="syriaca:is-unspecified-codicological-part-of" ref="#syriaca:is-unspecified-codicological-part-of" active="https://bl.syriac.uk/ms/1196" passive="https://bl.syriac.uk/ms/539"/>
               </listRelation>
             </head>
             <msContents>
-              <summary/>
               <textLang mainLang="syr">Syriac</textLang>
               <msItem xml:id="p2a1" n="1" defective="true">
                 <locus from="103" to="141">Foll. 103-141</locus>
-                <author ref="http://syriaca.org/person/573">John Chrysostom</author>
-                <title type="supplied">The fourth part of a Commentary on the Pauline Epistles, abridged and compiled from the commentary of<persName ref="http://syriaca.org/person/573">John Chrysostom</persName>, by<persName ref="http://syriaca.org/person/136">Rabban Lazarus of Beth-Kandasa</persName>who probably flourished about<date when="0774" calendar="Gregorian">A.D. 774</date>.</title>
-                <rubric xml:lang="syr">ܦܠܓܘܬܐ ܕܐܪܒܥ<locus/>
-                </rubric>
+                <author ref="http://syriaca.org/person/573">
+                  <persName xml:lang="en">John Chrysostom</persName>
+                </author>
+                <title xml:lang="en">The fourth part of a Commentary on the Pauline Epistles, abridged and compiled from the commentary of John Chrysostom, by Rabban Lazarus of Beth-Kandasa who probably flourished about A.D. 774.</title>
+                <rubric xml:lang="syr">ܦܠܓܘܬܐ ܕܐܪܒܥ</rubric>
                 <colophon>
                   <ref target="#p2addition1 #p2addition2">See additions.</ref>
                 </colophon>
                 <note>Wright surmises that the commentaries on 1 Timothy, 2 Timoty, Titus, and Philemon are all now lost.</note>
                 <msItem xml:id="p2b1" n="2" defective="true">
                   <locus from="103a" to="138">Foll. 103a-138</locus>
-                  <author ref="http://syriaca.org/person/573">John Chrysostom</author>
-                  <title type="supplied">Hebrews</title>
+                  <author ref="http://syriaca.org/person/573">
+                    <persName xml:lang="en">John Chrysostom</persName>
+                  </author>
+                  <title xml:lang="en">Hebrews</title>
                   <note>Imperfect at the beginning, commencing with ch. x. 8.</note>
                 </msItem>
               </msItem>
@@ -391,23 +376,18 @@
                   </support>
                   <extent>
                     <measure type="composition" unit="leaf" quantity="39">39 ff.</measure>
-                    <dimensions type="leaf" unit="in">
-                      <height>
-                        <measure type="height" quantity="10" unit="in">10</measure>
-                      </height>
-                      <width>
-                        <measure type="width" quantity="6.75" unit="in">6 3/4</measure>
-                      </width>
+                    <dimensions type="leaf" unit="inch">
+                      <height quantity="10">10</height>
+                      <width quantity="6.75">6 3/4</width>
                     </dimensions>
                   </extent>
-                  <foliation/>
                   <collation>
-                    <p>The quires were originally 24 in number; viz. 12 in the<ref target="#Part1">first part</ref>, foll.<locus from="1" to="102">1-102</locus>, of which the 3rd, 4th and 5th are missing; and 12 in the<ref target="#Part2">second part</ref>, foll.<locus from="103" to="141">103-141</locus>, of which the first 8 are lost and the 9th is imperfect. In the<ref target="#Part2">second part</ref>, the quires are signed with Greek letters and Coptic arithmetical figures.</p>
+                    <p>The quires were originally 24 in number; viz. 12 in the <ref target="#Part1">first part</ref>, foll.<locus from="1" to="102">1-102</locus>, of which the 3rd, 4th and 5th are missing; and 12 in the <ref target="#Part2">second part</ref>, foll.<locus from="103" to="141">103-141</locus>, of which the first 8 are lost and the 9th is imperfect. In the <ref target="#Part2">second part</ref>, the quires are signed with Greek letters and Coptic arithmetical figures.</p>
                   </collation>
                   <condition>
                     <list>
                       <item>
-                        <p>Many of the leaves are much stained and torn, especially foll.<locus from="103" to="110">103-110</locus>and<locus from="140">140</locus>.</p>
+                        <p>Many of the leaves are much stained and torn, especially foll.<locus from="103" to="110">103-110</locus> and <locus from="140">140</locus>.</p>
                       </item>
                     </list>
                   </condition>
@@ -418,34 +398,29 @@
               </objectDesc>
               <handDesc hands="3">
                 <handNote xml:id="p2handNote1" scope="major" script="syr" medium="unknown">
-                  <desc>This volume is written in a good, regular hand of the<origDate notBefore="0900" notAfter="1000" calendar="Gregorian">xth cent</origDate>. See<ref target="#p2addition2">additions</ref>.</desc>
+                  This volume is written in a good, regular hand of the <date notBefore="0900" notAfter="1000" calendar="Gregorian">xth cent</date>. See <ref target="#p2addition2">additions</ref>.
                 </handNote>
                 <handNote xml:id="p2handNote2" scope="minor" script="syr" medium="unknown">
-                  <desc>
-                    <ref target="p1addition1">See additions.</ref>
-                  </desc>
-                </handNote>
+                  <ref target="p1addition1">See additions.</ref>
+                  </handNote>
                 <handNote xml:id="p2handNote3" scope="minor" script="syr" medium="unknown">
-                  <desc>
-                    <ref target="p1addition3">See additions.</ref>
-                  </desc>
-                </handNote>
+                  <ref target="p1addition3">See additions.</ref>
+                  </handNote>
               </handDesc>
-              <decoDesc/>
               <additions>
-                <p/>
                 <list>
                   <item xml:id="p2addition1" n="1">
                     <label>Colophon</label>
                     <locus from="138b"/>
-                    <p>After the doxology, we find a note, fol. 138 b, written by one<choice>
-                        <corr>
-                          <persName>George of<placeName>Beth-Nake</placeName>
-                          </persName>
-                        </corr>
-                        <orig xml:lang="syr">ܓܘܪܓܝܣ ܕܒܝܬ ܢ̇ܩ̣ܐ</orig>
-                      </choice>, in which he states that this work was compiled by his teacher<persName ref="http://syriaca.org/person/136">Rabban Lazarus of<placeName>Beth-Kandasa</placeName>
-                      </persName>, and gives some particulars regarding its arrangement, the rubrics, the marginal marks (e.g.<!-- Need the markers here -->or<!-- Need the markers here -->,  etc.), and the like.</p>
+                    <p>After the doxology, we find a note, fol. 138 b, written by one 
+                      <persName>George</persName> of 
+                      <placeName>Beth-Nake, <foreign xml:lang="syr">ܓܘܪܓܝܣ ܕܒܝܬ ܢ̇ܩ̣ܐ</foreign></placeName>, 
+                      in which he states that this work was compiled by his teacher 
+                      <persName ref="http://syriaca.org/person/136">Rabban Lazarus</persName> of 
+                      <placeName>Beth-Kandasa</placeName>, 
+                      and gives some particulars regarding its arrangement, the rubrics, 
+                      the marginal marks (e.g.<!-- Need the markers here -->or<!-- Need the markers here -->,  etc.), 
+                      and the like.</p>
                     <p>
                       <quote xml:lang="syr">ܟ̇ܢܫ ܘܛܟܣ ܠܢܘܗܪ̈ܐ ܕܒܟܬܒܐ ܗܢܐ ܕܫܠܝܚܐ: ܡܢ ܟ̈ܬܒܐ ܕܪܒܐ ܘܚܟܝܡܐ ܐܝܘܐܢܝܣ ܕܦܘܫܩܐ ܕܝܠܗܝܢ ܕܗܠܝܢ ܐܓܪ̈ܬܐ̣. ܪܒܢ ܠܥܙܪ ܕܒܝܬ ܩܢܕܣܐ̣. ܒܙܒܢܐ ܗ̇ܘ ܕܒܗ ܒܘܚܢܐ ܕܕܘܓܡܐ ܒܛܘܪܐ ܕܐܘܪܗܝ ܡ̇ܫܠܡ ܗܘܐ̣. ܟܕ ܥܠ ܛܝܒܘܬܗ ܕܗ̇ܘ ܕܝܗܒ ܚܟܡܬܐ ܠܐܝܠܝܢ ܕܫ̇ܐܠܝܢ ܘܠܐ ܡ̇ܚܣܕ ܐܣܬܡܟ܆ ܘܗܝܡܢ ܐܦ ܠܥܘܕܪܢܐܐ ܕܨ̈ܠܘܬܗ ܕܡܟܬܒܢܐ̣ ܘܐܦ ܕܡܦܫܩܢܐ܀ ܢܕܥ ܕܝܢ ܐܝܢܐ ܕܦ̇ܓܥ ܒܟܬܒܐ ܗܢܐ̣. ܕܗܠܝܢ ܢܘܗܪ̈ܐ ܘܐܦܢ ܩܦܝܣܐܝܬ ܣܝܡܝ̣ܢ܆ ܡܛܠ ܐܠܝܨܘܬܐ ܕܩ̈ܠܦܐ̣. ܐܠܐ ܠܟܠܗ ܚܝܠܐ ܕܝܠܗܝܢ ܕܡ̈ܠܐ ܕܩܕܝܫܐ ܦܐܘܠܘܣ ܡܣܝܟܐܝܬ ܡ̇ܠܦܝܢ ܘܡ̇ܚܘܝ̣ܢ. ܐܝܟ ܛܟܣܐ ܡܒܚܢܢܐ. ܘܐܦ ܗ̣ܘ ܕܝܢ ܪܒܢ ܠܥܙܪ ܕܐܡܝܪ: ܐܦ ܠܗܢܐ ܟܬܒܐ̣. ܒܙܢܐ ܗ̇ܘ ܡܒܚܢܢܐ ܕܟ̈ܬܒܐ ܕܕܘܓܡܐ ܡܫܠܡ ܗܘܐ. ܗܟܘܬ ܘܐܦ ܠܐܘܢܓܠܝܘܢ ܕܚ̈ܝܐ. ܣܝܡܝܢ ܕܝܢ ܪܘܫܡܐ ܕܣܪܝܩܘ ܥܠ ܚܕ ܚܕ ܡܢ ܦܬܓ̈ܡܐ ܕܟܬܒܐ̣. ܘܕܘܡܝܐ ܕܝܠܗ ܥܠ ܡܠܬܐ ܡܢܗܪܢܝܬܐ ܕܝܠܗܘܢ ܕܦܬܓ̈ܡܐ. ܕܡܬܡܬܚܝܢ ܥܕܡܐ ܠܪܘܫܡܐ ܕܢܩ̇ܦ. ܘܐܡܬܝ ܕܡܫܬܟܚ ܗ̣ܘ ܟܕ ܗ̣ܘ ܪܘܫܡܐ: ܥܠ ܬܪ̈ܝܢ ܡܢ ܢܘܗܪ̈ܐ. ܕܝܠܗ ܟܕ ܕܝܠܗ ܕܦܬܓܡܐ ܗܘ ܕܒܗ ܒܪܘܫܡܐ ܡܬܝܕܥ ܐܝܬܝܗܘܢ. ܪ̈ܘܫܡܐ ܕܝܢ ܕܡܢ ܕܝܘܬܐ ܪܫܝܡܝܢ ܡ̇ܫܘܕܥܝ̣ܢ. ܥܠ ܐܣܪ̈ܐ ܡ̈ܠܚܡܢܐ ܕܦ̈ܬܓܡܐ. ܘܗ̇ܘ ܐܝܢܐ ܡܢ ܪ̈ܘܫܡܐ ܕܡܬܚܙܐ ܕܐܝܬ ܠܥܠ ܡܢܗ ܢܘܩܙܐ̣. ܠܥܠ ܡ̇ܣܩ. ܘܗ̇ܘ ܐܝܢܐ ܕܡܢ ܠܬܚܬ ܐܝܬ ܠܗ ܢܘܩܙܐ̣. ܠܬܚܬ ܡ̇ܚܬ. ܘܐܢܗ̣ܘ ܕܢܫܬܟܚ ܪܘܫܡܐ ܕܬܪ̈ܝܢ ܢܘ̈ܩܙܐ ܐܝܬ ܠܥܠ ܡܢܗ̣. ܢܬܝܕܥ ܕܠܥܠ ܡܢ ܬܪ̈ܝܢ ܪ̈ܘܫܡܐ ܕܕܡܝܢ ܠܗ ܥ̇ܒܪ ܕܢܐܣܘܪ. ܘܐܢܗ̣ܘ ܕܢܫܬܟܚ ܥܡ ܪܘܫܡܐ ܐܦ ܨܠܝܒܐ̣. ܢܣܬܟܠ ܕܥܠ ܚܕ ܘܗܘ ܟܕ ܗ̣ܘ ܦܬܓܡܐ ܐܣ̇ܪ̈ܝܢ. ܟܡܐ ܕܢܬܚܙܐ ܗܘܼ ܟܕ ܗ̣ܘ ܪܘܫܡܐ ܘܨܠܝܒܐ܀ ܐܓܘܢܐ ܕܝܢ ܗܢܐ ܐܪܡܝ܆ ܐܝܟ ܕܠܝܘܬܪܢܐ ܕܝܠܗ̣. ܘܥܘܕܪܢܐ ܕܐܚ̈ܐ ܚ̈ܦܝܛܐ ܘܪ̈ܚܡܝ ܥܘܬܪܐ ܪܘܚܢܐ: ܏ܘܫ. ܐܢܐ ܕܝܢ ܓܘܪܓܝܣ ܬܚܘܒܐ ܘܬܠܡܝܕܐ ܕܒܝܬ ܢ̇ܩ̣ܐ̇. ܘܡܬܪܕܝܢܐ ܕܩܕܡܘܗܝ ܕܡܠܦܢܐ ܠܥܙܪ ܘܪܒܢ: ܟܕ ܐܬ݂ܐ . . . ܝ ܟܬܒܐ ܗܢܐ ܕܫܠܝܚܐ: ܘܚܙܝܬ ܕܐܠܨܐܝܬ ܐܝܬ ܠܗ ܕܒـ . . . ܩ̈ܠܦܐ ܢܫܬܡܠܐ̣. ܝܨܦܬ ܕܣܕܝܪܐܝܬ . . . ܘܗܝ̣. ܟܕ ܐܦ ܗ̇ܝ ܕܕܠܝܠܐ ܠܩܪܝܢܐ ܘܠܬܐܘܪܝܐ ܐܬܛܟܢܬ.܀ ܐܬܛܝܒ ܠܝ ܕܝܢ ܐܦ ܨܚܚܐ ܐܚܪܢܐ ܕܗ̣ܘ ܗܟܘܬ ܐܝܬܗܘܝ̣. ܘܡܢܗ ܐܬܚܝܠܬ. ܟܕ ܐܦ ܙܢ̈ܝܐ ܐܚܪ̈ܢܐ ܥܦܝܬ ܡܢܗ. ܐܬܚܦܛܬ ܟܝܬ݂ ܕܠܘܩܕܡ ܥܠܬܐ ܕܐܓܪܬܐ ܐܪܫܘܡ. ܒܬܪܟܢ . . . ܒܗ̣̇. ܗܝ̣ܕܝܢ ܡ̈ܠܐ ܫ̈ܠܝܚܝܬܐ̣ . . . ܕܝܠܗܝܢ܀ ܟܕ . . . ܪܘܫܡܐ ܕܨܠܝܒܐ . . . ܪܫܡܬ.   ̃ ܘܐܢ . . . ܟܬܒܝܬܐ ܐܝܬ ܒܗܝܢ ܒܐܓܪ̈ܬܐ̣. ܒܩܢܒܪܝܣ ܟܬܒܬ ܡܢ ܐܝܟܐ ܗ̣ܝ. ܠܐܣܪ̈ܐ ܕܝܢ ܒܗ ܒܓܘܫܡܐ ܫ̇ܘܕܥܬ   ̃ ܚܠܦ ܕܝܢ ܫܩܠ ܛܥܢܐ ܕܝܠܝ ܨܠܘܬܐ ܫ̇ܐܠ ܐܢܐ ܠܝ ܘܠܪ̈ܒܢܐ ܕܝܠ܀</quote>
                     </p>
@@ -453,12 +428,12 @@
                   <item xml:id="p2addition2" n="2">
                     <label>Colophon</label>
                     <locus from="140b"/>
-                    <p>On fol. 140b there is a note by the scribe,<choice>
-                        <corr>
-                          <persName>Harith bar Sisin</persName>
-                        </corr>
-                        <orig xml:lang="syr">ܚܐܪܝܬ ܒܪ ܡܪܝ ܣܝܣܝܢ ܕܣܢܒܛ</orig>
-                      </choice>, similar to that in<ref target="https://bl.syriac.uk/ms/538">Add. 14,682</ref>. It is followed by an enumeration of the number of homilies composed by<persName ref="http://syriaca.org/person/573">John Chrysostom</persName>on each of the Pauline epistles :</p>
+                    <p>On fol. 140b there is a note by the scribe,
+                      <persName>Harith bar Sisin, <foreign xml:lang="syr">ܚܐܪܝܬ ܒܪ ܡܪܝ ܣܝܣܝܢ ܕܣܢܒܛ</foreign></persName>, 
+                      similar to that in <ref target="https://bl.syriac.uk/ms/538">Add. 14,682</ref>. It is followed 
+                      by an enumeration of the number of homilies composed by 
+                      <persName ref="http://syriaca.org/person/573">John Chrysostom</persName> on each of 
+                      the Pauline epistles :</p>
                     <p>
                       <quote xml:lang="syr">ܟܠܗܘܢ ܡܐܡܪ̈ܐ ܕܝܘܚܢܢ ܟܪܘܣ܏ܘܣܛ ܕܦܘܫܩܐ ܕܐܓܪ̈ܬܐ ܕܫܠܝܚܐ ܐܠܗܝܐ</quote>
                     </p>
@@ -466,7 +441,7 @@
                   <item xml:id="p2addition3" n="3">
                     <label>Colophon</label>
                     <locus from="141a"/>
-                    <p>Another note, on fol. 141a, gives the date<date when-custom="1356" datingMethod="Seleucid">A. Gr. 1356</date>,<date when="1045" calendar="Gregorian">A.D. 1045</date>, but the name of the writer has been erased:</p>
+                    <p>Another note, on fol. 141a, gives the date <date when-custom="1356" datingMethod="Seleucid">A. Gr. 1356</date>, <date when="1045" calendar="Gregorian">A.D. 1045</date>, but the name of the writer has been erased:</p>
                     <p>
                       <quote xml:lang="syr">
                         <sic>ܐܬܛܝܒܬ . . . ܗܢܐ ܟܬܒܐ . . . ܝܬܪܬ ܡܢܗ. ܘܬܘܒ ܟ̈ܬܒܐ ܣܓ̈ܝܐ ܗ̇ܘܝܢ. ܘܠܝܬ ܗ̇ܘ ܕܩ̇ܪܐ. ܘܠܐ ܕܡܣܬܟܠ. ܗܐ ܚܨܪܗ̇ ܪܒܬܐ. ܘܐܝܬܝܗ̇ ܫܢܬ ܐܠܦ ܘܬܠܬܡܐ ܘܚܡܫܝܢ ܘܫܬ ܕܝܘ̈ܢܝܐ ܐܝܪܚ ܟܢܘܢ ܐܚܪܝ ܠܝ̈ܘܡܬܐ ܐܪܒܥܐ ܒܗ ܨܠܘܬܝ ܘܕܡܠܦܢܐ. ܥܠ ܟܠ ܕܟ̣ܬܒ ܥܘܗܕܢܐ ܗܢܐ. ܐܡܝܢ. ܡܪܝܐ ܢܚܣܐ ܠܟܠ ܕܡܚܣܐ ܠܝ.</sic>
@@ -475,27 +450,21 @@
                   </item>
                 </list>
               </additions>
-              <bindingDesc/>
-              <sealDesc/>
-              <accMat/>
-            </physDesc>
+              </physDesc>
             <history>
               <origin>
-                <origDate notBefore="0900" notAfter="1000" calendar="Gregorian">xth cent.</origDate>
-                <origPlace/>
+                <origDate calendar="Gregorian" notBefore="0900" notAfter="1000">10th century</origDate>
+                
               </origin>
-              <provenance/>
-              <acquisition/>
-            </history>
+              </history>
             <additional>
               <adminInfo>
                 <recordHist>
-                  <source>Manuscript description based on<bibl>
+                  <source>Manuscript description based on <bibl>
                       <ref target="#Wrightpart2">Wright's Catalogue</ref>
                     </bibl>. abbreviated by the Syriaca.org editors.</source>
                 </recordHist>
-                <note/>
-              </adminInfo>
+                </adminInfo>
               <listBibl>
                 <bibl xml:id="Wrightpart2">
                   <author>William Wright</author>
@@ -504,7 +473,7 @@
                   <date>1870</date>
                   <ptr target="http://syriaca.org/bibl/8"/>
                   <citedRange unit="entry">DCCXIV</citedRange>
-                  <citedRange unit="pp">2:610-612</citedRange>
+                  <citedRange unit="p">2:610-612</citedRange>
                 <ref type="internet-archive-pdf" target="https://archive.org/details/catalogueofsyria02brituoft/page/610"/>
                 </bibl>
               </listBibl>
@@ -529,7 +498,6 @@
       <classDecl>
         <taxonomy xml:id="Wright-BL-Taxonomy">
           <bibl>
-            
             <ptr target="http://syriaca.org/documentation/Wright-BL-Taxonomy.html"/>
           </bibl>
           <category xml:id="biblical-manuscripts">
@@ -646,22 +614,30 @@
     </encodingDesc>
     <profileDesc>
       <langUsage>
-        <language ident="syr">Unvocalized Syriac of any variety or period</language>
-        <language ident="syr-Syre">Syriac in Estrangela</language>
-        <language ident="syr-Syrj">Vocalized West Syriac</language>
-        <language ident="syr-Syrn">Vocalized East Syriac</language>
-        <language ident="syr-x-syrm">Melkite Syriac</language>
-        <language ident="qhy-x-cpas">Palestinian Syriac</language>
-        <language ident="ar-Syrc">Unvocalized or Undetermined Arabic Garshuni</language>
-        <language ident="ar-Syrj">Arabic Garshuni in Vocalized West Syriac Script</language>
-        <language ident="ar-Syrn">Arabic Garshuni in Vocalized East Syriac Script</language>
-        <language ident="en">English</language>
         <language ident="ar">Arabic</language>
-        <language ident="fr">French</language>
-        <language ident="de">German</language>
-        <language ident="la">Latin</language>
-        <language ident="grc">Ancient Greek</language>
+        <language ident="ar-Syrc">Arabic Garshuni</language>
+        <language ident="ar-Syrn">Arabic Garshuni in East Syriac script</language>
         <language ident="cop">Coptic</language>
+        <language ident="de">German</language>
+        <language ident="en">English</language>
+        <language ident="fr">French</language>
+        <language ident="grc">Ancient Greek</language>
+        <language ident="he">Hebrew</language>
+        <language ident="hy">Armenian</language>
+        <language ident="it">Italian</language>
+        <language ident="la">Latin</language>
+        <language ident="syr">Syriac</language>
+        <language ident="syr-Arab">Syriac Garshuni in Arabic script</language>
+        <language ident="syr-Syre">Syriac in Estrangela script</language>
+        <language ident="syr-Syrj">Syriac in West Syriac script</language>
+        <language ident="syr-Syrn">Syriac in East Syriac script</language>
+        <language ident="syr-x-syrm">Syriac in Melkite Syriac script</language>
+        <language ident="tr">Turkish</language>
+        <language ident="tr-Syrc">Turkish Garshuni</language>
+        <language ident="qhy-x-cpas">Christian Palestinian Aramaic script</language>
+        <language ident="xcl">Classical Armenian</language>
+        <language ident="und">Undetermined</language>
+        <language ident="mul">Multiple languages</language>
       </langUsage>
       <textClass>
         <keywords scheme="#Wright-BL-Taxonomy">
@@ -684,19 +660,17 @@
       <change who="https://bl.syriac.uk/documentation/editors.xml#sulim" when="2014-08-14">Created: file</change>
       <change who="https://bl.syriac.uk/documentation/editors.xml#jarnwine" when="2014-09-29">Edited and proofread: file</change>
       <change who="https://bl.syriac.uk/documentation/editors.xml#jarnwine" when="2014-10-01">Edited and proofread: file</change>
-      <change type="planned" subtype="arabic">Add missing Arabic text.</change>
-      <change type="planned" subtype="missing">Missing various unspecified things.</change>
-      <change type="planned" subtype="uri">Needs Addition of work URIs.</change>
+      <change type="planned" subtype="arabic" who="https://bl.syriac.uk/documentation/editors.xml#smbl-general-editors">Add missing Arabic text.</change>
+      <change type="planned" subtype="missing" who="https://bl.syriac.uk/documentation/editors.xml#smbl-general-editors">Missing various unspecified things.</change>
+      <change type="planned" subtype="uri" who="https://bl.syriac.uk/documentation/editors.xml#smbl-general-editors">Needs Addition of work URIs.</change>
       <change who="https://bl.syriac.uk/documentation/editors.xml#pgmiller" when="2016-07-06">Changed: Files moved to srophe-app-data/data/manuscripts/tei repository.</change>
       <change who="https://bl.syriac.uk/documentation/editors.xml#jarnwine" when="2022-05-10">Updates to physDesc for Part1 and Part2</change>
     </revisionDesc>
   </teiHeader>
-  <facsimile>
-    <graphic/>
-  </facsimile>
   <text>
     <body>
       <p/>
+      <!--Body paragraph provided for document validation.-->
     </body>
   </text>
 </TEI>

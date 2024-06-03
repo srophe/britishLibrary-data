@@ -1,4 +1,7 @@
-<?oxygen RNGSchema="http://syriaca.org/documentation/syriaca-tei-main.rnc" type="compact"?><?xml-stylesheet type="text/css" href="https://raw.githubusercontent.com/srophe/wright-catalogue/master/parameters/tei.css"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+<?xml-model href="https://raw.githubusercontent.com/srophe/britishLibrary/main/documentation/schema/out/Syriacamsdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/srophe/britishLibrary/main/documentation/schema/out/Syriacamsdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet href="https://raw.githubusercontent.com/srophe/wright-catalogue/master/parameters/tei.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="manuscript_1019">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -67,7 +70,6 @@
         <authority>Syriaca.org: The Syriac Reference Portal</authority>
         <idno type="URI">https://bl.syriac.uk/ms/1019/tei</idno>
         <availability>
-          <p/>
           <licence target="http://creativecommons.org/licenses/by/3.0/">
             <p>Distributed under a Creative Commons Attribution 3.0 Unported License</p>
           </licence>
@@ -89,7 +91,7 @@
               <idno type="BL-Shelfmark-display">London, BL, Add. 17,234</idno>
             </altIdentifier>
             <altIdentifier>
-              <idno type="BL-Shelmark-simplified">BL Add MS 17234</idno>
+              <idno type="BL-Shelfmark-simplified">BL Add MS 17234</idno>
             </altIdentifier>
             <altIdentifier>
               <collection>William Wright, Catalogue of the Syriac Manuscripts in the British Museum Acquired since the Year 1838</collection>
@@ -109,30 +111,34 @@
             </listRelation>
           </head>
           <msContents>
-            <textLang mainLang="syr"/>
-            <msItem xml:id="a1" n="1">
+            <textLang mainLang="syr">Syriac</textLang>
+            <msItem xml:id="a1" n="1" defective="true">
               <locus from="1a"/>
-              <title xml:lang="en">The second part of the Triôdion</title>
               <author ref="http://syriaca.org/person/575">
-                <persName xml:lang="en">John of Damascus</persName>
-                <persName xml:lang="syr">ܐܒܐ ܝܘܐܢܝ ܕܕܪܘܡܣܘܩ</persName>
+                <persName xml:lang="en" type="supplied">John of Damascus</persName>
+                <persName xml:lang="syr" type="supplied">ܐܒܐ ܝܘܐܢܝ ܕܕܪܘܡܣܘܩ</persName>
               </author>
               <author>
-                <persName xml:lang="en">Cosmas</persName>
-                <persName xml:lang="syr">ܐܒܢ ܩܘܙܡܐ (ܩܘܣܡܐ)</persName>
+                <persName xml:lang="en" type="supplied">Cosmas</persName>
+                <persName xml:lang="syr" type="supplied">ܐܒܢ ܩܘܙܡܐ (ܩܘܣܡܐ)</persName>
               </author>
               <author ref="http://syriaca.org/person/95">
-                <persName xml:lang="en">Andrew (of Crete)</persName>
-                <persName xml:lang="syr">ܚܣܝܐ ܐܢܕܪܘܣ (ܐܢܕܐܪܘܣ)</persName>, </author>
-              <author>
-                <persName xml:lang="en">Joseph</persName>
-                <persName xml:lang="syr">ܐܒܐ ܝܘܣܦ</persName>
+                <persName xml:lang="en" type="supplied">Andrew (of Crete)</persName>
+                <persName xml:lang="syr" type="supplied">ܚܣܝܐ ܐܢܕܪܘܣ (ܐܢܕܐܪܘܣ)</persName>
               </author>
               <author>
-                <persName xml:lang="syr">Mark</persName>
-                <persName xml:lang="syr">ܐܒܐ ܡܪܩܘܣ</persName>
+                <persName xml:lang="en" type="supplied">Joseph</persName>
+                <persName xml:lang="syr" type="supplied">ܐܒܐ ܝܘܣܦ</persName>
               </author>
-              <author ref="http://syriaca.org/person/2769">Theophanes, ܚܣܝܐ ܬܘܦܢܘܣ</author>
+              <author>
+                <persName xml:lang="en" type="supplied">Mark</persName>
+                <persName xml:lang="syr" type="supplied">ܐܒܐ ܡܪܩܘܣ</persName>
+              </author>
+              <author ref="http://syriaca.org/person/2769">
+                <persName xml:lang="en" type="supplied">Theophanes</persName>
+                <persName xml:lang="syr" type="supplied">ܚܣܝܐ ܬܘܦܢܘܣ</persName>
+              </author>
+              <title xml:lang="en">The second part of the Triôdion</title>
               <msItem xml:id="b1" n="2" defective="true">
                 <locus from="1a"/>
                 <title xml:lang="en">Palm Sunday</title>
@@ -152,9 +158,8 @@
               <msItem xml:id="b5" n="6">
                 <locus from="54b"/>
                 <title xml:lang="en">The second Sunday of Pentecost; the Commemoration of
-                    <persName>Joseph of <placeName>Arimathaea</placeName>
-                  </persName>,
-                    <persName>Nicodemus</persName>, and the women who brought the spices</title>
+                    Joseph of Arimathaea,
+                    Nicodemus, and the women who brought the spices</title>
                 <rubric xml:lang="syr">ܚܕ܏ܒܫܒ ܒ ܕ܏ܦܝܢܛ ܕܘܟܪܢ ܝܘܣܦ ܘܢܩܕܘ܏ܡܝܘ ܕܥ̈ܦܝܘ ܠܡܪܢ ܘܕܢܫ̈ܐ
                   ܗܪ̈ܘܡܢܝܬܐ</rubric>
               </msItem>
@@ -237,8 +242,6 @@
                 <extent>
                   <measure type="composition" unit="leaf" quantity="150">150 ff.</measure>
                 </extent>
-                <foliation/>
-                <collation/>
                 <condition>
                   <list>
                     <item>
@@ -254,36 +257,30 @@
             </objectDesc>
             <handDesc hands="1">
               <handNote xml:id="handNote1" medium="unknown" scope="sole" script="syr-x-syrm">
-                <desc>This manuscript is written in a good, regular, Malkite hand of the xiiith
-                  cent.</desc>
-              </handNote>
+                This manuscript is written in a good, regular, Malkite hand of the xiiith
+                  cent.</handNote>
             </handDesc>
             <decoDesc>
-              <decoNote xml:id="decoNote1" type="marginal">
-                <desc>There are some rude attempts at ornamentation on the margins.</desc>
+              <decoNote type="marginal">
+                There are some rude attempts at ornamentation on the margins.
               </decoNote>
             </decoDesc>
-            <additions/>
-            <accMat/>
-          </physDesc>
+            </physDesc>
           <history>
             <origin>
-              <origDate notBefore="1200" notAfter="1300"/>
-              <origPlace/>
+              <origDate calendar="Gregorian" notBefore="1200" notAfter="1300">13th century</origDate>
+              
             </origin>
-            <provenance/>
-            <acquisition/>
-          </history>
+            </history>
           <additional>
             <adminInfo>
               <recordHist>
-                <source>Manuscript description based on<bibl>
+                <source>Manuscript description based on <bibl>
                     <ref target="#Wrightpart">Wright's
                       Catalogue</ref>
                   </bibl>. abbreviated by the Syriaca.org editors.</source>
               </recordHist>
-              <note/>
-            </adminInfo>
+              </adminInfo>
             <listBibl>
               <bibl xml:id="Wrightpart">
                 <author>William Wright</author>
@@ -293,7 +290,7 @@
                 <date>1870</date>
                 <ptr target="http://syriaca.org/bibl/8"/>
                 <citedRange unit="entry">CCCCVII</citedRange>
-                <citedRange unit="pp">1:317-318</citedRange>
+                <citedRange unit="p">1:317-318</citedRange>
               <ref type="internet-archive-pdf" target="https://archive.org/details/catalogueofsyria01brituoft/page/317"/>
               </bibl>
             </listBibl>
@@ -317,7 +314,6 @@
       <classDecl>
         <taxonomy xml:id="Wright-BL-Taxonomy">
           <bibl>
-            
             <ptr target="http://syriaca.org/documentation/Wright-BL-Taxonomy.html"/>
           </bibl>
           <category xml:id="biblical-manuscripts">
@@ -434,22 +430,30 @@
     </encodingDesc>
     <profileDesc>
       <langUsage>
-        <language ident="syr">Unvocalized Syriac of any variety or period</language>
-        <language ident="syr-Syre">Syriac in Estrangela</language>
-        <language ident="syr-Syrj">Vocalized West Syriac</language>
-        <language ident="syr-Syrn">Vocalized East Syriac</language>
-        <language ident="syr-x-syrm">Melkite Syriac</language>
-        <language ident="qhy-x-cpas">Palestinian Syriac</language>
-        <language ident="ar-Syrc">Unvocalized or Undetermined Arabic Garshuni</language>
-        <language ident="ar-Syrj">Arabic Garshuni in Vocalized West Syriac Script</language>
-        <language ident="ar-Syrn">Arabic Garshuni in Vocalized East Syriac Script</language>
-        <language ident="en">English</language>
         <language ident="ar">Arabic</language>
-        <language ident="fr">French</language>
-        <language ident="de">German</language>
-        <language ident="la">Latin</language>
-        <language ident="grc">Ancient Greek</language>
+        <language ident="ar-Syrc">Arabic Garshuni</language>
+        <language ident="ar-Syrn">Arabic Garshuni in East Syriac script</language>
         <language ident="cop">Coptic</language>
+        <language ident="de">German</language>
+        <language ident="en">English</language>
+        <language ident="fr">French</language>
+        <language ident="grc">Ancient Greek</language>
+        <language ident="he">Hebrew</language>
+        <language ident="hy">Armenian</language>
+        <language ident="it">Italian</language>
+        <language ident="la">Latin</language>
+        <language ident="syr">Syriac</language>
+        <language ident="syr-Arab">Syriac Garshuni in Arabic script</language>
+        <language ident="syr-Syre">Syriac in Estrangela script</language>
+        <language ident="syr-Syrj">Syriac in West Syriac script</language>
+        <language ident="syr-Syrn">Syriac in East Syriac script</language>
+        <language ident="syr-x-syrm">Syriac in Melkite Syriac script</language>
+        <language ident="tr">Turkish</language>
+        <language ident="tr-Syrc">Turkish Garshuni</language>
+        <language ident="qhy-x-cpas">Christian Palestinian Aramaic script</language>
+        <language ident="xcl">Classical Armenian</language>
+        <language ident="und">Undetermined</language>
+        <language ident="mul">Multiple languages</language>
       </langUsage>
       <textClass>
         <keywords scheme="#Wright-BL-Taxonomy">
@@ -471,12 +475,10 @@
         TEI encoding.</change>
     </revisionDesc>
   </teiHeader>
-  <facsimile>
-    <formula>Content pending</formula>
-  </facsimile>
   <text>
     <body>
-      <bibl>Content pending</bibl>
+      <p/>
+      <!--Body paragraph provided for document validation.-->
     </body>
   </text>
 </TEI>

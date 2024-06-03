@@ -1,4 +1,7 @@
-<?oxygen RNGSchema="http://syriaca.org/documentation/syriaca-tei-main.rnc" type="compact"?><?xml-stylesheet type="text/css" href="https://raw.githubusercontent.com/srophe/wright-catalogue/master/parameters/tei.css"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+<?xml-model href="https://raw.githubusercontent.com/srophe/britishLibrary/main/documentation/schema/out/Syriacamsdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/srophe/britishLibrary/main/documentation/schema/out/Syriacamsdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet href="https://raw.githubusercontent.com/srophe/wright-catalogue/master/parameters/tei.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="manuscript_759">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -63,7 +66,6 @@
         <authority>Syriaca.org: The Syriac Reference Portal</authority>
         <idno type="URI">https://bl.syriac.uk/ms/759/tei</idno>
         <availability>
-          <p/>
           <licence target="http://creativecommons.org/licenses/by/3.0/">
             <p>Distributed under a Creative Commons Attribution 3.0 Unported License</p>
           </licence>
@@ -85,7 +87,7 @@
               <idno type="BL-Shelfmark-display">London, BL, Add. 17,130</idno>
             </altIdentifier>
             <altIdentifier>
-              <idno type="BL-Shelmark-simplified">BL Add MS 17130</idno>
+              <idno type="BL-Shelfmark-simplified">BL Add MS 17130</idno>
             </altIdentifier>
             <altIdentifier>
               <collection>William Wright, Catalogue of the Syriac Manuscripts in the British Museum Acquired since the Year 1838</collection>
@@ -105,13 +107,13 @@
             </listRelation>
           </head>
           <msContents>
-            <textLang mainLang="syr"/>
-            <msItem xml:id="a1" n="1">
+            <textLang mainLang="syr">Syriac</textLang>
+            <msItem xml:id="a1" n="1" defective="true">
               <locus from="1a"/>
               <title xml:lang="en">Funeral Services</title>
-              <msItem xml:id="b1" n="2">
+              <msItem xml:id="b1" n="2" defective="true">
                 <locus from="1a"/>
-                <title xml:lang="en">For <persName>bishops</persName>, <persName>priests</persName>, and <persName>deacons</persName>
+                <title xml:lang="en">For bishops, priests, and deacons
                 </title>
                 <rubric xml:lang="syr">
                   <fw type="header">ܕܥܠ ܟܗ̈ܢܐ</fw>
@@ -124,8 +126,10 @@
                   <note>Imperfect at the beginning</note>
                   <msItem xml:id="d1" n="4">
                     <locus from="2a"/>
-                    <author ref="http://syriaca.org/person/13">Ephraim</author>
-                    <title xml:lang="en">Several madrāshē of <persName ref="http://syriaca.org/person/13">Ephraim</persName>
+                    <author ref="http://syriaca.org/person/13">
+                      <persName xml:lang="en">Ephraim</persName>
+                    </author>
+                    <title xml:lang="en">Several madrāshē of Ephraim
                     </title>
                     <rubric xml:lang="syr">ܥܠ ܣܒܐ ܝܘܠܝܢܐ. ܘܥܠ ܟܗ̈ܢܐ</rubric>
                     <note>Each madrāshā bears this or a similar rubric</note>
@@ -137,8 +141,10 @@
                   <rubric xml:lang="syr">ܬܫܡܫܬܐ ܕܬܠܬ </rubric>
                   <msItem xml:id="d2" n="6">
                     <locus from="9a"/>
-                    <author ref="http://syriaca.org/person/13">Ephraim</author>
-                    <title xml:lang="en">Several madrāshē of <persName ref="http://syriaca.org/person/13">Ephraim</persName>
+                    <author ref="http://syriaca.org/person/13">
+                      <persName xml:lang="en">Ephraim</persName>
+                    </author>
+                    <title xml:lang="en">Several madrāshē of Ephraim
                     </title>
                     <rubric xml:lang="syr">ܥܠ ܣܒܐ ܝܘܠܝܢܐ. ܘܥܠ ܟܗ̈ܢܐ</rubric>
                     <note>Each madrāshā bears this or a similar rubric</note>
@@ -146,8 +152,7 @@
                 </msItem>
                 <msItem xml:id="c3" n="7">
                   <locus from="15b"/>
-                  <title xml:lang="en">Appropriate lessons from <ref>the Old</ref> and <ref>New
-                    Testaments</ref>
+                  <title xml:lang="en">Appropriate lessons from the Old and New Testaments
                   </title>
                 </msItem>
                 <msItem xml:id="c4" n="8">
@@ -157,7 +162,7 @@
               </msItem>
               <msItem xml:id="b2" n="9">
                 <locus from="31b"/>
-                <title xml:lang="en">For <persName>monks</persName> and <persName>lay persons</persName>
+                <title xml:lang="en">For monks and lay persons
                 </title>
                 <rubric xml:lang="syr">ܛܟܣܐ ܕܠܘܘܝܐ ܕܡܫܬܡܠܐ ܥܠ ܕܝܪ̈ܝܐ ܟܫܝܪ̈ܐ. ܘܥܠ ܐܚ̈ܐ ܒ̈ܢܝ ܩܝܡܐ̇ ܘܥܠ
                   ܟܠܢܫ ܕܥܠ ܐܚ̈ܐ.</rubric>
@@ -171,15 +176,18 @@
                   <rubric xml:lang="syr">ܬܫܡܫܬܐ ܩܕܡܝܬܐ</rubric>
                   <msItem xml:id="d3" n="11">
                     <locus from="33a"/>
-                    <author ref="http://syriaca.org/person/13">Ephraim</author>
-                    <title xml:lang="en">Several madrāshē and sūgyāthā, ascribed to <persName ref="http://syriaca.org/person/13">Ephraim</persName>
+                    <author ref="http://syriaca.org/person/13">
+                      <persName xml:lang="en">Ephraim</persName>
+                    </author>
+                    <title xml:lang="en">Several madrāshē and sūgyāthā, ascribed to Ephraim
                     </title>
                   </msItem>
                   <msItem xml:id="d4" n="12">
                     <locus from="37b"/>
-                    <author ref="http://syriaca.org/person/33">Isaac of Antioch</author>
-                    <title xml:lang="en">Several madrāshē and sūgyāthā, ascribed to <persName ref="http://syriaca.org/person/33">Isaac of <placeName ref="http://syriaca.org/place/10">Antioch</placeName>
-                      </persName>
+                    <author ref="http://syriaca.org/person/33">
+                      <persName xml:lang="en">Isaac of Antioch</persName>
+                    </author>
+                    <title xml:lang="en">Several madrāshē and sūgyāthā, ascribed to Isaac of Antioch
                     </title>
                   </msItem>
                 </msItem>
@@ -189,8 +197,10 @@
                   <rubric xml:lang="syr">ܬܫܡܫܬܐ ܕܬܪ̈ܬܝܢ</rubric>
                   <msItem xml:id="d5" n="14">
                     <locus from="42a"/>
-                    <author ref="http://syriaca.org/person/13">Ephraim</author>
-                    <title xml:lang="en">Several madrāshē and sūgyāthā, ascribed to <persName ref="http://syriaca.org/person/13">Ephraim</persName>
+                    <author ref="http://syriaca.org/person/13">
+                      <persName xml:lang="en">Ephraim</persName>
+                    </author>
+                    <title xml:lang="en">Several madrāshē and sūgyāthā, ascribed to Ephraim
                     </title>
                   </msItem>
                 </msItem>
@@ -200,22 +210,24 @@
                   <rubric xml:lang="syr">ܬܫܡܫܬܐ ܕܬܠܬ </rubric>
                   <msItem xml:id="d6" n="16">
                     <locus from="47b"/>
-                    <author ref="http://syriaca.org/person/13">Ephraim</author>
-                    <title xml:lang="en">Several madrāshē and sūgyāthā, ascribed to <persName ref="http://syriaca.org/person/13">Ephraim</persName>
+                    <author ref="http://syriaca.org/person/13">
+                      <persName xml:lang="en">Ephraim</persName>
+                    </author>
+                    <title xml:lang="en">Several madrāshē and sūgyāthā, ascribed to Ephraim
                     </title>
                   </msItem>
                   <msItem xml:id="d7" n="17">
                     <locus from="52b"/>
-                    <author ref="http://syriaca.org/person/42">Jacob of Batnae</author>
-                    <title xml:lang="en">Several madrāshē and sūgyāthā, ascribed to <persName ref="http://syriaca.org/person/42">Jacob of <placeName ref="http://syriaca.org/place/45">Batnae</placeName>
-                      </persName>
+                    <author ref="http://syriaca.org/person/42">
+                      <persName xml:lang="en">Jacob of Batnae</persName>
+                    </author>
+                    <title xml:lang="en">Several madrāshē and sūgyāthā, ascribed to Jacob of Batnae
                     </title>
                   </msItem>
                 </msItem>
                 <msItem xml:id="c8" n="18">
                   <locus from="51b"/>
-                  <title xml:lang="en">Appropriate lessons from <ref>the Old</ref> and <ref>New
-                    Testaments</ref>
+                  <title xml:lang="en">Appropriate lessons from the Old and New Testaments
                   </title>
                 </msItem>
                 <msItem xml:id="c9" n="19">
@@ -229,17 +241,20 @@
               <title xml:lang="en">Funeral Sermons</title>
               <msItem xml:id="b3" n="21">
                 <locus from="72b"/>
-                <author ref="http://syriaca.org/person/42">Jacob of Batnae</author>
-                <title xml:lang="en">Of <persName ref="http://syriaca.org/person/42">Jacob of <placeName ref="http://syriaca.org/place/45">Batnae</placeName>
-                  </persName>
+                <author ref="http://syriaca.org/person/42">
+                  <persName xml:lang="en">Jacob of Batnae</persName>
+                </author>
+                <title xml:lang="en">Of Jacob of Batnae
                 </title>
                 <rubric xml:lang="syr">ܡܐܡܪܐ ܕܩܕܝܫܐ ܡܪܝ ܝܥܩܘܒ ܡܠܦܢܐ. ܕܥܠ ܒܘܝܐܐ ܕܥ̈ܢܝܕܐ</rubric>
                 <incipit xml:lang="syr">ܐܠܘ ܐܝܬ ܠܝ ܡܠܬܐ ܚܠܝܡܬܐ ܕܩ̇ܢܝܐ ܫܘܦܪ̈ܐ. ܪܓܝܓ ܗܘܝܬ ܗܫܐ ܠܡܒܝܐܐܘ ܠܟܘܢ ܦ̇ܪ̈ܘܫܐ</incipit>
               </msItem>
               <msItem xml:id="b4" n="22">
                 <locus from="81a"/>
-                <author ref="http://syriaca.org/person/13">Ephraim</author>
-                <title xml:lang="en">Of <persName ref="http://syriaca.org/person/13">Ephraim</persName>
+                <author ref="http://syriaca.org/person/13">
+                  <persName xml:lang="en">Ephraim</persName>
+                </author>
+                <title xml:lang="en">Of Ephraim
                 </title>
                 <rubric xml:lang="syr">ܡܐܡܪܐ ܕܡܪܝ ܐܦܪܝܡ ܕܥܠ ܟܠܢܫ</rubric>
                 <incipit xml:lang="syr">ܟܪܘܙܐ ܐܝܬܘܗܝ ܡܘܬܐ. ܘܡܠܦܢܐ ܠܐܝܢܐ ܕܨ̇ܒܐ. ܕܢܗܘܐ ܡ̇ܪܚܩ ܡܢ
@@ -247,8 +262,10 @@
               </msItem>
               <msItem xml:id="b5" n="23">
                 <locus from="82b"/>
-                <author ref="http://syriaca.org/person/42">Jacob of Batnae</author>
-                <title xml:lang="en">Of <persName ref="http://syriaca.org/person/42">Jacob</persName>
+                <author ref="http://syriaca.org/person/42">
+                  <persName xml:lang="en">Jacob of Batnae</persName>
+                </author>
+                <title xml:lang="en">Of Jacob
                 </title>
                 <rubric xml:lang="syr">ܡܐܡܪܐ ܕܥܢ̈ܝܕܐ ܕܥܠ ܟܠܢܫ ܕܩܕܝܫܐ ܡܪܝ ܝܥܩܘܒ</rubric>
                 <incipit xml:lang="syr">ܕܝܠܟ ܐܢܐ ܡܪܝ ܐܦܢ ܐ̇ܡܘܬ ܐܦܢ ܐ̇ܚܐ.</incipit>
@@ -274,8 +291,6 @@
                 <extent>
                   <measure type="composition" unit="leaf" quantity="86">86 ff.</measure>
                 </extent>
-                <foliation/>
-                <collation/>
                 <condition>
                   <list>
                     <item>
@@ -284,21 +299,16 @@
                   </list>
                 </condition>
               </supportDesc>
-              <layoutDesc>
-                <p>Content pending</p>
-              </layoutDesc>
-            </objectDesc>
+              </objectDesc>
             <handDesc hands="2">
               <handNote xml:id="handNote1" medium="unknown" scope="major" script="syr">
-                <desc>This manuscript is written in a good, regular hand; dated <date>A. Gr. 1188</date>, <date>A.D. 877</date>
-                </desc>
-              </handNote>
+                This manuscript is written in a good, regular hand; dated <date>A. Gr. 1188</date>, <date>A.D. 877</date>
+                </handNote>
               <handNote xml:id="handNote2" medium="unknown" scope="minor" script="syr">
-                <desc>See additions.</desc>
+                See additions.
               </handNote>
             </handDesc>
             <additions>
-              <p/>
               <list>
                 <item xml:id="addition1" n="1">
                   <locus from="85b"/>
@@ -326,33 +336,24 @@
                 </item>
               </list>
             </additions>
-            <bindingDesc>
-              <p>Content pending</p>
-            </bindingDesc>
-            <sealDesc>
-              <p>Content pending</p>
-            </sealDesc>
-            <accMat/>
-          </physDesc>
+            </physDesc>
           <history>
             <origin>
-              <origDate when="0877">A.D. 877</origDate>
-              <origDate datingMethod="Seleucid" when-custom="1188">A. Gr. 1188</origDate>
-              <origPlace/>
+              <origDate calendar="Gregorian" when="0877">AD 877</origDate>
+              <origDate calendar="Seleucid" datingMethod="Seleucid" when-custom="1188">AG 1188</origDate>
+              
+              
             </origin>
-            <provenance/>
-            <acquisition/>
-          </history>
+            </history>
           <additional>
             <adminInfo>
               <recordHist>
-                <source>Manuscript description based on<bibl>
+                <source>Manuscript description based on <bibl>
                     <ref target="#Wrightpart">Wright's
                       Catalogue</ref>
                   </bibl>. abbreviated by the Syriaca.org editors.</source>
               </recordHist>
-              <note/>
-            </adminInfo>
+              </adminInfo>
             <listBibl>
               <bibl xml:id="Wrightpart">
                 <author>William Wright</author>
@@ -362,7 +363,7 @@
                 <date>1870</date>
                 <ptr target="http://syriaca.org/bibl/8"/>
                 <citedRange unit="entry">DXIII</citedRange>
-                <citedRange unit="pp">1:392-393</citedRange>
+                <citedRange unit="p">1:392-393</citedRange>
               <ref type="internet-archive-pdf" target="https://archive.org/details/catalogueofsyria01brituoft/page/392"/>
               </bibl>
             </listBibl>
@@ -386,7 +387,6 @@
       <classDecl>
         <taxonomy xml:id="Wright-BL-Taxonomy">
           <bibl>
-            
             <ptr target="http://syriaca.org/documentation/Wright-BL-Taxonomy.html"/>
           </bibl>
           <category xml:id="biblical-manuscripts">
@@ -503,22 +503,30 @@
     </encodingDesc>
     <profileDesc>
       <langUsage>
-        <language ident="syr">Unvocalized Syriac of any variety or period</language>
-        <language ident="syr-Syre">Syriac in Estrangela</language>
-        <language ident="syr-Syrj">Vocalized West Syriac</language>
-        <language ident="syr-Syrn">Vocalized East Syriac</language>
-        <language ident="syr-x-syrm">Melkite Syriac</language>
-        <language ident="qhy-x-cpas">Palestinian Syriac</language>
-        <language ident="ar-Syrc">Unvocalized or Undetermined Arabic Garshuni</language>
-        <language ident="ar-Syrj">Arabic Garshuni in Vocalized West Syriac Script</language>
-        <language ident="ar-Syrn">Arabic Garshuni in Vocalized East Syriac Script</language>
-        <language ident="en">English</language>
         <language ident="ar">Arabic</language>
-        <language ident="fr">French</language>
-        <language ident="de">German</language>
-        <language ident="la">Latin</language>
-        <language ident="grc">Ancient Greek</language>
+        <language ident="ar-Syrc">Arabic Garshuni</language>
+        <language ident="ar-Syrn">Arabic Garshuni in East Syriac script</language>
         <language ident="cop">Coptic</language>
+        <language ident="de">German</language>
+        <language ident="en">English</language>
+        <language ident="fr">French</language>
+        <language ident="grc">Ancient Greek</language>
+        <language ident="he">Hebrew</language>
+        <language ident="hy">Armenian</language>
+        <language ident="it">Italian</language>
+        <language ident="la">Latin</language>
+        <language ident="syr">Syriac</language>
+        <language ident="syr-Arab">Syriac Garshuni in Arabic script</language>
+        <language ident="syr-Syre">Syriac in Estrangela script</language>
+        <language ident="syr-Syrj">Syriac in West Syriac script</language>
+        <language ident="syr-Syrn">Syriac in East Syriac script</language>
+        <language ident="syr-x-syrm">Syriac in Melkite Syriac script</language>
+        <language ident="tr">Turkish</language>
+        <language ident="tr-Syrc">Turkish Garshuni</language>
+        <language ident="qhy-x-cpas">Christian Palestinian Aramaic script</language>
+        <language ident="xcl">Classical Armenian</language>
+        <language ident="und">Undetermined</language>
+        <language ident="mul">Multiple languages</language>
       </langUsage>
       <textClass>
         <keywords scheme="#Wright-BL-Taxonomy">
@@ -536,15 +544,13 @@
       <change who="https://bl.syriac.uk/documentation/editors.xml#srophe-util" when="2021-07-07-05:00">CHANGED: deleted empty elements and attributes</change>
       <change who="https://bl.syriac.uk/documentation/editors.xml#srophe-util" when="2021-07-07-05:00">CHANGED: Added project metadata; metadata from Wright Decoder; msItem, handDesc, and additions enumeration; Wright Taxonomy designation</change>
       <change who="https://bl.syriac.uk/documentation/editors.xml#rbrasoveanu" when="2021-06-09">Initial TEI encoding.</change>
-      <change type="planned" subtype="arabic">Add missing Arabic text.</change>
+      <change type="planned" subtype="arabic" who="https://bl.syriac.uk/documentation/editors.xml#smbl-general-editors">Add missing Arabic text.</change>
     </revisionDesc>
   </teiHeader>
-  <facsimile>
-    <formula>Content pending</formula>
-  </facsimile>
   <text>
     <body>
-      <bibl>Content pending</bibl>
+      <p/>
+      <!--Body paragraph provided for document validation.-->
     </body>
   </text>
 </TEI>

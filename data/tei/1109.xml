@@ -1,4 +1,7 @@
-<?oxygen RNGSchema="http://syriaca.org/documentation/syriaca-tei-main.rnc" type="compact"?><?xml-stylesheet type="text/css" href="https://raw.githubusercontent.com/srophe/wright-catalogue/master/parameters/tei.css"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+<?xml-model href="https://raw.githubusercontent.com/srophe/britishLibrary/main/documentation/schema/out/Syriacamsdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/srophe/britishLibrary/main/documentation/schema/out/Syriacamsdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet href="https://raw.githubusercontent.com/srophe/wright-catalogue/master/parameters/tei.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="manuscript_1109">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -64,7 +67,6 @@
         <authority>Syriaca.org: The Syriac Reference Portal</authority>
         <idno type="URI">https://bl.syriac.uk/ms/1109/tei</idno>
         <availability>
-          <p/>
           <licence target="http://creativecommons.org/licenses/by/3.0/">
             <p>Distributed under a Creative Commons Attribution 3.0 Unported License</p>
           </licence>
@@ -86,7 +88,7 @@
               <idno type="BL-Shelfmark-display">London, BL, Add. 17,274</idno>
             </altIdentifier>
             <altIdentifier>
-              <idno type="BL-Shelmark-simplified">BL Add MS 17274</idno>
+              <idno type="BL-Shelfmark-simplified">BL Add MS 17274</idno>
             </altIdentifier>
             <altIdentifier>
               <collection>William Wright, Catalogue of the Syriac Manuscripts in the British Museum Acquired since the Year 1838</collection>
@@ -106,18 +108,22 @@
             </listRelation>
           </head>
           <msContents>
-            <textLang mainLang="syr"/>
+            <textLang mainLang="syr">Syriac</textLang>
             <msItem xml:id="a1" n="1" defective="true">
               <locus from="1a"/>
-              <author ref="http://syriaca.org/person/173">Moses bar Kīphā</author>
+              <author ref="http://syriaca.org/person/173">
+                <persName xml:lang="en">Moses bar Kīphā</persName>
+              </author>
               <title xml:lang="en">Portions of a Commentary on the book of Genesis</title>
               <note>See below, no. 4, b.</note>
               <note>The fragment fol. 25 seems to be misplaced.</note>
             </msItem>
             <msItem xml:id="a2" n="2">
               <locus from="26a"/>
-              <author ref="http://syriaca.org/person/173">Moses bar Kīphā</author>
-              <title xml:lang="en">Portions of a Commentary on <title>the Gospels</title>, with a long
+              <author ref="http://syriaca.org/person/173">
+                <persName xml:lang="en">Moses bar Kīphā</persName>
+              </author>
+              <title xml:lang="en">Portions of a Commentary on the Gospels, with a long
                 introduction</title>
               <msItem xml:id="b1" n="3">
                 <locus from="26a"/>
@@ -125,50 +131,50 @@
               </msItem>
               <msItem xml:id="b2" n="4">
                 <locus from="50a"/>
-                <title xml:lang="en">Commentary on <title>S. Matthew</title>
+                <title xml:lang="en">Commentary on S. Matthew
                 </title>
               </msItem>
               <msItem xml:id="b3" n="5">
                 <locus from="152a"/>
-                <title xml:lang="en">A single fragment of the Commentary on <title>S. Luke</title>
+                <title xml:lang="en">A single fragment of the Commentary on S. Luke
                 </title>
               </msItem>
             </msItem>
             <msItem xml:id="a3" n="6">
               <locus from="121a"/>
-              <title xml:lang="en">Portions of a Commentary on <title>the Gospel of <persName ref="http://syriaca.org/person/2703">S. Matthew</persName>
-                </title>, by some other author</title>
+              <title xml:lang="en">Portions of a Commentary on the Gospel of S. Matthew, by some other author</title>
             </msItem>
             <msItem xml:id="a4" n="7">
               <locus from="153a"/>
-              <author ref="http://syriaca.org/person/173">Moses bar Kīphā
+              <author ref="http://syriaca.org/person/173">
+                <persName xml:lang="en">Moses bar Kīphā
+              </persName>
               </author>
               <title xml:lang="en">Portions of a Commentary on the Pauline Epistles</title>
               <msItem xml:id="b4" n="8">
                 <locus from="153a"/>
-                <title xml:lang="en">On the <title>epistle to the Romans</title>
+                <title xml:lang="en">On the epistle to the Romans
                 </title>
               </msItem>
               <msItem xml:id="b5" n="9">
                 <locus from="190b"/>
-                <title xml:lang="en">On the <title>first epistle to the Corinthians</title>
+                <title xml:lang="en">On the first epistle to the Corinthians
                 </title>
                 <rubric xml:lang="syr">ܬܘܒ ܥܠܬܘܟܠܢܐ ܘܥܘܕܪܢܐ ܕܐܠܗܐ̣. ܟܬܒܝܢܢ ܦܘܫܩܐ ܕܐܓܪܬܐ ܕܦܘܠܘܣ ܫܠܝܚܐ
                   ܕܠܘܬ ܩܘܪ̈ܝܢܬܝܐ ܩܕܡܝܬܐ. ܕܝܠܗ ܕܡ݊ܘܫܐ ܒܪ ܟܐܦܐ ܐ̣ܦ܏ܝܣ ܕܒܝܬ ܪܐܡܢ ܘܕܒܝܬ ܟܝܘܢܐ ܘܕܡܘܨܠ.
                   ܡܪܢ ܥܕܪܝܢܝ.</rubric>
                 <note>
-                  <bibl>See Assemani, Bibl. Or., t. ii., pp. 127 seqq. and 218—9.</bibl>
+                  See <bibl>Assemani, Bibl. Or., t. ii., pp. 127 seqq. and 218—9.</bibl>
                 </note>
               </msItem>
               <msItem xml:id="b6" n="10">
                 <locus from="239a"/>
-                <title xml:lang="en">On the <title>second epistle to the Corinthians</title>
+                <title xml:lang="en">On the second epistle to the Corinthians
                 </title>
               </msItem>
               <msItem xml:id="b7" n="11">
                 <locus from="260a"/>
-                <title xml:lang="en">A single fragment of the Commentary on the <title>epistle to the
-                  Galatians</title>
+                <title xml:lang="en">A single fragment of the Commentary on the epistle to the Galatians
                 </title>
               </msItem>
             </msItem>
@@ -183,8 +189,6 @@
                 <extent>
                   <measure type="composition" unit="leaf" quantity="260">260 ff.</measure>
                 </extent>
-                <foliation/>
-                <collation/>
                 <condition>
                   <list>
                     <item>
@@ -199,42 +203,34 @@
             </objectDesc>
             <handDesc hands="1">
               <handNote xml:id="handNote1" medium="unknown" scope="major" script="syr">
-                <desc>Though written by several bands, the character is throughout a good, regular
-                  cursive of the <date notBefore="1000" notAfter="1200">xith or xiith cent</date>.</desc>
-              </handNote>
+                Though written by several bands, the character is throughout a good, regular
+                  cursive of the <date notBefore="1000" notAfter="1200">xith or xiith cent</date>.</handNote>
             </handDesc>
             <additions>
               <note type="proofreader-note">N.B., folio location may not be available for some items below.</note>
-              <p/>
               <list>
                 <item xml:id="addition1" n="1">
-                  <locus/>
-                  <p/>
                   <p>
                     <quote xml:lang="syr"/>
                   </p>
                 </item>
               </list>
             </additions>
-            <accMat/>
-          </physDesc>
+            </physDesc>
           <history>
             <origin>
-              <origDate notBefore="1000" notAfter="1200"/>
-              <origPlace/>
+              <origDate calendar="Gregorian" notBefore="1000" notAfter="1200">11th or 12th century</origDate>
+              
             </origin>
-            <provenance/>
-            <acquisition/>
-          </history>
+            </history>
           <additional>
             <adminInfo>
               <recordHist>
-                <source>Manuscript description based on<bibl>
+                <source>Manuscript description based on <bibl>
                     <ref target="#Wrightpart">Wright's Catalogue</ref>
                   </bibl>. abbreviated by the Syriaca.org editors.</source>
               </recordHist>
-              <note/>
-            </adminInfo>
+              </adminInfo>
             <listBibl>
               <bibl xml:id="Wrightpart">
                 <author>William Wright</author>
@@ -244,7 +240,7 @@
                 <date>1870</date>
                 <ptr target="http://syriaca.org/bibl/8"/>
                 <citedRange unit="entry">DCCXX</citedRange>
-                <citedRange unit="pp">2:620</citedRange>
+                <citedRange unit="p">2:620</citedRange>
               <ref type="internet-archive-pdf" target="https://archive.org/details/catalogueofsyria02brituoft/page/620"/>
               </bibl>
             </listBibl>
@@ -268,7 +264,6 @@
       <classDecl>
         <taxonomy xml:id="Wright-BL-Taxonomy">
           <bibl>
-            
             <ptr target="http://syriaca.org/documentation/Wright-BL-Taxonomy.html"/>
           </bibl>
           <category xml:id="biblical-manuscripts">
@@ -385,22 +380,30 @@
     </encodingDesc>
     <profileDesc>
       <langUsage>
-        <language ident="syr">Unvocalized Syriac of any variety or period</language>
-        <language ident="syr-Syre">Syriac in Estrangela</language>
-        <language ident="syr-Syrj">Vocalized West Syriac</language>
-        <language ident="syr-Syrn">Vocalized East Syriac</language>
-        <language ident="syr-x-syrm">Melkite Syriac</language>
-        <language ident="qhy-x-cpas">Palestinian Syriac</language>
-        <language ident="ar-Syrc">Unvocalized or Undetermined Arabic Garshuni</language>
-        <language ident="ar-Syrj">Arabic Garshuni in Vocalized West Syriac Script</language>
-        <language ident="ar-Syrn">Arabic Garshuni in Vocalized East Syriac Script</language>
-        <language ident="en">English</language>
         <language ident="ar">Arabic</language>
-        <language ident="fr">French</language>
-        <language ident="de">German</language>
-        <language ident="la">Latin</language>
-        <language ident="grc">Ancient Greek</language>
+        <language ident="ar-Syrc">Arabic Garshuni</language>
+        <language ident="ar-Syrn">Arabic Garshuni in East Syriac script</language>
         <language ident="cop">Coptic</language>
+        <language ident="de">German</language>
+        <language ident="en">English</language>
+        <language ident="fr">French</language>
+        <language ident="grc">Ancient Greek</language>
+        <language ident="he">Hebrew</language>
+        <language ident="hy">Armenian</language>
+        <language ident="it">Italian</language>
+        <language ident="la">Latin</language>
+        <language ident="syr">Syriac</language>
+        <language ident="syr-Arab">Syriac Garshuni in Arabic script</language>
+        <language ident="syr-Syre">Syriac in Estrangela script</language>
+        <language ident="syr-Syrj">Syriac in West Syriac script</language>
+        <language ident="syr-Syrn">Syriac in East Syriac script</language>
+        <language ident="syr-x-syrm">Syriac in Melkite Syriac script</language>
+        <language ident="tr">Turkish</language>
+        <language ident="tr-Syrc">Turkish Garshuni</language>
+        <language ident="qhy-x-cpas">Christian Palestinian Aramaic script</language>
+        <language ident="xcl">Classical Armenian</language>
+        <language ident="und">Undetermined</language>
+        <language ident="mul">Multiple languages</language>
       </langUsage>
       <textClass>
         <keywords scheme="#Wright-BL-Taxonomy">
@@ -422,12 +425,10 @@
         TEI encoding.</change>
     </revisionDesc>
   </teiHeader>
-  <facsimile>
-    <formula>Content pending</formula>
-  </facsimile>
   <text>
     <body>
-      <bibl>Content pending</bibl>
+      <p/>
+      <!--Body paragraph provided for document validation.-->
     </body>
   </text>
 </TEI>

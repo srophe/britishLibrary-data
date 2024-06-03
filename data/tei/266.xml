@@ -1,4 +1,7 @@
-<?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/srophe-app/documentation/enrich-syriaca.rnc" type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/css" href="SRPEnrichCSS.css"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+<?xml-model href="https://raw.githubusercontent.com/srophe/britishLibrary/main/documentation/schema/out/Syriacamsdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/srophe/britishLibrary/main/documentation/schema/out/Syriacamsdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet href="https://raw.githubusercontent.com/srophe/wright-catalogue/master/parameters/tei.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="manuscript_266">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -22,13 +25,7 @@
           <resp>Based on the work of</resp>
           <name type="person" ref="https://bl.syriac.uk/documentation/editors.xml#wwright">William Wright</name>
         </respStmt>
-        <respStmt>
-          <resp>Edited by</resp>
-          <name type="person" ref="https://bl.syriac.uk/documentation/editors.xml#">
-            <!-- Editor's first initial and surname follow "#" (e.g., "...#dmichelson") -->
-            <!--Initial editor's name here -->
-          </name>
-        </respStmt>
+        
         <respStmt>
           <resp>Syriac text entered by</resp>
           <name type="person" ref="https://bl.syriac.uk/documentation/editors.xml#raydin">Robert Aydin</name>
@@ -67,11 +64,9 @@
         <edition n="1.0"/>
       </editionStmt>
       <publicationStmt>
-        <pubPlace/>
         <authority>Syriaca.org: The Syriac Reference Portal</authority>
         <idno type="URI">https://bl.syriac.uk/ms/266/tei</idno>
         <availability>
-          <p/>
           <licence target="http://creativecommons.org/licenses/by/3.0/">
             <p>Distributed under a Creative Commons Attribution 3.0 Unported License</p>
           </licence>
@@ -79,7 +74,7 @@
         <date calendar="Gregorian">2023-04-21-05:00</date>
       </publicationStmt>
       <sourceDesc>
-        <msDesc xml:id="manuscript-266" xml:lang="en">
+        <msDesc xml:id="manuscript-266">
           <msIdentifier>
             <country>United Kingdom</country>
             <settlement>London</settlement>
@@ -93,7 +88,7 @@
               <idno type="BL-Shelfmark-display">London, BL, Add. 14,539</idno>
             </altIdentifier>
             <altIdentifier>
-              <idno type="BL-Shelmark-simplified">BL Add MS 14539</idno>
+              <idno type="BL-Shelfmark-simplified">BL Add MS 14539</idno>
             </altIdentifier>
             <altIdentifier>
               <collection>William Wright, Catalogue of the Syriac Manuscripts in the British Museum Acquired since the Year 1838</collection>
@@ -107,53 +102,50 @@
           <head>
             <note type="contents-note">This manuscript contains: Dionysius the Areopagite. The works of Dionysius the Areopagite, with the notes ofPhocas of Edessaand others, tables of chapters, etc. In total, including sub-sections, this manuscript contains 6 items.</note>
             <listRelation type="Wright-BL-Taxonomy">
-              <relation name="dcterms:type" ref="http://purl.org/dc/terms/type" active="https://bl.syriac.uk/ms/266" passive="#theology">
-                <desc/>
-              </relation>
+              <relation name="dcterms:type" ref="http://purl.org/dc/terms/type" active="https://bl.syriac.uk/ms/266" passive="#theology"/>
             </listRelation>
           </head>
           <msContents>
-            <summary/>
             <textLang mainLang="syr">Syriac</textLang>
-            <msItem xml:id="a1" n="1">
+            <msItem xml:id="a1" n="1" defective="true">
               <locus from="1a" to="118b">foll. 1a-118b</locus>
-              <author ref="http://syriaca.org/person/452">Dionysius the Areopagite</author>
-              <title type="supplied">The works of Dionysius the Areopagite, with the notes of<persName ref="http://syriaca.org/person/130">Phocas of Edessa</persName>and others, tables of chapters, etc.</title>
+              <author ref="http://syriaca.org/person/452">
+                <persName xml:lang="en">Dionysius the Areopagite</persName>
+              </author>
+              <title xml:lang="en">The works of Dionysius the Areopagite, with the notes of Phocas of Edessa and others, tables of chapters, etc.</title>
               <msItem xml:id="b1" n="2" defective="true">
                 <locus from="1a" to="18b">foll. 1a-18b</locus>
-                <title type="supplied">De Caelesti Hierarchia</title>
+                <title xml:lang="en">De Caelesti Hierarchia</title>
                 <quote xml:lang="syr">$ܘܐܚܪ̈ܝܐ ܘܢܗܘܘܢ ܗ̇ܢܘܢ ܕܝܬܝܪ ܐܠܗ̈ܝܐܝܢ ܠܗ̇ܢܘܢ ܕܒܨ̣ܝܪܝ̣ܢ. ܡܪ̈ܐܙܢܐ ܘܡ̇ܗ̈ܕܝܢܐ̇. ܠܘܬ ܡܬܩܪܒܢܘܬܐ ܘܡܬܢܗܪܢܘܬܐ ܘܫܘܬܦܘܬܐ ܐܠܗܝܬܐ<locus from="2a" to="2a"/>
                 </quote>
                 <note>imperfect at the beginning. On fol. 1 most of the text is illegible</note>
-                <note>corresponding to the Greek<foreign xml:lang="grc">καὶ τῶν ἡττόνων εἶναι τοὺς θειστέρους μύστας καὶ χειραγωγούς, ἐπὶ τὴν θείαν προσαγωγὴν καὶ ἔλλαμψιν καὶ κοινωνίαν</foreign>
+                <note>corresponding to the Greek <foreign xml:lang="grc">καὶ τῶν ἡττόνων εἶναι τοὺς θειστέρους μύστας καὶ χειραγωγούς, ἐπὶ τὴν θείαν προσαγωγὴν καὶ ἔλλαμψιν καὶ κοινωνίαν</foreign>
                 </note>
-                <listBibl>
-                  <bibl>Opera, ed. 1755-6, t. i., p. 38 B</bibl>
-                </listBibl>
+                <note>Cf. <bibl>Opera, ed. 1755-6, t. i., p. 38 B</bibl>
+                </note>
               </msItem>
               <msItem xml:id="b2" n="3">
                 <locus from="19a" to="46b">foll. 19a-46b</locus>
-                <title type="supplied">De Ecclesiastica Hierarchia</title>
+                <title xml:lang="en">De Ecclesiastica Hierarchia</title>
               </msItem>
               <msItem xml:id="b3" n="4">
                 <locus from="47a" to="97b">foll. 47a-97b</locus>
-                <title type="supplied">De Divinis Nominibus</title>
+                <title xml:lang="en">De Divinis Nominibus</title>
               </msItem>
               <msItem xml:id="b4" n="5">
                 <locus from="98a" to="101a">foll. 98a-101a</locus>
-                <title type="supplied">De Mystica Theologia</title>
+                <title xml:lang="en">De Mystica Theologia</title>
               </msItem>
               <msItem xml:id="b5" n="6" defective="true">
                 <locus from="102b" to="118">foll. 102b-118</locus>
-                <title type="supplied">The Epistles</title>
+                <title xml:lang="en">The Epistles</title>
                 <quote xml:lang="syr">ܘܒܗ ܗ̇ܘܐ ܟܠ̣. ܘܚ̇ܒܫ ܠܟܠܡܕܡ<locus from="117" to="117"/>
                 </quote>
                 <note>The tenth epistle is wanting, as is also a considerable part of the ninth</note>
-                <note>corresponding to the Greek<foreign xml:lang="grc">καὶ ἐν τῷ παντὶ γίγνεται, καὶ περιέχει τὰ πάντα</foreign>
+                <note>corresponding to the Greek <foreign xml:lang="grc">καὶ ἐν τῷ παντὶ γίγνεται, καὶ περιέχει τὰ πάντα</foreign>
                 </note>
-                <listBibl>
-                  <bibl>Opera, t. i., p. 615 C.</bibl>
-                </listBibl>
+                <note>Cf. <bibl>Opera, t. i., p. 615 C.</bibl>
+                </note>
               </msItem>
             </msItem>
           </msContents>
@@ -166,18 +158,13 @@
                 </support>
                 <extent>
                   <measure type="composition" unit="leaf" quantity="118">118 ff.</measure>
-                  <dimensions type="leaf" unit="in">
-                    <height>
-                      <measure type="height" quantity="10.5" unit="in">10 1/2</measure>
-                    </height>
-                    <width>
-                      <measure type="width" quantity="7.125" unit="in">7 1/8</measure>
-                    </width>
+                  <dimensions type="leaf" unit="inch">
+                    <height quantity="10.5">10 1/2</height>
+                    <width quantity="7.125">7 1/8</width>
                   </dimensions>
                 </extent>
-                <foliation type="ancient"/>
                 <collation>
-                  <p>The quires, signed with letters, were originally 14 in number, but<foreign xml:lang="syr">ܐ</foreign>and<foreign xml:lang="syr">ܝܕ</foreign>are lost, and<foreign>xml:lang="syr"ܒ</foreign>is imperfect, a couple of leaves being missing after<locus from="1">fol. 1</locus>
+                  <p>The quires, signed with letters, were originally 14 in number, but <foreign xml:lang="syr">ܐ</foreign> and <foreign xml:lang="syr">ܝܕ</foreign> are lost, and <foreign xml:lang="syr">ܒ</foreign> is imperfect, a couple of leaves being missing after <locus from="1">fol. 1</locus>
                   </p>
                 </collation>
                 <condition>
@@ -196,30 +183,23 @@
             </objectDesc>
             <handDesc hands="2">
               <handNote xml:id="handNote1" scope="major" script="syr-Syre" medium="unknown">
-                <desc>The text is written in a good, regular Estrangela of the ixth cent.</desc>
+                The text is written in a good, regular Estrangela of the ixth cent.
               </handNote>
               <handNote xml:id="handNote2" scope="minor" script="syr" medium="unknown">
-                <desc>The notes are written in a smaller, cursive hand, some of them having been added at a later date</desc>
+                The notes are written in a smaller, cursive hand, some of them having been added at a later date
               </handNote>
             </handDesc>
-            <decoDesc/>
-            <additions/>
-            <bindingDesc/>
-            <sealDesc/>
-            <accMat/>
-          </physDesc>
+            </physDesc>
           <history>
             <origin>
-              <origDate notBefore="0800" notAfter="0900">ixth cent.</origDate>
-              <origPlace/>
+              <origDate calendar="Gregorian" notBefore="0800" notAfter="0900">9th century</origDate>
+              
             </origin>
-            <provenance/>
-            <acquisition/>
-          </history>
+            </history>
           <additional>
             <adminInfo>
               <recordHist>
-                <source>Manuscript description based on<bibl>
+                <source>Manuscript description based on <bibl>
                     <ref target="#Wrightpart">Wright's Catalogue</ref>
                   </bibl>. abbreviated by the Syriaca.org editors.</source>
               </recordHist>
@@ -232,7 +212,7 @@
                 <date>1870</date>
                 <ptr target="http://syriaca.org/bibl/8"/>
                 <citedRange unit="entry">DCXXVII</citedRange>
-                <citedRange unit="pp">2: 499</citedRange>
+                <citedRange unit="p">2: 499</citedRange>
               <ref type="internet-archive-pdf" target="https://archive.org/details/catalogueofsyria02brituoft/page/499"/>
               </bibl>
             </listBibl>
@@ -256,7 +236,6 @@
       <classDecl>
         <taxonomy xml:id="Wright-BL-Taxonomy">
           <bibl>
-            
             <ptr target="http://syriaca.org/documentation/Wright-BL-Taxonomy.html"/>
           </bibl>
           <category xml:id="biblical-manuscripts">
@@ -373,22 +352,30 @@
     </encodingDesc>
     <profileDesc>
       <langUsage>
-        <language ident="syr">Unvocalized Syriac of any variety or period</language>
-        <language ident="syr-Syre">Syriac in Estrangela</language>
-        <language ident="syr-Syrj">Vocalized West Syriac</language>
-        <language ident="syr-Syrn">Vocalized East Syriac</language>
-        <language ident="syr-x-syrm">Melkite Syriac</language>
-        <language ident="qhy-x-cpas">Palestinian Syriac</language>
-        <language ident="ar-Syrc">Unvocalized or Undetermined Arabic Garshuni</language>
-        <language ident="ar-Syrj">Arabic Garshuni in Vocalized West Syriac Script</language>
-        <language ident="ar-Syrn">Arabic Garshuni in Vocalized East Syriac Script</language>
-        <language ident="en">English</language>
         <language ident="ar">Arabic</language>
-        <language ident="fr">French</language>
-        <language ident="de">German</language>
-        <language ident="la">Latin</language>
-        <language ident="grc">Ancient Greek</language>
+        <language ident="ar-Syrc">Arabic Garshuni</language>
+        <language ident="ar-Syrn">Arabic Garshuni in East Syriac script</language>
         <language ident="cop">Coptic</language>
+        <language ident="de">German</language>
+        <language ident="en">English</language>
+        <language ident="fr">French</language>
+        <language ident="grc">Ancient Greek</language>
+        <language ident="he">Hebrew</language>
+        <language ident="hy">Armenian</language>
+        <language ident="it">Italian</language>
+        <language ident="la">Latin</language>
+        <language ident="syr">Syriac</language>
+        <language ident="syr-Arab">Syriac Garshuni in Arabic script</language>
+        <language ident="syr-Syre">Syriac in Estrangela script</language>
+        <language ident="syr-Syrj">Syriac in West Syriac script</language>
+        <language ident="syr-Syrn">Syriac in East Syriac script</language>
+        <language ident="syr-x-syrm">Syriac in Melkite Syriac script</language>
+        <language ident="tr">Turkish</language>
+        <language ident="tr-Syrc">Turkish Garshuni</language>
+        <language ident="qhy-x-cpas">Christian Palestinian Aramaic script</language>
+        <language ident="xcl">Classical Armenian</language>
+        <language ident="und">Undetermined</language>
+        <language ident="mul">Multiple languages</language>
       </langUsage>
       <textClass>
         <keywords scheme="#Wright-BL-Taxonomy">
@@ -409,16 +396,10 @@
       <change who="https://bl.syriac.uk/documentation/editors.xml#pgmiller" when="2016-07-06">Changed: Files moved to srophe-app-data/data/manuscripts/tei repository.</change>
     </revisionDesc>
   </teiHeader>
-  <facsimile>
-    <!-- facsimile information about the manuscript -->
-    <graphic/>
-    <!-- Alternatively you could provide 'surface' elements with more than one image per surface, and optionally with 'zone' 
-      elements to give coordinates for any special areas of interest -->
-  </facsimile>
   <text>
     <body>
-      <!-- If you had a transcription of the manuscript you would put it here -->
       <p/>
+      <!--Body paragraph provided for document validation.-->
     </body>
   </text>
 </TEI>

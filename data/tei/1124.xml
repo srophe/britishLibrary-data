@@ -1,4 +1,7 @@
-<?oxygen RNGSchema="http://syriaca.org/documentation/syriaca-tei-main.rnc" type="compact"?><?xml-stylesheet type="text/css" href="https://raw.githubusercontent.com/srophe/wright-catalogue/master/parameters/tei.css"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+<?xml-model href="https://raw.githubusercontent.com/srophe/britishLibrary/main/documentation/schema/out/Syriacamsdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/srophe/britishLibrary/main/documentation/schema/out/Syriacamsdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet href="https://raw.githubusercontent.com/srophe/wright-catalogue/master/parameters/tei.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="manuscript_1124">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -29,7 +32,7 @@
         </respStmt>
         <respStmt>
           <resp>Edited by</resp>
-          <name type="person" ref="https://bl.syriac.uk/documentation/editors.xml#">William L. Potter</name>
+          <name type="person" ref="https://bl.syriac.uk/documentation/editors.xml#wpotter">William L. Potter</name>
         </respStmt>
         <respStmt>
           <resp>Syriac text entered by</resp>
@@ -72,7 +75,6 @@
         <authority>Syriaca.org: The Syriac Reference Portal</authority>
         <idno type="URI">https://bl.syriac.uk/ms/1124/tei</idno>
         <availability>
-          <p/>
           <licence target="http://creativecommons.org/licenses/by/3.0/">
             <p>Distributed under a Creative Commons Attribution 3.0 Unported License</p>
           </licence>
@@ -94,7 +96,7 @@
               <idno type="BL-Shelfmark-display">London, BL, Add. 18,816</idno>
             </altIdentifier>
             <altIdentifier>
-              <idno type="BL-Shelmark-simplified">BL Add MS 18816</idno>
+              <idno type="BL-Shelfmark-simplified">BL Add MS 18816</idno>
             </altIdentifier>
             <altIdentifier>
               <collection>William Wright, Catalogue of the Syriac Manuscripts in the British Museum Acquired since the Year 1838</collection>
@@ -114,22 +116,21 @@
             </listRelation>
           </head>
           <msContents>
-            <textLang mainLang="syr"/>
+            <textLang mainLang="syr">Syriac</textLang>
             <msItem xml:id="a1" n="1" defective="true">
               <locus from="1b"/>
-              <author ref="http://syriaca.org/person/51">Severus, patriarch of Antioch</author>
-              <author ref="http://syriaca.org/person/52">John bar Aphtūnāyā</author>
-              <author ref="http://syriaca.org/person/78">John Psaltes</author>
-              <title xml:lang="en">The Hymns of <persName ref="http://syriaca.org/person/51">Severus, patriarch of
-                <placeName ref="http://syriaca.org/place/10">Antioch</placeName>
-              </persName>, <persName ref="http://syriaca.org/person/52">John bar
-                Aphtūnāyā, abbat of <placeName ref="http://syriaca.org/place/230">Kinnesrīn</placeName>
-                </persName>,
-                <persName ref="http://syriaca.org/person/1318">John Psaltes</persName>, etc., as translated by <persName ref="http://syriaca.org/person/1405">Paul
-                  of <placeName ref="http://syriaca.org/place/78">Edessa</placeName>
-                </persName>, and revised by
-                <persName ref="http://syriaca.org/person/113">Jacob of <placeName ref="http://syriaca.org/place/78">Edessa</placeName>
-                </persName>.</title>
+              <author ref="http://syriaca.org/person/51">
+                <persName xml:lang="en">Severus, patriarch of Antioch</persName>
+              </author>
+              <author ref="http://syriaca.org/person/52">
+                <persName xml:lang="en">John bar Aphtūnāyā</persName>
+              </author>
+              <author ref="http://syriaca.org/person/78">
+                <persName xml:lang="en">John Psaltes</persName>
+              </author>
+              <title xml:lang="en">The Hymns of Severus, patriarch of Antioch, John bar Aphtūnāyā, abbat of Kinnesrīn,
+                John Psaltes, etc., as translated by Paul of Edessa, and revised by
+                Jacob of Edessa.</title>
               <note>See <bibl>Add. 17,134</bibl>, from which manuscript, or one very similar to it, the
                         present seems to have been copied.</note>
               <msItem xml:id="b1" n="2">
@@ -141,12 +142,14 @@
               <msItem xml:id="b2" n="3">
                 <locus from="12b">fol. 12b</locus>
                 <author ref="http://syriaca.org/person/51">
-                  <persName ref="http://syriaca.org/person/51">Severus, patriarch of Antioch</persName>
+                  <persName>Severus, patriarch of Antioch</persName>
                 </author>
                 <author ref="http://syriaca.org/person/52">
-                  <persName ref="http://syriaca.org/person/52">John bar Aphtūnāyā</persName>
+                  <persName>John bar Aphtūnāyā</persName>
                 </author>
-                <author ref="http://syriaca.org/person/78">John Psaltes</author>
+                <author ref="http://syriaca.org/person/78">
+                  <persName xml:lang="en">John Psaltes</persName>
+                </author>
                 <title xml:lang="en">The hymns</title>
                 <rubric xml:lang="syr">ܡ̈ܥܢܝܬܐ ܕܩܕܝܫܐ ܘܛܘܒܬܢܐ ܣܐܘܝܪܐ ܦܐܛܪܝܐܪܟܐ ܕܐܢܛܝܘܟܝܐ̣. ܘܕܐܢ̈ܫܝܢ ܐܚܪ̈ܢܐ ܩܕܝ̈ܫܐ.<locus from="12b"/>
                 </rubric>
@@ -156,7 +159,7 @@
                   ܗܠܝܢ ܕܝܢ ܕܫܪܟܐ ܐܝܬܝܗܝ̣ܢ ܕܝܘܚܢܢ ܘ̈ <sic>ܗܠܝܢ</sic> ܕܩ̇ܕܝܡܝܢ ܐܡܝܪ̈ܝ̣ܢ. ܘܕܐܚ̈ܪܢܐ ܕܠܐ
                   ܝܕ̈ܥܝܢ ܫ̈ܡܗܝܗܘܢ ܐܝܟܢܐ ܕܐܦ ܪܫܝܡܢ ܒܓܘܗ̣ ܕܟܬܒܐ܀ ܀<locus from="103a"/>
                 </finalRubric>
-                <note>365 (<foreign>ܫܣܗ</foreign>) in number</note>
+                <note>365 (<foreign xml:lang="syr">ܫܣܗ</foreign>) in number</note>
                 <note>almost, if not entirely identical with those contained in <bibl>Add. 17,134, nos. 1—35</bibl>
                 </note>
                 <note>According to the index, there should follow (as in <bibl>Add. 17,134</bibl>) the hymn "Gloria in excelsis," <foreign xml:lang="syr">ܬܘܒ ܬܫܒܘܚܬܐ ܕܡܬܐܡܪܐ ܒܠܠܝܐ. ܫܘܒܚܐ ܠܐܠܗܐ ܒܡܪ̈ܘܡܐ</foreign>; but this has been omitted.</note>
@@ -184,8 +187,6 @@
                         <extent>
                            <measure type="composition" unit="leaf" quantity="115">115 ff.</measure>
                         </extent>
-                        <foliation/>
-                        <collation/>
                         <condition>
                            <list>
                               <item>
@@ -198,23 +199,19 @@
                            </list>
                         </condition>
                      </supportDesc>
-                     <layoutDesc>
-                        <p>Content pending</p>
-                     </layoutDesc>
-                  </objectDesc>
+                     </objectDesc>
             <handDesc hands="1">
               <handNote xml:id="handNote1" medium="unknown" scope="sole" script="syr">
-                <desc>This volume is written in a good, regular hand of the <date calendar="Gregorian" notBefore="0800" notAfter="0900">ixth
+                This volume is written in a good, regular hand of the <date calendar="Gregorian" notBefore="0800" notAfter="0900">ixth
                            cent.</date>
-                </desc>
-              </handNote>
+                </handNote>
             </handDesc>
             <decoDesc>
-              <decoNote xml:id="decoNote1" type="ornamentation">
-                <desc>There are some attempts at ornamentation, e.g. <locus>foll. 11 a</locus>, <locus>17 a</locus>, etc.</desc>
+              <decoNote type="ornamentation">
+                There are some attempts at ornamentation, e.g. <locus>foll. 11 a</locus>, <locus>17 a</locus>, etc.
               </decoNote>
-              <decoNote xml:id="decoNote2" type="rubrication">
-                <desc>Green paint has occasionally been used for the rubrics, e.g. <locus>foll. 3 b</locus>, <locus>4 a</locus>, <locus>5 a</locus>, <locus>6 a</locus>, <locus>7 b</locus>, and <locus>23 a</locus>.</desc>
+              <decoNote type="rubrication">
+                Green paint has occasionally been used for the rubrics, e.g. <locus>foll. 3 b</locus>, <locus>4 a</locus>, <locus>5 a</locus>, <locus>6 a</locus>, <locus>7 b</locus>, and <locus>23 a</locus>.
               </decoNote>
             </decoDesc>
             <additions>
@@ -251,32 +248,22 @@
                 </item>
               </list>
             </additions>
-            <bindingDesc>
-                     <p>Content pending</p>
-                  </bindingDesc>
-            <sealDesc>
-                     <p>Content pending</p>
-                  </sealDesc>
-            <accMat/>
-          </physDesc>
+            </physDesc>
           <history>
                   <origin>
-                     <origDate notBefore="0800" notAfter="0900">ixth cent.</origDate>
-                     <origPlace/>
+              <origDate calendar="Gregorian" notBefore="0800" notAfter="0900">9th century</origDate>
+                     
                   </origin>
-                  <provenance/>
-                  <acquisition/>
-               </history>
+                  </history>
           <additional>
             <adminInfo>
               <recordHist>
-                <source>Manuscript description based on<bibl>
+                <source>Manuscript description based on <bibl>
                     <ref target="#Wrightpart">Wright's
                       Catalogue</ref>
                   </bibl>. abbreviated by the Syriaca.org editors.</source>
               </recordHist>
-              <note/>
-            </adminInfo>
+              </adminInfo>
             <listBibl>
               <bibl xml:id="Wrightpart">
                 <author>William Wright</author>
@@ -286,7 +273,7 @@
                 <date>1870</date>
                 <ptr target="http://syriaca.org/bibl/8"/>
                 <citedRange unit="entry">CCCCXXII</citedRange>
-                <citedRange unit="pp">1:339-340</citedRange>
+                <citedRange unit="p">1:339-340</citedRange>
               <ref type="internet-archive-pdf" target="https://archive.org/details/catalogueofsyria01brituoft/page/339"/>
               </bibl>
             </listBibl>
@@ -310,7 +297,6 @@
       <classDecl>
         <taxonomy xml:id="Wright-BL-Taxonomy">
           <bibl>
-            
             <ptr target="http://syriaca.org/documentation/Wright-BL-Taxonomy.html"/>
           </bibl>
           <category xml:id="biblical-manuscripts">
@@ -427,22 +413,30 @@
     </encodingDesc>
     <profileDesc>
       <langUsage>
-        <language ident="syr">Unvocalized Syriac of any variety or period</language>
-        <language ident="syr-Syre">Syriac in Estrangela</language>
-        <language ident="syr-Syrj">Vocalized West Syriac</language>
-        <language ident="syr-Syrn">Vocalized East Syriac</language>
-        <language ident="syr-x-syrm">Melkite Syriac</language>
-        <language ident="qhy-x-cpas">Palestinian Syriac</language>
-        <language ident="ar-Syrc">Unvocalized or Undetermined Arabic Garshuni</language>
-        <language ident="ar-Syrj">Arabic Garshuni in Vocalized West Syriac Script</language>
-        <language ident="ar-Syrn">Arabic Garshuni in Vocalized East Syriac Script</language>
-        <language ident="en">English</language>
         <language ident="ar">Arabic</language>
-        <language ident="fr">French</language>
-        <language ident="de">German</language>
-        <language ident="la">Latin</language>
-        <language ident="grc">Ancient Greek</language>
+        <language ident="ar-Syrc">Arabic Garshuni</language>
+        <language ident="ar-Syrn">Arabic Garshuni in East Syriac script</language>
         <language ident="cop">Coptic</language>
+        <language ident="de">German</language>
+        <language ident="en">English</language>
+        <language ident="fr">French</language>
+        <language ident="grc">Ancient Greek</language>
+        <language ident="he">Hebrew</language>
+        <language ident="hy">Armenian</language>
+        <language ident="it">Italian</language>
+        <language ident="la">Latin</language>
+        <language ident="syr">Syriac</language>
+        <language ident="syr-Arab">Syriac Garshuni in Arabic script</language>
+        <language ident="syr-Syre">Syriac in Estrangela script</language>
+        <language ident="syr-Syrj">Syriac in West Syriac script</language>
+        <language ident="syr-Syrn">Syriac in East Syriac script</language>
+        <language ident="syr-x-syrm">Syriac in Melkite Syriac script</language>
+        <language ident="tr">Turkish</language>
+        <language ident="tr-Syrc">Turkish Garshuni</language>
+        <language ident="qhy-x-cpas">Christian Palestinian Aramaic script</language>
+        <language ident="xcl">Classical Armenian</language>
+        <language ident="und">Undetermined</language>
+        <language ident="mul">Multiple languages</language>
       </langUsage>
       <textClass>
         <keywords scheme="#Wright-BL-Taxonomy">
@@ -465,12 +459,10 @@
             encoding.</change>
       </revisionDesc>
   </teiHeader>
-  <facsimile>
-      <formula>Content pending</formula>
-   </facsimile>
   <text>
       <body>
-         <bibl>Content pending</bibl>
+         <p/>
+      <!--Body paragraph provided for document validation.-->
       </body>
    </text>
 </TEI>

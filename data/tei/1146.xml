@@ -1,4 +1,7 @@
-<?oxygen RNGSchema="http://syriaca.org/documentation/syriaca-tei-main.rnc" type="compact"?><?xml-stylesheet type="text/css" href="https://raw.githubusercontent.com/srophe/wright-catalogue/master/parameters/tei.css"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+<?xml-model href="https://raw.githubusercontent.com/srophe/britishLibrary/main/documentation/schema/out/Syriacamsdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/srophe/britishLibrary/main/documentation/schema/out/Syriacamsdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet href="https://raw.githubusercontent.com/srophe/wright-catalogue/master/parameters/tei.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="manuscript_1146">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -67,7 +70,6 @@
         <authority>Syriaca.org: The Syriac Reference Portal</authority>
         <idno type="URI">https://bl.syriac.uk/ms/1146/tei</idno>
         <availability>
-          <p/>
           <licence target="http://creativecommons.org/licenses/by/3.0/">
             <p>Distributed under a Creative Commons Attribution 3.0 Unported License</p>
           </licence>
@@ -89,7 +91,7 @@
               <idno type="BL-Shelfmark-display">London, BL, Add. 25,877</idno>
             </altIdentifier>
             <altIdentifier>
-              <idno type="BL-Shelmark-simplified">BL Add MS 25877</idno>
+              <idno type="BL-Shelfmark-simplified">BL Add MS 25877</idno>
             </altIdentifier>
             <altIdentifier>
               <collection>William Wright, Catalogue of the Syriac Manuscripts in the British Museum Acquired since the Year 1838</collection>
@@ -109,11 +111,13 @@
             </listRelation>
           </head>
           <msContents>
-            <textLang mainLang="syr"/>
+            <textLang mainLang="syr">Syriac</textLang>
             <msItem xml:id="a1" n="1" defective="false">
-              <locus to="86" from="1b">Foll. 1b-86</locus>
-              <author ref="http://syriaca.org/person/239">Gregory bar Hebraeus</author>
-              <title xml:lang="en">The metrical Grammar of <persName ref="http://syriaca.org/person/239">Gregory bar Hebraeus</persName>, with
+              <locus from="1b" to="86">Foll. 1b-86</locus>
+              <author ref="http://syriaca.org/person/239">
+                <persName xml:lang="en">Gregory bar Hebraeus</persName>
+              </author>
+              <title xml:lang="en">The metrical Grammar of Gregory bar Hebraeus, with
                         the Scholia.</title>
               <rubric xml:lang="syr">ܥܲܠ ܚܲܝܠܗ ܕܡܪܢ ܝ̣ܫܘܿܥ ܡܫܝ̣ܚܵܐ. ܡܫܲܪܹܝܢܢ ܠܡܸܟ݂ܬܵܒ݂
                         ܟܬ݂ܵܒ݂ܐ ܕܲܓ݂ܪܲܡܡܵܛܝ̣ܩܝ̣ ܒܲܡܫܘܼܚܬܵܐ ܕܡܪܝ ܐܦܪܝܡ ܕܣܝ̣ܡ ܘܲܡܛܲܟ݁ܣ ܣܲܓ݁ܝ̣
@@ -139,8 +143,6 @@
                 <extent>
                   <measure type="composition" unit="leaf" quantity="96">96 ff.</measure>
                 </extent>
-                        <foliation/>
-                        <collation/>
                         <condition>
                            <list>
                               <item>
@@ -154,21 +156,17 @@
                   </objectDesc>
             <handDesc hands="1">
               <handNote xml:id="handNote1" medium="unknown" scope="sole" script="syr-Syrn">
-                <desc>This manuscript is written in a good, regular, Nestorian hand, with
-                           numerous vowel-points, etc.</desc>
-              </handNote>
+                This manuscript is written in a good, regular, Nestorian hand, with
+                           numerous vowel-points, etc.</handNote>
             </handDesc>
             <additions>
               <note type="proofreader-note">N.B., folio location may not be available for some items below.</note>
-              <p/>
               <list>
                 <item xml:id="addition1" n="1">
                   <label>Colophon</label>
-                  <locus/>
                   <p>The colophon, fol. 86 b. states that the manuscript was written in the
                               year above mentioned by one <persName>Hurmiz of
-                                    <placeName>Beth-Seluk</placeName>
-                    </persName>.</p>
+                                    <placeName>Beth-Seluk</placeName></persName>.</p>
                   <p>
                     <quote xml:lang="syr">ܫ̣ܩܲܠ ܕܝܢ ܟܬ݂ܵܒ݂ܵܐ ܗܵܢܵܐ ܣܵܟ݂ܵܢܵܝܘܼܬ݂ ܫܘܼܠܵܡ
                                  ܘܣܵܘܦܵܢܵܝܘܼܬ݂ ܚܘܼܬܵܡ. ܒܝܘܿܡ ܕܐܪܒ݁ܥ ܒܫܲܒ݁ܐ. ܫܲܒ̣ܥܵܐ ܕܐܹܠܝ̣ܵܐ܀ ܒܝܪܚܵܐ
@@ -178,7 +176,6 @@
                   </p>
                 </item>
                 <item xml:id="addition2" n="2">
-                  <locus/>
                   <p>On fol. 96 a there is a note, written by the priest <persName>Nuradin (Nur
                       al-din) bar <foreign xml:lang="syr">ܐܘܼܪܘܼܓ</foreign> of
                     <placeName>Karkuk</placeName>
@@ -195,27 +192,24 @@
                 </item>
               </list>
             </additions>
-            <accMat/>
-          </physDesc>
+            </physDesc>
           <history>
                   <origin>
-                     <origDate calendar="Gregorian" when="1733">A.D. 1733</origDate>
-                     <origDate datingMethod="Seleucid" when-custom="2011">A. Gr. 2011</origDate>
-                     <origPlace/>
+              <origDate calendar="Gregorian" when="1733">AD 1733</origDate>
+              <origDate calendar="Seleucid" datingMethod="Seleucid" when-custom="2011">AG 2011</origDate>
+                     
+                     
                   </origin>
-                  <provenance/>
-                  <acquisition/>
-               </history>
+                  </history>
           <additional>
             <adminInfo>
               <recordHist>
-                <source>Manuscript description based on<bibl>
+                <source>Manuscript description based on <bibl>
                     <ref target="#Wrightpart">Wright's
                       Catalogue</ref>
                   </bibl>. abbreviated by the Syriaca.org editors.</source>
               </recordHist>
-              <note/>
-            </adminInfo>
+              </adminInfo>
             <listBibl>
               <bibl xml:id="Wrightpart">
                 <author>William Wright</author>
@@ -225,7 +219,7 @@
                 <date>1870</date>
                 <ptr target="http://syriaca.org/bibl/8"/>
                 <citedRange unit="entry">M</citedRange>
-                <citedRange unit="pp">3:1179</citedRange>
+                <citedRange unit="p">3:1179</citedRange>
               <ref type="internet-archive-pdf" target="https://archive.org/details/catalogueofsyria03brituoft/page/1179"/>
               </bibl>
             </listBibl>
@@ -249,7 +243,6 @@
       <classDecl>
         <taxonomy xml:id="Wright-BL-Taxonomy">
           <bibl>
-            
             <ptr target="http://syriaca.org/documentation/Wright-BL-Taxonomy.html"/>
           </bibl>
           <category xml:id="biblical-manuscripts">
@@ -366,22 +359,30 @@
     </encodingDesc>
     <profileDesc>
       <langUsage>
-        <language ident="syr">Unvocalized Syriac of any variety or period</language>
-        <language ident="syr-Syre">Syriac in Estrangela</language>
-        <language ident="syr-Syrj">Vocalized West Syriac</language>
-        <language ident="syr-Syrn">Vocalized East Syriac</language>
-        <language ident="syr-x-syrm">Melkite Syriac</language>
-        <language ident="qhy-x-cpas">Palestinian Syriac</language>
-        <language ident="ar-Syrc">Unvocalized or Undetermined Arabic Garshuni</language>
-        <language ident="ar-Syrj">Arabic Garshuni in Vocalized West Syriac Script</language>
-        <language ident="ar-Syrn">Arabic Garshuni in Vocalized East Syriac Script</language>
-        <language ident="en">English</language>
         <language ident="ar">Arabic</language>
-        <language ident="fr">French</language>
-        <language ident="de">German</language>
-        <language ident="la">Latin</language>
-        <language ident="grc">Ancient Greek</language>
+        <language ident="ar-Syrc">Arabic Garshuni</language>
+        <language ident="ar-Syrn">Arabic Garshuni in East Syriac script</language>
         <language ident="cop">Coptic</language>
+        <language ident="de">German</language>
+        <language ident="en">English</language>
+        <language ident="fr">French</language>
+        <language ident="grc">Ancient Greek</language>
+        <language ident="he">Hebrew</language>
+        <language ident="hy">Armenian</language>
+        <language ident="it">Italian</language>
+        <language ident="la">Latin</language>
+        <language ident="syr">Syriac</language>
+        <language ident="syr-Arab">Syriac Garshuni in Arabic script</language>
+        <language ident="syr-Syre">Syriac in Estrangela script</language>
+        <language ident="syr-Syrj">Syriac in West Syriac script</language>
+        <language ident="syr-Syrn">Syriac in East Syriac script</language>
+        <language ident="syr-x-syrm">Syriac in Melkite Syriac script</language>
+        <language ident="tr">Turkish</language>
+        <language ident="tr-Syrc">Turkish Garshuni</language>
+        <language ident="qhy-x-cpas">Christian Palestinian Aramaic script</language>
+        <language ident="xcl">Classical Armenian</language>
+        <language ident="und">Undetermined</language>
+        <language ident="mul">Multiple languages</language>
       </langUsage>
       <textClass>
         <keywords scheme="#Wright-BL-Taxonomy">
@@ -401,16 +402,14 @@
       <change who="https://bl.syriac.uk/documentation/editors.xml#srophe-util" when="2020-04-29-05:00">CHANGED: Added project metadata; metadata from Wright Decoder; msItem, handDesc, and additions enumeration; Wright Taxonomy designation</change>
       <change who="https://bl.syriac.uk/documentation/editors.xml#jpagan" when="2020-01-24">Initial TEI
             encoding.</change>
-         <change type="planned" subtype="checkSyriac">The Syriac copied from the Word Document needs
+         <change type="planned" subtype="checkSyriac" who="https://bl.syriac.uk/documentation/editors.xml#smbl-general-editors">The Syriac copied from the Word Document needs
             to be checked for accuracy</change>
       </revisionDesc>
   </teiHeader>
-  <facsimile>
-      <formula>Content pending</formula>
-   </facsimile>
   <text>
       <body>
-         <bibl>Content pending</bibl>
+         <p/>
+      <!--Body paragraph provided for document validation.-->
       </body>
    </text>
 </TEI>

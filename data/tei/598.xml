@@ -1,4 +1,7 @@
-<?oxygen RNGSchema="http://syriaca.org/documentation/syriaca-tei-main.rnc" type="compact"?><?xml-stylesheet type="text/css" href="https://raw.githubusercontent.com/srophe/wright-catalogue/master/parameters/tei.css"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+<?xml-model href="https://raw.githubusercontent.com/srophe/britishLibrary/main/documentation/schema/out/Syriacamsdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/srophe/britishLibrary/main/documentation/schema/out/Syriacamsdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet href="https://raw.githubusercontent.com/srophe/wright-catalogue/master/parameters/tei.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="manuscript_598">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -58,7 +61,6 @@
         <authority>Syriaca.org: The Syriac Reference Portal</authority>
         <idno type="URI">https://bl.syriac.uk/ms/598/tei</idno>
         <availability>
-          <p/>
           <licence target="http://creativecommons.org/licenses/by/3.0/">
             <p>Distributed under a Creative Commons Attribution 3.0 Unported License</p>
           </licence>
@@ -80,7 +82,7 @@
               <idno type="BL-Shelfmark-display">London, BL, Add. 14,718</idno>
             </altIdentifier>
             <altIdentifier>
-              <idno type="BL-Shelmark-simplified">BL Add MS 14718</idno>
+              <idno type="BL-Shelfmark-simplified">BL Add MS 14718</idno>
             </altIdentifier>
             <altIdentifier>
               <collection>William Wright, Catalogue of the Syriac Manuscripts in the British Museum Acquired since the Year 1838</collection>
@@ -93,7 +95,6 @@
           </msIdentifier>
           <head>
             <note type="contents-note">This manuscript record does not have a summary list of contents. For composite manuscripts, the list of contents can be found under each individual part.</note>
-            <listRelation type="Wright-BL-Taxonomy"/>
             <listRelation type="composite-to-parts">
               <desc>This composite manuscript consists of 2 distinct parts:</desc>
               <relation name="syriaca:has-palimpsest-upper" ref="#syriaca:has-palimpsest-upper" active="https://bl.syriac.uk/ms/598" passive="https://bl.syriac.uk/ms/1428">
@@ -115,7 +116,7 @@
                 <idno type="BL-Shelfmark-display">London, BL, Add. 14,718, upper text</idno>
               </altIdentifier>
               <altIdentifier>
-                <idno type="BL-Shelmark-simplified">BL Add MS 14718, upper text</idno>
+                <idno type="BL-Shelfmark-simplified">BL Add MS 14718, upper text</idno>
               </altIdentifier>
              <altIdentifier>
                <collection>William Wright, Catalogue of the Syriac Manuscripts in the British Museum Acquired since the Year 1838</collection>
@@ -135,16 +136,14 @@
               </listRelation>
               <listRelation type="part-to-composite">
                 <desc>This unit is a part of a composite manuscript:</desc>
-                <relation name="syriaca:is-unspecified-codicological-part-of" ref="#syriaca:is-unspecified-codicological-part-of" active="https://bl.syriac.uk/ms/1428" passive="https://bl.syriac.uk/ms/598">
-                  <relation/>
-                </relation>
+                <relation name="syriaca:is-unspecified-codicological-part-of" ref="#syriaca:is-unspecified-codicological-part-of" active="https://bl.syriac.uk/ms/1428" passive="https://bl.syriac.uk/ms/598"/>
               </listRelation>
               <note type="manuscript-division">The division of this manuscript into codicological units differs from that of Wright's catalogue. Some parts of this manuscript may not have been differentiated by Wright.</note>
             </head>
             <msContents>
-              <textLang mainLang="syr"/>
+              <textLang mainLang="syr">Syriac</textLang>
               <msItem xml:id="p1a1" n="1" defective="true">
-                <locus to="155" from="1a"/>
+                <locus from="1a" to="155"/>
                 <title xml:lang="en">Services for different occasions, consisting usually of an
                 introductory prayer, <foreign xml:lang="syr">ܨܠܘܬܐ ܕܫܘܪܝܐ</foreign> a prooemium, a sedrā, a <foreign xml:lang="syr">ܨܠܘܬܐ ܕܦܝܪܡܐ</foreign> or <foreign xml:lang="syr">ܥܛܪܐ</foreign>, and
                 a concluding prayer, <foreign xml:lang="syr">ܚܘܬܡܐ</foreign> .</title>
@@ -155,17 +154,17 @@
                 </msItem>
                 <msItem xml:id="p1b2" n="3" defective="true">
                   <locus from="2a"/>
-                  <title xml:lang="en">The Commemoration of <persName ref="http://syriaca.org/person/1280">Isaiah of Aleppo</persName>
+                  <title xml:lang="en">The Commemoration of Isaiah of Aleppo
                 </title>
                   <rubric xml:lang="syr">ܛܟܣܐ ܕܥܠ ܡܪܝ ܐܫܥܝܐ ܚܠܒܝܐ</rubric>
                 </msItem>
                 <msItem xml:id="p1b3" n="4" defective="true">
                   <locus from="9a"/>
-                  <title xml:lang="en">The Commemoration of <persName ref=" http://syriaca.org/person/1122">Mar Aḥā</persName>
+                  <title xml:lang="en">The Commemoration of Mar Aḥā
                   </title>
                   <rubric xml:lang="syr">ܛܟ̣ܣܐ ܕܥܠ ܩܕܝܫܐ ܡܪܝ ܐܚܐ </rubric>
                 </msItem>
-                <msItem xml:id="p1b4" n="5">
+                <msItem xml:id="p1b4" n="5" defective="true">
                   <locus from="14a"/>
                   <title xml:lang="en">Passion Week; viz.</title>
                   <msItem xml:id="p1c1" n="6">
@@ -228,8 +227,6 @@
                   <extent>
                     <measure type="composition" unit="leaf" quantity="155">155 ff.</measure>
                   </extent>
-                <foliation/>
-                <collation/>
                 <condition>
                   <list>
                     <item>
@@ -247,34 +244,25 @@
             </objectDesc>
               <handDesc hands="1">
                 <handNote xml:id="p1handNote1" medium="unknown" scope="sole" script="syr">
-                  <desc>This volume is written in an inelegant hand of the <origDate notBefore="1200" notAfter="1300">xiiith cent.</origDate>
-                </desc>
+                  This volume is written in an inelegant hand of the <date notBefore="1200" notAfter="1300">xiiith cent.</date>
                 </handNote>
               </handDesc>
-              <additions>
-              <p/>
-            </additions>
-              <accMat/>
-            </physDesc>
+              </physDesc>
             <history>
             <origin>
-              <origDate notBefore="1200" notAfter="1300">the xiiith
-                cent</origDate>
-              <origPlace/>
+                <origDate calendar="Gregorian" notBefore="1200" notAfter="1300">13th century</origDate>
+              
             </origin>
-            <provenance/>
-            <acquisition/>
-          </history>
+            </history>
             <additional>
               <adminInfo>
                 <recordHist>
-                  <source>Manuscript description based on<bibl>
+                  <source>Manuscript description based on <bibl>
                       <ref target="#Wrightpart1">Wright's
                       Catalogue</ref>
                     </bibl>. abbreviated by the Syriaca.org editors.</source>
                 </recordHist>
-                <note/>
-              </adminInfo>
+                </adminInfo>
               <listBibl>
                 <bibl xml:id="Wrightpart1">
                   <author>William Wright</author>
@@ -284,7 +272,7 @@
                   <date>1870</date>
                   <ptr target="http://syriaca.org/bibl/8"/>
                   <citedRange unit="entry">CCCLXIII</citedRange>
-                  <citedRange unit="pp">1:298-299</citedRange>
+                  <citedRange unit="p">1:298-299</citedRange>
                 <ref type="internet-archive-pdf" target="https://archive.org/details/catalogueofsyria01brituoft/page/298"/>
                 </bibl>
               </listBibl>
@@ -300,7 +288,7 @@
                 <idno type="BL-Shelfmark-display">London, BL, Add. 14,718, lower text</idno>
               </altIdentifier>
               <altIdentifier>
-                <idno type="BL-Shelmark-simplified">BL Add MS 14718, lower text</idno>
+                <idno type="BL-Shelfmark-simplified">BL Add MS 14718, lower text</idno>
               </altIdentifier>
               <altIdentifier>
                 <collection>William Wright, Catalogue of the Syriac Manuscripts in the British Museum Acquired since the Year 1838</collection>
@@ -312,22 +300,18 @@
               </altIdentifier>
             </msIdentifier>
             <head>
-              <note type="contents-note">This manuscript contains: The more ancient text. In total, including sub-sections, this manuscript contains 1 items.</note>
+              <note type="contents-note">This manuscript contains: The more ancient text. In total, including sub-sections, this manuscript contains 1 item.</note>
               <listRelation type="Wright-BL-Taxonomy">
-                <relation name="dcterms:type" ref="http://purl.org/dc/terms/type" active="https://bl.syriac.uk/ms/1429" passive="#unclassified">
-                  <desc/>
-                </relation>
+                <relation name="dcterms:type" ref="http://purl.org/dc/terms/type" active="https://bl.syriac.uk/ms/1429" passive="#unclassified"/>
               </listRelation>
               <listRelation type="part-to-composite">
                 <desc>This unit is a part of a composite manuscript:</desc>
-                <relation name="syriaca:is-unspecified-codicological-part-of" ref="#syriaca:is-unspecified-codicological-part-of" active="https://bl.syriac.uk/ms/1429" passive="https://bl.syriac.uk/ms/598">
-                  <relation/>
-                </relation>
+                <relation name="syriaca:is-unspecified-codicological-part-of" ref="#syriaca:is-unspecified-codicological-part-of" active="https://bl.syriac.uk/ms/1429" passive="https://bl.syriac.uk/ms/598"/>
               </listRelation>
               <note type="manuscript-division">The division of this manuscript into codicological units differs from that of Wright's catalogue. Some parts of this manuscript may not have been differentiated by Wright.</note>
             </head>
             <msContents>
-              <textLang mainLang="syr"/>
+              <textLang mainLang="syr">Syriac</textLang>
               <msItem xml:id="p2a1" n="1">
                 <locus from="140"/>
                 <title xml:lang="en">The more ancient text</title>
@@ -342,8 +326,6 @@
                   <extent>
                     <measure type="composition" unit="leaf" quantity="1">1 f.</measure>
                   </extent>
-                  <foliation/>
-                  <collation/>
                   <condition>
                     <list>
                       <item>
@@ -356,34 +338,26 @@
               </objectDesc>
               <handDesc hands="1">
                 <handNote xml:id="p2handNote1" medium="unknown" scope="sole" script="qhy-x-cpas">
-                  <desc>The more ancient text, now almost wholly illegible, is written in the
-                    Palestinian character.</desc>
-                </handNote>
+                  The more ancient text, now almost wholly illegible, is written in the
+                    Palestinian character.</handNote>
               </handDesc>
-              <additions>
-                <p/>
-              </additions>
-              <accMat/>
-            </physDesc>
+              </physDesc>
             <history>
               <origin>
-                <origDate/>
+                <origDate calendar="Gregorian" notBefore="0421" notAfter="1225">before 13th century</origDate>
+                
                 <!-- Wright doesn't specify, but since it is "more ancient", we could put pre-13th century? -->
-                <origPlace/>
               </origin>
-              <provenance/>
-              <acquisition/>
-            </history>
+              </history>
             <additional>
               <adminInfo>
                 <recordHist>
-                  <source>Manuscript description based on<bibl>
+                  <source>Manuscript description based on <bibl>
                       <ref target="#Wrightpart2">Wright's
                       Catalogue</ref>
                     </bibl>. abbreviated by the Syriaca.org editors.</source>
                 </recordHist>
-                <note/>
-              </adminInfo>
+                </adminInfo>
               <listBibl>
                 <bibl xml:id="Wrightpart2">
                   <author>William Wright</author>
@@ -393,7 +367,7 @@
                   <date>1870</date>
                   <ptr target="http://syriaca.org/bibl/8"/>
                   <citedRange unit="entry">CCCLXIII</citedRange>
-                  <citedRange unit="pp">1:298-299</citedRange>
+                  <citedRange unit="p">1:298-299</citedRange>
                 <ref type="internet-archive-pdf" target="https://archive.org/details/catalogueofsyria01brituoft/page/298"/>
                 </bibl>
               </listBibl>
@@ -418,7 +392,6 @@
       <classDecl>
         <taxonomy xml:id="Wright-BL-Taxonomy">
           <bibl>
-            
             <ptr target="http://syriaca.org/documentation/Wright-BL-Taxonomy.html"/>
           </bibl>
           <category xml:id="biblical-manuscripts">
@@ -535,22 +508,30 @@
     </encodingDesc>
     <profileDesc>
       <langUsage>
-        <language ident="syr">Unvocalized Syriac of any variety or period</language>
-        <language ident="syr-Syre">Syriac in Estrangela</language>
-        <language ident="syr-Syrj">Vocalized West Syriac</language>
-        <language ident="syr-Syrn">Vocalized East Syriac</language>
-        <language ident="syr-x-syrm">Melkite Syriac</language>
-        <language ident="qhy-x-cpas">Palestinian Syriac</language>
-        <language ident="ar-Syrc">Unvocalized or Undetermined Arabic Garshuni</language>
-        <language ident="ar-Syrj">Arabic Garshuni in Vocalized West Syriac Script</language>
-        <language ident="ar-Syrn">Arabic Garshuni in Vocalized East Syriac Script</language>
-        <language ident="en">English</language>
         <language ident="ar">Arabic</language>
-        <language ident="fr">French</language>
-        <language ident="de">German</language>
-        <language ident="la">Latin</language>
-        <language ident="grc">Ancient Greek</language>
+        <language ident="ar-Syrc">Arabic Garshuni</language>
+        <language ident="ar-Syrn">Arabic Garshuni in East Syriac script</language>
         <language ident="cop">Coptic</language>
+        <language ident="de">German</language>
+        <language ident="en">English</language>
+        <language ident="fr">French</language>
+        <language ident="grc">Ancient Greek</language>
+        <language ident="he">Hebrew</language>
+        <language ident="hy">Armenian</language>
+        <language ident="it">Italian</language>
+        <language ident="la">Latin</language>
+        <language ident="syr">Syriac</language>
+        <language ident="syr-Arab">Syriac Garshuni in Arabic script</language>
+        <language ident="syr-Syre">Syriac in Estrangela script</language>
+        <language ident="syr-Syrj">Syriac in West Syriac script</language>
+        <language ident="syr-Syrn">Syriac in East Syriac script</language>
+        <language ident="syr-x-syrm">Syriac in Melkite Syriac script</language>
+        <language ident="tr">Turkish</language>
+        <language ident="tr-Syrc">Turkish Garshuni</language>
+        <language ident="qhy-x-cpas">Christian Palestinian Aramaic script</language>
+        <language ident="xcl">Classical Armenian</language>
+        <language ident="und">Undetermined</language>
+        <language ident="mul">Multiple languages</language>
       </langUsage>
       <textClass>
         <keywords scheme="#Wright-BL-Taxonomy">
@@ -578,7 +559,8 @@
   </teiHeader>
   <text>
     <body>
-      <bibl/>
+      <p/>
+      <!--Body paragraph provided for document validation.-->
     </body>
   </text>
 </TEI>

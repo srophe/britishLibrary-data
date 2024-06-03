@@ -1,4 +1,7 @@
-<?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/srophe-app/documentation/enrich-syriaca.rnc" type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/css" href="SRPEnrichCSS.css"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+<?xml-model href="https://raw.githubusercontent.com/srophe/britishLibrary/main/documentation/schema/out/Syriacamsdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/srophe/britishLibrary/main/documentation/schema/out/Syriacamsdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet href="https://raw.githubusercontent.com/srophe/wright-catalogue/master/parameters/tei.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="manuscript_122">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -7,7 +10,7 @@
         <funder>The National Endowment for the Humanities</funder>
         <funder>The Andrew W. Mellon Foundation</funder>
         <principal>David A. Michelson</principal>
-        <editor role="general-editor" ref="https://bl.syriac.uk/documentation/editors.xml#dmichelson">David A. michelson</editor>
+        <editor role="general-editor" ref="https://bl.syriac.uk/documentation/editors.xml#dmichelson">David A. Michelson</editor>
         <editor role="creator" ref="https://bl.syriac.uk/documentation/editors.xml#dmichelson">David A. Michelson</editor>
         <editor role="creator" ref="https://bl.syriac.uk/documentation/editors.xml#dgreeson">Daniel J. Greeson</editor>
         <editor role="creator" ref="https://bl.syriac.uk/documentation/editors.xml#thannah">Tucker D. Hannah</editor>
@@ -45,11 +48,9 @@
         <edition n="1.0"/>
       </editionStmt>
       <publicationStmt>
-        <pubPlace/>
         <authority>Syriaca.org: The Syriac Reference Portal</authority>
         <idno type="URI">https://bl.syriac.uk/ms/122/tei</idno>
         <availability>
-          <p/>
           <licence target="http://creativecommons.org/licenses/by/3.0/">
             <p>Distributed under a Creative Commons Attribution 3.0 Unported License</p>
           </licence>
@@ -57,7 +58,7 @@
         <date calendar="Gregorian">2023-04-21-05:00</date>
       </publicationStmt>
       <sourceDesc>
-        <msDesc xml:id="manuscript-122" xml:lang="en">
+        <msDesc xml:id="manuscript-122">
           <msIdentifier>
             <country>United Kingdom</country>
             <settlement>London</settlement>
@@ -71,7 +72,7 @@
               <idno type="BL-Shelfmark-display">London, BL, Add. 14,450</idno>
             </altIdentifier>
             <altIdentifier>
-              <idno type="BL-Shelmark-simplified">BL Add MS 14450</idno>
+              <idno type="BL-Shelfmark-simplified">BL Add MS 14450</idno>
             </altIdentifier>
             <altIdentifier>
               <collection>William Wright, Catalogue of the Syriac Manuscripts in the British Museum Acquired since the Year 1838</collection>
@@ -91,44 +92,43 @@
             </listRelation>
           </head>
           <msContents>
-            <summary/>
             <textLang mainLang="syr">Syriac</textLang>
             <msItem xml:id="a1" n="1">
               <locus from="3"/>
-              <title type="supplied" ref="http://syriaca.org/work/180">The Ammonian sections and Eusebian canons are marked in the text with red ink</title>
-              <note>The Eusebian canons (and doubtless the<bibl>Epistle to Carpianus</bibl>) were originally prefixed to the volume, for<locus from="1" to="2">foll. 1 and 2</locus>contain can. v— viii., arranged in columns, with ornamented capitals, etc.</note>
+              <title ref="http://syriaca.org/work/180" xml:lang="en">The Ammonian sections and Eusebian canons are marked in the text with red ink</title>
+              <note>The Eusebian canons (and doubtless the <bibl>Epistle to Carpianus</bibl>) were originally prefixed to the volume, for <locus from="1" to="2">foll. 1 and 2</locus> contain can. v— viii., arranged in columns, with ornamented capitals, etc.</note>
             </msItem>
             <msItem xml:id="a2" n="2">
               <locus from="3"/>
-              <title type="supplied" ref="http://syriaca.org/work/181">Gospel harmony</title>
-              <note>At the foot of each page (except<locus from="18" to="30">foll. 18—30</locus>).</note>
+              <title ref="http://syriaca.org/work/181" xml:lang="en">Gospel harmony</title>
+              <note>At the foot of each page (except <locus from="18" to="30">foll. 18—30</locus>).</note>
             </msItem>
             <msItem xml:id="a3" n="3" defective="true">
               <locus from="3a" to="195b">Foll. 3a-195b</locus>
-              <title type="supplied" ref="http://syriaca.org/work/71">The four Gospels, according to the Peshitta version</title>
+              <title ref="http://syriaca.org/work/71" xml:lang="en">The four Gospels, according to the Peshitta version</title>
               <note>Of the lessons some are rubricated in the text.</note>
               <finalRubric xml:lang="syr">ܫܠܡ ܠܡܟܬܒ ܒܟܬܒܐ ܗܢܐ. ܛܛܪܐܘܢܓܠܝܘܢ ܩܕܝܫܐ. ܕܡܠܠܘܗܝ ܘܐܟܪܙܘܗܝ ܘܣܒܪܘܗܝ ܐܪ̈ܒܥܐ ܐܘ̈ܢܓܠܣܛܐ ܩܕܝ̈ܫܐ ܡܬܝ ܡܪܩܘܣ. ܠܘܩܐ ܝܘܚܝܢ.<locus from="195b" to="195b"/>
               </finalRubric>
-              <finalRubric type="doxology">A brief doxology follows,<foreign xml:lang="syr">ܫܘܒܚܐ ܠܬܠܝܬܝܘܬܐ ܣܓܝܕܬ ܡܢ ܟܠ ܐܡܝܢ</foreign>, after which we read in a smaller, more cursive character:<foreign xml:lang="syr">ܨܠܘܬܝ ܥܠ ܡ̇ܢ ܕܟܬܒ ܕܢܬܚܢܢ ܒܝܘܡ ܕܝܢܐ ܐܡܝܢ.</foreign>
+              <finalRubric xml:lang="syr" type="doxology">A brief doxology follows,<foreign xml:lang="syr">ܫܘܒܚܐ ܠܬܠܝܬܝܘܬܐ ܣܓܝܕܬ ܡܢ ܟܠ ܐܡܝܢ</foreign>, after which we read in a smaller, more cursive character:<foreign xml:lang="syr">ܨܠܘܬܝ ܥܠ ܡ̇ܢ ܕܟܬܒ ܕܢܬܚܢܢ ܒܝܘܡ ܕܝܢܐ ܐܡܝܢ.</foreign>
                 <locus from="195b" to="195b"/>
               </finalRubric>
               <msItem xml:id="b1" n="4" defective="true">
                 <locus from="3a" to="42">Foll. 3a-42</locus>
-                <title type="supplied" ref="http://syriaca.org/work/72">The Gospel of S. Matthew, according to the Peshitta version</title>
+                <title ref="http://syriaca.org/work/72" xml:lang="en">The Gospel of S. Matthew, according to the Peshitta version</title>
                 <note>Commencing with: ch. ii. v. 5.</note>
-                <note>The following portions of the text are likewise wanting: ch. ii. 16—v. 20, vi. 3—x. 22 (with the exception of a few words on<locus from="6" to="7">foll. 6 and 7</locus>), xii. 43 — xiii. 28, xix. 23—xxi. 9, xxi. 25—xxii. 37, and xxiii. 14—xxiv. 11.</note>
+                <note>The following portions of the text are likewise wanting: ch. ii. 16—v. 20, vi. 3—x. 22 (with the exception of a few words on <locus from="6" to="7">foll. 6 and 7</locus>), xii. 43 — xiii. 28, xix. 23—xxi. 9, xxi. 25—xxii. 37, and xxiii. 14—xxiv. 11.</note>
               </msItem>
               <msItem xml:id="b2" n="5">
                 <locus from="42b" to="79">Foll. 42b-79</locus>
-                <title type="supplied" ref="http://syriaca.org/work/73">The Gospel of S. Mark, according to the Peshitta version</title>
+                <title ref="http://syriaca.org/work/73" xml:lang="en">The Gospel of S. Mark, according to the Peshitta version</title>
               </msItem>
               <msItem xml:id="b3" n="6">
                 <locus from="79b" to="145">Foll. 79b-145</locus>
-                <title type="supplied" ref="http://syriaca.org/work/74">The Gospel of S. Luke, according to the Peshitta version</title>
+                <title ref="http://syriaca.org/work/74" xml:lang="en">The Gospel of S. Luke, according to the Peshitta version</title>
               </msItem>
               <msItem xml:id="b4" n="7">
                 <locus from="145a" to="195b">Foll. 145a-195b</locus>
-                <title type="supplied" ref="http://syriaca.org/work/75">The Gospel of S. John, according to the Peshitta version</title>
+                <title ref="http://syriaca.org/work/75" xml:lang="en">The Gospel of S. John, according to the Peshitta version</title>
               </msItem>
             </msItem>
           </msContents>
@@ -141,31 +141,26 @@
                 </support>
                 <extent>
                   <measure type="composition" unit="leaf" quantity="195">195 ff.</measure>
-                  <dimensions type="leaf" unit="in">
-                    <height>
-                      <measure type="height" quantity="12.5" unit="in">12 1/2 in.</measure>
-                    </height>
-                    <width>
-                      <measure type="width" quantity="9.625" unit="in">9 5/8 in.</measure>
-                    </width>
+                  <dimensions type="leaf" unit="inch">
+                    <height quantity="12.5">12 1/2</height>
+                    <width quantity="9.625">9 5/8</width>
                   </dimensions>
                 </extent>
-                <foliation/>
                 <collation>
                   <p>The quires are 23 in number.</p>
-                  <p>They were signed with both arithmetical figures and letters (e. g.<locus from="9a" to="9a">fol. 9 a</locus>,<foreign xml:lang="syr">ܓ</foreign>;<locus from="31a" to="31a">fol. 31 a</locus>,<foreign xml:lang="syr">ܘ</foreign>;<locus from="41a" to="41a">fol. 41 a</locus>,<foreign xml:lang="syr">ܙ</foreign>;<locus from="121a" to="121a">fol. 121a</locus>,<foreign xml:lang="syr">ܝܗ</foreign>).</p>
+                  <p>They were signed with both arithmetical figures and letters (e. g.<locus from="9a" to="9a">fol. 9 a</locus>, <foreign xml:lang="syr">ܓ</foreign>;<locus from="31a" to="31a">fol. 31 a</locus>, <foreign xml:lang="syr">ܘ</foreign>;<locus from="41a" to="41a">fol. 41 a</locus>, <foreign xml:lang="syr">ܙ</foreign>;<locus from="121a" to="121a">fol. 121a</locus>, <foreign xml:lang="syr">ܝܗ</foreign>).</p>
                   <!-- MISSING CHARACTERS ON TOP OF SYRIAC/ARABIC -->
                 </collation>
                 <condition>
                   <list>
                     <item>
-                      <p>Some leaves are much stained and torn, especially foll.<locus from="1" to="9">1—9</locus>,<locus from="14" to="14">14</locus>,<locus from="18" to="18">18</locus>,<locus from="29" to="30">29 and 30</locus>.</p>
+                      <p>Some leaves are much stained and torn, especially foll.<locus from="1" to="9">1—9</locus>, <locus from="14" to="14">14</locus>, <locus from="18" to="18">18</locus>, <locus from="29" to="30">29 and 30</locus>.</p>
                     </item>
                     <item>
-                      <p>Leaves are wanting at the beginning, as well as after foll.<locus from="2" to="2">2</locus>,<locus from="3" to="3">3</locus>,<locus from="5" to="5">5</locus>,<locus from="6" to="6">6</locus>,<locus from="7" to="7">7</locus>,<locus from="12" to="12">12</locus>,<locus from="17" to="17">17</locus>,<locus from="26" to="26">26</locus>,<locus from="27" to="27">27</locus>and<locus from="28" to="28">28</locus>.</p>
+                      <p>Leaves are wanting at the beginning, as well as after foll.<locus from="2" to="2">2</locus>, <locus from="3" to="3">3</locus>, <locus from="5" to="5">5</locus>, <locus from="6" to="6">6</locus>, <locus from="7" to="7">7</locus>, <locus from="12" to="12">12</locus>, <locus from="17" to="17">17</locus>, <locus from="26" to="26">26</locus>, <locus from="27" to="27">27</locus> and <locus from="28" to="28">28</locus>.</p>
                     </item>
                     <item>
-                      <p>Quires<foreign xml:lang="syr">ܐ</foreign>and<foreign xml:lang="syr">ܒ</foreign>are very imperfect.</p>
+                      <p>Quires <foreign xml:lang="syr">ܐ</foreign> and <foreign xml:lang="syr">ܒ</foreign> are very imperfect.</p>
                     </item>
                   </list>
                 </condition>
@@ -178,50 +173,39 @@
             </objectDesc>
             <handDesc hands="8">
               <handNote xml:id="handNote1" scope="major" script="syr-Syre" medium="unknown">
-                <desc>The writing is a fine, regular Estrangela of the<origDate notBefore="0600" notAfter="0700">7th century</origDate>.<ref target="#addition7">See additions.</ref>
-                </desc>
-              </handNote>
+                The writing is a fine, regular Estrangela of the <date notBefore="0600" notAfter="0700">7th century</date>. <ref target="#addition7">See additions.</ref>
+                </handNote>
               <handNote xml:id="handNote2" scope="minor" script="syr" medium="unknown">
-                <desc>Of about<date notBefore="0600" notAfter="0700">the same age</date>.<ref target="#addition5">See additions.</ref>
-                </desc>
-              </handNote>
+                Of about <date notBefore="0600" notAfter="0700">the same age</date>. <ref target="#addition5">See additions.</ref>
+                </handNote>
               <handNote xml:id="handNote3" scope="minor" script="qhy-x-cpas" medium="unknown">
-                <desc>
-                  <ref target="#b1">S. Matthew, ch. xxvi. 48—64</ref>, elegantly written in the Palestinian character, and perhaps of not much later date than the rest of the volume.<ref target="#addition4">See additions.</ref>
-                  <ref target="#decoNote2 #decoNote3">See decoration notes.</ref>
-                </desc>
-              </handNote>
+                <ref target="#b1">S. Matthew, ch. xxvi. 48—64</ref>, elegantly written in the Palestinian character, and perhaps of not much later date than the rest of the volume.<ref target="#addition4">See additions.</ref>
+                 See decoration notes.
+                </handNote>
               <handNote xml:id="handNote4" scope="minor" script="syr" medium="unknown">
-                <desc>A later Syriac hand.<ref target="#addition1">See additions.</ref>
-                </desc>
-              </handNote>
+                A later Syriac hand.<ref target="#addition1">See additions.</ref>
+                </handNote>
               <handNote xml:id="handNote5" scope="minor" script="cop" medium="unknown">
-                <desc>A later Coptic hand.<ref target="#addition2">See additions.</ref>
-                </desc>
-              </handNote>
+                A later Coptic hand.<ref target="#addition2">See additions.</ref>
+                </handNote>
               <handNote xml:id="handNote6" scope="minor" script="syr" medium="red-ink">
-                <desc>
-                  <ref target="#a1">The Ammonian sections and Eusebian canons</ref>are marked in the text with red ink.</desc>
-              </handNote>
-              <handNote xml:id="handNote7" scope="minor" script="mixed" medium="unknown">
-                <desc>Later Syriac and Greek hands.<ref target="#addition3">See additions.</ref>
-                </desc>
-              </handNote>
+                <ref target="#a1">The Ammonian sections and Eusebian canons</ref> are marked in the text with red ink.</handNote>
+              <handNote xml:id="handNote7" scope="minor" script="mul" medium="unknown">
+                Later Syriac and Greek hands.<ref target="#addition3">See additions.</ref>
+                </handNote>
               <handNote xml:id="handNote8" scope="minor" script="syr" medium="unknown">
-                <desc>
-                  <ref target="#addition6">See additions.</ref>
-                </desc>
-              </handNote>
+                <ref target="#addition6">See additions.</ref>
+                </handNote>
             </handDesc>
             <decoDesc>
-              <decoNote xml:id="decoNote1" type="initial">
-                <desc>Ornamented capitals in the<ref target="#a1">Ammonian sections and Eusebian canons</ref>.</desc>
+              <decoNote type="initial">
+                Ornamented capitals in the <ref target="#a1">Ammonian sections and Eusebian canons</ref>.
               </decoNote>
-              <decoNote xml:id="decoNote2" type="ornamentation">
-                <desc>Ornamentation at the top of<locus from="14b" to="14b">fol. 14b</locus>.</desc>
+              <decoNote type="ornamentation">
+                Ornamentation at the top of <locus from="14b" to="14b">fol. 14b</locus>.
               </decoNote>
-              <decoNote xml:id="decoNote3" type="illustration">
-                <desc>The figure of a fish on the lower margin of<locus from="14b" to="14b">fol. 14b</locus>.</desc>
+              <decoNote type="illustration">
+                The figure of a fish on the lower margin of <locus from="14b" to="14b">fol. 14b</locus>.
               </decoNote>
             </decoDesc>
             <additions>
@@ -231,14 +215,14 @@
                   <p>The quires have since been renumbered with Syraic letters.</p>
                 </item>
                 <item xml:id="addition2" n="2">
-                  <p>The quires have also been renumbered with Coptic arithmetical figures (commencing with<locus from="191a">fol. 191 a</locus>).</p>
+                  <p>The quires have also been renumbered with Coptic arithmetical figures (commencing with <locus from="191a">fol. 191 a</locus>).</p>
                 </item>
                 <item xml:id="addition3" n="3">
-                  <p>Many more lessons have been noted on the margins by later hands, Syriac and Greek (see, for example, foll.<locus from="10a" to="10a">10 a</locus>,<locus from="13b" to="13b">13 b</locus>,<locus from="35b" to="35b">35b</locus>,<locus from="43a" to="43a">43 a</locus>,<locus from="74a" to="74a">74 a</locus>,<locus from="106b" to="106b">106 b</locus>,<locus from="108a" to="108b">108 a and b</locus>,<locus from="122a" to="122a">122 a</locus>,<locus from="123a" to="123b">123 a and b</locus>,<locus from="126a" to="126a">126 a</locus>,<locus from="175a" to="175b">175 a and b</locus>, etc.). The beginning and end of each lesson are marked in Syriac by<foreign xml:lang="syr">ܩ</foreign>and<foreign xml:lang="syr">ܫ</foreign>in Greek by<foreign xml:lang="grc">αρ</foreign>(<foreign xml:lang="grc">ἀρχή</foreign>) and<foreign xml:lang="grc">τε</foreign>(<foreign xml:lang="grc">τέλος</foreign>).</p>
+                  <p>Many more lessons have been noted on the margins by later hands, Syriac and Greek (see, for example, foll.<locus from="10a" to="10a">10 a</locus>, <locus from="13b" to="13b">13 b</locus>, <locus from="35b" to="35b">35b</locus>, <locus from="43a" to="43a">43 a</locus>, <locus from="74a" to="74a">74 a</locus>, <locus from="106b" to="106b">106 b</locus>, <locus from="108a" to="108b">108 a and b</locus>, <locus from="122a" to="122a">122 a</locus>, <locus from="123a" to="123b">123 a and b</locus>, <locus from="126a" to="126a">126 a</locus>, <locus from="175a" to="175b">175 a and b</locus>, etc.). The beginning and end of each lesson are marked in Syriac by <foreign xml:lang="syr">ܩ</foreign> and <foreign xml:lang="syr">ܫ</foreign> in Greek by <foreign xml:lang="grc">αρ</foreign>(<foreign xml:lang="grc">ἀρχή</foreign>) and <foreign xml:lang="grc">τε</foreign>(<foreign xml:lang="grc">τέλος</foreign>).</p>
                 </item>
                 <item xml:id="addition4" n="4">
                   <locus from="14" to="14"/>
-                  <p>Fol. 14 is an addition of considerably later date and palimpsest. It contains<ref target="#b1">S. Matthew, ch. xxvi. 48—64</ref>, elegantly written in the Palestinian character, and perhaps of not much later date than the rest of the volume.</p>
+                  <p>Fol. 14 is an addition of considerably later date and palimpsest. It contains <ref target="#b1">S. Matthew, ch. xxvi. 48—64</ref>, elegantly written in the Palestinian character, and perhaps of not much later date than the rest of the volume.</p>
                 </item>
                 <item xml:id="addition5" n="5">
                   <locus from="18" to="30"/>
@@ -246,34 +230,28 @@
                 </item>
                 <item xml:id="addition6" n="6">
                   <locus from="156a" to="156a"/>
-                  <p>On the margin of fol. 156 a a reader called<persName>John</persName>has recorded his name:</p>
+                  <p>On the margin of fol. 156 a a reader called <persName>John</persName> has recorded his name:</p>
                   <p>
                     <quote xml:lang="syr">ܐܢܐ ܥܒܕܐ ܡܚܝܠܐ ܘܚܛܝܐ ܝܘܚܢܢ ܒܫܡ ܕܝܪܝܐ.</quote>
                   </p>
                 </item>
               </list>
             </additions>
-            <bindingDesc/>
-            <sealDesc/>
-            <accMat/>
-          </physDesc>
+            </physDesc>
           <history>
-            <summary/>
             <origin>
-              <origDate notBefore="0600" notAfter="0700">7th century</origDate>
+              <origDate calendar="Gregorian" notBefore="0600" notAfter="0700">7th century</origDate>
+              
             </origin>
-            <provenance/>
-            <acquisition/>
-          </history>
+            </history>
           <additional>
             <adminInfo>
               <recordHist>
-                <source>Manuscript description based on<bibl>
+                <source>Manuscript description based on <bibl>
                     <ref target="#Wrightpart">Wright's Catalogue</ref>
                   </bibl>. abbreviated by the Syriaca.org editors.</source>
               </recordHist>
-              <note/>
-            </adminInfo>
+              </adminInfo>
             <listBibl>
               <bibl xml:id="Wrightpart">
                 <author>William Wright</author>
@@ -282,7 +260,7 @@
                 <date>1870</date>
                 <ptr target="http://syriaca.org/bibl/8"/>
                 <citedRange unit="entry">LXXIX</citedRange>
-                <citedRange unit="pp">1:55</citedRange>
+                <citedRange unit="p">1:55</citedRange>
               <ref type="internet-archive-pdf" target="https://archive.org/details/catalogueofsyria01brituoft/page/55"/>
               </bibl>
             </listBibl>
@@ -306,7 +284,6 @@
       <classDecl>
         <taxonomy xml:id="Wright-BL-Taxonomy">
           <bibl>
-            
             <ptr target="http://syriaca.org/documentation/Wright-BL-Taxonomy.html"/>
           </bibl>
           <category xml:id="biblical-manuscripts">
@@ -423,22 +400,30 @@
     </encodingDesc>
     <profileDesc>
       <langUsage>
-        <language ident="syr">Unvocalized Syriac of any variety or period</language>
-        <language ident="syr-Syre">Syriac in Estrangela</language>
-        <language ident="syr-Syrj">Vocalized West Syriac</language>
-        <language ident="syr-Syrn">Vocalized East Syriac</language>
-        <language ident="syr-x-syrm">Melkite Syriac</language>
-        <language ident="qhy-x-cpas">Palestinian Syriac</language>
-        <language ident="ar-Syrc">Unvocalized or Undetermined Arabic Garshuni</language>
-        <language ident="ar-Syrj">Arabic Garshuni in Vocalized West Syriac Script</language>
-        <language ident="ar-Syrn">Arabic Garshuni in Vocalized East Syriac Script</language>
-        <language ident="en">English</language>
         <language ident="ar">Arabic</language>
-        <language ident="fr">French</language>
-        <language ident="de">German</language>
-        <language ident="la">Latin</language>
-        <language ident="grc">Ancient Greek</language>
+        <language ident="ar-Syrc">Arabic Garshuni</language>
+        <language ident="ar-Syrn">Arabic Garshuni in East Syriac script</language>
         <language ident="cop">Coptic</language>
+        <language ident="de">German</language>
+        <language ident="en">English</language>
+        <language ident="fr">French</language>
+        <language ident="grc">Ancient Greek</language>
+        <language ident="he">Hebrew</language>
+        <language ident="hy">Armenian</language>
+        <language ident="it">Italian</language>
+        <language ident="la">Latin</language>
+        <language ident="syr">Syriac</language>
+        <language ident="syr-Arab">Syriac Garshuni in Arabic script</language>
+        <language ident="syr-Syre">Syriac in Estrangela script</language>
+        <language ident="syr-Syrj">Syriac in West Syriac script</language>
+        <language ident="syr-Syrn">Syriac in East Syriac script</language>
+        <language ident="syr-x-syrm">Syriac in Melkite Syriac script</language>
+        <language ident="tr">Turkish</language>
+        <language ident="tr-Syrc">Turkish Garshuni</language>
+        <language ident="qhy-x-cpas">Christian Palestinian Aramaic script</language>
+        <language ident="xcl">Classical Armenian</language>
+        <language ident="und">Undetermined</language>
+        <language ident="mul">Multiple languages</language>
       </langUsage>
       <textClass>
         <keywords scheme="#Wright-BL-Taxonomy">
@@ -457,22 +442,16 @@
       <change who="https://bl.syriac.uk/documentation/editors.xml#thannah" when="2013-10-07">Update to decoNote type</change>
       <change who="https://bl.syriac.uk/documentation/editors.xml#jarnwine" when="2013-11-08">Changed colophon to finalRubric</change>
       <change who="https://bl.syriac.uk/documentation/editors.xml#jarnwine" when="2013-11-12">Modified finalRubric to include doxology</change>
-      <change type="planned" subtype="arithmetical">Enter arithmetical figures.</change>
-      <change type="planned" subtype="question">Question in Word Doc to be Addressed.</change>
-      <change type="planned" subtype="greek">Add in missing Greek characters.</change>
+      <change type="planned" subtype="arithmetical" who="https://bl.syriac.uk/documentation/editors.xml#smbl-general-editors">Enter arithmetical figures.</change>
+      <change type="planned" subtype="question" who="https://bl.syriac.uk/documentation/editors.xml#smbl-general-editors">Question in Word Doc to be Addressed.</change>
+      <change type="planned" subtype="greek" who="https://bl.syriac.uk/documentation/editors.xml#smbl-general-editors">Add in missing Greek characters.</change>
       <change who="https://bl.syriac.uk/documentation/editors.xml#pgmiller" when="2016-07-06">Changed: Files moved to srophe-app-data/data/manuscripts/tei repository.</change>
     </revisionDesc>
   </teiHeader>
-  <facsimile>
-    <!-- facsimile information about the manuscript -->
-    <graphic/>
-    <!-- Alternatively you could provide 'surface' elements with more than one image per surface, and optionally with 'zone' 
-      elements to give coordinates for any special areas of interest -->
-  </facsimile>
   <text>
     <body>
-      <!-- If you had a transcription of the manuscript you would put it here -->
       <p/>
+      <!--Body paragraph provided for document validation.-->
     </body>
   </text>
 </TEI>

@@ -1,4 +1,7 @@
-<?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/srophe-app/documentation/enrich-syriaca.rnc" type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/css" href="SRPEnrichCSS.css"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+<?xml-model href="https://raw.githubusercontent.com/srophe/britishLibrary/main/documentation/schema/out/Syriacamsdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/srophe/britishLibrary/main/documentation/schema/out/Syriacamsdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet href="https://raw.githubusercontent.com/srophe/wright-catalogue/master/parameters/tei.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="manuscript_747">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -7,7 +10,7 @@
         <funder>The National Endowment for the Humanities</funder>
         <funder>The Andrew W. Mellon Foundation</funder>
         <principal>David A. Michelson</principal>
-        <editor role="general-editor" ref="https://bl.syriac.uk/documentation/editors.xml#dmichelson">David A. michelson</editor>
+        <editor role="general-editor" ref="https://bl.syriac.uk/documentation/editors.xml#dmichelson">David A. Michelson</editor>
         <editor role="creator" ref="https://bl.syriac.uk/documentation/editors.xml#dmichelson">David A. Michelson</editor>
         <editor role="creator" ref="https://bl.syriac.uk/documentation/editors.xml#dgreeson">Daniel J. Greeson</editor>
         <editor role="creator" ref="https://bl.syriac.uk/documentation/editors.xml#thannah">Tucker D. Hannah</editor>
@@ -45,11 +48,9 @@
         <edition n="1.0"/>
       </editionStmt>
       <publicationStmt>
-        <pubPlace/>
         <authority>Syriaca.org: The Syriac Reference Portal</authority>
         <idno type="URI">https://bl.syriac.uk/ms/747/tei</idno>
         <availability>
-          <p/>
           <licence target="http://creativecommons.org/licenses/by/3.0/">
             <p>Distributed under a Creative Commons Attribution 3.0 Unported License</p>
           </licence>
@@ -57,7 +58,7 @@
         <date calendar="Gregorian">2023-04-21-05:00</date>
       </publicationStmt>
       <sourceDesc>
-        <msDesc xml:id="manuscript-747" xml:lang="en">
+        <msDesc xml:id="manuscript-747">
           <msIdentifier>
             <country>United Kingdom</country>
             <settlement>London</settlement>
@@ -71,7 +72,7 @@
               <idno type="BL-Shelfmark-display">London, BL, Add. 17,118</idno>
             </altIdentifier>
             <altIdentifier>
-              <idno type="BL-Shelmark-simplified">BL Add MS 17118</idno>
+              <idno type="BL-Shelfmark-simplified">BL Add MS 17118</idno>
             </altIdentifier>
             <altIdentifier>
               <collection>William Wright, Catalogue of the Syriac Manuscripts in the British Museum Acquired since the Year 1838</collection>
@@ -91,30 +92,29 @@
             </listRelation>
           </head>
           <msContents>
-            <summary/>
             <textLang mainLang="syr">Syriac</textLang>
             <msItem xml:id="a1" n="1" defective="true">
               <locus from="1a" to="90">Foll. 1a-90</locus>
-              <title type="supplied" ref="http://syriaca.org/work/71">The four Gospels, according to the Peshitta version</title>
+              <title ref="http://syriaca.org/work/71" xml:lang="en">The four Gospels, according to the Peshitta version</title>
               <note>The lessons are rubricated in the text.</note>
               <msItem xml:id="b1" n="2" defective="true">
                 <locus from="1a" to="21">Foll. 1a-21</locus>
-                <title type="supplied" ref="http://syriaca.org/work/72">Matthew</title>
+                <title ref="http://syriaca.org/work/72" xml:lang="en">Matthew</title>
                 <note>Missing portions: ch. i. 1—iv. 4, vi. 31—-xvii. 11, xviii. 34— xx. 16, and xxi. 26—xxii. 32.</note>
                 <note>The writing on fol.<locus from="2b" to="2b">2 b</locus>(ch. v. 20—31) has been almost completely erased.</note>
               </msItem>
               <msItem xml:id="b2" n="3">
                 <locus from="21a" to="48">Foll. 21a-48</locus>
-                <title type="supplied" ref="http://syriaca.org/work/73">Mark</title>
+                <title ref="http://syriaca.org/work/73" xml:lang="en">Mark</title>
               </msItem>
               <msItem xml:id="b3" n="4" defective="true">
                 <locus from="48a" to="89">Foll. 48a-89</locus>
-                <title type="supplied" ref="http://syriaca.org/work/74">Luke</title>
+                <title ref="http://syriaca.org/work/74" xml:lang="en">Luke</title>
                 <note>ending with ch. xxii. 4.</note>
               </msItem>
               <msItem xml:id="b4" n="5" defective="true">
                 <locus from="90" to="90">Fol. 90</locus>
-                <title type="supplied" ref="http://syriaca.org/work/75">John</title>
+                <title ref="http://syriaca.org/work/75" xml:lang="en">John</title>
                 <note>Of the Gospel of S. John there remains only a single leaf, fol. 90, containing ch. iii. 8—34.</note>
               </msItem>
             </msItem>
@@ -128,26 +128,21 @@
                 </support>
                 <extent>
                   <measure type="composition" unit="leaf" quantity="90">90 ff.</measure>
-                  <dimensions type="leaf" unit="in">
-                    <height>
-                      <measure type="height" quantity="6.625" unit="in">6 5/8 in.</measure>
-                    </height>
-                    <width>
-                      <measure type="width" quantity="5" unit="in">5 in.</measure>
-                    </width>
+                  <dimensions type="leaf" unit="inch">
+                    <height quantity="6.625">6 5/8</height>
+                    <width quantity="5">5</width>
                   </dimensions>
                 </extent>
-                <foliation/>
                 <collation>
                   <p>At present it consists of 12 quires, signed with Syriac letters.</p>
                 </collation>
                 <condition>
                   <list>
                     <item>
-                      <p>The<locus from="1" to="8">first eight leaves</locus>, in particular, are slightly stained and mutilated.</p>
+                      <p>The <locus from="1" to="8">first eight leaves</locus>, in particular, are slightly stained and mutilated.</p>
                     </item>
                     <item>
-                      <p>Leaves are wanting at the beginning and end, as well as after foll.<locus from="4" to="4">4</locus>,<locus from="6" to="6">6</locus>,<locus from="8" to="8">8</locus>, and<locus from="89" to="89">89</locus>.</p>
+                      <p>Leaves are wanting at the beginning and end, as well as after foll.<locus from="4" to="4">4</locus>, <locus from="6" to="6">6</locus>, <locus from="8" to="8">8</locus>, and <locus from="89" to="89">89</locus>.</p>
                     </item>
                     <item>
                       <p>The first three quires and the last are very imperfect.</p>
@@ -163,22 +158,17 @@
             </objectDesc>
             <handDesc hands="3">
               <handNote xml:id="handNote1" scope="major" script="syr" medium="unknown">
-                <desc>This manuscript is written in a small, neat hand of the<origDate notBefore="0700" notAfter="0900">8th or 9th century</origDate>.</desc>
+                This manuscript is written in a small, neat hand of the <date notBefore="0700" notAfter="0900">8th or 9th century</date>.
               </handNote>
               <handNote xml:id="handNote2" scope="minor" script="grc" medium="unknown">
-                <desc>Greek.<ref target="#addition1">See additions.</ref>
-                </desc>
-              </handNote>
+                Greek.<ref target="#addition1">See additions.</ref>
+                </handNote>
               <handNote xml:id="handNote3" scope="minor" script="syr" medium="unknown">
-                <desc>
-                  <ref target="#addition2">See additions.</ref>
-                </desc>
-              </handNote>
+                <ref target="#addition2">See additions.</ref>
+                </handNote>
             </handDesc>
-            <decoDesc/>
             <additions>
               <note type="proofreader-note">N.B., folio location may not be available for some items below.</note>
-              <p/>
               <list>
                 <item xml:id="addition1" n="1">
                   <p>Quires were signed at a later period with Greek letters.</p>
@@ -188,27 +178,21 @@
                 </item>
               </list>
             </additions>
-            <bindingDesc/>
-            <sealDesc/>
-            <accMat/>
-          </physDesc>
+            </physDesc>
           <history>
-            <summary/>
             <origin>
-              <origDate notBefore="0700" notAfter="0900">8th or 9th century</origDate>
+              <origDate calendar="Gregorian" notBefore="0700" notAfter="0900">8th or 9th century</origDate>
+              
             </origin>
-            <provenance/>
-            <acquisition/>
-          </history>
+            </history>
           <additional>
             <adminInfo>
               <recordHist>
-                <source>Manuscript description based on<bibl>
+                <source>Manuscript description based on <bibl>
                     <ref target="#Wrightpart">Wright's Catalogue</ref>
                   </bibl>. abbreviated by the Syriaca.org editors.</source>
               </recordHist>
-              <note/>
-            </adminInfo>
+              </adminInfo>
             <listBibl>
               <bibl xml:id="Wrightpart">
                 <author>William Wright</author>
@@ -217,7 +201,7 @@
                 <date>1870</date>
                 <ptr target="http://syriaca.org/bibl/8"/>
                 <citedRange unit="entry">LXXXI</citedRange>
-                <citedRange unit="pp">1:57-58</citedRange>
+                <citedRange unit="p">1:57-58</citedRange>
               <ref type="internet-archive-pdf" target="https://archive.org/details/catalogueofsyria01brituoft/page/57"/>
               </bibl>
             </listBibl>
@@ -241,7 +225,6 @@
       <classDecl>
         <taxonomy xml:id="Wright-BL-Taxonomy">
           <bibl>
-            
             <ptr target="http://syriaca.org/documentation/Wright-BL-Taxonomy.html"/>
           </bibl>
           <category xml:id="biblical-manuscripts">
@@ -358,22 +341,30 @@
     </encodingDesc>
     <profileDesc>
       <langUsage>
-        <language ident="syr">Unvocalized Syriac of any variety or period</language>
-        <language ident="syr-Syre">Syriac in Estrangela</language>
-        <language ident="syr-Syrj">Vocalized West Syriac</language>
-        <language ident="syr-Syrn">Vocalized East Syriac</language>
-        <language ident="syr-x-syrm">Melkite Syriac</language>
-        <language ident="qhy-x-cpas">Palestinian Syriac</language>
-        <language ident="ar-Syrc">Unvocalized or Undetermined Arabic Garshuni</language>
-        <language ident="ar-Syrj">Arabic Garshuni in Vocalized West Syriac Script</language>
-        <language ident="ar-Syrn">Arabic Garshuni in Vocalized East Syriac Script</language>
-        <language ident="en">English</language>
         <language ident="ar">Arabic</language>
-        <language ident="fr">French</language>
-        <language ident="de">German</language>
-        <language ident="la">Latin</language>
-        <language ident="grc">Ancient Greek</language>
+        <language ident="ar-Syrc">Arabic Garshuni</language>
+        <language ident="ar-Syrn">Arabic Garshuni in East Syriac script</language>
         <language ident="cop">Coptic</language>
+        <language ident="de">German</language>
+        <language ident="en">English</language>
+        <language ident="fr">French</language>
+        <language ident="grc">Ancient Greek</language>
+        <language ident="he">Hebrew</language>
+        <language ident="hy">Armenian</language>
+        <language ident="it">Italian</language>
+        <language ident="la">Latin</language>
+        <language ident="syr">Syriac</language>
+        <language ident="syr-Arab">Syriac Garshuni in Arabic script</language>
+        <language ident="syr-Syre">Syriac in Estrangela script</language>
+        <language ident="syr-Syrj">Syriac in West Syriac script</language>
+        <language ident="syr-Syrn">Syriac in East Syriac script</language>
+        <language ident="syr-x-syrm">Syriac in Melkite Syriac script</language>
+        <language ident="tr">Turkish</language>
+        <language ident="tr-Syrc">Turkish Garshuni</language>
+        <language ident="qhy-x-cpas">Christian Palestinian Aramaic script</language>
+        <language ident="xcl">Classical Armenian</language>
+        <language ident="und">Undetermined</language>
+        <language ident="mul">Multiple languages</language>
       </langUsage>
       <textClass>
         <keywords scheme="#Wright-BL-Taxonomy">
@@ -387,20 +378,14 @@
     </profileDesc>
     <revisionDesc status="draft">
       <change who="https://bl.syriac.uk/documentation/editors.xml#kurban" when="2023-04-21-05:00">CHANGED: added or corrected folio extent values</change>
-      <change who="https://bl.syriac.uk/documentation/editors.xml#thannah" when="">CREATED: file</change>
+      <change who="https://bl.syriac.uk/documentation/editors.xml#thannah">CREATED: file</change>
       <change who="https://bl.syriac.uk/documentation/editors.xml#pgmiller" when="2016-07-06">Changed: Files moved to srophe-app-data/data/manuscripts/tei repository.</change>
     </revisionDesc>
   </teiHeader>
-  <facsimile>
-    <!-- facsimile information about the manuscript -->
-    <graphic/>
-    <!-- Alternatively you could provide 'surface' elements with more than one image per surface, and optionally with 'zone' 
-      elements to give coordinates for any special areas of interest -->
-  </facsimile>
   <text>
     <body>
-      <!-- If you had a transcription of the manuscript you would put it here -->
       <p/>
+      <!--Body paragraph provided for document validation.-->
     </body>
   </text>
 </TEI>

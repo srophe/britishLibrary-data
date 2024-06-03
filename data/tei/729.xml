@@ -1,4 +1,7 @@
-<?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/srophe-app/documentation/enrich-syriaca.rnc" type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/css" href="SRPEnrichCSS.css"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+<?xml-model href="https://raw.githubusercontent.com/srophe/britishLibrary/main/documentation/schema/out/Syriacamsdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/srophe/britishLibrary/main/documentation/schema/out/Syriacamsdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet href="https://raw.githubusercontent.com/srophe/wright-catalogue/master/parameters/tei.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="manuscript_729">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -50,11 +53,9 @@
         <edition n="1.0"/>
       </editionStmt>
       <publicationStmt>
-        <pubPlace/>
         <authority>Syriaca.org: The Syriac Reference Portal</authority>
         <idno type="URI">https://bl.syriac.uk/ms/729/tei</idno>
         <availability>
-          <p/>
           <licence target="http://creativecommons.org/licenses/by/3.0/">
             <p>Distributed under a Creative Commons Attribution 3.0 Unported License</p>
           </licence>
@@ -62,7 +63,7 @@
         <date calendar="Gregorian">2023-04-21-05:00</date>
       </publicationStmt>
       <sourceDesc>
-        <msDesc xml:id="manuscript-729" xml:lang="en">
+        <msDesc xml:id="manuscript-729">
           <msIdentifier>
             <country>United Kingdom</country>
             <settlement>London</settlement>
@@ -76,10 +77,7 @@
               <idno type="BL-Shelfmark-display">London, BL, Add. 17,102</idno>
             </altIdentifier>
             <altIdentifier>
-              <idno type="BL-Shelmark-simplified">BL Add MS 17102</idno>
-            </altIdentifier>
-            <altIdentifier type="Wright">
-              <idno>Wright XVII</idno>
+              <idno type="BL-Shelfmark-simplified">BL Add MS 17102</idno>
             </altIdentifier>
             <altIdentifier>
               <collection>William Wright, Catalogue of the Syriac Manuscripts in the British Museum Acquired since the Year 1838</collection>
@@ -91,7 +89,7 @@
             </altIdentifier>
           </msIdentifier>
           <head>
-            <note type="contents-note">This manuscript contains: The book of Joshua, according to the Peshitta version. In total, including sub-sections, this manuscript contains 1 items.</note>
+            <note type="contents-note">This manuscript contains: The book of Joshua, according to the Peshitta version. In total, including sub-sections, this manuscript contains 1 item.</note>
             <listRelation type="Wright-BL-Taxonomy">
               <relation name="dcterms:type" ref="http://purl.org/dc/terms/type" active="https://bl.syriac.uk/ms/729" passive="#bible-ot">
                 <desc>Old Testament</desc>
@@ -99,16 +97,15 @@
             </listRelation>
           </head>
           <msContents>
-            <summary/>
             <textLang mainLang="syr">Syriac</textLang>
             <msItem xml:id="a1" n="1" defective="true">
               <locus from="1" to="60"/>
-              <title ref="http://syriaca.org/work/6">The book of Joshua, according to the Peshitta version.</title>
+              <title ref="http://syriaca.org/work/6" xml:lang="en">The book of Joshua, according to the Peshitta version.</title>
               <colophon>
                 <ref target="#addition2">See additions.</ref>
               </colophon>
               <note>Commences with ch. iv. 7.</note>
-              <note>Some of the lessons are rubricated in the text, the end of each being indicated by the letter<foreign xml:lang="syr">ܫ</foreign>; others are marked on the margins by references to an index,<foreign xml:lang="syr">ܦܘܪܫ
+              <note>Some of the lessons are rubricated in the text, the end of each being indicated by the letter <foreign xml:lang="syr">ܫ</foreign>; others are marked on the margins by references to an index,<foreign xml:lang="syr">ܦܘܪܫ
                   ܩܪ̈ܝܢܐ</foreign>, which is now lost.</note>
             </msItem>
           </msContents>
@@ -121,16 +118,11 @@
                 </support>
                 <extent>
                   <measure type="composition" unit="leaf" quantity="60">60 ff.</measure>
-                  <dimensions type="leaf" unit="in">
-                    <height>
-                      <measure type="height" quantity="9.125" unit="in">9 1/8</measure>
-                    </height>
-                    <width>
-                      <measure type="width" quantity="5.625" unit="in">5 5/8</measure>
-                    </width>
+                  <dimensions type="leaf" unit="inch">
+                    <height quantity="9.125">9 1/8</height>
+                    <width quantity="5.625">5 5/8</width>
                   </dimensions>
                 </extent>
-                <foliation/>
                 <collation>
                   <p>The quires were originally signed with arithmetical figures (see fol.<locus>52</locus>,<!--NEEDS ARABIC-->).</p>
                 </collation>
@@ -147,54 +139,38 @@
             </objectDesc>
             <handDesc hands="9">
               <handNote xml:id="handNote1" scope="major" script="syr-Syre" medium="unknown">
-                <desc>This volume is written in a beautiful, regular Estrangela and dated <origDate when-custom="0910" datingMethod="Seleucid">A. Gr. 910</origDate>,<origDate when="0599" calendar="Gregorian">A.D. 599</origDate>.</desc>
+                This volume is written in a beautiful, regular Estrangela and dated <date when-custom="0910" datingMethod="Seleucid">A. Gr. 910</date>, <date when="0599" calendar="Gregorian">A.D. 599</date>.
               </handNote>
               <handNote xml:id="handNote2" scope="minor" script="syr" medium="unknown">
-                <desc>
-                  <ref target="#addition1">See additions.</ref>
-                </desc>
-              </handNote>
+                <ref target="#addition1">See additions.</ref>
+                </handNote>
               <handNote xml:id="handNote3" scope="minor" script="syr" medium="unknown">
                 <locus from="60a" to="60a"/>
-                <desc>
-                  <ref target="#addition2">See additions.</ref>
-                </desc>
-              </handNote>
+                <ref target="#addition2">See additions.</ref>
+                </handNote>
               <handNote xml:id="handNote4" scope="minor" script="syr" medium="unknown">
                 <locus from="59b" to="59b"/>
-                <desc>
-                  <ref target="#addition3">See additions.</ref>
-                </desc>
-              </handNote>
+                <ref target="#addition3">See additions.</ref>
+                </handNote>
               <handNote xml:id="handNote5" scope="minor" script="syr" medium="unknown">
                 <locus from="59b" to="59b"/>
-                <desc>
-                  <ref target="#addition3">See additions.</ref>
-                </desc>
-              </handNote>
+                <ref target="#addition3">See additions.</ref>
+                </handNote>
               <handNote xml:id="handNote6" scope="minor" script="syr" medium="unknown">
                 <locus from="59b" to="59b"/>
-                <desc>
-                  <ref target="#addition4">See additions.</ref>
-                </desc>
-              </handNote>
+                <ref target="#addition4">See additions.</ref>
+                </handNote>
               <handNote xml:id="handNote7" scope="minor" script="syr" medium="unknown">
                 <locus from="60b" to="60b"/>
-                <desc>
-                  <ref target="#addition5">See additions.</ref>
-                </desc>
-              </handNote>
+                <ref target="#addition5">See additions.</ref>
+                </handNote>
               <handNote xml:id="handNote8" scope="minor" script="syr" medium="unknown">
                 <locus from="60b" to="60b"/>
-                <desc>
-                  <ref target="#addition6">See additions.</ref>
-                </desc>
-              </handNote>
+                <ref target="#addition6">See additions.</ref>
+                </handNote>
               <handNote xml:id="handNote9" scope="minor" script="syr-Syrj" medium="unknown">
-                <desc>
-                  <ref target="#addition7">See additions.</ref>
-                </desc>
-              </handNote>
+                <ref target="#addition7">See additions.</ref>
+                </handNote>
             </handDesc>
             <additions>
               <note type="proofreader-note">N.B., folio location may not be available for some items below.</note>
@@ -203,12 +179,11 @@
                 <item xml:id="addition1" n="1">
                   <p>Quires are now numbered with letters.</p>
                 </item>
-                <item xml:id="addition2" n="2" syriaca-tags="scribal-colophon ownership-inscription">
+                <item xml:id="addition2" n="2">
                   <label>Colophon</label>
+                  <label>Ownership Inscription</label>
                   <locus from="60a" to="60a"/>
-                  <p>Long note stating that this manuscript was written in the year<origDate when-custom="0910" datingMethod="Seleucid">910</origDate>, and collated with another copy of the school of the Armenians. The names of the man at whose expense it was transcribed, and of the convent to which he gave it, were altered by the hand of a person from the village of<placeName>Kěphar-Darīn</placeName>, who added a few lines, informing us that the manuscript was incorporated with the library of the<placeName>convent of Mār Daniel at<placeName>Kěphar-Bīl</placeName>
-                    </placeName>
-                    <foreign xml:lang="syr">ܕܟܣ̈ܝܗ</foreign>(?), near<placeName>Antioch</placeName>, when<persName>Thomas</persName>was abbat, the priest<persName>Simeon</persName>his deputy, and the priest<persName>Moses</persName>librarian. The name of this man has in turn been erased by one<persName>Yazdīn bar Dūmā</persName>(?).</p>
+                  <p>Long note stating that this manuscript was written in the year <date when-custom="0910" datingMethod="Seleucid">910</date>, and collated with another copy of the school of the Armenians. The names of the man at whose expense it was transcribed, and of the convent to which he gave it, were altered by the hand of a person from the village of <placeName>Kěphar-Darīn</placeName>, who added a few lines, informing us that the manuscript was incorporated with the library of the <placeName>convent of Mār Daniel</placeName> at <placeName>Kěphar-Bīl</placeName> <placeName xml:lang="syr">ܕܟܣ̈ܝܗ</placeName> (?), near <placeName>Antioch</placeName>, when <persName>Thomas</persName> was abbat, the priest <persName>Simeon</persName> his deputy, and the priest <persName>Moses</persName> librarian. The name of this man has in turn been erased by one <persName>Yazdīn bar Dūmā</persName> (?).</p>
                   <p>
                     <quote xml:lang="syr">ܐܬܚܦܛ ܘܥܒ̣ܕ ܗܢܐ̣. [(ܝܙܕܝܢ ܒܪ ܖܘܡܐ) . . . ܟܦܪܕܪܝܢ. ܡܢ ܙܝܢܬܐ]
                     ܕܐܠܗܐ. ܐܝܟ ܕܠܝܘܬܪܢܐ ܕܩܢܘܡܗ̣ ܘܕܐܝܠܝܢ ܕܩ̇ܪܝܢ ܒܗ. ܕܐܠܗܐ ܗ̇ܘ ܕܡܛܠ ܫܡܗ : ܣܡ ܠܗ ܣܝܡܬܐ
@@ -226,15 +201,9 @@
                 <item xml:id="addition3" n="3">
                   <locus from="59b" to="59b"/>
                   <p>
-                    <ref target="#a1 #handnote4">A more recent note, on fol.<locus>59b</locus>, records that<persName>Pāpā bar Dūmā of<placeName>
-                          <choice>
-                            <orig>Tagrīt</orig>
-                            <reg>(Tecrit)</reg>
-                          </choice>
-                        </placeName>
-                      </persName>presented this book to the<placeName>convent of S. Mary Deipara</placeName>, by the hands of<persName>Matthew</persName>and<persName>Abraham</persName>of<placeName>Tagrīt</placeName>.</ref>
+                    A more recent note, on fol.<locus>59b</locus>, records that <persName>Pāpā bar Dūmā of Tagrīt (Tecrit)</persName> presented this book to the <placeName>convent of S. Mary Deipara</placeName>, by the hands of <persName>Matthew</persName> and <persName>Abraham</persName> of <placeName>Tagrīt</placeName>.
                   </p>
-                  <p>The latter part of this note, from<quote xml:lang="syr">ܒܡܬܚܦܛܢܘܬܐ</quote>to the end, is in<ref target="#handnote5">a different hand</ref>from the former part.</p>
+                  <p>The latter part of this note, from <quote xml:lang="syr">ܒܡܬܚܦܛܢܘܬܐ</quote> to the end, is in <ref target="#handNote5">a different hand</ref> from the former part.</p>
                   <p>
                     <quote xml:lang="syr">
                       <sic>ܝܗܒ̣ ܟܬܒܐ ܗܢ ܠܕܝܪܐ ܕܒܝܬ ܝܠܕܬ ܐܠܗܐ ܕܣܘܝܪ̈ܝܝܐ ܕܐܒܐ ܒܝܫܘܝ ܕܒܡܕܒܪܐ ܕܐܣ̈ܩܛܐ̣. ܦܦܐ ܒܪ ܕܘܡܐ ܬܓܪܝܬܢܝܐ. ܡܛܠ ܚܘܣܝܐ ܕܚܘ̈ܒܘܗܝ ܘܕܘܟܪܢܐ ܕܥ̈ܢܝܕܘܗܝ. ܟܠ ܕܩ̇ܪܐ ܢܨܠܐ ܥܠܘܗܝ ♱ . . ܒܡܬܚܦܛܢܘܬܐ ܕܡܬܝ ܘܕܐܒܪܗܡ ܐܚ̈ܐ ܕ̈ܝܪܝܐ ܬܓܪܝܢܬܝܐ ܟܠ ܕܩܪܐ ܢܨܠܐ ܥܠܝܗܘܢ ܘܟܠ ܕܩܪܐ ܒܗ ܘܢܟ̇ܡܢ ܥܠܘܗܝ ܢܕܥ ܕܥܠ ܡܠܬܗ ܕܐܠܗܐ ܥܒܪ ܘܥܠ ܦܘܩܕܢܐ</sic>
@@ -250,14 +219,14 @@
                 </item>
                 <item xml:id="addition5" n="5">
                   <locus from="60b" to="60b"/>
-                  <p>On fol. 60 b there is a note written by the librarian of the convent of<placeName>S. Mary Deipara</placeName>:</p>
+                  <p>On fol. 60 b there is a note written by the librarian of the convent of <placeName>S. Mary Deipara</placeName>:</p>
                   <p>
                     <quote xml:lang="syr">ܟܠ ܕܝܢ ܕܫܐܠ ܠܗ ܠܟܬܒܐ ܗܢܐ ܕܢܩܪܐ ܒܗ. ܠܝܬ ܠܗ ܫܘܠܛܢܐ ܡܢ ܐܠܗܐ ܕܢܠܒܟܝܘܗܝ [ܐܠܐ ܐܫܬܐ ܝܪ̈ܚܝܢ]. ܘܟܠ ܕܠܐ ܡܗܦܟ ܠܗ ܬܚܝܬ ܦܣܩܐ ܐܝܬܘܗܝ. ܘܟܠ ܕܠܚܐ ܠܥܘܗܕܢܐ ܗܢܐ ܬܚܝܬ ܦܣܩܐ ܐܝܬܘܗܝ.</quote>
                   </p>
                 </item>
                 <item xml:id="addition6" n="6">
                   <locus from="60b" to="60b"/>
-                  <p>Under<ref target="#addition5">this</ref>, but now almost effaced, there stands an anathema upon<persName>Nestorius</persName>and other heretics, in a later hand.</p>
+                  <p>Under <ref target="#addition5">this</ref>, but now almost effaced, there stands an anathema upon <persName>Nestorius</persName> and other heretics, in a later hand.</p>
                 </item>
                 <item xml:id="addition7" n="7">
                   <p>Greek vowels have been added by a later hand (ܳܺܶܰ).</p>
@@ -270,26 +239,26 @@
             </accMat>
           </physDesc>
           <history>
-            <summary/>
             <origin>
-              <origDate when-custom="0910" datingMethod="Seleucid">A. Gr. 910</origDate>
-              <origDate when="0599" calendar="Gregorian">A.D. 599</origDate>
+              <origDate calendar="Seleucid" datingMethod="Seleucid" when-custom="0910">AG 910</origDate>
+              <origDate calendar="Gregorian" when="0599">AD 599</origDate>
+              
+              
             </origin>
             <provenance>
-              <p>
+              
                 <ref target="#addition2 #addition3">See additions.</ref>
-              </p>
+              
             </provenance>
           </history>
           <additional>
             <adminInfo>
               <recordHist>
-                <source>Manuscript description based on<bibl>
+                <source>Manuscript description based on <bibl>
                     <ref target="#Wrightpart">Wright's Catalogue</ref>
                   </bibl>. abbreviated by the Syriaca.org project team.</source>
               </recordHist>
-              <note/>
-            </adminInfo>
+              </adminInfo>
             <listBibl>
               <bibl xml:id="Wrightpart">
                 <author>William Wright</author>
@@ -298,7 +267,7 @@
                 <date>1870</date>
                 <ptr target="http://syriaca.org/bibl/8"/>
                 <citedRange unit="entry">XVII</citedRange>
-                <citedRange unit="pp">1:11-12</citedRange>
+                <citedRange unit="p">1:11-12</citedRange>
               <ref type="internet-archive-pdf" target="https://archive.org/details/catalogueofsyria01brituoft/page/11"/>
               </bibl>
             </listBibl>
@@ -322,7 +291,6 @@
       <classDecl>
         <taxonomy xml:id="Wright-BL-Taxonomy">
           <bibl>
-            
             <ptr target="http://syriaca.org/documentation/Wright-BL-Taxonomy.html"/>
           </bibl>
           <category xml:id="biblical-manuscripts">
@@ -439,22 +407,30 @@
     </encodingDesc>
     <profileDesc>
       <langUsage>
-        <language ident="syr">Unvocalized Syriac of any variety or period</language>
-        <language ident="syr-Syre">Syriac in Estrangela</language>
-        <language ident="syr-Syrj">Vocalized West Syriac</language>
-        <language ident="syr-Syrn">Vocalized East Syriac</language>
-        <language ident="syr-x-syrm">Melkite Syriac</language>
-        <language ident="qhy-x-cpas">Palestinian Syriac</language>
-        <language ident="ar-Syrc">Unvocalized or Undetermined Arabic Garshuni</language>
-        <language ident="ar-Syrj">Arabic Garshuni in Vocalized West Syriac Script</language>
-        <language ident="ar-Syrn">Arabic Garshuni in Vocalized East Syriac Script</language>
-        <language ident="en">English</language>
         <language ident="ar">Arabic</language>
-        <language ident="fr">French</language>
-        <language ident="de">German</language>
-        <language ident="la">Latin</language>
-        <language ident="grc">Ancient Greek</language>
+        <language ident="ar-Syrc">Arabic Garshuni</language>
+        <language ident="ar-Syrn">Arabic Garshuni in East Syriac script</language>
         <language ident="cop">Coptic</language>
+        <language ident="de">German</language>
+        <language ident="en">English</language>
+        <language ident="fr">French</language>
+        <language ident="grc">Ancient Greek</language>
+        <language ident="he">Hebrew</language>
+        <language ident="hy">Armenian</language>
+        <language ident="it">Italian</language>
+        <language ident="la">Latin</language>
+        <language ident="syr">Syriac</language>
+        <language ident="syr-Arab">Syriac Garshuni in Arabic script</language>
+        <language ident="syr-Syre">Syriac in Estrangela script</language>
+        <language ident="syr-Syrj">Syriac in West Syriac script</language>
+        <language ident="syr-Syrn">Syriac in East Syriac script</language>
+        <language ident="syr-x-syrm">Syriac in Melkite Syriac script</language>
+        <language ident="tr">Turkish</language>
+        <language ident="tr-Syrc">Turkish Garshuni</language>
+        <language ident="qhy-x-cpas">Christian Palestinian Aramaic script</language>
+        <language ident="xcl">Classical Armenian</language>
+        <language ident="und">Undetermined</language>
+        <language ident="mul">Multiple languages</language>
       </langUsage>
       <textClass>
         <keywords scheme="#Wright-BL-Taxonomy">
@@ -472,21 +448,15 @@
       <change who="https://bl.syriac.uk/documentation/editors.xml#thannah" when="2013-09-04">Initial edit: restructured the handNotes and additions</change>
       <change who="https://bl.syriac.uk/documentation/editors.xml#jarnwine" when="2014-03-31">Edits to reflect colophon.</change>
       <change who="https://bl.syriac.uk/documentation/editors.xml#jarnwine" when="2014-05-07">Added @syriaca-tags to describe colophon.</change>
-      <change type="planned" subtype="arabic">Add missing Arabic text.</change>
-      <change type="planned" subtype="question">Question in Word Doc to be Addressed.</change>
+      <change type="planned" subtype="arabic" who="https://bl.syriac.uk/documentation/editors.xml#smbl-general-editors">Add missing Arabic text.</change>
+      <change type="planned" subtype="question" who="https://bl.syriac.uk/documentation/editors.xml#smbl-general-editors">Question in Word Doc to be Addressed.</change>
       <change who="https://bl.syriac.uk/documentation/editors.xml#pgmiller" when="2016-07-06">Changed: Files moved to srophe-app-data/data/manuscripts/tei repository.</change>
     </revisionDesc>
   </teiHeader>
-  <facsimile>
-    <!-- facsimile information about the manuscript -->
-    <graphic/>
-    <!-- Alternatively you could provide 'surface' elements with more than one image per surface, and optionally with 'zone' 
-      elements to give coordinates for any special areas of interest -->
-  </facsimile>
   <text>
     <body>
-      <!-- If you had a transcription of the manuscript you would put it here -->
       <p/>
+      <!--Body paragraph provided for document validation.-->
     </body>
   </text>
 </TEI>

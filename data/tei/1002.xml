@@ -1,4 +1,7 @@
-<?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/srophe-app/documentation/enrich-syriaca.rnc" type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/css" href="SRPEnrichCSS.css"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+<?xml-model href="https://raw.githubusercontent.com/srophe/britishLibrary/main/documentation/schema/out/Syriacamsdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/srophe/britishLibrary/main/documentation/schema/out/Syriacamsdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet href="https://raw.githubusercontent.com/srophe/wright-catalogue/master/parameters/tei.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="manuscript_1002">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -7,7 +10,7 @@
         <funder>The National Endowment for the Humanities</funder>
         <funder>The Andrew W. Mellon Foundation</funder>
         <principal>David A. Michelson</principal>
-        <editor role="general-editor" ref="https://bl.syriac.uk/documentation/editors.xml#dmichelson">David A. michelson</editor>
+        <editor role="general-editor" ref="https://bl.syriac.uk/documentation/editors.xml#dmichelson">David A. Michelson</editor>
         <editor role="creator" ref="https://bl.syriac.uk/documentation/editors.xml#dmichelson">David A. Michelson</editor>
         <editor role="creator" ref="https://bl.syriac.uk/documentation/editors.xml#dgreeson">Daniel J. Greeson</editor>
         <editor role="creator" ref="https://bl.syriac.uk/documentation/editors.xml#thannah">Tucker D. Hannah</editor>
@@ -45,11 +48,9 @@
         <edition n="1.0"/>
       </editionStmt>
       <publicationStmt>
-        <pubPlace/>
         <authority>Syriaca.org: The Syriac Reference Portal</authority>
         <idno type="URI">https://bl.syriac.uk/ms/1002/tei</idno>
         <availability>
-          <p/>
           <licence target="http://creativecommons.org/licenses/by/3.0/">
             <p>Distributed under a Creative Commons Attribution 3.0 Unported License</p>
           </licence>
@@ -57,7 +58,7 @@
         <date calendar="Gregorian">2023-04-21-05:00</date>
       </publicationStmt>
       <sourceDesc>
-        <msDesc xml:id="manuscript-1002" xml:lang="en">
+        <msDesc xml:id="manuscript-1002">
           <msIdentifier>
             <country>United Kingdom</country>
             <settlement>London</settlement>
@@ -71,7 +72,7 @@
               <idno type="BL-Shelfmark-display">London, BL, Add. 17,225</idno>
             </altIdentifier>
             <altIdentifier>
-              <idno type="BL-Shelmark-simplified">BL Add MS 17225</idno>
+              <idno type="BL-Shelfmark-simplified">BL Add MS 17225</idno>
             </altIdentifier>
             <altIdentifier>
               <collection>William Wright, Catalogue of the Syriac Manuscripts in the British Museum Acquired since the Year 1838</collection>
@@ -91,18 +92,17 @@
             </listRelation>
           </head>
           <msContents>
-            <summary/>
             <textLang mainLang="syr">Syriac</textLang>
             <msItem xml:id="a1" n="1" defective="true">
               <locus from="1" to="82a"/>
-              <title ref="http://syriaca.org/work/75" type="supplied">The Gospel of S. John, according to the Peshitta version.</title>
+              <title ref="http://syriaca.org/work/75" xml:lang="en">The Gospel of S. John, according to the Peshitta version.</title>
               <finalRubric xml:lang="syr">ܫܠܸܡ ܐܘܢܓܠܝܘܢ ܕܝܘܚܢܢ ܐܘܢܓܠܣܛܐ ܗ̇ܘ ܕܪܚ̇ܡ ܗܘ̣ܐ ܡܪܢ ܕܡܠܸܠ ܝܘܢܐܝܬ ܒܐܦܣܘܣ ܡܕܝܢܬܐ.<locus from="82a"/>
               </finalRubric>
               <note>Chap. i. 1—7 is wanting.</note>
             </msItem>
             <msItem xml:id="a2" n="2" defective="true">
               <locus from="82a" to="88b"/>
-              <title ref="http://syriaca.org/work/77" type="supplied">The Epistle of S. Paul to the Romans, according to the Peshitta version,</title>
+              <title ref="http://syriaca.org/work/77" xml:lang="en">The Epistle of S. Paul to the Romans, according to the Peshitta version,</title>
               <incipit xml:lang="syr">ܘܬܘܒ ܥܠ ܣܒܪܐ ܐܠܗܝܐ ܡܫܪܝܢܢ ܠܡܟܬܒ ܐܓܪ̈ܬܐ ܕܛܘܒܢܐ ܦܘܠܘܣ ܫܠܝܚܐ܀ ܐܓܪܬܐ ܕܠܘܬ ܪ̈ܗܘܡܝܐ ܡܪܢ ܚܝܠܝܢܝ ܒܪ̈ܚܡܝܟ܀<locus from="82a"/>
               </incipit>
               <note>The missing portions arc: ch. ii. 13—vii. 6, vii. 15—viii. 11, and viii. 23 to the. end.</note>
@@ -117,22 +117,18 @@
                 </support>
                 <extent>
                   <measure type="composition" unit="leaf" quantity="88">88 ff.</measure>
-                  <dimensions type="leaf" unit="in">
-                    <height>
-                      <measure type="height" quantity="5.5" unit="in">5 1/2</measure>
-                    </height>
-                    <width>
-                      <measure type="width" quantity="3.875" unit="in">3 7/8</measure>
-                    </width>
+                  <dimensions type="leaf" unit="inch">
+                    <height quantity="5.5">5 1/2</height>
+                    <width quantity="3.875">3 7/8</width>
                   </dimensions>
                 </extent>
                 <collation>
-                  <p>The quires, signed with letters, were at least ten in number, but the first and the last two are imperfect, leaves being wanting at the beginning, and after foll.<locus>86</locus>,<locus>87</locus>, and<locus>88</locus>.</p>
+                  <p>The quires, signed with letters, were at least ten in number, but the first and the last two are imperfect, leaves being wanting at the beginning, and after foll.<locus>86</locus>, <locus>87</locus>, and <locus>88</locus>.</p>
                 </collation>
                 <condition>
                   <list>
                     <item>
-                      <p>Many leaves are much stained and some torn, especially foll.<locus>1—4</locus>and<locus>86—88</locus>.</p>
+                      <p>Many leaves are much stained and some torn, especially foll.<locus>1—4</locus> and <locus>86—88</locus>.</p>
                     </item>
                   </list>
                 </condition>
@@ -145,20 +141,20 @@
             </objectDesc>
             <handDesc hands="1">
               <handNote xml:id="handNote1" scope="major" script="syr-Syrn" medium="unknown">
-                <desc>This little volume is written in a good, Nestorian hand of the<origDate from="1200" to="1300">xiiith cent.</origDate>
-                </desc>
-              </handNote>
+                This little volume is written in a good, Nestorian hand of the <date from="1200" to="1300">xiiith cent.</date>
+                </handNote>
             </handDesc>
           </physDesc>
           <history>
             <origin>
-              <origDate from="1200" to="1300">xiiith cent.</origDate>
+              <origDate calendar="Gregorian" notBefore="1200" notAfter="1300">13th century</origDate>
+              
             </origin>
           </history>
           <additional>
             <adminInfo>
               <recordHist>
-                <source>Manuscript description based on<bibl>
+                <source>Manuscript description based on <bibl>
                     <ref target="#Wrightpart">Wright's Catalogue</ref>
                   </bibl>. abbreviated by the Syriaca.org editors.</source>
               </recordHist>
@@ -171,7 +167,7 @@
                 <date>1870</date>
                 <ptr target="http://syriaca.org/bibl/8"/>
                 <citedRange unit="entry">CXVII</citedRange>
-                <citedRange unit="pp">1:72-73</citedRange>
+                <citedRange unit="p">1:72-73</citedRange>
               <ref type="internet-archive-pdf" target="https://archive.org/details/catalogueofsyria01brituoft/page/72"/>
               </bibl>
             </listBibl>
@@ -195,7 +191,6 @@
       <classDecl>
         <taxonomy xml:id="Wright-BL-Taxonomy">
           <bibl>
-            
             <ptr target="http://syriaca.org/documentation/Wright-BL-Taxonomy.html"/>
           </bibl>
           <category xml:id="biblical-manuscripts">
@@ -312,22 +307,30 @@
     </encodingDesc>
     <profileDesc>
       <langUsage>
-        <language ident="syr">Unvocalized Syriac of any variety or period</language>
-        <language ident="syr-Syre">Syriac in Estrangela</language>
-        <language ident="syr-Syrj">Vocalized West Syriac</language>
-        <language ident="syr-Syrn">Vocalized East Syriac</language>
-        <language ident="syr-x-syrm">Melkite Syriac</language>
-        <language ident="qhy-x-cpas">Palestinian Syriac</language>
-        <language ident="ar-Syrc">Unvocalized or Undetermined Arabic Garshuni</language>
-        <language ident="ar-Syrj">Arabic Garshuni in Vocalized West Syriac Script</language>
-        <language ident="ar-Syrn">Arabic Garshuni in Vocalized East Syriac Script</language>
-        <language ident="en">English</language>
         <language ident="ar">Arabic</language>
-        <language ident="fr">French</language>
-        <language ident="de">German</language>
-        <language ident="la">Latin</language>
-        <language ident="grc">Ancient Greek</language>
+        <language ident="ar-Syrc">Arabic Garshuni</language>
+        <language ident="ar-Syrn">Arabic Garshuni in East Syriac script</language>
         <language ident="cop">Coptic</language>
+        <language ident="de">German</language>
+        <language ident="en">English</language>
+        <language ident="fr">French</language>
+        <language ident="grc">Ancient Greek</language>
+        <language ident="he">Hebrew</language>
+        <language ident="hy">Armenian</language>
+        <language ident="it">Italian</language>
+        <language ident="la">Latin</language>
+        <language ident="syr">Syriac</language>
+        <language ident="syr-Arab">Syriac Garshuni in Arabic script</language>
+        <language ident="syr-Syre">Syriac in Estrangela script</language>
+        <language ident="syr-Syrj">Syriac in West Syriac script</language>
+        <language ident="syr-Syrn">Syriac in East Syriac script</language>
+        <language ident="syr-x-syrm">Syriac in Melkite Syriac script</language>
+        <language ident="tr">Turkish</language>
+        <language ident="tr-Syrc">Turkish Garshuni</language>
+        <language ident="qhy-x-cpas">Christian Palestinian Aramaic script</language>
+        <language ident="xcl">Classical Armenian</language>
+        <language ident="und">Undetermined</language>
+        <language ident="mul">Multiple languages</language>
       </langUsage>
       <textClass>
         <keywords scheme="#Wright-BL-Taxonomy">
@@ -346,16 +349,10 @@
       <change who="https://bl.syriac.uk/documentation/editors.xml#ngibson" when="2017-06-05">Corrected spacing in title of #a1</change>
     </revisionDesc>
   </teiHeader>
-  <facsimile>
-    <!-- facsimile information about the manuscript -->
-    <graphic/>
-    <!-- Alternatively you could provide 'surface' elements with more than one image per surface, and optionally with 'zone' 
-      elements to give coordinates for any special areas of interest -->
-  </facsimile>
   <text>
     <body>
-      <!-- If you had a transcription of the manuscript you would put it here -->
       <p/>
+      <!--Body paragraph provided for document validation.-->
     </body>
   </text>
 </TEI>

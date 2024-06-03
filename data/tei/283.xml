@@ -1,4 +1,7 @@
-<?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/srophe-app/documentation/enrich-syriaca.rnc" type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/css" href="SRPEnrichCSS.css"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+<?xml-model href="https://raw.githubusercontent.com/srophe/britishLibrary/main/documentation/schema/out/Syriacamsdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/srophe/britishLibrary/main/documentation/schema/out/Syriacamsdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet href="https://raw.githubusercontent.com/srophe/wright-catalogue/master/parameters/tei.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="manuscript_283">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -21,13 +24,7 @@
           <resp>Based on the work of</resp>
           <name type="person" ref="https://bl.syriac.uk/documentation/editors.xml#wwright">William Wright</name>
         </respStmt>
-        <respStmt>
-          <resp>Edited by</resp>
-          <name type="person" ref="https://bl.syriac.uk/documentation/editors.xml#">
-            <!-- Editor's first initial and surname follow "#" (e.g., "...#dmichelson") -->
-            <!--Initial editor's name here -->
-          </name>
-        </respStmt>
+        
         <respStmt>
           <resp>Syriac text entered by</resp>
           <name type="person" ref="https://bl.syriac.uk/documentation/editors.xml#raydin">Robert Aydin</name>
@@ -62,11 +59,9 @@
         <edition n="1.0"/>
       </editionStmt>
       <publicationStmt>
-        <pubPlace/>
         <authority>Syriaca.org: The Syriac Reference Portal</authority>
         <idno type="URI">https://bl.syriac.uk/ms/283/tei</idno>
         <availability>
-          <p/>
           <licence target="http://creativecommons.org/licenses/by/3.0/">
             <p>Distributed under a Creative Commons Attribution 3.0 Unported License</p>
           </licence>
@@ -74,7 +69,7 @@
         <date calendar="Gregorian">2023-04-21-05:00</date>
       </publicationStmt>
       <sourceDesc>
-        <msDesc xml:id="manuscript-283" xml:lang="en">
+        <msDesc xml:id="manuscript-283">
           <msIdentifier>
             <country>United Kingdom</country>
             <settlement>London</settlement>
@@ -88,7 +83,7 @@
               <idno type="BL-Shelfmark-display">London, BL, Add. 14,552</idno>
             </altIdentifier>
             <altIdentifier>
-              <idno type="BL-Shelmark-simplified">BL Add MS 14552</idno>
+              <idno type="BL-Shelfmark-simplified">BL Add MS 14552</idno>
             </altIdentifier>
             <altIdentifier>
               <collection>William Wright, Catalogue of the Syriac Manuscripts in the British Museum Acquired since the Year 1838</collection>
@@ -102,45 +97,43 @@
           <head>
             <note type="contents-note">This manuscript contains: Cyril of Alexandria. Homilies of Cyril of Alexandria on the Gospel of St. Luke. In total, including sub-sections, this manuscript contains 3 items.</note>
             <listRelation type="Wright-BL-Taxonomy">
-              <relation name="dcterms:type" ref="http://purl.org/dc/terms/type" active="https://bl.syriac.uk/ms/283" passive="#theology">
-                <desc/>
-              </relation>
+              <relation name="dcterms:type" ref="http://purl.org/dc/terms/type" active="https://bl.syriac.uk/ms/283" passive="#theology"/>
             </listRelation>
           </head>
           <msContents>
-            <summary/>
             <textLang mainLang="syr">Syriac</textLang>
             <msItem xml:id="a1" n="1" defective="true">
               <locus from="1b" to="150">Foll. 1b-150</locus>
-              <author ref="http://syriaca.org/person/430">Cyril of Alexandria</author>
-              <title type="supplied">Homilies of Cyril of Alexandria on the Gospel of St. Luke</title>
+              <author ref="http://syriaca.org/person/430">
+                <persName xml:lang="en">Cyril of Alexandria</persName>
+              </author>
+              <title xml:lang="en">Homilies of Cyril of Alexandria on the Gospel of St. Luke</title>
               <msItem xml:id="b1" n="2">
                 <locus from="1b" to="3b">Foll. 1b-3b</locus>
                 
-                <title type="supplied">An index prefixed to the volume</title>
+                <title xml:lang="en">An index prefixed to the volume</title>
                 <rubric xml:lang="syr">ܗܠܝܢ ܬܘܪ̈ܓܡܐ ܐܝܬ ܒܟܬܒܐ ܗܢܐ ܕܬܪ̈ܝܢ ܕܦܘܫܩܐ ܕܐܘܢܓܠܝܘܢ ܕܠܘܩܐ܀<locus from="1b"/>
                 </rubric>
               </msItem>
               <msItem xml:id="b2" n="3" defective="true">
                 <locus from="4b" to="150">Foll. 4b-150</locus>
-                <author ref="http://syriaca.org/person/430">Cyril of Alexandria</author>
-                <title type="supplied">The second part of the Homilies of Cyril of Alexandria on the Gospel of St. Luke, viz.<choice>
+                <author ref="http://syriaca.org/person/430">
+                  <persName xml:lang="en">Cyril of Alexandria</persName>
+                </author>
+                <title xml:lang="en">The second part of the Homilies of Cyril of Alexandria on the Gospel of St. Luke, viz.<choice>
                     <abbr>hom.</abbr>
                     <expan>homilies</expan>
-                  </choice>lxxxi.-clvi</title>
+                  </choice> lxxxi.-clvi</title>
                 <rubric xml:lang="syr">ܟܬܒܐ ܕܬܪ̈ܝܢ ܕܦܘܫܩܐ ܕܐܘܢܓܠܝܘܢ ܕܠܘܩܐ̣. ܕܩܕܝܫܐ ܩܘܪܝܠܘܣ ܪܝܫܐ ܕܐ̈ܦܣܩܘܦܐ ܕܠܟܣܢܕܪܝܐ.<locus from="4b"/>
                 </rubric>
                 <note>Of these, however,<choice>
                     <abbr>hom.</abbr>
                     <expan>homilies</expan>
-                  </choice>xcvii., cxiii.-cxvi., and cliv.-clvi., are entirely lost; whilst<choice>
+                  </choice> xcvii., cxiii.-cxvi., and cliv.-clvi., are entirely lost; whilst <choice>
                     <abbr>hom.</abbr>
                     <expan>homilies</expan>
-                  </choice>lxxxii., xcvi., xcviii., cxii., cxxvii., and cliii., are more or less incomplete. These homilies of Cyril have been carefully edited from this manuscript and<bibl>
-                    <msIdentifier>
-                      <idno ref="https://bl.syriac.uk/ms/282">Add. 14,551</idno>
-                    </msIdentifier>
-                  </bibl>, by the<bibl>Rev. Dr. Payne Smith, Oxford, 1858</bibl>; and the same scholar has published an<bibl>English translation in two volumes, Oxford, 1859</bibl>.</note>
+                  </choice> lxxxii., xcvi., xcviii., cxii., cxxvii., and cliii., are more or less incomplete. These homilies of Cyril have been carefully edited from this manuscript and <bibl>Add. 14,551<ptr target="https://bl.syriac.uk/ms/282"/>
+                  </bibl>, by the <bibl>Rev. Dr. Payne Smith, Oxford, 1858</bibl>; and the same scholar has published an <bibl>English translation in two volumes, Oxford, 1859</bibl>.</note>
               </msItem>
             </msItem>
           </msContents>
@@ -153,26 +146,21 @@
                 </support>
                 <extent>
                   <measure type="composition" unit="leaf" quantity="150">150 ff.</measure>
-                  <dimensions type="leaf" unit="in">
-                    <height>
-                      <measure type="height" quantity="11.5" unit="in">11 1/2</measure>
-                    </height>
-                    <width>
-                      <measure type="width" quantity="7.25" unit="in">7 1/4</measure>
-                    </width>
+                  <dimensions type="leaf" unit="inch">
+                    <height quantity="11.5">11 1/2</height>
+                    <width quantity="7.25">7 1/4</width>
                   </dimensions>
                 </extent>
-                <foliation/>
                 <collation>
                   <p>The quires, signed with letters, must originally have been 18 or 19 in number.</p>
                 </collation>
                 <condition>
                   <list>
                     <item>
-                      <p>Some of the leaves are much stained and torn, especially foll.<locus from="17">17</locus>,<locus from="26">26</locus>,<locus from="43" to="44">43, 44</locus>,<locus from="54">54</locus>,<locus from="61">61</locus>,<locus from="63">63</locus>and<locus from="94">94</locus>.</p>
+                      <p>Some of the leaves are much stained and torn, especially foll.<locus from="17">17</locus>, <locus from="26">26</locus>, <locus from="43" to="44">43, 44</locus>, <locus from="54">54</locus>, <locus from="61">61</locus>, <locus from="63">63</locus> and <locus from="94">94</locus>.</p>
                     </item>
                     <item>
-                      <p>The last two or three quires are lost, and several of the others are imperfect, leaves being wanting after foll.<locus from="6" to="7">6, 7</locus>,<locus from="39">39</locus>,<locus from="73">73</locus>and<locus from="94">94</locus>.</p>
+                      <p>The last two or three quires are lost, and several of the others are imperfect, leaves being wanting after foll.<locus from="6" to="7">6, 7</locus>, <locus from="39">39</locus>, <locus from="73">73</locus> and <locus from="94">94</locus>.</p>
                     </item>
                   </list>
                 </condition>
@@ -185,24 +173,19 @@
             </objectDesc>
             <handDesc hands="2">
               <handNote xml:id="handNote1" scope="major" script="syr" medium="unknown">
-                <desc>This volume is written in a fine, flowing hand of the<origDate notBefore="0600" notAfter="0800" calendar="Gregorian">viith or viiith cent.</origDate>
+                This volume is written in a fine, flowing hand of the <date notBefore="0600" notAfter="0800" calendar="Gregorian">viith or viiith cent.</date>
                   <ref target="#addition1">See additions.</ref>
-                </desc>
-              </handNote>
+                </handNote>
               <handNote xml:id="handNote2" scope="minor" script="syr" medium="unknown">
-                <desc>
-                  <ref target="#addition2">See additions.</ref>
-                </desc>
-              </handNote>
+                <ref target="#addition2">See additions.</ref>
+                </handNote>
             </handDesc>
-            <decoDesc/>
             <additions>
-              <p/>
               <list>
                 <item xml:id="addition1" n="1">
                   <locus from="1b"/>
-                  <p>According to the note on the margin of fol. 1b, a volume of<title type="supplied">the Ecclesiastical History of<persName ref="http://syriaca.org/person/74">John of Ephesus</persName>
-                    </title>was once bound with this manuscript:</p>
+                  <p>According to the note on the margin of fol. 1b, a volume of <title>the Ecclesiastical History of John of Ephesus
+                    </title> was once bound with this manuscript:</p>
                   <p>
                     <quote xml:lang="syr">
                       <sic>ܬܫ̈ܥܝ̣ܬܐ ܕܐܩܠܣܝ̣ܣܛܝܩܐ ܕܩܕܝܫܐ ܡܪܝ ܝܘܚܢܢ ܕܐܦܝܣܩܦܐ ܕܐܦܣܘܣ ܡܕܝܢ̣ܬܐ</sic>
@@ -211,7 +194,7 @@
                 </item>
                 <item xml:id="addition2" n="2">
                   <locus from="4a"/>
-                  <p>On the blank page, fol. 4a, the monk and priest<persName>John</persName>, the son of<persName>Eugene</persName>, the son of<persName>John</persName>, from the province of<placeName ref="http://syriaca.org/place/723">Nisibis</placeName>, residing in<placeName ref="http://syriaca.org/place/360">the convent of S. Mary Deipara</placeName>,<date when-custom="1823" datingMethod="Seleucid">A. Gr. 1823</date>,<date when="1512" calendar="Gregorian">A.D. 1512</date>, has written as follows:</p>
+                  <p>On the blank page, fol. 4a, the monk and priest <persName>John</persName>, the son of <persName>Eugene</persName>, the son of <persName>John</persName>, from the province of <placeName ref="http://syriaca.org/place/723">Nisibis</placeName>, residing in <placeName ref="http://syriaca.org/place/360">the convent of S. Mary Deipara</placeName>, <date when-custom="1823" datingMethod="Seleucid">A. Gr. 1823</date>, <date when="1512" calendar="Gregorian">A.D. 1512</date>, has written as follows:</p>
                   <p>
                     <quote xml:lang="syr">
                       <sic>ܟܕ ܐܝܟ ܕܝ̈ܢܐ ܠܐ ܡܬܕܪ̈ܟܢܐ ܕܐܠܗܢ ܣܓܝܕ ܫܡܗ ܘܐܝܟ ܟܪܘܟܝܐ ܡܲܘܙܠܬܢܝܐ ܐܬܛܝܒ̇ܬ ܐܢ̇ܐ ܏ܝܘܚ ܚܲܛܝܐ ܒܫܡ ܕܝܪܝܐ ܘ܏ܩܫܝ. ܒܥܒ̇ܕܐ ܣ̇ܓܝ̣ ܡܲܒܥܰܕ ܡܢ ܗܢܐ ܫܡܐ. ܒܪ ܐܘܓܝܢ ܡـ[ـܢܚ]ـܐ ܒܪ ܏ܩܫܝ ܏ܝܘܚ ܡܲܰܕܢܚܝܐ ܡܢ ܩܪܝܬܐ ܡܒܪܟܬܐ ܡـ . . . ـܐ ܕܒܐܘܚܕܢܐ ܕܡܕܝܢ̣ܬ݀ ܬܚܘ̈ܡܐ ܢܨܝܒܝܢ. ܘܟܕ ܐܬܛ̇ܝ̣ܒܬ ܒܕܝܪܐ ܕܝܠܢ ܕܣܘܪ̈ܝܳܝܷܐܐ ܕܒܝܬ ܝܠܕܬ ܐܠܗܐ ܕܒܡܕܒܪܐ ܕܐܣܩܝܛܝ ܘܩܪܝ̇ܬ ܒܗܢܐ ܟܬܒܐ ܕܐܝܬ ܒܗ ܫܪ̈ܒܐ ܣܓ̈ܝܐܐ ܘܫܪܡ̇ܬ ܗܪܟܐ ܥܘܗܕܢܐ ܕܝܠܝ ܕܢܗܘ̣ܐ ܠܝ ܠܕܘܟܪܢܐ ܕܨܠܘܬܐ ܕܟܒܪ ܢܬܚܢܢ  ܐܢ̣ܐ ܘܟܠ ܕܠ̇ܚܐ ܠܗܢܐ ܡܚܲܝܒܐ ܗܘ ܒܙܢܐ ܕܓܢܒܘܬܐ ܡܬܚܲܝܒ ܗܠܝܢ ܫܢܬ ܏ܐܦܟܓ ܠܝܘܢ ܘܠܐܠܗܐ ܏ܫܘ ܐܡܝܢ.</sic>
@@ -220,27 +203,21 @@
                 </item>
               </list>
             </additions>
-            <bindingDesc/>
-            <sealDesc/>
-            <accMat/>
-          </physDesc>
+            </physDesc>
           <history>
             <origin>
-              <origDate notBefore="0600" notAfter="0800" calendar="Gregorian">viith or viiith cent.</origDate>
-              <origPlace/>
+              <origDate calendar="Gregorian" notBefore="0600" notAfter="0800">7th or 8th century</origDate>
+              
             </origin>
-            <provenance/>
-            <acquisition/>
-          </history>
+            </history>
           <additional>
             <adminInfo>
               <recordHist>
-                <source>Manuscript description based on<bibl>
+                <source>Manuscript description based on <bibl>
                     <ref target="#Wrightpart">Wright's Catalogue</ref>
                   </bibl>. abbreviated by the Syriaca.org editors.</source>
               </recordHist>
-              <note/>
-            </adminInfo>
+              </adminInfo>
             <listBibl>
               <bibl xml:id="Wrightpart">
                 <author>William Wright</author>
@@ -250,7 +227,7 @@
                 <ptr target="http://syriaca.org/bibl/8"/>
                 <citedRange unit="entry">DCXII<!-- Include Wright's entry number for this manuscript part here (e.g., VI) -->
                 </citedRange>
-                <citedRange unit="pp">2:485-486</citedRange>
+                <citedRange unit="p">2:485-486</citedRange>
               <ref type="internet-archive-pdf" target="https://archive.org/details/catalogueofsyria02brituoft/page/485"/>
               </bibl>
             </listBibl>
@@ -274,7 +251,6 @@
       <classDecl>
         <taxonomy xml:id="Wright-BL-Taxonomy">
           <bibl>
-            
             <ptr target="http://syriaca.org/documentation/Wright-BL-Taxonomy.html"/>
           </bibl>
           <category xml:id="biblical-manuscripts">
@@ -391,22 +367,30 @@
     </encodingDesc>
     <profileDesc>
       <langUsage>
-        <language ident="syr">Unvocalized Syriac of any variety or period</language>
-        <language ident="syr-Syre">Syriac in Estrangela</language>
-        <language ident="syr-Syrj">Vocalized West Syriac</language>
-        <language ident="syr-Syrn">Vocalized East Syriac</language>
-        <language ident="syr-x-syrm">Melkite Syriac</language>
-        <language ident="qhy-x-cpas">Palestinian Syriac</language>
-        <language ident="ar-Syrc">Unvocalized or Undetermined Arabic Garshuni</language>
-        <language ident="ar-Syrj">Arabic Garshuni in Vocalized West Syriac Script</language>
-        <language ident="ar-Syrn">Arabic Garshuni in Vocalized East Syriac Script</language>
-        <language ident="en">English</language>
         <language ident="ar">Arabic</language>
-        <language ident="fr">French</language>
-        <language ident="de">German</language>
-        <language ident="la">Latin</language>
-        <language ident="grc">Ancient Greek</language>
+        <language ident="ar-Syrc">Arabic Garshuni</language>
+        <language ident="ar-Syrn">Arabic Garshuni in East Syriac script</language>
         <language ident="cop">Coptic</language>
+        <language ident="de">German</language>
+        <language ident="en">English</language>
+        <language ident="fr">French</language>
+        <language ident="grc">Ancient Greek</language>
+        <language ident="he">Hebrew</language>
+        <language ident="hy">Armenian</language>
+        <language ident="it">Italian</language>
+        <language ident="la">Latin</language>
+        <language ident="syr">Syriac</language>
+        <language ident="syr-Arab">Syriac Garshuni in Arabic script</language>
+        <language ident="syr-Syre">Syriac in Estrangela script</language>
+        <language ident="syr-Syrj">Syriac in West Syriac script</language>
+        <language ident="syr-Syrn">Syriac in East Syriac script</language>
+        <language ident="syr-x-syrm">Syriac in Melkite Syriac script</language>
+        <language ident="tr">Turkish</language>
+        <language ident="tr-Syrc">Turkish Garshuni</language>
+        <language ident="qhy-x-cpas">Christian Palestinian Aramaic script</language>
+        <language ident="xcl">Classical Armenian</language>
+        <language ident="und">Undetermined</language>
+        <language ident="mul">Multiple languages</language>
       </langUsage>
       <textClass>
         <keywords scheme="#Wright-BL-Taxonomy">
@@ -422,20 +406,14 @@
       <change who="https://bl.syriac.uk/documentation/editors.xml#kurban" when="2023-04-21-05:00">CHANGED: added or corrected folio extent values</change>
       <change who="https://bl.syriac.uk/documentation/editors.xml#jarnwine" when="2023-01-13-06:00">ADDED: supplied and corrected Syriaca.org URIs for authors</change>
       <change who="https://bl.syriac.uk/documentation/editors.xml#jarnwine" when="2015-04-03">Created: file</change>
-      <change type="planned" subtype="uri">Needs Addition of work URIs.</change>
+      <change type="planned" subtype="uri" who="https://bl.syriac.uk/documentation/editors.xml#smbl-general-editors">Needs Addition of work URIs.</change>
       <change who="https://bl.syriac.uk/documentation/editors.xml#pgmiller" when="2016-07-06">Changed: Files moved to srophe-app-data/data/manuscripts/tei repository.</change>
     </revisionDesc>
   </teiHeader>
-  <facsimile>
-    <!-- facsimile information about the manuscript -->
-    <graphic/>
-    <!-- Alternatively you could provide 'surface' elements with more than one image per surface, and optionally with 'zone' 
-      elements to give coordinates for any special areas of interest -->
-  </facsimile>
   <text>
     <body>
-      <!-- If you had a transcription of the manuscript you would put it here -->
       <p/>
+      <!--Body paragraph provided for document validation.-->
     </body>
   </text>
 </TEI>

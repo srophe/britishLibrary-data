@@ -1,4 +1,7 @@
-<?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/srophe-app/documentation/enrich-syriaca.rnc" type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/css" href="SRPEnrichCSS.css"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+<?xml-model href="https://raw.githubusercontent.com/srophe/britishLibrary/main/documentation/schema/out/Syriacamsdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/srophe/britishLibrary/main/documentation/schema/out/Syriacamsdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet href="https://raw.githubusercontent.com/srophe/wright-catalogue/master/parameters/tei.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="manuscript_278">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -22,13 +25,7 @@
           <resp>Based on the work of</resp>
           <name type="person" ref="https://bl.syriac.uk/documentation/editors.xml#wwright">William Wright</name>
         </respStmt>
-        <respStmt>
-          <resp>Edited by</resp>
-          <name type="person" ref="https://bl.syriac.uk/documentation/editors.xml#">
-            <!-- Editor's first initial and surname follow "#" (e.g., "...#dmichelson") -->
-            <!--Initial editor's name here -->
-          </name>
-        </respStmt>
+        
         <respStmt>
           <resp>Syriac text entered by</resp>
           <name type="person" ref="https://bl.syriac.uk/documentation/editors.xml#raydin">Robert Aydin</name>
@@ -63,11 +60,9 @@
         <edition n="1.0"/>
       </editionStmt>
       <publicationStmt>
-        <pubPlace/>
         <authority>Syriaca.org: The Syriac Reference Portal</authority>
         <idno type="URI">https://bl.syriac.uk/ms/278/tei</idno>
         <availability>
-          <p/>
           <licence target="http://creativecommons.org/licenses/by/3.0/">
             <p>Distributed under a Creative Commons Attribution 3.0 Unported License</p>
           </licence>
@@ -75,7 +70,7 @@
         <date calendar="Gregorian">2023-04-21-05:00</date>
       </publicationStmt>
       <sourceDesc>
-        <msDesc xml:id="manuscript-278" xml:lang="en">
+        <msDesc xml:id="manuscript-278">
           <msIdentifier>
             <country>United Kingdom</country>
             <settlement>London</settlement>
@@ -89,7 +84,7 @@
               <idno type="BL-Shelfmark-display">London, BL, Add. 14,547</idno>
             </altIdentifier>
             <altIdentifier>
-              <idno type="BL-Shelmark-simplified">BL Add MS 14547</idno>
+              <idno type="BL-Shelfmark-simplified">BL Add MS 14547</idno>
             </altIdentifier>
             <altIdentifier>
               <collection>William Wright, Catalogue of the Syriac Manuscripts in the British Museum Acquired since the Year 1838</collection>
@@ -103,24 +98,24 @@
           <head>
             <note type="contents-note">This manuscript contains: The first part of the works of Gregory Nazianzen, translated by the abbat Paul, with an appendix of extracts from other patristic authors. In total, including sub-sections, this manuscript contains 47 items.</note>
             <listRelation type="Wright-BL-Taxonomy">
-              <relation name="dcterms:type" ref="http://purl.org/dc/terms/type" active="https://bl.syriac.uk/ms/278" passive="#theology">
-                <desc/>
-              </relation>
+              <relation name="dcterms:type" ref="http://purl.org/dc/terms/type" active="https://bl.syriac.uk/ms/278" passive="#theology"/>
             </listRelation>
           </head>
           <msContents>
-            <summary/>
             <textLang mainLang="syr">Syriac</textLang>
             <msItem xml:id="a1" n="1" defective="true">
               <locus from="1" to="244">Foll. 1-244</locus>
-              <title xml:lang="en" type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">The first part of the works of Gregory Nazianzen, translated by the abbat <persName>Paul</persName>, with an appendix of extracts from other 
+              <title xml:lang="en">The first part of the works of Gregory Nazianzen, translated by the abbat Paul, with an appendix of extracts from other 
                 patristic authors</title>
-              
               <msItem xml:id="b1" n="2" defective="true">
                 <locus from="2b" to="236a">Foll. 2b-236a</locus>
-                <author ref="http://syriaca.org/person/511">Gregory of Nazianzus</author>
-                <editor role="translator">the abbat Paul</editor>
-                <title type="supplied">The first part of the works of Gregory Nazianzen, translated by the abbat<persName>Paul</persName>
+                <author ref="http://syriaca.org/person/511">
+                  <persName xml:lang="en">Gregory of Nazianzus</persName>
+                </author>
+                <editor role="translator">
+                  <persName xml:lang="en">the abbat Paul</persName>
+                </editor>
+                <title xml:lang="en">The first part of the works of Gregory Nazianzen, translated by the abbat Paul
                 </title>
                 <finalRubric xml:lang="syr">ܫܠ̣ܡܬ݁ ܦܠܓܘܬܐ ܩܕܡܝܬܐ ܕܩܕܝܫܐ ܓܪܝܓܘܪܝܘܣ ܬܐܘܠܘܓܘܣ܇  ܐܦܝܣܩܘܦܐ ܕܢܐܙܝܢܙܘ.<locus from="236a"/>
                 </finalRubric>
@@ -129,209 +124,262 @@
                 </colophon>
                 <msItem xml:id="c1" n="3">
                   <locus from="2b" to="4">Foll. 2b-4</locus>
-                  <author ref="http://syriaca.org/person/511">Gregory Nazianzen</author>
-                  <title type="supplied">An index to the 30 discourses that form this part</title>
+                  <author ref="http://syriaca.org/person/511">
+                    <persName xml:lang="en">Gregory Nazianzen</persName>
+                  </author>
+                  <title xml:lang="en">An index to the 30 discourses that form this part</title>
                   <rubric xml:lang="syr">ܩ̈ܦܠܐܐ ܕܦܢܩܝܬܐ ܩܕܡܝܬܐ̣ ܕܩܕܝܫܐ ܘܠܒ̣ܝܫ ܠܐܠܗܐ ܓܪܝܓܘܪܝܘܣ ܬܐܘܠܘܓܘܣ: ܐܦܝܣܩܘܦܐ ܕܢܐܙܝܢܙܘ:  ܕܦܫܩܗ̇ ܡܢ ܝܘܢܝܐ ܠܣܘܪܝܝܐ̣. ܚܣܝܐ ܘܡܝܩܪ ܡܢ ܐܠܗܐ ܐܒܘܣ ܡܪܝ ܦܘܠܐ̣. ܒܩܘܦܪܘܣ ܓܙܪܬܐ. ܒܫܢܬ ܬܫܥܡܐܐ ܘܬ̈ܠܬܝܢ ܘܚ̈ܡܫ: ܐܢܕܩܛܝܘܢܐ ܕܕܘܕܩܛܐ. ܡܣܝܟܝܢ ܕܝܢ ܒܗ̇ ܡܐ̈ܡܪܐ̣ ܬܠܬܝܢ.<locus from="2b"/>
                   </rubric>
                 </msItem>
                 <msItem xml:id="c2" n="4">
                   <locus from="4b" to="6">Foll. 4b-6</locus>
-                  <author ref="http://syriaca.org/person/511">Gregory Nazianzen</author>
-                  <title type="supplied" xml:lang="la">In sanctum Pascha et in tarditatem</title>
+                  <author ref="http://syriaca.org/person/511">
+                    <persName xml:lang="en">Gregory Nazianzen</persName>
+                  </author>
+                  <title xml:lang="la">In sanctum Pascha et in tarditatem</title>
                 </msItem>
                 <msItem xml:id="c3" n="5">
                   <locus from="6a" to="8">Foll. 6a-8</locus>
-                  <author ref="http://syriaca.org/person/511">Gregory Nazianzen</author>
-                  <title type="supplied" xml:lang="la">Ad eos qui ipsum acciverant, nec occurrerant</title>
+                  <author ref="http://syriaca.org/person/511">
+                    <persName xml:lang="en">Gregory Nazianzen</persName>
+                  </author>
+                  <title xml:lang="la">Ad eos qui ipsum acciverant, nec occurrerant</title>
                 </msItem>
                 <msItem xml:id="c4" n="6">
                   <locus from="8a" to="33">Foll. 8a-33</locus>
-                  <author ref="http://syriaca.org/person/511">Gregory Nazianzen</author>
-                  <title type="supplied" xml:lang="la">Apologetica</title>
+                  <author ref="http://syriaca.org/person/511">
+                    <persName xml:lang="en">Gregory Nazianzen</persName>
+                  </author>
+                  <title xml:lang="la">Apologetica</title>
                 </msItem>
                 <msItem xml:id="c5" n="7">
                   <locus from="33a" to="43">Foll. 33a-43</locus>
-                  <author ref="http://syriaca.org/person/511">Gregory Nazianzen</author>
-                  <title type="supplied" xml:lang="la">Funebris in laudem<persName>Caesarii</persName>fratris</title>
+                  <author ref="http://syriaca.org/person/511">
+                    <persName xml:lang="en">Gregory Nazianzen</persName>
+                  </author>
+                  <title xml:lang="la">Funebris in laudem Caesarii fratris</title>
                 </msItem>
                 <msItem xml:id="c6" n="8">
                   <locus from="43a" to="51">Foll. 43a-51</locus>
-                  <author ref="http://syriaca.org/person/511">Gregory Nazianzen</author>
-                  <title type="supplied" xml:lang="la">In patrem tacentem propter plagam grandinis</title>
+                  <author ref="http://syriaca.org/person/511">
+                    <persName xml:lang="en">Gregory Nazianzen</persName>
+                  </author>
+                  <title xml:lang="la">In patrem tacentem propter plagam grandinis</title>
                 </msItem>
                 <msItem xml:id="c7" n="9">
                   <locus from="51a" to="52">Foll. 51a-52</locus>
-                  <author ref="http://syriaca.org/person/511">Gregory Nazianzen</author>
-                  <title type="supplied" xml:lang="la">In seipsum, ad patrem et<persName ref="http://syriaca.org/person/376">Basilium</persName>magnum, post reditum e fuga</title>
+                  <author ref="http://syriaca.org/person/511">
+                    <persName xml:lang="en">Gregory Nazianzen</persName>
+                  </author>
+                  <title xml:lang="la">In seipsum, ad patrem et Basilium magnum, post reditum e fuga</title>
                 </msItem>
                 <msItem xml:id="c8" n="10">
                   <locus from="52b" to="54">Foll. 52b-54</locus>
-                  <author ref="http://syriaca.org/person/511">Gregory Nazianzen</author>
-                  <title type="supplied" xml:lang="la">Apologeticus ad patrem suum<persName>Gregorium</persName>, praesente<persName ref="http://syriaca.org/person/376">Basilio</persName>magno</title>
+                  <author ref="http://syriaca.org/person/511">
+                    <persName xml:lang="en">Gregory Nazianzen</persName>
+                  </author>
+                  <title xml:lang="la">Apologeticus ad patrem suum Gregorium, praesente Basilio magno</title>
                 </msItem>
                 <msItem xml:id="c9" n="11">
                   <locus from="54b" to="57">Foll. 54b-57</locus>
-                  <author ref="http://syriaca.org/person/511">Gregory Nazianzen</author>
-                  <title type="supplied" xml:lang="la">Ad<persName ref="http://syriaca.org/person/512">Gregorium Nyssenum</persName>
+                  <author ref="http://syriaca.org/person/511">
+                    <persName xml:lang="en">Gregory Nazianzen</persName>
+                  </author>
+                  <title xml:lang="la">Ad Gregorium Nyssenum
                   </title>
                 </msItem>
                 <msItem xml:id="c10" n="12">
                   <locus from="57a" to="59">Foll. 57a-59</locus>
-                  <author ref="http://syriaca.org/person/511">Gregory Nazianzen</author>
-                  <title type="supplied" xml:lang="la">Ad patrem, cum ei<placeName>Nazianzenae</placeName>ecclesiae curam commiserat</title>
+                  <author ref="http://syriaca.org/person/511">
+                    <persName xml:lang="en">Gregory Nazianzen</persName>
+                  </author>
+                  <title xml:lang="la">Ad patrem, cum ei Nazianzenae ecclesiae curam commiserat</title>
                 </msItem>
                 <msItem xml:id="c11" n="13">
                   <locus from="59b" to="68">Foll. 59b-68</locus>
-                  <author ref="http://syriaca.org/person/511">Gregory Nazianzen</author>
-                  <title type="supplied" xml:lang="la">Prima de pace oratio</title>
+                  <author ref="http://syriaca.org/person/511">
+                    <persName xml:lang="en">Gregory Nazianzen</persName>
+                  </author>
+                  <title xml:lang="la">Prima de pace oratio</title>
                 </msItem>
                 <msItem xml:id="c12" n="14">
                   <locus from="68a" to="73a">Foll. 68a-73a</locus>
-                  <author ref="http://syriaca.org/person/511">Gregory Nazianzen</author>
-                  <title type="supplied" xml:lang="la">Tertia de pace oratio</title>
+                  <author ref="http://syriaca.org/person/511">
+                    <persName xml:lang="en">Gregory Nazianzen</persName>
+                  </author>
+                  <title xml:lang="la">Tertia de pace oratio</title>
                   <msItem xml:id="d1" n="15">
                     <locus from="73a" to="74">Foll. 73a-74</locus>
                     
-                    <title type="supplied">Note</title>
+                    <title xml:lang="en">Note</title>
                   </msItem>
                 </msItem>
                 <msItem xml:id="c13" n="16">
                   <locus from="74a" to="80">Foll. 74a-80</locus>
-                  <author ref="http://syriaca.org/person/511">Gregory Nazianzen</author>
-                  <title type="supplied" xml:lang="la">Secunda de pace oratio</title>
+                  <author ref="http://syriaca.org/person/511">
+                    <persName xml:lang="en">Gregory Nazianzen</persName>
+                  </author>
+                  <title xml:lang="la">Secunda de pace oratio</title>
                 </msItem>
                 <msItem xml:id="c14" n="17">
                   <locus from="80b" to="86">Foll. 80b-86</locus>
-                  <author ref="http://syriaca.org/person/511">Gregory Nazianzen</author>
-                  <title type="supplied" xml:lang="la">De suis sermonibus et ad<persName>Julianum</persName>tributorum exaequatorem</title>
+                  <author ref="http://syriaca.org/person/511">
+                    <persName xml:lang="en">Gregory Nazianzen</persName>
+                  </author>
+                  <title xml:lang="la">De suis sermonibus et ad Julianum tributorum exaequatorem</title>
                 </msItem>
                 <msItem xml:id="c15" n="18">
                   <locus from="86b" to="91">Foll. 86b-91</locus>
-                  <author ref="http://syriaca.org/person/511">Gregory Nazianzen</author>
-                  <title type="supplied" xml:lang="la">Ad cives<placeName>Nazianzenos</placeName>gravi timore perculsos, et praefectum irascentem</title>
+                  <author ref="http://syriaca.org/person/511">
+                    <persName xml:lang="en">Gregory Nazianzen</persName>
+                  </author>
+                  <title xml:lang="la">Ad cives Nazianzenos gravi timore perculsos, et praefectum irascentem</title>
                 </msItem>
                 <msItem xml:id="c16" n="19">
                   <locus from="91a" to="95">Foll. 91a-95</locus>
-                  <author ref="http://syriaca.org/person/511">Gregory Nazianzen</author>
-                  <title type="supplied" xml:lang="la">In novam Dominicam</title>
+                  <author ref="http://syriaca.org/person/511">
+                    <persName xml:lang="en">Gregory Nazianzen</persName>
+                  </author>
+                  <title xml:lang="la">In novam Dominicam</title>
                 </msItem>
                 <msItem xml:id="c17" n="20">
                   <locus from="95b" to="104">Foll. 95b-104</locus>
-                  <author ref="http://syriaca.org/person/511">Gregory Nazianzen</author>
-                  <title type="supplied" xml:lang="la">Funebris in laudem sororis suae<persName>Gorgoniae</persName>
+                  <author ref="http://syriaca.org/person/511">
+                    <persName xml:lang="en">Gregory Nazianzen</persName>
+                  </author>
+                  <title xml:lang="la">Funebris in laudem sororis suae Gorgoniae
                   </title>
                 </msItem>
                 <msItem xml:id="c18" n="21" defective="true">
                   <locus from="104a" to="122">Foll. 104a-122</locus>
-                  <author ref="http://syriaca.org/person/511">Gregory Nazianzen</author>
-                  <title type="supplied" xml:lang="la">Funebris in patrem, praesente<persName ref="http://syriaca.org/person/376">Basilio</persName>
+                  <author ref="http://syriaca.org/person/511">
+                    <persName xml:lang="en">Gregory Nazianzen</persName>
+                  </author>
+                  <title xml:lang="la">Funebris in patrem, praesente Basilio
                   </title>
                 </msItem>
                 <msItem xml:id="c19" n="22" defective="true">
                   <locus from="122b" to="129">Foll. 122b-129</locus>
-                  <author ref="http://syriaca.org/person/511">Gregory Nazianzen</author>
-                  <title type="supplied" xml:lang="la">In Theophania, sive Natalitia Salvatoris</title>
+                  <author ref="http://syriaca.org/person/511">
+                    <persName xml:lang="en">Gregory Nazianzen</persName>
+                  </author>
+                  <title xml:lang="la">In Theophania, sive Natalitia Salvatoris</title>
                 </msItem>
                 <msItem xml:id="c20" n="23">
                   <locus from="129a" to="137">Foll. 129a-137</locus>
-                  <author ref="http://syriaca.org/person/511">Gregory Nazianzen</author>
-                  <title type="supplied" xml:lang="la">In sancta Lumina</title>
+                  <author ref="http://syriaca.org/person/511">
+                    <persName xml:lang="en">Gregory Nazianzen</persName>
+                  </author>
+                  <title xml:lang="la">In sancta Lumina</title>
                   <msItem xml:id="d2" n="24">
                     <locus from="137b" to="142">Foll. 137b-142</locus>
                     
-                    <title type="supplied">Notes</title>
+                    <title xml:lang="en">Notes</title>
                   </msItem>
                 </msItem>
                 <msItem xml:id="c21" n="25">
                   <locus from="142b" to="149">Foll. 142b-149</locus>
-                  <author ref="http://syriaca.org/person/511">Gregory Nazianzen</author>
-                  <title type="supplied" xml:lang="la">In Pentecosten</title>
+                  <author ref="http://syriaca.org/person/511">
+                    <persName xml:lang="en">Gregory Nazianzen</persName>
+                  </author>
+                  <title xml:lang="la">In Pentecosten</title>
                 </msItem>
                 <msItem xml:id="c22" n="26">
                   <locus from="149b" to="154">Foll. 149b-154</locus>
-                  <author ref="http://syriaca.org/person/511">Gregory Nazianzen</author>
-                  <title type="supplied" xml:lang="la">Adversus<name>Eunomianos</name>
+                  <author ref="http://syriaca.org/person/511">
+                    <persName xml:lang="en">Gregory Nazianzen</persName>
+                  </author>
+                  <title xml:lang="la">Adversus Eunomianos
                     <supplied reason="unknown" resp="https://bl.syriac.uk/documentation/editors.xml#wwright">theologica prima</supplied>
                   </title>
                 </msItem>
                 <msItem xml:id="c23" n="27">
                   <locus from="154a" to="164">Foll. 154a-164</locus>
-                  <author ref="http://syriaca.org/person/511">Gregory Nazianzen</author>
-                  <title type="supplied" xml:lang="la">De Filio<supplied reason="unknown" resp="https://bl.syriac.uk/documentation/editors.xml#wwright">theologica tertia</supplied>
+                  <author ref="http://syriaca.org/person/511">
+                    <persName xml:lang="en">Gregory Nazianzen</persName>
+                  </author>
+                  <title xml:lang="la">De Filio <supplied reason="unknown" resp="https://bl.syriac.uk/documentation/editors.xml#wwright">theologica tertia</supplied>
                   </title>
                 </msItem>
                 <msItem xml:id="c24" n="28">
                   <locus from="164a" to="173">Foll. 164a-173</locus>
-                  <author ref="http://syriaca.org/person/511">Gregory Nazianzen</author>
-                  <title type="supplied" xml:lang="la">De Filio<supplied reason="unknown" resp="https://bl.syriac.uk/documentation/editors.xml#wwright">theologica quarta</supplied>
+                  <author ref="http://syriaca.org/person/511">
+                    <persName xml:lang="en">Gregory Nazianzen</persName>
+                  </author>
+                  <title xml:lang="la">De Filio <supplied reason="unknown" resp="https://bl.syriac.uk/documentation/editors.xml#wwright">theologica quarta</supplied>
                   </title>
                 </msItem>
                 <msItem xml:id="c25" n="29">
                   <locus from="173b" to="186">Foll. 173b-186</locus>
-                  <author ref="http://syriaca.org/person/511">Gregory Nazianzen</author>
-                  <title type="supplied" xml:lang="la">De Spiritu Sancto<supplied reason="unknown" resp="https://bl.syriac.uk/documentation/editors.xml#wwright">theologica quinta</supplied>
+                  <author ref="http://syriaca.org/person/511">
+                    <persName xml:lang="en">Gregory Nazianzen</persName>
+                  </author>
+                  <title xml:lang="la">De Spiritu Sancto <supplied reason="unknown" resp="https://bl.syriac.uk/documentation/editors.xml#wwright">theologica quinta</supplied>
                   </title>
                 </msItem>
                 <msItem xml:id="c26" n="30">
                   <locus from="186a" to="193">Foll. 186a-193</locus>
-                  <author ref="http://syriaca.org/person/511">Gregory Nazianzen</author>
-                  <title type="supplied" xml:lang="la">Adversus<name>Arianos</name>et de seipso</title>
+                  <author ref="http://syriaca.org/person/511">
+                    <persName xml:lang="en">Gregory Nazianzen</persName>
+                  </author>
+                  <title xml:lang="la">Adversus Arianos et de seipso</title>
                 </msItem>
                 <msItem xml:id="c27" n="31">
                   <locus from="193a" to="200">Foll. 193a-200</locus>
-                  <author ref="http://syriaca.org/person/511">Gregory Nazianzen</author>
-                  <title type="supplied" xml:lang="la">In<name>Machabaeorum</name>laudem</title>
+                  <author ref="http://syriaca.org/person/511">
+                    <persName xml:lang="en">Gregory Nazianzen</persName>
+                  </author>
+                  <title xml:lang="la">In Machabaeorum laudem</title>
                 </msItem>
                 <msItem xml:id="c28" n="32">
                   <locus from="200a" to="207">Foll. 200a-207</locus>
-                  <author ref="http://syriaca.org/person/511">Gregory Nazianzen</author>
-                  <title type="supplied" xml:lang="la">In laudem<choice>
+                  <author ref="http://syriaca.org/person/511">
+                    <persName xml:lang="en">Gregory Nazianzen</persName>
+                  </author>
+                  <title xml:lang="la">In laudem <choice>
                       <abbr>s.</abbr>
                       <expan>sancti</expan>
-                    </choice>martyris<persName>Cypriani</persName>
+                    </choice> martyris Cypriani
                   </title>
                 </msItem>
                 <msItem xml:id="c29" n="33">
                   <locus from="207b" to="216">Foll. 207b-216</locus>
-                  <author ref="http://syriaca.org/person/511">Gregory Nazianzen</author>
-                  <title type="supplied" xml:lang="la">In laudem<persName>Heronis</persName>philosophi</title>
+                  <author ref="http://syriaca.org/person/511">
+                    <persName xml:lang="en">Gregory Nazianzen</persName>
+                  </author>
+                  <title xml:lang="la">In laudem Heronis philosophi</title>
                 </msItem>
                 <msItem xml:id="c30" n="34">
                   <locus from="216b" to="221">Foll. 216b-221</locus>
-                  <author ref="http://syriaca.org/person/511">Gregory Nazianzen</author>
-                  <title type="supplied" xml:lang="la">In<name>Aegyptiorum</name>adventum</title>
+                  <author ref="http://syriaca.org/person/511">
+                    <persName xml:lang="en">Gregory Nazianzen</persName>
+                  </author>
+                  <title xml:lang="la">In Aegyptiorum adventum</title>
                 </msItem>
                 <msItem xml:id="c31" n="35">
                   <locus from="221b" to="236a">Foll. 221b-236a</locus>
-                  <author ref="http://syriaca.org/person/511">Gregory Nazianzen</author>
-                  <title type="supplied" xml:lang="la">In laudem magni<persName>Athanasii</persName>
+                  <author ref="http://syriaca.org/person/511">
+                    <persName xml:lang="en">Gregory Nazianzen</persName>
+                  </author>
+                  <title xml:lang="la">In laudem magni Athanasii
                   </title>
                 </msItem>
               </msItem>
               <msItem xml:id="b2" n="36" defective="true">
                 <locus from="236b" to="244">Foll. 236b-244</locus>
-                
-                <title>An appendix to the manuscript</title>
+                <title xml:lang="en">An appendix to the manuscript</title>
                 <note>As an appendix there are added the following pieces:</note>
                 <msItem xml:id="c32" n="37">
                   <locus from="236b" to="240">Foll. 236b-240</locus>
-                  
-                  <title type="supplied">Extracts from the writings of<persName>Severus, bishop of<supplied reason="illegible" resp="https://bl.syriac.uk/documentation/editors.xml#wwright">
-                        <placeName>Nisibis</placeName>
-                      </supplied>
-                    </persName>(?),<sic>ܢܨܝܒܢܝܐ</sic>ܐܦܝܣܩܘܐ</title>
+                  <title xml:lang="en">Extracts from the writings of Severus, bishop of <supplied reason="illegible" resp="https://bl.syriac.uk/documentation/editors.xml#wwright">Nisibis</supplied>(?),<sic>ܢܨܝܒܢܝܐ</sic>ܐܦܝܣܩܘܐ</title>
                   <msItem xml:id="d3" n="38">
                     <locus from="236b" to="239">Foll. 236b-239</locus>
                     
-                    <title type="supplied">A letter to<persName>Sergius</persName>, abbat of<placeName>
-                        <choice>
-                          <orig xml:lang="syr">ܫܓܪ</orig>
-                          <corr>Singār</corr>
-                        </choice>
-                      </placeName>on the first discourse of<persName ref="http://syriaca.org/person/511">Gregory</persName>
-                      <title type="supplied">
-                        <quote xml:lang="la">de Filio</quote>
-                      </title>
+                    <title xml:lang="en">A letter to 
+                      Sergius, abbat of 
+                      <foreign xml:lang="syr">ܫܓܪ</foreign>, Singār on the 
+                      first discourse of Gregory
+                      <quote xml:lang="la">de Filio</quote>
                     </title>
                     <rubric xml:lang="syr">ܩܫܝܫܐ ܘܪܝܫܕܝܪܐ ܕܟܢܘܫܝܐ ܩܕܝܫܐ ܕܫܓܪ ܡܪܝ ܣܪܓܝܣ<locus from="236b"/>
                     </rubric>
@@ -339,96 +387,96 @@
                   <msItem xml:id="d4" n="39">
                     <locus from="239a" to="240">Foll. 239a-240</locus>
                     
-                    <title type="supplied">On the discourse of<persName ref="http://syriaca.org/person/511">Gregory</persName>
-                      <title type="supplied">
-                        <quote xml:lang="la">de Spiritu Sancto</quote>
-                      </title>
+                    <title xml:lang="en">On the discourse of Gregory
+                      <quote xml:lang="la">de Spiritu Sancto</quote>
                     </title>
                   </msItem>
                 </msItem>
                 <msItem xml:id="c33" n="40" defective="true">
                   <locus from="240a" to="244">Foll. 240a-244</locus>
-                  <author ref="http://syriaca.org/person/511">Gregory Nazianzen</author>
-                  <title type="supplied">Extracts from the Poems of Gregory Nazianzen</title>
-                  <note>In the absence of any distinct statement in the manuscript itself, we cannot decide whether these poems are taken from the translation of<quote xml:lang="la">
+                  <author ref="http://syriaca.org/person/511">
+                    <persName xml:lang="en">Gregory Nazianzen</persName>
+                  </author>
+                  <title xml:lang="en">Extracts from the Poems of Gregory Nazianzen</title>
+                  <note>In the absence of any distinct statement in the manuscript itself, we cannot decide whether these poems are taken from the translation of <quote xml:lang="la">
                       <persName>Senorinus Chididatus</persName>
-                    </quote>of<placeName>Amid</placeName>(A.D.<date when="0665" calendar="Gregorian">665</date>), or that of<persName>Theodosius</persName>(A.D.<date from="0804" to="0805" calendar="Gregorian">804—5</date>), See<bibl>Assemani, Bibl. Or., t. iii., pars i., p. 23, note</bibl>.</note>
+                    </quote> of <placeName>Amid</placeName>(A.D.<date when="0665" calendar="Gregorian">665</date>), or that of <persName>Theodosius</persName>(A.D.<date from="0804" to="0805" calendar="Gregorian">804—5</date>), See <bibl>Assemani, Bibl. Or., t. iii., pars i., p. 23, note</bibl>.</note>
                   <msItem xml:id="d5" n="41">
                     <locus from="240a" to="242">Foll. 240a-242</locus>
-                    <author ref="http://syriaca.org/person/511">Gregory Nazianzen</author>
-                    <title type="supplied" xml:lang="la">In laudem Virginitatis</title>
+                    <author ref="http://syriaca.org/person/511">
+                      <persName xml:lang="en">Gregory Nazianzen</persName>
+                    </author>
+                    <title xml:lang="la">In laudem Virginitatis</title>
                     <rubric xml:lang="syr">ܡܐܡܪܐ ܕܥܠ ܒܬܘܠܘܬܐ ܕܝܠܗ ܕܩܕܝܫܐ ܓܪܝܓܘܪܝܘܣ ܡܢ ܟܬܒܐ ܕܡ̈ܘܫܚܬܐ<locus from="240a"/>
                     </rubric>
-                    <listBibl>
-                      <bibl>Opera, t. ii., p. 298, as far as v. 214</bibl>
-                      <bibl>Migne, t. xxxvii., col. 521</bibl>
-                    </listBibl>
+                    <note>Cf. <bibl>Opera, t. ii., p. 298, as far as v. 214</bibl>; <bibl>Migne, t. xxxvii., col. 521</bibl>
+                    </note>
                   </msItem>
                   <msItem xml:id="d6" n="42">
                     <locus from="242a" to="242a">Foll. 242a</locus>
-                    <author ref="http://syriaca.org/person/511">Gregory Nazianzen</author>
-                    <title type="supplied" xml:lang="la">De Patre</title>
+                    <author ref="http://syriaca.org/person/511">
+                      <persName xml:lang="en">Gregory Nazianzen</persName>
+                    </author>
+                    <title xml:lang="la">De Patre</title>
                     <rubric xml:lang="syr">ܡܛܠ ܪ̈ܝܫܢܘܬܐ<locus from="242a"/>
                     </rubric>
-                    <listBibl>
-                      <bibl>Opera, t. ii., p. 206</bibl>
-                      <bibl>Migne, t. xxxvii., col. 397</bibl>
-                    </listBibl>
+                    <note>Cf. <bibl>Opera, t. ii., p. 206</bibl>; <bibl>Migne, t. xxxvii., col. 397</bibl>
+                    </note>
                   </msItem>
                   <msItem xml:id="d7" n="43">
                     <locus from="242a" to="243">Foll. 242a-243</locus>
-                    <author ref="http://syriaca.org/person/511">Gregory Nazianzen</author>
-                    <title type="supplied" xml:lang="la">De Filio</title>
+                    <author ref="http://syriaca.org/person/511">
+                      <persName xml:lang="en">Gregory Nazianzen</persName>
+                    </author>
+                    <title xml:lang="la">De Filio</title>
                     <rubric xml:lang="syr">ܡܛܠ ܒܪܐ<locus from="242a"/>
                     </rubric>
-                    <listBibl>
-                      <bibl>Opera, t. ii., p. 208</bibl>
-                      <bibl>Migne, t. xxxvii., col. 401</bibl>
-                    </listBibl>
+                    <note>Cf. <bibl>Opera, t. ii., p. 208</bibl>; <bibl>Migne, t. xxxvii., col. 401</bibl>
+                    </note>
                   </msItem>
                   <msItem xml:id="d8" n="44">
                     <locus from="243a" to="243">Foll. 243a-243</locus>
-                    <author ref="http://syriaca.org/person/511">Gregory Nazianzen</author>
-                    <title type="supplied" xml:lang="la">Adversus Carnem</title>
+                    <author ref="http://syriaca.org/person/511">
+                      <persName xml:lang="en">Gregory Nazianzen</persName>
+                    </author>
+                    <title xml:lang="la">Adversus Carnem</title>
                     <rubric xml:lang="syr">ܕܥܠ ܦܓܪܐ<locus from="243a"/>
                     </rubric>
-                    <listBibl>
-                      <bibl>Opera, t. ii., p. 936</bibl>
-                      <bibl>Migne, t. xxxvii., col. 1378</bibl>
-                    </listBibl>
+                    <note>Cf. <bibl>Opera, t. ii., p. 936</bibl>; <bibl>Migne, t. xxxvii., col. 1378</bibl>
+                    </note>
                   </msItem>
                   <msItem xml:id="d9" n="45">
                     <locus from="243b" to="243b">Foll. 243b</locus>
-                    <author ref="http://syriaca.org/person/511">Gregory Nazianzen</author>
-                    <title type="supplied" xml:lang="la">Luctus</title>
+                    <author ref="http://syriaca.org/person/511">
+                      <persName xml:lang="en">Gregory Nazianzen</persName>
+                    </author>
+                    <title xml:lang="la">Luctus</title>
                     <rubric xml:lang="syr">ܐܚܪܢܐ<locus from="243b"/>
                     </rubric>
-                    <listBibl>
-                      <bibl>Opera, t. ii., p. 942</bibl>
-                      <bibl>Migne, t. xxxvii., col. 1384</bibl>
-                    </listBibl>
+                    <note>Cf. <bibl>Opera, t. ii., p. 942</bibl>; <bibl>Migne, t. xxxvii., col. 1384</bibl>
+                    </note>
                   </msItem>
                   <msItem xml:id="d10" n="46">
                     <locus from="243b" to="243b">Foll. 243b</locus>
-                    <author ref="http://syriaca.org/person/511">Gregory Nazianzen</author>
-                    <title type="supplied" xml:lang="la">Ad Animam suam</title>
+                    <author ref="http://syriaca.org/person/511">
+                      <persName xml:lang="en">Gregory Nazianzen</persName>
+                    </author>
+                    <title xml:lang="la">Ad Animam suam</title>
                     <rubric xml:lang="syr">ܐܚܪܢܐ<locus from="243b"/>
                     </rubric>
-                    <listBibl>
-                      <bibl>Opera, t. ii., p. 976</bibl>
-                      <bibl>Migne, t. xxxvii., col. 1427</bibl>
-                    </listBibl>
+                    <note>Cf. <bibl>Opera, t. ii., p. 976</bibl>; <bibl>Migne, t. xxxvii., col. 1427</bibl>
+                    </note>
                   </msItem>
                   <msItem xml:id="d11" n="47" defective="true">
                     <locus from="243b" to="244">Foll. 243b-244</locus>
-                    <author ref="http://syriaca.org/person/511">Gregory Nazianzen</author>
-                    <title type="supplied" xml:lang="la">Contra Diabolum in morbum</title>
+                    <author ref="http://syriaca.org/person/511">
+                      <persName xml:lang="en">Gregory Nazianzen</persName>
+                    </author>
+                    <title xml:lang="la">Contra Diabolum in morbum</title>
                     <rubric xml:lang="syr">ܡܛܠ ܟܘܪܗܢܐ ܐܡܝܢܐ ܕܦܓܪܗ<locus from="243b"/>
                     </rubric>
-                    <listBibl>
-                      <bibl>Opera, t. ii., p. 942, as far as v. 102</bibl>
-                      <bibl>Migne, t. xxxvii., col. 1385</bibl>
-                    </listBibl>
+                    <note>Cf. <bibl>Opera, t. ii., p. 942, as far as v. 102</bibl>; <bibl>Migne, t. xxxvii., col. 1385</bibl>
+                    </note>
                   </msItem>
                 </msItem>
               </msItem>
@@ -443,26 +491,21 @@
                 </support>
                 <extent>
                   <measure type="composition" unit="leaf" quantity="244">244 ff.</measure>
-                  <dimensions type="leaf" unit="in">
-                    <height>
-                      <measure type="height" quantity="10.5" unit="in">10 1/2</measure>
-                    </height>
-                    <width>
-                      <measure type="width" quantity="7.125" unit="in">7 1/8</measure>
-                    </width>
+                  <dimensions type="leaf" unit="inch">
+                    <height quantity="10.5">10 1/2</height>
+                    <width quantity="7.125">7 1/8</width>
                   </dimensions>
                 </extent>
-                <foliation/>
                 <collation>
                   <p>The quires, signed with letters, are 25 in number.</p>
                 </collation>
                 <condition>
                   <list>
                     <item>
-                      <p>A few of the leaves are much stained and defaced, especially foll.<locus from="63">63</locus>,<locus from="64">64</locus>and<locus from="244">244</locus>.</p>
+                      <p>A few of the leaves are much stained and defaced, especially foll.<locus from="63">63</locus>, <locus from="64">64</locus> and <locus from="244">244</locus>.</p>
                     </item>
                     <item>
-                      <p>Quires<foreign xml:lang="syr">ܝܓ</foreign>and<foreign xml:lang="syr">ܟܗ</foreign>are imperfect, a single leaf being wanting after foll.<locus from="119">119</locus>and<locus from="127">127</locus>, and one or two leaves at the end of the volume.</p>
+                      <p>Quires <foreign xml:lang="syr">ܝܓ</foreign> and <foreign xml:lang="syr">ܟܗ</foreign> are imperfect, a single leaf being wanting after foll.<locus from="119">119</locus> and <locus from="127">127</locus>, and one or two leaves at the end of the volume.</p>
                     </item>
                   </list>
                 </condition>
@@ -472,7 +515,7 @@
                   <locus from="1" to="236a"/>
                   <p>Each page is divided into two columns, of from 30 to 40 lines.</p>
                 </layout>
-                <layout columns="" writtenLines="">
+                <layout>
                   <locus from="236b" to="244b"/>
                   <p>Foll. 236b—244b is an exception.</p>
                 </layout>
@@ -480,38 +523,32 @@
             </objectDesc>
             <handDesc hands="4">
               <handNote xml:id="handNote1" scope="major" script="syr-Syre" medium="unknown">
-                <desc>The writing is a good, regular Estrangela of the <origDate notBefore="0800" notAfter="0900" calendar="Gregorian">ixth cent.</origDate>, passing, on fol. <locus from="240a" to="244b">240 a</locus>, into a neat, cursive character.</desc>
+                The writing is a good, regular Estrangela of the <date notBefore="0800" notAfter="0900" calendar="Gregorian">ixth cent.</date>, passing, on fol. <locus from="240a" to="244b">240 a</locus>, into a neat, cursive character.
               </handNote>
               <handNote xml:id="handNote2" scope="minor" script="grc" medium="unknown">
-                <desc>
-                  <ref target="#addition2">See additions</ref>
-                </desc>
-              </handNote>
+                <ref target="#addition2">See additions</ref>
+                </handNote>
               <handNote xml:id="handNote3" scope="minor" script="grc" medium="unknown">
-                <desc>
-                  <ref target="#addition2">See additions</ref>
-                </desc>
-              </handNote>
+                <ref target="#addition2">See additions</ref>
+                </handNote>
               <handNote xml:id="handNote4" scope="minor" script="syr" medium="unknown">
-                <desc>
-                  <ref target="#addition5">See additions.</ref>
-                </desc>
-              </handNote>
+                <ref target="#addition5">See additions.</ref>
+                </handNote>
             </handDesc>
-            <decoDesc/>
             <additions>
               <note type="proofreader-note">N.B., folio location may not be available for some items below.</note>
               <note type="proofreader-note">N.B., items below may have been listed out of folio order in Wright's catalogue.</note>
-              <p/>
               <list>
-                <item xml:id="addition1" n="1" syriacatags="ownership-inscription">
+                <item xml:id="addition1" n="1">
+                  <label>Ownership Inscription</label>
                   <locus from="1a"/>
-                  <p>A note on fol. 1a informs us that the book was presented to the<placeName>convent of S. Mary Deipara</placeName>by the deacon<persName>David</persName>during the time that<persName>Salībā</persName>was abbat:</p>
+                  <p>A note on fol. 1a informs us that the book was presented to the <placeName>convent of S. Mary Deipara</placeName> by the deacon <persName>David</persName> during the time that <persName>Salībā</persName> was abbat:</p>
                   <p>
                     <quote xml:lang="syr">ܫܟܢܗ ܕܝܢ ܠܟܬܒܐ ܗܢܐ ܕܘܝܕ ܡܫ ܕܝܪܝܐ ܡܚܣܐ ܠܗ ܐܠܗܐ ܘܠܥܢܝ̈ܕܘܗܝ ܒܝܘܡܝ ܨܠܝܒܐ ܪܝܫܕܝܪܐ ܠܕܝܪܐ ܕܒܝܬ ܝܠܕܬ ܐܠܗܐ ܕܣܘܪܝܝܐ ܕܒܡܕܒܪܐ ܟܠ ܕܓܢܒܠܗ ܐܘ ܡܙܒܢ ܠܗ ܡܚܪܡܐ ܢܗܘܐ ܡܢ ܐܠܗܐ.</quote>
                   </p>
                 </item>
-                <item xml:id="addition2" n="2" syriacatags="ownership-inscription">
+                <item xml:id="addition2" n="2">
+                  <label>Ownership Inscription</label>
                   <locus from="1a" to="1b"/>
                   <p>On the same page there are written, in large Greek characters, the words:</p>
                   <p>
@@ -521,20 +558,16 @@
                   <p>
                     <quote xml:lang="grc">ΤΙΜΟΘΕΥΟⲤ: ΤΟ:  ΑΡΧΙΜΧΑΤ:</quote>
                   </p>
-                  <p>which are intended for<foreign xml:lang="grc">
-                      <persName>Τιμόθεος</persName>ἐπίσκοπος τοῦ</foreign>
-                    <placeName xml:lang="syr">ܐܪܫܡܫܛ</placeName>and<foreign xml:lang="grc">
-                      <persName>Τιμόθεος</persName>τοῦ</foreign>
-                    <choice>
-                      <corr>
-                        <placeName>Arsamosata</placeName>
-                      </corr>
-                      <orig>
-                        <placeName xml:lang="grc">'Αρσαμόσατα</placeName>
-                      </orig>
-                    </choice>.</p>
+                  <p>which are intended for <foreign xml:lang="grc">
+                    <persName>Τιμόθεος</persName>ἐπίσκοπος τοῦ</foreign>
+                    <placeName xml:lang="syr">ܐܪܫܡܫܛ</placeName> and 
+                    <foreign xml:lang="grc">
+                      <persName>Τιμόθεος</persName>τοῦ <placeName xml:lang="grc">'Αρσαμόσατα</placeName>
+                    </foreign>, 
+                    <placeName>Arsamosata</placeName>.
+                  </p>
                 </item>
-                <item xml:id="addition3" n="3" syriacatags="colophon-incertus">
+                <item xml:id="addition3" n="3">
                   <label>Colophon</label>
                   <locus from="236a"/>
                   <p>Under the final rubric we read:</p>
@@ -542,62 +575,51 @@
                     <quote xml:lang="syr">ܦܚܡ ܟܬܒܐ ܗܢܐ ܬܐܘܡܐ ܡܢ ܥܘܡܪܐ ܩܕܝܫܐ ܕܝܚ̈ܝܕܝܐ ܕܩܠܬ , ܟܠ ܕܩ̇ܪܐ ܢܨܠܐ ܥܠܘܗܝ. ܐܠܗܐ ܚܘܢܝܗܝ</quote>
                   </p>
                   <p>
-                    <quote>
-                      <persName>Thomas</persName>, from the holy<placeName>convent of the monks of Kellat</placeName>, collated this book. Let every one who reads, pray for him: 'May God have mercy on him.'</quote>See<bibl>Assemani, Bibl. Orient., t. ii.,p. 231</bibl>.</p>
+                    <quote xml:lang="en">
+                      <persName>Thomas</persName>, from the holy <placeName>convent of the monks of Kellat</placeName>, collated this book. Let every one who reads, pray for him: 'May God have mercy on him.'</quote> See <bibl>Assemani, Bibl. Orient., t. ii.,p. 231</bibl>.</p>
                 </item>
                 <item xml:id="addition4" n="4">
-                  <p>The margins of this manuscript are covered with notes, and words written in Greek characters, some of which have been added by later hands (See, for example, foll.<locus from="12a" to="12b">12a and b</locus>,<locus from="14a">14a</locus>,<locus from="15b">15b</locus>,<locus from="41a">41a</locus>, etc.).<title type="supplied">Extracts from the writings of<persName ref="http://syriaca.org/person/51">Severus of Antioch</persName>
-                    </title>are given on foll.<locus from="37a">37a</locus>,<locus from="71a">71a</locus>
+                  <p>The margins of this manuscript are covered with notes, and words written in Greek characters, some of which have been added by later hands (See, for example, foll.<locus from="12a" to="12b">12a and b</locus>, <locus from="14a">14a</locus>, <locus from="15b">15b</locus>, <locus from="41a">41a</locus>, etc.).<title>Extracts from the writings of Severus of Antioch
+                    </title> are given on foll.<locus from="37a">37a</locus>, <locus from="71a">71a</locus>
                     <supplied reason="unknown" resp="https://bl.syriac.uk/documentation/editors.xml#wwright">
-                      <title>letter to<placeName>Caesaria</placeName>
+                      <title>letter to Caesaria
                       </title>
-                    </supplied>,<locus from="73a">73a</locus>,<locus from="152b">152b</locus>
+                    </supplied>, <locus from="73a">73a</locus>, <locus from="152b">152b</locus>
                     <supplied reason="unknown" resp="https://bl.syriac.uk/documentation/editors.xml#wwright">
                       <title>
                         <foreign xml:lang="syr">ܡܛܠ ܡܘܙܓܐ</foreign>
                       </title>
-                    </supplied>and<locus from="174b">174b</locus>
+                    </supplied> and <locus from="174b">174b</locus>
                     <supplied reason="unknown" resp="https://bl.syriac.uk/documentation/editors.xml#wwright">
-                      <title>letter to<persName>Isidorus Comes</persName>
+                      <title>letter to Isidorus Comes
                       </title>
                     </supplied>.
-                      This last has the name of the patriarch<persName ref="http://syriaca.org/person/109">
-                      <choice>
-                        <corr>Athanasius II.</corr>
-                        <orig xml:lang="syr">ܐܬܢܣܝܘܣ</orig>
-                      </choice>
-                    </persName>attached to it as the annotator.</p>
+                    This last has the name of the patriarch <persName ref="http://syriaca.org/person/109">Athanasius II</persName> (<persName ref="http://syriaca.org/person/109" xml:lang="syr">ܐܬܢܣܝܘܣ</persName>) attached to it as the annotator.</p>
                 </item>
                 <item xml:id="addition5" n="5">
                   <locus from="2a"/>
-                  <p>On fol. 2a there is the following note, in a more modern hand, regarding the chronological arrangement of the discourses of<persName ref="http://syriaca.org/person/511">Gregory Nazianzen</persName>:</p>
+                  <p>On fol. 2a there is the following note, in a more modern hand, regarding the chronological arrangement of the discourses of <persName ref="http://syriaca.org/person/511">Gregory Nazianzen</persName>:</p>
                   <p>
                     <quote xml:lang="syr">ܥܘܗܕܢܐ ܕܡܐܡܪ̈ܐ ܕܩܕܝܫܐ ܬܐܘܠܘܓܘܣ. ܕܐܝܠܝܢ ܐܡ܏ܝܪ ܠܗ ܩܕܡ ܕܢܗܘܐ ܩܫܝܫܐ. ܘܐܝܠܝܢ ܟܕ ܐܝܬܘܗܝ ܩܫܝܫܐ. ܘܐܝܠܝܢ ܬܘܒ ܡܢ ܒܬܪ ܕܗ̣ܘܐ ܐܦܝܣ܏ܩ. ܘܐܝܠܝܢ ܟܕ ܣܠܩ ܠܩܘܣ܏ܛܝ. ܘܐܝܠܝܢ ܬܘܒ ܡܢ ܒܬܪ ܕܦ̣ܢܐ ܡܢ ܩܘܣ܏ܛܝ ܘܐܬ݂ܐ ܠܡܕܝܢܬܗ . . . ܡܐܡܪ̈ܐ ܬܪ̈ܝܢ ܗܠܝܢ ܡ̈ܒܙܚܢܐ ܕܠܘܩܒܠ ܝܘܠܝܢܘܣ ܩܕܡ ܕܢܗܘܐ ܩܫܝܫܐ . . ܘܗ̇ܘ ܩܕܡܝܐ ܙܥܘܪܐ ܕܥܠ ܦܨܚܐ̣. ܘܗ̇ܘ ܕܠܘܬ ܗ̇ܢܘܢ ܕܩ̣ܪܘ ܒܫܘܪܝܐ. ܘܗ̇ܘ ܕܥܠ ܡܦܩ ܒܪܘܚܐ ܕܡܛܠ ܟܗܢܘܬܐ. ܘܗ̇ܘ ܕܥܠ ܩܒܘܪܬܐ ܕܩܣܪܝܘܣ ܐܚܘܗܝ. ܘܗ̇ܘ ܕܥܠ ܡܚܘܬܐ ܕܒܪܕܐ. ܘܗ̇ܘ ܕܥܠ ܒܐܣܝܠܝܘܣ ܘܥܠ ܐܒܘܗܝ ܟܕ ܥܬ̣ܝܕܝܢ ܗܘܘ ܕܢܣܝ̣ܡܘܢ ܥܠܘܗܝ ܐ̣ܝܕܐ ܕܣܐܣܝܡܘܢ. ܗܠܝܢ ܫܬܐ ܟܕ ܐܝܬܘܗܝ ܩܫܝܫܐ. ܗ̇ܘ ܕܝܢ ܕܥܠܝܗܘܢ ܟܕ ܥܠܝܗܘܢ. ܒܬܪ ܕܣܡ̣ܘ ܥܠܘܗܝ ܐܝ̣ܕܐ: ܘܗ̇ܘ ܕܥܠ ܩܕܝܫܐ ܓܪܝܓܘܪܝܘܣ ܕܢܘܣܐ ܐܚܘܗܝ ܕܒܐܣܝܠܝܘܣ ܕܐܬ݂ܐ ܒܬܪ ܚܕ ܝܘܡܐ ܕܣܝ̇ܡ ܐܝ̣ܕܐ: ܘܗ̇ܘ ܕܥܠ ܐܒܘܗܝ ܟܕ ܐܦ̣ܣ ܠܗ ܕܢܐܨܦ ܘܕܥܕܬܐ ܕܢܐܙܝܢܙܘ: ܘܗ̇ܠܝܢ ܬܪ̈ܝܢ ܡ̈ܫܝܢܢܐ: ܘܗ̇ܘ ܕܥܠ ܡ̈ܠܐ ܘܥܠ ܝܘܠܝܢܐ ܐܟܣܝܣܘܛܝܣ: ܘܗ̇ܘ ܕܥܠ ܪܝܫܢܐ ܕܪܓܝܙ ܗܘܐ: ܘܗ̇ܘ ܕܥܠ ܚܕܒܫܒܐ ܚ̣ܕܬܐ: ܘܗ̇ܘ ܕܥܠ ܥܘܦܝܐ ܕܓܘܪܓܢܝܐ ܚܬܗ: ܘܗ̇ܘ ܕܥܠ ܥܘܦܝܐ ܕܐܒܘܗܝ: ܗܠܝܢ ܥܣܪܐ ܒܬܪ ܕܗ̣ܘܐ ܐܦܝ܏ܣܩ ܐܡ̣ܝܪܝܢ ܠܗ. ܟܕ ܐܝܬܘܗܝ ܒܡܕܝܢܬܗ. ܘܟܢ. ܣܠ̣ܩ ܠܩܘܣ܏ܛܝ. ܗ̇ܘ ܕܝܢ ܕܩܕܡܝܐ ܡܡܠܠܐ ܕܠܘܬ ܐܘܢ̈ܘܡܝܢܘ: ܘܗ̇ܘ ܕܬܪ̈ܝܢ ܕܥܠ ܒܪܐ: ܘܗ̇ܘ ܕܡܛܠ ܪܘܚܐ ܩܕܝܫܐ: ܘܗ̇ܘ ܕܥܠ ܒܝܬ ܝ̣ܠܕܐ: ܘܗ̇ܘ ܕܒܝܬ ܕܢܚܐ: ܘܗ̇ܘ ܕܥܠ ܦܢܛܘܩܘܣܛܝ ܘܡܛܠ ܪܘܚܐ ܩܕܝܫܐ: ܘܗ̇ܘ ܡܫ̇ܝܢܢܐ ܕܬܠܬܐ: ܘܗ̇ܘ ܕܠܘܬ ܐܪ̈ܝܢܘ ܘܥܠ ܢܦܫܗ: ܘܗ̇ܘ ܕܥܠ ܡ̈ܩܒܝܐ: ܘܗ̇ܘ ܕܥܠ ܩܘܦܪܝܢܘܣ: ܘܗ̇ܘ ܕܥܠ ܗܪܘܢ ܦܝܠܠܘܣܦܐ: ܘܗ̇ܘ ܕܥܠ ܛܘܦܐ: ܘܗ̇ܘ ܕܥܠ ܐܬܐܢܐܣܝܘܣ: ܘܗ̇ܘ ܕܥܠ ܫܦܝܪܘܬ ܛܟܣܐ ܕܒܡܡܠܠܐ: ܘܗܠܝܢ ܬܪ̈ܝܢ ܕܬܐܘܠܘܓܝܐ: ܘܗ̇ܘ ܕܥܠ ܢܦܫܗ ܟܕ ܐܬ݂ܐ ܡܢ ܐܓܘܪܣܐ. ܒܬܪ ܗܠܝܢ ܕܡܟܣܝܡܐ: ܘܗ̇ܘ ܕܣܘܢܛܝܩܛܝܪܝܘܢ: ܘܗ̇ܘ ܕܡܛܠ ܪܚܡܬ ܡܣܟܢܘܬܐ: ܘܗ̇ܘ ܕܥܠ ܡܥܡܘܕܝܬܐ: ܘܗ̇ܘ ܕܬܪ̈ܝܢ ܪܒܐ ܕܥܠ ܦ̣ܨܚܐ: ܘܗ̇ܘ ܩܕܡܝܐ ܕܥܠ ܒܪܐ: ܘܗ̇ܘ ܕܥܠ ܢܦܫܗ ܘܠܘܬ ܗ̇ܢܘܢ ܕܐܡ̇ܪܝܢ ܕܪܐ̇ܓ ܗܘܐ ܠܟܘܪܣܝܐ ܕܩܘܣ܏ܛܝ. ܗܠܝܢ ܥܣܪܝܢ ܘܬܠܬܐ ܒܩܘܣ܏ܛܢܛܝ ܐܡܝܪܝܢ ܠܗ . . . ܗ̇ܘ ܕܝܢ ܕܥܠ ܩܒܘܪܬܗ ܕܒܐܣܝܠܝܘܣ: ܘܗ̇ܘ ܕܡܪܬܝܢܘܬܐ ܕܠܘܬ ܒܬܘܠܬܐ: ܘܗܠܝܢ ܬܪ̈ܬܝܢ ܐܓܪ̈ܬܐ ܕܠܘܬ ܩܠܝܕܘܢܝܘܣ: ܟܕ ܦܢܐ ܠܡܕܝܢܬܗ ܡܢ ܩܘܣ܏ܛܝ̣ ܐܡ̣ܝܪܝܢ ܠܗ . . . ܗܠܝܢ ܕܝܢ ܬܪ̈ܝܢ ܐܚܪ̈ܢܐ: ܐܡ̇ܪ ܐܢܐ ܕܝܢ ܗ̇ܘ ܕܥܠ ܟܝܪܘܛܘܢܝܐ ܕܖܐܕܘܪܘܢ (sic) ܘܗ̇ܘ ܕܥܠ ܡܠܬܐ ܕܐܘܢܓܠܝܘܢ: ܦܘܫܟܐ ܐܝܬ ܡܛܠܬܗܘܢ. ܐܝܟ ܗ̇ܘ ܕܠܘ ܕܝܠܗ ܐܢܘܢ. ܐܢܕܝܢ ܘܠܗ ܐܡܝܪܝܢ. ܡܣܬܒ̇ܪܐ ܕܗ̇ܘ ܕܥܠ ܕܐܘܕܘܪܘܢ (sic) ܒܡܕܝܢܬܗ ܐܡ̣ܝܪ ܠܗ. ܗ̇ܘ ܕܝܢ ܕܥܠ ܡܠܬܐ ܕܐܘܢܓܠܝܘܢ ܒܩܘܣܛܢܛܝܢܘ. ܕܗ̇ܘܝܢ ܟܠܗܘܢ ܡܐܡܪ̈ܐ ܐܪܒܥܝܢ ܘܫܒܥܐ ܘܬܪ̈ܬܝܢ ܐܓܪ̈ܬܐ ܣܛܪ ܡܢ ܬܫ̈ܥܝܬܐ.</quote>
                   </p>
                 </item>
               </list>
             </additions>
-            <bindingDesc/>
-            <sealDesc/>
-            <accMat/>
-          </physDesc>
+            </physDesc>
           <history>
             <origin>
-              <origDate notBefore="0800" notAfter="0900" calendar="Gregorian">ixth cent.</origDate>
-              <origPlace/>
+              <origDate calendar="Gregorian" notBefore="0800" notAfter="0900">9th century</origDate>
+              
             </origin>
-            <provenance/>
-            <acquisition/>
-          </history>
+            </history>
           <additional>
             <adminInfo>
               <recordHist>
-                <source>Manuscript description based on<bibl>
+                <source>Manuscript description based on <bibl>
                     <ref target="#Wrightpart">Wright's Catalogue</ref>
                   </bibl>. abbreviated by the Syriaca.org editors.</source>
               </recordHist>
-              <note/>
-            </adminInfo>
+              </adminInfo>
             <listBibl>
               <bibl xml:id="Wrightpart">
                 <author>William Wright</author>
@@ -606,7 +628,7 @@
                 <date>1870</date>
                 <ptr target="http://syriaca.org/bibl/8"/>
                 <citedRange unit="entry">DLVII</citedRange>
-                <citedRange unit="pp">2:431-434</citedRange>
+                <citedRange unit="p">2:431-434</citedRange>
               <ref type="internet-archive-pdf" target="https://archive.org/details/catalogueofsyria02brituoft/page/431"/>
               </bibl>
             </listBibl>
@@ -630,7 +652,6 @@
       <classDecl>
         <taxonomy xml:id="Wright-BL-Taxonomy">
           <bibl>
-            
             <ptr target="http://syriaca.org/documentation/Wright-BL-Taxonomy.html"/>
           </bibl>
           <category xml:id="biblical-manuscripts">
@@ -747,22 +768,30 @@
     </encodingDesc>
     <profileDesc>
       <langUsage>
-        <language ident="syr">Unvocalized Syriac of any variety or period</language>
-        <language ident="syr-Syre">Syriac in Estrangela</language>
-        <language ident="syr-Syrj">Vocalized West Syriac</language>
-        <language ident="syr-Syrn">Vocalized East Syriac</language>
-        <language ident="syr-x-syrm">Melkite Syriac</language>
-        <language ident="qhy-x-cpas">Palestinian Syriac</language>
-        <language ident="ar-Syrc">Unvocalized or Undetermined Arabic Garshuni</language>
-        <language ident="ar-Syrj">Arabic Garshuni in Vocalized West Syriac Script</language>
-        <language ident="ar-Syrn">Arabic Garshuni in Vocalized East Syriac Script</language>
-        <language ident="en">English</language>
         <language ident="ar">Arabic</language>
-        <language ident="fr">French</language>
-        <language ident="de">German</language>
-        <language ident="la">Latin</language>
-        <language ident="grc">Ancient Greek</language>
+        <language ident="ar-Syrc">Arabic Garshuni</language>
+        <language ident="ar-Syrn">Arabic Garshuni in East Syriac script</language>
         <language ident="cop">Coptic</language>
+        <language ident="de">German</language>
+        <language ident="en">English</language>
+        <language ident="fr">French</language>
+        <language ident="grc">Ancient Greek</language>
+        <language ident="he">Hebrew</language>
+        <language ident="hy">Armenian</language>
+        <language ident="it">Italian</language>
+        <language ident="la">Latin</language>
+        <language ident="syr">Syriac</language>
+        <language ident="syr-Arab">Syriac Garshuni in Arabic script</language>
+        <language ident="syr-Syre">Syriac in Estrangela script</language>
+        <language ident="syr-Syrj">Syriac in West Syriac script</language>
+        <language ident="syr-Syrn">Syriac in East Syriac script</language>
+        <language ident="syr-x-syrm">Syriac in Melkite Syriac script</language>
+        <language ident="tr">Turkish</language>
+        <language ident="tr-Syrc">Turkish Garshuni</language>
+        <language ident="qhy-x-cpas">Christian Palestinian Aramaic script</language>
+        <language ident="xcl">Classical Armenian</language>
+        <language ident="und">Undetermined</language>
+        <language ident="mul">Multiple languages</language>
       </langUsage>
       <textClass>
         <keywords scheme="#Wright-BL-Taxonomy">
@@ -779,17 +808,15 @@
       <change who="https://bl.syriac.uk/documentation/editors.xml#jarnwine" when="2023-01-13-06:00">ADDED: supplied and corrected Syriaca.org URIs for authors</change>
       <change who="https://bl.syriac.uk/documentation/editors.xml#jarnwine" when="2014-03-20">Created: file</change>
       <change who="https://bl.syriac.uk/documentation/editors.xml#jarnwine" when="2014-04-08">Cleaned up mislabeled colophon.</change>
-      <change type="planned" subtype="missing">Missing @sic markup in<ref target="#addition5">addition 5</ref>.</change>
-      <change type="planned" subtype="uri">Needs Addition of work URIs.</change>
+      <change type="planned" subtype="missing" who="https://bl.syriac.uk/documentation/editors.xml#smbl-general-editors">Missing @sic markup in <ref target="#addition5">addition 5</ref>.</change>
+      <change type="planned" subtype="uri" who="https://bl.syriac.uk/documentation/editors.xml#smbl-general-editors">Needs Addition of work URIs.</change>
       <change who="https://bl.syriac.uk/documentation/editors.xml#pgmiller" when="2016-07-06">Changed: Files moved to srophe-app-data/data/manuscripts/tei repository.</change>
     </revisionDesc>
   </teiHeader>
-  <facsimile>
-    <graphic/>
-  </facsimile>
   <text>
     <body>
       <p/>
+      <!--Body paragraph provided for document validation.-->
     </body>
   </text>
 </TEI>

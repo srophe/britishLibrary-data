@@ -1,4 +1,7 @@
-<?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/srophe-app/documentation/enrich-syriaca.rnc" type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/css" href="SRPEnrichCSS.css"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+<?xml-model href="https://raw.githubusercontent.com/srophe/britishLibrary/main/documentation/schema/out/Syriacamsdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/srophe/britishLibrary/main/documentation/schema/out/Syriacamsdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet href="https://raw.githubusercontent.com/srophe/wright-catalogue/master/parameters/tei.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="manuscript_782">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -55,11 +58,9 @@
         <edition n="1.0"/>
       </editionStmt>
       <publicationStmt>
-        <pubPlace/>
         <authority>Syriaca.org: The Syriac Reference Portal</authority>
         <idno type="URI">https://bl.syriac.uk/ms/782/tei</idno>
         <availability>
-          <p/>
           <licence target="http://creativecommons.org/licenses/by/3.0/">
             <p>Distributed under a Creative Commons Attribution 3.0 Unported License</p>
           </licence>
@@ -67,7 +68,7 @@
         <date calendar="Gregorian">2023-04-21-05:00</date>
       </publicationStmt>
       <sourceDesc>
-        <msDesc xml:id="manuscript-782" xml:lang="en">
+        <msDesc xml:id="manuscript-782">
           <msIdentifier>
             <country>United Kingdom</country>
             <settlement>London</settlement>
@@ -81,7 +82,7 @@
               <idno type="BL-Shelfmark-display">London, BL, Add. 17,153</idno>
             </altIdentifier>
             <altIdentifier>
-              <idno type="BL-Shelmark-simplified">BL Add MS 17153</idno>
+              <idno type="BL-Shelfmark-simplified">BL Add MS 17153</idno>
             </altIdentifier>
             <altIdentifier>
               <collection>William Wright, Catalogue of the Syriac Manuscripts in the British Museum Acquired since the Year 1838</collection>
@@ -95,19 +96,17 @@
           <head>
             <note type="contents-note">This manuscript contains: Philoxenus of Mabūg. The discourses ofPhiloxenusofMabūgon Christian life and character. In total, including sub-sections, this manuscript contains 10 items.</note>
             <listRelation type="Wright-BL-Taxonomy">
-              <relation name="dcterms:type" ref="http://purl.org/dc/terms/type" active="https://bl.syriac.uk/ms/782" passive="#theology">
-                <desc/>
-              </relation>
+              <relation name="dcterms:type" ref="http://purl.org/dc/terms/type" active="https://bl.syriac.uk/ms/782" passive="#theology"/>
             </listRelation>
           </head>
           <msContents>
-            <summary/>
             <textLang mainLang="syr">Syriac</textLang>
             <msItem xml:id="a1" n="1" defective="true">
               <locus from="1" to="99">foll. 1-99</locus>
-              <author ref="http://syriaca.org/person/44">Philoxenus of<placeName ref="http://syriaca.org/place/122">Mabūg</placeName>
+              <author ref="http://syriaca.org/person/44">
+                <persName xml:lang="en" type="supplied">Philoxenus of Mabūg</persName>
               </author>
-              <title type="supplied">The discourses of<persName ref="http://syriaca.org/person/44">Philoxenus</persName>of<placeName ref="http://syriaca.org/place/122">Mabūg</placeName>on Christian life and character</title>
+              <title xml:lang="en">The discourses of Philoxenus of Mabūg on Christian life and character</title>
               <rubric xml:lang="syr">
                 <sic>ܫܪ̈ܒܐ ܕܕܘܒܪ̈ܐ ܕܥܠ ܡܪܬܝܢܘܬܐ̣. ܕܐܡܝܪ̈ܝܢ ܠܩܕܝܫܐ ܡܪܝ ܦܝܠܟܣܢܘܣ. ܐܦܝܣܩܘܦܐ ܕܡܒܘܓ. ܕܡ̇ܘܕܥ ܒܗܘܢ܆ ܥܠ ܟܠܗ ܛܟܣܐ ܕܬܘܠܡܕܐ. ܕܐܝܟܢ ܐܢܫ ܢܫ̇ܪܐ ܒܬܠܡܝܕܘܬܗ ܕܡܫܝܚܐ̇. ܘܒܐܝܠܝܢ ܢܡ̈ܘܣܐ ܘܕܘܒܪ̈ܐ ܢܕܪܐ̇. (sic) ܥܕܡܐ ܕܢܬܡ̇ܛܐ ܠܚܘܒܐ ܪܘܚܢܐ. ܕܡܢܗ ܡ̇ܬܝܠܕܐ ܓܡܝܪܘܬܐ. ܕܒܗ̇ ܗ̇ܘܝܢ ܚܢܢ ܒ̈ܢܝ ܕܡܘܬܗ ܕܡܫܝܚܐ. ܐܝܟ ܕܐܡ̣ܪ ܦܘܠܘܣ</sic>
                 <locus from="1a" to="1a"/>
@@ -118,48 +117,66 @@
               <note>Wright indicates that Discourses 10—13 are wanting.</note>
               <msItem xml:id="b1" n="2" defective="true">
                 <locus from="1a" to="9">foll. 1a-9</locus>
-                <author ref="http://syriaca.org/person/44">Philoxenos of Mabbug</author>
-                <title type="supplied">Discourse 1</title>
+                <author ref="http://syriaca.org/person/44">
+                  <persName xml:lang="en">Philoxenos of Mabbug</persName>
+                </author>
+                <title xml:lang="en">Discourse 1</title>
               </msItem>
               <msItem xml:id="b2" n="3" defective="true">
                 <locus from="9a" to="18">foll. 9a-18</locus>
-                <author ref="http://syriaca.org/person/44">Philoxenos of Mabbug</author>
-                <title type="supplied">Discourse 2</title>
+                <author ref="http://syriaca.org/person/44">
+                  <persName xml:lang="en">Philoxenos of Mabbug</persName>
+                </author>
+                <title xml:lang="en">Discourse 2</title>
               </msItem>
               <msItem xml:id="b3" n="4" defective="false">
                 <locus from="18a" to="25">foll. 18a-25</locus>
-                <author ref="http://syriaca.org/person/44">Philoxenos of Mabbug</author>
-                <title type="supplied">Discourse 3</title>
+                <author ref="http://syriaca.org/person/44">
+                  <persName xml:lang="en">Philoxenos of Mabbug</persName>
+                </author>
+                <title xml:lang="en">Discourse 3</title>
               </msItem>
               <msItem xml:id="b4" n="5" defective="true">
                 <locus from="25b" to="41">foll. 25b-41</locus>
-                <author ref="http://syriaca.org/person/44">Philoxenos of Mabbug</author>
-                <title type="supplied">Discourse 4</title>
+                <author ref="http://syriaca.org/person/44">
+                  <persName xml:lang="en">Philoxenos of Mabbug</persName>
+                </author>
+                <title xml:lang="en">Discourse 4</title>
               </msItem>
               <msItem xml:id="b5" n="6" defective="true">
                 <locus from="41b" to="56">foll. 41b-56</locus>
-                <author ref="http://syriaca.org/person/44">Philoxenos of Mabbug</author>
-                <title type="supplied">Discourse 5</title>
+                <author ref="http://syriaca.org/person/44">
+                  <persName xml:lang="en">Philoxenos of Mabbug</persName>
+                </author>
+                <title xml:lang="en">Discourse 5</title>
               </msItem>
               <msItem xml:id="b6" n="7" defective="false">
                 <locus from="56a" to="67">foll. 56a-67</locus>
-                <author ref="http://syriaca.org/person/44">Philoxenos of Mabbug</author>
-                <title type="supplied">Discourse 6</title>
+                <author ref="http://syriaca.org/person/44">
+                  <persName xml:lang="en">Philoxenos of Mabbug</persName>
+                </author>
+                <title xml:lang="en">Discourse 6</title>
               </msItem>
               <msItem xml:id="b7" n="8" defective="false">
                 <locus from="67b" to="78">foll. 67b-78</locus>
-                <author ref="http://syriaca.org/person/44">Philoxenos of Mabbug</author>
-                <title type="supplied">Discourse 7</title>
+                <author ref="http://syriaca.org/person/44">
+                  <persName xml:lang="en">Philoxenos of Mabbug</persName>
+                </author>
+                <title xml:lang="en">Discourse 7</title>
               </msItem>
               <msItem xml:id="b8" n="9" defective="false">
                 <locus from="78a" to="89">foll. 78a-89</locus>
-                <author ref="http://syriaca.org/person/44">Philoxenos of Mabbug</author>
-                <title type="supplied">Discourse 8</title>
+                <author ref="http://syriaca.org/person/44">
+                  <persName xml:lang="en">Philoxenos of Mabbug</persName>
+                </author>
+                <title xml:lang="en">Discourse 8</title>
               </msItem>
               <msItem xml:id="b9" n="10" defective="true">
                 <locus from="89a" to="99">foll. 89a-99</locus>
-                <author ref="http://syriaca.org/person/44">Philoxenos of Mabbug</author>
-                <title type="supplied">Discourse 9</title>
+                <author ref="http://syriaca.org/person/44">
+                  <persName xml:lang="en">Philoxenos of Mabbug</persName>
+                </author>
+                <title xml:lang="en">Discourse 9</title>
               </msItem>
             </msItem>
           </msContents>
@@ -172,23 +189,18 @@
                 </support>
                 <extent>
                   <measure type="composition" unit="leaf" quantity="99">99 ff.</measure>
-                  <dimensions type="leaf" unit="in">
-                    <height>
-                      <measure type="height" quantity="10.25" unit="in">10 1/4</measure>
-                    </height>
-                    <width>
-                      <measure type="width" quantity="6.625" unit="in">6 5/8</measure>
-                    </width>
+                  <dimensions type="leaf" unit="inch">
+                    <height quantity="10.25">10 1/4</height>
+                    <width quantity="6.625">6 5/8</width>
                   </dimensions>
                 </extent>
-                <foliation type="ancient"/>
                 <collation>
                   <p>The quires, signed with letters, are now 10 in number.</p>
                 </collation>
                 <condition>
                   <list>
                     <item>
-                      <p>Some of the leaves are much stained and defaced, especially foll.<locus from="1" to="10">1—10</locus>and<locus from="40" to="49">40—49</locus>.</p>
+                      <p>Some of the leaves are much stained and defaced, especially foll.<locus from="1" to="10">1—10</locus> and <locus from="40" to="49">40—49</locus>.</p>
                     </item>
                     <item>
                       <p>Several of the quires have been lost at the end.</p>
@@ -204,46 +216,42 @@
             </objectDesc>
             <handDesc hands="3">
               <handNote xml:id="handNote1" scope="major" script="syr-Syre" medium="unknown">
-                <desc>This manuscript is written in a fine, regular Estrangělā of the <origDate notBefore="0500" notAfter="0600" calendar="Gregorian">vith cent</origDate>.</desc>
+                This manuscript is written in a fine, regular Estrangělā of the <date notBefore="0500" notAfter="0600" calendar="Gregorian">vith cent</date>.
               </handNote>
               <handNote xml:id="handNote2" scope="minor" script="syr-Syre" medium="unknown">
-                <desc>
-                  <ref target="#addition1">See additions.</ref>
-                </desc>
-              </handNote>
+                <ref target="#addition1">See additions.</ref>
+                </handNote>
               <handNote xml:id="handNote3" scope="minor" script="syr-Syre" medium="unknown">
-                <desc>
-                  <ref target="#addition2">See additions.</ref>
-                </desc>
-              </handNote>
+                <ref target="#addition2">See additions.</ref>
+                </handNote>
             </handDesc>
             <additions>
               <note type="proofreader-note">N.B., folio location may not be available for some items below.</note>
               <list>
                 <item xml:id="addition1" n="1">
-                  <p>Foll.<locus from="1" to="9">1-9</locus>and<locus from="40" to="49">40-49</locus>have been written by a different hand, and may be of the<date notBefore="0800" notAfter="0900" calendar="Gregorian">ixth cent.</date>Fol.<locus from="10a">10a</locus>has been retouched by the same hand.</p>
+                  <p>Foll.<locus from="1" to="9">1-9</locus> and <locus from="40" to="49">40-49</locus> have been written by a different hand, and may be of the <date notBefore="0800" notAfter="0900" calendar="Gregorian">ixth cent.</date> Fol.<locus from="10a">10a</locus> has been retouched by the same hand.</p>
                 </item>
                 <item xml:id="addition2" n="2">
                   <locus from="88b" to="88b"/>
-                  <p>On<locus from="88b" to="88b">fol. 88b</locus>a reader called<persName>Bar-saumā</persName>has written his name,<foreign xml:lang="syr">ܒܪܨܘܡܐ</foreign>.</p>
+                  <p>On <locus from="88b" to="88b">fol. 88b</locus> a reader called <persName>Bar-saumā</persName> has written his name,<foreign xml:lang="syr">ܒܪܨܘܡܐ</foreign>.</p>
                 </item>
               </list>
             </additions>
           </physDesc>
           <history>
             <origin>
-              <origDate notBefore="0500" notAfter="0600" calendar="Gregorian">vith cent</origDate>
+              <origDate calendar="Gregorian" notBefore="0500" notAfter="0600">6th century</origDate>
+              
             </origin>
           </history>
           <additional>
             <adminInfo>
               <recordHist>
-                <source>Manuscript description based on<bibl>
+                <source>Manuscript description based on <bibl>
                     <ref target="#Wrightpart">Wright's Catalogue</ref>
                   </bibl>. abbreviated by the Syriaca.org editors.</source>
               </recordHist>
-              <note/>
-            </adminInfo>
+              </adminInfo>
             <listBibl>
               <bibl xml:id="Wrightpart">
                 <author>William Wright</author>
@@ -252,7 +260,7 @@
                 <date>1870</date>
                 <ptr target="http://syriaca.org/bibl/8"/>
                 <citedRange unit="entry">DCLXXIX</citedRange>
-                <citedRange unit="pp">2:531</citedRange>
+                <citedRange unit="p">2:531</citedRange>
               <ref type="internet-archive-pdf" target="https://archive.org/details/catalogueofsyria02brituoft/page/531"/>
               </bibl>
             </listBibl>
@@ -276,7 +284,6 @@
       <classDecl>
         <taxonomy xml:id="Wright-BL-Taxonomy">
           <bibl>
-            
             <ptr target="http://syriaca.org/documentation/Wright-BL-Taxonomy.html"/>
           </bibl>
           <category xml:id="biblical-manuscripts">
@@ -393,22 +400,30 @@
     </encodingDesc>
     <profileDesc>
       <langUsage>
-        <language ident="syr">Unvocalized Syriac of any variety or period</language>
-        <language ident="syr-Syre">Syriac in Estrangela</language>
-        <language ident="syr-Syrj">Vocalized West Syriac</language>
-        <language ident="syr-Syrn">Vocalized East Syriac</language>
-        <language ident="syr-x-syrm">Melkite Syriac</language>
-        <language ident="qhy-x-cpas">Palestinian Syriac</language>
-        <language ident="ar-Syrc">Unvocalized or Undetermined Arabic Garshuni</language>
-        <language ident="ar-Syrj">Arabic Garshuni in Vocalized West Syriac Script</language>
-        <language ident="ar-Syrn">Arabic Garshuni in Vocalized East Syriac Script</language>
-        <language ident="en">English</language>
         <language ident="ar">Arabic</language>
-        <language ident="fr">French</language>
-        <language ident="de">German</language>
-        <language ident="la">Latin</language>
-        <language ident="grc">Ancient Greek</language>
+        <language ident="ar-Syrc">Arabic Garshuni</language>
+        <language ident="ar-Syrn">Arabic Garshuni in East Syriac script</language>
         <language ident="cop">Coptic</language>
+        <language ident="de">German</language>
+        <language ident="en">English</language>
+        <language ident="fr">French</language>
+        <language ident="grc">Ancient Greek</language>
+        <language ident="he">Hebrew</language>
+        <language ident="hy">Armenian</language>
+        <language ident="it">Italian</language>
+        <language ident="la">Latin</language>
+        <language ident="syr">Syriac</language>
+        <language ident="syr-Arab">Syriac Garshuni in Arabic script</language>
+        <language ident="syr-Syre">Syriac in Estrangela script</language>
+        <language ident="syr-Syrj">Syriac in West Syriac script</language>
+        <language ident="syr-Syrn">Syriac in East Syriac script</language>
+        <language ident="syr-x-syrm">Syriac in Melkite Syriac script</language>
+        <language ident="tr">Turkish</language>
+        <language ident="tr-Syrc">Turkish Garshuni</language>
+        <language ident="qhy-x-cpas">Christian Palestinian Aramaic script</language>
+        <language ident="xcl">Classical Armenian</language>
+        <language ident="und">Undetermined</language>
+        <language ident="mul">Multiple languages</language>
       </langUsage>
       <textClass>
         <keywords scheme="#Wright-BL-Taxonomy">
@@ -426,16 +441,14 @@
       <change who="https://bl.syriac.uk/documentation/editors.xml#jnquiroz" when="2014-07-24">Created: file</change>
       <change who="https://bl.syriac.uk/documentation/editors.xml#jnquiroz" when="2014-08-14">Added URI for manuscript, edited and corrected objectDesc and additions</change>
       <change who="https://bl.syriac.uk/documentation/editors.xml#jarnwine" when="2014-10-07">Edited: file</change>
-      <change type="planned" subtype="uri">Needs Addition of work URIs.</change>
+      <change type="planned" subtype="uri" who="https://bl.syriac.uk/documentation/editors.xml#smbl-general-editors">Needs Addition of work URIs.</change>
       <change who="https://bl.syriac.uk/documentation/editors.xml#pgmiller" when="2016-07-06">Changed: Files moved to srophe-app-data/data/manuscripts/tei repository.</change>
     </revisionDesc>
   </teiHeader>
-  <facsimile>
-    <graphic/>
-  </facsimile>
   <text>
     <body>
       <p/>
+      <!--Body paragraph provided for document validation.-->
     </body>
   </text>
 </TEI>

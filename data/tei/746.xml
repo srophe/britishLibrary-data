@@ -1,4 +1,7 @@
-<?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/srophe-app/documentation/enrich-syriaca.rnc" type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/css" href="SRPEnrichCSS.css"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+<?xml-model href="https://raw.githubusercontent.com/srophe/britishLibrary/main/documentation/schema/out/Syriacamsdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/srophe/britishLibrary/main/documentation/schema/out/Syriacamsdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet href="https://raw.githubusercontent.com/srophe/wright-catalogue/master/parameters/tei.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="manuscript_746">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -7,7 +10,7 @@
         <funder>The National Endowment for the Humanities</funder>
         <funder>The Andrew W. Mellon Foundation</funder>
         <principal>David A. Michelson</principal>
-        <editor role="general-editor" ref="https://bl.syriac.uk/documentation/editors.xml#dmichelson">David A. michelson</editor>
+        <editor role="general-editor" ref="https://bl.syriac.uk/documentation/editors.xml#dmichelson">David A. Michelson</editor>
         <editor role="creator" ref="https://bl.syriac.uk/documentation/editors.xml#wwright">William Wright</editor>
         <editor role="creator" ref="https://bl.syriac.uk/documentation/editors.xml#dmichelson">David A. Michelson</editor>
         <editor role="creator" ref="https://bl.syriac.uk/documentation/editors.xml#dgreeson">Daniel J. Greeson</editor>
@@ -46,11 +49,9 @@
         <edition n="1.0"/>
       </editionStmt>
       <publicationStmt>
-        <pubPlace/>
         <authority>Syriaca.org: The Syriac Reference Portal</authority>
         <idno type="URI">https://bl.syriac.uk/ms/746/tei</idno>
         <availability>
-          <p/>
           <licence target="http://creativecommons.org/licenses/by/3.0/">
             <p>Distributed under a Creative Commons Attribution 3.0 Unported License</p>
           </licence>
@@ -58,7 +59,7 @@
         <date calendar="Gregorian">2023-04-21-05:00</date>
       </publicationStmt>
       <sourceDesc>
-        <msDesc xml:id="manuscript-746" xml:lang="en">
+        <msDesc xml:id="manuscript-746">
           <msIdentifier>
             <country>United Kingdom</country>
             <settlement>London</settlement>
@@ -72,7 +73,7 @@
               <idno type="BL-Shelfmark-display">London, BL, Add. 17,117</idno>
             </altIdentifier>
             <altIdentifier>
-              <idno type="BL-Shelmark-simplified">BL Add MS 17117</idno>
+              <idno type="BL-Shelfmark-simplified">BL Add MS 17117</idno>
             </altIdentifier>
             <altIdentifier>
               <collection>William Wright, Catalogue of the Syriac Manuscripts in the British Museum Acquired since the Year 1838</collection>
@@ -92,18 +93,17 @@
             </listRelation>
           </head>
           <msContents>
-            <summary/>
             <textLang mainLang="syr">Syriac</textLang>
-            <msItem xml:id="a1" n="1" defective="unknown">
+            <msItem xml:id="a1" n="1">
               <locus from="1b" to="68">Foll. 1b-68</locus>
-              <title ref="http://syriaca.org/work/203" type="supplied">The first two Gospels, according to the Peshitta version</title>
+              <title ref="http://syriaca.org/work/203" xml:lang="en">The first two Gospels, according to the Peshitta version</title>
               <msItem xml:id="b1" n="2">
                 <locus from="1b" to="53">Foll. 1b-53</locus>
-                <title ref="http://syriaca.org/work/72" type="supplied">S. Matthew</title>
+                <title ref="http://syriaca.org/work/72" xml:lang="en">S. Matthew</title>
               </msItem>
               <msItem xml:id="b2" n="3">
                 <locus from="53a" to="68">Foll. 53a-68</locus>
-                <title ref="http://syriaca.org/work/73" type="supplied">S. Mark</title>
+                <title ref="http://syriaca.org/work/73" xml:lang="en">S. Mark</title>
               </msItem>
             </msItem>
           </msContents>
@@ -116,16 +116,11 @@
                 </support>
                 <extent>
                   <measure type="composition" unit="leaf" quantity="68">68 ff.</measure>
-                  <dimensions type="leaf" unit="in">
-                    <height>
-                      <measure type="height" quantity="11.375" unit="in">11 3/8 in.</measure>
-                    </height>
-                    <width>
-                      <measure type="width" quantity="9" unit="in">9 in.</measure>
-                    </width>
+                  <dimensions type="leaf" unit="inch">
+                    <height quantity="11.375">11 3/8</height>
+                    <width quantity="9">9</width>
                   </dimensions>
                 </extent>
-                <foliation/>
                 <collation>
                   <p>The quires, 7 in number, seem to have been originally signed with letters.</p>
                 </collation>
@@ -145,68 +140,56 @@
             </objectDesc>
             <handDesc hands="4">
               <handNote xml:id="handNote1" scope="major" script="syr-Syre" medium="unknown">
-                <desc>This manuscript is written in a good, regular Estrangela of<origDate notBefore="0400" notAfter="0650">the vth or the beginning of the vith cent.</origDate>
-                </desc>
-              </handNote>
+                This manuscript is written in a good, regular Estrangela of <date notBefore="0400" notAfter="0650">the vth or the beginning of the vith cent.</date>
+                </handNote>
               <handNote xml:id="handNote2" scope="minor" script="syr" medium="unknown">
-                <desc>
-                  <ref target="#addition1">See additions.</ref>
-                </desc>
-              </handNote>
+                <ref target="#addition1">See additions.</ref>
+                </handNote>
               <handNote xml:id="handNote3" scope="minor" script="syr" medium="unknown">
-                <desc>
-                  <ref target="#addition2">See additions.</ref>
-                </desc>
-              </handNote>
+                <ref target="#addition2">See additions.</ref>
+                </handNote>
               <handNote xml:id="handNote4" scope="minor" script="syr-Syre" medium="unknown">
-                <desc>
-                  <ref target="#addition3">See additions.</ref>
-                </desc>
-              </handNote>
+                <ref target="#addition3">See additions.</ref>
+                </handNote>
             </handDesc>
-            <decoDesc/>
             <additions>
               <note type="proofreader-note">N.B., folio location may not be available for some items below.</note>
               <list>
                 <item xml:id="addition1" n="1">
-                  <p>Foll.<locus from="1" to="1">1</locus>,<locus from="8" to="8">8</locus>,<locus>23</locus>,<locus>24</locus>,<locus>63</locus>, and<locus>64</locus>are perhaps<date notBefore="0950">three centuries later</date>.</p>
+                  <p>Foll.<locus from="1" to="1">1</locus>, <locus from="8" to="8">8</locus>, <locus>23</locus>, <locus>24</locus>, <locus>63</locus>, and <locus>64</locus> are perhaps <date notBefore="0950">three centuries later</date>.</p>
                 </item>
                 <item xml:id="addition2" n="2">
                   <p>Numerous diacritical points and marks of punctuation have been subsequently added throughout.</p>
                 </item>
                 <item xml:id="addition3" n="3">
                   <locus from="1a" to="1a"/>
-                  <p>On fol. 1 a there is a note, stating that the book belonged to<placeName>the convent of S. Mary Deipara:</placeName>
+                  <p>On fol. 1 a there is a note, stating that the book belonged to <placeName>the convent of S. Mary Deipara:</placeName>
                   </p>
                   <p>
                     <quote xml:lang="syr">ܐܝܬܘܗܝ ܟܬܒܐ ܗܢܐ ܕܕܝܪܐ ܕܒܝܬ ܝܠܕܬ ܐܠܗܐ ܕܣܘܪ̈ܝܝܐ ܕܡܕܒܪܐ ܕܣܩܝܛܐ. ܟܠ ܕܡܦܩ ܠܟܬܒܐ ܗܢܐ ܡܢ ܕܝܪܐ ܗܕܐ ܐܘ ܟܐܡ ܥܠܘܗܝ ܘ܏ܫ</quote>.</p>
                 </item>
               </list>
             </additions>
-            <bindingDesc/>
-            <sealDesc/>
-            <accMat/>
-          </physDesc>
+            </physDesc>
           <history>
             <origin>
-              <origDate notBefore="0400" notAfter="0650">the vth or the beginning of the vith cent.</origDate>
+              <origDate calendar="Gregorian" notBefore="0400" notAfter="0650">5th or early 6th century</origDate>
+              
             </origin>
             <provenance>
-              <p>
+              
                 <ref target="#addition3">See additions.</ref>
-              </p>
+              
             </provenance>
-            <acquisition/>
-          </history>
+            </history>
           <additional>
             <adminInfo>
               <recordHist>
-                <source>Manuscript description based on<bibl>
+                <source>Manuscript description based on <bibl>
                     <ref target="#Wrightpart">Wright's Catalogue</ref>
                   </bibl>. abbreviated by the Syriaca.org editors.</source>
               </recordHist>
-              <note/>
-            </adminInfo>
+              </adminInfo>
             <listBibl>
               <bibl xml:id="Wrightpart">
                 <author>William Wright</author>
@@ -215,7 +198,7 @@
                 <date>1870</date>
                 <ptr target="http://syriaca.org/bibl/8"/>
                 <citedRange unit="entry">XCI</citedRange>
-                <citedRange unit="pp">1:64</citedRange>
+                <citedRange unit="p">1:64</citedRange>
               <ref type="internet-archive-pdf" target="https://archive.org/details/catalogueofsyria01brituoft/page/64"/>
               </bibl>
             </listBibl>
@@ -239,7 +222,6 @@
       <classDecl>
         <taxonomy xml:id="Wright-BL-Taxonomy">
           <bibl>
-            
             <ptr target="http://syriaca.org/documentation/Wright-BL-Taxonomy.html"/>
           </bibl>
           <category xml:id="biblical-manuscripts">
@@ -356,22 +338,30 @@
     </encodingDesc>
     <profileDesc>
       <langUsage>
-        <language ident="syr">Unvocalized Syriac of any variety or period</language>
-        <language ident="syr-Syre">Syriac in Estrangela</language>
-        <language ident="syr-Syrj">Vocalized West Syriac</language>
-        <language ident="syr-Syrn">Vocalized East Syriac</language>
-        <language ident="syr-x-syrm">Melkite Syriac</language>
-        <language ident="qhy-x-cpas">Palestinian Syriac</language>
-        <language ident="ar-Syrc">Unvocalized or Undetermined Arabic Garshuni</language>
-        <language ident="ar-Syrj">Arabic Garshuni in Vocalized West Syriac Script</language>
-        <language ident="ar-Syrn">Arabic Garshuni in Vocalized East Syriac Script</language>
-        <language ident="en">English</language>
         <language ident="ar">Arabic</language>
-        <language ident="fr">French</language>
-        <language ident="de">German</language>
-        <language ident="la">Latin</language>
-        <language ident="grc">Ancient Greek</language>
+        <language ident="ar-Syrc">Arabic Garshuni</language>
+        <language ident="ar-Syrn">Arabic Garshuni in East Syriac script</language>
         <language ident="cop">Coptic</language>
+        <language ident="de">German</language>
+        <language ident="en">English</language>
+        <language ident="fr">French</language>
+        <language ident="grc">Ancient Greek</language>
+        <language ident="he">Hebrew</language>
+        <language ident="hy">Armenian</language>
+        <language ident="it">Italian</language>
+        <language ident="la">Latin</language>
+        <language ident="syr">Syriac</language>
+        <language ident="syr-Arab">Syriac Garshuni in Arabic script</language>
+        <language ident="syr-Syre">Syriac in Estrangela script</language>
+        <language ident="syr-Syrj">Syriac in West Syriac script</language>
+        <language ident="syr-Syrn">Syriac in East Syriac script</language>
+        <language ident="syr-x-syrm">Syriac in Melkite Syriac script</language>
+        <language ident="tr">Turkish</language>
+        <language ident="tr-Syrc">Turkish Garshuni</language>
+        <language ident="qhy-x-cpas">Christian Palestinian Aramaic script</language>
+        <language ident="xcl">Classical Armenian</language>
+        <language ident="und">Undetermined</language>
+        <language ident="mul">Multiple languages</language>
       </langUsage>
       <textClass>
         <keywords scheme="#Wright-BL-Taxonomy">
@@ -390,16 +380,10 @@
       <change who="https://bl.syriac.uk/documentation/editors.xml#ngibson" when="2017-06-05">Corrected #b2 title according to Wright</change>
     </revisionDesc>
   </teiHeader>
-  <facsimile>
-    <!-- facsimile information about the manuscript -->
-    <graphic/>
-    <!-- Alternatively you could provide 'surface' elements with more than one image per surface, and optionally with 'zone' 
-      elements to give coordinates for any special areas of interest -->
-  </facsimile>
   <text>
     <body>
-      <!-- If you had a transcription of the manuscript you would put it here -->
       <p/>
+      <!--Body paragraph provided for document validation.-->
     </body>
   </text>
 </TEI>

@@ -1,4 +1,7 @@
-<?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/srophe-app/documentation/enrich-syriaca.rnc" type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/css" href="SRPEnrichCSS.css"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+<?xml-model href="https://raw.githubusercontent.com/srophe/britishLibrary/main/documentation/schema/out/Syriacamsdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/srophe/britishLibrary/main/documentation/schema/out/Syriacamsdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet href="https://raw.githubusercontent.com/srophe/wright-catalogue/master/parameters/tei.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="manuscript_281">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -21,13 +24,7 @@
                     <resp>Based on the work of</resp>
                     <name type="person" ref="https://bl.syriac.uk/documentation/editors.xml#wwright">William Wright</name>
                 </respStmt>
-                <respStmt>
-                    <resp>Edited by</resp>
-                    <name type="person" ref="https://bl.syriac.uk/documentation/editors.xml#">
-            <!-- Editor's first initial and surname follow "#" (e.g., "...#dmichelson") -->
-            <!--Initial editor's name here -->
-                    </name>
-                </respStmt>
+                
                 <respStmt>
                     <resp>Syriac text entered by</resp>
                     <name type="person" ref="https://bl.syriac.uk/documentation/editors.xml#raydin">Robert Aydin</name>
@@ -62,11 +59,9 @@
                 <edition n="1.0"/>
             </editionStmt>
       <publicationStmt>
-                <pubPlace/>
                 <authority>Syriaca.org: The Syriac Reference Portal</authority>
                 <idno type="URI">https://bl.syriac.uk/ms/281/tei</idno>
                 <availability>
-                    <p/>
                     <licence target="http://creativecommons.org/licenses/by/3.0/">
                         <p>Distributed under a Creative Commons Attribution 3.0 Unported License</p>
                     </licence>
@@ -74,7 +69,7 @@
                 <date calendar="Gregorian">2023-04-21-05:00</date>
             </publicationStmt>
       <sourceDesc>
-        <msDesc xml:id="manuscript-281" xml:lang="en">
+        <msDesc xml:id="manuscript-281">
           <msIdentifier>
                         <country>United Kingdom</country>
                         <settlement>London</settlement>
@@ -88,7 +83,7 @@
               <idno type="BL-Shelfmark-display">London, BL, Add. 14,550</idno>
             </altIdentifier>
             <altIdentifier>
-              <idno type="BL-Shelmark-simplified">BL Add MS 14550</idno>
+              <idno type="BL-Shelfmark-simplified">BL Add MS 14550</idno>
             </altIdentifier>
                         <altIdentifier>
                             <collection>William Wright, Catalogue of the Syriac Manuscripts in the British Museum Acquired since the Year 1838</collection>
@@ -102,88 +97,83 @@
           <head>
             <note type="contents-note">This manuscript contains: Gregory Nyssen. Writings of Gregory Nyssen; Gregory Nazianzen. Writings of Gregory Nazianzen. In total, including sub-sections, this manuscript contains 14 items.</note>
             <listRelation type="Wright-BL-Taxonomy">
-              <relation name="dcterms:type" ref="http://purl.org/dc/terms/type" active="https://bl.syriac.uk/ms/281" passive="#theology">
-                <desc/>
-              </relation>
+              <relation name="dcterms:type" ref="http://purl.org/dc/terms/type" active="https://bl.syriac.uk/ms/281" passive="#theology"/>
             </listRelation>
           </head>
           <msContents>
-            <summary/>
             <textLang mainLang="syr">Syriac</textLang>
             <msItem xml:id="a1" n="1" defective="true">
               <locus from="1b" to="100">Foll. 1b-100</locus>
-              <author ref="http://syriaca.org/person/512">Gregory Nyssen</author>
-              <title type="supplied">Writings of Gregory Nyssen</title>
+              <author ref="http://syriaca.org/person/512">
+                <persName xml:lang="en">Gregory Nyssen</persName>
+              </author>
+              <title xml:lang="en">Writings of Gregory Nyssen</title>
               <msItem xml:id="b1" n="2">
                 <locus from="1b" to="33">Foll. 1b-33</locus>
                 
-                <title type="supplied">Five discourses on the Lord's Prayer</title>
+                <title xml:lang="en">Five discourses on the Lord's Prayer</title>
                 <rubric xml:lang="syr">ܦܘܫܩܐ ܕܡܐܡܪܐ ܩܕܡܝܐ ܕܨܠܘܬܐ ܕܐܒܘܢ ܕܒܫܡܝܐ ܕܐܠܦ ܡܪܢ ܠܬܠܡ̈ܝܕܘܗܝ ܕܥܒܝܕ ܠܡܪܝ ܓܪܝܓܘܪܣ ܐܚܘܗܝ ܕܒܣܝܠܝܣ<locus from="1b"/>
                                 </rubric>
-                <listBibl>
-                                    <bibl>Opera, ed. 1638, t. i., p. 712</bibl>
-                                    <bibl>Migne, Patrol. Gr., t. xliv., col. 1119</bibl>
-                                </listBibl>
+                <note>Cf. <bibl>Opera, ed. 1638, t. i., p. 712</bibl>; <bibl>Migne, Patrol. Gr., t. xliv., col. 1119</bibl>
+                </note>
               </msItem>
               <msItem xml:id="b2" n="3">
                 <locus from="33a" to="81">Foll. 33a-81</locus>
                 
-                <title type="supplied">Eight discourses on the Beatitudes (S. Matthew, ch. v. 3-10)</title>
+                <title xml:lang="en">Eight discourses on the Beatitudes (S. Matthew, ch. v. 3-10)</title>
                 <rubric xml:lang="syr">ܦܘܫܩܐ ܕܛܘ̈ܒܐ ܕܒܐܘܢܓܠܝܘܢ ܕܐܬܦܫܩܘ ܡܢ ܛܘܒܢܐ ܓܪܝܓܘܪܝܣ ܐܚܘܗܝ ܕܡܪܝ ܒܣܝܠܝܣ.<locus from="33a"/>
                                 </rubric>
-                <listBibl>
-                                    <bibl>Opera, t. i., p. 762</bibl>
-                                    <bibl>Migne, t. xliv., col. 1193</bibl>
-                                </listBibl>
+                <note>Cf. <bibl>Opera, t. i., p. 762</bibl>; <bibl>Migne, t. xliv., col. 1193</bibl>
+                </note>
               </msItem>
               <msItem xml:id="b3" n="4" defective="true">
                 <locus from="81a" to="100a">Foll. 81a-100a</locus>
-                <author ref="http://syriaca.org/person/511">Gregory Nazianzen</author>
-                <title type="supplied">Discourse on the life of <persName ref="http://syriaca.org/person/513">Gregory Thaumaturgus</persName>, ascribed in this manuscript to Gregory Nazianzen.</title>
+                <author ref="http://syriaca.org/person/511">
+                  <persName xml:lang="en">Gregory Nazianzen</persName>
+                </author>
+                <title xml:lang="en">Discourse on the life of Gregory Thaumaturgus, ascribed in this manuscript to Gregory Nazianzen.</title>
                 <rubric xml:lang="syr">ܩܘܠܣܐ ܕܥܒܝܕ ܠܛܘܒܢܐ ܓܪܓܪܣ ܐܦܣܩܦܐ ܕܐܢܙܢܙܘ ܥܠ ܩܕܝܫܐ ܓܪܓܪܣ ܐܦܣܩܦܐ ܕܢܐܩܣܪܝܐ.<locus from="81a"/>
                                 </rubric>
                 <quote xml:lang="syr">ܣܝܡ ܡܐܡܪܐ ܗܢ̣ܐ. ܠܛܘܒܢܐ ܡܪܝ ܓܪܝܓܪܣ ܐܦܣܩܘܦܐ ܕܐܢܙܢܙܘ. ܚܒܪܗ ܕܬܡܝܗܐ ܡܪܝ ܒܣܝܠܝܣ ܐܦܣܩܘܦܐ ܕܩܣܪܝܐ. ܕܐܡܝܪ ܥܠ ܡܟܠܠ ܒܕܘܒܪ̈ܐ ܡܝܬܪ̈ܐ ܡܪܝ ܓܪܝܓܪܣ ܪܒܐ ܐܦܣܩܦܐ ܕܢܐܩܣܪܝܐ.. ܫܠܡ ܩܘܠܣܐ ܕܛܘܒܢܐ ܓܪܝܓܪܣ ܐܦܣܩܦܐ ܕܥܒܝܕ ܠܡܪܝ ܓܪܝܓܪܣ ܐܦܣܩܦܐ ܐܚܪܢܐ.<locus from="100a"/>
                                 </quote>
                 <note>After fol.<locus from="88">88</locus> there is a considerable lacuna, extending from Opera, t. iii., p. 547, B, to p. 562, B.</note>
-                <listBibl>
-                                    <bibl>Opera, t. iii., p. 534</bibl>
-                                    <bibl>Migne, t. xlvi., col. 893</bibl>
-                                </listBibl>
+                <note>Cf. <bibl>Opera, t. iii., p. 534</bibl>; <bibl>Migne, t. xlvi., col. 893</bibl>
+                </note>
               </msItem>
             </msItem>
             <msItem xml:id="a2" n="5" defective="true">
               <locus from="100a" to="108b">Foll. 100a-108b</locus>
-              <author ref="http://syriaca.org/person/511">Gregory Nazianzen</author>
-              <title type="supplied">Writings of Gregory Nazianzen</title>
+              <author ref="http://syriaca.org/person/511">
+                <persName xml:lang="en">Gregory Nazianzen</persName>
+              </author>
+              <title xml:lang="en">Writings of Gregory Nazianzen</title>
               <msItem xml:id="b4" n="6">
                 <locus from="100a" to="101">Foll. 100a-101</locus>
                 
-                <title type="supplied">The first Epistle to<persName>Cledonius</persName>
+                <title xml:lang="en">The first Epistle to Cledonius
                                 </title>
                 <rubric xml:lang="syr">ܐܓܪܬܐ ܕܓܪܓܪܝܣ ܕܠܘܩܒܠ ܐܦܘܠܝܢܪܣ<locus from="100a"/>
                                 </rubric>
-                <listBibl>
-                                    <bibl>Opera, ed. 1778, t. ii., p. 83, epist. ci., from the beginning as far as<foreign xml:lang="grc">Εἰ μὲν οὖν ἐδέχθησαν ἧ νῦν ἧ πρότερον</foreign>, pg. 84, D.</bibl>
-                                </listBibl>
+                <note>Cf. <bibl>Opera, ed. 1778, t. ii., p. 83, epist. ci., from the beginning as far as <foreign xml:lang="grc">Εἰ μὲν οὖν ἐδέχθησαν ἧ νῦν ἧ πρότερον</foreign>, pg. 84, D.</bibl>
+                </note>
               </msItem>
               <msItem xml:id="b5" n="7" defective="true">
                 <locus from="101a" to="103">Foll. 101a-103</locus>
                 
-                <title type="supplied">The second epistle to<persName>Cledonius</persName>
+                <title xml:lang="en">The second epistle to Cledonius
                                 </title>
-                <note>Imperfect at the beginning, commencing with<foreign xml:lang="grc">διὰ τὸ μηδὲ κεκινῆσθαι τηνικαῦτα τοῦτο τὸ ζήτημα</foreign>(<bibl>Opera, t. ii., p. 94, A</bibl>).</note>
+                <note>Imperfect at the beginning, commencing with <foreign xml:lang="grc">διὰ τὸ μηδὲ κεκινῆσθαι τηνικαῦτα τοῦτο τὸ ζήτημα</foreign>(<bibl>Opera, t. ii., p. 94, A</bibl>).</note>
               </msItem>
               <msItem xml:id="b6" n="8" defective="true">
                 <locus from="103b" to="108b">Foll. 103b-108b</locus>
-                
-                <title type="supplied">Extracts from his writings, against the<orgName>Eunomians</orgName>
+                <title xml:lang="en">Extracts from his writings, against the Eunomians
                                 </title>
                 <msItem xml:id="c1" n="9">
                   <locus from="103b" to="105">Foll. 103b-105</locus>
-                  <title type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">Part of Extracts from his writings, against the<orgName>Eunomians</orgName>
+                  <title xml:lang="en">Part of Extracts from his writings, against the Eunomians
                                     </title>
                   
-                  <title type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">Part of Extracts from his writings, against the<orgName>Eunomians</orgName>
+                  <title xml:lang="en">Part of Extracts from his writings, against the Eunomians
                                     </title>
                   <rubric xml:lang="syr">ܐܓܪܬܐ ܕܡܪܝ ܓܪܝܓܪܣ ܕܠܘܩܒܠ ܐܘܢܡܣ<locus from="103b"/>
                                     </rubric>
@@ -192,10 +182,10 @@
                 </msItem>
                 <msItem xml:id="c2" n="10">
                   <locus from="105a" to="105b">Foll. 105a-105b</locus>
-                  <title type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">Part of Extracts from his writings, against the<orgName>Eunomians</orgName>
+                  <title xml:lang="en">Part of Extracts from his writings, against the Eunomians
                                     </title>
                   
-                  <title type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">Part of Extracts from his writings, against the<orgName>Eunomians</orgName>
+                  <title xml:lang="en">Part of Extracts from his writings, against the Eunomians
                                     </title>
                   <rubric xml:lang="syr">ܬܘܒ ܕܠܘܩܒܠ ܐܘܢܡܣ<locus from="105a"/>
                                     </rubric>
@@ -204,10 +194,10 @@
                 </msItem>
                 <msItem xml:id="c3" n="11">
                   <locus from="105b" to="106a">Foll. 105b-106a</locus>
-                  <title type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">Part of Extracts from his writings, against the<orgName>Eunomians</orgName>
+                  <title xml:lang="en">Part of Extracts from his writings, against the Eunomians
                                     </title>
                   
-                  <title type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">Part of Extracts from his writings, against the<orgName>Eunomians</orgName>
+                  <title xml:lang="en">Part of Extracts from his writings, against the Eunomians
                                     </title>
                   <rubric xml:lang="syr">ܬܘܒ ܫܘܐܠܐ ܕܡܪܝ ܓܪܝܓܪܣ ܕܠܘܩܒܠ ܐܘܢܡܣ<locus from="105b"/>
                                     </rubric>
@@ -216,10 +206,10 @@
                 </msItem>
                 <msItem xml:id="c4" n="12">
                   <locus from="106a">Fol. 106a</locus>
-                  <title type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">Part of Extracts from his writings, against the<orgName>Eunomians</orgName>
+                  <title xml:lang="en">Part of Extracts from his writings, against the Eunomians
                                     </title>
                   
-                  <title type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">Part of Extracts from his writings, against the<orgName>Eunomians</orgName>
+                  <title xml:lang="en">Part of Extracts from his writings, against the Eunomians
                                     </title>
                   <rubric xml:lang="syr">ܬܘܒ ܕܠܘܩܒܠ ܐܘܢܡܣ<locus from="106a"/>
                                     </rubric>
@@ -228,10 +218,10 @@
                 </msItem>
                 <msItem xml:id="c5" n="13">
                   <locus from="106a" to="108">Foll. 106a-108</locus>
-                  <title type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">Part of Extracts from his writings, against the<orgName>Eunomians</orgName>
+                  <title xml:lang="en">Part of Extracts from his writings, against the Eunomians
                                     </title>
                   
-                  <title type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">Part of Extracts from his writings, against the<orgName>Eunomians</orgName>
+                  <title xml:lang="en">Part of Extracts from his writings, against the Eunomians
                                     </title>
                   <rubric xml:lang="syr">ܬܘܒ ܕܠܘܩܒܠ ܐܘܢܡܣ<locus from="106a"/>
                                     </rubric>
@@ -240,10 +230,10 @@
                 </msItem>
                 <msItem xml:id="c6" n="14">
                   <locus from="108b">Fol. 108b</locus>
-                  <title type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">Part of Extracts from his writings, against the<orgName>Eunomians</orgName>
+                  <title xml:lang="en">Part of Extracts from his writings, against the Eunomians
                                     </title>
                   
-                  <title type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">Part of Extracts from his writings, against the<orgName>Eunomians</orgName>
+                  <title xml:lang="en">Part of Extracts from his writings, against the Eunomians
                                     </title>
                   <rubric xml:lang="syr">ܬܘܒ ܕܠܘܩܒܠ ܐܘܢܡܣ<locus from="108b"/>
                                     </rubric>
@@ -262,23 +252,18 @@
                                 </support>
                                 <extent>
                                     <measure type="composition" unit="leaf" quantity="108">108 ff.</measure>
-                                    <dimensions type="leaf" unit="in">
-                                        <height>
-                                            <measure type="height" quantity="10.25" unit="in">10 1/4</measure>
-                                        </height>
-                                        <width>
-                                            <measure type="width" quantity="8.125" unit="in">8 1/8</measure>
-                                        </width>
-                                    </dimensions>
+                                    <dimensions type="leaf" unit="inch">
+                    <height quantity="10.25">10 1/4</height>
+                    <width quantity="8.125">8 1/8</width>
+                  </dimensions>
                                 </extent>
-                                <foliation/>
                                 <collation>
                                     <p>The quires were once 13 in number.</p>
                                 </collation>
                                 <condition>
                                     <list>
                                         <item>
-                                            <p>Some of the leaves are slightly stained and torn, especially foll,<locus from="1">1</locus>,<locus from="70">70</locus>,<locus from="78" to="80">78-80</locus>, and<locus from="88">88</locus>.</p>
+                                            <p>Some of the leaves are slightly stained and torn, especially foll,<locus from="1">1</locus>, <locus from="70">70</locus>, <locus from="78" to="80">78-80</locus>, and <locus from="88">88</locus>.</p>
                                         </item>
                                         <item>
                                             <p>The 10th quire is lost, and the last two are imperfect, six leaves being wanting after fol.<locus from="100">100</locus>, and several at the end of the book.</p>
@@ -294,65 +279,53 @@
                         </objectDesc>
             <handDesc hands="3">
               <handNote xml:id="handNote1" scope="major" script="syr-Syre" medium="unknown">
-                <desc>The writing is a fine, regular Estrangělā of the <origDate notBefore="0500" notAfter="0600" calendar="Gregorian">vith cent.</origDate>
+                The writing is a fine, regular Estrangělā of the <date notBefore="0500" notAfter="0600" calendar="Gregorian">vith cent.</date>
                                     <ref target="#addition1">See additions.</ref>
-                                </desc>
-              </handNote>
+                                </handNote>
               <handNote xml:id="handNote2" scope="minor" script="syr" medium="unknown">
-                <desc>
-                                    <ref target="#addition1">See additions.</ref>
-                                </desc>
-              </handNote>
+                <ref target="#addition1">See additions.</ref>
+                                </handNote>
               <handNote xml:id="handNote3" scope="minor" script="syr" medium="unknown">
-                <desc>
-                                    <ref target="#decoNote1">See the decoration note.</ref>
-                                </desc>
-              </handNote>
+                See the decoration note.
+                                </handNote>
             </handDesc>
             <decoDesc>
-              <decoNote xml:id="decoNote1" type="illustration" medium="unknown">
+              <decoNote type="illustration">
                 <locus from="1a"/>
-                <p>Some not very skilful artist has drawn a head of a saint on this page, and written over it the words<quote xml:lang="syr">.ܝܘܩܢܐ ܫܦܝܪ ܕܡ̈ܘܬܐ</quote>
-                  The word<quote xml:lang="syr">ܢܘܣܝܐ</quote>beneath the head does not mean "him of Nyssa," but "trial (of the pen)."</p>
+                Some not very skilful artist has drawn a head of a saint on this page, and written over it the words <quote xml:lang="syr">.ܝܘܩܢܐ ܫܦܝܪ ܕܡ̈ܘܬܐ</quote>
+                  The word <quote xml:lang="syr">ܢܘܣܝܐ</quote> beneath the head does not mean "him of Nyssa," but "trial (of the pen)."
               </decoNote>
             </decoDesc>
             <additions>
               <note type="proofreader-note">N.B., folio location may not be available for some items below.</note>
-              <p/>
               <list>
                 <item xml:id="addition1" n="1">
                   <locus from="1a"/>
-                  <p>On fol. 1a there is a note stating that this volume belonged to the congregation of<placeName ref="http://syriaca.org/place/193">Tagrit (Tekrīt)</placeName>.</p>
+                  <p>On fol. 1a there is a note stating that this volume belonged to the congregation of <placeName ref="http://syriaca.org/place/193">Tagrit (Tekrīt)</placeName>.</p>
                   <p>
                                         <quote xml:lang="syr">ܐܝܬܘܗܝ ܟܬܒܐ ܗܢܐ ܕܟܢܘܫܝܐ ܫܦܝܪ ܕܚܠܬܐ ܕܬܓܪܝܬ ܡܕܝܢܬܐ ܡܗܝܡܢܬܐ. ܟܠ ܕܝܢ ܕܠܚܐ ܠܥܘܗܕܢܐ ܗܢܐ. ܢܗܘܐ ܚܪܡ ܡܢ ܐܒܐ ܘ[ܡܢ] ܒܪܐ ܘܡܢ ܪܘܚܐ ܩܕܝܫܐ܀</quote>
                                     </p>
                   <p>Of another note, which has been in great part carefully erased, only the latter portion is now legible, containing one of the usual anathemas.</p>
-                  <p>Still lower down there is a second anathema, in which occur the words<quote xml:lang="syr">ܡܢ ܕܝܪܐ ܗܕܐ</quote>,<quote>from this convent</quote>, doubtless meaning that of<placeName ref="http://syriaca.org/place/360">S. Mary Deipara.</placeName>
+                  <p>Still lower down there is a second anathema, in which occur the words <quote xml:lang="syr">ܡܢ ܕܝܪܐ ܗܕܐ</quote>, <quote xml:lang="en">from this convent</quote>, doubtless meaning that of <placeName ref="http://syriaca.org/place/360">S. Mary Deipara.</placeName>
                                     </p>
                 </item>
               </list>
             </additions>
-            <bindingDesc/>
-            <sealDesc/>
-            <accMat/>
-          </physDesc>
+            </physDesc>
           <history>
                         <origin>
-                            <origDate notBefore="0500" notAfter="0600" calendar="Gregorian">vith cent.</origDate>
-                            <origPlace/>
+              <origDate calendar="Gregorian" notBefore="0500" notAfter="0600">6th century</origDate>
+                            
                         </origin>
-                        <provenance/>
-                        <acquisition/>
-                    </history>
+                        </history>
           <additional>
             <adminInfo>
               <recordHist>
-                <source>Manuscript description based on<bibl>
+                <source>Manuscript description based on <bibl>
                     <ref target="#Wrightpart">Wright's Catalogue</ref>
                   </bibl>. abbreviated by the Syriaca.org editors.</source>
               </recordHist>
-              <note/>
-            </adminInfo>
+              </adminInfo>
             <listBibl>
               <bibl xml:id="Wrightpart">
                 <author>William Wright</author>
@@ -361,7 +334,7 @@
                 <date>1870</date>
                 <ptr target="http://syriaca.org/bibl/8"/>
                 <citedRange unit="entry">DLXIV</citedRange>
-                <citedRange unit="pp">2:443-444</citedRange>
+                <citedRange unit="p">2:443-444</citedRange>
               <ref type="internet-archive-pdf" target="https://archive.org/details/catalogueofsyria02brituoft/page/443"/>
               </bibl>
             </listBibl>
@@ -384,141 +357,148 @@
             </editorialDecl>
             <classDecl>
                 <taxonomy xml:id="Wright-BL-Taxonomy">
-                    <bibl>
-                        
-                        <ptr target="http://syriaca.org/documentation/Wright-BL-Taxonomy.html"/>
-                    </bibl>
-                    <category xml:id="biblical-manuscripts">
-                        <category xml:id="bible-ot">
+          <bibl>
+            <ptr target="http://syriaca.org/documentation/Wright-BL-Taxonomy.html"/>
+          </bibl>
+          <category xml:id="biblical-manuscripts">
+            <category xml:id="bible-ot">
               <catDesc>Old Testament</catDesc>
             </category>
-                        <category xml:id="bible-nt">
+            <category xml:id="bible-nt">
               <catDesc>New Testament</catDesc>
             </category>
-                        <category xml:id="bible-apocrypha">
+            <category xml:id="bible-apocrypha">
               <catDesc>Apocrypha</catDesc>
             </category>
-                        <category xml:id="bible-punctuation">
+            <category xml:id="bible-punctuation">
               <catDesc>Punctuation</catDesc>
             </category>
-                    </category>
-                    <category xml:id="service-books">
-                        <category xml:id="psalter">
+          </category>
+          <category xml:id="service-books">
+            <category xml:id="psalter">
               <catDesc>Psalters</catDesc>
             </category>
-                        <category xml:id="lectionaries">
+            <category xml:id="lectionaries">
               <catDesc>Lectionaries</catDesc>
             </category>
-                        <category xml:id="missals">
+            <category xml:id="missals">
               <catDesc>Missals</catDesc>
             </category>
-                        <category xml:id="sacerdotals">
+            <category xml:id="sacerdotals">
               <catDesc>Sacerdotals</catDesc>
             </category>
-                        <category xml:id="choral">
+            <category xml:id="choral">
               <catDesc>Choral Books</catDesc>
             </category>
-                        <category xml:id="hymns">
+            <category xml:id="hymns">
               <catDesc>Hymns</catDesc>
             </category>
-                        <category xml:id="prayers">
+            <category xml:id="prayers">
               <catDesc>Prayers</catDesc>
             </category>
-                        <category xml:id="funerals">
+            <category xml:id="funerals">
               <catDesc>Funeral Services</catDesc>
             </category>
-                    </category>
-                    <category xml:id="theology">
-                        <category xml:id="theo-single">
+          </category>
+          <category xml:id="theology">
+            <category xml:id="theo-single">
               <catDesc>Individual Authors</catDesc>
             </category>
-                        <category xml:id="theo-collected">
+            <category xml:id="theo-collected">
               <catDesc>Collected Authors</catDesc>
             </category>
-                        <category xml:id="theo-catenae">
+            <category xml:id="theo-catenae">
               <catDesc>Catenae Patrum and Demonstrations against Heresies</catDesc>
             </category>
-                        <category xml:id="theo-anonymous">
+            <category xml:id="theo-anonymous">
               <catDesc>Anonymous Works</catDesc>
             </category>
-                        <category xml:id="theo-council">
+            <category xml:id="theo-council">
               <catDesc>Councils of the Church and Ecclesiastical Canons</catDesc>
             </category>
-                    </category>
-                    <category xml:id="wright-history">
-                        <category xml:id="history">
+          </category>
+          <category xml:id="wright-history">
+            <category xml:id="history">
               <catDesc>History</catDesc>
             </category>
-                    </category>
-                    <category xml:id="lives">
-                        <category xml:id="lives-collect">
+          </category>
+          <category xml:id="lives">
+            <category xml:id="lives-collect">
               <catDesc>Collected Lives</catDesc>
             </category>
-                        <category xml:id="lives-single">
+            <category xml:id="lives-single">
               <catDesc>Single Lives</catDesc>
             </category>
-                    </category>
-                    <category xml:id="scientific-lit">
-                        <category xml:id="sci-logic">
+          </category>
+          <category xml:id="scientific-lit">
+            <category xml:id="sci-logic">
               <catDesc>Logic and Rhetoric</catDesc>
             </category>
-                        <category xml:id="sci-grammar">
+            <category xml:id="sci-grammar">
               <catDesc>Grammar and Lexicography</catDesc>
             </category>
-                        <category xml:id="sci-ethics">
+            <category xml:id="sci-ethics">
               <catDesc>Ethics</catDesc>
             </category>
-                        <category xml:id="sci-medicine">
+            <category xml:id="sci-medicine">
               <catDesc>Medicine</catDesc>
             </category>
-                        <category xml:id="sci-agriculture">
+            <category xml:id="sci-agriculture">
               <catDesc>Agriculture</catDesc>
             </category>
-                        <category xml:id="sci-chemistry">
+            <category xml:id="sci-chemistry">
               <catDesc>Chemistry</catDesc>
             </category>
-                        <category xml:id="sci-natural-history">
+            <category xml:id="sci-natural-history">
               <catDesc>Natural History</catDesc>
             </category>
-                    </category>
-                    <category xml:id="wright-fly-leaves">
-                        <category xml:id="fly-leaves">
+          </category>
+          <category xml:id="wright-fly-leaves">
+            <category xml:id="fly-leaves">
               <catDesc>Fly Leaves</catDesc>
             </category>
-                    </category>
-                    <category xml:id="appendices">
-                        <category xml:id="appendix-a">
+          </category>
+          <category xml:id="appendices">
+            <category xml:id="appendix-a">
               <catDesc>Appendix A</catDesc>
             </category>
-                        <category xml:id="appendix-b">
+            <category xml:id="appendix-b">
               <catDesc>Appendix B</catDesc>
             </category>
-                    </category>
-                  <category xml:id="unclassified">
-                    <catDesc>Unclassified</catDesc>
-                  </category>
-                </taxonomy>
+          </category>
+          <category xml:id="unclassified">
+            <catDesc>Unclassified</catDesc>
+          </category>
+        </taxonomy>
             </classDecl>
         </encodingDesc>
     <profileDesc>
             <langUsage>
-                <language ident="syr">Unvocalized Syriac of any variety or period</language>
-                <language ident="syr-Syre">Syriac in Estrangela</language>
-                <language ident="syr-Syrj">Vocalized West Syriac</language>
-                <language ident="syr-Syrn">Vocalized East Syriac</language>
-                <language ident="syr-x-syrm">Melkite Syriac</language>
-                <language ident="qhy-x-cpas">Palestinian Syriac</language>
-                <language ident="ar-Syrc">Unvocalized or Undetermined Arabic Garshuni</language>
-                <language ident="ar-Syrj">Arabic Garshuni in Vocalized West Syriac Script</language>
-                <language ident="ar-Syrn">Arabic Garshuni in Vocalized East Syriac Script</language>
-                <language ident="en">English</language>
-                <language ident="ar">Arabic</language>
-                <language ident="fr">French</language>
-                <language ident="de">German</language>
-                <language ident="la">Latin</language>
-                <language ident="grc">Ancient Greek</language>
-                <language ident="cop">Coptic</language>
-            </langUsage>
+        <language ident="ar">Arabic</language>
+        <language ident="ar-Syrc">Arabic Garshuni</language>
+        <language ident="ar-Syrn">Arabic Garshuni in East Syriac script</language>
+        <language ident="cop">Coptic</language>
+        <language ident="de">German</language>
+        <language ident="en">English</language>
+        <language ident="fr">French</language>
+        <language ident="grc">Ancient Greek</language>
+        <language ident="he">Hebrew</language>
+        <language ident="hy">Armenian</language>
+        <language ident="it">Italian</language>
+        <language ident="la">Latin</language>
+        <language ident="syr">Syriac</language>
+        <language ident="syr-Arab">Syriac Garshuni in Arabic script</language>
+        <language ident="syr-Syre">Syriac in Estrangela script</language>
+        <language ident="syr-Syrj">Syriac in West Syriac script</language>
+        <language ident="syr-Syrn">Syriac in East Syriac script</language>
+        <language ident="syr-x-syrm">Syriac in Melkite Syriac script</language>
+        <language ident="tr">Turkish</language>
+        <language ident="tr-Syrc">Turkish Garshuni</language>
+        <language ident="qhy-x-cpas">Christian Palestinian Aramaic script</language>
+        <language ident="xcl">Classical Armenian</language>
+        <language ident="und">Undetermined</language>
+        <language ident="mul">Multiple languages</language>
+      </langUsage>
             <textClass>
                 <keywords scheme="#Wright-BL-Taxonomy">
                     <list>
@@ -534,22 +514,16 @@
       <change who="https://bl.syriac.uk/documentation/editors.xml#jarnwine" when="2023-01-13-06:00">ADDED: supplied and corrected Syriaca.org URIs for authors</change>
             <change who="https://bl.syriac.uk/documentation/editors.xml#ngibson" when="2016-12-13+01:00">Added generic msItem title(s) based on ancestor title</change>
             <change who="https://bl.syriac.uk/documentation/editors.xml#jarnwine" when="2015-03-31">Created: file</change>
-            <change type="planned" subtype="arithmetical">Enter arithmetical figures.<ref target="#addition2"/>
+            <change type="planned" subtype="arithmetical" who="https://bl.syriac.uk/documentation/editors.xml#smbl-general-editors">Enter arithmetical figures.<ref target="#addition2"/>
             </change>
-            <change type="planned" subtype="uri">Needs Addition of work URIs.</change>
+            <change type="planned" subtype="uri" who="https://bl.syriac.uk/documentation/editors.xml#smbl-general-editors">Needs Addition of work URIs.</change>
             <change who="https://bl.syriac.uk/documentation/editors.xml#pgmiller" when="2016-07-06">Changed: Files moved to srophe-app-data/data/manuscripts/tei repository.</change>
         </revisionDesc>
   </teiHeader>
-  <facsimile>
-    <!-- facsimile information about the manuscript -->
-        <graphic/>
-    <!-- Alternatively you could provide 'surface' elements with more than one image per surface, and optionally with 'zone' 
-      elements to give coordinates for any special areas of interest -->
-    </facsimile>
   <text>
         <body>
-      <!-- If you had a transcription of the manuscript you would put it here -->
-            <p/>
+      <p/>
+      <!--Body paragraph provided for document validation.-->
         </body>
     </text>
 </TEI>

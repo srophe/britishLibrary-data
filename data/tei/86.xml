@@ -1,4 +1,7 @@
-<?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/srophe-app/documentation/enrich-syriaca.rnc" type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/css" href="SRPEnrichCSS.css"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+<?xml-model href="https://raw.githubusercontent.com/srophe/britishLibrary/main/documentation/schema/out/Syriacamsdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/srophe/britishLibrary/main/documentation/schema/out/Syriacamsdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet href="https://raw.githubusercontent.com/srophe/wright-catalogue/master/parameters/tei.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="manuscript_86">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -7,7 +10,7 @@
         <funder>The National Endowment for the Humanities</funder>
         <funder>The Andrew W. Mellon Foundation</funder>
         <principal>David A. Michelson</principal>
-        <editor role="general-editor" ref="https://bl.syriac.uk/documentation/editors.xml#dmichelson">David A. michelson</editor>
+        <editor role="general-editor" ref="https://bl.syriac.uk/documentation/editors.xml#dmichelson">David A. Michelson</editor>
         <editor role="creator" ref="https://bl.syriac.uk/documentation/editors.xml#dmichelson">David A. Michelson</editor>
         <editor role="creator" ref="https://bl.syriac.uk/documentation/editors.xml#dgreeson">Daniel J. Greeson</editor>
         <editor role="creator" ref="https://bl.syriac.uk/documentation/editors.xml#thannah">Tucker D. Hannah</editor>
@@ -45,11 +48,9 @@
         <edition n="1.0"/>
       </editionStmt>
       <publicationStmt>
-        <pubPlace/>
         <authority>Syriaca.org: The Syriac Reference Portal</authority>
-        <idno type="URI">https://bl.syriac.uk/ms/86</idno>
+        <idno type="URI">https://bl.syriac.uk/ms/86/tei</idno>
         <availability>
-          <p/>
           <licence target="http://creativecommons.org/licenses/by/3.0/">
             <p>Distributed under a Creative Commons Attribution 3.0 Unported License</p>
           </licence>
@@ -57,7 +58,7 @@
         <date calendar="Gregorian">2023-04-21-05:00</date>
       </publicationStmt>
       <sourceDesc>
-        <msDesc xml:id="manuscript-86" xml:lang="en">
+        <msDesc xml:id="manuscript-86">
           <msIdentifier>
             <country>United Kingdom</country>
             <settlement>London</settlement>
@@ -71,7 +72,7 @@
               <idno type="BL-Shelfmark-display">London, BL, Add. 14,430</idno>
             </altIdentifier>
             <altIdentifier>
-              <idno type="BL-Shelmark-simplified">BL Add MS 14430</idno>
+              <idno type="BL-Shelfmark-simplified">BL Add MS 14430</idno>
             </altIdentifier>
             <altIdentifier>
               <collection>William Wright, Catalogue of the Syriac Manuscripts in the British Museum Acquired since the Year 1838</collection>
@@ -91,7 +92,6 @@
             </listRelation>
           </head>
           <msContents>
-            <summary/>
             <textLang mainLang="syr">Syriac</textLang>
             <msItem xml:id="a1" n="1" defective="true">
               <locus from="1" to="73">Foll. 1-73</locus>
@@ -100,17 +100,17 @@
             </msItem>
             <msItem xml:id="a2" n="2">
               <locus from="1b" to="1b"/>
-              <title type="supplied">Index of Lessons.</title>
+              <title xml:lang="en">Index of Lessons.</title>
             </msItem>
             <msItem xml:id="a3" n="3" defective="true">
               <locus from="1b" to="73a">Foll. 1b-73a</locus>
-              <title ref="http://syriaca.org/work/45" type="supplied">The first book of Kings, according to the Peshitta version, the text extending, however, as far as 2 Kings, ch. ii. 18.</title>
+              <title ref="http://syriaca.org/work/45" xml:lang="en">The first book of Kings, according to the Peshitta version, the text extending, however, as far as 2 Kings, ch. ii. 18.</title>
               <rubric xml:lang="syr">ܣܦܪ ܡ̈ܠܟܘܐ ܕܒ̈ܢܝ ܐܝܣܪܐܝܠ<locus from="1b" to="1b"/>
               </rubric>
               <finalRubric xml:lang="syr">ܫܠܡܬ ܦܠܓܘܬܐ ܩܕܡܝܬܐ ܕܣܦܪ ܡ̈ܠܟܘܬܐ ܕܒ̈ܢܝ ܐܝܣܪܐܝܠ<locus from="73a" to="73a"/>
               </finalRubric>
               <note>The chief portion of the text missing is 1 Kings, ch. xxii. 20—34</note>
-              <note>The lessons are marked in the text in the usual way, and<ref target="#a1">an index of them is prefixed to the volume, fol. 1b</ref>.</note>
+              <note>The lessons are marked in the text in the usual way, and <ref target="#a1">an index of them is prefixed to the volume, fol. 1b</ref>.</note>
             </msItem>
           </msContents>
           <physDesc>
@@ -122,26 +122,21 @@
                 </support>
                 <extent>
                   <measure type="composition" unit="leaf" quantity="73">73 ff.</measure>
-                  <dimensions type="leaf" unit="in">
-                    <height>
-                      <measure type="height" quantity="9.625" unit="in">9 5/8</measure>
-                    </height>
-                    <width>
-                      <measure type="width" quantity="6.5" unit="in">6 1/2</measure>
-                    </width>
+                  <dimensions type="leaf" unit="inch">
+                    <height quantity="9.625">9 5/8</height>
+                    <width quantity="6.5">6 1/2</width>
                   </dimensions>
                 </extent>
-                <foliation/>
                 <collation>
                   <p>The quires, eight in number, are signed with letters.</p>
-                  <p>This book was collated by<persName>Theodosius of<placeName>Tellā</placeName>
-                    </persName>and<persName>Abraham</persName>, a monk of the convent of<placeName>Kūbē</placeName>(or the Thorns).<ref target="#addition5">See below.</ref>
+                  <p>This book was collated by <persName>Theodosius of <placeName>Tellā</placeName>
+                    </persName> and <persName>Abraham</persName>, a monk of the convent of <placeName>Kūbē</placeName>(or the Thorns).<ref target="#addition5">See below.</ref>
                   </p>
                 </collation>
                 <condition>
                   <list>
                     <item>
-                      <p>Several leaves are much stained and torn, especially fol.<locus>1—9</locus>,<locus>58</locus>,<locus>68</locus>and<locus>69</locus>.</p>
+                      <p>Several leaves are much stained and torn, especially fol.<locus>1—9</locus>, <locus>58</locus>, <locus>68</locus> and <locus>69</locus>.</p>
                     </item>
                     <item>
                       <p>A leaf is wanting after fol.<locus>67</locus>.</p>
@@ -157,84 +152,80 @@
             </objectDesc>
             <handDesc hands="6">
               <handNote xml:id="handNote1" scope="major" script="syr-Syre" medium="unknown">
-                <desc>This manuscript is written in a beautiful, regular Estrangela, by the deacon<persName>Sābā of<placeName>Rās’ain</placeName>
-                  </persName>.<ref target="#addition1 #addition2">See below</ref>.</desc>
-              </handNote>
+                This manuscript is written in a beautiful, regular Estrangela, by the deacon <persName>Sābā of <placeName>Rās’ain</placeName></persName>. <ref target="#addition1 #addition2">See below</ref>.</handNote>
               <handNote xml:id="handNote2" scope="minor" script="syr" medium="unknown">
                 <locus from="2b" to="2b"/>
-                <desc>
-                  <ref target="#addition7">See below</ref>.</desc>
-              </handNote>
+                <ref target="#addition7">See below</ref>.</handNote>
               <handNote xml:id="handNote3" scope="major" script="syr-Syrj" medium="unknown">
-                <p>
+                
                   <ref target="#addition8">See below.</ref>
-                </p>
+                
               </handNote>
               <handNote xml:id="handNote4" scope="minor" script="syr" medium="unknown">
                 <locus from="73b" to="73b"/>
-                <p>
-                  <ref target="#addition3 #addition4">See below</ref>.</p>
+                
+                  <ref target="#addition3 #addition4">See below</ref>.
               </handNote>
               <handNote xml:id="handNote5" scope="minor" script="syr" medium="unknown">
                 <locus from="73b" to="73b"/>
-                <p>
-                  <ref target="#addition5">See below</ref>.</p>
+                
+                  <ref target="#addition5">See below</ref>.
               </handNote>
               <handNote xml:id="handNote6" scope="minor" script="syr" medium="unknown">
                 <locus from="1b" to="1b"/>
-                <p>
-                  <ref target="#addition6">See below</ref>.</p>
+                
+                  <ref target="#addition6">See below</ref>.
               </handNote>
             </handDesc>
             <additions>
               <note type="proofreader-note">N.B., folio location may not be available for some items below.</note>
               <note type="proofreader-note">N.B., items below may have been listed out of folio order in Wright's catalogue.</note>
               <list>
-                <item xml:id="addition1" n="1" syriaca-tags="scribal-colophon">
+                <item xml:id="addition1" n="1">
                   <label>Colophon</label>
                   <locus from="73a" to="73a"/>
-                  <desc>On fol. 73a, after the subscription, stands the following note, giving the name of the scribe, with his usual boast that he "never made a blotted tau.”</desc>
+                  <p>On fol. 73a, after the subscription, stands the following note, giving the name of the scribe, with his usual boast that he "never made a blotted tau.”</p>
                   <quote xml:lang="syr">ܟܠ ܕܩ̇ܪܐ ܒܟܬܒܐ ܗܠܝܼܢ. ܢܨ̇ܠܐ ܥܠ ܚ̇ܛܝܐ ܘܕܘܝܐ ܡܪܣܒܐ ܫܡܫܐ ܟܬܘܒܐ ܪܝܫܥܝܢܝܐ ܕܟ̣ܬܒ ܐܝܟ ܚܝܠܗ܇ ܘܬܘ ܛܡܝܡܐ ܒܗܘܢ ܠܐ ܥܒܕ. ܘܢܐܡܪ̣ . ܐܠܗܐ̣ ܚܘܢܝܗܝ ܠܚ̇ܛܝܐ ܒܨܠܘܬ ܝܠܕܬܟ ܐܡܝܢ.</quote>
                 </item>
-                <item xml:id="addition2" n="2" syriaca-tags="scribal-colophon doxology">
+                <item xml:id="addition2" n="2">
                   <label>Doxology</label>
                   <locus from="73a" to="73a"/>
-                  <desc>
-                    <ref target="#addition1">This</ref>is followed by the doxology:</desc>
+                  <p>
+                    <ref target="#addition1">This</ref> is followed by the doxology:</p>
                   <quote xml:lang="syr">ܫܘܒܚܐ ܠܬܠܝܬܝܘܬܐ ܕܠܐ ܦܘܠܓ ܐܡܝܢ ܘܐܡܝܢ</quote>
                 </item>
-                <item xml:id="addition3" n="3" syriaca-tags="scribal-colophon ownership-inscription">
+                <item xml:id="addition3" n="3">
                   <label>Colophon</label>
+                  <label>Ownership Inscription</label>
                   <locus from="73b" to="73b"/>
-                  <desc>On fol. 73b are three notes, the first of which states that this copy of the biblical books was written at the expense of the bishop<persName>Constantine of<placeName>Māridīn</placeName>
-                  </persName>(see <bibl>Add. 12,135<ptr target="https://bl.syriac.uk/ms/6"/>, <citedRange unit="pp">fol. 42 b</citedRange>
+                  <p>On fol. 73b are three notes, the first of which states that this copy of the biblical books was written at the expense of the bishop <persName>Constantine of <placeName>Māridīn</placeName></persName>(see <bibl>Add. 12,135<ptr target="https://bl.syriac.uk/ms/6"/>, <citedRange unit="p">fol. 42 b</citedRange>
                     </bibl>) for the <placeName>convent of the Specula</placeName> (or Watchtower ?) near <placeName>Rās’ain</placeName>.
-                      See <bibl>Assemani, Bibl. Or., t. ii., Dissert, de Monophysitis, art. ix., Monasterium Saphyli</bibl> (<foreign xml:lang="syr">ܣܦܘܠܘܣ</foreign> instead of <foreign xml:lang="syr">ܣܦܩܠܘܣ</foreign>); and <bibl>Land, Anecdota Syr., t. i. p. 74</bibl>.</desc>
+                      See <bibl>Assemani, Bibl. Or., t. ii., Dissert, de Monophysitis, art. ix., Monasterium Saphyli</bibl> (<foreign xml:lang="syr">ܣܦܘܠܘܣ</foreign> instead of <foreign xml:lang="syr">ܣܦܩܠܘܣ</foreign>); and <bibl>Land, Anecdota Syr., t. i. p. 74</bibl>.</p>
                   <quote xml:lang="syr">ܠܐܝܩܪܐ ܘܠܬܫܒܘܚܬܐ ܕܐܒܐ ܘܒܪܐ ܘܪܘܚܐ ܩܕܝܫܐ: ܘܠܒܢܝܢܐ ܘܩܘܝ̇ܡܐ ܘܝܘܬܪܢܐ ܪܘܚܢܐ ܕܐܝܠܝܢ ܕܦܓܥܝܢ: ܐܬܚ̇ܦܛ ܘܣܡ ܣܝܡܬܐ ܗܕܐ ܪܘܚܢܝܬܐ ܕܟܬܒ̈ܐ ܗܠܝܢ ܒܥܘܡܪܐ ܕܝܠܗ ܣܦܩܠܝܣ ܕܪܝܫܥܝܢܐ̣. ܚܣܝܐ ܡܪܝ ܩܘܣܛܢܛܝܢܐ ܐܦܝܣܩܦܐ ܡܢܗ ܕܥܘܡܪܐ. ܚܠܦ ܦܘܪܩܢܐ ܕܪܘܚܗ ܘܕܘܟܪܢܐ ܛ̇ܒܐ ܕܥܢܝ̈ܕܘܗܝ. ܕܐܠܗܐ ܗ̇ܘ ܕܡܛܠ ܫܡܗ ܩܕܝܫܐ ܐܬܚܦܛ ܘܠܐܝ̣. ܗ̣ܘ ܢܬܠ ܠܗ ܐܓܪܐ ܘܦܘܪܥܢܐ ܒܡܠܟܘܬܐ ܕܫܡܝܐ ܥܡ ܩ̈ܕܝܫܐ ܕܪܚܡܘܗܝ ܐܝܢ ܘܐܡܝܢ</quote>
                 </item>
-                <item xml:id="addition4" n="4" syriaca-tags="scribal-colophon ownership-inscription">
+                <item xml:id="addition4" n="4">
                   <label>Colophon</label>
+                  <label>Ownership Inscription</label>
                   <locus from="73b" to="73b"/>
-                  <desc>The second note informs us that the expense was borne in part by the deacon<persName>Sarai of<placeName>Tel-Beshmai</placeName>
-                    </persName>in the year<origDate when-custom="1035" datingMethod="Seleucid">1035</origDate>,<origDate when="0724" calendar="Gregorian">A.D. 724</origDate>, at the time when<persName>Simeon</persName>was abbat of the convent,<persName>Theodosius</persName>and<persName>Sarrai</persName>the stewards, and the<persName>deacon Anastasius</persName>the sacristan or warden. See<bibl>Assemani, loc. Cit., Tel-Besme</bibl>.</desc>
+                  <p>The second note informs us that the expense was borne in part by the deacon <persName>Sarai of <placeName>Tel-Beshmai</placeName>
+                    </persName> in the year <date when-custom="1035" datingMethod="Seleucid">1035</date>, <date when="0724" calendar="Gregorian">A.D. 724</date>, at the time when <persName>Simeon</persName> was abbat of the convent,<persName>Theodosius</persName> and <persName>Sarrai</persName> the stewards, and the <persName>deacon Anastasius</persName> the sacristan or warden. See <bibl>Assemani, loc. Cit., Tel-Besme</bibl>.</p>
                   <quote xml:lang="syr">ܐܬܠܬܒܘ ܕܝܢ ܟܬܒ̈ܐ ܗܠܝܼܢ. ܒܚܦܝܛܘܬܐ ܕܡܪܝ ܨܪܝ ܡܫܡܫܢܐ ܬܠܒܫܡܝܐ. ܒܐܝܪܚ ܐܕܪ ܒܬܡܢܝܐ ܒܗ ܫܢܬ ܐܠܦܐ ܘܬܠܬܝܢ ܘܚܡܫ. ܒܝ̈ܘܡܝ ܢܟܦܐ ܡܪܝ ܫܡܥܘܢ ܪܝܫܕܝܪܐ̣. ܘܡܪܝ ܬܝܕܣܝ ܘܨܪܝ ܦܪ̈ܢܣܐ. ܘܒܝ̈ܘܡܝ ܡܪܝ ܐܢܣܛܘܣ ܩܫܝܫܐ ܘܩܘܢܟܝܐ. ܕܒܨܠܘ̈ܬܗܘܢ ܘܕܟܠܗܘܢ ܩ̈ܕܝܫܐ̣. ܢܬܚ̣ܢܢ ܣܒܐ ܫܡܫܐ ܕܟܬ̣ܒ ܐܡܝܢ ܘܐܡܝܢ</quote>
                 </item>
                 <item xml:id="addition5" n="5">
                   <locus from="73b" to="73b"/>
-                  <desc>The third note, which is in a different hand, says that this book was collated by<persName>Theodosius of<placeName>Tellā</placeName>
-                    </persName>(or<placeName>Tel-Mauzelath</placeName>or<placeName>Constantina</placeName>. See<bibl>Assemani, loc. cit., Tela</bibl>), and<persName>Abraham</persName>, a monk of the convent of<placeName>Kūbē</placeName>(or the Thorns),
-                      Near<placeName>Edessa</placeName>. See<bibl>Assemani, Bibl. Or., t. i. p. 278, t. ii. p. 109</bibl>.</desc>
+                  <p>The third note, which is in a different hand, says that this book was collated by <persName>Theodosius of <placeName>Tellā</placeName></persName>(or <placeName>Tel-Mauzelath</placeName> or <placeName>Constantina</placeName>. See <bibl>Assemani, loc. cit., Tela</bibl>), and <persName>Abraham</persName>, a monk of the convent of <placeName>Kūbē</placeName>(or the Thorns),
+                      Near <placeName>Edessa</placeName>. See <bibl>Assemani, Bibl. Or., t. i. p. 278, t. ii. p. 109</bibl>.</p>
                   <quote xml:lang="syr">ܦܚ̇ܡܘ ܟܬܒܐ ܗܢܐ̣. ܬܐܘܕܘܣܝ ܬܠܝܐ̣. ܘܐܚܐ ܐܒܪܗܡ ܡܢ ܕܝܪܐ ܕܩ̈ܘܒܐ. ܟܠ ܕܩ̇ܪܐ̣ ܢ̇ܨܠܐ ܥܠܝܗܘܢ. ܘ܏ܫ</quote>
                 </item>
                 <item xml:id="addition6" n="6">
                   <locus from="1b" to="1b"/>
                   <ref target="#a1"/>
-                  <desc>The lessons are marked in the text in the usual way, and an index of them is prefixed to the volume, fol. 1b.</desc>
+                  <p>The lessons are marked in the text in the usual way, and an index of them is prefixed to the volume, fol. 1b.</p>
                 </item>
                 <item xml:id="addition7" n="7">
                   <locus from="2b" to="2b"/>
-                  <desc>
-                    <title ref="http://syriaca.org/work/50">The twelve minor Prophets</title>were at one time bound up with this volume, as we learn from the words<foreign xml:lang="syr">ܘܬܘܒ ܝ܏ܒ ܢܒܝ̈ܐ</foreign>in a comparatively modern hand on the margin of fol. 2b.</desc>
+                  <p>
+                    <title ref="http://syriaca.org/work/50">The twelve minor Prophets</title> were at one time bound up with this volume, as we learn from the words <foreign xml:lang="syr">ܘܬܘܒ ܝ܏ܒ ܢܒܝ̈ܐ</foreign> in a comparatively modern hand on the margin of fol. 2b.</p>
                 </item>
                 <item xml:id="addition8" n="8">
                   <p>Greek vowels have been occasionally added by a later hand.<!-- Add Greek Vowels -->
@@ -250,19 +241,20 @@
           </physDesc>
           <history>
             <origin>
-              <origDate when-custom="1035" datingMethod="Seleucid">1035</origDate>
-              <origDate when="0724" calendar="Gregorian">A.D. 724</origDate>
+              <origDate calendar="Seleucid" datingMethod="Seleucid" when-custom="1035">AG 1035</origDate>
+              <origDate calendar="Gregorian" when="0724">AD 724</origDate>
+              
+              
             </origin>
           </history>
           <additional>
             <adminInfo>
               <recordHist>
-                <source>Manuscript description based on<bibl>
+                <source>Manuscript description based on <bibl>
                     <ref target="#Wrightpart">Wright's Catalogue</ref>
                   </bibl>. abbreviated by the Syriaca.org editors.</source>
               </recordHist>
-              <note/>
-            </adminInfo>
+              </adminInfo>
             <listBibl>
               <bibl xml:id="Wrightpart">
                 <author>William Wright</author>
@@ -271,7 +263,7 @@
                 <date>1870</date>
                 <ptr target="http://syriaca.org/bibl/8"/>
                 <citedRange unit="entry">XXIV</citedRange>
-                <citedRange unit="pp">1:15-16</citedRange>
+                <citedRange unit="p">1:15-16</citedRange>
               <ref type="internet-archive-pdf" target="https://archive.org/details/catalogueofsyria01brituoft/page/15"/>
               </bibl>
             </listBibl>
@@ -295,7 +287,6 @@
       <classDecl>
         <taxonomy xml:id="Wright-BL-Taxonomy">
           <bibl>
-            
             <ptr target="http://syriaca.org/documentation/Wright-BL-Taxonomy.html"/>
           </bibl>
           <category xml:id="biblical-manuscripts">
@@ -412,22 +403,30 @@
     </encodingDesc>
     <profileDesc>
       <langUsage>
-        <language ident="syr">Unvocalized Syriac of any variety or period</language>
-        <language ident="syr-Syre">Syriac in Estrangela</language>
-        <language ident="syr-Syrj">Vocalized West Syriac</language>
-        <language ident="syr-Syrn">Vocalized East Syriac</language>
-        <language ident="syr-x-syrm">Melkite Syriac</language>
-        <language ident="qhy-x-cpas">Palestinian Syriac</language>
-        <language ident="ar-Syrc">Unvocalized or Undetermined Arabic Garshuni</language>
-        <language ident="ar-Syrj">Arabic Garshuni in Vocalized West Syriac Script</language>
-        <language ident="ar-Syrn">Arabic Garshuni in Vocalized East Syriac Script</language>
-        <language ident="en">English</language>
         <language ident="ar">Arabic</language>
-        <language ident="fr">French</language>
-        <language ident="de">German</language>
-        <language ident="la">Latin</language>
-        <language ident="grc">Ancient Greek</language>
+        <language ident="ar-Syrc">Arabic Garshuni</language>
+        <language ident="ar-Syrn">Arabic Garshuni in East Syriac script</language>
         <language ident="cop">Coptic</language>
+        <language ident="de">German</language>
+        <language ident="en">English</language>
+        <language ident="fr">French</language>
+        <language ident="grc">Ancient Greek</language>
+        <language ident="he">Hebrew</language>
+        <language ident="hy">Armenian</language>
+        <language ident="it">Italian</language>
+        <language ident="la">Latin</language>
+        <language ident="syr">Syriac</language>
+        <language ident="syr-Arab">Syriac Garshuni in Arabic script</language>
+        <language ident="syr-Syre">Syriac in Estrangela script</language>
+        <language ident="syr-Syrj">Syriac in West Syriac script</language>
+        <language ident="syr-Syrn">Syriac in East Syriac script</language>
+        <language ident="syr-x-syrm">Syriac in Melkite Syriac script</language>
+        <language ident="tr">Turkish</language>
+        <language ident="tr-Syrc">Turkish Garshuni</language>
+        <language ident="qhy-x-cpas">Christian Palestinian Aramaic script</language>
+        <language ident="xcl">Classical Armenian</language>
+        <language ident="und">Undetermined</language>
+        <language ident="mul">Multiple languages</language>
       </langUsage>
       <textClass>
         <keywords scheme="#Wright-BL-Taxonomy">
@@ -442,24 +441,18 @@
     <revisionDesc status="draft">
       <change who="https://bl.syriac.uk/documentation/editors.xml#kurban" when="2023-04-21-05:00">CHANGED: added or corrected folio extent values</change>
       <change who="https://bl.syriac.uk/documentation/editors.xml#dgreeson" when="2013-07-10">Created: file</change>
-      <change who="http://syrica.org/editors.xml#thannah" when="2013-08-17">Initial edit</change>
-      <change who="http://syrica.org/editors.xml#jarnwine" when="2014-03-26">Edits to reflect colophons</change>
-      <change who="http://syrica.org/editors.xml#jarnwine" when="2014-04-08">Made multiple a-levels into one.</change>
-      <change who="http://syrica.org/editors.xml#jarnwine" when="2014-05-07">Added @syriaca-tags to describe colophon</change>
-      <change type="planned" subtype="missing">Add in missing Greek characters</change>
+      <change who="https://bl.syriac.uk/documentation/editors.xml#thannah" when="2013-08-17">Initial edit</change>
+      <change who="https://bl.syriac.uk/documentation/editors.xml#jarnwine" when="2014-03-26">Edits to reflect colophons</change>
+      <change who="https://bl.syriac.uk/documentation/editors.xml#jarnwine" when="2014-04-08">Made multiple a-levels into one.</change>
+      <change who="https://bl.syriac.uk/documentation/editors.xml#jarnwine" when="2014-05-07">Added @syriaca-tags to describe colophon</change>
+      <change type="planned" subtype="missing" who="https://bl.syriac.uk/documentation/editors.xml#smbl-general-editors">Add in missing Greek characters</change>
       <change who="https://bl.syriac.uk/documentation/editors.xml#pgmiller" when="2016-07-06">Changed: Files moved to srophe-app-data/data/manuscripts/tei repository.</change>
     </revisionDesc>
   </teiHeader>
-  <facsimile>
-    <!-- facsimile information about the manuscript -->
-    <graphic/>
-    <!-- Alternatively you could provide 'surface' elements with more than one image per surface, and optionally with 'zone' 
-      elements to give coordinates for any special areas of interest -->
-  </facsimile>
   <text>
     <body>
-      <!-- If you had a transcription of the manuscript you would put it here -->
       <p/>
+      <!--Body paragraph provided for document validation.-->
     </body>
   </text>
 </TEI>

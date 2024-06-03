@@ -1,4 +1,7 @@
-<?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/srophe-app/documentation/enrich-syriaca.rnc" type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/css" href="SRPEnrichCSS.css"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+<?xml-model href="https://raw.githubusercontent.com/srophe/britishLibrary/main/documentation/schema/out/Syriacamsdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/srophe/britishLibrary/main/documentation/schema/out/Syriacamsdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet href="https://raw.githubusercontent.com/srophe/wright-catalogue/master/parameters/tei.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="manuscript_821">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -68,11 +71,9 @@
         <edition n="1.0"/>
       </editionStmt>
       <publicationStmt>
-        <pubPlace/>
         <authority>Syriaca.org: The Syriac Reference Portal</authority>
         <idno type="URI">https://bl.syriac.uk/ms/821/tei</idno>
         <availability>
-          <p/>
           <licence target="http://creativecommons.org/licenses/by/3.0/">
             <p>Distributed under a Creative Commons Attribution 3.0 Unported License</p>
           </licence>
@@ -80,7 +81,7 @@
         <date calendar="Gregorian">2023-04-21-05:00</date>
       </publicationStmt>
       <sourceDesc>
-        <msDesc xml:id="manuscript-821" xml:lang="en">
+        <msDesc xml:id="manuscript-821">
           <msIdentifier>
             <country>United Kingdom</country>
             <settlement>London</settlement>
@@ -94,12 +95,11 @@
               <idno type="BL-Shelfmark-display">London, BL, Add. 17,171</idno>
             </altIdentifier>
             <altIdentifier>
-              <idno type="BL-Shelmark-simplified">BL Add MS 17171</idno>
+              <idno type="BL-Shelfmark-simplified">BL Add MS 17171</idno>
             </altIdentifier>
           </msIdentifier>
           <head>
             <note type="contents-note">This manuscript record does not have a summary list of contents. For composite manuscripts, the list of contents can be found under each individual part.</note>
-            <listRelation type="Wright-BL-Taxonomy"/>
             <listRelation type="composite-to-parts">
               <desc>This composite manuscript consists of 2 distinct parts:</desc>
               <relation name="syriaca:has-unspecified-codicological-part" ref="#syriaca:has-unspecified-codicological-part" active="https://bl.syriac.uk/ms/821" passive="https://bl.syriac.uk/ms/822">
@@ -120,7 +120,7 @@
                 <idno type="BL-Shelfmark-display">London, BL, Add. 17,171, foll. 1–16</idno>
               </altIdentifier>
               <altIdentifier>
-                <idno type="BL-Shelmark-simplified">BL Add MS 17171, foll. 1-16</idno>
+                <idno type="BL-Shelfmark-simplified">BL Add MS 17171, foll. 1-16</idno>
               </altIdentifier>
               <altIdentifier>
                 <collection>William Wright, Catalogue of the Syriac Manuscripts in the British Museum Acquired since the Year 1838</collection>
@@ -134,34 +134,33 @@
             <head>
               <note type="contents-note">This manuscript contains: . In total, including sub-sections, this manuscript contains 3 items.</note>
               <listRelation type="Wright-BL-Taxonomy">
-                <relation name="dcterms:type" ref="http://purl.org/dc/terms/type" active="https://bl.syriac.uk/ms/822" passive="#theology">
-                  <desc/>
-                </relation>
+                <relation name="dcterms:type" ref="http://purl.org/dc/terms/type" active="https://bl.syriac.uk/ms/822" passive="#theology"/>
               </listRelation>
               <listRelation type="part-to-composite">
                 <desc>This unit is a part of a composite manuscript:</desc>
-                <relation name="syriaca:is-unspecified-codicological-part-of" ref="#syriaca:is-unspecified-codicological-part-of" active="https://bl.syriac.uk/ms/822" passive="https://bl.syriac.uk/ms/821">
-                  <relation/>
-                </relation>
+                <relation name="syriaca:is-unspecified-codicological-part-of" ref="#syriaca:is-unspecified-codicological-part-of" active="https://bl.syriac.uk/ms/822" passive="https://bl.syriac.uk/ms/821"/>
               </listRelation>
             </head>
             <msContents>
-              <summary/>
               <textLang mainLang="syr">Syriac</textLang>
               <msItem xml:id="p1a1" n="1" defective="true">
                 <locus from="1" to="16">Foll. 1-16</locus>
                 <msItem xml:id="p1b1" n="2" defective="true">
                   <locus from="1b" to="16">foll. 1b-10</locus>
-                  <author ref="http://syriaca.org/person/827">John the Monk</author>
-                  <title type="supplied">The letter of<persName>John the monk</persName>to<persName>Eutropius</persName>and<persName>Eusebius</persName>, on the spiritual life</title>
+                  <author ref="http://syriaca.org/person/827">
+                    <persName xml:lang="en">John the Monk</persName>
+                  </author>
+                  <title xml:lang="en">The letter of John the monk to Eutropius and Eusebius, on the spiritual life</title>
                   <rubric xml:lang="syr">ܐܓܪܬܐ ܩܕܡܝܬܐ ܕܫܕܪ ܡܪܝ ܝܘܚܢܢ ܐܝܚܝܕܝܐ ܠܐܘܛܪܦܝܣ ܘܐܘܣܒܝܣ ܐܢܫܐ ܝܚܝ̈ܕܝܐ ܪ̈ܚܡܝ ܝܘܠܦܢܐ ܕܒܥܘ ܡܢܗ ܕܢܟܬܘܒ ܠܗܘܢ ܕܒܐܝܠܝܢ ܡܫܬܘܝܢ ܐܢܚܢܢ ܕܢܗܘܐ ܒܕܘܒܪܐ ܪܘܚܢܐ.<locus from="1b" to="1b"/>
                   </rubric>
                   <note>See <bibl>Add. 17,169<ptr target="https://bl.syriac.uk/ms/819"/>, no 2</bibl>.</note>
                 </msItem>
                 <msItem xml:id="p1b2" n="3" defective="true">
                   <locus from="10a" to="16">foll. 10a-16</locus>
-                  <author ref="http://syriaca.org/person/483">Evagrius</author>
-                  <title type="supplied">The discourse of<persName ref="http://syriaca.org/person/483">Evagrius</persName>, addressed to<persName>Eulogius</persName>
+                  <author ref="http://syriaca.org/person/483">
+                    <persName xml:lang="en">Evagrius</persName>
+                  </author>
+                  <title xml:lang="en">The discourse of Evagrius, addressed to Eulogius
                   </title>
                   <rubric xml:lang="syr">ܡܐܡܪܐ ܕܡܠܦܢܘܬܐ ܕܠܘܬ ܐܘܠܘܓܝܣ.<note>Imperfect at the beginning and end</note>
                     <locus from="10a" to="10a"/>
@@ -171,36 +170,31 @@
               </msItem>
             </msContents>
             <physDesc>
-              <p>The<locus from="16">last of the leaves</locus>is much torn.</p>
-              <p>Leaves are wanting after foll.<locus from="1" to="1">1</locus>,<locus from="5" to="5">5</locus>,<locus from="8" to="8">8</locus>,<locus from="9" to="9">9</locus>, and<locus from="16" to="16">16</locus>
+              <p>The <locus from="16">last of the leaves</locus> is much torn.</p>
+              <p>Leaves are wanting after foll.<locus from="1" to="1">1</locus>, <locus from="5" to="5">5</locus>, <locus from="8" to="8">8</locus>, <locus from="9" to="9">9</locus>, and <locus from="16" to="16">16</locus>
                         </p>
-              <objectDesc form="unspecified">
+              <objectDesc form="other">
                 <supportDesc material="perg">
                   <support>
                     <material>Vellum</material>
                   </support>
                   <extent>
                     <measure type="composition" unit="leaf" quantity="16">16 ff.</measure>
-                    <dimensions type="leaf" unit="in">
-                      <height>
-                        <measure type="height" quantity="8.75" unit="in">8 3/4</measure>
-                      </height>
-                      <width>
-                        <measure type="width" quantity="5.5" unit="in">5 1/2</measure>
-                      </width>
+                    <dimensions type="leaf" unit="inch">
+                      <height quantity="8.75">8 3/4</height>
+                      <width quantity="5.5">5 1/2</width>
                     </dimensions>
                   </extent>
-                  <foliation/>
                   <collation>
                     <p>The number of the quires and their signatures do not appear.</p>
                   </collation>
                   <condition>
                     <list>
                       <item>
-                        <p>The<locus from="16">last of the leaves</locus>is much torn.</p>
+                        <p>The <locus from="16">last of the leaves</locus> is much torn.</p>
                       </item>
                       <item>
-                        <p>Leaves are wanting after foll.<locus from="1" to="1">1</locus>,<locus from="5" to="5">5</locus>,<locus from="8" to="8">8</locus>,<locus from="9" to="9">9</locus>, and<locus from="16" to="16">16</locus>
+                        <p>Leaves are wanting after foll.<locus from="1" to="1">1</locus>, <locus from="5" to="5">5</locus>, <locus from="8" to="8">8</locus>, <locus from="9" to="9">9</locus>, and <locus from="16" to="16">16</locus>
                         </p>
                       </item>
                     </list>
@@ -214,25 +208,18 @@
               </objectDesc>
               <handDesc hands="4">
                 <handNote xml:id="p1handNote1" scope="major" script="syr-Syre" medium="unknown">
-                  <desc>This manuscript is written in a small, elegant hand of the<origDate notBefore="0500" notAfter="0600" calendar="Gregorian">vith cent</origDate>.</desc>
+                  This manuscript is written in a small, elegant hand of the <date notBefore="0500" notAfter="0600" calendar="Gregorian">vith cent</date>.
                 </handNote>
                 <handNote xml:id="p1handNote2" scope="minor" script="syr" medium="unknown">
-                  <desc>
-                    <ref target="#p1addition1">See additions.</ref>
-                  </desc>
-                </handNote>
+                  <ref target="#p1addition1">See additions.</ref>
+                  </handNote>
                 <handNote xml:id="p1handNote3" scope="minor" script="syr" medium="unknown">
-                  <desc>
-                    <ref target="#p1addition2">See additions.</ref>
-                  </desc>
-                </handNote>
+                  <ref target="#p1addition2">See additions.</ref>
+                  </handNote>
                 <handNote xml:id="p1handNote4" scope="minor" script="ar" medium="unknown">
-                  <desc>
-                    <ref target="#p1addition3">See additions.</ref>
-                  </desc>
-                </handNote>
+                  <ref target="#p1addition3">See additions.</ref>
+                  </handNote>
               </handDesc>
-              <decoDesc/>
               <additions>
                 <note type="proofreader-note">N.B., items below may have been listed out of folio order in Wright's catalogue.</note>
                 <list>
@@ -258,7 +245,7 @@
                   </item>
                   <item xml:id="p1addition2" n="2">
                     <locus from="16b" to="16b"/>
-                    <p>The central portion has been carefully effaced  at a still later date, and in its place we now find the following lines, informing us that the manuscript was presented to the<placeName ref="http://syriaca.org/place/360">convent of S. Mary Deipara</placeName>by its owner<persName>Bar-had-be-shabba</persName>
+                    <p>The central portion has been carefully effaced  at a still later date, and in its place we now find the following lines, informing us that the manuscript was presented to the <placeName ref="http://syriaca.org/place/360">convent of S. Mary Deipara</placeName> by its owner <persName>Bar-had-be-shabba</persName>
                     </p>
                     <p>
                       <quote xml:lang="syr">
@@ -273,31 +260,26 @@
                     <p>
                       <quote xml:lang="ar">%</quote>, i.e.<quote xml:lang="ar">%</quote>,</p>
                     <p>
-                      <quote>(the works) of<persName>Amba (Abba) Yuhanna the solitary</persName>
+                      <quote xml:lang="en">(the works) of <persName>Amba (Abba) Yuhanna the solitary</persName>
                       </quote>.</p>
                   </item>
                 </list>
               </additions>
-              <bindingDesc/>
-              <sealDesc/>
-              <accMat/>
-            </physDesc>
+              </physDesc>
             <history>
               <origin>
-                <origDate notBefore="0500" notAfter="0600" calendar="Gregorian">vith cent</origDate>
+                <origDate calendar="Gregorian" notBefore="0500" notAfter="0600">6th century</origDate>
+                
               </origin>
-              <provenance/>
-              <acquisition/>
-            </history>
+              </history>
             <additional>
               <adminInfo>
                 <recordHist>
-                  <source>Manuscript description based on<bibl>
+                  <source>Manuscript description based on <bibl>
                       <ref target="#Wrightpart1">Wright's Catalogue</ref>
                     </bibl>. abbreviated by the Syriaca.org editors.</source>
                 </recordHist>
-                <note/>
-              </adminInfo>
+                </adminInfo>
               <listBibl>
                 <bibl xml:id="Wrightpart1">
                   <author>William Wright</author>
@@ -306,7 +288,7 @@
                   <date>1870</date>
                   <ptr target="http://syriaca.org/bibl/8"/>
                   <citedRange unit="entry">DCCXXXV</citedRange>
-                  <citedRange unit="pp">2:657</citedRange>
+                  <citedRange unit="p">2:657</citedRange>
                 <ref type="internet-archive-pdf" target="https://archive.org/details/catalogueofsyria02brituoft/page/657"/>
                 </bibl>
               </listBibl>
@@ -322,7 +304,7 @@
                 <idno type="BL-Shelfmark-display">London, BL, Add. 17,171, foll. 17–23</idno>
               </altIdentifier>
               <altIdentifier>
-                <idno type="BL-Shelmark-simplified">BL Add MS 17171, foll. 17-23</idno>
+                <idno type="BL-Shelfmark-simplified">BL Add MS 17171, foll. 17-23</idno>
               </altIdentifier>
               <altIdentifier>
                 <collection>William Wright, Catalogue of the Syriac Manuscripts in the British Museum Acquired since the Year 1838</collection>
@@ -334,58 +316,47 @@
               </altIdentifier>
             </msIdentifier>
             <head>
-              <note type="contents-note">This manuscript contains: Jacob of Batnae. Part of the Discourse ofJacob ofBatnae on the Divine Love. In total, including sub-sections, this manuscript contains 1 items.</note>
+              <note type="contents-note">This manuscript contains: Jacob of Batnae. Part of the Discourse ofJacob ofBatnae on the Divine Love. In total, including sub-sections, this manuscript contains 1 item.</note>
               <listRelation type="Wright-BL-Taxonomy">
-                <relation name="dcterms:type" ref="http://purl.org/dc/terms/type" active="https://bl.syriac.uk/ms/823" passive="#theology">
-                  <desc/>
-                </relation>
+                <relation name="dcterms:type" ref="http://purl.org/dc/terms/type" active="https://bl.syriac.uk/ms/823" passive="#theology"/>
               </listRelation>
               <listRelation type="part-to-composite">
                 <desc>This unit is a part of a composite manuscript:</desc>
-                <relation name="syriaca:is-unspecified-codicological-part-of" ref="#syriaca:is-unspecified-codicological-part-of" active="https://bl.syriac.uk/ms/823" passive="https://bl.syriac.uk/ms/821">
-                  <relation/>
-                </relation>
+                <relation name="syriaca:is-unspecified-codicological-part-of" ref="#syriaca:is-unspecified-codicological-part-of" active="https://bl.syriac.uk/ms/823" passive="https://bl.syriac.uk/ms/821"/>
               </listRelation>
             </head>
             <msContents>
-              <summary/>
               <textLang mainLang="syr">Syriac</textLang>
               <msItem xml:id="p2a1" n="1" defective="true">
                 <locus from="17" to="23">Foll. 17-23</locus>
-                <author ref="http://syriaca.org/person/42">Jacob of Batnae</author>
-                <title type="supplied">Part of the Discourse of<persName ref="http://syriaca.org/person/42">Jacob of<placeName ref="http://syriaca.org/place/48">Batnae</placeName>
-                  </persName>on the Divine Love</title>
+                <author ref="http://syriaca.org/person/42">
+                  <persName xml:lang="en">Jacob of Batnae</persName>
+                </author>
+                <title xml:lang="en">Part of the Discourse of Jacob of Batnae on the Divine Love</title>
                 <rubric xml:lang="syr">ܡܐܡܪܐ ܕܥܠ ܚܘܒܐ ܐܠܗܝܐ<locus from="17"/>
                 </rubric>
-                <listBibl>
-                  <bibl>See Assemani, Bibl. Or., t. i., p. 316, no. 84.</bibl>
-                </listBibl>
+                <note>See <bibl>Assemani, Bibl. Or., t. i., p. 316, no. 84.</bibl>
+                </note>
               </msItem>
             </msContents>
             <physDesc>
               <p>Seven vellum leaves, about 7 1/4 in. by 5 3/8, the last of which is slightly torn. There are from 25 to 27 lines in each page. They contain part of the metrical discourse of Jacob of Batnae on the Divine Love, $ܡܐܡܪܐ ܕܥܠ ܚܘܒܐ ܐܠܗܝܐ, imperfect both at the beginning and end.</p>
-              <objectDesc form="unspecified">
+              <objectDesc form="other">
                 <supportDesc material="perg">
                   <support>
                     <material>Vellum</material>
                   </support>
                   <extent>
                     <measure type="composition" unit="leaf" quantity="7">7 ff.</measure>
-                    <dimensions type="leaf" unit="in">
-                      <height>
-                        <measure type="height" quantity="7.25" unit="in">7 1/4</measure>
-                      </height>
-                      <width>
-                        <measure type="width" quantity="5.375" unit="in">5 3/8</measure>
-                      </width>
+                    <dimensions type="leaf" unit="inch">
+                      <height quantity="7.25">7 1/4</height>
+                      <width quantity="5.375">5 3/8</width>
                     </dimensions>
                   </extent>
-                  <foliation/>
-                  <collation/>
                   <condition>
                     <list>
                       <item>
-                        <p>The<locus from="23">last leaf</locus>is slightly torn.</p>
+                        <p>The <locus from="23">last leaf</locus> is slightly torn.</p>
                       </item>
                       <item>
                         <p>The discourse is imperfect both at the beginning and end.</p>
@@ -394,40 +365,31 @@
                   </condition>
                 </supportDesc>
                 <layoutDesc>
-                  <layout columns="1" writtenLines="25 to 27">
+                  <layout columns="1" writtenLines="25 27">
                     <p>There are from 25 to 27 lines in each page</p>
                   </layout>
                 </layoutDesc>
               </objectDesc>
               <handDesc hands="1">
                 <handNote xml:id="p2handNote1" scope="sole" script="syr-Syre" medium="unknown">
-                  <desc>The writing is a good, regular Estrangela of the<origDate notBefore="0700" notAfter="0800" calendar="Gregorian">viiith cent</origDate>.</desc>
+                  The writing is a good, regular Estrangela of the <date notBefore="0700" notAfter="0800" calendar="Gregorian">viiith cent</date>.
                 </handNote>
               </handDesc>
-              <decoDesc/>
-              <additions/>
-              <bindingDesc/>
-              <sealDesc/>
-              <accMat/>
-            </physDesc>
+              </physDesc>
             <history>
-              <summary/>
               <origin>
-                <origDate notBefore="0700" notAfter="0800" calendar="Gregorian">viiith century.</origDate>
-                <origPlace/>
+                <origDate calendar="Gregorian" notBefore="0700" notAfter="0800">8th century.</origDate>
+                
               </origin>
-              <provenance/>
-              <acquisition/>
-            </history>
+              </history>
             <additional>
               <adminInfo>
                 <recordHist>
-                  <source>Manuscript description based on<bibl>
+                  <source>Manuscript description based on <bibl>
                       <ref target="#Wrightpart2">Wright's Catalogue</ref>
                     </bibl>. abbreviated by the Syriaca.org editors.</source>
                 </recordHist>
-                <note/>
-              </adminInfo>
+                </adminInfo>
               <listBibl>
                 <bibl xml:id="Wrightpart2">
                   <author>William Wright</author>
@@ -436,7 +398,7 @@
                   <date>1870</date>
                   <ptr target="http://syriaca.org/bibl/8"/>
                   <citedRange unit="entry">DCLII</citedRange>
-                  <citedRange unit="pp">2:513</citedRange>
+                  <citedRange unit="p">2:513</citedRange>
                 <ref type="internet-archive-pdf" target="https://archive.org/details/catalogueofsyria02brituoft/page/513"/>
                 </bibl>
               </listBibl>
@@ -461,7 +423,6 @@
       <classDecl>
         <taxonomy xml:id="Wright-BL-Taxonomy">
           <bibl>
-            
             <ptr target="http://syriaca.org/documentation/Wright-BL-Taxonomy.html"/>
           </bibl>
           <category xml:id="biblical-manuscripts">
@@ -578,22 +539,30 @@
     </encodingDesc>
     <profileDesc>
       <langUsage>
-        <language ident="syr">Unvocalized Syriac of any variety or period</language>
-        <language ident="syr-Syre">Syriac in Estrangela</language>
-        <language ident="syr-Syrj">Vocalized West Syriac</language>
-        <language ident="syr-Syrn">Vocalized East Syriac</language>
-        <language ident="syr-x-syrm">Melkite Syriac</language>
-        <language ident="qhy-x-cpas">Palestinian Syriac</language>
-        <language ident="ar-Syrc">Unvocalized or Undetermined Arabic Garshuni</language>
-        <language ident="ar-Syrj">Arabic Garshuni in Vocalized West Syriac Script</language>
-        <language ident="ar-Syrn">Arabic Garshuni in Vocalized East Syriac Script</language>
-        <language ident="en">English</language>
         <language ident="ar">Arabic</language>
-        <language ident="fr">French</language>
-        <language ident="de">German</language>
-        <language ident="la">Latin</language>
-        <language ident="grc">Ancient Greek</language>
+        <language ident="ar-Syrc">Arabic Garshuni</language>
+        <language ident="ar-Syrn">Arabic Garshuni in East Syriac script</language>
         <language ident="cop">Coptic</language>
+        <language ident="de">German</language>
+        <language ident="en">English</language>
+        <language ident="fr">French</language>
+        <language ident="grc">Ancient Greek</language>
+        <language ident="he">Hebrew</language>
+        <language ident="hy">Armenian</language>
+        <language ident="it">Italian</language>
+        <language ident="la">Latin</language>
+        <language ident="syr">Syriac</language>
+        <language ident="syr-Arab">Syriac Garshuni in Arabic script</language>
+        <language ident="syr-Syre">Syriac in Estrangela script</language>
+        <language ident="syr-Syrj">Syriac in West Syriac script</language>
+        <language ident="syr-Syrn">Syriac in East Syriac script</language>
+        <language ident="syr-x-syrm">Syriac in Melkite Syriac script</language>
+        <language ident="tr">Turkish</language>
+        <language ident="tr-Syrc">Turkish Garshuni</language>
+        <language ident="qhy-x-cpas">Christian Palestinian Aramaic script</language>
+        <language ident="xcl">Classical Armenian</language>
+        <language ident="und">Undetermined</language>
+        <language ident="mul">Multiple languages</language>
       </langUsage>
       <textClass>
         <keywords scheme="#Wright-BL-Taxonomy">
@@ -614,30 +583,24 @@
       <change who="https://bl.syriac.uk/documentation/editors.xml#kurban" when="2023-04-21-05:00">CHANGED: added or corrected folio extent values</change>
       <change who="https://bl.syriac.uk/documentation/editors.xml#cchen" when="2023-01-13-06:00">CHANGED: updated incorrect form and/or material support designation</change>
       <change who="https://bl.syriac.uk/documentation/editors.xml#jarnwine" when="2023-01-13-06:00">ADDED: supplied and corrected Syriaca.org URIs for authors</change>
-      <change who="https://bl.syriac.uk/documentation/editors.xml#emjohnson" when="2014-05-15">Created: file<ref target="#Part2">Part 2</ref>
+      <change who="https://bl.syriac.uk/documentation/editors.xml#emjohnson" when="2014-05-15">Created: file <ref target="#Part2">Part 2</ref>
       </change>
-      <change who="https://bl.syriac.uk/documentation/editors.xml#jnquiroz" when="2014-08-07">Created: file<ref target="#Part1">Part 1</ref>
+      <change who="https://bl.syriac.uk/documentation/editors.xml#jnquiroz" when="2014-08-07">Created: file <ref target="#Part1">Part 1</ref>
       </change>
-      <change who="https://bl.syriac.uk/documentation/editors.xml#jnquiroz" when="2014-08-16">Completed file<ref target="#Part1">Part 1</ref>
+      <change who="https://bl.syriac.uk/documentation/editors.xml#jnquiroz" when="2014-08-16">Completed file <ref target="#Part1">Part 1</ref>
       </change>
-      <change who="https://bl.syriac.uk/documentation/editors.xml#jarnwine" when="2014-10-09">Edited: file<ref target="#Part1">Part 1</ref>
+      <change who="https://bl.syriac.uk/documentation/editors.xml#jarnwine" when="2014-10-09">Edited: file <ref target="#Part1">Part 1</ref>
       </change>
       <change who="https://bl.syriac.uk/documentation/editors.xml#jarnwine" when="2015-03-18">Incorporated msParts into one file.</change>
-      <change type="planned" subtype="arabic">Add missing Arabic text.</change>
-      <change type="planned" subtype="uri">Needs Addition of work URIs.</change>
+      <change type="planned" subtype="arabic" who="https://bl.syriac.uk/documentation/editors.xml#smbl-general-editors">Add missing Arabic text.</change>
+      <change type="planned" subtype="uri" who="https://bl.syriac.uk/documentation/editors.xml#smbl-general-editors">Needs Addition of work URIs.</change>
       <change who="https://bl.syriac.uk/documentation/editors.xml#pgmiller" when="2016-07-06">Changed: Files moved to srophe-app-data/data/manuscripts/tei repository.</change>
     </revisionDesc>
   </teiHeader>
-  <facsimile>
-    <!-- facsimile information about the manuscript -->
-    <graphic/>
-    <!-- Alternatively you could provide 'surface' elements with more than one image per surface, and optionally with 'zone' 
-      elements to give coordinates for any special areas of interest -->
-  </facsimile>
   <text>
     <body>
-      <!-- If you had a transcription of the manuscript you would put it here -->
       <p/>
+      <!--Body paragraph provided for document validation.-->
     </body>
   </text>
 </TEI>

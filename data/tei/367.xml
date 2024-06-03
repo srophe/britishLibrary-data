@@ -1,4 +1,7 @@
-<?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/srophe-app/documentation/enrich-syriaca.rnc" type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/css" href="SRPEnrichCSS.css"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+<?xml-model href="https://raw.githubusercontent.com/srophe/britishLibrary/main/documentation/schema/out/Syriacamsdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/srophe/britishLibrary/main/documentation/schema/out/Syriacamsdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet href="https://raw.githubusercontent.com/srophe/wright-catalogue/master/parameters/tei.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="manuscript_367">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -22,13 +25,7 @@
           <resp>Based on the work of</resp>
           <name type="person" ref="https://bl.syriac.uk/documentation/editors.xml#wwright">William Wright</name>
         </respStmt>
-        <respStmt>
-          <resp>Edited by</resp>
-          <name type="person" ref="https://bl.syriac.uk/documentation/editors.xml#">
-            <!-- Editor's first initial and surname follow "#" (e.g., "...#dmichelson") -->
-            <!--Initial editor's name here -->
-          </name>
-        </respStmt>
+        
         <respStmt>
           <resp>Syriac text entered by</resp>
           <name type="person" ref="https://bl.syriac.uk/documentation/editors.xml#raydin">Robert Aydin</name>
@@ -67,11 +64,9 @@
         <edition n="1.0"/>
       </editionStmt>
       <publicationStmt>
-        <pubPlace/>
         <authority>Syriaca.org: The Syriac Reference Portal</authority>
         <idno type="URI">https://bl.syriac.uk/ms/367/tei</idno>
         <availability>
-          <p/>
           <licence target="http://creativecommons.org/licenses/by/3.0/">
             <p>Distributed under a Creative Commons Attribution 3.0 Unported License</p>
           </licence>
@@ -79,7 +74,7 @@
         <date calendar="Gregorian">2023-04-21-05:00</date>
       </publicationStmt>
       <sourceDesc>
-        <msDesc xml:id="manuscript-367" xml:lang="en">
+        <msDesc xml:id="manuscript-367">
           <msIdentifier>
             <country>United Kingdom</country>
             <settlement>London</settlement>
@@ -93,7 +88,7 @@
               <idno type="BL-Shelfmark-display">London, BL, Add. 14,627</idno>
             </altIdentifier>
             <altIdentifier>
-              <idno type="BL-Shelmark-simplified">BL Add MS 14627</idno>
+              <idno type="BL-Shelfmark-simplified">BL Add MS 14627</idno>
             </altIdentifier>
             <altIdentifier>
               <collection>William Wright, Catalogue of the Syriac Manuscripts in the British Museum Acquired since the Year 1838</collection>
@@ -113,175 +108,218 @@
             </listRelation>
           </head>
           <msContents>
-            <summary/>
             <textLang mainLang="syr">Syriac</textLang>
             <msItem xml:id="a1" n="1" defective="true">
               <locus from="1" to="27">Foll. 1-27</locus>
-              <author ref="http://syriaca.org/person/13">Ephrem the Syrian</author>
-              <title type="supplied">Hymns or metrical discourses of <persName ref="http://syriaca.org/person/13">Ephraim</persName>
+              <author ref="http://syriaca.org/person/13">
+                <persName xml:lang="en">Ephrem the Syrian</persName>
+              </author>
+              <title xml:lang="en">Hymns or metrical discourses of Ephraim
               </title>
               <msItem xml:id="b1" n="2" defective="true">
                 <locus from="1a" to="7a">Foll. 1a-7a</locus>
-                <author ref="http://syriaca.org/person/13">Ephrem</author>
-                <title type="supplied">On Lent</title>
+                <author ref="http://syriaca.org/person/13">
+                  <persName xml:lang="en">Ephrem</persName>
+                </author>
+                <title xml:lang="en">On Lent</title>
                 <rubric xml:lang="syr">ܕܥܠ ܨܘܡܐ<locus from="1a"/>
                 </rubric>
                 <finalRubric xml:lang="syr">ܫܠܡ ܥܣܪܐ ܡܕܪ̈ܫܝܢ ܕܥܠ ܨܘܡܐ ܕܐܪ̈ܒܥܝܢ.<locus from="7a"/>
                 </finalRubric>
-                <note>Originally 10 in number, of which only the last two are complete. See<bibl>
-                    <msIdentifier>
-                      <idno ref="https://bl.syriac.uk/ms/304">Add. 14,571, no. 2</idno>
-                    </msIdentifier>
+                <note>Originally 10 in number, of which only the last two are complete. See <bibl>Add. 14,571, no. 2<ptr target="https://bl.syriac.uk/ms/304"/>
                   </bibl>.</note>
               </msItem>
               <msItem xml:id="b2" n="3" defective="true">
                 <locus from="7a" to="17b">Foll. 7a-17b</locus>
-                <author ref="http://syriaca.org/person/13">Ephrem</author>
-                <title type="supplied">On the Lord's Supper</title>
+                <author ref="http://syriaca.org/person/13">
+                  <persName xml:lang="en">Ephrem</persName>
+                </author>
+                <title xml:lang="en">On the Lord's Supper</title>
                 <rubric xml:lang="syr">ܕܦܛܝܪ̈ܐ<locus from="7a"/>
                 </rubric>
                 <finalRubric xml:lang="syr">ܫܠܡ ܥܣܪ̈ܝܢ ܘܚܕ ܡܕܪ̈ܫܝܢ ܕܥܠ ܦܛܝܪ̈ܐ ܕܛܘܒܢܐ ܡܪܝ ܐܦܪܝܡ.<locus from="17b"/>
                 </finalRubric>
-                <note>Originally 21 in number. The first two are the same as in<bibl>
-                    <msIdentifier>
-                      <idno ref="https://bl.syriac.uk/ms/304">Add. 14,571, no. 3</idno>
-                    </msIdentifier>
+                <note>Originally 21 in number. The first two are the same as in <bibl>Add. 14,571, no. 3<ptr target="https://bl.syriac.uk/ms/304"/>
                   </bibl>. The hymns between the sixth and the thirteenth are imperfect at the commencement. One of them, which is likewise imperfect, begins, <foreign xml:lang="syr">ܒܝܪܚ ܗܒ̈ܒܐ ܝܒܒܘ ܩ̈ܠܘܗܝ ܕܦܠܓܗ̇ ܕܡܪܝܡ ܠܘܩܒܠ ܥܡܐ</foreign>.</note>
                 <msItem xml:id="c1" n="4">
                   <locus from="7a"/>
-                  <author ref="http://syriaca.org/person/13">Ephrem</author>
-                  <title type="supplied">Third madrāshā</title>
+                  <author ref="http://syriaca.org/person/13">
+                    <persName xml:lang="en">Ephrem</persName>
+                  </author>
+                  <title xml:lang="en">Third madrāshā</title>
                   <incipit xml:lang="syr">ܗܐ ܩܛܝܠ ܒܡܨܪܝܢ ܐܡܪ ܦܨܚܐ</incipit>
                 </msItem>
                 <msItem xml:id="c2" n="5">
                   <locus from="7a"/>
-                  <author ref="http://syriaca.org/person/13">Ephrem</author>
-                  <title type="supplied">Fourth madrāshā</title>
+                  <author ref="http://syriaca.org/person/13">
+                    <persName xml:lang="en">Ephrem</persName>
+                  </author>
+                  <title xml:lang="en">Fourth madrāshā</title>
                   <incipit xml:lang="syr">ܫܡ̣ܥܘ ܛܘܦܣܐ ܓܠܝܐ ܕܒܓܘ ܡܨܪܝܢ</incipit>
                 </msItem>
                 <msItem xml:id="c3" n="6">
                   <locus from="7a"/>
-                  <author ref="http://syriaca.org/person/13">Ephrem</author>
-                  <title type="supplied">Fifth madrāshā</title>
+                  <author ref="http://syriaca.org/person/13">
+                    <persName xml:lang="en">Ephrem</persName>
+                  </author>
+                  <title xml:lang="en">Fifth madrāshā</title>
                   <incipit xml:lang="syr">ܐܡܪܗ ܕܐܠܗܐ ܐܦܩ  ܒܕܡܗ ܥܡ̈ܡܐ ܡܢ ܛܘܥܝܝ ܐܝܟ ܡܢ ܡܨܪܝܢ</incipit>
                 </msItem>
                 <msItem xml:id="c4" n="7" defective="true">
                   <locus from="7a"/>
-                  <author ref="http://syriaca.org/person/13">Ephrem</author>
-                  <title type="supplied">Sixth madrāshā</title>
+                  <author ref="http://syriaca.org/person/13">
+                    <persName xml:lang="en">Ephrem</persName>
+                  </author>
+                  <title xml:lang="en">Sixth madrāshā</title>
                   <incipit xml:lang="syr">ܒܝܬ ܐܡܪܐ ܠܐܡܪܐ ܩܡܘ ܬܠܡ̈ܝܕܐ</incipit>
                   <note>Imperfect.</note>
                 </msItem>
                 <msItem xml:id="c5" n="8">
                   <locus from="7a"/>
-                  <author ref="http://syriaca.org/person/13">Ephrem</author>
-                  <title type="supplied">Thirteenth madrāshā</title>
+                  <author ref="http://syriaca.org/person/13">
+                    <persName xml:lang="en">Ephrem</persName>
+                  </author>
+                  <title xml:lang="en">Thirteenth madrāshā</title>
                   <incipit xml:lang="syr">ܬܘ ܢܥܒܕ ܐܚ̈ܝ ܒܝܪܚ ܢܝܣܢ ܥܕܥܕ ܢܨ̈ܚܢܘܗܝ ܕܐܡܪ ܩܘܫܬܐ</incipit>
                 </msItem>
                 <msItem xml:id="c6" n="9">
                   <locus from="7a"/>
-                  <author ref="http://syriaca.org/person/13">Ephrem</author>
-                  <title type="supplied">Fourteenth madrāshā</title>
+                  <author ref="http://syriaca.org/person/13">
+                    <persName xml:lang="en">Ephrem</persName>
+                  </author>
+                  <title xml:lang="en">Fourteenth madrāshā</title>
                   <incipit xml:lang="syr">ܐܢܬܬܐ ܒܣܡܟܐ ܢܫܩܬ ܪ̈ܓܠܘܗܝ</incipit>
                 </msItem>
                 <msItem xml:id="c7" n="10">
                   <locus from="7a"/>
-                  <author ref="http://syriaca.org/person/13">Ephrem</author>
-                  <title type="supplied">Fifteenth madrāshā</title>
+                  <author ref="http://syriaca.org/person/13">
+                    <persName xml:lang="en">Ephrem</persName>
+                  </author>
+                  <title xml:lang="en">Fifteenth madrāshā</title>
                   <incipit xml:lang="syr">ܐܠܗܐ ܕܢܚܬ ܥܠ ܛܘܪ ܣܝܢܝ. ܒܚܝܠܐ ܗܘ ܕܡܢܗ ܛܥܢܗ ܛܘܪܐ</incipit>
                 </msItem>
                 <msItem xml:id="c8" n="11">
                   <locus from="7a"/>
-                  <author ref="http://syriaca.org/person/13">Ephrem</author>
-                  <title type="supplied">Sixteenth madrāshā</title>
+                  <author ref="http://syriaca.org/person/13">
+                    <persName xml:lang="en">Ephrem</persName>
+                  </author>
+                  <title xml:lang="en">Sixteenth madrāshā</title>
                   <incipit xml:lang="syr">ܒܘܟܪܐ ܨ̣ܒܐ ܘܐܚܕܗ ܩܒܪܐ ܙܥܘܪܐ</incipit>
                 </msItem>
                 <msItem xml:id="c9" n="12">
                   <locus from="7a"/>
-                  <author ref="http://syriaca.org/person/13">Ephrem</author>
-                  <title type="supplied">Seventeenth madrāshā</title>
+                  <author ref="http://syriaca.org/person/13">
+                    <persName xml:lang="en">Ephrem</persName>
+                  </author>
+                  <title xml:lang="en">Seventeenth madrāshā</title>
                   <incipit xml:lang="syr">ܢܝܣܢ ܕܡܚܕܬ ܟܠ ܥܩܪ̈ܝܢ. ܠܐ ܐܫܟܚ ܚܕܬ ܥܡܐ ܕܥ̣ܬܩ</incipit>
                 </msItem>
                 <msItem xml:id="c10" n="13">
                   <locus from="7a"/>
-                  <author ref="http://syriaca.org/person/13">Ephrem</author>
-                  <title type="supplied">Eighteenth madrāshā</title>
+                  <author ref="http://syriaca.org/person/13">
+                    <persName xml:lang="en">Ephrem</persName>
+                  </author>
+                  <title xml:lang="en">Eighteenth madrāshā</title>
                   <incipit xml:lang="syr">ܥܡ̈ܡܐ ܒܓܘ ܦܨܚܐ ܐܟܠܘ ܚܡܝܥܐ</incipit>
                 </msItem>
                 <msItem xml:id="c11" n="14">
                   <locus from="7a"/>
-                  <author ref="http://syriaca.org/person/13">Ephrem</author>
-                  <title type="supplied">Nineteenth madrāshā</title>
+                  <author ref="http://syriaca.org/person/13">
+                    <persName xml:lang="en">Ephrem</persName>
+                  </author>
+                  <title xml:lang="en">Nineteenth madrāshā</title>
                   <incipit xml:lang="syr">ܩܡ ܐܡܪ ܩܘܫܬܐ ܘܩܨܐ   ܦܓܪܗ ܠܬܡ̈ܝܡܐ ܕܐܟܠܘ ܐܡܪ ܦܨܚܐ</incipit>
                 </msItem>
                 <msItem xml:id="c12" n="15">
                   <locus from="7a"/>
-                  <author ref="http://syriaca.org/person/13">Ephrem</author>
-                  <title type="supplied">Twentieth madrāshā</title>
+                  <author ref="http://syriaca.org/person/13">
+                    <persName xml:lang="en">Ephrem</persName>
+                  </author>
+                  <title xml:lang="en">Twentieth madrāshā</title>
                   <incipit xml:lang="syr">ܬܘ ܢܫܡܥ ܐܚ̈ܝ ܥܠ ܒܪ ܟܣܝܐ</incipit>
                 </msItem>
                 <msItem xml:id="c13" n="16">
                   <locus from="7a"/>
-                  <author ref="http://syriaca.org/person/13">Ephrem</author>
-                  <title type="supplied">Twenty-first madrāshā</title>
+                  <author ref="http://syriaca.org/person/13">
+                    <persName xml:lang="en">Ephrem</persName>
+                  </author>
+                  <title xml:lang="en">Twenty-first madrāshā</title>
                   <incipit xml:lang="syr">ܦܨܚܐ ܕܐܬܦܩܕ ܕܢܗܘܐ ܒܙܗܝܘ</incipit>
                 </msItem>
               </msItem>
               <msItem xml:id="b3" n="17" defective="true">
                 <locus from="17b" to="22">Foll. 17b-22</locus>
-                <author ref="http://syriaca.org/person/13">Ephrem</author>
-                <title type="supplied">On the Crucifixion</title>
+                <author ref="http://syriaca.org/person/13">
+                  <persName xml:lang="en">Ephrem</persName>
+                </author>
+                <title xml:lang="en">On the Crucifixion</title>
                 <rubric xml:lang="syr">ܕܥܠ ܙܩܝܦܘܬܐ<locus from="17b"/>
                 </rubric>
                 <note>3 in number.</note>
                 <msItem xml:id="c14" n="18">
                   <locus from="17b"/>
-                  <author ref="http://syriaca.org/person/13">Ephrem</author>
-                  <title type="supplied">First madrāshā</title>
+                  <author ref="http://syriaca.org/person/13">
+                    <persName xml:lang="en">Ephrem</persName>
+                  </author>
+                  <title xml:lang="en">First madrāshā</title>
                   <incipit xml:lang="syr">ܐܘ ܠܡܪܗ ܕܕܘܝܕ ܕܪܟܒ ܥܝܠܐ ܘܐܬܐ ܗܘܐ ܠܘܬܗ̇ ܕܒܪܬ ܨܗܝܘܢ</incipit>
                 </msItem>
                 <msItem xml:id="c15" n="19">
                   <locus from="17b"/>
-                  <author ref="http://syriaca.org/person/13">Ephrem</author>
-                  <title type="supplied">Second madrāshā</title>
+                  <author ref="http://syriaca.org/person/13">
+                    <persName xml:lang="en">Ephrem</persName>
+                  </author>
+                  <title xml:lang="en">Second madrāshā</title>
                   <incipit xml:lang="syr">ܐܘ ܐܡܪܐ ܟܣܝܐ ܕܢܟܣ ܐܡܪܐ ܓܠܝܐ ܒܓܘ ܡܨܪܝܢ</incipit>
                 </msItem>
                 <msItem xml:id="c16" n="20" defective="true">
                   <locus from="17b"/>
-                  <author ref="http://syriaca.org/person/13">Ephrem</author>
-                  <title type="supplied">Third madrāshā</title>
+                  <author ref="http://syriaca.org/person/13">
+                    <persName xml:lang="en">Ephrem</persName>
+                  </author>
+                  <title xml:lang="en">Third madrāshā</title>
                   <incipit xml:lang="syr">ܒܐܪ̈ܒܥܣܪܐ ܢܟܣ ܐܡܪ ܦܨܚܐ. ܒܝܬ ܫܡ̈ܫܐ ܠܡ ܐܝܟ ܡܐ ܕܟܬܝܒ.</incipit>
                 </msItem>
               </msItem>
               <msItem xml:id="b4" n="21" defective="true">
                 <locus from="22a" to="27">Foll. 22a-27</locus>
-                <author ref="http://syriaca.org/person/13">Ephrem</author>
-                <title type="supplied">On the Resurrection</title>
+                <author ref="http://syriaca.org/person/13">
+                  <persName xml:lang="en">Ephrem</persName>
+                </author>
+                <title xml:lang="en">On the Resurrection</title>
                 <rubric xml:lang="syr">ܕܥܠ ܩܝܡܬܐ<locus from="22a"/>
                 </rubric>
                 <note>At present 5 in number. The first is slightly imperfect at the beginning.</note>
                 <msItem xml:id="c17" n="22">
                   <locus from="22a"/>
-                  <author ref="http://syriaca.org/person/13">Ephrem</author>
-                  <title type="supplied">Second madrāshā</title>
+                  <author ref="http://syriaca.org/person/13">
+                    <persName xml:lang="en">Ephrem</persName>
+                  </author>
+                  <title xml:lang="en">Second madrāshā</title>
                   <incipit xml:lang="syr">ܪܟܘܒܐ ܗܘܐ ܠܝ ܢܡܘܣܟ ܗ̇ܘ ܕܓܠܐ ܥܠ ܦܪܕܝܣܐ</incipit>
                 </msItem>
                 <msItem xml:id="c18" n="23">
                   <locus from="22a"/>
-                  <author ref="http://syriaca.org/person/13">Ephrem</author>
-                  <title type="supplied">Third madrāshā</title>
+                  <author ref="http://syriaca.org/person/13">
+                    <persName xml:lang="en">Ephrem</persName>
+                  </author>
+                  <title xml:lang="en">Third madrāshā</title>
                   <incipit xml:lang="syr">ܢܝܣܢ ܝܪܚܐ ܙܟܝܐ ܕܐܫܬܕܪ ܡܢ ܙܟܝܐ</incipit>
                 </msItem>
                 <msItem xml:id="c19" n="24">
                   <locus from="22a"/>
-                  <author ref="http://syriaca.org/person/13">Ephrem</author>
-                  <title type="supplied">Fourth madrāshā</title>
+                  <author ref="http://syriaca.org/person/13">
+                    <persName xml:lang="en">Ephrem</persName>
+                  </author>
+                  <title xml:lang="en">Fourth madrāshā</title>
                   <incipit xml:lang="syr">ܐܘܫܛ ܠܢ ܡܪܝ  ܒܪܝܟܐ ܩܠܝܠ ܡܢ ܥܘܬܪܟ ܒܝܪܚܐ ܡܥܬܪ ܟܠ</incipit>
                 </msItem>
                 <msItem xml:id="c20" n="25">
                   <locus from="22a"/>
-                  <author ref="http://syriaca.org/person/13">Ephrem</author>
-                  <title type="supplied">Fifth madrāshā</title>
+                  <author ref="http://syriaca.org/person/13">
+                    <persName xml:lang="en">Ephrem</persName>
+                  </author>
+                  <title xml:lang="en">Fifth madrāshā</title>
                   <incipit xml:lang="syr">ܒܗܢܐ ܝܪܚܐ ܫܦܝܥܐ ܫܦܥܬ ܡܘܗܒܬܟ ܕܠܐ ܚܣܡ ܥܠ ܟܠܐ.</incipit>
                   <note>Imperfect.</note>
                 </msItem>
@@ -302,23 +340,18 @@
                 </support>
                 <extent>
                   <measure type="composition" unit="leaf" quantity="27">27 ff.</measure>
-                  <dimensions type="leaf" unit="in">
-                    <height>
-                      <measure type="height" quantity="10" unit="in">10</measure>
-                    </height>
-                    <width>
-                      <measure type="width" quantity="6.75" unit="in">6 3/4</measure>
-                    </width>
+                  <dimensions type="leaf" unit="inch">
+                    <height quantity="10">10</height>
+                    <width quantity="6.75">6 3/4</width>
                   </dimensions>
                 </extent>
-                <foliation/>
                 <collation>
-                  <p>The quires are signed with letters (fol.<locus from="22a">22a</locus>,<foreign xml:lang="syr">ܙ</foreign>).</p>
+                  <p>The quires are signed with letters (fol.<locus from="22a">22a</locus>, <foreign xml:lang="syr">ܙ</foreign>).</p>
                 </collation>
                 <condition>
                   <list>
                     <item>
-                      <p>Some of the leaves are much stained and torn, especially foll.<locus from="2" to="5">2—5</locus>,<locus from="11">11</locus>, and<locus from="27">27</locus>.</p>
+                      <p>Some of the leaves are much stained and torn, especially foll.<locus from="2" to="5">2—5</locus>, <locus from="11">11</locus>, and <locus from="27">27</locus>.</p>
                     </item>
                     <item>
                       <p>Leaves are wanting at the beginning and end, as well as after foll. 1, 3, 4, 10, 11, and 21.</p>
@@ -334,32 +367,24 @@
             </objectDesc>
             <handDesc hands="1">
               <handNote xml:id="handNote1" scope="sole" script="syr-Syre" medium="unknown">
-                <desc>This volume is written in a good, regular Estrangela of the <origDate notBefore="0500" notAfter="0700" calendar="Gregorian">vith or viith </origDate>cent.</desc>
+                This volume is written in a good, regular Estrangela of the <date notBefore="0500" notAfter="0700" calendar="Gregorian">vith or viith </date> cent.
               </handNote>
             </handDesc>
-            <decoDesc/>
-            <additions/>
-            <bindingDesc/>
-            <sealDesc/>
-            <accMat/>
-          </physDesc>
+            </physDesc>
           <history>
             <origin>
-              <origDate notBefore="0500" notAfter="0700" calendar="Gregorian">vith or viith cent.</origDate>
-              <origPlace/>
+              <origDate calendar="Gregorian" notBefore="0500" notAfter="0700">6th or 7th century</origDate>
+              
             </origin>
-            <provenance/>
-            <acquisition/>
-          </history>
+            </history>
           <additional>
             <adminInfo>
               <recordHist>
-                <source>Manuscript description based on<bibl>
+                <source>Manuscript description based on <bibl>
                     <ref target="#Wrightpart">Wright's Catalogue</ref>
                   </bibl>. abbreviated by the Syriaca.org editors.</source>
               </recordHist>
-              <note/>
-            </adminInfo>
+              </adminInfo>
             <listBibl>
               <bibl xml:id="Wrightpart">
                 <author>William Wright</author>
@@ -368,7 +393,7 @@
                 <date>1870</date>
                 <ptr target="http://syriaca.org/bibl/8"/>
                 <citedRange unit="entry">DXLII</citedRange>
-                <citedRange unit="pp">2:415</citedRange>
+                <citedRange unit="p">2:415</citedRange>
               <ref type="internet-archive-pdf" target="https://archive.org/details/catalogueofsyria02brituoft/page/415"/>
               </bibl>
             </listBibl>
@@ -392,7 +417,6 @@
       <classDecl>
         <taxonomy xml:id="Wright-BL-Taxonomy">
           <bibl>
-            
             <ptr target="http://syriaca.org/documentation/Wright-BL-Taxonomy.html"/>
           </bibl>
           <category xml:id="biblical-manuscripts">
@@ -509,22 +533,30 @@
     </encodingDesc>
     <profileDesc>
       <langUsage>
-        <language ident="syr">Unvocalized Syriac of any variety or period</language>
-        <language ident="syr-Syre">Syriac in Estrangela</language>
-        <language ident="syr-Syrj">Vocalized West Syriac</language>
-        <language ident="syr-Syrn">Vocalized East Syriac</language>
-        <language ident="syr-x-syrm">Melkite Syriac</language>
-        <language ident="qhy-x-cpas">Palestinian Syriac</language>
-        <language ident="ar-Syrc">Unvocalized or Undetermined Arabic Garshuni</language>
-        <language ident="ar-Syrj">Arabic Garshuni in Vocalized West Syriac Script</language>
-        <language ident="ar-Syrn">Arabic Garshuni in Vocalized East Syriac Script</language>
-        <language ident="en">English</language>
         <language ident="ar">Arabic</language>
-        <language ident="fr">French</language>
-        <language ident="de">German</language>
-        <language ident="la">Latin</language>
-        <language ident="grc">Ancient Greek</language>
+        <language ident="ar-Syrc">Arabic Garshuni</language>
+        <language ident="ar-Syrn">Arabic Garshuni in East Syriac script</language>
         <language ident="cop">Coptic</language>
+        <language ident="de">German</language>
+        <language ident="en">English</language>
+        <language ident="fr">French</language>
+        <language ident="grc">Ancient Greek</language>
+        <language ident="he">Hebrew</language>
+        <language ident="hy">Armenian</language>
+        <language ident="it">Italian</language>
+        <language ident="la">Latin</language>
+        <language ident="syr">Syriac</language>
+        <language ident="syr-Arab">Syriac Garshuni in Arabic script</language>
+        <language ident="syr-Syre">Syriac in Estrangela script</language>
+        <language ident="syr-Syrj">Syriac in West Syriac script</language>
+        <language ident="syr-Syrn">Syriac in East Syriac script</language>
+        <language ident="syr-x-syrm">Syriac in Melkite Syriac script</language>
+        <language ident="tr">Turkish</language>
+        <language ident="tr-Syrc">Turkish Garshuni</language>
+        <language ident="qhy-x-cpas">Christian Palestinian Aramaic script</language>
+        <language ident="xcl">Classical Armenian</language>
+        <language ident="und">Undetermined</language>
+        <language ident="mul">Multiple languages</language>
       </langUsage>
       <textClass>
         <keywords scheme="#Wright-BL-Taxonomy">
@@ -543,16 +575,14 @@
       <change who="https://bl.syriac.uk/documentation/editors.xml#jarnwine" when="2022-05-05">Updates to physDesc</change>
       <change who="https://bl.syriac.uk/documentation/editors.xml#jarnwine" when="2014-02-11">Created: file</change>
       <change who="https://bl.syriac.uk/documentation/editors.xml#jarnwine" when="2015-03-23">Edited: file</change>
-      <change type="planned" subtype="uri">Needs Addition of work URIs.</change>
+      <change type="planned" subtype="uri" who="https://bl.syriac.uk/documentation/editors.xml#smbl-general-editors">Needs Addition of work URIs.</change>
       <change who="https://bl.syriac.uk/documentation/editors.xml#pgmiller" when="2016-07-06">Changed: Files moved to srophe-app-data/data/manuscripts/tei repository.</change>
     </revisionDesc>
   </teiHeader>
-  <facsimile>
-    <graphic/>
-  </facsimile>
   <text>
     <body>
       <p/>
+      <!--Body paragraph provided for document validation.-->
     </body>
   </text>
 </TEI>

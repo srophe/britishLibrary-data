@@ -1,4 +1,7 @@
-<?oxygen RNGSchema="http://syriaca.org/documentation/syriaca-tei-main.rnc" type="compact"?><?xml-stylesheet type="text/css" href="https://raw.githubusercontent.com/srophe/wright-catalogue/master/parameters/tei.css"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+<?xml-model href="https://raw.githubusercontent.com/srophe/britishLibrary/main/documentation/schema/out/Syriacamsdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/srophe/britishLibrary/main/documentation/schema/out/Syriacamsdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet href="https://raw.githubusercontent.com/srophe/wright-catalogue/master/parameters/tei.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="manuscript_58">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -67,7 +70,6 @@
         <authority>Syriaca.org: The Syriac Reference Portal</authority>
         <idno type="URI">https://bl.syriac.uk/ms/58/tei</idno>
         <availability>
-          <p/>
           <licence target="http://creativecommons.org/licenses/by/3.0/">
             <p>Distributed under a Creative Commons Attribution 3.0 Unported License</p>
           </licence>
@@ -89,12 +91,11 @@
               <idno type="BL-Shelfmark-display">London, BL, Add. 12,171</idno>
             </altIdentifier>
             <altIdentifier>
-              <idno type="BL-Shelmark-simplified">BL Add MS 12171</idno>
+              <idno type="BL-Shelfmark-simplified">BL Add MS 12171</idno>
             </altIdentifier>
           </msIdentifier>
           <head>
             <note type="contents-note">This manuscript record does not have a summary list of contents. For composite manuscripts, the list of contents can be found under each individual part.</note>
-            <listRelation type="Wright-BL-Taxonomy"/>
             <listRelation type="composite-to-parts">
               <desc>This composite manuscript consists of 2 distinct parts:</desc>
               <relation name="syriaca:has-unspecified-codicological-part" ref="#syriaca:has-unspecified-codicological-part" active="https://bl.syriac.uk/ms/58" passive="https://bl.syriac.uk/ms/59">
@@ -119,7 +120,7 @@
                 <idno type="BL-Shelfmark-display">London, BL, Add. 12,171, foll. 1–64</idno>
               </altIdentifier>
               <altIdentifier>
-                <idno type="BL-Shelmark-simplified">BL Add MS 12171, foll. 1-64</idno>
+                <idno type="BL-Shelfmark-simplified">BL Add MS 12171, foll. 1-64</idno>
               </altIdentifier>
             <altIdentifier>
               <collection>William Wright, Catalogue of the Syriac Manuscripts in the British Museum Acquired since the Year 1838</collection>
@@ -139,20 +140,19 @@
               </listRelation>
               <listRelation type="part-to-composite">
                 <desc>This unit is a part of a composite manuscript:</desc>
-                <relation name="syriaca:is-unspecified-codicological-part-of" ref="#syriaca:is-unspecified-codicological-part-of" active="https://bl.syriac.uk/ms/59" passive="https://bl.syriac.uk/ms/58">
-                  <relation/>
-                </relation>
+                <relation name="syriaca:is-unspecified-codicological-part-of" ref="#syriaca:is-unspecified-codicological-part-of" active="https://bl.syriac.uk/ms/59" passive="https://bl.syriac.uk/ms/58"/>
               </listRelation>
             </head>
             <msContents>
-              <textLang mainLang="syr-Syre"/>
+              <textLang mainLang="syr-Syre">Syriac</textLang>
               <msItem xml:id="p1a1" n="1" defective="true">
                 <locus from="1b"/>
-                <author ref="http://syriaca.org/person/576">John Philoponus</author>
-                <title xml:lang="en">The "Diaetetes" or "Arbiter" of <persName ref="http://syriaca.org/person/576">John
-                  Philoponus</persName>, on the Union of the two Natures in the person of
+                <author ref="http://syriaca.org/person/576">
+                  <persName xml:lang="en">John Philoponus</persName>
+                </author>
+                <title xml:lang="en">The "Diaetetes" or "Arbiter" of John Philoponus, on the Union of the two Natures in the person of
                 Christ</title>
-                <title xml:lang="grc" type="supplied">Διαιτητὴς ἢ περὶ ἑνώσεως</title>
+                <title xml:lang="grc">Διαιτητὴς ἢ περὶ ἑνώσεως</title>
                 <rubric xml:lang="syr">ܕܝܐܛܝܛܝܣ ܐܘ ܟܝܬ ܡܛܠ ܚܕܝܘܬܐ̣. ܕܝܘܚܢܢ ܓܪܡܛܝܩܘܣ ܐܠܟܣܢܪܝܐ</rubric>
                 <incipit xml:lang="syr">ܣ̇ܦܩ ܠܢܦܫܗ ܡ̇ܢ ܠܘܬ ܣܢܐܓܪܘܬܐ ܕܝܠܗ ܐܝܬܘܗܝ ܗ̣ܘ ܫܪܪܐ̇. ܠܗ̇ܢܘܢ
                 ܕܚܪܝܦܐܝܬ ܕܝ̇ܩܝܢ ܒܥܝܢܐ ܗ̇ܝ ܕܢܦܫܐ. ܐܠܐ ܣܓ̈ܝܐܢ ܐܢ̈ܝܢ ܐܝܠܝܢ ܕܡ̈ܥܡܛܢ ܠܡܚܫܒܬܐ̇. ܘܫ̈ܓܡܢ
@@ -178,7 +178,7 @@
               </msItem>
               <msItem xml:id="p1a4" n="4">
                 <locus from="40a" to="56a"/>
-                <title xml:lang="en">An anonymous discourse, probably by <persName ref="http://syriaca.org/person/576">John Philoponus</persName>
+                <title xml:lang="en">An anonymous discourse, probably by John Philoponus
                 </title>
                 <rubric xml:lang="syr">ܡܐܡܪܐ ܥܠ ܗ̇ܝ ܕܒܫܘܚܠܦܐ ܕܒܫܘܘܕܥܐ ܟܝܢܝܐ̇. ܕܥܒܝܕ ܠܐܢܫ ܪܚ̇ܡ ܥܡ̣ܠܐ̇. ܐܝܟ ܕܠܝܘܬܪܢܐ ܕܗ̇ܢܘܢ ܕܦܓܥܝܢ ܒܗ</rubric>
                 <incipit xml:lang="syr">ܒܥ̈ܬܐ ܡ̇ܢ ܣܓ̈ܝܐܬܐ ܫ̇ܘܚܝܢ ܒܙܒܢ ܙܒܢ̇. ܒܡ̈ܠܐ ܕܡܛܠ ܕܘܓܡ̈ܛܐ ܐ̈ܠܗܝܐ̣. ܘܗܪ̈ܣܝܣ ܡܚܒ̈ܠܬܐ <foreign xml:lang="en">(sic)</foreign> ܢܦܫ̈ܬܐ ܕܡ̈ܠ̣ܝܢ ܡܢ ܟܠܗ ܓܘܕܦܐ ܐ̈ܘܠܕܝܢ ܏ܘܫ</incipit>
@@ -189,10 +189,11 @@
               </msItem>
               <msItem xml:id="p1a5" n="5">
                 <locus from="56a"/>
-                <author ref="http://syriaca.org/person/576">John Philoponus</author>
-                <title xml:lang="en">A discourse of <persName ref="http://syriaca.org/person/576">John Philoponus, <foreign xml:lang="syr">ܝܘܚܢܢ ܦܝܠܝܦܘܢܘܣ</foreign>
-                  </persName>, addressed to the priest
-                  <persName>Sergius</persName>
+                <author ref="http://syriaca.org/person/576">
+                  <persName xml:lang="en">John Philoponus</persName>
+                </author>
+                <title xml:lang="en">A discourse of John Philoponus, <foreign xml:lang="syr">ܝܘܚܢܢ ܦܝܠܝܦܘܢܘܣ</foreign>, addressed to the priest
+                  Sergius
                 </title>
                 <rubric xml:lang="syr">ܕܡܢܐ ܐܝܬܘܗܝ ܫܘܚܠܦܐ ܕܡܢ̈ܘܬܐ ܟܝܬ ܘܕܐ̈ܣܛܘܟܣܐ. ܘܐܝܟܢܐ ܟܘܠܝܘܬܐ
                 ܘܡ̈ܢܘܬܐ ܐܝܬܝܗܝܢ ܠܘܬ ܚ̈ܕܕܐ: ܕܠܘܬ ܩܫܝܫܐ ܣܪܓܝܣ</rubric>
@@ -202,9 +203,10 @@
               </msItem>
               <msItem xml:id="p1a6" n="6">
                 <locus from="64a" to="64b"/>
-                <author ref="http://syriaca.org/person/55">Samuel of Ras'ain</author>
-                <title xml:lang="en">Extract from a discourse of <persName>Samuel of <placeName>Ras'ain</placeName>
-                  </persName> against <persName>the Diphysites</persName>
+                <author ref="http://syriaca.org/person/55">
+                  <persName xml:lang="en">Samuel of Ras'ain</persName>
+                </author>
+                <title xml:lang="en">Extract from a discourse of Samuel of Ras'ain against the Diphysites
                 </title>
                 <rubric xml:lang="syr">ܕܫܡܘܐܝܠ ܪܝܫܥܝܢܝܐ. ܠܘܩܒܠ ܬܪ̈ܝܝ ܟܝ̈ܢܐ: ܕܐܝܬܘܗܝ̣ ܒܩܘܣܛܢܛܝܢܐܦܘܠܝܣ</rubric>
                 <incipit xml:lang="syr">ܐܪܒܥܐ ܗܟܝܠ ܐܝܬܝܗܘܢ ܟܝ̈ܢܐ ܕܦܓܪܐ.
@@ -223,8 +225,6 @@
                 <extent>
                   <measure type="composition" unit="leaf" quantity="64">64 ff.</measure>
                 </extent>
-                <foliation/>
-                <collation/>
                 <condition>
                   <list>
                     <item>
@@ -235,24 +235,19 @@
                   </list>
                 </condition>
               </supportDesc>
-              <layoutDesc>
-                <p>Content pending</p>
-              </layoutDesc>
-            </objectDesc>
+              </objectDesc>
               <handDesc hands="1">
                 <handNote xml:id="p1handNote1" scope="sole" script="syr-Syre" medium="unknown">
-                  <desc>This
-                  manuscript is written in a good, regular Estrangela, and dated <date datingMethod="Seleucid" when-custom="1126">A. Gr. 1126</date>, <date calendar="Gregorian" when="0815">A.D.815</date>.</desc>
-                </handNote>
+                  This
+                  manuscript is written in a good, regular Estrangela, and dated <date datingMethod="Seleucid" when-custom="1126">A. Gr. 1126</date>, <date calendar="Gregorian" when="0815">A.D.815</date>.</handNote>
               </handDesc>
               <decoDesc>
-                <decoNote xml:id="p1decoNote1" type="rubrication">
+                <decoNote type="rubrication">
                   <ref>Extract from a discourse of Samuel of Ras'ain against the Diphysites</ref>
                   <locus from="64b">fol. 64 b</locus>
                 </decoNote>
               </decoDesc>
               <additions>
-                <p/>
                 <list>
                   <item xml:id="p1addition1" n="1">
                     <locus from="64b"/>
@@ -268,32 +263,24 @@
                   </item>
                 </list>
               </additions>
-              <bindingDesc>
-              <p>Content pending</p>
-            </bindingDesc>
-              <sealDesc>
-              <p>Content pending</p>
-            </sealDesc>
-              <accMat/>
-            </physDesc>
+              </physDesc>
             <history>
             <origin>
-              <origDate calendar="Gregorian" when="0815">A.D. 815</origDate>
-              <origDate datingMethod="Seleucid" when-custom="1126">A.Gr. 1126</origDate>
+                <origDate calendar="Gregorian" when="0815">AD 815</origDate>
+                <origDate calendar="Seleucid" datingMethod="Seleucid" when-custom="1126">AG 1126</origDate>
+              
+              
             </origin>
-            <provenance/>
-            <acquisition/>
-          </history>
+            </history>
             <additional>
               <adminInfo>
                 <recordHist>
-                  <source>Manuscript description based on<bibl>
+                  <source>Manuscript description based on <bibl>
                       <ref target="#Wrightpart1">Wright's
                       Catalogue</ref>
                     </bibl>. abbreviated by the Syriaca.org editors.</source>
                 </recordHist>
-                <note/>
-              </adminInfo>
+                </adminInfo>
               <listBibl>
                 <bibl xml:id="Wrightpart1">
                   <author>William Wright</author>
@@ -303,7 +290,7 @@
                   <date>1870</date>
                   <ptr target="http://syriaca.org/bibl/8"/>
                   <citedRange unit="entry">DCCI</citedRange>
-                  <citedRange unit="pp">2:587-588</citedRange>
+                  <citedRange unit="p">2:587-588</citedRange>
                 <ref type="internet-archive-pdf" target="https://archive.org/details/catalogueofsyria02brituoft/page/587"/>
                 </bibl>
               </listBibl>
@@ -323,7 +310,7 @@
                 <idno type="BL-Shelfmark-display">London, BL, Add. 12,171, foll. 65–68</idno>
               </altIdentifier>
               <altIdentifier>
-                <idno type="BL-Shelmark-simplified">BL Add MS 12171, foll. 65-68</idno>
+                <idno type="BL-Shelfmark-simplified">BL Add MS 12171, foll. 65-68</idno>
               </altIdentifier>
             <altIdentifier>
               <collection>William Wright, Catalogue of the Syriac Manuscripts in the British Museum Acquired since the Year 1838</collection>
@@ -335,7 +322,7 @@
             </altIdentifier>
           </msIdentifier>
             <head>
-              <note type="contents-note">This manuscript contains: Basil, Gregory (Nazianzen). Questions and answers of Basil and Gregory (Nazianzen). In total, including sub-sections, this manuscript contains 1 items.</note>
+              <note type="contents-note">This manuscript contains: Basil, Gregory (Nazianzen). Questions and answers of Basil and Gregory (Nazianzen). In total, including sub-sections, this manuscript contains 1 item.</note>
               <listRelation type="Wright-BL-Taxonomy">
                 <relation name="dcterms:type" ref="http://purl.org/dc/terms/type" active="https://bl.syriac.uk/ms/60" passive="#theo-collected">
                   <desc>Collected Authors</desc>
@@ -343,18 +330,20 @@
               </listRelation>
               <listRelation type="part-to-composite">
                 <desc>This unit is a part of a composite manuscript:</desc>
-                <relation name="syriaca:is-unspecified-codicological-part-of" ref="#syriaca:is-unspecified-codicological-part-of" active="https://bl.syriac.uk/ms/60" passive="https://bl.syriac.uk/ms/58">
-                  <relation/>
-                </relation>
+                <relation name="syriaca:is-unspecified-codicological-part-of" ref="#syriaca:is-unspecified-codicological-part-of" active="https://bl.syriac.uk/ms/60" passive="https://bl.syriac.uk/ms/58"/>
               </listRelation>
             </head>
             <msContents>
-              <textLang mainLang="syr"/>
+              <textLang mainLang="syr">Syriac</textLang>
               <msItem xml:id="p2a1" n="1">
-                <locus to="68" from="65"/>
-                <author>Basil</author>
-                <author ref="http://syriaca.org/person/511">Gregory (Nazianzen)</author>
-                <title xml:lang="en">Questions and answers of <persName ref="http://syriaca.org/person/376">Basil</persName> and <persName ref="http://syriaca.org/person/511">Gregory (Nazianzen)</persName>
+                <locus from="65" to="68"/>
+                <author>
+                  <persName xml:lang="en">Basil</persName>
+                </author>
+                <author ref="http://syriaca.org/person/511">
+                  <persName xml:lang="en">Gregory (Nazianzen)</persName>
+                </author>
+                <title xml:lang="en">Questions and answers of Basil and Gregory (Nazianzen)
                 </title>
                 <incipit xml:lang="syr">ܒ܏ܣܝܠܝܘܣ ܡ܏ܫܐ̇ܠ. ܡܛܠ ܐܝ̇ܕܐ ܥܠ̣ܬܐ ܫܐ̣ܠ ܝܘܣܦ ܦܓܪܗ ܕܡܪܢ.
                 ܘܐܝܟܢܐ ܐܝܬܝܗ̣ܒ ܠܗ ܕܠܚܝ̣ܡܝܢ ܗܘܘ ܥܠܘܗܝ ܝܗܘ̈ܕܝܐ. ܏ܓܪܝܓܪܝܘܣ ܏ܡ̇ܦܢܐ. ܡܛܠ ܕܕܝܠܗ ܐܝܬܝܗ̇ ܗܘܬ
@@ -363,13 +352,11 @@
             </msContents>
             <physDesc>
               <p>Four vellum leaves, 10 5/8 in. by 6 7/8, with from 31 to 33 lines on each page.</p>
-              <objectDesc form="unspecified">
+              <objectDesc form="other">
               <supportDesc material="perg">
                 <extent>
                   <measure type="composition" unit="leaf" quantity="4">4 ff.</measure>
                 </extent>
-                <foliation/>
-                <collation/>
                 <condition>
                   <list>
                     <item>
@@ -378,21 +365,16 @@
                   </list>
                 </condition>
               </supportDesc>
-              <layoutDesc>
-                <p>Content pending</p>
-              </layoutDesc>
-            </objectDesc>
+              </objectDesc>
               <handDesc hands="2">
                 <handNote xml:id="p2handNote1" medium="unknown" scope="major" script="syr-Syre">
-                  <desc>Written in a neat, regular Estrangela, and dated <date datingMethod="Seleucid" when-custom="1144">A. Gr.
-                  1144</date>, <date calendar="Gregorian" when="0833">A.D. 833</date>.</desc>
-                </handNote>
+                  Written in a neat, regular Estrangela, and dated <date datingMethod="Seleucid" when-custom="1144">A. Gr.
+                  1144</date>, <date calendar="Gregorian" when="0833">A.D. 833</date>.</handNote>
                 <handNote xml:id="p2handNote2" medium="unknown" scope="minor" script="syr">
-                  <desc>See additions.</desc>
+                  See additions.
                 </handNote>
               </handDesc>
               <additions>
-                <p/>
                 <list>
                   <item xml:id="p2addition1" n="1">
                     <locus from="65b"/>
@@ -402,9 +384,9 @@
                     <placeName ref="http://syriaca.org/place/109">Callinicus</placeName>, <date>A. Gr. 1144</date>, <date>A.D.
                       833</date>, when <persName>Dionysius of <placeName>Tell-mahar</placeName>
                       </persName> was patriarch of
-                    <placeName ref="http://syriaca.org/place/10">Antioch</placeName>,<note>See <bibl>Assemani, Bibl. Or., t. ii., p. 344</bibl>; <bibl>Le Quien, Or. Christ., t. ii., col. 1372</bibl>.</note> <persName>Joseph</persName> patriarch of
-                    <placeName ref="http://syriaca.org/place/572">Alexandria</placeName>,<note>See <bibl>Renaudot, Hist. Patr. Alex. Jacob., p. 277</bibl>; <bibl>Le Quien, Or. Christ., tom. ii., col. 465</bibl>.</note> <persName>Theodosius</persName> bishop of
-                    <placeName ref="http://syriaca.org/place/109">Callinicus</placeName>.<note>Probably the same who is mentioned by <bibl>Assemani, Bibl. Or., t. ii., p. 344</bibl>, and <bibl>Le Quien, Or. Christ., t. ii., col. 1479</bibl>.</note>
+                    <placeName ref="http://syriaca.org/place/10">Antioch</placeName>, <note>See <bibl>Assemani, Bibl. Or., t. ii., p. 344</bibl>; <bibl>Le Quien, Or. Christ., t. ii., col. 1372</bibl>.</note> <persName>Joseph</persName> patriarch of
+                    <placeName ref="http://syriaca.org/place/572">Alexandria</placeName>, <note>See <bibl>Renaudot, Hist. Patr. Alex. Jacob., p. 277</bibl>; <bibl>Le Quien, Or. Christ., tom. ii., col. 465</bibl>.</note> <persName>Theodosius</persName> bishop of
+                    <placeName ref="http://syriaca.org/place/109">Callinicus</placeName>. <note>Probably the same who is mentioned by <bibl>Assemani, Bibl. Or., t. ii., p. 344</bibl>, and <bibl>Le Quien, Or. Christ., t. ii., col. 1479</bibl>.</note>
                   </p>
                     <p>
                     <quote xml:lang="syr">ܐܬ̇ܚܦܛ ܘܣ̣ܡ ܣܝܡܬܐ ܗܕܐ ܪܘܚܢܝܬܐ ܘܡܘܬܪܢܝܬܐ ܠܗ̇ܢܘܢ ܕܦܓܥܝܢ
@@ -422,32 +404,24 @@
                   </item>
                 </list>
               </additions>
-              <bindingDesc>
-              <p>Content pending</p>
-            </bindingDesc>
-              <sealDesc>
-              <p>Content pending</p>
-            </sealDesc>
-              <accMat/>
-            </physDesc>
+              </physDesc>
             <history>
             <origin>
-              <origDate when="0833">A.D. 833</origDate>
-              <origDate datingMethod="Seleucid" when-custom="1144">A. Gr. 1144</origDate>
+                <origDate calendar="Gregorian" when="0833">AD 833</origDate>
+                <origDate calendar="Seleucid" datingMethod="Seleucid" when-custom="1144">AG 1144</origDate>
+              
+              
             </origin>
-            <provenance/>
-            <acquisition/>
-          </history>
+            </history>
             <additional>
               <adminInfo>
                 <recordHist>
-                  <source>Manuscript description based on<bibl>
+                  <source>Manuscript description based on <bibl>
                       <ref target="#Wrightpart2">Wright's
                       Catalogue</ref>
                     </bibl>. abbreviated by the Syriaca.org editors.</source>
                 </recordHist>
-                <note/>
-              </adminInfo>
+                </adminInfo>
               <listBibl>
                 <bibl xml:id="Wrightpart2">
                   <author>William Wright</author>
@@ -457,7 +431,7 @@
                   <date>1870</date>
                   <ptr target="http://syriaca.org/bibl/8"/>
                   <citedRange unit="entry">DCCLXXXII</citedRange>
-                  <citedRange unit="pp">2:766-767</citedRange>
+                  <citedRange unit="p">2:766-767</citedRange>
                 <ref type="internet-archive-pdf" target="https://archive.org/details/catalogueofsyria02brituoft/page/766"/>
                 </bibl>
               </listBibl>
@@ -482,7 +456,6 @@
       <classDecl>
         <taxonomy xml:id="Wright-BL-Taxonomy">
           <bibl>
-            
             <ptr target="http://syriaca.org/documentation/Wright-BL-Taxonomy.html"/>
           </bibl>
           <category xml:id="biblical-manuscripts">
@@ -599,22 +572,30 @@
     </encodingDesc>
     <profileDesc>
       <langUsage>
-        <language ident="syr">Unvocalized Syriac of any variety or period</language>
-        <language ident="syr-Syre">Syriac in Estrangela</language>
-        <language ident="syr-Syrj">Vocalized West Syriac</language>
-        <language ident="syr-Syrn">Vocalized East Syriac</language>
-        <language ident="syr-x-syrm">Melkite Syriac</language>
-        <language ident="qhy-x-cpas">Palestinian Syriac</language>
-        <language ident="ar-Syrc">Unvocalized or Undetermined Arabic Garshuni</language>
-        <language ident="ar-Syrj">Arabic Garshuni in Vocalized West Syriac Script</language>
-        <language ident="ar-Syrn">Arabic Garshuni in Vocalized East Syriac Script</language>
-        <language ident="en">English</language>
         <language ident="ar">Arabic</language>
-        <language ident="fr">French</language>
-        <language ident="de">German</language>
-        <language ident="la">Latin</language>
-        <language ident="grc">Ancient Greek</language>
+        <language ident="ar-Syrc">Arabic Garshuni</language>
+        <language ident="ar-Syrn">Arabic Garshuni in East Syriac script</language>
         <language ident="cop">Coptic</language>
+        <language ident="de">German</language>
+        <language ident="en">English</language>
+        <language ident="fr">French</language>
+        <language ident="grc">Ancient Greek</language>
+        <language ident="he">Hebrew</language>
+        <language ident="hy">Armenian</language>
+        <language ident="it">Italian</language>
+        <language ident="la">Latin</language>
+        <language ident="syr">Syriac</language>
+        <language ident="syr-Arab">Syriac Garshuni in Arabic script</language>
+        <language ident="syr-Syre">Syriac in Estrangela script</language>
+        <language ident="syr-Syrj">Syriac in West Syriac script</language>
+        <language ident="syr-Syrn">Syriac in East Syriac script</language>
+        <language ident="syr-x-syrm">Syriac in Melkite Syriac script</language>
+        <language ident="tr">Turkish</language>
+        <language ident="tr-Syrc">Turkish Garshuni</language>
+        <language ident="qhy-x-cpas">Christian Palestinian Aramaic script</language>
+        <language ident="xcl">Classical Armenian</language>
+        <language ident="und">Undetermined</language>
+        <language ident="mul">Multiple languages</language>
       </langUsage>
       <textClass>
         <keywords scheme="#Wright-BL-Taxonomy">
@@ -644,15 +625,13 @@
         encoding.</change>
       <change who="https://bl.syriac.uk/documentation/editors.xml#lruth" when="2021-04-11">[https://bl.syriac.uk/ms/59]: Initial TEI
         encoding.</change>
-      <change type="planned" subtype="vocalization">[https://bl.syriac.uk/ms/59]: Enter vocalization.</change>
+      <change type="planned" subtype="vocalization" who="https://bl.syriac.uk/documentation/editors.xml#smbl-general-editors">[https://bl.syriac.uk/ms/59]: Enter vocalization.</change>
     </revisionDesc>
   </teiHeader>
-  <facsimile>
-    <formula>Content pending</formula>
-  </facsimile>
   <text>
     <body>
-      <bibl>Content pending</bibl>
+      <p/>
+      <!--Body paragraph provided for document validation.-->
     </body>
   </text>
 </TEI>

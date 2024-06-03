@@ -1,4 +1,7 @@
-<?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/srophe-app/documentation/enrich-syriaca.rnc" type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/css" href="SRPEnrichCSS.css"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+<?xml-model href="https://raw.githubusercontent.com/srophe/britishLibrary/main/documentation/schema/out/Syriacamsdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/srophe/britishLibrary/main/documentation/schema/out/Syriacamsdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet href="https://raw.githubusercontent.com/srophe/wright-catalogue/master/parameters/tei.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="manuscript_543">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -63,11 +66,9 @@
         <edition n="1.0"/>
       </editionStmt>
       <publicationStmt>
-        <pubPlace/>
         <authority>Syriaca.org: The Syriac Reference Portal</authority>
         <idno type="URI">https://bl.syriac.uk/ms/543/tei</idno>
         <availability>
-          <p/>
           <licence target="http://creativecommons.org/licenses/by/3.0/">
             <p>Distributed under a Creative Commons Attribution 3.0 Unported License</p>
           </licence>
@@ -75,7 +76,7 @@
         <date calendar="Gregorian">2023-04-21-05:00</date>
       </publicationStmt>
       <sourceDesc>
-        <msDesc xml:id="manuscript-543" xml:lang="en">
+        <msDesc xml:id="manuscript-543">
           <msIdentifier>
             <country>United Kingdom</country>
             <settlement>London</settlement>
@@ -89,7 +90,7 @@
               <idno type="BL-Shelfmark-display">London, BL, Add. 14,685</idno>
             </altIdentifier>
             <altIdentifier>
-              <idno type="BL-Shelmark-simplified">BL Add MS 14685</idno>
+              <idno type="BL-Shelfmark-simplified">BL Add MS 14685</idno>
             </altIdentifier>
             <altIdentifier>
               <collection>William Wright, Catalogue of the Syriac Manuscripts in the British Museum Acquired since the Year 1838</collection>
@@ -109,13 +110,13 @@
             </listRelation>
           </head>
           <msContents>
-            <summary/>
             <textLang mainLang="syr">Syriac</textLang>
             <msItem xml:id="a1" n="1" defective="true">
               <locus from="1a" to="9b">foll. 1a-9b</locus>
-              <author ref="http://syriaca.org/person/113">Jacob of Edessa</author>
-              <title type="supplied">Fragments of a Chronicle, in continuation of the<title>Chronicle of<persName ref="http://syriaca.org/person/480">Eusebius</persName>
-                </title>, composed, as it would seem, by<persName>Jacob of Edessa</persName>
+              <author ref="http://syriaca.org/person/113">
+                <persName xml:lang="en">Jacob of Edessa</persName>
+              </author>
+              <title xml:lang="en">Fragments of a Chronicle, in continuation of the Chronicle of Eusebius, composed, as it would seem, by Jacob of Edessa
               </title>
               <rubric xml:lang="syr">ܡܟܬܒܘܬ ܙܒ̈ܢܐ ܕܒܬܪ ܗ̇ܝ ܕܐܘܣܒܝܣ ܩܐܣܪܝܐ̣. ܕܥܒܝܕܐ ܠܝܥܩܘܒ ܪܚ̇ܡ ܥܡܠܐ.</rubric>
               <incipit xml:lang="syr">The introduction begins with the following outline of the plan and contents of the work. ܟܕ ܐܘܣܒܝܣ ܗ̇ܘ ܕܦܐܡܦܝܠܘܣ ܐܦܝܣܩܘܦܐ ܕܩܐܣܐܪܝܐ ܗ̇ܝ ܕܣܛܪܐܛܘܢ ܕܒܦܐܠܣܛܝܢܝ̣. ܥܒ̣ܕ ܡܟܬܒܘܬ ܙܒ̈ܢܐ ܗ̇ܝ ܪܒܬܐ ܘܟܘܠܢܝܬܐ ܘܛܒܝܒܬܐ ܥܡ ܟܠܗ̇ ܝܨܝܦܘܬܐ ܘܚܦܝܛܘܬܐ: ܘܥܡ ܟܠܗ̇ ܚܬܝܬܘܬܐ ܐܝܟ ܕܡ̇ܨܝܐ ܠܒܢ̈ܝܢܫܐ ܠܡܚ̣ܢܐ ܘܠܡܕܪܟܘ ܠ̈ܙܒܢܐ ܕܡܢ ܪܘܚܩܐ܇ ܘܣܡ ܒܗ̇ ܡܛܟܣܐܝܬ ܠܡܢܝܢܐ ܕܫ̈ܢܝܐ ܘܠ̈ܙܒܢܐ ܘܠܬܫ̈ܥܝܬܐ ܕܒܗܘܢ: ܡܢ ܐܕܡ ܪܝܫ ܛܘܗܡܢ ܥܕܡܐ ܠܫܢܬܐ ܩܕܡܝܬܐ ܕܚ̈ܝܝ ܐܒܪܗܡ ܗ̇ܘ ܐܒܐ ܩܕܡܝܐ ܕܥ̈ܒܪܝܐ: ܘܥܕܡܐ ܠܢܝܢܘܣ ܡ̇ܠܟܐ ܕܬܪܝܢ ܕܐܬܘܪ̈ܝܐ ܗ̇ܘ ܕܒܢ̣ܐ ܠܢܝܢܘܝ: ܘܥܕܡܐ ܠܐܘܪܘܦܣ ܡ̇ܠܟܐ ܕܬܪܝܢ ܕܣܝܩܘܐܘܢ ܗ̇ܝ ܕܒܐܠܕܐ ܐܬܪܐ ܗ̇ܘ ܕܝܘ̈ܢܝܐ: ܡܢ ܟܬܒ̈ܐ ܟܝܬ ܟ̈ܗܢܝܐ ܕܡܘܫܐ ܗ̇ܠܝܢ ܕܠܘܬ ܥ̈ܒܪܝܐ܇ ܘܡܢ ܟ̈ܬܒܐ ܕܬܫ̈ܥܝܬܐ ܟ̈ܠܕܝܬܐ ܘܐܬܘܪ̈ܝܬܐ ܘܐܓܘ̈ܦܛܝܬܐ: ܘܐܠܘܬ ܠܗ̇ ܬܘܒ ܐܚܪܬܐ ܝܬܝܪ ܦܬܝܬܐ ܘܪܘܝܚܬܐ ܕܡܢ ܙܒܢܐ ܗܢܐ ܕܐܬܐܡܪ: ܕܐܒܪܗܡ ܪܝܫ ܐܒ̈ܗܬܐ ܘܕܢܝܢܘܣ ܒܪ ܒܝܠܘܣ ܘܕܐܘܪܘܦܣ ܡ̇ܠܟܐ ܕܣܝܩ̈ܘܐܘܢܝܐ: ܥܕܡܐ ܠܫܢܬܐ ܗ̇ܝ ܕܥܣܪܝܢ ܕܩܘܢܣܛܐܢܛܝܢܘܣ ܙܟ݁ܝܐ ܡ̇ܠܟܐ ܕܪܘܡ̈ܝܐ: ܟܕ ܟܝܬ ܡ̈ܠܟܘܬܐ ܣ̈ܓܝܐܬܐ ܐܬܥܗܕ: ܟ̈ܠܗܝܢ ܗ̈ܠܝܢ ܕܒܐܘܪܘܦܝ ܘܒܠܝܒܘܐܝ ܘܒܐܣܝܐ ܪܒܬܐ ܐܫ̈ܬܠܛܝܢ: ܕܟ̈ܠܕܝܐ ܐܡ̇ܪ ܐܢܐ ܘܕܐܬܘ̈ܪܝܐ ܘܕܣܝܩ̈ܘܐܘܢܝܐ. ܘܕܐܪܓ̈ܝܐ. ܘܕܐܬܝ̈ܢܝܐ܇ ܕܥ̈ܒܪܝܐ ܟܝܬ ܘܕܐܓ̈ܘܦܛܝܐ: ܘܕܠ̈ܛܝܢܝܐ ܗ̇ܢܘܢ ܕܒܬܪܟܢ ܪܘܡ̈ܝܐ: ܕܡ̈ܕܝܐ ܘܕܒ̈ܒܠܝܐ ܘܕܠ̈ܘܕܝܐ ܘܕܦܪ̈ܣܝܐ: ܘܗ̈ܠܝܢ ܟ̈ܠܗܝܢ ܐܚ̈ܪܢܝܬܐ .
@@ -125,49 +126,42 @@
               <note>The introduction was, therefore, divided into four sections.</note>
               <msItem xml:id="b1" n="2" defective="true">
                 <locus from="2a" to="6b">foll. 2a-6b</locus>
-                <title type="supplied">Section I. treated of the Canon of Eusebius and the error of three years in his calculation.</title>
+                <title xml:lang="en">Section I. treated of the Canon of Eusebius and the error of three years in his calculation.</title>
                 <rubric xml:lang="syr">ܡܛܠ ܩܢܘܢܐ ܗ̇ܘ ܕܥܒ̣ܕ ܐܘܣܒܝܘܣ: ܘܡܛܠ ܗܠܝܢ ܏ܓ ܫ̈ܢܝܐ ܕܡ̇ܕܓܠ ܒܫܘܠܡܗ..<locus to="2a"/>
                 </rubric>
               </msItem>
               <msItem xml:id="b2" n="3" defective="true">
                 <locus from="7a" to="8">foll.7a-8</locus>
-                <title type="supplied">Section II. treated of the Dynasties which were contemporary with the Roman Empire, but were omitted by <persName ref="http://syriaca.org/person/480">Eusebius</persName>
+                <title xml:lang="en">Section II. treated of the Dynasties which were contemporary with the Roman Empire, but were omitted by Eusebius
                 </title>
                 <rubric xml:lang="syr">ܕܐܝܠܝܢ ܡ̈ܠܟܘܬܐ ܐܝܬ ܗܘ̣ܐ ܒܙܒܢܐ ܗ̇ܘ ܩܕܡ ܫܘܠܡܗ ܕܝܠܗ ܕܩܢܘܢܐ ܗ̇ܘ ܕܐܘܣܒܝܘܣ: ܥܡ ܡܠܟܘܬܐ ܗ̇ܝ ܕܪܘܡ̈ܝܐ: ܘܠܐ ܐܬܥ̣ܗܕ ܐܢ̇ܝܢ ܗ̣ܘ ܐܘܣܒܝܘܣ ܒܗ ܒܩܢܘܢܐ ܡܫܡܠܝܐܝܬ݂ ܘܐܝܠܝܢ ܟܕ ܐܫܬ݀ܠܡ ܗ̣ܘ ܩܢܘܢܐ<locus to="7a"/>
                 </rubric>
               </msItem>
               <msItem xml:id="b3" n="4" defective="true">
                 <locus from="7"/>
-                <title type="supplied">Section III. explained what Dynasties were coordinated by <persName ref="http://syriaca.org/person/113">Jacob</persName> with the Roman Empire.</title>
-                <note>The small fragment<locus to="9">fol. 9</locus>seems to belong to this section.</note>
+                <title xml:lang="en">Section III. explained what Dynasties were coordinated by Jacob with the Roman Empire.</title>
+                <note>The small fragment <locus to="9">fol. 9</locus> seems to belong to this section.</note>
               </msItem>
               <msItem xml:id="b4" n="5" defective="true">
                 <locus from="7"/>
-                <title type="supplied">Section IV. contained separate Chronologies of each of these Dynasties</title>
+                <title xml:lang="en">Section IV. contained separate Chronologies of each of these Dynasties</title>
               </msItem>
               <msItem xml:id="b5" n="6" defective="true">
                 <locus from="10a" to="23b">foll. 10a-23b</locus>
-                <title type="supplied">The Chronological Canon</title>
-                <note>The seciton commences, on<locus>fol. 10a</locus>, with Olympiad CCLXXVI,<quote xml:lang="syr">ܐܘܠܘܡܦܝܐܣ ܏ܪܥܘ</quote>, and ending in this mutilated manuscript with Olympiad CCCLII<quote xml:lang="syr">ܐܘܠܘܡܦܝܐܣ ܏ܫܢܒ</quote>The last monarchs mentioned are<p>
-                    <listPerson>
-                      <person>
-                        <persName>Heraclius I. of <placeName>Constantinople</placeName>
-                        </persName>,<persName>
-                          <foreign xml:lang="syr">ܗܪܐܩܠܝܘܣ;</foreign>
-                        </persName>
-                      </person>
-                      <person>
-                        <persName>Ardeshir III. of <placeName>Persia</placeName>
-                        </persName>,<persName>
-                          <foreign xml:lang="syr">ܐܪܕܫܝܪ ܒܪܗ ܕܫܝܪܘܝ; and</foreign>
-                        </persName>
-                      </person>
-                      <person>
-                        <persName>Abu Bakr</persName>,<persName>
-                          <foreign xml:lang="syr">ܐܒܘܒܐܟܪ</foreign>, the successor of <persName>Muhammad</persName>
-                        </persName>
-                      </person>
-                    </listPerson>
+                <title xml:lang="en">The Chronological Canon</title>
+                <note>The seciton commences, on <locus>fol. 10a</locus>, with Olympiad CCLXXVI, <quote xml:lang="syr">ܐܘܠܘܡܦܝܐܣ ܏ܪܥܘ</quote>, 
+                  and ending in this mutilated manuscript with Olympiad CCCLII <quote xml:lang="syr">ܐܘܠܘܡܦܝܐܣ ܏ܫܢܒ</quote>. 
+                  The last monarchs mentioned are
+                  <p>
+                    <!-- I don't think this belong in a tei:p element. It reads like it should just be part of the note. -->
+                    <persName>Heraclius I. of Constantinople</persName>,
+                    <persName>
+                      <foreign xml:lang="syr">ܗܪܐܩܠܝܘܣ</foreign></persName>;
+                    <persName>Ardeshir III. of Persia</persName>,
+                    <persName>
+                      <foreign xml:lang="syr">ܐܪܕܫܝܪ ܒܪܗ ܕܫܝܪܘܝ</foreign></persName>; and
+                    <persName>Abu Bakr</persName>, <persName>
+                      <foreign xml:lang="syr">ܐܒܘܒܐܟܪ</foreign>, the successor of <persName>Muhammad</persName></persName>.
                   </p>.</note>
               </msItem>
             </msItem>
@@ -181,17 +175,11 @@
                 </support>
                 <extent>
                   <measure type="composition" unit="leaf" quantity="23">23 ff.</measure>
-                  <dimensions type="leaf" unit="in">
-                    <height>
-                      <measure type="height" quantity="12" unit="in">12</measure>
-                    </height>
-                    <width>
-                      <measure type="width" quantity="7" unit="in">7</measure>
-                    </width>
+                  <dimensions type="leaf" unit="inch">
+                    <height quantity="12">12</height>
+                    <width quantity="7">7</width>
                   </dimensions>
                 </extent>
-                <foliation type="ancient"/>
-                <collation/>
                 <condition>
                   <list>
                     <item>
@@ -208,32 +196,24 @@
             </objectDesc>
             <handDesc hands="1">
               <handNote xml:id="handNote1" scope="major" script="syr" medium="unknown">
-                <desc>This volume is written in a good, regular hand of the xth or xith cent.</desc>
+                This volume is written in a good, regular hand of the xth or xith cent.
               </handNote>
             </handDesc>
-            <decoDesc/>
-            <additions/>
-            <bindingDesc/>
-            <sealDesc/>
-            <accMat/>
-          </physDesc>
+            </physDesc>
           <history>
             <origin>
-              <origDate notBefore="0900" notAfter="1100">xth or xith cent.</origDate>
-              <origPlace/>
+              <origDate calendar="Gregorian" notBefore="0900" notAfter="1100">10th or 11th century</origDate>
+              
             </origin>
-            <provenance/>
-            <acquisition/>
-          </history>
+            </history>
           <additional>
             <adminInfo>
               <recordHist>
-                <source>Manuscript description based on<bibl>
+                <source>Manuscript description based on <bibl>
                     <ref target="#Wrightpart">Wright's Catalogue</ref>
                   </bibl>. abbreviated by the Syriaca.org editors.</source>
               </recordHist>
-              <note/>
-            </adminInfo>
+              </adminInfo>
             <listBibl>
               <bibl xml:id="Wrightpart">
                 <author>William Wright</author>
@@ -242,7 +222,7 @@
                 <date>1870</date>
                 <ptr target="http://syriaca.org/bibl/8"/>
                 <citedRange unit="entry">DCCCCXXI</citedRange>
-                <citedRange unit="pp">3:1062-1064</citedRange>
+                <citedRange unit="p">3:1062-1064</citedRange>
               <ref type="internet-archive-pdf" target="https://archive.org/details/catalogueofsyria03brituoft/page/1062"/>
               </bibl>
             </listBibl>
@@ -266,7 +246,6 @@
       <classDecl>
         <taxonomy xml:id="Wright-BL-Taxonomy">
           <bibl>
-            
             <ptr target="http://syriaca.org/documentation/Wright-BL-Taxonomy.html"/>
           </bibl>
           <category xml:id="biblical-manuscripts">
@@ -383,22 +362,30 @@
     </encodingDesc>
     <profileDesc>
       <langUsage>
-        <language ident="syr">Unvocalized Syriac of any variety or period</language>
-        <language ident="syr-Syre">Syriac in Estrangela</language>
-        <language ident="syr-Syrj">Vocalized West Syriac</language>
-        <language ident="syr-Syrn">Vocalized East Syriac</language>
-        <language ident="syr-x-syrm">Melkite Syriac</language>
-        <language ident="qhy-x-cpas">Palestinian Syriac</language>
-        <language ident="ar-Syrc">Unvocalized or Undetermined Arabic Garshuni</language>
-        <language ident="ar-Syrj">Arabic Garshuni in Vocalized West Syriac Script</language>
-        <language ident="ar-Syrn">Arabic Garshuni in Vocalized East Syriac Script</language>
-        <language ident="en">English</language>
         <language ident="ar">Arabic</language>
-        <language ident="fr">French</language>
-        <language ident="de">German</language>
-        <language ident="la">Latin</language>
-        <language ident="grc">Ancient Greek</language>
+        <language ident="ar-Syrc">Arabic Garshuni</language>
+        <language ident="ar-Syrn">Arabic Garshuni in East Syriac script</language>
         <language ident="cop">Coptic</language>
+        <language ident="de">German</language>
+        <language ident="en">English</language>
+        <language ident="fr">French</language>
+        <language ident="grc">Ancient Greek</language>
+        <language ident="he">Hebrew</language>
+        <language ident="hy">Armenian</language>
+        <language ident="it">Italian</language>
+        <language ident="la">Latin</language>
+        <language ident="syr">Syriac</language>
+        <language ident="syr-Arab">Syriac Garshuni in Arabic script</language>
+        <language ident="syr-Syre">Syriac in Estrangela script</language>
+        <language ident="syr-Syrj">Syriac in West Syriac script</language>
+        <language ident="syr-Syrn">Syriac in East Syriac script</language>
+        <language ident="syr-x-syrm">Syriac in Melkite Syriac script</language>
+        <language ident="tr">Turkish</language>
+        <language ident="tr-Syrc">Turkish Garshuni</language>
+        <language ident="qhy-x-cpas">Christian Palestinian Aramaic script</language>
+        <language ident="xcl">Classical Armenian</language>
+        <language ident="und">Undetermined</language>
+        <language ident="mul">Multiple languages</language>
       </langUsage>
       <textClass>
         <keywords scheme="#Wright-BL-Taxonomy">
@@ -414,22 +401,16 @@
       <change who="https://bl.syriac.uk/documentation/editors.xml#kurban" when="2023-04-21-05:00">CHANGED: added or corrected folio extent values</change>
       <change who="https://bl.syriac.uk/documentation/editors.xml#zzhang" when="2023-01-13-06:00">ADDED: added missing locus information for msItems</change>
       <change who="https://bl.syriac.uk/documentation/editors.xml#jarnwine" when="2023-01-13-06:00">ADDED: supplied and corrected Syriaca.org URIs for authors</change>
-      <change who="https://bl.syriac.uk/documentation/editors.xml#?" when="2016-03-22">Created: file</change>
-      <change type="planned" subtype="syriac">Add in missing Syriac characters.</change>
-      <change type="planned" subtype="vocalization">Enter vocalization.</change>
+      <change who="https://bl.syriac.uk/documentation/editors.xml#smbl-general-editors" when="2016-03-22">Created: file</change>
+      <change type="planned" subtype="syriac" who="https://bl.syriac.uk/documentation/editors.xml#smbl-general-editors">Add in missing Syriac characters.</change>
+      <change type="planned" subtype="vocalization" who="https://bl.syriac.uk/documentation/editors.xml#smbl-general-editors">Enter vocalization.</change>
       <change who="https://bl.syriac.uk/documentation/editors.xml#pgmiller" when="2016-07-06">Changed: Files moved to srophe-app-data/data/manuscripts/tei repository.</change>
     </revisionDesc>
   </teiHeader>
-  <facsimile>
-    <!-- facsimile information about the manuscript -->
-    <graphic/>
-    <!-- Alternatively you could provide 'surface' elements with more than one image per surface, and optionally with 'zone' 
-      elements to give coordinates for any special areas of interest -->
-  </facsimile>
   <text>
     <body>
-      <!-- If you had a transcription of the manuscript you would put it here -->
       <p/>
+      <!--Body paragraph provided for document validation.-->
     </body>
   </text>
 </TEI>

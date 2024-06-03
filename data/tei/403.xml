@@ -1,4 +1,7 @@
-<?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/srophe-app/documentation/enrich-syriaca.rnc" type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/css" href="SRPEnrichCSS.css"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+<?xml-model href="https://raw.githubusercontent.com/srophe/britishLibrary/main/documentation/schema/out/Syriacamsdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/srophe/britishLibrary/main/documentation/schema/out/Syriacamsdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet href="https://raw.githubusercontent.com/srophe/wright-catalogue/master/parameters/tei.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="manuscript_403">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -59,11 +62,9 @@
         <edition n="1.0"/>
       </editionStmt>
       <publicationStmt>
-        <pubPlace/>
         <authority>Syriaca.org: The Syriac Reference Portal</authority>
         <idno type="URI">https://bl.syriac.uk/ms/403/tei</idno>
         <availability>
-          <p/>
           <licence target="http://creativecommons.org/licenses/by/3.0/">
             <p>Distributed under a Creative Commons Attribution 3.0 Unported License</p>
           </licence>
@@ -71,7 +72,7 @@
         <date calendar="Gregorian">2023-04-21-05:00</date>
       </publicationStmt>
       <sourceDesc>
-        <msDesc xml:id="manuscript-403" xml:lang="en">
+        <msDesc xml:id="manuscript-403">
           <msIdentifier>
             <country>United Kingdom</country>
             <settlement>London</settlement>
@@ -85,7 +86,7 @@
               <idno type="BL-Shelfmark-display">London, BL, Add. 14,639</idno>
             </altIdentifier>
             <altIdentifier>
-              <idno type="BL-Shelmark-simplified">BL Add MS 14639</idno>
+              <idno type="BL-Shelfmark-simplified">BL Add MS 14639</idno>
             </altIdentifier>
             <altIdentifier>
               <collection>William Wright, Catalogue of the Syriac Manuscripts in the British Museum Acquired since the Year 1838</collection>
@@ -105,12 +106,13 @@
             </listRelation>
           </head>
           <msContents>
-            <summary/>
             <textLang mainLang="syr">Syriac</textLang>
             <msItem xml:id="a1" n="1" defective="true">
               <locus from="1a" to="130b">foll. 1a-130b</locus>
-              <author ref="http://syriaca.org/person/480">Eusebius of Caesarea</author>
-              <title type="supplied">The first five books of the Ecclesiastical History of<persName ref="http://syriaca.org/person/480">Eusebius of Caesarea</persName>
+              <author ref="http://syriaca.org/person/480">
+                <persName xml:lang="en">Eusebius of Caesarea</persName>
+              </author>
+              <title xml:lang="en">The first five books of the Ecclesiastical History of Eusebius of Caesarea
               </title>
               <rubric xml:lang="syr">ܬܫܥ̈ܝܬܐ ܕܥܕܬܐ<locus to="1a"/>
                 <locus to="18a"/>
@@ -129,7 +131,7 @@
                 <locus to="96b"/>
               </finalRubric>
               <note>Each book is preceded by an index of chapters.</note>
-              <note>This work was translated into Syriac at a very early period, for the St. Petersburg manuscript is dated<date calendar="Greek">A. Gr. 773</date>,<date calendar="Gregorian">A.D. 462</date>
+              <note>This work was translated into Syriac at a very early period, for the St. Petersburg manuscript is dated <date calendar="Greek">A. Gr. 773</date>, <date calendar="Gregorian">A.D. 462</date>
               </note>
               <colophon>
                 <ref target="#addition1">See additions.</ref>
@@ -139,25 +141,25 @@
               </colophon>
               <msItem xml:id="b1" n="2" defective="true">
                 <locus from="1a" to="17b">foll.1a-17b</locus>
-                <title type="supplied">Book i</title>
+                <title xml:lang="en">Book i</title>
                 <note>The missing portions are chapters 1—12 of the index; the latter part of ch. 1, from the words<!--GREEK NEEDED-->; the beginning of ch. 2, as far as<!--GREEK NEEDED-->, and the end of the same chapter, from the words<!--GREEK NEEDED-->; lastly, the commencement of ch. 3, as far as<!--GREEK NEEDED-->
                 </note>
               </msItem>
               <msItem xml:id="b2" n="3" defective="true">
                 <locus from="18a" to="40a">foll. 18a-40a</locus>
-                <title type="supplied">Book ii</title>
+                <title xml:lang="en">Book ii</title>
               </msItem>
               <msItem xml:id="b3" n="4" defective="false">
                 <locus from="40b" to="69b">foll. 40b-69b</locus>
-                <title type="supplied">Book iii</title>
+                <title xml:lang="en">Book iii</title>
               </msItem>
               <msItem xml:id="b4" n="5" defective="false">
                 <locus from="70a" to="96a">foll. 70a-96a</locus>
-                <title type="supplied">Book iv</title>
+                <title xml:lang="en">Book iv</title>
               </msItem>
               <msItem xml:id="b5" n="6" defective="true">
                 <locus from="96b" to="130a">foll. 96b-130a</locus>
-                <title type="supplied">Book v</title>
+                <title xml:lang="en">Book v</title>
               </msItem>
             </msItem>
           </msContents>
@@ -167,7 +169,7 @@
             signed with both letters and arithmetical figures (e. g. fol. 64 a, �) are
             14 in number; but the first is imperfect, leaves being wanting at the beginning,
             as well as after foll. 1 and 2. Each page is divided into two columns, of from 26
-            to 36 lines.<note type="incomplete" resp="http://syriaca.org" xml:lang="en">The original description of this manuscript by William Wright includes characters, symbols, or illustrations which cannot be represented. Please consult the attached image, <ref target="https://archive.org/details/catalogueofsyria03brituoft/page/n90/mode/2up">vol. 3, p. 1039</ref>.</note>
+            to 36 lines.<note type="incomplete" resp="https://bl.syriac.uk/documentation/editors.xml#smbl-general-editors" xml:lang="en">The original description of this manuscript by William Wright includes characters, symbols, or illustrations which cannot be represented. Please consult the attached image, <ref target="https://archive.org/details/catalogueofsyria03brituoft/page/n90/mode/2up">vol. 3, p. 1039</ref>.</note>
             </p>
             <objectDesc form="codex">
               <supportDesc material="perg">
@@ -176,23 +178,18 @@
                 </support>
                 <extent>
                   <measure type="composition" unit="leaf" quantity="130">130 ff.</measure>
-                  <dimensions type="leaf" unit="in">
-                    <height>
-                      <measure type="height" quantity="9.75" unit="in">9 3/4</measure>
-                    </height>
-                    <width>
-                      <measure type="width" quantity="6.75" unit="in">6 3/4</measure>
-                    </width>
+                  <dimensions type="leaf" unit="inch">
+                    <height quantity="9.75">9 3/4</height>
+                    <width quantity="6.75">6 3/4</width>
                   </dimensions>
                 </extent>
-                <foliation type="ancient"/>
                 <collation>
                   <p>The quires, signed with both letters and arithmetical figures (e.g.<locus to="64a">fol. 64a</locus>,ܚ)  are 14 in number; but the first is imperfect, leaves being wanting at the beginning, as well as after foll. 1 and 2.</p>
                 </collation>
                 <condition>
                   <list>
                     <item>
-                      <p>A few leaves are stained and torn, especially<locus>foll. 13</locus>,<locus>13</locus>, and<locus>130</locus>. The quires, signed with both letters and arithmetical figures (e.g.<locus to="64a">fol. 64a</locus>,ܚ) are 14 in number; but the first is imperfect, leaves being wanting at the beginning, as well as after foll.<locus>1</locus>and<locus>2</locus>
+                      <p>A few leaves are stained and torn, especially <locus>foll. 13</locus>, <locus>13</locus>, and <locus>130</locus>. The quires, signed with both letters and arithmetical figures (e.g.<locus to="64a">fol. 64a</locus>,ܚ) are 14 in number; but the first is imperfect, leaves being wanting at the beginning, as well as after foll.<locus>1</locus> and <locus>2</locus>
                       </p>
                     </item>
                   </list>
@@ -206,9 +203,8 @@
             </objectDesc>
             <handDesc hands="2">
               <handNote xml:id="handNote1" scope="major" script="syr-Syre" medium="unknown">
-                <desc>This volume is written in a fine, regular Estrangela of the <origDate notBefore="0500" notAfter="0600">vith cent.</origDate>
-                </desc>
-              </handNote>
+                This volume is written in a fine, regular Estrangela of the <date notBefore="0500" notAfter="0600">vith cent.</date>
+                </handNote>
               <handNote xml:id="handNote2" scope="minor" script="syr" medium="unknown"/>
             </handDesc>
             <additions>
@@ -217,13 +213,13 @@
                 <item xml:id="addition1" n="1">
                   <label>Colophon</label>
                   <locus to="130b">fol. 130b</locus>
-                  <p>A note on states that the volume was written by one<persName>Elias</persName>.</p>
+                  <p>A note on states that the volume was written by one <persName>Elias</persName>.</p>
                   <quote xml:lang="syr">ܟܠ ܕܩ̇ܪܐ ܡܛܠ ܡܪܢ ܒܟܬܒܐ ܗܢܐ ܢܨܠܐ ܥܠ ܕܘܝܐ ܘܚܠܫܐ ܘܬܚܘܒܐ ܕܟܠܗܘܢ ܒܢܝ̈ܢܫܐ ܐܠܝܐ ܕܟܬ̣ܒ ܟܬܒܐ ܗܢܐ. ܕܐܝܬܘܗܝ ܝܘܬܪܢܐ ܠܟܠ ܕܦ݁ܓܥ ܒܗ. ܘܟܠ ܕܩ̇ܪܐ ܒܗ ܢܐܡܪ݂. ܐܠܗܐ ܗܒ ܕܚܠܬܟ ܒܠܒܗ. ܘܡܢ ܝܘܠܦܢܟ ܡܠܝܘܗܝ ܘܚ̇ܟܡܝܗܝ ܕܢܕܥܟ ܘܚܘܢܝܗܝ ܐܝܟ ܕܠܓܝ̇ܣܐ ܒܙܩܝܦܐ̣. ܐܝܢ̇ ܐܡܝܢ.܀.</quote>
-                  <p>The remainder of this note, which contained the date and other particulars, has been carefully erased. The word alone<quote>ܐܝܪܚ</quote>is legible;</p>
+                  <p>The remainder of this note, which contained the date and other particulars, has been carefully erased. The word alone <quote xml:lang="syr">ܐܝܪܚ</quote> is legible;</p>
                 </item>
                 <item xml:id="addition2" n="2">
                   <locus to="130b">fol. 130b</locus>
-                  <p>The remainder of this note, which contained the date (The word<quote xml:lang="syr">ܐܝܪܚ</quote>is alone legible) and other particulars, has been carefully erased; and in its place is substituted the usual record of the acquisition of the manuscript by the<persName>abbat Moses of Nisibis</persName>,<date calendar="Greek">A. Gr. 1243</date>,<date calendar="Gregorian">A.D. 932</date>
+                  <p>The remainder of this note, which contained the date (The word <quote xml:lang="syr">ܐܝܪܚ</quote> is alone legible) and other particulars, has been carefully erased; and in its place is substituted the usual record of the acquisition of the manuscript by the <persName>abbat Moses of Nisibis</persName>, <date calendar="Greek">A. Gr. 1243</date>, <date calendar="Gregorian">A.D. 932</date>
                   </p>
                   <p>
                     <quote xml:lang="syr">ܗܘܬ ܡܐܬܝܬܗܘܢ ܕܟܬܒ̈ܐ ܗܠܝܢ. ܥܡ ܡܘܫܐ ܪܝܫܕܝܪܐ ܕܐܡܝܪ ܡܢ ܠܥܠ܀ ܡܢ ܒܬܪ ܫܬ ܫ̈ܥܝܢ܀ ܫܢܬ ܐܠܦܐ ܘܡܬܝܢ ܘܐܪ̈ܒܥܝܢ ܘܬܠܬܐ ܒܕܝ̈ܘܢܝܐ.</quote>
@@ -231,31 +227,26 @@
                 </item>
               </list>
             </additions>
-            <bindingDesc/>
-            <sealDesc/>
-            <accMat/>
-          </physDesc>
+            </physDesc>
           <history>
             <origin>
-              <origDate notBefore="0500" notAfter="0600">vith cent.</origDate>
-              <origPlace/>
+              <origDate calendar="Gregorian" notBefore="0500" notAfter="0600">6th century</origDate>
+              
             </origin>
             <provenance>
-              <p>
+              
                 <ref target="addition1">See additions.</ref>
-              </p>
+              
             </provenance>
-            <acquisition/>
-          </history>
+            </history>
           <additional>
             <adminInfo>
               <recordHist>
-                <source>Manuscript description based on<bibl>
+                <source>Manuscript description based on <bibl>
                     <ref target="#Wrightpart">Wright's Catalogue</ref>
                   </bibl>. abbreviated by the Syriaca.org editors.</source>
               </recordHist>
-              <note/>
-            </adminInfo>
+              </adminInfo>
             <listBibl>
               <bibl xml:id="Wrightpart">
                 <author>William Wright</author>
@@ -264,7 +255,7 @@
                 <date>1870</date>
                 <ptr target="http://syriaca.org/bibl/8"/>
                 <citedRange unit="entry">DCCCCXI</citedRange>
-                <citedRange unit="pp">3:1039-1040</citedRange>
+                <citedRange unit="p">3:1039-1040</citedRange>
               <ref type="internet-archive-pdf" target="https://archive.org/details/catalogueofsyria03brituoft/page/1039"/>
               </bibl>
             </listBibl>
@@ -288,7 +279,6 @@
       <classDecl>
         <taxonomy xml:id="Wright-BL-Taxonomy">
           <bibl>
-            
             <ptr target="http://syriaca.org/documentation/Wright-BL-Taxonomy.html"/>
           </bibl>
           <category xml:id="biblical-manuscripts">
@@ -405,22 +395,30 @@
     </encodingDesc>
     <profileDesc>
       <langUsage>
-        <language ident="syr">Unvocalized Syriac of any variety or period</language>
-        <language ident="syr-Syre">Syriac in Estrangela</language>
-        <language ident="syr-Syrj">Vocalized West Syriac</language>
-        <language ident="syr-Syrn">Vocalized East Syriac</language>
-        <language ident="syr-x-syrm">Melkite Syriac</language>
-        <language ident="qhy-x-cpas">Palestinian Syriac</language>
-        <language ident="ar-Syrc">Unvocalized or Undetermined Arabic Garshuni</language>
-        <language ident="ar-Syrj">Arabic Garshuni in Vocalized West Syriac Script</language>
-        <language ident="ar-Syrn">Arabic Garshuni in Vocalized East Syriac Script</language>
-        <language ident="en">English</language>
         <language ident="ar">Arabic</language>
-        <language ident="fr">French</language>
-        <language ident="de">German</language>
-        <language ident="la">Latin</language>
-        <language ident="grc">Ancient Greek</language>
+        <language ident="ar-Syrc">Arabic Garshuni</language>
+        <language ident="ar-Syrn">Arabic Garshuni in East Syriac script</language>
         <language ident="cop">Coptic</language>
+        <language ident="de">German</language>
+        <language ident="en">English</language>
+        <language ident="fr">French</language>
+        <language ident="grc">Ancient Greek</language>
+        <language ident="he">Hebrew</language>
+        <language ident="hy">Armenian</language>
+        <language ident="it">Italian</language>
+        <language ident="la">Latin</language>
+        <language ident="syr">Syriac</language>
+        <language ident="syr-Arab">Syriac Garshuni in Arabic script</language>
+        <language ident="syr-Syre">Syriac in Estrangela script</language>
+        <language ident="syr-Syrj">Syriac in West Syriac script</language>
+        <language ident="syr-Syrn">Syriac in East Syriac script</language>
+        <language ident="syr-x-syrm">Syriac in Melkite Syriac script</language>
+        <language ident="tr">Turkish</language>
+        <language ident="tr-Syrc">Turkish Garshuni</language>
+        <language ident="qhy-x-cpas">Christian Palestinian Aramaic script</language>
+        <language ident="xcl">Classical Armenian</language>
+        <language ident="und">Undetermined</language>
+        <language ident="mul">Multiple languages</language>
       </langUsage>
       <textClass>
         <keywords scheme="#Wright-BL-Taxonomy">
@@ -437,20 +435,14 @@
       <change who="https://bl.syriac.uk/documentation/editors.xml#jarnwine" when="2023-01-13-06:00">ADDED: supplied and corrected Syriaca.org URIs for authors</change>
       <change who="https://bl.syriac.uk/documentation/editors.xml#jarnwine" when="2022-05-05">Updates to physDesc</change>
       <change who="https://bl.syriac.uk/documentation/editors.xml#sdowning" when="2016-03-11">Created: file</change>
-      <change type="planned" subtype="greek">Add in missing Greek characters.</change>
+      <change type="planned" subtype="greek" who="https://bl.syriac.uk/documentation/editors.xml#smbl-general-editors">Add in missing Greek characters.</change>
       <change who="https://bl.syriac.uk/documentation/editors.xml#pgmiller" when="2016-07-06">Changed: Files moved to srophe-app-data/data/manuscripts/tei repository.</change>
     </revisionDesc>
   </teiHeader>
-  <facsimile>
-    <!-- facsimile information about the manuscript -->
-    <graphic/>
-    <!-- Alternatively you could provide 'surface' elements with more than one image per surface, and optionally with 'zone' 
-      elements to give coordinates for any special areas of interest -->
-  </facsimile>
   <text>
     <body>
-      <!-- If you had a transcription of the manuscript you would put it here -->
       <p/>
+      <!--Body paragraph provided for document validation.-->
     </body>
   </text>
 </TEI>

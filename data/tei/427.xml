@@ -1,4 +1,7 @@
-<?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/srophe-app/documentation/enrich-syriaca.rnc" type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/css" href="SRPEnrichCSS.css"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+<?xml-model href="https://raw.githubusercontent.com/srophe/britishLibrary/main/documentation/schema/out/Syriacamsdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/srophe/britishLibrary/main/documentation/schema/out/Syriacamsdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet href="https://raw.githubusercontent.com/srophe/wright-catalogue/master/parameters/tei.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="manuscript_427">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -67,11 +70,9 @@
         <edition n="1.0"/>
       </editionStmt>
       <publicationStmt>
-        <pubPlace/>
         <authority>Syriaca.org: The Syriac Reference Portal</authority>
         <idno type="URI">https://bl.syriac.uk/ms/427/tei</idno>
         <availability>
-          <p/>
           <licence target="http://creativecommons.org/licenses/by/3.0/">
             <p>Distributed under a Creative Commons Attribution 3.0 Unported License</p>
           </licence>
@@ -79,7 +80,7 @@
         <date calendar="Gregorian">2023-04-21-05:00</date>
       </publicationStmt>
       <sourceDesc>
-        <msDesc xml:id="manuscript-427" xml:lang="en">
+        <msDesc xml:id="manuscript-427">
           <msIdentifier>
             <country>United Kingdom</country>
             <settlement>London</settlement>
@@ -93,7 +94,7 @@
               <idno type="BL-Shelfmark-display">London, BL, Add. 14,659</idno>
             </altIdentifier>
             <altIdentifier>
-              <idno type="BL-Shelmark-simplified">BL Add MS 14659</idno>
+              <idno type="BL-Shelfmark-simplified">BL Add MS 14659</idno>
             </altIdentifier>
             <altIdentifier>
               <collection>William Wright, Catalogue of the Syriac Manuscripts in the British Museum Acquired since the Year 1838</collection>
@@ -113,11 +114,10 @@
             </listRelation>
           </head>
           <msContents>
-            <summary/>
             <textLang mainLang="syr">Syriac</textLang>
-            <msItem xml:id="a1" n="1">
+            <msItem xml:id="a1" n="1" defective="true">
               <locus from="1a" to="263b">foll. 1a-263b</locus>
-              <title type="supplied">Part of the Organon of<persName ref="http://syriaca.org/person/342">Aristotle</persName>, with introductions, notes and commentaries by<persName ref="http://syriaca.org/person/122">George, bishop of the Arabs</persName>
+              <title xml:lang="en">Part of the Organon of Aristotle, with introductions, notes and commentaries by George, bishop of the Arabs
               </title>
               <quote xml:lang="syr">ܓܘܪܓܝ (ܓܝܘܪܓܝ) ܕܥܡ̈ܡܐ<locus from="3a" to="3a"/>
               </quote>
@@ -126,108 +126,126 @@
               <colophon>
                 <ref target="addition1">See additions.</ref>
               </colophon>
-              <listBibl>
-                <bibl>Assemani, Bibl. Or., t. i., p. 494</bibl>
-                <bibl>Renan, Journal Asiatique, 1852, 4eme Serie, t. xix., p. 324, and "de Philosophia Peripatetica apud Syros," p. 32</bibl>
-                <bibl>Hoffmann, de Hermeneuticis apud Syros Aristoteleis, p. 148</bibl>
-              </listBibl>
-              <msItem xml:id="b1" n="2">
+              <note>Cf. <bibl>Assemani, Bibl. Or., t. i., p. 494</bibl>; <bibl>Renan, Journal Asiatique, 1852, 4eme Serie, t. xix., p. 324, and "de Philosophia Peripatetica apud Syros," p. 32</bibl>; <bibl>Hoffmann, de Hermeneuticis apud Syros Aristoteleis, p. 148</bibl>
+              </note>
+              <msItem xml:id="b1" n="2" defective="true">
                 <locus from="1a" to="59">foll. 1a-59</locus>
-                <title type="supplied">The Ten Categories</title>
+                <title xml:lang="en">The Ten Categories</title>
                 <msItem xml:id="c1" n="3" defective="true">
                   <locus from="1a" to="2b">foll. 1a-2b</locus>
-                  <author ref="http://syriaca.org/person/122">George, bishop of the Arabs</author>
-                  <title type="supplied">Introduction</title>
+                  <author ref="http://syriaca.org/person/122">
+                    <persName xml:lang="en">George, bishop of the Arabs</persName>
+                  </author>
+                  <title xml:lang="en">Introduction</title>
                   <rubric xml:lang="syr">ܦܪܐܘܡܝܘܢ̇ ܕܐܡܝܪ ܠܓܘܪܓܝ ܕܥܡ̈ܡܐ<locus from="1a" to="1a"/>
                   </rubric>
                   <note>Imperfect</note>
                 </msItem>
                 <msItem xml:id="c2" n="4">
                   <locus from="3a" to="28">foll. 3a-28</locus>
-                  <author ref="http://syriaca.org/person/342">Aristotle</author>
-                  <title type="supplied">Text</title>
+                  <author ref="http://syriaca.org/person/342">
+                    <persName xml:lang="en">Aristotle</persName>
+                  </author>
+                  <title xml:lang="en">Text</title>
                   <rubric xml:lang="syr">ܡܐܡܪܐ ܕܐܪܝܣܛܘܛܠܝܣ. ܡܛܠ ܥܣܪ̈ܐ ܩܛܝܓܘܪ̈ܝܣ<locus from="3a" to="3a"/>
                   </rubric>
                 </msItem>
                 <msItem xml:id="c3" n="5">
                   <locus from="28b" to="59">foll. 28b-59</locus>
-                  <author ref="http://syriaca.org/person/122">George, bishop of the Arabs</author>
-                  <title type="supplied">Commentary</title>
+                  <author ref="http://syriaca.org/person/122">
+                    <persName xml:lang="en">George, bishop of the Arabs</persName>
+                  </author>
+                  <title xml:lang="en">Commentary</title>
                   <rubric xml:lang="syr">ܢܘܗܪܐ ܐܘ ܟܝܬ ܦܘܫܩܐ ܕܝܠܗ ܟܕ ܕܝܠܗ ܕܟܬܒܐ<locus from="28b" to="28b"/>
                   </rubric>
                 </msItem>
               </msItem>
               <msItem xml:id="b2" n="6">
                 <locus from="59b" to="82b">foll. 59b-82b</locus>
-                <title type="supplied">The treatise<foreign xml:lang="grc">Περὶ ἑρμηνείας</foreign>
+                <title xml:lang="en">The treatise <foreign xml:lang="grc">Περὶ ἑρμηνείας</foreign>
                 </title>
-                <listBibl>
-                  <bibl>Hoffmann, de Hermeneuticis apud Syros Aristoteleis, pp. 22—28, 30, 38, 45, 53.</bibl>
-                </listBibl>
+                <note>Cf. <bibl>Hoffmann, de Hermeneuticis apud Syros Aristoteleis, pp. 22—28, 30, 38, 45, 53.</bibl>
+                </note>
                 <msItem xml:id="c4" n="7">
                   <locus from="59b" to="67b">foll. 59b-67b</locus>
-                  <author ref="http://syriaca.org/person/122">George, bishop of the Arabs</author>
-                  <title type="supplied">Introduction</title>
+                  <author ref="http://syriaca.org/person/122">
+                    <persName xml:lang="en">George, bishop of the Arabs</persName>
+                  </author>
+                  <title xml:lang="en">Introduction</title>
                   <rubric xml:lang="syr">ܦܪܐܘܡܝܘܢ ܕܩܕܡ ܡܐܡܪܐ ܦܪܝܐܪܡܢܝܣ ܕܐܪܝܣܛܛܠܝܣ<locus from="59b" to="59b"/>
                   </rubric>
                 </msItem>
                 <msItem xml:id="c5" n="8">
                   <locus from="68a" to="82b">foll. 68a-82b</locus>
-                  <author ref="http://syriaca.org/person/342">Aristotle</author>
-                  <title type="supplied">Text</title>
+                  <author ref="http://syriaca.org/person/342">
+                    <persName xml:lang="en">Aristotle</persName>
+                  </author>
+                  <title xml:lang="en">Text</title>
                   <rubric xml:lang="syr">ܟܬܒܐ ܕܬܪ̈ܝܢ ܕܐܪܝܣܛܘܛܠܝܣ ܦܝܠܣܘܦܐ ܕܝ̈ܘܢܝܐ. ܕܡܬ̣ܩܪܐ ܡܛܠ ܦܘ̈ܫܩܐ<locus from="68a" to="68a"/>
                   </rubric>
                 </msItem>
               </msItem>
-              <msItem xml:id="b3" n="9">
+              <msItem xml:id="b3" n="9" defective="true">
                 <locus from="83a" to="263b">foll. 83a-263b</locus>
-                <title type="supplied">The Analytica (Priora)</title>
+                <title xml:lang="en">The Analytica (Priora)</title>
                 <msItem xml:id="c6" n="10">
                   <locus from="83a" to="200">foll. 83a-200</locus>
-                  <title type="supplied">Book i</title>
+                  <title xml:lang="en">Book i</title>
                   <msItem xml:id="d1" n="11">
                     <locus from="83a" to="94">foll. 83a-94</locus>
-                    <author ref="http://syriaca.org/person/122">George, bishop of the Arabs</author>
-                    <title type="supplied">Introduction</title>
+                    <author ref="http://syriaca.org/person/122">
+                      <persName xml:lang="en">George, bishop of the Arabs</persName>
+                    </author>
+                    <title xml:lang="en">Introduction</title>
                     <rubric xml:lang="syr">ܦܪܐܘܡܝܘܢ ܕܩܕܡ ܡܐܡܪܐ ܩܕܡܝܐ ܕܐܢܘܠܘܛܝܩܘܢ ܕܐܪܝܣܛܘܛܠܝܣ<locus from="83a" to="83a"/>
                     </rubric>
                   </msItem>
                   <msItem xml:id="d2" n="12">
                     <locus from="94b" to="153">foll. 94b-153</locus>
-                    <author ref="http://syriaca.org/person/342">Aristotle</author>
-                    <title type="supplied">Text</title>
+                    <author ref="http://syriaca.org/person/342">
+                      <persName xml:lang="en">Aristotle</persName>
+                    </author>
+                    <title xml:lang="en">Text</title>
                     <rubric xml:lang="syr">ܟܬܒܐ ܕܬܠܬܐ̣. ܕܐܪܝܣܛܘܛܠܝܣ ܦܝܠܣܘܦܐ. ܕܡܬܩܪܐ ܐܢܘܠܘܛܝܩܘܢ̇ ܡܐܡܪܐ ܩܕܡܝܐ̣. ܕܝܠܗ̣ ܕܟܬܒܐ<locus from="94b" to="94b"/>
                     </rubric>
                   </msItem>
                   <msItem xml:id="d3" n="13">
                     <locus from="153b" to="200">foll. 153b-200</locus>
-                    <author ref="http://syriaca.org/person/122">George, bishop of the Arabs</author>
-                    <title type="supplied">Commentary</title>
+                    <author ref="http://syriaca.org/person/122">
+                      <persName xml:lang="en">George, bishop of the Arabs</persName>
+                    </author>
+                    <title xml:lang="en">Commentary</title>
                     <rubric xml:lang="syr">ܩܦܠܐܘܢ ܐܘ ܟܝܬ ܢܘܗܪ̈ܐ ܕܐܢܘܠܘܛܝܩܘܢ ܩܕܡܝܐ<locus from="153b" to="153b"/>
                     </rubric>
                   </msItem>
                 </msItem>
-                <msItem xml:id="c7" n="14">
+                <msItem xml:id="c7" n="14" defective="true">
                   <locus from="200b" to="263b">foll. 200b-263b</locus>
-                  <title type="supplied">Book ii</title>
+                  <title xml:lang="en">Book ii</title>
                   <msItem xml:id="d4" n="15">
                     <locus from="200b" to="201">foll. 200b-201</locus>
-                    <author ref="http://syriaca.org/person/122">George, bishop of the Arabs</author>
-                    <title type="supplied">Introduction</title>
+                    <author ref="http://syriaca.org/person/122">
+                      <persName xml:lang="en">George, bishop of the Arabs</persName>
+                    </author>
+                    <title xml:lang="en">Introduction</title>
                     <rubric xml:lang="syr">ܩܕܝܡܘܬ ܡܠܬܐ ܕܥܠ ܡܐܡܪܐ ܕܬܪ̈ܝܢ ܕܐܢܘܠܘܛܝܩܘܢ ܩܕܡܝܐ<locus from="200b" to="200b"/>
                     </rubric>
                   </msItem>
                   <msItem xml:id="d5" n="16">
                     <locus from="201b" to="243b">foll. 201b-243b</locus>
-                    <author ref="http://syriaca.org/person/342">Aristotle</author>
-                    <title type="supplied">Text</title>
+                    <author ref="http://syriaca.org/person/342">
+                      <persName xml:lang="en">Aristotle</persName>
+                    </author>
+                    <title xml:lang="en">Text</title>
                     <rubric xml:lang="syr">ܡܐܡܪܐ ܕܬܪ̈ܝܢ ܕܐܢܘܠܛܝܩܘܢ ܩܕܡܝܐ. ܕܝܠܗ ܟܕ ܕܝܠܗ ܕܐܪܝܣܛܛܠܝܘܣ ܦܝܠܣܘܦܐ<locus from="201b" to="201b"/>
                     </rubric>
                   </msItem>
                   <msItem xml:id="d6" n="17" defective="true">
                     <locus from="244a" to="263b">foll. 244a-263b</locus>
-                    <author ref="http://syriaca.org/person/122">George, bishop of the Arabs</author>
-                    <title type="supplied">Commentary</title>
+                    <author ref="http://syriaca.org/person/122">
+                      <persName xml:lang="en">George, bishop of the Arabs</persName>
+                    </author>
+                    <title xml:lang="en">Commentary</title>
                     <rubric xml:lang="syr">ܢܘܗܪ̈ܐ ܕܡܐܡܪܐ ܕܬܪ̈ܝܢ ܕܐ[ܢܘܠܘܛܝܩܘܢ] ܩܕܡܝܐ<locus from="244a" to="244a"/>
                     </rubric>
                   </msItem>
@@ -244,23 +262,18 @@
                 </support>
                 <extent>
                   <measure type="composition" unit="leaf" quantity="263">263 ff.</measure>
-                  <dimensions type="leaf" unit="in">
-                    <height>
-                      <measure type="height" quantity="9.125" unit="in">9 1/8</measure>
-                    </height>
-                    <width>
-                      <measure type="width" quantity="6.375" unit="in">6 3/8</measure>
-                    </width>
+                  <dimensions type="leaf" unit="inch">
+                    <height quantity="9.125">9 1/8</height>
+                    <width quantity="6.375">6 3/8</width>
                   </dimensions>
                 </extent>
-                <foliation type="ancient"/>
                 <collation>
                   <p>The quires, signed with letters, are 27 in number.</p>
                 </collation>
                 <condition>
                   <list>
                     <item>
-                      <p>263 leaves, many of which are much stained by water and more or less torn, especially<locus>foll. 32—37, 122, 157, 163—165, 180, 209— 212, 218, 220, 221, 237—248, 255, and 257 —263</locus>. This volume is imperfect at the beginning and end, and a leaf is also wanting after<locus target="2">fol. 2</locus>.</p>
+                      <p>263 leaves, many of which are much stained by water and more or less torn, especially <locus>foll. 32—37, 122, 157, 163—165, 180, 209— 212, 218, 220, 221, 237—248, 255, and 257 —263</locus>. This volume is imperfect at the beginning and end, and a leaf is also wanting after <locus from="2">fol. 2</locus>.</p>
                     </item>
                   </list>
                 </condition>
@@ -273,18 +286,17 @@
             </objectDesc>
             <handDesc hands="1">
               <handNote xml:id="handNote1" scope="sole" script="syr-Syre" medium="unknown">
-                <desc>The writing is a clear, elegant Estrangela of the viiith or ixth cent. The name of the scribe was Theodosius. See <ref target="addition1">additions</ref>.</desc>
+                The writing is a clear, elegant Estrangela of the viiith or ixth cent. The name of the scribe was Theodosius. See <ref target="addition1">additions</ref>.
               </handNote>
             </handDesc>
             <decoDesc>
-              <decoNote xml:id="decoNote1" type="ornamentation">
-                <p>There are many ornamental designs in this manuscript, coloured with red and green paints; e. g.<locus>foll. 3 a, 28 b, 46 a, 59 a (birds), 68 a (do.), 83 a (do.), 88 a, 89 b (birds), 90 b, 92 a, 93 a (birds) and b, 94 b (birds), 183 b, and 201 b.</locus>
-                </p>
+              <decoNote type="ornamentation">
+                There are many ornamental designs in this manuscript, coloured with red and green paints; e. g.<locus>foll. 3 a, 28 b, 46 a, 59 a (birds), 68 a (do.), 83 a (do.), 88 a, 89 b (birds), 90 b, 92 a, 93 a (birds) and b, 94 b (birds), 183 b, and 201 b.</locus>
+                
               </decoNote>
-              <decoNote xml:id="decoNote2" type="rubrication"/>
+              <decoNote type="rubrication"/>
             </decoDesc>
             <additions>
-              <p/>
               <list>
                 <item xml:id="addition1" n="1">
                   <label>Colophon</label>
@@ -312,27 +324,21 @@
                 </item>
               </list>
             </additions>
-            <bindingDesc/>
-            <sealDesc/>
-            <accMat/>
-          </physDesc>
+            </physDesc>
           <history>
             <origin>
-              <origDate notBefore="0700" notAfter="0900">viiith or ixth cent.</origDate>
-              <origPlace/>
+              <origDate calendar="Gregorian" notBefore="0700" notAfter="0900">8th or 9th century</origDate>
+              
             </origin>
-            <provenance/>
-            <acquisition/>
-          </history>
+            </history>
           <additional>
             <adminInfo>
               <recordHist>
-                <source>Manuscript description based on<bibl>
+                <source>Manuscript description based on <bibl>
                     <ref target="#Wrightpart">Wright's Catalogue</ref>
                   </bibl>. abbreviated by the Syriaca.org editors.</source>
               </recordHist>
-              <note/>
-            </adminInfo>
+              </adminInfo>
             <listBibl>
               <bibl xml:id="Wrightpart">
                 <author>William Wright</author>
@@ -341,7 +347,7 @@
                 <date>1870</date>
                 <ptr target="http://syriaca.org/bibl/8"/>
                 <citedRange unit="entry">DCCCCXC</citedRange>
-                <citedRange unit="pp">3:1163-1164</citedRange>
+                <citedRange unit="p">3:1163-1164</citedRange>
               <ref type="internet-archive-pdf" target="https://archive.org/details/catalogueofsyria03brituoft/page/1163"/>
               </bibl>
             </listBibl>
@@ -365,7 +371,6 @@
       <classDecl>
         <taxonomy xml:id="Wright-BL-Taxonomy">
           <bibl>
-            
             <ptr target="http://syriaca.org/documentation/Wright-BL-Taxonomy.html"/>
           </bibl>
           <category xml:id="biblical-manuscripts">
@@ -482,22 +487,30 @@
     </encodingDesc>
     <profileDesc>
       <langUsage>
-        <language ident="syr">Unvocalized Syriac of any variety or period</language>
-        <language ident="syr-Syre">Syriac in Estrangela</language>
-        <language ident="syr-Syrj">Vocalized West Syriac</language>
-        <language ident="syr-Syrn">Vocalized East Syriac</language>
-        <language ident="syr-x-syrm">Melkite Syriac</language>
-        <language ident="qhy-x-cpas">Palestinian Syriac</language>
-        <language ident="ar-Syrc">Unvocalized or Undetermined Arabic Garshuni</language>
-        <language ident="ar-Syrj">Arabic Garshuni in Vocalized West Syriac Script</language>
-        <language ident="ar-Syrn">Arabic Garshuni in Vocalized East Syriac Script</language>
-        <language ident="en">English</language>
         <language ident="ar">Arabic</language>
-        <language ident="fr">French</language>
-        <language ident="de">German</language>
-        <language ident="la">Latin</language>
-        <language ident="grc">Ancient Greek</language>
+        <language ident="ar-Syrc">Arabic Garshuni</language>
+        <language ident="ar-Syrn">Arabic Garshuni in East Syriac script</language>
         <language ident="cop">Coptic</language>
+        <language ident="de">German</language>
+        <language ident="en">English</language>
+        <language ident="fr">French</language>
+        <language ident="grc">Ancient Greek</language>
+        <language ident="he">Hebrew</language>
+        <language ident="hy">Armenian</language>
+        <language ident="it">Italian</language>
+        <language ident="la">Latin</language>
+        <language ident="syr">Syriac</language>
+        <language ident="syr-Arab">Syriac Garshuni in Arabic script</language>
+        <language ident="syr-Syre">Syriac in Estrangela script</language>
+        <language ident="syr-Syrj">Syriac in West Syriac script</language>
+        <language ident="syr-Syrn">Syriac in East Syriac script</language>
+        <language ident="syr-x-syrm">Syriac in Melkite Syriac script</language>
+        <language ident="tr">Turkish</language>
+        <language ident="tr-Syrc">Turkish Garshuni</language>
+        <language ident="qhy-x-cpas">Christian Palestinian Aramaic script</language>
+        <language ident="xcl">Classical Armenian</language>
+        <language ident="und">Undetermined</language>
+        <language ident="mul">Multiple languages</language>
       </langUsage>
       <textClass>
         <keywords scheme="#Wright-BL-Taxonomy">
@@ -514,20 +527,14 @@
       <change who="https://bl.syriac.uk/documentation/editors.xml#aahn" when="2023-01-13-06:00">ADDED: added decoNote elements for decorations</change>
       <change who="https://bl.syriac.uk/documentation/editors.xml#jarnwine" when="2023-01-13-06:00">ADDED: supplied and corrected Syriaca.org URIs for authors</change>
       <change who="https://bl.syriac.uk/documentation/editors.xml#pgmiller" when="2016-02-09">Created: file</change>
-      <change type="planned" subtype="uri">Needs Addition of work URIs.</change>
+      <change type="planned" subtype="uri" who="https://bl.syriac.uk/documentation/editors.xml#smbl-general-editors">Needs Addition of work URIs.</change>
       <change who="https://bl.syriac.uk/documentation/editors.xml#pgmiller" when="2016-07-06">Changed: Files moved to srophe-app-data/data/manuscripts/tei repository.</change>
     </revisionDesc>
   </teiHeader>
-  <facsimile>
-    <!-- facsimile information about the manuscript -->
-    <graphic/>
-    <!-- Alternatively you could provide 'surface' elements with more than one image per surface, and optionally with 'zone' 
-      elements to give coordinates for any special areas of interest -->
-  </facsimile>
   <text>
     <body>
-      <!-- If you had a transcription of the manuscript you would put it here -->
       <p/>
+      <!--Body paragraph provided for document validation.-->
     </body>
   </text>
 </TEI>

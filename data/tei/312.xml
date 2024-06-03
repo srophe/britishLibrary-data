@@ -1,4 +1,7 @@
-<?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/srophe-app/documentation/enrich-syriaca.rnc" type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/css" href="SRPEnrichCSS.css"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+<?xml-model href="https://raw.githubusercontent.com/srophe/britishLibrary/main/documentation/schema/out/Syriacamsdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/srophe/britishLibrary/main/documentation/schema/out/Syriacamsdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet href="https://raw.githubusercontent.com/srophe/wright-catalogue/master/parameters/tei.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="manuscript_312">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -22,13 +25,7 @@
                     <resp>Based on the work of</resp>
                     <name type="person" ref="https://bl.syriac.uk/documentation/editors.xml#wwright">William Wright</name>
                 </respStmt>
-                <respStmt>
-                    <resp>Edited by</resp>
-                    <name type="person" ref="https://bl.syriac.uk/documentation/editors.xml#">
-            <!-- Editor's first initial and surname follow "#" (e.g., "...#dmichelson") -->
-            <!--Initial editor's name here -->
-                    </name>
-                </respStmt>
+                
                 <respStmt>
                     <resp>Syriac text entered by</resp>
                     <name type="person" ref="https://bl.syriac.uk/documentation/editors.xml#raydin">Robert Aydin</name>
@@ -63,11 +60,9 @@
                 <edition n="1.0"/>
             </editionStmt>
       <publicationStmt>
-                <pubPlace/>
                 <authority>Syriaca.org: The Syriac Reference Portal</authority>
                 <idno type="URI">https://bl.syriac.uk/ms/312/tei</idno>
                 <availability>
-                    <p/>
                     <licence target="http://creativecommons.org/licenses/by/3.0/">
                         <p>Distributed under a Creative Commons Attribution 3.0 Unported License</p>
                     </licence>
@@ -75,7 +70,7 @@
                 <date calendar="Gregorian">2023-04-21-05:00</date>
             </publicationStmt>
       <sourceDesc>
-        <msDesc xml:id="manuscript-312" xml:lang="en">
+        <msDesc xml:id="manuscript-312">
           <msIdentifier>
                         <country>United Kingdom</country>
                         <settlement>London</settlement>
@@ -89,7 +84,7 @@
               <idno type="BL-Shelfmark-display">London, BL, Add. 14,576</idno>
             </altIdentifier>
             <altIdentifier>
-              <idno type="BL-Shelmark-simplified">BL Add MS 14576</idno>
+              <idno type="BL-Shelfmark-simplified">BL Add MS 14576</idno>
             </altIdentifier>
                         <altIdentifier>
                             <collection>William Wright, Catalogue of the Syriac Manuscripts in the British Museum Acquired since the Year 1838</collection>
@@ -103,18 +98,17 @@
           <head>
             <note type="contents-note">This manuscript contains: Isaiah of Scetis. The works of Isaiah, abbat ofScete. In total, including sub-sections, this manuscript contains 24 items.</note>
             <listRelation type="Wright-BL-Taxonomy">
-              <relation name="dcterms:type" ref="http://purl.org/dc/terms/type" active="https://bl.syriac.uk/ms/312" passive="#theology">
-                <desc/>
-              </relation>
+              <relation name="dcterms:type" ref="http://purl.org/dc/terms/type" active="https://bl.syriac.uk/ms/312" passive="#theology"/>
             </listRelation>
           </head>
           <msContents>
-            <summary/>
             <textLang mainLang="syr">Syriac</textLang>
             <msItem xml:id="a1" n="1" defective="true">
               <locus from="1" to="84">Foll. 1-84</locus>
-              <author ref="http://syriaca.org/person/548">Isaiah of Scetis</author>
-              <title type="supplied">The works of Isaiah, abbat of<placeName>Scete</placeName>
+              <author ref="http://syriaca.org/person/548">
+                <persName xml:lang="en">Isaiah of Scetis</persName>
+              </author>
+              <title xml:lang="en">The works of Isaiah, abbat of Scete
                             </title>
               <finalRubric xml:lang="syr">ܫܠ̣ܡ ܠܡܟܬܒ ܒܟܬܒܐ ܗܢܐ̣ ܡܡܠܠܐ̣ ܕܛܘܒܢܐ ܕܠܐ ܐܘܕܥ ܫܡܗ. ܘܡܪܬܝܢܘܬܐ̣ ܘܟܘ̈ܘܢܐ ܕܓܒ̣ܝܐ ܕܐܠܗܐ ܐ̇ܒܐ ܐܫܥܝܐ ܐܝܚܝܕܝܐ.<locus from="84a"/>
                             </finalRubric>
@@ -123,256 +117,277 @@
                             </colophon>
               <msItem xml:id="b1" n="2">
                 <locus from="1a" to="2">Foll. 1a-2</locus>
-                <author ref="http://syriaca.org/person/548">Isaiah of Scetis</author>
-                <title type="supplied">A fragment of a tract</title>
+                <author ref="http://syriaca.org/person/548">
+                  <persName xml:lang="en">Isaiah of Scetis</persName>
+                </author>
+                <title xml:lang="en">A fragment of a tract</title>
                 <rubric xml:lang="syr">ܡܛܠ ܐܝܠܝܢ ܕܫܡ̣ܥ ܘܚ̣ܙܐ ܨܝܕ ܣܒ̈ܐ<locus from="1a"/>
                                 </rubric>
-                <listBibl>
-                                    <bibl>
-                                        <msIdentifier>
-                                            <idno ref="https://bl.syriac.uk/ms/311">Add. 14,575, no. 6</idno>
-                                        </msIdentifier>
-                                    </bibl>
-                                </listBibl>
+                <note>Cf. <bibl>Add. 14,575, no. 6<ptr target="https://bl.syriac.uk/ms/311"/>
+                </bibl></note>
               </msItem>
               <msItem xml:id="b2" n="3">
                 <locus from="2a" to="8">Foll. 2a-8</locus>
-                <author ref="http://syriaca.org/person/548">Isaiah of Scetis</author>
-                <title type="supplied">Part of a tract</title>
+                <author ref="http://syriaca.org/person/548">
+                  <persName xml:lang="en">Isaiah of Scetis</persName>
+                </author>
+                <title xml:lang="en">Part of a tract</title>
                 <rubric xml:lang="syr">ܨܝܕ ܦܛܪܐ ܬܠܡܝܕܐ<locus from="1a"/>
                                 </rubric>
-                <listBibl>
-                                    <bibl>
-                                        <msIdentifier>
-                                            <idno ref="https://bl.syriac.uk/ms/311">Add. 14,575, no. 7</idno>
-                                        </msIdentifier>
-                                    </bibl>
-                                </listBibl>
+                <note>Cf. <bibl>Add. 14,575, no. 7<ptr target="https://bl.syriac.uk/ms/311"/>
+                </bibl></note>
               </msItem>
               <msItem xml:id="b3" n="4">
                 <locus from="8a" to="9">Foll. 8a-9</locus>
-                <title type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">Part of the works of Isaiah, abbat of<placeName>Scete</placeName>
+                <title xml:lang="en">Part of the works of Isaiah, abbat of Scete
                                 </title>
-                <author ref="http://syriaca.org/person/548">Isaiah of Scetis</author>
-                <title type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">Part of the works of Isaiah, abbat of<placeName>Scete</placeName>
+                <author ref="http://syriaca.org/person/548">
+                  <persName xml:lang="en">Isaiah of Scetis</persName>
+                </author>
+                <title xml:lang="en">Part of the works of Isaiah, abbat of Scete
                                 </title>
                 <rubric xml:lang="syr">ܦܘܩ̈ܕܢܐ ܠܐ̈ܚܐ ܗ̇ܢܘܢ ܕܥܡܗ<locus from="8a"/>
                                 </rubric>
               </msItem>
               <msItem xml:id="b4" n="5">
                 <locus from="9a" to="9">Foll. 9a-9</locus>
-                <title type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">Part of the works of Isaiah, abbat of<placeName>Scete</placeName>
+                <title xml:lang="en">Part of the works of Isaiah, abbat of Scete
                                 </title>
-                <author ref="http://syriaca.org/person/548">Isaiah of Scetis</author>
-                <title type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">Part of the works of Isaiah, abbat of<placeName>Scete</placeName>
+                <author ref="http://syriaca.org/person/548">
+                  <persName xml:lang="en">Isaiah of Scetis</persName>
+                </author>
+                <title xml:lang="en">Part of the works of Isaiah, abbat of Scete
                                 </title>
                 <rubric xml:lang="syr">ܡܛܠ ܗܘܢܐ ܕܒܟܝܢܐ<locus from="9a"/>
                                 </rubric>
               </msItem>
               <msItem xml:id="b5" n="6">
                 <locus from="9b" to="12">Foll. 9b-12</locus>
-                <title type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">Part of the works of Isaiah, abbat of<placeName>Scete</placeName>
+                <title xml:lang="en">Part of the works of Isaiah, abbat of Scete
                                 </title>
-                <author ref="http://syriaca.org/person/548">Isaiah of Scetis</author>
-                <title type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">Part of the works of Isaiah, abbat of<placeName>Scete</placeName>
+                <author ref="http://syriaca.org/person/548">
+                  <persName xml:lang="en">Isaiah of Scetis</persName>
+                </author>
+                <title xml:lang="en">Part of the works of Isaiah, abbat of Scete
                                 </title>
                 <rubric xml:lang="syr">ܡܛܠ ܛܘ̇ܟܣܐ ܕܐܚ̈ܐ ܫܪ̈ܘܝܐ<locus from="9b"/>
                                 </rubric>
               </msItem>
               <msItem xml:id="b6" n="7">
                 <locus from="12a" to="19">Foll. 12a-19</locus>
-                <title type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">Part of the works of Isaiah, abbat of<placeName>Scete</placeName>
+                <title xml:lang="en">Part of the works of Isaiah, abbat of Scete
                                 </title>
-                <author ref="http://syriaca.org/person/548">Isaiah of Scetis</author>
-                <title type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">Part of the works of Isaiah, abbat of<placeName>Scete</placeName>
+                <author ref="http://syriaca.org/person/548">
+                  <persName xml:lang="en">Isaiah of Scetis</persName>
+                </author>
+                <title xml:lang="en">Part of the works of Isaiah, abbat of Scete
                                 </title>
                 <rubric xml:lang="syr">ܡܛܠ ܬܐܪܬܐ ܕܗܠܝܢ ܕܝܬ݁ܒܝܢ ܒܩܠܝܬܐ<locus from="12a"/>
                                 </rubric>
               </msItem>
               <msItem xml:id="b7" n="8">
                 <locus from="19a" to="22">Foll. 19a-22</locus>
-                <title type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">Part of the works of Isaiah, abbat of<placeName>Scete</placeName>
+                <title xml:lang="en">Part of the works of Isaiah, abbat of Scete
                                 </title>
-                <author ref="http://syriaca.org/person/548">Isaiah of Scetis</author>
-                <title type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">Part of the works of Isaiah, abbat of<placeName>Scete</placeName>
+                <author ref="http://syriaca.org/person/548">
+                  <persName xml:lang="en">Isaiah of Scetis</persName>
+                </author>
+                <title xml:lang="en">Part of the works of Isaiah, abbat of Scete
                                 </title>
                 <rubric xml:lang="syr">ܡܛܠ ܦܘܩ̈ܕܢܐ ܡܗ̈ܝܡܢܐ̇. ܘܒܢܝ̇ܢܐ ܕܗ̇ܢܘܢ ܕܒܥ̇ܝܢ ܕܒܫܝܢܐ ܢܥܡܪܘܢ ܥܡ ܚܕ̈ܕܐ<locus from="19a"/>
                                 </rubric>
               </msItem>
               <msItem xml:id="b8" n="9">
                 <locus from="22b" to="25">Foll. 22b-25</locus>
-                <title type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">Part of the works of Isaiah, abbat of<placeName>Scete</placeName>
+                <title xml:lang="en">Part of the works of Isaiah, abbat of Scete
                                 </title>
-                <author ref="http://syriaca.org/person/548">Isaiah of Scetis</author>
-                <title type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">Part of the works of Isaiah, abbat of<placeName>Scete</placeName>
+                <author ref="http://syriaca.org/person/548">
+                  <persName xml:lang="en">Isaiah of Scetis</persName>
+                </author>
+                <title xml:lang="en">Part of the works of Isaiah, abbat of Scete
                                 </title>
                 <rubric xml:lang="syr">ܡܛܠ ܗ̇ܢܘܢ ܕܒܥ̇ܝܢ ܕܢܗܘܘܢ ܒܫܝܢܐ ܛ̇ܒܐ̇. ܘܢܚܘܪܘܢ ܒܢܦܫܗܘ̇ܢ̇ ܠܡܦ̣ܪܫ ܠܗ̇ܢܘܢ ܕܓܒ̇ܝܢ ܠܗܘ̇ܢ̇ ܏ܘܫ.<locus from="22b"/>
                                 </rubric>
               </msItem>
               <msItem xml:id="b9" n="10">
-                <locus from="" to="">Foll. 25b-31</locus>
-                <title type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">Part of the works of Isaiah, abbat of<placeName>Scete</placeName>
+                <locus from="25b" to="31">Foll. 25b-31</locus>
+                <title xml:lang="en">Part of the works of Isaiah, abbat of Scete
                                 </title>
-                <author ref="http://syriaca.org/person/548">Isaiah of Scetis</author>
-                <title type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">Part of the works of Isaiah, abbat of<placeName>Scete</placeName>
+                <author ref="http://syriaca.org/person/548">
+                  <persName xml:lang="en">Isaiah of Scetis</persName>
+                </author>
+                <title xml:lang="en">Part of the works of Isaiah, abbat of Scete
                                 </title>
                 <rubric xml:lang="syr">ܡܛܘܠ ܬܝܒܘܬܐ̣. ܕܫܐܠܗ ܐܒ̇ܐ ܦܛܪܐ<locus from="25b"/>
                                 </rubric>
               </msItem>
               <msItem xml:id="b10" n="11">
                 <locus from="31b" to="37">Foll. 31b-37</locus>
-                <title type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">Part of the works of Isaiah, abbat of<placeName>Scete</placeName>
+                <title xml:lang="en">Part of the works of Isaiah, abbat of Scete
                                 </title>
-                <author ref="http://syriaca.org/person/548">Isaiah of Scetis</author>
-                <title type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">Part of the works of Isaiah, abbat of<placeName>Scete</placeName>
+                <author ref="http://syriaca.org/person/548">
+                  <persName xml:lang="en">Isaiah of Scetis</persName>
+                </author>
+                <title xml:lang="en">Part of the works of Isaiah, abbat of Scete
                                 </title>
                 <rubric xml:lang="syr">ܡܛܘܠ ܚܕܘܬܐ ܕܗ̇ܘܝܐ ܠܢܦܫܐ̇. ܗ̇ܝ ܕܒܥ̇ܐ ܠܡܫܬܥܒܕܘ ܠܐܠܗܐ<locus from="31b"/>
                                 </rubric>
               </msItem>
               <msItem xml:id="b11" n="12">
                 <locus from="37a" to="45">Foll. 37a-45</locus>
-                <title type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">Part of the works of Isaiah, abbat of<placeName>Scete</placeName>
+                <title xml:lang="en">Part of the works of Isaiah, abbat of Scete
                                 </title>
-                <author ref="http://syriaca.org/person/548">Isaiah of Scetis</author>
-                <title type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">Part of the works of Isaiah, abbat of<placeName>Scete</placeName>
+                <author ref="http://syriaca.org/person/548">
+                  <persName xml:lang="en">Isaiah of Scetis</persName>
+                </author>
+                <title xml:lang="en">Part of the works of Isaiah, abbat of Scete
                                 </title>
                 <rubric xml:lang="syr">ܡܛܠ ܗ̇ܝ ܕܢܐܡܪ ܠܘܩܒܠ ܚ̈ܫܐ ܗ̇ܢܘܢ ܕܡܩ̣ܪܒܝܢ ܥܡ ܥܢܘ̈ܝܐ̇. ܏ܘܫ.<locus from="37a"/>
                                 </rubric>
               </msItem>
               <msItem xml:id="b12" n="13">
                 <locus from="45a" to="45a">Foll. 45a</locus>
-                <title type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">Part of the works of Isaiah, abbat of<placeName>Scete</placeName>
+                <title xml:lang="en">Part of the works of Isaiah, abbat of Scete
                                 </title>
-                <author ref="http://syriaca.org/person/548">Isaiah of Scetis</author>
-                <title type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">Part of the works of Isaiah, abbat of<placeName>Scete</placeName>
+                <author ref="http://syriaca.org/person/548">
+                  <persName xml:lang="en">Isaiah of Scetis</persName>
+                </author>
+                <title xml:lang="en">Part of the works of Isaiah, abbat of Scete
                                 </title>
                 <rubric xml:lang="syr">ܡܛܠ ܦܪܕܬܐ ܕܚܪܕܠܐ<locus from="45a"/>
                                 </rubric>
               </msItem>
               <msItem xml:id="b13" n="14">
                 <locus from="45a" to="46">Foll. 45a-46</locus>
-                <title type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">Part of the works of Isaiah, abbat of<placeName>Scete</placeName>
+                <title xml:lang="en">Part of the works of Isaiah, abbat of Scete
                                 </title>
-                <author ref="http://syriaca.org/person/548">Isaiah of Scetis</author>
-                <title type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">Part of the works of Isaiah, abbat of<placeName>Scete</placeName>
+                <author ref="http://syriaca.org/person/548">
+                  <persName xml:lang="en">Isaiah of Scetis</persName>
+                </author>
+                <title xml:lang="en">Part of the works of Isaiah, abbat of Scete
                                 </title>
                 <rubric xml:lang="syr">ܡܛܠ ܚܡܪܐ<locus from="45a"/>
                                 </rubric>
               </msItem>
               <msItem xml:id="b14" n="15">
                 <locus from="46a" to="48">Foll. 46a-48</locus>
-                <title type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">Part of the works of Isaiah, abbat of<placeName>Scete</placeName>
+                <title xml:lang="en">Part of the works of Isaiah, abbat of Scete
                                 </title>
-                <author ref="http://syriaca.org/person/548">Isaiah of Scetis</author>
-                <title type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">Part of the works of Isaiah, abbat of<placeName>Scete</placeName>
+                <author ref="http://syriaca.org/person/548">
+                  <persName xml:lang="en">Isaiah of Scetis</persName>
+                </author>
+                <title xml:lang="en">Part of the works of Isaiah, abbat of Scete
                                 </title>
                 <rubric xml:lang="syr">ܡܛܠ ܐܝܠܝܢ ܕܐܬ݁ܟܬܫܘ ܘܫ̇ܡܠܝܘ<locus from="46a"/>
                                 </rubric>
               </msItem>
               <msItem xml:id="b15" n="16">
                 <locus from="48a" to="51">Foll. 48a-51</locus>
-                <title type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">Part of the works of Isaiah, abbat of<placeName>Scete</placeName>
+                <title xml:lang="en">Part of the works of Isaiah, abbat of Scete
                                 </title>
-                <author ref="http://syriaca.org/person/548">Isaiah of Scetis</author>
-                <title type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">Part of the works of Isaiah, abbat of<placeName>Scete</placeName>
+                <author ref="http://syriaca.org/person/548">
+                  <persName xml:lang="en">Isaiah of Scetis</persName>
+                </author>
+                <title xml:lang="en">Part of the works of Isaiah, abbat of Scete
                                 </title>
                 <rubric xml:lang="syr">ܡܛܠ ܥ̇ܒܕܐ ܩܕܝܫܐ ܕܒܪܢܫܐ ܚ̣ܕܬܐ<locus from="48a"/>
                                 </rubric>
               </msItem>
               <msItem xml:id="b16" n="17">
                 <locus from="51b" to="52">Foll. 51b-52</locus>
-                <title type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">Part of the works of Isaiah, abbat of<placeName>Scete</placeName>
+                <title xml:lang="en">Part of the works of Isaiah, abbat of Scete
                                 </title>
-                <author ref="http://syriaca.org/person/548">Isaiah of Scetis</author>
-                <title type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">Part of the works of Isaiah, abbat of<placeName>Scete</placeName>
+                <author ref="http://syriaca.org/person/548">
+                  <persName xml:lang="en">Isaiah of Scetis</persName>
+                </author>
+                <title xml:lang="en">Part of the works of Isaiah, abbat of Scete
                                 </title>
                 <rubric xml:lang="syr">ܡܛܠ ܣܘܥܪܢܐ ܕܐܒܠܐ<locus from="51b"/>
                                 </rubric>
               </msItem>
               <msItem xml:id="b17" n="18">
                 <locus from="52b" to="65">Foll. 52b-65</locus>
-                <title type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">Part of the works of Isaiah, abbat of<placeName>Scete</placeName>
+                <title xml:lang="en">Part of the works of Isaiah, abbat of Scete
                                 </title>
-                <author ref="http://syriaca.org/person/548">Isaiah of Scetis</author>
-                <title type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">Part of the works of Isaiah, abbat of<placeName>Scete</placeName>
+                <author ref="http://syriaca.org/person/548">
+                  <persName xml:lang="en">Isaiah of Scetis</persName>
+                </author>
+                <title xml:lang="en">Part of the works of Isaiah, abbat of Scete
                                 </title>
                 <rubric xml:lang="syr">ܡܛܠ ܣܘ̈ܟܐ ܕܒܝܫ̣ܘܬܐ<locus from="52b"/>
                                 </rubric>
               </msItem>
               <msItem xml:id="b18" n="19">
                 <locus from="65a" to="68">Foll. 65a-68</locus>
-                <title type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">Part of the works of Isaiah, abbat of<placeName>Scete</placeName>
+                <title xml:lang="en">Part of the works of Isaiah, abbat of Scete
                                 </title>
-                <author ref="http://syriaca.org/person/548">Isaiah of Scetis</author>
-                <title type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">Part of the works of Isaiah, abbat of<placeName>Scete</placeName>
+                <author ref="http://syriaca.org/person/548">
+                  <persName xml:lang="en">Isaiah of Scetis</persName>
+                </author>
+                <title xml:lang="en">Part of the works of Isaiah, abbat of Scete
                                 </title>
                 <rubric xml:lang="syr">ܡܛܘܠ ܡܫܡܠܝܘܬܐ<locus from="65a"/>
                                 </rubric>
               </msItem>
               <msItem xml:id="b19" n="20">
                 <locus from="68a" to="71">Foll. 68a-71</locus>
-                <title type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">Part of the works of Isaiah, abbat of<placeName>Scete</placeName>
+                <title xml:lang="en">Part of the works of Isaiah, abbat of Scete
                                 </title>
-                <author ref="http://syriaca.org/person/548">Isaiah of Scetis</author>
-                <title type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">Part of the works of Isaiah, abbat of<placeName>Scete</placeName>
+                <author ref="http://syriaca.org/person/548">
+                  <persName xml:lang="en">Isaiah of Scetis</persName>
+                </author>
+                <title xml:lang="en">Part of the works of Isaiah, abbat of Scete
                                 </title>
                 <rubric xml:lang="syr">ܡܛܠ ܠܐ ܚܫܘܫܘܬܐ<locus from="68a"/>
                                 </rubric>
               </msItem>
               <msItem xml:id="b20" n="21">
                 <locus from="71b" to="78">Foll. 71b-78</locus>
-                <title type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">Part of the works of Isaiah, abbat of<placeName>Scete</placeName>
+                <title xml:lang="en">Part of the works of Isaiah, abbat of Scete
                                 </title>
-                <author ref="http://syriaca.org/person/548">Isaiah of Scetis</author>
-                <title type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">Part of the works of Isaiah, abbat of<placeName>Scete</placeName>
+                <author ref="http://syriaca.org/person/548">
+                  <persName xml:lang="en">Isaiah of Scetis</persName>
+                </author>
+                <title xml:lang="en">Part of the works of Isaiah, abbat of Scete
                                 </title>
                 <rubric xml:lang="syr">ܚܘܦܛܐ ܠܘܬ ܐ̈ܚܐ<locus from="71b"/>
                                 </rubric>
-                <listBibl>
-                                    <bibl>
-                                        <msIdentifier>
-                                            <idno ref="https://bl.syriac.uk/ms/311">Add. 14,575, no. 25</idno>
-                                        </msIdentifier>
-                                    </bibl>
-                                </listBibl>
+                <note>Cf. <bibl>Add. 14,575, no. 25<ptr target="https://bl.syriac.uk/ms/311"/>
+                </bibl></note>
               </msItem>
               <msItem xml:id="b21" n="22">
                 <locus from="78b" to="83">Foll. 78b-83</locus>
-                <title type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">Part of the works of Isaiah, abbat of<placeName>Scete</placeName>
+                <title xml:lang="en">Part of the works of Isaiah, abbat of Scete
                                 </title>
-                <author ref="http://syriaca.org/person/548">Isaiah of Scetis</author>
-                <title type="supplied" resp="https://bl.syriac.uk/documentation/editors.xml#ngibson">Part of the works of Isaiah, abbat of<placeName>Scete</placeName>
+                <author ref="http://syriaca.org/person/548">
+                  <persName xml:lang="en">Isaiah of Scetis</persName>
+                </author>
+                <title xml:lang="en">Part of the works of Isaiah, abbat of Scete
                                 </title>
                 <rubric xml:lang="syr">ܡܛܠ ܚܘ̈ܫܒܐ ܕܦܘܠܚܢܐ<locus from="78b"/>
                                 </rubric>
               </msItem>
               <msItem xml:id="b22" n="23">
                 <locus from="83a" to="83">Foll. 83a-83</locus>
-                <author ref="http://syriaca.org/person/483">Evagrius of Pontus</author>
-                <title type="supplied">Extract from Evagrius</title>
+                <author ref="http://syriaca.org/person/483">
+                  <persName xml:lang="en">Evagrius of Pontus</persName>
+                </author>
+                <title xml:lang="en">Extract from Evagrius</title>
                 <rubric xml:lang="syr">ܡܢ ܕܛܘܒܢܐ ܐܘܓܪܝܣ ܐܝܚܝܕܝܐ<locus from="83a"/>
                                 </rubric>
-                <listBibl>
-                                    <bibl>
-                                        <msIdentifier>
-                                            <idno ref="https://bl.syriac.uk/ms/311">Add. 14,575, no. 27</idno>
-                                        </msIdentifier>
-                                    </bibl>
-                                </listBibl>
+                <note>Cf. <bibl>Add. 14,575, no. 27<ptr target="https://bl.syriac.uk/ms/311"/>
+                </bibl></note>
               </msItem>
               <msItem xml:id="b23" n="24">
                 <locus from="83b" to="84a">Foll. 83b-84a</locus>
-                <author ref="http://syriaca.org/person/548">Isaiah of Scetis</author>
-                <title type="supplied">A letter</title>
+                <author ref="http://syriaca.org/person/548">
+                  <persName xml:lang="en">Isaiah of Scetis</persName>
+                </author>
+                <title xml:lang="en">A letter</title>
                 <rubric xml:lang="syr">ܐܓܪܬܐ ܕܝܠܗ<locus from="83b"/>
                                 </rubric>
-                <listBibl>
-                                    <bibl>
-                                        <msIdentifier>
-                                            <idno ref="https://bl.syriac.uk/ms/55">Add. 12,170, fol. 133a</idno>
-                                        </msIdentifier>
-                                    </bibl>
-                                </listBibl>
+                <note>Cf. <bibl>Add. 12,170, fol. 133a<ptr target="https://bl.syriac.uk/ms/55"/>
+                </bibl></note>
               </msItem>
             </msItem>
           </msContents>
@@ -385,16 +400,11 @@
                                 </support>
                                 <extent>
                                     <measure type="composition" unit="leaf" quantity="84">84 ff.</measure>
-                                    <dimensions type="leaf" unit="in">
-                                        <height>
-                                            <measure type="height" quantity="11.125" unit="in">11 1/8</measure>
-                                        </height>
-                                        <width>
-                                            <measure type="width" quantity="7.25" unit="in">7 1/4</measure>
-                                        </width>
-                                    </dimensions>
+                                    <dimensions type="leaf" unit="inch">
+                    <height quantity="11.125">11 1/8</height>
+                    <width quantity="7.25">7 1/4</width>
+                  </dimensions>
                                 </extent>
-                                <foliation/>
                                 <collation>
                                     <p>The quires, signed with letters, were originally 21 in number.</p>
                                 </collation>
@@ -407,7 +417,7 @@
                                             <p>The later signatures on the quires are incorrect.</p>
                                         </item>
                                         <item>
-                                            <p>Some of the leaves are much stained and torn, especially foll.<locus from="3" to="4">3, 4</locus>,<locus from="59">59</locus>and<locus from="84">84</locus>.</p>
+                                            <p>Some of the leaves are much stained and torn, especially foll.<locus from="3" to="4">3, 4</locus>, <locus from="59">59</locus> and <locus from="84">84</locus>.</p>
                                         </item>
                                     </list>
                                 </condition>
@@ -420,49 +430,37 @@
                         </objectDesc>
             <handDesc hands="6">
               <handNote xml:id="handNote1" scope="major" script="syr-Syre" medium="unknown">
-                <desc>This volume is written in a good, regular Estrangela of about the<origDate notBefore="0700" notAfter="0800" calendar="Gregorian">viiith cent.</origDate>
+                This volume is written in a good, regular Estrangela of about the <date notBefore="0700" notAfter="0800" calendar="Gregorian">viiith cent.</date>
                                     <ref target="#addition1">See additions.</ref>
-                                </desc>
-              </handNote>
+                                </handNote>
               <handNote xml:id="handNote2" scope="minor" script="syr" medium="unknown">
-                <desc>
-                                    <ref target="#addition2">See additions.</ref>
-                                </desc>
-              </handNote>
+                <ref target="#addition2">See additions.</ref>
+                                </handNote>
               <handNote xml:id="handNote3" scope="minor" script="syr" medium="unknown">
-                <desc>
-                                    <ref target="#addition3">See additions.</ref>
-                                </desc>
-              </handNote>
+                <ref target="#addition3">See additions.</ref>
+                                </handNote>
               <handNote xml:id="handNote4" scope="minor" script="syr" medium="unknown">
-                <desc>
-                                    <ref target="#addition4">See additions.</ref>
-                                </desc>
-              </handNote>
+                <ref target="#addition4">See additions.</ref>
+                                </handNote>
               <handNote xml:id="handNote5" scope="minor" script="syr" medium="unknown">
-                <desc>
-                                    <ref target="#addition5">See additions.</ref>
-                                </desc>
-              </handNote>
+                <ref target="#addition5">See additions.</ref>
+                                </handNote>
               <handNote xml:id="handNote6" scope="minor" script="syr" medium="unknown">
-                <desc>
-                                    <ref target="#addition6">See additions.</ref>
-                                </desc>
-              </handNote>
+                <ref target="#addition6">See additions.</ref>
+                                </handNote>
             </handDesc>
-            <decoDesc/>
             <additions>
               <note type="proofreader-note">N.B., items below may have been listed out of folio order in Wright's catalogue.</note>
-              <p/>
               <list>
-                <item xml:id="addition1" n="1" syriaca-tags="scribal-colophon ownership-inscription">
+                <item xml:id="addition1" n="1">
                   <label>Colophon</label>
+                    <label>Ownership Inscription</label>
                   <locus from="84a"/>
-                  <p>After the usual doxology, the scribe<persName>Agathon</persName>has recorded his name in these words, written in cursive characters:</p>
+                  <p>After the usual doxology, the scribe <persName>Agathon</persName> has recorded his name in these words, written in cursive characters:</p>
                   <p>
                                         <quote xml:lang="syr">ܪ̈ܚܡ̣ܐ ܕܚܢܘܗܝ ܠܓܝ̇ܣܐ ܒܨܠܝܒܐ ܢܕܢܚܘܢ ܒܝܘܡܐ ܕܕܝܢ̣ܐ ܥܠ ܚܛܝܐ ܐܓܬܘܢ ܕܟܬܒ ــܲـ ܨܠܘܬܝ ܥܠ ܡ̇ܢ ܕܟܬܒ ــܲـ ܀ ــܲـ ܀.</quote>
                                     </p>
-                  <p>A note on the same page informs us that the manuscript was written for<placeName>the convent of the Watch-tower</placeName>, near<placeName>Rās'ain</placeName>, at the expense of the abbat<persName>Cyrus</persName>and his brother<persName>Gabriel</persName>, a priest and periodeutes.</p>
+                  <p>A note on the same page informs us that the manuscript was written for <placeName>the convent of the Watch-tower</placeName>, near <placeName>Rās'ain</placeName>, at the expense of the abbat <persName>Cyrus</persName> and his brother <persName>Gabriel</persName>, a priest and periodeutes.</p>
                   <p>
                                         <quote xml:lang="syr">ܐܬܚܲܦܛܘ ܘܥܒ̣ܕܘ ܦܢܩܝܬܐ ܗܕܐ ܠܥܘܡܪܐ ܩܕܝܫܐ ܕܝܠܗܘܢ ܕܐܣܦܩܠܣ̣. ܩܫܝܫܐ ܘܪܝܫܕܝܪܐ ܕܝܠܗ ܕܥܘܡܪܐ ܡܪܝ ܩܘܪܝ̣. ܘܡܪܝ ܓܒܪܝܐܝܠ ܩܫܝܫܐ ܘܣܥܘܪܐ ܐܚܘܗܝ. ܡܛܠ ܚܘܣܝܐ ܕܚܘܒ̈ܝܗܘܢ̣ ܘܫܘܒܩܢܐ ܕܚܛܗ̈ܝܗܘܢ. ܕܐܠܗܐ ܗ̇ܘ ܕܡܛܠ ܫܡܗ ܏ܘܫ.</quote>
                                     </p>
@@ -475,31 +473,22 @@
                                         <quote xml:lang="syr">ܬܐܘܕܘܛܘܣ ܒܨܝܪܐ܆ ܢܩ̇ܙܬ ܟܬܒܐ ܗܢܐ ܣܛܪ ܡ̇ܢ ܨܚܚܐ. ܐܠܐ ܗ̇ܘ ܡ̇ܢ ܕܡܫܟܚ ܨܚܚܐ ܕܝܐܐ̣. ܢ̇ܡܠܐ ܗ̇ܝ ܕܚܣܝܪܐ ܠܬܘܪܨܐ ܡܛܠ ܚܘܒܐ܀</quote>
                                     </p>
                   <p>
-                                        <quote>I, the humble<persName>Theodotus</persName>, have pointed this book, without an exemplar (to guide me). But let him who can obtain a suitable exemplar make what corrections are needed, for the love (of God).</quote>
+                                        <quote xml:lang="en">I, the humble <persName>Theodotus</persName>, have pointed this book, without an exemplar (to guide me). But let him who can obtain a suitable exemplar make what corrections are needed, for the love (of God).</quote>
                                     </p>
                 </item>
                 <item xml:id="addition3" n="3">
                   <locus from="84b"/>
-                  <p>At the foot of the page is a deed of gift, by which one<persName>
-                                            <choice>
-                                                <reg>Abī</reg>
-                                                <reg>Ubai</reg>
-                                                <orig xml:lang="ar">
-                          <!-- Insert Arabic here -->
-                                                </orig>
-                                            </choice>
-                                        </persName>), the son of<persName>Salībā, of<placeName ref="http://syriaca.org/place/193">Tagrīt</placeName>
-                                        </persName>, gave this book, together with a copy of the Acts and the Pauline Epistles, to his daughter<persName>Sārā</persName>,<date datingMethod="Hijri-qamari" when-custom="0273">A. H. 273</date>,<date from="0886" to="0887" calendar="Gregorian">A.D. 886-7</date>. It is very carelessly written, and some words around no longer legible.</p>
+                  <p>At the foot of the page is a deed of gift, by which one <persName>Abī</persName> or <persName>Ubai</persName> (<persName xml:lang="ar"><!-- Insert Arabic here --></persName>), the son of <persName>Salībā, of <placeName ref="http://syriaca.org/place/193">Tagrīt</placeName></persName>, gave this book, together with a copy of the Acts and the Pauline Epistles, to his daughter <persName>Sārā</persName>, <date datingMethod="Hijri-qamari" when-custom="0273">A. H. 273</date>, <date from="0886" to="0887" calendar="Gregorian">A.D. 886-7</date>. It is very carelessly written, and some words around no longer legible.</p>
                   <p>
                                         <quote xml:lang="syr">
                                             <sic>ܐܢܐ ܐܒܝ ܒܪ ܡܪܝ ܨܠܝܒܐ ܝܗܒܬ ܠܟܬܒܐ ܗܢܐ (ܠܣܐ)ܪܐ ܒܪܬܐ ܕܝܠܝ ܘܠܟܬܒܐ ܐܚܪܢܐ ܕܒܗ ܦܪܟـ(ܣܝܣ) ܘܫܠܝܚܐ ܦܘܠܘܣ ܗܠܝܢ ܬܪ̈ܝܢ ܟ̈ܬܒܐ ܕܝܠܗ̇ ܕܣܐܪܐ ܠܝܬ ܠܢܫ (؟) ܡܢ ܐܚ̈ܝܗ ܒܗ̈ܘܢ ܡܕܡ . . . ܕܣܐܪܐ [ܐ]ܢܘܢ ܘܟܬܒܬ ܒܐܝܕܝ . . . ܬܫܪܝܢ ܐܚܪܝ ܕܫܢܬ ܡܐܬܝܢ ܘܫܒܥܝܢ ܘܬܠܬ ܕܛܝ̈ܝܐ ܒܨܒܝܢܐ ܛܥܝܐ (؟) ܕܢܦܫܝ.</sic>
                                         </quote>
                                     </p>
                 </item>
-                <item xml:id="addition4" n="4" syriaca-tags="ownership-inscription">
+                <item xml:id="addition4" n="4">
+                    <label>Ownership Inscription</label>
                   <locus from="84b"/>
-                  <p>A little higher up, there is a note, evidently written by<persName>John, a son of the said<persName>Abī</persName>
-                                        </persName>, laying claim to the ownership of the book:</p>
+                  <p>A little higher up, there is a note, evidently written by <persName>John, a son of the said <persName>Abī</persName></persName>, laying claim to the ownership of the book:</p>
                   <p>
                                         <quote xml:lang="syr">ܐܝܬܘܗܝ ܟܬܒܐ ܗܢܐ ܕ[ܝܘܚܢܢ]ـܢ ܒܪ ܐܒܝ ܒܪ ܡܪܝ [ܨܠܝܒܐ] . . . ܕܡܢ ܬܓܪܝܬ ܡܕܝܢܬܐ ܨܠܘ ܥܠܘܗܝ</quote>
                                     </p>
@@ -510,7 +499,7 @@
                 </item>
                 <item xml:id="addition5" n="5">
                   <locus from="84b"/>
-                  <p>Another note, written by one<persName>John</persName>, testifies that, the volume subsequently belonged to<placeName ref="http://syriaca.org/place/360">the convent of S. Mary Deipara</placeName>.</p>
+                  <p>Another note, written by one <persName>John</persName>, testifies that, the volume subsequently belonged to <placeName ref="http://syriaca.org/place/360">the convent of S. Mary Deipara</placeName>.</p>
                   <p>
                                         <quote xml:lang="syr">ܐܝܬܘܗܝ ܟܬܒܐ ܗܢܐ ܠܕܝܪܐ ܝܕܝܥ̣ܬܐ ܕܝ̇ܠܕܬ ܐܠܗܐ ܕܡܕܒܪܐ ܕܐܣܩܝܛܝ: ܘܡܫܬܡܗܐ ܗ̣ܝ ܕܝܪܐ ܕܣܘܪ̈ܝܝܐ. ܗ̇ܘ ܕܩ̇ܪܐ ܢܨܲܠܐ ܥܠ ܟܠ ܕܐܫܬܲܘܬܦ ܒܗ . .
                       ܝܘܚܢܢ ܚܲܛܝܐ ܐܢܬ ܡܪܝܐ ܚ̇ܣ̣ܐ ܠܗ ܚܘܒ̈ܘܗܝ.</quote>
@@ -518,33 +507,28 @@
                 </item>
                 <item xml:id="addition6" n="6">
                   <locus from="55b"/>
-                  <p>A reader whoso name seems to have been<persName>Jonah</persName>, has written on fol. 55b the words:</p>
+                  <p>A reader whoso name seems to have been <persName>Jonah</persName>, has written on fol. 55b the words:</p>
                   <p>
                                         <quote xml:lang="syr">ܐܠܗܐ ܚܣܐ ܒܛܝܒܘܬܟ ܠܚܛܝܐ ܝܒܢܢ (ܝܘܢܢ؟) ܥ̣ܒܕܟ. ܘܟܠ ܕܩܪܐ ܘܡܨ̇ܠܐ ܥܠܝ ܐܦ ܗܘ̣ ܢܬܚܣܐ . . . ܕܘܟܪܢܗ ܕܡܝ̣ܬܐ ܒܝܬ ܚ̈ܝܐ.</quote>
                                     </p>
                 </item>
               </list>
             </additions>
-            <bindingDesc/>
-            <sealDesc/>
-            <accMat/>
-          </physDesc>
+            </physDesc>
           <history>
                         <origin>
-                            <origDate notBefore="0700" notAfter="0800" calendar="Gregorian">viiith cent.</origDate>
+              <origDate calendar="Gregorian" notBefore="0700" notAfter="0800">8th century</origDate>
+                            
                         </origin>
-                        <provenance/>
-                        <acquisition/>
-                    </history>
+                        </history>
           <additional>
             <adminInfo>
               <recordHist>
-                <source>Manuscript description based on<bibl>
+                <source>Manuscript description based on <bibl>
                     <ref target="#Wrightpart">Wright's Catalogue</ref>
                   </bibl>. abbreviated by the Syriaca.org editors.</source>
               </recordHist>
-              <note/>
-            </adminInfo>
+              </adminInfo>
             <listBibl>
               <bibl xml:id="Wrightpart">
                 <author>William Wright</author>
@@ -553,7 +537,7 @@
                 <date>1870</date>
                 <ptr target="http://syriaca.org/bibl/8"/>
                 <citedRange unit="entry">DLXXVII</citedRange>
-                <citedRange unit="pp">2:462-464</citedRange>
+                <citedRange unit="p">2:462-464</citedRange>
               <ref type="internet-archive-pdf" target="https://archive.org/details/catalogueofsyria02brituoft/page/462"/>
               </bibl>
             </listBibl>
@@ -576,141 +560,148 @@
             </editorialDecl>
             <classDecl>
                 <taxonomy xml:id="Wright-BL-Taxonomy">
-                    <bibl>
-                        
-                        <ptr target="http://syriaca.org/documentation/Wright-BL-Taxonomy.html"/>
-                    </bibl>
-                    <category xml:id="biblical-manuscripts">
-                        <category xml:id="bible-ot">
+          <bibl>
+            <ptr target="http://syriaca.org/documentation/Wright-BL-Taxonomy.html"/>
+          </bibl>
+          <category xml:id="biblical-manuscripts">
+            <category xml:id="bible-ot">
               <catDesc>Old Testament</catDesc>
             </category>
-                        <category xml:id="bible-nt">
+            <category xml:id="bible-nt">
               <catDesc>New Testament</catDesc>
             </category>
-                        <category xml:id="bible-apocrypha">
+            <category xml:id="bible-apocrypha">
               <catDesc>Apocrypha</catDesc>
             </category>
-                        <category xml:id="bible-punctuation">
+            <category xml:id="bible-punctuation">
               <catDesc>Punctuation</catDesc>
             </category>
-                    </category>
-                    <category xml:id="service-books">
-                        <category xml:id="psalter">
+          </category>
+          <category xml:id="service-books">
+            <category xml:id="psalter">
               <catDesc>Psalters</catDesc>
             </category>
-                        <category xml:id="lectionaries">
+            <category xml:id="lectionaries">
               <catDesc>Lectionaries</catDesc>
             </category>
-                        <category xml:id="missals">
+            <category xml:id="missals">
               <catDesc>Missals</catDesc>
             </category>
-                        <category xml:id="sacerdotals">
+            <category xml:id="sacerdotals">
               <catDesc>Sacerdotals</catDesc>
             </category>
-                        <category xml:id="choral">
+            <category xml:id="choral">
               <catDesc>Choral Books</catDesc>
             </category>
-                        <category xml:id="hymns">
+            <category xml:id="hymns">
               <catDesc>Hymns</catDesc>
             </category>
-                        <category xml:id="prayers">
+            <category xml:id="prayers">
               <catDesc>Prayers</catDesc>
             </category>
-                        <category xml:id="funerals">
+            <category xml:id="funerals">
               <catDesc>Funeral Services</catDesc>
             </category>
-                    </category>
-                    <category xml:id="theology">
-                        <category xml:id="theo-single">
+          </category>
+          <category xml:id="theology">
+            <category xml:id="theo-single">
               <catDesc>Individual Authors</catDesc>
             </category>
-                        <category xml:id="theo-collected">
+            <category xml:id="theo-collected">
               <catDesc>Collected Authors</catDesc>
             </category>
-                        <category xml:id="theo-catenae">
+            <category xml:id="theo-catenae">
               <catDesc>Catenae Patrum and Demonstrations against Heresies</catDesc>
             </category>
-                        <category xml:id="theo-anonymous">
+            <category xml:id="theo-anonymous">
               <catDesc>Anonymous Works</catDesc>
             </category>
-                        <category xml:id="theo-council">
+            <category xml:id="theo-council">
               <catDesc>Councils of the Church and Ecclesiastical Canons</catDesc>
             </category>
-                    </category>
-                    <category xml:id="wright-history">
-                        <category xml:id="history">
+          </category>
+          <category xml:id="wright-history">
+            <category xml:id="history">
               <catDesc>History</catDesc>
             </category>
-                    </category>
-                    <category xml:id="lives">
-                        <category xml:id="lives-collect">
+          </category>
+          <category xml:id="lives">
+            <category xml:id="lives-collect">
               <catDesc>Collected Lives</catDesc>
             </category>
-                        <category xml:id="lives-single">
+            <category xml:id="lives-single">
               <catDesc>Single Lives</catDesc>
             </category>
-                    </category>
-                    <category xml:id="scientific-lit">
-                        <category xml:id="sci-logic">
+          </category>
+          <category xml:id="scientific-lit">
+            <category xml:id="sci-logic">
               <catDesc>Logic and Rhetoric</catDesc>
             </category>
-                        <category xml:id="sci-grammar">
+            <category xml:id="sci-grammar">
               <catDesc>Grammar and Lexicography</catDesc>
             </category>
-                        <category xml:id="sci-ethics">
+            <category xml:id="sci-ethics">
               <catDesc>Ethics</catDesc>
             </category>
-                        <category xml:id="sci-medicine">
+            <category xml:id="sci-medicine">
               <catDesc>Medicine</catDesc>
             </category>
-                        <category xml:id="sci-agriculture">
+            <category xml:id="sci-agriculture">
               <catDesc>Agriculture</catDesc>
             </category>
-                        <category xml:id="sci-chemistry">
+            <category xml:id="sci-chemistry">
               <catDesc>Chemistry</catDesc>
             </category>
-                        <category xml:id="sci-natural-history">
+            <category xml:id="sci-natural-history">
               <catDesc>Natural History</catDesc>
             </category>
-                    </category>
-                    <category xml:id="wright-fly-leaves">
-                        <category xml:id="fly-leaves">
+          </category>
+          <category xml:id="wright-fly-leaves">
+            <category xml:id="fly-leaves">
               <catDesc>Fly Leaves</catDesc>
             </category>
-                    </category>
-                    <category xml:id="appendices">
-                        <category xml:id="appendix-a">
+          </category>
+          <category xml:id="appendices">
+            <category xml:id="appendix-a">
               <catDesc>Appendix A</catDesc>
             </category>
-                        <category xml:id="appendix-b">
+            <category xml:id="appendix-b">
               <catDesc>Appendix B</catDesc>
             </category>
-                    </category>
-                  <category xml:id="unclassified">
-                    <catDesc>Unclassified</catDesc>
-                  </category>
-                </taxonomy>
+          </category>
+          <category xml:id="unclassified">
+            <catDesc>Unclassified</catDesc>
+          </category>
+        </taxonomy>
             </classDecl>
         </encodingDesc>
     <profileDesc>
             <langUsage>
-                <language ident="syr">Unvocalized Syriac of any variety or period</language>
-                <language ident="syr-Syre">Syriac in Estrangela</language>
-                <language ident="syr-Syrj">Vocalized West Syriac</language>
-                <language ident="syr-Syrn">Vocalized East Syriac</language>
-                <language ident="syr-x-syrm">Melkite Syriac</language>
-                <language ident="qhy-x-cpas">Palestinian Syriac</language>
-                <language ident="ar-Syrc">Unvocalized or Undetermined Arabic Garshuni</language>
-                <language ident="ar-Syrj">Arabic Garshuni in Vocalized West Syriac Script</language>
-                <language ident="ar-Syrn">Arabic Garshuni in Vocalized East Syriac Script</language>
-                <language ident="en">English</language>
-                <language ident="ar">Arabic</language>
-                <language ident="fr">French</language>
-                <language ident="de">German</language>
-                <language ident="la">Latin</language>
-                <language ident="grc">Ancient Greek</language>
-                <language ident="cop">Coptic</language>
-            </langUsage>
+        <language ident="ar">Arabic</language>
+        <language ident="ar-Syrc">Arabic Garshuni</language>
+        <language ident="ar-Syrn">Arabic Garshuni in East Syriac script</language>
+        <language ident="cop">Coptic</language>
+        <language ident="de">German</language>
+        <language ident="en">English</language>
+        <language ident="fr">French</language>
+        <language ident="grc">Ancient Greek</language>
+        <language ident="he">Hebrew</language>
+        <language ident="hy">Armenian</language>
+        <language ident="it">Italian</language>
+        <language ident="la">Latin</language>
+        <language ident="syr">Syriac</language>
+        <language ident="syr-Arab">Syriac Garshuni in Arabic script</language>
+        <language ident="syr-Syre">Syriac in Estrangela script</language>
+        <language ident="syr-Syrj">Syriac in West Syriac script</language>
+        <language ident="syr-Syrn">Syriac in East Syriac script</language>
+        <language ident="syr-x-syrm">Syriac in Melkite Syriac script</language>
+        <language ident="tr">Turkish</language>
+        <language ident="tr-Syrc">Turkish Garshuni</language>
+        <language ident="qhy-x-cpas">Christian Palestinian Aramaic script</language>
+        <language ident="xcl">Classical Armenian</language>
+        <language ident="und">Undetermined</language>
+        <language ident="mul">Multiple languages</language>
+      </langUsage>
             <textClass>
                 <keywords scheme="#Wright-BL-Taxonomy">
                     <list>
@@ -727,22 +718,16 @@
             <change who="https://bl.syriac.uk/documentation/editors.xml#ngibson" when="2016-12-13+01:00">Added generic msItem title(s) based on ancestor title</change>
             <change who="https://bl.syriac.uk/documentation/editors.xml#jarnwine" when="2014-05-29">Created: file</change>
             <change who="https://bl.syriac.uk/documentation/editors.xml#jarnwine" when="2015-03-22">Completed: file</change>
-            <change type="planned" subtype="arabic">Add missing Arabic text.<ref target="#addition3"/>
+            <change type="planned" subtype="arabic" who="https://bl.syriac.uk/documentation/editors.xml#smbl-general-editors">Add missing Arabic text.<ref target="#addition3"/>
             </change>
-            <change type="planned" subtype="uri">Needs Addition of work URIs.</change>
+            <change type="planned" subtype="uri" who="https://bl.syriac.uk/documentation/editors.xml#smbl-general-editors">Needs Addition of work URIs.</change>
             <change who="https://bl.syriac.uk/documentation/editors.xml#pgmiller" when="2016-07-06">Changed: Files moved to srophe-app-data/data/manuscripts/tei repository.</change>
         </revisionDesc>
   </teiHeader>
-  <facsimile>
-    <!-- facsimile information about the manuscript -->
-        <graphic/>
-    <!-- Alternatively you could provide 'surface' elements with more than one image per surface, and optionally with 'zone' 
-      elements to give coordinates for any special areas of interest -->
-    </facsimile>
   <text>
         <body>
-      <!-- If you had a transcription of the manuscript you would put it here -->
-            <p/>
+      <p/>
+      <!--Body paragraph provided for document validation.-->
         </body>
     </text>
 </TEI>

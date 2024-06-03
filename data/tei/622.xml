@@ -1,4 +1,7 @@
-<?oxygen RNGSchema="http://syriaca.org/documentation/syriaca-tei-main.rnc" type="compact"?><?xml-stylesheet type="text/css" href="https://raw.githubusercontent.com/srophe/wright-catalogue/master/parameters/tei.css"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+<?xml-model href="https://raw.githubusercontent.com/srophe/britishLibrary/main/documentation/schema/out/Syriacamsdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/srophe/britishLibrary/main/documentation/schema/out/Syriacamsdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet href="https://raw.githubusercontent.com/srophe/wright-catalogue/master/parameters/tei.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="manuscript_622">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -64,7 +67,6 @@
         <authority>Syriaca.org: The Syriac Reference Portal</authority>
         <idno type="URI">https://bl.syriac.uk/ms/622/tei</idno>
         <availability>
-            <p/>
             <licence target="http://creativecommons.org/licenses/by/3.0/">
                 <p>Distributed under a Creative Commons Attribution 3.0 Unported License</p>
             </licence>
@@ -86,7 +88,7 @@
               <idno type="BL-Shelfmark-display">London, BL, Add. 14,727</idno>
             </altIdentifier>
             <altIdentifier>
-              <idno type="BL-Shelmark-simplified">BL Add MS 14727</idno>
+              <idno type="BL-Shelfmark-simplified">BL Add MS 14727</idno>
             </altIdentifier>
             <altIdentifier>
               <collection>William Wright, Catalogue of the Syriac Manuscripts in the British Museum Acquired since the Year 1838</collection>
@@ -106,17 +108,18 @@
             </listRelation>
           </head>
           <msContents>
-            <summary/>
-            <textLang mainLang="syr"/>
-            <msItem xml:id="a1" n="1">
+            <textLang mainLang="syr">Syriac</textLang>
+            <msItem xml:id="a1" n="1" defective="true">
               <locus from="1b"/>
-              <title>A collection of Sermons by several writers</title>
+              <title xml:lang="en">A collection of Sermons by several writers</title>
               <note>These are numbered from <foreign xml:lang="syr">ܝܕ</foreign> to <foreign xml:lang="syr">ܠܙܙ</foreign>
               </note>
-              <note resp="http://syriaca.org" xml:lang="en">The following manuscript items have been rearranged by the Syriaca.org editors according to foliation. Please consult the catalogue for Wright's original ordering.</note>
+              <note resp="https://bl.syriac.uk/documentation/editors.xml#smbl-general-editors" xml:lang="en">The following manuscript items have been rearranged by the Syriaca.org editors according to foliation. Please consult the catalogue for Wright's original ordering.</note>
               <msItem xml:id="b1" n="2">
                 <locus from="1b"/>
-                <author ref="http://syriaca.org/person/573">John Chrysostom</author>
+                <author ref="http://syriaca.org/person/573">
+                  <persName xml:lang="en">John Chrysostom</persName>
+                </author>
                 <title xml:lang="en">Hortatory discourse, on the good and evil things of
                     this world</title>
                 <rubric xml:lang="syr">ܕܩܕܝܫܐ ܡܪܝ ܐܝܘܐܢܝܣ ܕܥܠ ܡܪܬܝܢܘܬܐ ܘܥܠ ܥܠܡܐ ܘܥܠ ܛܒ̈ܬܗ
@@ -127,7 +130,9 @@
               </msItem>
               <msItem xml:id="b2" n="3">
                 <locus from="8a"/>
-                <author ref="http://syriaca.org/person/573">John Chrysostom</author>
+                <author ref="http://syriaca.org/person/573">
+                  <persName xml:lang="en">John Chrysostom</persName>
+                </author>
                 <title xml:lang="en">On repentance</title>
                 <rubric xml:lang="syr">ܡܐܡܪܐ ܕܬܝܒܘܬܐ</rubric>
                 <note>In the margin of the rubric, there is written <quote xml:lang="syr">ܕܠܠܝܐ ܕܫܒܬܐ: ܕܬܪ̈ܬܝܢ ܕܨܘܡܐ</quote>.</note>
@@ -136,7 +141,9 @@
               </msItem>
               <msItem xml:id="b3" n="4">
                 <locus from="11a"/>
-                <author ref="http://syriaca.org/person/573">John Chrysostom</author>
+                <author ref="http://syriaca.org/person/573">
+                  <persName xml:lang="en">John Chrysostom</persName>
+                </author>
                 <title xml:lang="en">Hortatory discourse, showing that we should remain in
                     the church till the celebration of the holy Eucharist is ended</title>
                 <rubric xml:lang="syr">ܡܐܡܪܐ ܕܥܠ ܡܪܬܝܢܘܬܐ ܘܕܘ̇ܠܐ ܕܢܩܘܐ ܒܥܕܬܐ ܥܕܡܐ ܕܡܫܬ̇ܠܡܝܢ ܪ̈ܐܙܐ
@@ -148,10 +155,10 @@
               </msItem>
               <msItem xml:id="b4" n="5">
                 <locus from="15a"/>
-                <author ref="http://syriaca.org/person/573">John Chrysostom</author>
-                <title xml:lang="en">On <ref target="http://syriaca.org/work/9646">
-                  <persName ref="http://syriaca.org/person/2703">S. Matthew</persName>, ch. x. 34
-                </ref>
+                <author ref="http://syriaca.org/person/573">
+                  <persName xml:lang="en">John Chrysostom</persName>
+                </author>
+                <title xml:lang="en">On S. Matthew, ch. x. 34 
                 </title>
                 <rubric xml:lang="syr">ܡܐܡܪܐ ܥܠܗ̇ܝ ܕܐܡ̣ܪ ܡܪܢ. ܕܠܐ ܐܬܝ̇ܬ ܕܐܪܡ̇ܐ ܫܝܢܐ ܐܠ̣ܐ ܚܲܪܒܐ.
                     ܘܬܘܒ ܕܢܘܪܐ ܐܬܝ̇ܬ ܕܐܪܡ̇ܐ ܒܐܪܥܐ</rubric>
@@ -162,20 +169,22 @@
               </msItem>
               <msItem xml:id="b5" n="6" defective="true">
                 <locus from="21a"/>
-                <author ref="http://syriaca.org/person/430">Cyril of Alexandria</author>
-                <title xml:lang="en">Hom. xxxv. on <ref target="http://syriaca.org/work/9648">
-                  the Gospel of <persName ref="http://syriaca.org/person/1855">S.
-                        Luke</persName>
-                </ref>
+                <author ref="http://syriaca.org/person/430">
+                  <persName xml:lang="en">Cyril of Alexandria</persName>
+                </author>
+                <title xml:lang="en">Hom. xxxv. on the Gospel of S.
+                        Luke
                 </title>
                 <note>The title and the first few words are wanting. See <bibl>Dr. Payne
                       Smith's edition, p. 13</bibl>.</note>
               </msItem>
               <msItem xml:id="b6" n="7">
                 <locus from="26a"/>
-                <author ref="http://syriaca.org/person/44">Philoxenus of Mabug</author>
+                <author ref="http://syriaca.org/person/44">
+                  <persName xml:lang="en">Philoxenus of Mabug</persName>
+                </author>
                 <title xml:lang="en">On the Annunciation of the blessed
-                    <persName ref="http://syriaca.org/person/2142">Virgin</persName>
+                    Virgin
                 </title>
                 <rubric xml:lang="syr">ܕܩܕܝܫܐ ܦܝ݊ܠܠܘܟܣ݊ܐܢܘ݊ܣ ܕܡܒܘܓ. ܡܐܡܪܐ ܕܥܠ ܣܘܒܪܗ̇ ܕܝ̇ܠܕܬ݀ ܐܠܗܐ
                     ܡܪܝܡ</rubric>
@@ -186,7 +195,9 @@
               </msItem>
               <msItem xml:id="b7" n="8">
                 <locus from="30b"/>
-                <author ref="http://syriaca.org/person/573">John Chrysostom</author>
+                <author ref="http://syriaca.org/person/573">
+                  <persName xml:lang="en">John Chrysostom</persName>
+                </author>
                 <title xml:lang="en">For Palm Sunday</title>
                 <rubric xml:lang="syr">ܡܐܡܪܐ ܕܩܕܝܫܐ ܐܝܘܐܢܢܝܘܣ ܕܩܘܕܛܢܛܝܢܘܦܠܝܣ ܕܐܘ̈ܫܥܢܐ</rubric>
                 <note>In the margin of the rubric, there is written <quote xml:lang="syr">ܕܠܠܝܐ ܕܬܠܬܐ ܒܫܒܐ ܕܐܘܫ̈ܥܢܐ</quote>.</note>
@@ -198,7 +209,9 @@
               </msItem>
               <msItem xml:id="b8" n="9">
                 <locus from="36a"/>
-                <author ref="http://syriaca.org/person/573">John Chrysostom</author>
+                <author ref="http://syriaca.org/person/573">
+                  <persName xml:lang="en">John Chrysostom</persName>
+                </author>
                 <title xml:lang="en">On charity and alms, and that priests should not
                     administer the holy Eucharist to those whom they know to be unworthy </title>
                 <rubric xml:lang="syr">ܡܪܬܝܢܘܬܐ ܕܡܪܝ ܐܝܘܐܢܢܝܘܣ ܡܛܠ ܡܪܚܡܢܘܬܐ ܘܙܕ̈ܩ̣ܬܐ ܕܡ̈ܣܟܢܐ ܘܕܠܐ
@@ -209,19 +222,21 @@
               </msItem>
               <msItem xml:id="b9" n="10">
                 <locus from="40a"/>
-                <author ref="http://syriaca.org/person/573">John Chrysostom</author>
-                <title xml:lang="en">Hom. lxxxiii. on <ref target="http://syriaca.org/work/9641">the Gospel of <persName ref="http://syriaca.org/person/1801">S.
-                      John</persName>
-                  </ref>
+                <author ref="http://syriaca.org/person/573">
+                  <persName xml:lang="en">John Chrysostom</persName>
+                </author>
+                <title xml:lang="en">Hom. lxxxiii. on the Gospel of S.
+                      John
                 </title>
                 <rubric xml:lang="syr">ܡܐܡܪܐ ܕܬܡ̈ܢܝܢ ܘܬܠܬ̈ܐ ܕܦܘܫܩܐ ܕܐܘܢܓܠܝܘܢ ܕܝܘܚܢܢ</rubric>
                 <note>In the margin of the rubric, there is written <quote xml:lang="syr">ܕܬܫܡܫܬܐ ܩܕܡܝܬܐ ܕܠܠܝܐ</quote>.</note>
               </msItem>
               <msItem xml:id="b10" n="11">
                 <locus from="48b"/>
-                <author ref="http://syriaca.org/person/573">John Chrysostom</author>
-                <title xml:lang="en">Hom. lxxxv. on <ref target="http://syriaca.org/work/9641">the Gospel of <persName ref="http://syriaca.org/person/1801">S. John</persName>
-                  </ref>
+                <author ref="http://syriaca.org/person/573">
+                  <persName xml:lang="en">John Chrysostom</persName>
+                </author>
+                <title xml:lang="en">Hom. lxxxv. on the Gospel of S. John
                 </title>
                 <rubric xml:lang="syr">ܡܐܡܪܐ ܕܬܡ̈ܢܝܢ ܘܚ̈ܡ̣ܫܐ ܕܦܘܫܩܐ ܕܝܘܚܢܢ ܐܘܢܓܠܝܣܛܐ</rubric>
                 <note>In the margin of the rubric, there is written <quote xml:lang="syr">ܕܬܫܡܫܬܐ ܕܬܪ̈ܬܝܢ ܕܠܠܝܐ ܕܫܒܬܐ ܕܣܒܪܬܐ</quote>.</note>
@@ -234,8 +249,10 @@
               </msItem>
               <msItem xml:id="b11" n="12">
                 <locus from="55a"/>
-                <author ref="http://syriaca.org/person/354">Athanasius</author>
-                <title>On Baptism</title>
+                <author ref="http://syriaca.org/person/354">
+                  <persName xml:lang="en">Athanasius</persName>
+                </author>
+                <title xml:lang="en">On Baptism</title>
                 <rubric xml:lang="syr">ܕܩܕܝܫܐ ܐܬܐܢ݊ܐܣ݊ܝܘܣ ܪܝܫܐ ܕܐܦܝ̈ܣܩܦܐ ܕܐܠܟܣܢܕܪܝܐ. ܡܐܡܪܐ ܕܥܠ
                   ܡܥ̣ܡܘܕܝܬܐ ܘܠܘܬ ܗ̇ܢܘܢ ܕܥ̇ܡܕܝܢ</rubric>
                 <note>In the margin of the rubric, there is written <quote xml:lang="syr">ܕܠܠܝܐ ܕܬܫܡܫܬܐ ܕܬܠܬ ܕܣܒ̣ܪܬܐ</quote>.</note>
@@ -244,18 +261,21 @@
               </msItem>
               <msItem xml:id="b12" n="13">
                 <locus from="58b"/>
-                <author ref="http://syriaca.org/person/573">John Chrysostom</author>
-                <title xml:lang="en">The second discourse on <persName ref="http://syriaca.org/person/2245">our
-                    Lord</persName>'s contest with <persName ref="http://syriaca.org/person/3651">Satan</persName>
+                <author ref="http://syriaca.org/person/573">
+                  <persName xml:lang="en">John Chrysostom</persName>
+                </author>
+                <title xml:lang="en">The second discourse on our Lord's contest with Satan
                   </title>
                 <rubric xml:lang="syr">ܡܐܡܪܐ ܕܥܠ ܬܟܬܘܫܗ ܕܡܪܢ ܕܥܡ ܣܛܢܐ</rubric>
                 <incipit xml:lang="syr">ܒܚܕܒܫܒܐ ܕܥܒ̣ܪ. ܟܠܝܠܐ ܩܕܡܝܐ ܕܙܟܘܬܗ ܕܡܪܢ ܫܩ̣ܠܢܢ.</incipit>
               </msItem>
               <msItem xml:id="b13" n="14">
                 <locus from="65a"/>
-                <author ref="http://syriaca.org/person/573">John Chrysostom</author>
-                <title xml:lang="en">The third discourse on <persName ref="http://syriaca.org/person/2245">our Lord</persName>'s contest with
-                    <persName ref="http://syriaca.org/person/3651">Satan</persName>
+                <author ref="http://syriaca.org/person/573">
+                  <persName xml:lang="en">John Chrysostom</persName>
+                </author>
+                <title xml:lang="en">The third discourse on our Lord's contest with
+                    Satan
                   </title>
                 <rubric xml:lang="syr">ܡܐܡܪܐ ܕܬܠܬܐ ܥܠ ܬܟܬܘܫܗ ܕܡܪܢ ܕܥܡ ܣܛܢܐ</rubric>
                 <incipit xml:lang="syr">ܟܠܝܠܐ ܕܬܠܬܐ ܕܙܟܘܬܗ ܕܡܪܢ ܐܝܬ ܠܢ ܕܢܣ̇ܒ ܝܘܡܢ ܡܢ ܒܝܬ ܐܓܘ̈ܢܘܗܝ
@@ -263,21 +283,27 @@
               </msItem>
               <msItem xml:id="b14" n="15">
                 <locus from="69b"/>
-                <author ref="http://syriaca.org/person/573">John Chrysostom</author>
+                <author ref="http://syriaca.org/person/573">
+                  <persName xml:lang="en">John Chrysostom</persName>
+                </author>
                 <title xml:lang="en">On the Canaanite woman</title>
                 <rubric xml:lang="syr">ܕܥܠ ܗ̇ܝ ܟܢܥܢܝܬܐ ܕܐܦܩ̣ ܡܪܢ ܫܐܕܐ ܡܢ ܒܪܬܗ̇.</rubric>
                 <note>See <bibl>Opera, t. iii., p. 516</bibl>.</note>
               </msItem>
               <msItem xml:id="b15" n="16">
                 <locus from="76b"/>
-                <author ref="http://syriaca.org/person/573">John Chrysostom</author>
+                <author ref="http://syriaca.org/person/573">
+                  <persName xml:lang="en">John Chrysostom</persName>
+                </author>
                 <title xml:lang="en">On the man who had a hundred sheep, and on repentance</title>
                 <rubric xml:lang="syr">ܕܥܠ ܗ̇ܘ ܓܒܪܐ ܕܡܐܐ ܥܪ̈ܒܘܗܝ ܕܐܝܬ ܒܐܘܢܓܠܝܘܢ: ܘܥܠ ܬܝܒܘܬܐ
                     ܘܡܪܬܝܢܘܬܐ.</rubric>
               </msItem>
               <msItem xml:id="b16" n="17">
                 <locus from="85b"/>
-                <author ref="http://syriaca.org/person/573">John Chrysostom</author>
+                <author ref="http://syriaca.org/person/573">
+                  <persName xml:lang="en">John Chrysostom</persName>
+                </author>
                 <title xml:lang="en">On those who present themselves for Baptism, and
                     against swearing</title>
                 <rubric xml:lang="syr">ܥܠ ܐܝܠܝܢ ܕܡ̇ܩܒܠܝܢ ܪܘܫܡܐ ܕܡܥܡܘܕܝܬܐ̣. ܘܕܥܠ ܡܢܐ ܡܥ܏ܡܘ ܡܘܠܕܐ
@@ -287,9 +313,10 @@
               </msItem>
               <msItem xml:id="b17" n="18">
                 <locus from="96a"/>
-                <author ref="http://syriaca.org/person/573">John Chrysostom</author>
-                <title xml:lang="en">Against swearing, and on <persName ref="http://syriaca.org/person/2245">our
-                    Lord</persName>'s rising in three days</title>
+                <author ref="http://syriaca.org/person/573">
+                  <persName xml:lang="en">John Chrysostom</persName>
+                </author>
+                <title xml:lang="en">Against swearing, and on our Lord's rising in three days</title>
                 <rubric xml:lang="syr">ܡܐܡܪܐ ܥܠܝܗ̇ ܟܕ ܥܠܝܗ̇ ܕܥܠ̣ܬܐ ܟܕ ܡܚ̇ܘܐ ܕܠܐ ܗܘܐ ܕܓܠܘܬܐ ܒܠܚܘܕ
                     ܐܝܬܝܗ̇ ܚܛܗܐ̇. ܐܠܐ ܐܦ ܟܕ ܢܡ̇ܠܐ ܐܢܫ ܡܘܡܬܐ. ܡܛܠ ܕܝܡ̇ܐ ܡܬܬ̣ܣܝܡ ܒܪܝܫܗ ܘܕܦܩܚܐܝܬ ܡܫܝܚܐ
                     ܠܬܠܬܐ ܝܘܡ̈ܝܢ ܩ̣ܡ.</rubric>
@@ -300,24 +327,30 @@
               </msItem>
               <msItem xml:id="b18" n="19">
                 <locus from="105a"/>
-                <author role="incorrectly-attributed" ref="http://syriaca.org/person/573">John Chrysostom</author>
-                <author role="attributed" ref="http://syriaca.org/person/42">Jacob of Batnae</author>
+                <author ref="http://syriaca.org/person/42" role="https://syriaca.org/documentation/author-editor-roles.xml#attributed">
+                  <persName xml:lang="en" type="supplied">Jacob of Batnae</persName>
+                </author>
+                <author ref="http://syriaca.org/person/573" role="https://syriaca.org/documentation/author-editor-roles.xml#incorrectly-attributed">
+                  <persName xml:lang="en" type="supplied">John Chrysostom</persName>
+                </author>
                 <title xml:lang="en">A homily in prose</title>
                 <rubric xml:lang="syr">ܕܝܠܗ ܕܩܕܝܫܐ ܡܪܝ ܐܝܘܐܢܢܝܘܣ
                   ܡܛܠ ܪܚ̣ܡܬ݀ ܟܣܦܐ ܘܡܪܬܝܢܘܬܐ</rubric>
                 <incipit xml:lang="syr">ܙܕܩ ܗܘܐ ܕܢܚܫ ܝܘܡܢܐ ܚ̈ܒܝܒܝ܇ ܕܝܘܡܐ ܡܢ ܝܘܡܐ̇. ܢܘܠܐ ܕܚܝ̈ܝܢ ܙܥ̇ܪ
                   ܠܡܬܓܕܕܘ܇ ܏ܘܫ.</incipit>
-                <note>See <bibl>Add. 14,621<ptr target="https://bl.syriac.uk/ms/361"/>, no. <citedRange unit="">7</citedRange>
+                <note>See <bibl>Add. 14,621<ptr target="https://bl.syriac.uk/ms/361"/>, no. <citedRange unit="entry">7</citedRange>
                   </bibl>.</note>
                 <note>The rubric wrongly ascribes it to <persName ref="http://syriaca.org/person/573">John Chrysostom</persName>, but on the margin we read:
                  <quote xml:lang="syr">ܬܘܪܓܡܐ ܕܡܪܝ ܝܥܩܘܒ ܡܲܠܦܢܐ ܐܝ܏ܬܘ</quote>.</note>
               </msItem>
               <msItem xml:id="b19" n="20">
                 <locus from="110a"/>
-                <author ref="http://syriaca.org/person/145">Cyriacus, patriarch of Antioch</author>
-                <title>On the parable of the Vineyard</title>
+                <author ref="http://syriaca.org/person/145">
+                  <persName xml:lang="en">Cyriacus, patriarch of Antioch</persName>
+                </author>
+                <title xml:lang="en">On the parable of the Vineyard</title>
                 <rubric xml:lang="syr">
-                  <locus/>ܕܩܕܝܫܐ ܡܪܝ ܩܘܪܝܩܘܣ ܦܐܛܪܝܪܟܐ ܕܐܢܛܝܘܟܝܐ:
+                  ܕܩܕܝܫܐ ܡܪܝ ܩܘܪܝܩܘܣ ܦܐܛܪܝܪܟܐ ܕܐܢܛܝܘܟܝܐ:
                   ܡܐܡܪܐ ܕܥܠ ܗ̇ܘ ܡܬܠܐ ܕܟܪܡܗ ܕܚܒܝܒ.</rubric>
                 <incipit xml:lang="syr">ܟܕ ܒܡ̈ܬܠܐ ܘܒ̈ܦܠܐܬܐ ܡܡܠܠ ܗܘܐ ܦܪܘܩܢ: ܠܘܬ ܗ̇ܢܘܢ ܕܡܢ ܕܡ̇ܐ
                   ܕܐܝܣܪܐܝܠ: ܘܥܠ ܡܪܚܘܬܗܘܢ ܡܡܬܠ ܗܘܐ ܠܗܘܢ ܒܡ̈ܬܠܘܗܝ: ܘܥܠ ܡܣܬܠܝܢܘܬܗܘܢ ܪܡ̇ܙ ܗܘܐ ܠܗܘܢ
@@ -327,7 +360,9 @@
               </msItem>
               <msItem xml:id="b20" n="21">
                 <locus from="114b"/>
-                <author ref="http://syriaca.org/person/573">John Chrysostom</author>
+                <author ref="http://syriaca.org/person/573">
+                  <persName xml:lang="en">John Chrysostom</persName>
+                </author>
                 <title xml:lang="en">On the Consecration of the Church</title>
                 <rubric xml:lang="syr">ܡܐܡܪܐ ܕܥܠ ܩܘܕܫ ܥܕܬܐ</rubric>
                 <incipit xml:lang="syr">
@@ -336,10 +371,11 @@
               </msItem>
               <msItem xml:id="b21" n="22">
                 <locus from="120a"/>
-                <author ref="http://syriaca.org/person/44">Philoxenus of Mabug</author>
-                <title xml:lang="en">From his Commentary on <ref target="http://syriaca.org/work/9648">the Gospel of <persName ref="http://syriaca.org/person/1855">S.
-                      Luke</persName>
-                  </ref>
+                <author ref="http://syriaca.org/person/44">
+                  <persName xml:lang="en">Philoxenus of Mabug</persName>
+                </author>
+                <title xml:lang="en">From his Commentary on the Gospel of S.
+                      Luke
                   </title>
                 <rubric xml:lang="syr">ܦܘܫܩܐ ܕܐܘܢܓܠܝܘܢ ܕܠܘܩܐ̇. ܕܥܒ̣ܝܕ ܠܦܝܠܟܣܝܢܘܣ ܕܡܒܘܓ. ܠܚ̇ܡ
                     ܕܢܬ̣ܩܪܐ ܒܥܐܕܐ <choice>
@@ -352,20 +388,22 @@
               </msItem>
               <msItem xml:id="b22" n="23">
                 <locus from="126a"/>
-                <author ref="http://syriaca.org/person/573">John Chrysostom</author>
-                <title xml:lang="en">Part of hom. lxx. on <ref target="http://syriaca.org/work/9646">the Gospel of <persName ref="http://syriaca.org/person/2703">S.
-                      Matthew</persName>
-                  </ref>
+                <author ref="http://syriaca.org/person/573">
+                  <persName xml:lang="en">John Chrysostom</persName>
+                </author>
+                <title xml:lang="en">Part of hom. lxx. on the Gospel of S.
+                      Matthew
                 </title>
                 <rubric xml:lang="syr">ܡܪܬܝܢܘܬܐ ܕܡܢ ܦܘܫܩܐ ܕܡܬܝ ܕܠܚ̇ܡ ܕܢܬܩܪܐ ܒܕܘܟܪܢܐ ܕܐܚ̈ܐ.</rubric>
-                <note>See <bibl>Opera, t. vii., p. 779</bibl>, from the words <foreign>'Επεὶ οὖν τοιαύτη ἡ ἀνάστασις
+                <note>See <bibl>Opera, t. vii., p. 779</bibl>, from the words <foreign xml:lang="grc">'Επεὶ οὖν τοιαύτη ἡ ἀνάστασις
                       κ.τ.λ</foreign>.</note>
               </msItem>
               <msItem xml:id="b23" n="24">
                 <locus from="130a"/>
-                <author ref="http://syriaca.org/person/573">John Chrysostom</author>
-                <title xml:lang="en">On the Resurrection of <persName ref="http://syriaca.org/person/2245">our
-                    Lord</persName>
+                <author ref="http://syriaca.org/person/573">
+                  <persName xml:lang="en">John Chrysostom</persName>
+                </author>
+                <title xml:lang="en">On the Resurrection of our Lord
                   </title>
                 <rubric xml:lang="syr">ܡܐܡܪܐ ܕܚܕܒܫܒܐ ܕܩܝܡ̣ܬܐ</rubric>
                 <note>In the margin of the rubric, there is written <quote xml:lang="syr">ܕܠܠܝܐ ܕܬܠܬܐ</quote>.</note>
@@ -374,7 +412,9 @@
               </msItem>
               <msItem xml:id="b24" n="25">
                 <locus from="133b"/>
-                <author ref="http://syriaca.org/person/573">John Chrysostom</author>
+                <author ref="http://syriaca.org/person/573">
+                  <persName xml:lang="en">John Chrysostom</persName>
+                </author>
                 <title xml:lang="en">For the Friday of the Crucifixion</title>
                 <note>In the margin of this item, there is written <quote xml:lang="syr">ܕܥܪܘܒܬܐ ܕܙܩܝܦܘܬܐ</quote>.</note>
                 <incipit xml:lang="syr">ܡܐ ܕܥܬ̣ܝܕܝܢ ܕܝܢ ܣܚ̈ܝܐ ܠܡܚܬ ܘܠܡܒ̣ܨܐ ܥܘ̈ܒܝ ܝ̇ܡ̣ܐ. ܡܬܚ̇ܦܛܝܢ
@@ -382,9 +422,10 @@
               </msItem>
               <msItem xml:id="b25" n="26">
                 <locus from="137b"/>
-                <author ref="http://syriaca.org/person/573">John Chrysostom</author>
-                <title xml:lang="en">On the Resurrection of <persName ref="http://syriaca.org/person/2245">our
-                    Lord</persName>
+                <author ref="http://syriaca.org/person/573">
+                  <persName xml:lang="en">John Chrysostom</persName>
+                </author>
+                <title xml:lang="en">On the Resurrection of our Lord
                   </title>
                 <rubric xml:lang="syr">ܡܐܡܪܐ ܕܥܠ ܩܝܡ̣ܬܗ ܕܦܪܘܩܢ</rubric>
                 <note>In the margin of this item, there is written <quote xml:lang="syr">ܕܠܠܝܐ ܕܥܪܘܒܬܐ</quote>, but altered into
@@ -394,16 +435,20 @@
               </msItem>
               <msItem xml:id="b26" n="27">
                 <locus from="140a"/>
-                <author ref="http://syriaca.org/person/93">Marutha of Tagrit</author>
-                <title>On the New Sunday</title>
+                <author ref="http://syriaca.org/person/93">
+                  <persName xml:lang="en">Marutha of Tagrit</persName>
+                </author>
+                <title xml:lang="en">On the New Sunday</title>
                 <rubric xml:lang="syr">ܬܘܪܓܡܐ ܕܩܕܝܫܐ ܡܪܝ ܡܪܘܬܐ ܥܠ ܚܕܒܫܒܐ ܚ̣ܕܬܐ</rubric>
                 <incipit xml:lang="syr">ܠܝܘܡܐ ܚ̣ܕܬܐ ܡܥܕܥܕܝܢܢ ܐܘّ ܐܚ̈ܝ̣. ܠܥܠܝܬܐ ܕܪ̈ܐܙܐ ܡܬܕܟܪܝܢܢ܇ ܕܒܗ̇
                   ܬܠܡ̈ܝܕܐ ܟܢܝ̣ܫܝܢ ܗܘܘ. ܏ܘܫ.</incipit>
               </msItem>
               <msItem xml:id="b27" n="28">
                 <locus from="146b"/>
-                <author ref="http://syriaca.org/person/688">Proclus of Constantinople</author>
-                <title>On the Ascension</title>
+                <author ref="http://syriaca.org/person/688">
+                  <persName xml:lang="en">Proclus of Constantinople</persName>
+                </author>
+                <title xml:lang="en">On the Ascension</title>
                 <rubric xml:lang="syr">
                   <sic>ܡܐܡܐܪܐ</sic> ܕܥܠ ܣܘܠܩܗ ܕܡܪܢ ܘܐܠܗܢ. ܕܩܕܝܫܐ ܦܪܘܩܠܘܣ ܐܦ܏ܝܣ ܕܩܘܣܛܢ܏ܛܝܢܝ.</rubric>
                 <incipit xml:lang="syr">ܟܕ ܥܕܟܝܠ ܒܢܦܫܝ ܡ̇ܢܐ ܗܘܝܬ: ܝܘܬܪ̈ܢܐ ܕܡܢ ܨܠܝܒܐ ܗܘ̣ܘ ܠܓܢܣܐ ܕܝܠܢ:
@@ -412,28 +457,31 @@
               </msItem>
               <msItem xml:id="b28" n="29">
                 <locus from="150b"/>
-                <author ref="http://syriaca.org/person/573">John Chrysostom</author>
-                <title xml:lang="en">Hom. vi. on <ref target="http://syriaca.org/work/9646">the Gospel of <persName ref="http://syriaca.org/person/2703">S.
-                      Matthew</persName>
-                  </ref>
+                <author ref="http://syriaca.org/person/573">
+                  <persName xml:lang="en">John Chrysostom</persName>
+                </author>
+                <title xml:lang="en">Hom. vi. on the Gospel of S.
+                      Matthew
                   </title>
                 <rubric xml:lang="syr">ܡܐܡܪܐ ܕܐܫܬܐ ܡܢ ܦܘܫܩܐ ܕܐܘܢܓܠܝܘܢ ܕܡܬܝ</rubric>
               </msItem>
               <msItem xml:id="b29" n="30">
                 <locus from="164a"/>
-                <author>S. Matthew</author>
-                <title xml:lang="en">Hom. ix. on <ref target="http://syriaca.org/work/9646">the Gospel of <persName ref="http://syriaca.org/person/2703">S.
-                      Matthew</persName>
-                  </ref>
+                <author>
+                  <persName xml:lang="en">S. Matthew</persName>
+                </author>
+                <title xml:lang="en">Hom. ix. on the Gospel of S.
+                      Matthew
                   </title>
                 <rubric xml:lang="syr">ܡܐܡܪ ܕܬܫܥܐ ܡܢ ܦܘܫܩܐ ܕܡܬܝ</rubric>
               </msItem>
               <msItem xml:id="b30" n="31">
                 <locus from="174b"/>
-                <author ref="http://syriaca.org/person/430">Cyril of Alexandria</author>
-                <title xml:lang="en">Hom. xii. on <ref target="http://syriaca.org/work/9648">the Gospel of <persName ref="http://syriaca.org/person/1855">S.
-                      Luke</persName>
-                  </ref>
+                <author ref="http://syriaca.org/person/430">
+                  <persName xml:lang="en">Cyril of Alexandria</persName>
+                </author>
+                <title xml:lang="en">Hom. xii. on the Gospel of S.
+                      Luke
                 </title>
                 <rubric xml:lang="syr">ܬܘܪܓܡܐ ܕܬܪ̈ܥܣܪ ܡܢ ܦܘܫܩܐ ܗ̇ܘ ܕܐܘܢܓܠܝܘܢ ܕܠܘܩܐ. ܕܩܕܝܫܐ ܩܘܪܝܠܘܣ
                     ܕܥܠ ܕܢܚܗ ܕܡܪܢ ܕܒܒܣܪ</rubric>
@@ -452,8 +500,6 @@
                 <extent>
                   <measure type="composition" unit="leaf" quantity="177">177 ff.</measure>
                 </extent>
-                <foliation/>
-                <collation/>
                 <condition>
                   <list>
                     <item>
@@ -465,15 +511,11 @@
                   </list>
                 </condition>
               </supportDesc>
-              <layoutDesc>
-                <p>Content pending</p>
-              </layoutDesc>
-            </objectDesc>
+              </objectDesc>
             <handDesc hands="1">
               <handNote xml:id="handNote1" medium="unknown" scope="sole" script="syr">
-                <desc>This volume is written in a good, regular hand of the <origDate notBefore="1200" notAfter="1300">xiiith cent.</origDate>
-                </desc>
-              </handNote>
+                This volume is written in a good, regular hand of the <date notBefore="1200" notAfter="1300">xiiith cent.</date>
+                </handNote>
             </handDesc>
             <additions>
               <list>
@@ -488,22 +530,13 @@
                 </item>
               </list>
             </additions>
-            <bindingDesc>
-              <p>Content pending</p>
-            </bindingDesc>
-            <sealDesc>
-              <p>Content pending</p>
-            </sealDesc>
-            <accMat/>
-          </physDesc>
+            </physDesc>
           <history>
             <origin>
-              <origDate notBefore="1200" notAfter="1300">xiiith cent.</origDate>
-              <origPlace/>
+              <origDate calendar="Gregorian" notBefore="1200" notAfter="1300">13th century</origDate>
+              
             </origin>
-            <provenance/>
-            <acquisition/>
-          </history>
+            </history>
           <additional>
             <adminInfo>
               <recordHist>
@@ -512,8 +545,7 @@
                             Catalogue</ref>
                   </bibl>, abbreviated by the Syriaca.org editors.</source>
               </recordHist>
-              <note/>
-            </adminInfo>
+              </adminInfo>
             <listBibl>
               <bibl xml:id="Wrightpart">
                 <author>William Wright</author>
@@ -523,7 +555,7 @@
                 <date>1870</date>
                 <ptr target="http://syriaca.org/bibl/8"/>
                 <citedRange unit="entry">DCCCXLVIII</citedRange>
-                <citedRange unit="pp">2:886-890</citedRange>
+                <citedRange unit="p">2:886-890</citedRange>
               <ref type="internet-archive-pdf" target="https://archive.org/details/catalogueofsyria02brituoft/page/886"/>
               </bibl>
             </listBibl>
@@ -546,141 +578,148 @@
         </editorialDecl>
         <classDecl>
             <taxonomy xml:id="Wright-BL-Taxonomy">
-                <bibl>
-                    
-                    <ptr target="http://syriaca.org/documentation/Wright-BL-Taxonomy.html"/>
-                </bibl>
-                <category xml:id="biblical-manuscripts">
-                    <category xml:id="bible-ot">
-                        <catDesc>Old Testament</catDesc>
-                    </category>
-                    <category xml:id="bible-nt">
-                        <catDesc>New Testament</catDesc>
-                    </category>
-                    <category xml:id="bible-apocrypha">
-                        <catDesc>Apocrypha</catDesc>
-                    </category>
-                    <category xml:id="bible-punctuation">
-                        <catDesc>Punctuation</catDesc>
-                    </category>
-                </category>
-                <category xml:id="service-books">
-                    <category xml:id="psalter">
-                        <catDesc>Psalters</catDesc>
-                    </category>
-                    <category xml:id="lectionaries">
-                        <catDesc>Lectionaries</catDesc>
-                    </category>
-                    <category xml:id="missals">
-                        <catDesc>Missals</catDesc>
-                    </category>
-                    <category xml:id="sacerdotals">
-                        <catDesc>Sacerdotals</catDesc>
-                    </category>
-                    <category xml:id="choral">
-                        <catDesc>Choral Books</catDesc>
-                    </category>
-                    <category xml:id="hymns">
-                        <catDesc>Hymns</catDesc>
-                    </category>
-                    <category xml:id="prayers">
-                        <catDesc>Prayers</catDesc>
-                    </category>
-                    <category xml:id="funerals">
-                        <catDesc>Funeral Services</catDesc>
-                    </category>
-                </category>
-                <category xml:id="theology">
-                    <category xml:id="theo-single">
-                        <catDesc>Individual Authors</catDesc>
-                    </category>
-                    <category xml:id="theo-collected">
-                        <catDesc>Collected Authors</catDesc>
-                    </category>
-                    <category xml:id="theo-catenae">
-                        <catDesc>Catenae Patrum and Demonstrations against Heresies</catDesc>
-                    </category>
-                    <category xml:id="theo-anonymous">
-                        <catDesc>Anonymous Works</catDesc>
-                    </category>
-                    <category xml:id="theo-council">
-                        <catDesc>Councils of the Church and Ecclesiastical Canons</catDesc>
-                    </category>
-                </category>
-                <category xml:id="wright-history">
-                    <category xml:id="history">
-                        <catDesc>History</catDesc>
-                    </category>
-                </category>
-                <category xml:id="lives">
-                    <category xml:id="lives-collect">
-                        <catDesc>Collected Lives</catDesc>
-                    </category>
-                    <category xml:id="lives-single">
-                        <catDesc>Single Lives</catDesc>
-                    </category>
-                </category>
-                <category xml:id="scientific-lit">
-                    <category xml:id="sci-logic">
-                        <catDesc>Logic and Rhetoric</catDesc>
-                    </category>
-                    <category xml:id="sci-grammar">
-                        <catDesc>Grammar and Lexicography</catDesc>
-                    </category>
-                    <category xml:id="sci-ethics">
-                        <catDesc>Ethics</catDesc>
-                    </category>
-                    <category xml:id="sci-medicine">
-                        <catDesc>Medicine</catDesc>
-                    </category>
-                    <category xml:id="sci-agriculture">
-                        <catDesc>Agriculture</catDesc>
-                    </category>
-                    <category xml:id="sci-chemistry">
-                        <catDesc>Chemistry</catDesc>
-                    </category>
-                    <category xml:id="sci-natural-history">
-                        <catDesc>Natural History</catDesc>
-                    </category>
-                </category>
-                <category xml:id="wright-fly-leaves">
-                    <category xml:id="fly-leaves">
-                        <catDesc>Fly Leaves</catDesc>
-                    </category>
-                </category>
-                <category xml:id="appendices">
-                    <category xml:id="appendix-a">
-                        <catDesc>Appendix A</catDesc>
-                    </category>
-                    <category xml:id="appendix-b">
-                        <catDesc>Appendix B</catDesc>
-                    </category>
-                </category>
-              <category xml:id="unclassified">
-                <catDesc>Unclassified</catDesc>
-              </category>
-            </taxonomy>
+          <bibl>
+            <ptr target="http://syriaca.org/documentation/Wright-BL-Taxonomy.html"/>
+          </bibl>
+          <category xml:id="biblical-manuscripts">
+            <category xml:id="bible-ot">
+              <catDesc>Old Testament</catDesc>
+            </category>
+            <category xml:id="bible-nt">
+              <catDesc>New Testament</catDesc>
+            </category>
+            <category xml:id="bible-apocrypha">
+              <catDesc>Apocrypha</catDesc>
+            </category>
+            <category xml:id="bible-punctuation">
+              <catDesc>Punctuation</catDesc>
+            </category>
+          </category>
+          <category xml:id="service-books">
+            <category xml:id="psalter">
+              <catDesc>Psalters</catDesc>
+            </category>
+            <category xml:id="lectionaries">
+              <catDesc>Lectionaries</catDesc>
+            </category>
+            <category xml:id="missals">
+              <catDesc>Missals</catDesc>
+            </category>
+            <category xml:id="sacerdotals">
+              <catDesc>Sacerdotals</catDesc>
+            </category>
+            <category xml:id="choral">
+              <catDesc>Choral Books</catDesc>
+            </category>
+            <category xml:id="hymns">
+              <catDesc>Hymns</catDesc>
+            </category>
+            <category xml:id="prayers">
+              <catDesc>Prayers</catDesc>
+            </category>
+            <category xml:id="funerals">
+              <catDesc>Funeral Services</catDesc>
+            </category>
+          </category>
+          <category xml:id="theology">
+            <category xml:id="theo-single">
+              <catDesc>Individual Authors</catDesc>
+            </category>
+            <category xml:id="theo-collected">
+              <catDesc>Collected Authors</catDesc>
+            </category>
+            <category xml:id="theo-catenae">
+              <catDesc>Catenae Patrum and Demonstrations against Heresies</catDesc>
+            </category>
+            <category xml:id="theo-anonymous">
+              <catDesc>Anonymous Works</catDesc>
+            </category>
+            <category xml:id="theo-council">
+              <catDesc>Councils of the Church and Ecclesiastical Canons</catDesc>
+            </category>
+          </category>
+          <category xml:id="wright-history">
+            <category xml:id="history">
+              <catDesc>History</catDesc>
+            </category>
+          </category>
+          <category xml:id="lives">
+            <category xml:id="lives-collect">
+              <catDesc>Collected Lives</catDesc>
+            </category>
+            <category xml:id="lives-single">
+              <catDesc>Single Lives</catDesc>
+            </category>
+          </category>
+          <category xml:id="scientific-lit">
+            <category xml:id="sci-logic">
+              <catDesc>Logic and Rhetoric</catDesc>
+            </category>
+            <category xml:id="sci-grammar">
+              <catDesc>Grammar and Lexicography</catDesc>
+            </category>
+            <category xml:id="sci-ethics">
+              <catDesc>Ethics</catDesc>
+            </category>
+            <category xml:id="sci-medicine">
+              <catDesc>Medicine</catDesc>
+            </category>
+            <category xml:id="sci-agriculture">
+              <catDesc>Agriculture</catDesc>
+            </category>
+            <category xml:id="sci-chemistry">
+              <catDesc>Chemistry</catDesc>
+            </category>
+            <category xml:id="sci-natural-history">
+              <catDesc>Natural History</catDesc>
+            </category>
+          </category>
+          <category xml:id="wright-fly-leaves">
+            <category xml:id="fly-leaves">
+              <catDesc>Fly Leaves</catDesc>
+            </category>
+          </category>
+          <category xml:id="appendices">
+            <category xml:id="appendix-a">
+              <catDesc>Appendix A</catDesc>
+            </category>
+            <category xml:id="appendix-b">
+              <catDesc>Appendix B</catDesc>
+            </category>
+          </category>
+          <category xml:id="unclassified">
+            <catDesc>Unclassified</catDesc>
+          </category>
+        </taxonomy>
         </classDecl>
     </encodingDesc>
     <profileDesc>
       <langUsage>
-            <language ident="syr">Unvocalized Syriac of any variety or period</language>
-            <language ident="syr-Syre">Syriac in Estrangela</language>
-            <language ident="syr-Syrj">Vocalized West Syriac</language>
-            <language ident="syr-Syrn">Vocalized East Syriac</language>
-            <language ident="syr-x-syrm">Melkite Syriac</language>
-            <language ident="qhy-x-cpas">Palestinian Syriac</language>
-            <language ident="ar-Syrc">Unvocalized or Undetermined Arabic Garshuni</language>
-            <language ident="ar-Syrj">Arabic Garshuni in Vocalized West Syriac Script</language>
-            <language ident="ar-Syrn">Arabic Garshuni in Vocalized East Syriac Script</language>
-            <language ident="en">English</language>
-            <language ident="ar">Arabic</language>
-            <language ident="fr">French</language>
-            <language ident="de">German</language>
-            <language ident="la">Latin</language>
-            <language ident="grc">Ancient Greek</language>
-            <language ident="cop">Coptic</language>
-        </langUsage>
+        <language ident="ar">Arabic</language>
+        <language ident="ar-Syrc">Arabic Garshuni</language>
+        <language ident="ar-Syrn">Arabic Garshuni in East Syriac script</language>
+        <language ident="cop">Coptic</language>
+        <language ident="de">German</language>
+        <language ident="en">English</language>
+        <language ident="fr">French</language>
+        <language ident="grc">Ancient Greek</language>
+        <language ident="he">Hebrew</language>
+        <language ident="hy">Armenian</language>
+        <language ident="it">Italian</language>
+        <language ident="la">Latin</language>
+        <language ident="syr">Syriac</language>
+        <language ident="syr-Arab">Syriac Garshuni in Arabic script</language>
+        <language ident="syr-Syre">Syriac in Estrangela script</language>
+        <language ident="syr-Syrj">Syriac in West Syriac script</language>
+        <language ident="syr-Syrn">Syriac in East Syriac script</language>
+        <language ident="syr-x-syrm">Syriac in Melkite Syriac script</language>
+        <language ident="tr">Turkish</language>
+        <language ident="tr-Syrc">Turkish Garshuni</language>
+        <language ident="qhy-x-cpas">Christian Palestinian Aramaic script</language>
+        <language ident="xcl">Classical Armenian</language>
+        <language ident="und">Undetermined</language>
+        <language ident="mul">Multiple languages</language>
+      </langUsage>
       <textClass>
         <keywords scheme="#Wright-BL-Taxonomy">
           <list>
@@ -699,12 +738,10 @@
       <change who="https://bl.syriac.uk/documentation/editors.xml#jarnwine" when="2022-05-16">Edits to msContents, physDesc, handDesc, additions, and origDate; added refoliation note for msItem a1</change>
     </revisionDesc>
   </teiHeader>
-  <facsimile>
-    <formula>Content pending</formula>
-  </facsimile>
   <text>
     <body>
-      <bibl>Content pending</bibl>
+      <p/>
+      <!--Body paragraph provided for document validation.-->
     </body>
   </text>
 </TEI>

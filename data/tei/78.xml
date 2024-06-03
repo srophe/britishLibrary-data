@@ -1,4 +1,7 @@
-<?oxygen RNGSchema="http://syriaca.org/documentation/syriaca-tei-main.rnc" type="compact"?><?xml-stylesheet type="text/css" href="https://raw.githubusercontent.com/srophe/wright-catalogue/master/parameters/tei.css"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+<?xml-model href="https://raw.githubusercontent.com/srophe/britishLibrary/main/documentation/schema/out/Syriacamsdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/srophe/britishLibrary/main/documentation/schema/out/Syriacamsdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet href="https://raw.githubusercontent.com/srophe/wright-catalogue/master/parameters/tei.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="manuscript_78">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -65,7 +68,6 @@
         <authority>Syriaca.org: The Syriac Reference Portal</authority>
         <idno type="URI">https://bl.syriac.uk/ms/78/tei</idno>
         <availability>
-          <p/>
           <licence target="http://creativecommons.org/licenses/by/3.0/">
             <p>Distributed under a Creative Commons Attribution 3.0 Unported License</p>
           </licence>
@@ -73,7 +75,7 @@
         <date calendar="Gregorian">2023-04-21-05:00</date>
       </publicationStmt>
       <sourceDesc>
-        <msDesc xml:id="manuscript-78" xml:lang="en">
+        <msDesc xml:id="manuscript-78">
           <msIdentifier>
             <country>United Kingdom</country>
             <settlement>London</settlement>
@@ -87,7 +89,7 @@
               <idno type="BL-Shelfmark-display">London, BL, Add. 12,179</idno>
             </altIdentifier>
             <altIdentifier>
-              <idno type="BL-Shelmark-simplified">BL Add MS 12179</idno>
+              <idno type="BL-Shelfmark-simplified">BL Add MS 12179</idno>
             </altIdentifier>
             <altIdentifier>
               <collection>William Wright, Catalogue of the Syriac Manuscripts in the British Museum Acquired since the Year 1838</collection>
@@ -107,25 +109,36 @@
             </listRelation>
           </head>
           <msContents>
-            <textLang mainLang="syr"/>
-            <msItem xml:id="a1" n="1">
+            <textLang mainLang="syr">Syriac</textLang>
+            <msItem xml:id="a1" n="1" defective="true">
               <locus from="1a"/>
               <author ref="http://syriaca.org/person/575">
-                <persName>John of Damascus</persName>, <persName>ܚܣܝܐ ܝܘܚܢܢ </persName>, <persName>ܐܒܐ ܝܘܚܢܢ </persName>, <persName>ܐܒܐ ܝܘܢܝ</persName>, or <persName>ܐܒܐ ܝܢܝ</persName>.</author>
-              <author>
-                <persName>Cosmas</persName>, <persName>ܐܒܐ ܩܘܣܡܐ</persName> or <persName>ܐܒܐ ܏ܩܘܣ</persName>
+                <persName xml:lang="en" type="supplied">John of Damascus</persName>
+                <persName xml:lang="syr" type="supplied">ܚܣܝܐ ܝܘܚܢܢ </persName>
+                <persName xml:lang="syr" type="supplied">ܐܒܐ ܝܘܚܢܢ </persName>
+                <persName xml:lang="syr" type="supplied">ܐܒܐ ܝܘܢܝ</persName>
+                <persName xml:lang="syr" type="supplied">ܐܒܐ ܝܢܝ</persName>
               </author>
               <author>
-                <persName>Joseph</persName>, <persName>ܐܒܐ ܝܘܣܦ</persName>
+                <persName xml:lang="en" type="supplied">Cosmas</persName>
+                <persName xml:lang="syr" type="supplied">ܐܒܐ ܩܘܣܡܐ</persName>
+                <persName xml:lang="syr" type="supplied">ܐܒܐ ܏ܩܘܣ</persName>
               </author>
               <author>
-                <persName>Mark</persName>, <persName>ܐܒܐ ܡܪܩܘܣ</persName>
+                <persName xml:lang="en" type="supplied">Joseph</persName>
+                <persName xml:lang="syr" type="supplied">ܐܒܐ ܝܘܣܦ</persName>
               </author>
               <author>
-                <persName>Theodore (Studita)</persName>, <persName>ܐܒܐ ܬܐܘܕܘܪܘܣ</persName>
+                <persName xml:lang="en" type="supplied">Mark</persName>
+                <persName xml:lang="syr" type="supplied">ܐܒܐ ܡܪܩܘܣ</persName>
+              </author>
+              <author>
+                <persName xml:lang="en" type="supplied">Theodore (Studita)</persName>
+                <persName xml:lang="syr" type="supplied">ܐܒܐ ܬܐܘܕܘܪܘܣ</persName>
               </author>
               <author ref="http://syriaca.org/person/95">
-                <persName>Andrew of Crete</persName>, <persName>ܚܣܝܐ ܐܢܕܪܐܐܘܣ</persName>
+                <persName xml:lang="en" type="supplied">Andrew of Crete</persName>
+                <persName xml:lang="syr" type="supplied">ܚܣܝܐ ܐܢܕܪܐܐܘܣ</persName>
               </author>
               <title xml:lang="en">Select Canons for various Festivals, Saints' Days, etc., translated from the Greek, for the use of the Malkites.</title>
               <rubric xml:lang="syr">
@@ -134,7 +147,7 @@
               <note>The authors of the canons are not always mentioned.</note>
               <msItem xml:id="b1" n="2">
                 <locus from="1a"/>
-                <title xml:lang="en">The Commemoration of <persName ref="http://syriaca.org/person/1156">S. Barbara</persName>
+                <title xml:lang="en">The Commemoration of S. Barbara
                 </title>
                 <rubric xml:lang="syr">܏ܒܕ: ܒܟܢܘܢ ܏ܐ: ܟܘܠܠܐ ܕܣܗܕܬܐ ܒܪܒܪܐ.</rubric>
               </msItem>
@@ -185,13 +198,13 @@
               </msItem>
               <msItem xml:id="b7" n="12">
                 <locus from="57b"/>
-                <title xml:lang="en">The Nativity of <persName ref="http://syriaca.org/person/1808">S. John the Baptist</persName>
+                <title xml:lang="en">The Nativity of S. John the Baptist
                 </title>
                 <rubric xml:lang="syr">ܒܟܕ: ܒܚܙܝܪܢ: ܐܝܠܝ̣ܕܘܬܗ ܕܡܪܝ ܝܘܚܢܢ ܡ܏ܥܡܕ</rubric>
               </msItem>
               <msItem xml:id="b8" n="13">
                 <locus from="63b"/>
-                <title xml:lang="en">The Transfiguration of our Lord on <placeName>Mount Tabor</placeName>
+                <title xml:lang="en">The Transfiguration of our Lord on Mount Tabor
                 </title>
                 <rubric xml:lang="syr">ܒܘ: ܒܐܒ ܝܪܚܐ: ܥܐܕܐ ܕܙܘܝܚܗ ܕܡܪܢ ܕܥܠ ܛܘܪ ܬܐܒܘܪ</rubric>
               </msItem>
@@ -202,7 +215,7 @@
               </msItem>
               <msItem xml:id="b10" n="15">
                 <locus from="83b"/>
-                <title xml:lang="en">The Commemoration of <persName ref="http://syriaca.org/person/1808">S. John the Baptist</persName>
+                <title xml:lang="en">The Commemoration of S. John the Baptist
                 </title>
                 <rubric xml:lang="syr">ܒܟܛ ܒܐܒ ܝܪܚܐ: ܥܐܕܐ ܕܟܘܠܠܗ ܕܡܪܝ ܝܘܚܢܢ ܡ܏ܥܡ</rubric>
               </msItem>
@@ -218,7 +231,7 @@
               </msItem>
               <msItem xml:id="b13" n="18">
                 <locus from="97b"/>
-                <title xml:lang="en">The Invention of the Head of <persName ref="http://syriaca.org/person/1808">S. John the Baptist</persName>
+                <title xml:lang="en">The Invention of the Head of S. John the Baptist
                 </title>
                 <msItem xml:id="c5" n="19">
                   <locus from="97b"/>
@@ -266,7 +279,7 @@
               </msItem>
               <msItem xml:id="b19" n="27">
                 <locus from="133b"/>
-                <title xml:lang="en">The first Saturday in Lent; the Commemoration of <persName>Theodore</persName>
+                <title xml:lang="en">The first Saturday in Lent; the Commemoration of Theodore
                 </title>
                 <rubric xml:lang="syr">ܝܘܡ ܫܒܬܐ: ܐ: ܕܨܘܡܐ: ܕܘܟܪܢܐ ܕܡܪܝ ܬܐܘܕܘܪܘܣ.. </rubric>
               </msItem>
@@ -297,7 +310,7 @@
               </msItem>
               <msItem xml:id="b25" n="33">
                 <locus from="156a"/>
-                <title xml:lang="en">The sixth Saturday in Lent; the Commemoration of <persName>Lazarus</persName>, who was raised from the dead</title>
+                <title xml:lang="en">The sixth Saturday in Lent; the Commemoration of Lazarus, who was raised from the dead</title>
                 <rubric xml:lang="syr">ܝܘܡ ܫܒܬܐ: ܏ܘ: ܕܨܘܡܐ: ܕܘܟܪܢܗ ܕܡܪܝ ܠܥܙܪ: ܗ̇ܘ ܕܐܩܝܡ ܡܢ
                   ܩܒܪܐ.</rubric>
               </msItem>
@@ -348,7 +361,7 @@
               </msItem>
               <msItem xml:id="b35" n="43">
                 <locus from="201b"/>
-                <title xml:lang="en">The second Sunday of Pentecost; the Commemoration of <persName>Joseph of Arimathaea</persName> and the women who bore the spices</title>
+                <title xml:lang="en">The second Sunday of Pentecost; the Commemoration of Joseph of Arimathaea and the women who bore the spices</title>
                 <rubric xml:lang="syr">ܚܕܒܫܒܐ: ܒ: ܕܦܢܛܝ܏ܩܘ: ܕܘܟܪܢܐ ܕܝܘܣܦ ܘܕܢ̈ܫܐ ܗܪ̈ܘܡܢܝܬܐ</rubric>
               </msItem>
               <msItem xml:id="b36" n="44">
@@ -405,8 +418,6 @@
                 <extent>
                   <measure type="composition" unit="leaf" quantity="243">243 ff.</measure>
                 </extent>
-                <foliation/>
-                <collation/>
                 <condition>
                   <list>
                     <item>
@@ -424,12 +435,10 @@
             </objectDesc>
             <handDesc hands="1">
               <handNote xml:id="handNote1" medium="unknown" scope="sole" script="syr">
-                <desc>This volume is written in a good, regular hand of the xith or xiith
-                  cent</desc>
-              </handNote>
+                This volume is written in a good, regular hand of the xith or xiith
+                  cent</handNote>
             </handDesc>
             <additions>
-              <p/>
               <list>
                 <item xml:id="addition1" n="1">
                   <locus from="1a"/>
@@ -467,26 +476,22 @@
                 </item>
               </list>
             </additions>
-            <accMat/>
-          </physDesc>
+            </physDesc>
           <history>
             <origin>
-              <origDate notBefore="1000" notAfter="1200"/>
-              <origPlace/>
+              <origDate calendar="Gregorian" notBefore="1000" notAfter="1200">11th or 12th century</origDate>
+              
             </origin>
-            <provenance/>
-            <acquisition/>
-          </history>
+            </history>
           <additional>
             <adminInfo>
               <recordHist>
-                <source>Manuscript description based on<bibl>
+                <source>Manuscript description based on <bibl>
                     <ref target="#Wrightpart">Wright's
                       Catalogue</ref>
                   </bibl>. abbreviated by the Syriaca.org editors.</source>
               </recordHist>
-              <note/>
-            </adminInfo>
+              </adminInfo>
             <listBibl>
               <bibl xml:id="Wrightpart">
                 <author>William Wright</author>
@@ -496,7 +501,7 @@
                 <date>1870</date>
                 <ptr target="http://syriaca.org/bibl/8"/>
                 <citedRange unit="entry">CCCCX</citedRange>
-                <citedRange unit="pp">1:321-324</citedRange>
+                <citedRange unit="p">1:321-324</citedRange>
               <ref type="internet-archive-pdf" target="https://archive.org/details/catalogueofsyria01brituoft/page/321"/>
               </bibl>
             </listBibl>
@@ -520,7 +525,6 @@
       <classDecl>
         <taxonomy xml:id="Wright-BL-Taxonomy">
           <bibl>
-            
             <ptr target="http://syriaca.org/documentation/Wright-BL-Taxonomy.html"/>
           </bibl>
           <category xml:id="biblical-manuscripts">
@@ -637,22 +641,30 @@
     </encodingDesc>
     <profileDesc>
       <langUsage>
-        <language ident="syr">Unvocalized Syriac of any variety or period</language>
-        <language ident="syr-Syre">Syriac in Estrangela</language>
-        <language ident="syr-Syrj">Vocalized West Syriac</language>
-        <language ident="syr-Syrn">Vocalized East Syriac</language>
-        <language ident="syr-x-syrm">Melkite Syriac</language>
-        <language ident="qhy-x-cpas">Palestinian Syriac</language>
-        <language ident="ar-Syrc">Unvocalized or Undetermined Arabic Garshuni</language>
-        <language ident="ar-Syrj">Arabic Garshuni in Vocalized West Syriac Script</language>
-        <language ident="ar-Syrn">Arabic Garshuni in Vocalized East Syriac Script</language>
-        <language ident="en">English</language>
         <language ident="ar">Arabic</language>
-        <language ident="fr">French</language>
-        <language ident="de">German</language>
-        <language ident="la">Latin</language>
-        <language ident="grc">Ancient Greek</language>
+        <language ident="ar-Syrc">Arabic Garshuni</language>
+        <language ident="ar-Syrn">Arabic Garshuni in East Syriac script</language>
         <language ident="cop">Coptic</language>
+        <language ident="de">German</language>
+        <language ident="en">English</language>
+        <language ident="fr">French</language>
+        <language ident="grc">Ancient Greek</language>
+        <language ident="he">Hebrew</language>
+        <language ident="hy">Armenian</language>
+        <language ident="it">Italian</language>
+        <language ident="la">Latin</language>
+        <language ident="syr">Syriac</language>
+        <language ident="syr-Arab">Syriac Garshuni in Arabic script</language>
+        <language ident="syr-Syre">Syriac in Estrangela script</language>
+        <language ident="syr-Syrj">Syriac in West Syriac script</language>
+        <language ident="syr-Syrn">Syriac in East Syriac script</language>
+        <language ident="syr-x-syrm">Syriac in Melkite Syriac script</language>
+        <language ident="tr">Turkish</language>
+        <language ident="tr-Syrc">Turkish Garshuni</language>
+        <language ident="qhy-x-cpas">Christian Palestinian Aramaic script</language>
+        <language ident="xcl">Classical Armenian</language>
+        <language ident="und">Undetermined</language>
+        <language ident="mul">Multiple languages</language>
       </langUsage>
       <textClass>
         <keywords scheme="#Wright-BL-Taxonomy">
@@ -670,15 +682,13 @@
       <change who="https://bl.syriac.uk/documentation/editors.xml#srophe-util" when="2020-02-28-06:00">CHANGED: deleted empty elements and attributes</change>
       <change who="https://bl.syriac.uk/documentation/editors.xml#srophe-util" when="2020-02-28-06:00">CHANGED: Added project metadata; metadata from Wright Decoder; msItem, handDesc, and additions enumeration; Wright Taxonomy designation</change>
       <change who="https://bl.syriac.uk/documentation/editors.xml#akelly" when="2019-10-24">Initial TEI encoding.</change>
-      <change type="planned" subtype="arabic">Add missing Arabic text.</change>
+      <change type="planned" subtype="arabic" who="https://bl.syriac.uk/documentation/editors.xml#smbl-general-editors">Add missing Arabic text.</change>
     </revisionDesc>
   </teiHeader>
-  <facsimile>
-    <formula>Content pending</formula>
-  </facsimile>
   <text>
     <body>
-      <bibl>Content pending</bibl>
+      <p/>
+      <!--Body paragraph provided for document validation.-->
     </body>
   </text>
 </TEI>

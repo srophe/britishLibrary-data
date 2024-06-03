@@ -1,4 +1,7 @@
-<?xml-model href="https://raw.githubusercontent.com/srophe/srophe-eXist-app/master/srophe-app/documentation/enrich-syriaca.rnc" type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/css" href="SRPEnrichCSS.css"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+<?xml-model href="https://raw.githubusercontent.com/srophe/britishLibrary/main/documentation/schema/out/Syriacamsdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/srophe/britishLibrary/main/documentation/schema/out/Syriacamsdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet href="https://raw.githubusercontent.com/srophe/wright-catalogue/master/parameters/tei.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="manuscript_302">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -22,13 +25,7 @@
           <resp>Based on the work of</resp>
           <name type="person" ref="https://bl.syriac.uk/documentation/editors.xml#wwright">William Wright</name>
         </respStmt>
-        <respStmt>
-          <resp>Edited by</resp>
-          <name type="person" ref="https://bl.syriac.uk/documentation/editors.xml#">
-            <!-- Editor's first initial and surname follow "#" (e.g., "...#dmichelson") -->
-            <!--Initial editor's name here -->
-          </name>
-        </respStmt>
+        
         <respStmt>
           <resp>Syriac text entered by</resp>
           <name type="person" ref="https://bl.syriac.uk/documentation/editors.xml#raydin">Robert Aydin</name>
@@ -63,11 +60,9 @@
         <edition n="1.0"/>
       </editionStmt>
       <publicationStmt>
-        <pubPlace/>
         <authority>Syriaca.org: The Syriac Reference Portal</authority>
         <idno type="URI">https://bl.syriac.uk/ms/302/tei</idno>
         <availability>
-          <p/>
           <licence target="http://creativecommons.org/licenses/by/3.0/">
             <p>Distributed under a Creative Commons Attribution 3.0 Unported License</p>
           </licence>
@@ -75,7 +70,7 @@
         <date calendar="Gregorian">2023-04-21-05:00</date>
       </publicationStmt>
       <sourceDesc>
-        <msDesc xml:id="manuscript-302" xml:lang="en">
+        <msDesc xml:id="manuscript-302">
           <msIdentifier>
             <country>United Kingdom</country>
             <settlement>London</settlement>
@@ -89,7 +84,7 @@
               <idno type="BL-Shelfmark-display">London, BL, Add. 14,569</idno>
             </altIdentifier>
             <altIdentifier>
-              <idno type="BL-Shelmark-simplified">BL Add MS 14569</idno>
+              <idno type="BL-Shelfmark-simplified">BL Add MS 14569</idno>
             </altIdentifier>
             <altIdentifier>
               <collection>William Wright, Catalogue of the Syriac Manuscripts in the British Museum Acquired since the Year 1838</collection>
@@ -103,23 +98,22 @@
           <head>
             <note type="contents-note">This manuscript contains: A chronological introduction; Athanasius of Alexandria. The Festal Letters of Athanasius. In total, including sub-sections, this manuscript contains 2 items.</note>
             <listRelation type="Wright-BL-Taxonomy">
-              <relation name="dcterms:type" ref="http://purl.org/dc/terms/type" active="https://bl.syriac.uk/ms/302" passive="#theology">
-                <desc/>
-              </relation>
+              <relation name="dcterms:type" ref="http://purl.org/dc/terms/type" active="https://bl.syriac.uk/ms/302" passive="#theology"/>
             </listRelation>
           </head>
           <msContents>
-            <summary/>
             <textLang mainLang="syr">Syriac</textLang>
             <msItem xml:id="a1" n="1" defective="unknown">
               <locus from="1b" to="10a">Foll. 1b-10a</locus>
               
-              <title type="supplied">A chronological introduction</title>
+              <title xml:lang="en">A chronological introduction</title>
             </msItem>
             <msItem xml:id="a2" n="2" defective="true">
               <locus from="10a" to="69">Foll. 10a-69</locus>
-              <author ref="http://syriaca.org/person/354">Athanasius of Alexandria</author>
-              <title type="supplied">The Festal Letters of Athanasius</title>
+              <author ref="http://syriaca.org/person/354">
+                <persName xml:lang="en">Athanasius of Alexandria</persName>
+              </author>
+              <title xml:lang="en">The Festal Letters of Athanasius</title>
               <rubric xml:lang="syr">ܐܓܪ̈ܬܐ ܥܐ̈ܕܢܝܬܐ ܕܩܕܝܫܐ ܡܪܝ ܐܬܢܣܝܘܣ<locus from="10a" to="10a"/>
               </rubric>
               <note>These letters were printed by Dr. Cureton in the order of their discovery, <bibl>Cureton, London, 1848</bibl>; and re-edited, in correct sequence and with a Latin translation, by Cardinal Mai in his <bibl>Nova Patrum Bibliotheca, tom. vi.</bibl> (see also <bibl>Migne, Patrol. Cursus Complet., Ser. Graeca, t. ii. col. 1339, etc.</bibl>). They were translated into German by <bibl>Dr. Larsow, Leipzig, 1852</bibl>; and into English by <bibl>Dr. Burgess, in Dr. Pusey's Library of Fathers of the Holy Catholic Church, 1854</bibl>, where the two leaves (foll. <locus from="41">41</locus> and <locus from="48">48</locus>) are printed, which were added to the manuscript since the appearance of the Curetonian text.</note>
@@ -135,57 +129,43 @@
                 </support>
                 <extent>
                   <measure type="composition" unit="leaf" quantity="69">69 ff.</measure>
-                  <dimensions type="leaf" unit="in">
-                    <height>
-                      <measure type="height" quantity="10.875" unit="in">10 7/8</measure>
-                    </height>
-                    <width>
-                      <measure type="width" quantity="7.875" unit="in">7 7/8</measure>
-                    </width>
+                  <dimensions type="leaf" unit="inch">
+                    <height quantity="10.875">10 7/8</height>
+                    <width quantity="7.875">7 7/8</width>
                   </dimensions>
                 </extent>
-                <foliation type="ancient"/>
                 <collation>
                   <p>The quires, signed with letters, are now 7 in number.</p>
                 </collation>
                 <condition>
                   <list>
                     <item>
-                      <p>Several of the leaves are slightly soiled, the<locus from="1">first</locus>being also torn.</p>
+                      <p>Several of the leaves are slightly soiled, the <locus from="1">first</locus> being also torn.</p>
                     </item>
                   </list>
                 </condition>
               </supportDesc>
               <layoutDesc>
                 <layout columns="1" writtenLines="26 33">
-                  <locus from="" to=""/>
                   <p>There are from 26 to 33 lines in each page.</p>
                 </layout>
               </layoutDesc>
             </objectDesc>
             <handDesc hands="4">
               <handNote xml:id="handNote1" scope="major" script="syr" medium="unknown">
-                <desc>This volume is written in a peculiar, rather cursive hand, of about the <origDate notBefore="0650" notAfter="0850" calendar="Gregorian">viiith </origDate>cent.</desc>
+                This volume is written in a peculiar, rather cursive hand, of about the <date notBefore="0650" notAfter="0850" calendar="Gregorian">viiith </date> cent.
               </handNote>
               <handNote xml:id="handNote2" scope="minor" script="syr" medium="unknown">
-                <desc>
-                  <ref target="#addition1">See additions</ref>
-                </desc>
-              </handNote>
+                <ref target="#addition1">See additions</ref>
+                </handNote>
               <handNote xml:id="handNote3" scope="minor" script="syr" medium="unknown">
-                <desc>
-                  <ref target="#addition2">See additions</ref>
-                </desc>
-              </handNote>
+                <ref target="#addition2">See additions</ref>
+                </handNote>
               <handNote xml:id="handNote4" scope="minor" script="syr" medium="unknown">
-                <desc>
-                  <ref target="#addition3">See additions</ref>
-                </desc>
-              </handNote>
+                <ref target="#addition3">See additions</ref>
+                </handNote>
             </handDesc>
-            <decoDesc/>
             <additions>
-              <p/>
               <list>
                 <item xml:id="addition1" n="1">
                   <locus from="1a" to="1a"/>
@@ -213,27 +193,21 @@
                 </item>
               </list>
             </additions>
-            <bindingDesc/>
-            <sealDesc/>
-            <accMat/>
-          </physDesc>
+            </physDesc>
           <history>
             <origin>
-              <origDate notBefore="0650" notAfter="0850" calendar="Gregorian">About the viiith cent.</origDate>
-              <origPlace/>
+              <origDate calendar="Gregorian" notBefore="0650" notAfter="0850">ca. 8th century</origDate>
+              
             </origin>
-            <provenance/>
-            <acquisition/>
-          </history>
+            </history>
           <additional>
             <adminInfo>
               <recordHist>
-                <source>Manuscript description based on<bibl>
+                <source>Manuscript description based on <bibl>
                     <ref target="#Wrightpart">Wright's Catalogue</ref>
                   </bibl>. abbreviated by the Syriaca.org editors.</source>
               </recordHist>
-              <note/>
-            </adminInfo>
+              </adminInfo>
             <listBibl>
               <bibl xml:id="Wrightpart">
                 <author>William Wright</author>
@@ -242,7 +216,7 @@
                 <date>1870</date>
                 <ptr target="http://syriaca.org/bibl/8"/>
                 <citedRange unit="entry">DXXXII</citedRange>
-                <citedRange unit="pp">2:406</citedRange>
+                <citedRange unit="p">2:406</citedRange>
               <ref type="internet-archive-pdf" target="https://archive.org/details/catalogueofsyria02brituoft/page/406"/>
               </bibl>
             </listBibl>
@@ -266,7 +240,6 @@
       <classDecl>
         <taxonomy xml:id="Wright-BL-Taxonomy">
           <bibl>
-            
             <ptr target="http://syriaca.org/documentation/Wright-BL-Taxonomy.html"/>
           </bibl>
           <category xml:id="biblical-manuscripts">
@@ -383,22 +356,30 @@
     </encodingDesc>
     <profileDesc>
       <langUsage>
-        <language ident="syr">Unvocalized Syriac of any variety or period</language>
-        <language ident="syr-Syre">Syriac in Estrangela</language>
-        <language ident="syr-Syrj">Vocalized West Syriac</language>
-        <language ident="syr-Syrn">Vocalized East Syriac</language>
-        <language ident="syr-x-syrm">Melkite Syriac</language>
-        <language ident="qhy-x-cpas">Palestinian Syriac</language>
-        <language ident="ar-Syrc">Unvocalized or Undetermined Arabic Garshuni</language>
-        <language ident="ar-Syrj">Arabic Garshuni in Vocalized West Syriac Script</language>
-        <language ident="ar-Syrn">Arabic Garshuni in Vocalized East Syriac Script</language>
-        <language ident="en">English</language>
         <language ident="ar">Arabic</language>
-        <language ident="fr">French</language>
-        <language ident="de">German</language>
-        <language ident="la">Latin</language>
-        <language ident="grc">Ancient Greek</language>
+        <language ident="ar-Syrc">Arabic Garshuni</language>
+        <language ident="ar-Syrn">Arabic Garshuni in East Syriac script</language>
         <language ident="cop">Coptic</language>
+        <language ident="de">German</language>
+        <language ident="en">English</language>
+        <language ident="fr">French</language>
+        <language ident="grc">Ancient Greek</language>
+        <language ident="he">Hebrew</language>
+        <language ident="hy">Armenian</language>
+        <language ident="it">Italian</language>
+        <language ident="la">Latin</language>
+        <language ident="syr">Syriac</language>
+        <language ident="syr-Arab">Syriac Garshuni in Arabic script</language>
+        <language ident="syr-Syre">Syriac in Estrangela script</language>
+        <language ident="syr-Syrj">Syriac in West Syriac script</language>
+        <language ident="syr-Syrn">Syriac in East Syriac script</language>
+        <language ident="syr-x-syrm">Syriac in Melkite Syriac script</language>
+        <language ident="tr">Turkish</language>
+        <language ident="tr-Syrc">Turkish Garshuni</language>
+        <language ident="qhy-x-cpas">Christian Palestinian Aramaic script</language>
+        <language ident="xcl">Classical Armenian</language>
+        <language ident="und">Undetermined</language>
+        <language ident="mul">Multiple languages</language>
       </langUsage>
       <textClass>
         <keywords scheme="#Wright-BL-Taxonomy">
@@ -414,16 +395,14 @@
       <change who="https://bl.syriac.uk/documentation/editors.xml#kurban" when="2023-04-21-05:00">CHANGED: added or corrected folio extent values</change>
       <change who="https://bl.syriac.uk/documentation/editors.xml#jarnwine" when="2023-01-13-06:00">ADDED: supplied and corrected Syriaca.org URIs for authors</change>
       <change who="https://bl.syriac.uk/documentation/editors.xml#jarnwine" when="2014-01-16">Created: file</change>
-      <change type="planned" subtype="uri">Needs Addition of work URIs.</change>
+      <change type="planned" subtype="uri" who="https://bl.syriac.uk/documentation/editors.xml#smbl-general-editors">Needs Addition of work URIs.</change>
       <change who="https://bl.syriac.uk/documentation/editors.xml#pgmiller" when="2016-07-06">Changed: Files moved to srophe-app-data/data/manuscripts/tei repository.</change>
     </revisionDesc>
   </teiHeader>
-  <facsimile>
-    <graphic/>
-  </facsimile>
   <text>
     <body>
       <p/>
+      <!--Body paragraph provided for document validation.-->
     </body>
   </text>
 </TEI>

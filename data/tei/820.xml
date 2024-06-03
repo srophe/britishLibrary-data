@@ -1,4 +1,7 @@
-<?oxygen RNGSchema="http://syriaca.org/documentation/syriaca-tei-main.rnc" type="compact"?><?xml-stylesheet type="text/css" href="https://raw.githubusercontent.com/srophe/wright-catalogue/master/parameters/tei.css"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+<?xml-model href="https://raw.githubusercontent.com/srophe/britishLibrary/main/documentation/schema/out/Syriacamsdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/srophe/britishLibrary/main/documentation/schema/out/Syriacamsdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet href="https://raw.githubusercontent.com/srophe/wright-catalogue/master/parameters/tei.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="manuscript_820">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -24,7 +27,7 @@
         </respStmt>
         <respStmt>
           <resp>Edited by</resp>
-          <name type="person" ref="https://bl.syriac.uk/documentation/editors.xml#">William L. Potter</name>
+          <name type="person" ref="https://bl.syriac.uk/documentation/editors.xml#wpotter">William L. Potter</name>
         </respStmt>
         <respStmt>
           <resp>Syriac text entered by</resp>
@@ -63,7 +66,6 @@
         <authority>Syriaca.org: The Syriac Reference Portal</authority>
         <idno type="URI">https://bl.syriac.uk/ms/820/tei</idno>
         <availability>
-          <p/>
           <licence target="http://creativecommons.org/licenses/by/3.0/">
             <p>Distributed under a Creative Commons Attribution 3.0 Unported License</p>
           </licence>
@@ -85,7 +87,7 @@
               <idno type="BL-Shelfmark-display">London, BL, Add. 17,170</idno>
             </altIdentifier>
             <altIdentifier>
-              <idno type="BL-Shelmark-simplified">BL Add MS 17170</idno>
+              <idno type="BL-Shelfmark-simplified">BL Add MS 17170</idno>
             </altIdentifier>
             <altIdentifier>
               <collection>William Wright, Catalogue of the Syriac Manuscripts in the British Museum Acquired since the Year 1838</collection>
@@ -105,29 +107,35 @@
             </listRelation>
           </head>
           <msContents>
-            <textLang mainLang="syr"/>
+            <textLang mainLang="syr">Syriac</textLang>
             <msItem xml:id="a1" n="1" defective="true">
               <locus from="1b"/>
-              <author ref="http://syriaca.org/person/827">John the Monk</author>
-              <title xml:lang="en">Works of <persName>John the Monk</persName>
+              <author ref="http://syriaca.org/person/827">
+                <persName xml:lang="en">John the Monk</persName>
+              </author>
+              <title xml:lang="en">Works of John the Monk
               </title>
               <rubric xml:lang="syr">ܡܪܝ ܝܘܚܢܢ ܝܚܝܕܝܐ</rubric>
               <msItem xml:id="b1" n="2">
                 <locus from="1b"/>
-                <author ref="http://syriaca.org/person/827">John the Monk</author>
+                <author ref="http://syriaca.org/person/827">
+                  <persName xml:lang="en">John the Monk</persName>
+                </author>
                 <title xml:lang="en">The last few words of the second discourse on the New World</title>
                 <explicit xml:lang="syr">
                   <locus from="1b"/>ܘܚܙܘ̈ܐ ܐܠܗ̈ܝܐ. ܕܡܢ ܟܠܗܝܢ ܕܡܠܠ ܘܥܬܝܕ ܕܢܓܡܘܪ܆ ܬܫܒܘܚܬܐ
                            ܘܬܘܕܝܬܐ ܠܐܒܐ ܘܠܒܪܐ ܘܠܪܘܚܐ ܕܩܘܕܫܐ: ܚܕ ܚܘܒܐ ܫܪܝܪܐ ܕܪܒ ܗ̣ܘ ܡܢ ܥܘ݂ܠܗ ܕܥܠܡܐ̣.
                            ܗܫܐ ܒܟܠܙܒܢ ܘܠܥܠܡ ܥܠܡܝܢ ܐܡܝܢ܀ ܀ ܀</explicit>
-                <finalRubric>
+                <finalRubric xml:lang="syr">
                   <locus from="1b"/>ܫܠܡܸܘ: ܡܐܡܪ̈ܐ: ܬܪ̈ܝܢ: ܕܥܠ: ܥܠܡܐ: ܚܕܬܐ܀</finalRubric>
                 <note>The above work has been cancelled by a much later hand.</note>
               </msItem>
               <msItem xml:id="b2" n="3">
                 <locus from="1b"/>
-                <author ref="http://syriaca.org/person/827">John the Monk</author>
-                <title xml:lang="en">The third discourse to <persName>the brethren</persName> on the
+                <author ref="http://syriaca.org/person/827">
+                  <persName xml:lang="en">John the Monk</persName>
+                </author>
+                <title xml:lang="en">The third discourse to the brethren on the
                            Fulfilment of the Future Promises, and on the New Life</title>
                 <rubric xml:lang="syr">ܬܘܒ ܡܐܡܪܐ ܕܡܠܠ ܡܪܝ ܝܘܚܢܢ ܝܚܝܕܝܐ ܠܘܬ ܐܚ̈ܐ ܥܠ
                            ܫܘܠܡܐ ܕܡ̈ܘܠܟܢܐ ܕܥܬܝܕܝܢ ܘܥܠ ܚ̈ܝܐ ܚ̈ܕܬܐ</rubric>
@@ -143,7 +151,9 @@
               </msItem>
               <msItem xml:id="b3" n="4">
                 <locus from="10b"/>
-                <author ref="http://syriaca.org/person/827">John the Monk</author>
+                <author ref="http://syriaca.org/person/827">
+                  <persName xml:lang="en">John the Monk</persName>
+                </author>
                 <title xml:lang="en">Questions and answers</title>
                 <rubric xml:lang="syr"> ܬܘܒ ܫܘܐ̈ܠܐ ܘܦܘܢܝ ܦܬܓܡ̈ܐ ܕܝܠܗ ܟܕ ܕܝܠܗ ܕܡܪܝ ܝܘܚܢܢ
                            ܝܚܝܕܝܐ.</rubric>
@@ -154,16 +164,17 @@
               </msItem>
               <msItem xml:id="b4" n="5">
                 <locus from="14a"/>
-                <title xml:lang="en">Discourses on <ref>the Beatitudes</ref>
+                <title xml:lang="en">Discourses on the Beatitudes
                 </title>
                 <rubric xml:lang="syr">ܬܘܒ ܡܐܡܪ̈ܐ ܕܝܠܗ ܟܕ ܕܝܠܗ ܕܡܪܝ ܝܘܚܢܢ ܝܚܝܕܝܐ܀ ܥܠ
                            ܗ̇ܢܘܢ ܛܘܒ̈ܐ ܕܝܗ̣ܒ ܡܪܢ ܒܐܘܢܓܠܝܘܢ.</rubric>
                 <msItem xml:id="c1" n="6">
                   <locus from="14a"/>
-                  <author ref="http://syriaca.org/person/827">John the Monk</author>
-                  <title xml:lang="en">On <ref>
-                      <persName ref="http://syriaca.org/person/2703">S. Matthew</persName>, ch.
-                                 v. 3</ref>
+                  <author ref="http://syriaca.org/person/827">
+                    <persName xml:lang="en">John the Monk</persName>
+                  </author>
+                  <title xml:lang="en">On S. Matthew, ch.
+                                 v. 3
                   </title>
                   <rubric xml:lang="syr">ܩܕܡܝܐ ܥܠ ܗ̇ܘ ܦܬܓܡܐ ܕܛܘܒܝܗܘܢ ܠܡܣ̈ܟܢܐ ܒܪܘܚ
                               ܕܕܝܠܗܘܢ ܗ̣ܝ ܡܠܟܘܬܐ ܕܫܡܝܐ</rubric>
@@ -172,10 +183,11 @@
                 </msItem>
                 <msItem xml:id="c2" n="7">
                   <locus from="27a"/>
-                  <author ref="http://syriaca.org/person/827">John the Monk</author>
-                  <title xml:lang="en">On <ref>
-                      <persName ref="http://syriaca.org/person/2703">S.
-                                    Matthew</persName>, ch. v. 9</ref>
+                  <author ref="http://syriaca.org/person/827">
+                    <persName xml:lang="en">John the Monk</persName>
+                  </author>
+                  <title xml:lang="en">On S.
+                                    Matthew, ch. v. 9
                   </title>
                   <rubric xml:lang="syr">ܥܠ ܦܬܓܡܐ ܕܐܡ̣ܪ ܡܪܢ ܕܛܘܒܝܗܘܢ ܠܥ̇ܒ̈ܕܝ ܫܠܡܐ
                               ܕܒܢ̈ܘܗܝ ܕܐܠܗܐ ܢܬܩܪܘܢ..</rubric>
@@ -185,10 +197,11 @@
                 </msItem>
                 <msItem xml:id="c3" n="8">
                   <locus from="37a"/>
-                  <author ref="http://syriaca.org/person/827">John the Monk</author>
-                  <title xml:lang="en">On <ref>
-                      <persName ref="http://syriaca.org/person/2703">S. Matthew</persName>, ch.
-                                 v. 8</ref>
+                  <author ref="http://syriaca.org/person/827">
+                    <persName xml:lang="en">John the Monk</persName>
+                  </author>
+                  <title xml:lang="en">On S. Matthew, ch.
+                                 v. 8
                   </title>
                   <rubric xml:lang="syr">ܥܠ ܗ̇ܘ ܦܬܓܡܐ ܕܛܘܒܝܗܘܢ ܠܐܝܠܝܢ ܕܕܟܝܢ ܒܠܗܘܢ <foreign xml:lang="en">(sic)</foreign> ܕܗ̣ܢܘܢ ܢܚܙܘܢܝܗܝ ܠܐܠܗܐ.</rubric>
                   <incipit xml:lang="syr">ܠܘܬ ܓܡܝܪܘܬܐ ܡܫܒܚܬܐ ܕܕܟܝܘܬܐ ܕܠܒܐ̣. ܛܘܒܗ
@@ -201,9 +214,10 @@
               </msItem>
               <msItem xml:id="b5" n="9">
                 <locus from="43b"/>
-                <author ref="http://syriaca.org/person/827">John the Monk</author>
-                <title xml:lang="en">Discourse on the <ref>Epistle to <persName>the
-                              Romans</persName>, ch. viii. 18</ref>
+                <author ref="http://syriaca.org/person/827">
+                  <persName xml:lang="en">John the Monk</persName>
+                </author>
+                <title xml:lang="en">Discourse on the Epistle to the Romans, ch. viii. 18
                 </title>
                 <rubric xml:lang="syr">ܥܠ ܗ̇ܝ ܕܐܡ̣ܪ ܫܠܝܚܐ ܕܠܐ ܫ̇ܘܝܢ ܚܫܘܗ̈ܝ ܕܙܒܢܐ ܗܢܐ
                            ܠܬܫܒܘܚܬܐ ܐܝܕܐ ܕܥܬܝܕܐ ܕܬܬܓܠܐ</rubric>
@@ -213,9 +227,10 @@
               </msItem>
               <msItem xml:id="b6" n="10">
                 <locus from="46b"/>
-                <author ref="http://syriaca.org/person/827">John the Monk</author>
-                <title xml:lang="en">Discourse on the <ref>Epistle to <persName>the
-                              Ephesians</persName>, ch. vi. 11 (13)</ref>
+                <author ref="http://syriaca.org/person/827">
+                  <persName xml:lang="en">John the Monk</persName>
+                </author>
+                <title xml:lang="en">Discourse on the Epistle to the Ephesians, ch. vi. 11 (13)
                 </title>
                 <rubric xml:lang="syr">ܥܠ ܗ̇ܝ ܕܐܡ̣ܪ ܗܘ̣ܐ ܫܠܝܚܐ ܠܐ̈ܦܣܝܐ ܕܠܒ̣ܫܘ ܟܠܗ ܙܝܢܐ
                            ܕܐܠܗܐ</rubric>
@@ -224,7 +239,9 @@
               </msItem>
               <msItem xml:id="b7" n="11">
                 <locus from="48b"/>
-                <author ref="http://syriaca.org/person/827">John the Monk</author>
+                <author ref="http://syriaca.org/person/827">
+                  <persName xml:lang="en">John the Monk</persName>
+                </author>
                 <title xml:lang="en">Exhortation to Love</title>
                 <rubric xml:lang="syr">ܡܪܬܝܢܘܬܐ ܕܚܘܒܐ</rubric>
                 <incipit xml:lang="syr">ܐܘܡܢ ܗ̣ܘ ܓܝܪ ܚܒܝ̈ܒܝ ܒܥܠܕܪܢ̣. ܘܨܢܝܥ ܕܠܩܘܒܠܢ
@@ -232,7 +249,9 @@
               </msItem>
               <msItem xml:id="b8" n="12">
                 <locus from="49b"/>
-                <author ref="http://syriaca.org/person/827">John the Monk</author>
+                <author ref="http://syriaca.org/person/827">
+                  <persName xml:lang="en">John the Monk</persName>
+                </author>
                 <title xml:lang="en">Rules and Orders</title>
                 <rubric xml:lang="syr"> ܢܡܘ̈ܣܐ ܘܦܘܩ̈ܕܢܐ܀ ܕܠܚܡ̈ܝܢ ܠܪ̈ܚܡ̇ܝ
                            ܫܦܝܪ̈ܬܐ</rubric>
@@ -241,7 +260,9 @@
               </msItem>
               <msItem xml:id="b9" n="13">
                 <locus from="51a"/>
-                <author ref="http://syriaca.org/person/827">John the Monk</author>
+                <author ref="http://syriaca.org/person/827">
+                  <persName xml:lang="en">John the Monk</persName>
+                </author>
                 <title xml:lang="en">Exhortation to Virtue</title>
                 <rubric xml:lang="syr">ܓܘܪܓܐ ܕܥܠ ܡܝܬܪܘܬܐ</rubric>
                 <incipit xml:lang="syr">ܘܠܐ ܡܕܡ ܐܝܬ ܕܡܥܟܪ ܠܢܦܫܐ ܒܫܒ̈ܝܠܐ ܕܫܦܝܪ̈ܬܐ̇. ܐܝܟ
@@ -249,10 +270,10 @@
               </msItem>
               <msItem xml:id="b10" n="14">
                 <locus from="52b"/>
-                <author ref="http://syriaca.org/person/827">John the Monk</author>
-                <title xml:lang="en">Consolatory address to <persName>those who are persecuted
-                           for the sake of the <persName ref="http://syriaca.org/person/2245">Messiah</persName>
-                  </persName>
+                <author ref="http://syriaca.org/person/827">
+                  <persName xml:lang="en">John the Monk</persName>
+                </author>
+                <title xml:lang="en">Consolatory address to those who are persecuted for the sake of the Messiah
                 </title>
                 <rubric xml:lang="syr">ܒܘܝܐܐ ܠܐܝܠܝܢ ܕܡܬܐܠܨܝܢ ܡܛܠ ܡܫܝܚܐ.</rubric>
                 <incipit xml:lang="syr">ܦܐܝܢ ܗܟܝܠ ܐܘܠܨ̈ܢܐ ܕܡܛܠ ܡܫܝܚܐ̇. ܠܐܝܠܝܢ ܕܐܚܒܘ
@@ -260,8 +281,10 @@
               </msItem>
               <msItem xml:id="b11" n="15">
                 <locus from="54a"/>
-                <author ref="http://syriaca.org/person/827">John the Monk</author>
-                <title xml:lang="en">Letter to <persName>Marcianus</persName>
+                <author ref="http://syriaca.org/person/827">
+                  <persName xml:lang="en">John the Monk</persName>
+                </author>
+                <title xml:lang="en">Letter to Marcianus
                 </title>
                 <rubric xml:lang="syr">ܠܘܬ ܡܪܩܝܢܐ ܚܒܝܒܗ. ܕܒܥ̣ܐ ܡܢܗ ܕܢܟܬܘܒ ܠܗ. ܡܛܠ ܪܓܬܐ
                            ܘܕܐܝܠܝܢ ܐܢܘܢ ܟܡܐܢ̈ܝܗ̇ ܠܘܬ ܐܝܠܝܢ ܕܒܫܘܕ̈ܠܝܗ̇ ܗ̇ܘܝܢ ܡܬܬܚܕܝܢ</rubric>
@@ -270,8 +293,10 @@
               </msItem>
               <msItem xml:id="b12" n="16">
                 <locus from="59a"/>
-                <author ref="http://syriaca.org/person/827">John the Monk</author>
-                <title xml:lang="en">Letter to <persName ref="http://syriaca.org/person/2510">Hesychius</persName>
+                <author ref="http://syriaca.org/person/827">
+                  <persName xml:lang="en">John the Monk</persName>
+                </author>
+                <title xml:lang="en">Letter to Hesychius
                 </title>
                 <rubric xml:lang="syr">ܐܓܪܬܐ ܕܝܠܗ ܕܡܪܝ ܝܘܚܢܢ ܕܠܘܬ ܗܘܣܟܝܣ ܕܝܪܝܐ. ܕܡܘܕܥܐ
                            ܥܠ ܕܘܒܪ̈ܐ ܕܡܝܬܪܘܬܐ..</rubric>
@@ -280,10 +305,12 @@
               </msItem>
               <msItem xml:id="b13" n="17">
                 <locus from="64b"/>
-                <author>Thaumasias</author>
-                <title xml:lang="en">Letter of <persName>Thaumasias</persName> to
-                              <persName>John</persName>, requesting him to write concerning the
-                           Mystery of the Dispensation of the <persName ref="http://syriaca.org/person/2245">Messiah</persName>
+                <author>
+                  <persName xml:lang="en">Thaumasias</persName>
+                </author>
+                <title xml:lang="en">Letter of Thaumasias to
+                              John, requesting him to write concerning the
+                           Mystery of the Dispensation of the Messiah
                 </title>
                 <rubric xml:lang="syr">ܐܓܪܬܐ ܕܐܫܬܕܪܬ ܗܘ̣ܬ ܡܢ ܬܘܡܘܣܝܘܣ ܠܘܬ ܡܪܝܘܚܢܢ
                            ܕܢܫܠܘܚ ܠܗ ܥܠ ܐܪܙܐ ܗܢܐ ܕܡܕܡܒܪܢܘܬܗ ܕܡܫܝܚܐ</rubric>
@@ -294,14 +321,18 @@
               </msItem>
               <msItem xml:id="b14" n="18">
                 <locus from="65"/>
-                <author ref="http://syriaca.org/person/827">John the Monk</author>
+                <author ref="http://syriaca.org/person/827">
+                  <persName xml:lang="en">John the Monk</persName>
+                </author>
                 <title xml:lang="en">Three Discourses on the Mystery of the
-                           Dispensation of the <persName ref="http://syriaca.org/person/2245">Messiah</persName>, in reply to the above letter of
-                              <persName>Thaumasias</persName>
+                           Dispensation of the Messiah, in reply to the above letter of
+                              Thaumasias
                 </title>
                 <msItem xml:id="c4" n="19">
                   <locus from="65b"/>
-                  <author ref="http://syriaca.org/person/827">John the Monk</author>
+                  <author ref="http://syriaca.org/person/827">
+                    <persName xml:lang="en">John the Monk</persName>
+                  </author>
                   <title xml:lang="en">The first discourse</title>
                   <rubric xml:lang="syr">ܦܘܢܝ ܦܬܓܡܐ ܕܫܕܪ ܡܪܝ ܝܘܚܢܢ ܝܚܝܕܝܐ ܠܘܬܗ
                               ܕܬܘܡܘܣܝܘܣ ܡܛܠ ܒ̇ܥܬܐ ܕܗܘ̣ܬ ܠܗ ܥܠ ܐܪܙܐ ܕܡܕܒܪܢܘܬܗ ܕܡܫܝܚܐ ܕܚܠܦ ܟܠ .. ܡܐܡܪܐ
@@ -313,7 +344,9 @@
                 </msItem>
                 <msItem xml:id="c5" n="20">
                   <locus from="72a"/>
-                  <author ref="http://syriaca.org/person/827">John the Monk</author>
+                  <author ref="http://syriaca.org/person/827">
+                    <persName xml:lang="en">John the Monk</persName>
+                  </author>
                   <title xml:lang="en">The second discourse</title>
                   <rubric xml:lang="syr">ܡܐܡܪܐ ܕܬܪ̈ܝܢ ܕܝܠܗ ܟܕ ܕܝܠܗ ܥܠ ܐܪܙܗ
                               ܕܡܫܝܚܐ</rubric>
@@ -322,7 +355,9 @@
                 </msItem>
                 <msItem xml:id="c6" n="21">
                   <locus from="77b"/>
-                  <author ref="http://syriaca.org/person/827">John the Monk</author>
+                  <author ref="http://syriaca.org/person/827">
+                    <persName xml:lang="en">John the Monk</persName>
+                  </author>
                   <title xml:lang="en">The third discourse</title>
                   <rubric xml:lang="syr">ܡܐܡܪܐ ܕܬܠܬܐ ܕܝܠܗ ܟܕ ܕܝܠܗ ܥܠ ܐܪܙܐ ܕܡܕܒܪܢܘܬܗ
                               ܕܡܪܢ ܡܫܝܚܐ</rubric>
@@ -333,9 +368,11 @@
               </msItem>
               <msItem xml:id="b15" n="22">
                 <locus from="84a"/>
-                <author ref="http://syriaca.org/person/827">John the Monk</author>
-                <title xml:lang="en">Letter of <persName>John</persName> to
-                              <persName>Thaumasias</persName>, on the same subject</title>
+                <author ref="http://syriaca.org/person/827">
+                  <persName xml:lang="en">John the Monk</persName>
+                </author>
+                <title xml:lang="en">Letter of John to
+                              Thaumasias, on the same subject</title>
                 <rubric xml:lang="syr">ܐܓܪܬܐ ܕܝܠܗ ܕܡܪܝܘܚܢܢ. ܠܘܬ ܬܘܡܘܣܝܘܣ .. ܥܠ ܫܪ̈ܒܐ
                            ܗܠܝܢ..</rubric>
                 <incipit xml:lang="syr">ܨܠܡܐ ܐܚܝ ܕܦܝܣܐ ܕܐܓܪܬܟ ܕܚܘܒܐ̣ ܩܒ̇ܠܬ. ܘܐܝܟ ܡܐ
@@ -344,7 +381,9 @@
               </msItem>
               <msItem xml:id="b16" n="23">
                 <locus from="87b"/>
-                <author ref="http://syriaca.org/person/827">John the Monk</author>
+                <author ref="http://syriaca.org/person/827">
+                  <persName xml:lang="en">John the Monk</persName>
+                </author>
                 <title xml:lang="en">Beatitudes</title>
                 <rubric xml:lang="syr">ܕܝܠܗ ܕܡܪܝ ܝܘܚܢܢ ܬܫܒܘܚܬܐ ܕܥܠ ܛܘ̈ܒܐ</rubric>
                 <incipit xml:lang="syr">ܛܘܒܘܗܝ ܠܡ̇ܢ ܕܚܙܝܗܝ ܠܡܫܝܚܐ ܒܡܕܥܗ ܘܝܕܥܗ ܟܕ ܙܩܝܦ.
@@ -359,8 +398,6 @@
                         <extent>
                            <measure type="composition" unit="leaf" quantity="88">88 ff.</measure>
                         </extent>
-                        <foliation/>
-                        <collation/>
                         <condition>
                            <list>
                               <item>
@@ -369,20 +406,16 @@
                            </list>
                         </condition>
                      </supportDesc>
-                     <layoutDesc>
-                        <p>Content pending</p>
-                     </layoutDesc>
-                  </objectDesc>
+                     </objectDesc>
             <handDesc hands="2">
               <handNote xml:id="handNote1" medium="unknown" scope="major" script="syr-Syre">
-                <desc>This volume is written in a good, regular Estrangela, and dated <origDate datingMethod="Hijri-qamari" when-custom="0158">A.H. 158</origDate>, <origDate from="0774" to="0775">A.D. 774—5</origDate>.</desc>
+                This volume is written in a good, regular Estrangela, and dated <date datingMethod="Hijri-qamari" when-custom="0158">A.H. 158</date>, <date from="0774" to="0775">A.D. 774—5</date>.
               </handNote>
               <handNote xml:id="handNote2" medium="unknown" scope="minor" script="syr">
-                <desc>See additions.</desc>
+                See additions.
               </handNote>
             </handDesc>
             <additions>
-              <p/>
               <list>
                 <item xml:id="addition1" n="1">
                   <label>Colophon</label>
@@ -400,10 +433,9 @@
                               stating that this book was written at <placeName ref="http://syriaca.org/place/78">Edessa</placeName>, <date datingMethod="Hijri-qamari" when-custom="0158">A.H. 158</date>
                                  (<date calendar="Gregorian" from="0774" to="0775">A.D.
                               774—5</date>), by <persName ref="http://syriaca.org/person/862">the
-                                 priest Cyprian of <placeName ref="http://syriaca.org/place/142">Nisibis</placeName>
-                    </persName>, for <persName>a person whose name and
+                                 priest Cyprian of <placeName ref="http://syriaca.org/place/142">Nisibis</placeName></persName>, for <persName>a person whose name and
                               place of residence have been erased</persName> (those of
-                                 <persName>Severus</persName> and <persName ref="http://syriaca.org/place/216">Harrān</persName> having been
+                                 <persName>Severus</persName> and <placeName ref="http://syriaca.org/place/216">Harrān</placeName> having been
                               substituted).</p>
                   <p>
                               <quote xml:lang="syr-Syre">ܐܬܟܬܒ ܕܝܢ ܟܬܒܐ ܗܢܐ ܩܕܝܫܐ ܒܐܘܪܗܝ ܡܕܝܢܬܐ ܡܒܪܟܬܐ
@@ -428,13 +460,11 @@
                 <item xml:id="addition4" n="4">
                   <locus from="88a"/>
                   <p>In place of the <ref>erased portions above</ref> we find the following
-                              lines, informing us that <persName ref="http://syriaca.org/person/647">Moses of <placeName ref="http://syriaca.org/place/142">Nisibis</placeName>
-                    </persName>, abbat of the <placeName ref="http://syriaca.org/place/360">convent of S. Mary
+                              lines, informing us that <persName ref="http://syriaca.org/person/647">Moses of <placeName ref="http://syriaca.org/place/142">Nisibis</placeName></persName>, abbat of the <placeName ref="http://syriaca.org/place/360">convent of S. Mary
                                  Deipara</placeName>, bought this volume from the family of the
                               priests <persName>Joseph</persName> and
                                  <persName>Melchizedek</persName>, and the <persName>deacon
-                                 Lazarus</persName>, the sons of <persName>Zĕlūphīn of <placeName ref="http://syriaca.org/place/216">Hārran</placeName>
-                    </persName>.</p>
+                                 Lazarus</persName>, the sons of <persName>Zĕlūphīn of <placeName ref="http://syriaca.org/place/216">Hārran</placeName></persName>.</p>
                   <p>
                               <quote xml:lang="syr-Syre">ܫܘܒܚܐ ܠܐܒܐ ܘܠܒܪܐ ܘܠܪܘܚܐ ܏ܩܕ. ܙܒܢ ܠܟܬܒܐ ܗܢܐ ܡܢ
                                  ܒ̈ܝܬܝܐ ܕܝܘܣܦ ܘܡܠܟܝܙܕܩ ܩ̈ܫܝܫܐ ܘܕܝܪ̈ܝܐ ܘܠܥܙܪ ܏ܡܫ ܒ̈ܢܝ ܙܠܘܦܝܢ ܕܡܢ ܚܪܢ.
@@ -445,40 +475,30 @@
                   <locus from="88b"/>
                   <p>On <locus>fol. 88 b</locus> there is a note in the usual form, which states that this
                               was one of the 250 volumes presented to the <placeName ref="http://syriaca.org/place/360">convent of S. Mary
-                                 Deipara</placeName> by the <persName ref="http://syriaca.org/person/647">abbat Moses of <placeName ref="http://syriaca.org/place/142">Nisibis</placeName>
-                    </persName>, on his return from <placeName ref="http://syriaca.org/place/41">Bagdad</placeName>, in <date datingMethod="Seleucid" when-custom="1243">the
+                                 Deipara</placeName> by the <persName ref="http://syriaca.org/person/647">abbat Moses of <placeName ref="http://syriaca.org/place/142">Nisibis</placeName></persName>, on his return from <placeName ref="http://syriaca.org/place/41">Bagdad</placeName>, in <date datingMethod="Seleucid" when-custom="1243">the
                                  year 1243</date>, <date calendar="Gregorian" when="0932">A.D.
                                  932</date>.</p>
                 </item>
               </list>
             </additions>
-            <bindingDesc>
-                     <p>Content pending</p>
-                  </bindingDesc>
-            <sealDesc>
-                     <p>Content pending</p>
-                  </sealDesc>
-            <accMat/>
-          </physDesc>
+            </physDesc>
           <history>
                   <origin>
-                     <origDate calendar="Gregorian" from="0774" to="0775">A.D. 774—5.</origDate>
-                    <origDate datingMethod="Hijri-qamari" when-custom="0158">A.H. 158</origDate>
-                     <origPlace/>
+              <origDate calendar="Gregorian" notBefore="0774" notAfter="0775">AD 774—5.</origDate>
+              <origDate calendar="Hijri-qamari" datingMethod="Hijri-qamari" when-custom="0158">AH 158</origDate>
+                     
+                    
                   </origin>
-                  <provenance/>
-                  <acquisition/>
-               </history>
+                  </history>
           <additional>
             <adminInfo>
               <recordHist>
-                <source>Manuscript description based on<bibl>
+                <source>Manuscript description based on <bibl>
                     <ref target="#Wrightpart">Wright's
                       Catalogue</ref>
                   </bibl>. abbreviated by the Syriaca.org editors.</source>
               </recordHist>
-              <note/>
-            </adminInfo>
+              </adminInfo>
             <listBibl>
               <bibl xml:id="Wrightpart">
                 <author>William Wright</author>
@@ -488,7 +508,7 @@
                 <date>1870</date>
                 <ptr target="http://syriaca.org/bibl/8"/>
                 <citedRange unit="entry">DLXXIII</citedRange>
-                <citedRange unit="pp">2:454-458</citedRange>
+                <citedRange unit="p">2:454-458</citedRange>
               <ref type="internet-archive-pdf" target="https://archive.org/details/catalogueofsyria02brituoft/page/454"/>
               </bibl>
             </listBibl>
@@ -512,7 +532,6 @@
       <classDecl>
         <taxonomy xml:id="Wright-BL-Taxonomy">
           <bibl>
-            
             <ptr target="http://syriaca.org/documentation/Wright-BL-Taxonomy.html"/>
           </bibl>
           <category xml:id="biblical-manuscripts">
@@ -629,22 +648,30 @@
     </encodingDesc>
     <profileDesc>
       <langUsage>
-        <language ident="syr">Unvocalized Syriac of any variety or period</language>
-        <language ident="syr-Syre">Syriac in Estrangela</language>
-        <language ident="syr-Syrj">Vocalized West Syriac</language>
-        <language ident="syr-Syrn">Vocalized East Syriac</language>
-        <language ident="syr-x-syrm">Melkite Syriac</language>
-        <language ident="qhy-x-cpas">Palestinian Syriac</language>
-        <language ident="ar-Syrc">Unvocalized or Undetermined Arabic Garshuni</language>
-        <language ident="ar-Syrj">Arabic Garshuni in Vocalized West Syriac Script</language>
-        <language ident="ar-Syrn">Arabic Garshuni in Vocalized East Syriac Script</language>
-        <language ident="en">English</language>
         <language ident="ar">Arabic</language>
-        <language ident="fr">French</language>
-        <language ident="de">German</language>
-        <language ident="la">Latin</language>
-        <language ident="grc">Ancient Greek</language>
+        <language ident="ar-Syrc">Arabic Garshuni</language>
+        <language ident="ar-Syrn">Arabic Garshuni in East Syriac script</language>
         <language ident="cop">Coptic</language>
+        <language ident="de">German</language>
+        <language ident="en">English</language>
+        <language ident="fr">French</language>
+        <language ident="grc">Ancient Greek</language>
+        <language ident="he">Hebrew</language>
+        <language ident="hy">Armenian</language>
+        <language ident="it">Italian</language>
+        <language ident="la">Latin</language>
+        <language ident="syr">Syriac</language>
+        <language ident="syr-Arab">Syriac Garshuni in Arabic script</language>
+        <language ident="syr-Syre">Syriac in Estrangela script</language>
+        <language ident="syr-Syrj">Syriac in West Syriac script</language>
+        <language ident="syr-Syrn">Syriac in East Syriac script</language>
+        <language ident="syr-x-syrm">Syriac in Melkite Syriac script</language>
+        <language ident="tr">Turkish</language>
+        <language ident="tr-Syrc">Turkish Garshuni</language>
+        <language ident="qhy-x-cpas">Christian Palestinian Aramaic script</language>
+        <language ident="xcl">Classical Armenian</language>
+        <language ident="und">Undetermined</language>
+        <language ident="mul">Multiple languages</language>
       </langUsage>
       <textClass>
         <keywords scheme="#Wright-BL-Taxonomy">
@@ -665,12 +692,10 @@
             TEI encoding.</change>
       </revisionDesc>
   </teiHeader>
-  <facsimile>
-      <formula>Content pending</formula>
-   </facsimile>
   <text>
       <body>
-         <bibl>Content pending</bibl>
+         <p/>
+      <!--Body paragraph provided for document validation.-->
       </body>
    </text>
 </TEI>
