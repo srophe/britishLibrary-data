@@ -1,4 +1,7 @@
-<?xml-model href="https://raw.githubusercontent.com/srophe/britishLibrary/main/documentation/schema/out/Syriacamsdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/srophe/britishLibrary/main/documentation/schema/out/Syriacamsdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-stylesheet href="https://raw.githubusercontent.com/srophe/wright-catalogue/master/parameters/tei.css"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="manuscript_106">
+<?xml-model href="https://raw.githubusercontent.com/srophe/britishLibrary/main/documentation/schema/out/Syriacamsdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/srophe/britishLibrary/main/documentation/schema/out/Syriacamsdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet href="https://raw.githubusercontent.com/srophe/wright-catalogue/master/parameters/tei.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="manuscript_106">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -156,6 +159,9 @@
                 <relation name="dcterms:type" ref="http://purl.org/dc/terms/type" active="https://bl.syriac.uk/ms/107" passive="#bible-ot">
                   <desc>Old Testament</desc>
                 </relation>
+              <relation name="dcterms:type" ref="http://purl.org/dc/terms/type" active="https://bl.syriac.uk/ms/107" passive="#biblical-manuscripts">
+                  <desc>Biblical Manuscripts</desc>
+                </relation>
               </listRelation>
               <listRelation type="composite-to-parts">
                 <desc>This composite manuscript consists of 2 distinct parts:</desc>
@@ -205,9 +211,13 @@
             </altIdentifier>
           </msIdentifier>
               <head>
-                <note type="contents-note">This manuscript contains: A fly-leaf, with the word ܬܠܝܬܝܘܬܐ. In total, including sub-sections, this manuscript contains 1 item.</note>
+                <note type="contents-note">A fly-leaf, with the word ܬܠܝܬܝܘܬܐ
+                  <num type="item-count" value="1"/>
+                </note>
                 <listRelation type="Wright-BL-Taxonomy">
-                  <relation name="dcterms:type" ref="http://purl.org/dc/terms/type" active="https://bl.syriac.uk/ms/1501" passive="#unclassified"/>
+                  <relation name="dcterms:type" ref="http://purl.org/dc/terms/type" active="https://bl.syriac.uk/ms/1501" passive="#unclassified">
+                    <desc>Unclassified</desc>
+                  </relation>
                 </listRelation>
                 <listRelation type="part-to-composite">
                   <desc>This unit is a part of a composite manuscript:</desc>
@@ -324,10 +334,15 @@
             </altIdentifier>
           </msIdentifier>
               <head>
-                <note type="contents-note">This manuscript contains: The book of Genesis, translated from the Septuagint by Paul, bishop of Tellā or Constantina .See Monumenta Sacra et Profana opera Collegii Doctorum Bibl. Ambros., tom. i. fasc. i. Prolegomena in editionem versionis Syriacae ex textu LXX., p. iii. “ Paulus Episcopus Monophysita Telae Mauslath, aliorum fortasse opera adjustus, jussu Athanasii Patriarchae Monophysitae Antiocheni vertit LXX. in Syriacum annis 616-7 Chr., fortasse etiam sequentibus, in urbe Alexandriae.” Most of the books of this version have already been edited by Norberg, Bugati, Middledorpf, and Rördam; and an edition of the whole is now being printed by Dr. Ceriani of Milan in the work cited above. He has given a minute description of this manuscript of the book of Genesis in tom. ii. fasc. ii. p. xvii., etc. See also his memoir, Le Edizioni e i Maoscritti etc., p. 19. In total, including sub-sections, this manuscript contains 3 items.</note>
+                <note type="contents-note">The book of Genesis, translated from the Septuagint
+                  <num type="item-count" value="3"/>
+                </note>
                 <listRelation type="Wright-BL-Taxonomy">
                   <relation name="dcterms:type" ref="http://purl.org/dc/terms/type" active="https://bl.syriac.uk/ms/1506" passive="#bible-ot">
                     <desc>Old Testament</desc>
+                  </relation>
+                <relation name="dcterms:type" ref="http://purl.org/dc/terms/type" active="https://bl.syriac.uk/ms/1506" passive="#biblical-manuscripts">
+                    <desc>Biblical Manuscripts</desc>
                   </relation>
                 </listRelation>
                 <listRelation type="part-to-composite">
@@ -340,14 +355,16 @@
                 <textLang mainLang="syr">Syriac</textLang>
                 <msItem xml:id="p1_2a1" n="1" defective="true">
                   <locus from="2a"/>
-                  <editor role="translator">Paul, bishop of Tellā or Constantina</editor>
+                  <editor role="translator">
+                    <persName xml:lang="en">Paul, bishop of Tellā or Constantina</persName>
+                  </editor>
                   <title xml:lang="en">The book of Genesis, translated from the Septuagint<note type="footnote">See <bibl>Monumenta Sacra et Profana opera Collegii Doctorum Bibl.
                     Ambros., tom. i. fasc. i. Prolegomena in editionem versionis Syriacae ex
                     textu LXX., p. iii<ref target="http://syriaca.org/cbss/V6792D77"/>
                   </bibl>. “<quote xml:lang="la">
-                    <persName ref="http://syriaca.org/person/82">Paulus</persName> Episcopus Monophysita Telae Mauslath, aliorum
-                    fortasse opera adjutus, jussu <persName ref="http://syriaca.org/person/88">Athanasii</persName> Patriarchae Monophysitae
-                    Antiocheni vertit LXX. in Syriacum annis <date calendar="Gregorian" from="0616" to="0617">616-7</date> Chr., fortasse etiam
+                    <persName ref="http://syriaca.org/person/82">Paulus Episcopus Monophysita Telae Mauslath</persName>, aliorum
+                    fortasse opera adjutus, jussu <persName ref="http://syriaca.org/person/88">Athanasii Patriarchae Monophysitae
+                      Antiocheni</persName> vertit LXX. in Syriacum <date calendar="Gregorian" from="0616" to="0617">annis 616-7 Chr.</date>, fortasse etiam
                     sequentibus, in urbe <placeName ref="http://syriaca.org/place/572">Alexandriae</placeName>.</quote>” Most of the books of this
                     version have already been edited by <bibl>Norberg<ref target="http://syriaca.org/cbss/XMBI47CF"/>
                     </bibl>,
@@ -359,16 +376,17 @@
                     printed by <bibl>Dr. Ceriani of Milan
                       <ref target="http://syriaca.org/cbss/YGWRTQAZ"/>
                     in the work cited above</bibl>. He has given a minute description of this
-                    manuscript of the book of Genesis in <bibl>tom. ii. fasc. ii. p. xvii.<ref target="http://syriaca.org/cbss/PMIN5ZVL"/>
-                    </bibl>, etc. See
+                    manuscript of the book of Genesis in <bibl>tom. ii. fasc. ii. p. xvii., etc.<ref target="http://syriaca.org/cbss/PMIN5ZVL"/>
+                    </bibl> See
                     also his memoir, <bibl>Le Edizioni e i Maoscritti etc., p. 19<ref target="http://syriaca.org/cbss/S8BZZG88"/>
-                    </bibl>.</note></title>
+                    </bibl>.</note>
+                  </title>
                   
                   <msItem xml:id="p1_2b1" n="2" defective="true">
                     <locus from="2a"/>
                     <title xml:lang="en">Summary of contents</title>
                     <rubric xml:lang="syr">ܩ̈ܦܠܐܐ ܕܒܪܝܬܐ</rubric>
-                    <note>A summary of the contents is prefixed.<note type="footnote">See <bibl>Chrysostom,
+                    <note>A summary of the contents is prefixed, fol. 2 a.<note type="footnote">See <bibl>Chrysostom,
                       Synopsis Scripturae Sacrae<ref target="http://syriaca.org/cbss/URQJVSHL"/>
                         </bibl>; <bibl>Opera, ed. 1834-8, t. vi. p. 373<ref target="http://syriaca.org/cbss/URQJVSHL"/>
                         </bibl>;
@@ -381,7 +399,9 @@
                   </msItem>
                   <msItem xml:id="p1_2b2" n="3" defective="true">
                     <locus from="9a"/>
-                    <editor role="translator">Paul, bishop of Tellā or Constantina</editor>
+                    <editor role="translator">
+                      <persName xml:lang="en">Paul, bishop of Tellā or Constantina</persName>
+                    </editor>
                     <title xml:lang="en">The book of Genesis, translated from the Septuagint</title>
                     <finalRubric xml:lang="syr">ܫܠܡ ܟܬܒܐ ܕܒܪܝܬܐ̣. ܐܝܟ ܡܫܠܡܢܘܬܐ ܕܫܒܥܝܢ
                                  ܘܬܪ̈ܝܢ.</finalRubric>
@@ -493,10 +513,14 @@
               </altIdentifier>
             </msIdentifier>
             <head>
-              <note type="contents-note">This manuscript contains: Part of the first book of Samuel, according to the Peshitta version. In total, including sub-sections, this manuscript contains 1 item.</note>
+              <note type="contents-note">Part of the first book of Samuel, according to the Pĕshīṭtā version<num type="item-count" value="1"/>
+              </note>
               <listRelation type="Wright-BL-Taxonomy">
                 <relation name="dcterms:type" ref="http://purl.org/dc/terms/type" active="https://bl.syriac.uk/ms/108" passive="#bible-ot">
                   <desc>Old Testament</desc>
+                </relation>
+              <relation name="dcterms:type" ref="http://purl.org/dc/terms/type" active="https://bl.syriac.uk/ms/108" passive="#biblical-manuscripts">
+                  <desc>Biblical Manuscripts</desc>
                 </relation>
               </listRelation>
               <listRelation type="part-to-composite">
@@ -554,7 +578,7 @@
               </objectDesc>
               <handDesc hands="5">
                 <handNote xml:id="p2handNote1" scope="major" script="syr-Syre" medium="unknown">
-                  This manuscript is written in a fine, regular Estrangela of the <date calendar="Gregorian" from="0500" to="0700">vith or viith cent.</date>
+                  This manuscript is written in a fine, regular Esṭrangělā of the <date calendar="Gregorian" from="0500" to="0700">vith or viith cent.</date>
                   </handNote>
                 <handNote xml:id="p2handNote2" scope="minor" script="syr-Syrj" medium="unknown">
                   A few Greek vowels have been added by a later hand on foll. 48 b and 49 a (ܽ  ܳ ܶ ܰ).<ref target="#p2addition1">See additions.</ref>
@@ -648,119 +672,112 @@
       </editorialDecl>
       <classDecl>
         <taxonomy xml:id="Wright-BL-Taxonomy">
-          <bibl>
-            <ptr target="http://syriaca.org/documentation/Wright-BL-Taxonomy.html"/>
-          </bibl>
-          <category xml:id="biblical-manuscripts">
-            <category xml:id="bible-ot">
-              <catDesc>Old Testament</catDesc>
-            </category>
-            <category xml:id="bible-nt">
-              <catDesc>New Testament</catDesc>
-            </category>
-            <category xml:id="bible-apocrypha">
-              <catDesc>Apocrypha</catDesc>
-            </category>
-            <category xml:id="bible-punctuation">
-              <catDesc>Punctuation</catDesc>
-            </category>
-          </category>
-          <category xml:id="service-books">
-            <category xml:id="psalter">
-              <catDesc>Psalters</catDesc>
-            </category>
-            <category xml:id="lectionaries">
-              <catDesc>Lectionaries</catDesc>
-            </category>
-            <category xml:id="missals">
-              <catDesc>Missals</catDesc>
-            </category>
-            <category xml:id="sacerdotals">
-              <catDesc>Sacerdotals</catDesc>
-            </category>
-            <category xml:id="choral">
-              <catDesc>Choral Books</catDesc>
-            </category>
-            <category xml:id="hymns">
-              <catDesc>Hymns</catDesc>
-            </category>
-            <category xml:id="prayers">
-              <catDesc>Prayers</catDesc>
-            </category>
-            <category xml:id="funerals">
-              <catDesc>Funeral Services</catDesc>
-            </category>
-          </category>
-          <category xml:id="theology">
-            <category xml:id="theo-single">
-              <catDesc>Individual Authors</catDesc>
-            </category>
-            <category xml:id="theo-collected">
-              <catDesc>Collected Authors</catDesc>
-            </category>
-            <category xml:id="theo-catenae">
-              <catDesc>Catenae Patrum and Demonstrations against Heresies</catDesc>
-            </category>
-            <category xml:id="theo-anonymous">
-              <catDesc>Anonymous Works</catDesc>
-            </category>
-            <category xml:id="theo-council">
-              <catDesc>Councils of the Church and Ecclesiastical Canons</catDesc>
-            </category>
-          </category>
-          <category xml:id="wright-history">
-            <category xml:id="history">
-              <catDesc>History</catDesc>
-            </category>
-          </category>
-          <category xml:id="lives">
-            <category xml:id="lives-collect">
-              <catDesc>Collected Lives</catDesc>
-            </category>
-            <category xml:id="lives-single">
-              <catDesc>Single Lives</catDesc>
-            </category>
-          </category>
-          <category xml:id="scientific-lit">
-            <category xml:id="sci-logic">
-              <catDesc>Logic and Rhetoric</catDesc>
-            </category>
-            <category xml:id="sci-grammar">
-              <catDesc>Grammar and Lexicography</catDesc>
-            </category>
-            <category xml:id="sci-ethics">
-              <catDesc>Ethics</catDesc>
-            </category>
-            <category xml:id="sci-medicine">
-              <catDesc>Medicine</catDesc>
-            </category>
-            <category xml:id="sci-agriculture">
-              <catDesc>Agriculture</catDesc>
-            </category>
-            <category xml:id="sci-chemistry">
-              <catDesc>Chemistry</catDesc>
-            </category>
-            <category xml:id="sci-natural-history">
-              <catDesc>Natural History</catDesc>
-            </category>
-          </category>
-          <category xml:id="wright-fly-leaves">
-            <category xml:id="fly-leaves">
-              <catDesc>Fly Leaves</catDesc>
-            </category>
-          </category>
-          <category xml:id="appendices">
-            <category xml:id="appendix-a">
-              <catDesc>Appendix A</catDesc>
-            </category>
-            <category xml:id="appendix-b">
-              <catDesc>Appendix B</catDesc>
-            </category>
-          </category>
-          <category xml:id="unclassified">
-            <catDesc>Unclassified</catDesc>
-          </category>
-        </taxonomy>
+    <bibl>
+        <ptr target="http://syriaca.org/documentation/Wright-BL-Taxonomy.html"/>
+    </bibl>
+    <category xml:id="biblical-manuscripts">
+        <catDesc>Biblical Manuscripts</catDesc>
+        <category xml:id="bible-ot">
+            <catDesc>Old Testament</catDesc>
+        </category>
+        <category xml:id="bible-nt">
+            <catDesc>New Testament</catDesc>
+        </category>
+        <category xml:id="bible-apocrypha">
+            <catDesc>Apocrypha</catDesc>
+        </category>
+        <category xml:id="bible-punctuation">
+            <catDesc>Punctuation</catDesc>
+        </category>
+    </category>
+    <category xml:id="service-books">
+        <catDesc>Service-books</catDesc>
+        <category xml:id="psalter">
+            <catDesc>Psalters</catDesc>
+        </category>
+        <category xml:id="lectionaries">
+            <catDesc>Lectionaries</catDesc>
+        </category>
+        <category xml:id="missals">
+            <catDesc>Missals</catDesc>
+        </category>
+        <category xml:id="sacerdotals">
+            <catDesc>Sacerdotals</catDesc>
+        </category>
+        <category xml:id="choral">
+            <catDesc>Choral Books</catDesc>
+        </category>
+        <category xml:id="hymns">
+            <catDesc>Hymns</catDesc>
+        </category>
+        <category xml:id="prayers">
+            <catDesc>Prayers</catDesc>
+        </category>
+        <category xml:id="funerals">
+            <catDesc>Funeral Services</catDesc>
+        </category>
+    </category>
+    <category xml:id="theology">
+        <catDesc>Theology</catDesc>
+        <category xml:id="theo-single">
+            <catDesc>Individual Authors</catDesc>
+        </category>
+        <category xml:id="theo-collected">
+            <catDesc>Collected Authors</catDesc>
+        </category>
+        <category xml:id="theo-catenae">
+            <catDesc>Catenae Patrum and Demonstrations against Heresies</catDesc>
+        </category>
+        <category xml:id="theo-anonymous">
+            <catDesc>Anonymous Works</catDesc>
+        </category>
+        <category xml:id="theo-council">
+            <catDesc>Councils of the Church and Ecclesiastical Canons</catDesc>
+        </category>
+    </category>
+    <category xml:id="history">
+        <catDesc>History</catDesc>
+    </category>
+    <category xml:id="lives">
+        <catDesc>Lives of Saints, etc.</catDesc>
+        <category xml:id="lives-collect">
+            <catDesc>Collected Lives</catDesc>
+        </category>
+        <category xml:id="lives-single">
+            <catDesc>Single Lives</catDesc>
+        </category>
+    </category>
+    <category xml:id="scientific-lit">
+        <catDesc>Scientific Literature</catDesc>
+        <category xml:id="sci-logic">
+            <catDesc>Logic and Rhetoric</catDesc>
+        </category>
+        <category xml:id="sci-grammar">
+            <catDesc>Grammar and Lexicography</catDesc>
+        </category>
+        <category xml:id="sci-ethics">
+            <catDesc>Ethics</catDesc>
+        </category>
+        <category xml:id="sci-medicine">
+            <catDesc>Medicine</catDesc>
+        </category>
+        <category xml:id="sci-agriculture">
+            <catDesc>Agriculture</catDesc>
+        </category>
+        <category xml:id="sci-chemistry">
+            <catDesc>Chemistry</catDesc>
+        </category>
+        <category xml:id="sci-natural-history">
+            <catDesc>Natural History</catDesc>
+        </category>
+    </category>
+    <category xml:id="fly-leaves">
+        <catDesc>Fly Leaves</catDesc>
+    </category>
+    <category xml:id="unclassified">
+        <catDesc>Unclassified</catDesc>
+    </category>
+</taxonomy>
       </classDecl>
     </encodingDesc>
     <profileDesc>

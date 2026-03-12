@@ -1,4 +1,7 @@
-<?xml-model href="https://raw.githubusercontent.com/srophe/britishLibrary/main/documentation/schema/out/Syriacamsdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/srophe/britishLibrary/main/documentation/schema/out/Syriacamsdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-stylesheet href="https://raw.githubusercontent.com/srophe/wright-catalogue/master/parameters/tei.css"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="manuscript_607">
+<?xml-model href="https://raw.githubusercontent.com/srophe/britishLibrary/main/documentation/schema/out/Syriacamsdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/srophe/britishLibrary/main/documentation/schema/out/Syriacamsdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet href="https://raw.githubusercontent.com/srophe/wright-catalogue/master/parameters/tei.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="manuscript_607">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -162,10 +165,15 @@
             </altIdentifier>
           </msIdentifier>
             <head>
-              <note type="contents-note">This manuscript contains: Hymns, numbered from ܒ to ܙ. In total, including sub-sections, this manuscript contains 1 item.</note>
+              <note type="contents-note">Hymns, numbered from <foreign xml:lang="syr">ܒ</foreign> to <foreign xml:lang="syr">ܙ</foreign>
+                <num type="item-count" value="1"/>
+              </note>
               <listRelation type="Wright-BL-Taxonomy">
                 <relation name="dcterms:type" ref="http://purl.org/dc/terms/type" active="https://bl.syriac.uk/ms/608" passive="#hymns">
                   <desc>Hymns</desc>
+                </relation>
+              <relation name="dcterms:type" ref="http://purl.org/dc/terms/type" active="https://bl.syriac.uk/ms/608" passive="#service-books">
+                  <desc>Service-books</desc>
                 </relation>
               </listRelation>
               <listRelation type="part-to-composite">
@@ -262,10 +270,14 @@
             </altIdentifier>
           </msIdentifier>
             <head>
-              <note type="contents-note">This manuscript contains: Severus. The Hymns of Severus, etc., 300 (ܫ) in number, arranged according to the eight tones; Supplicatory hymns, arranged according to the eight tones. In total, including sub-sections, this manuscript contains 13 items.</note>
+              <note type="contents-note">Severus. The Hymns of Severus, etc., 300 (<foreign xml:lang="syr">ܫ</foreign>) in number, arranged according to the eight tones; Supplicatory hymns, arranged according to the eight tones<num type="item-count" value="13"/>
+              </note>
               <listRelation type="Wright-BL-Taxonomy">
                 <relation name="dcterms:type" ref="http://purl.org/dc/terms/type" active="https://bl.syriac.uk/ms/609" passive="#hymns">
                   <desc>Hymns</desc>
+                </relation>
+              <relation name="dcterms:type" ref="http://purl.org/dc/terms/type" active="https://bl.syriac.uk/ms/609" passive="#service-books">
+                  <desc>Service-books</desc>
                 </relation>
               </listRelation>
               <listRelation type="part-to-composite">
@@ -427,10 +439,14 @@
             </altIdentifier>
           </msIdentifier>
             <head>
-              <note type="contents-note">This manuscript contains: The Psalms proper for the several daily services, according to the Peshitta version, accompanied by certain prayers. In total, including sub-sections, this manuscript contains 30 items.</note>
+              <note type="contents-note">The Psalms proper for the several daily services, according to the Pěshiṭtā version, accompanied by certain prayers<num type="item-count" value="30"/>
+              </note>
               <listRelation type="Wright-BL-Taxonomy">
                 <relation name="dcterms:type" ref="http://purl.org/dc/terms/type" active="https://bl.syriac.uk/ms/610" passive="#psalter">
                   <desc>Psalters</desc>
+                </relation>
+              <relation name="dcterms:type" ref="http://purl.org/dc/terms/type" active="https://bl.syriac.uk/ms/610" passive="#service-books">
+                  <desc>Service-books</desc>
                 </relation>
               </listRelation>
               <listRelation type="part-to-composite">
@@ -442,7 +458,7 @@
               <textLang mainLang="syr">Syriac</textLang>
               <msItem xml:id="p3a1" n="1" defective="true">
                 <locus from="66a"/>
-                <title xml:lang="en">The Psalms proper for the several daily services, according to the Peshitta version, accompanied by certain prayers</title>
+                <title xml:lang="en">The Psalms proper for the several daily services, according to the Pěshiṭtā version, accompanied by certain prayers</title>
                 <note>Compline, <foreign xml:lang="syr">ܕܣܘܬܪܐ</foreign>, is lost.</note>
                 <msItem xml:id="p3b1" n="2" defective="true">
                   <locus from="66a"/>
@@ -689,119 +705,112 @@
       </editorialDecl>
       <classDecl>
         <taxonomy xml:id="Wright-BL-Taxonomy">
-          <bibl>
-            <ptr target="http://syriaca.org/documentation/Wright-BL-Taxonomy.html"/>
-          </bibl>
-          <category xml:id="biblical-manuscripts">
-            <category xml:id="bible-ot">
-              <catDesc>Old Testament</catDesc>
-            </category>
-            <category xml:id="bible-nt">
-              <catDesc>New Testament</catDesc>
-            </category>
-            <category xml:id="bible-apocrypha">
-              <catDesc>Apocrypha</catDesc>
-            </category>
-            <category xml:id="bible-punctuation">
-              <catDesc>Punctuation</catDesc>
-            </category>
-          </category>
-          <category xml:id="service-books">
-            <category xml:id="psalter">
-              <catDesc>Psalters</catDesc>
-            </category>
-            <category xml:id="lectionaries">
-              <catDesc>Lectionaries</catDesc>
-            </category>
-            <category xml:id="missals">
-              <catDesc>Missals</catDesc>
-            </category>
-            <category xml:id="sacerdotals">
-              <catDesc>Sacerdotals</catDesc>
-            </category>
-            <category xml:id="choral">
-              <catDesc>Choral Books</catDesc>
-            </category>
-            <category xml:id="hymns">
-              <catDesc>Hymns</catDesc>
-            </category>
-            <category xml:id="prayers">
-              <catDesc>Prayers</catDesc>
-            </category>
-            <category xml:id="funerals">
-              <catDesc>Funeral Services</catDesc>
-            </category>
-          </category>
-          <category xml:id="theology">
-            <category xml:id="theo-single">
-              <catDesc>Individual Authors</catDesc>
-            </category>
-            <category xml:id="theo-collected">
-              <catDesc>Collected Authors</catDesc>
-            </category>
-            <category xml:id="theo-catenae">
-              <catDesc>Catenae Patrum and Demonstrations against Heresies</catDesc>
-            </category>
-            <category xml:id="theo-anonymous">
-              <catDesc>Anonymous Works</catDesc>
-            </category>
-            <category xml:id="theo-council">
-              <catDesc>Councils of the Church and Ecclesiastical Canons</catDesc>
-            </category>
-          </category>
-          <category xml:id="wright-history">
-            <category xml:id="history">
-              <catDesc>History</catDesc>
-            </category>
-          </category>
-          <category xml:id="lives">
-            <category xml:id="lives-collect">
-              <catDesc>Collected Lives</catDesc>
-            </category>
-            <category xml:id="lives-single">
-              <catDesc>Single Lives</catDesc>
-            </category>
-          </category>
-          <category xml:id="scientific-lit">
-            <category xml:id="sci-logic">
-              <catDesc>Logic and Rhetoric</catDesc>
-            </category>
-            <category xml:id="sci-grammar">
-              <catDesc>Grammar and Lexicography</catDesc>
-            </category>
-            <category xml:id="sci-ethics">
-              <catDesc>Ethics</catDesc>
-            </category>
-            <category xml:id="sci-medicine">
-              <catDesc>Medicine</catDesc>
-            </category>
-            <category xml:id="sci-agriculture">
-              <catDesc>Agriculture</catDesc>
-            </category>
-            <category xml:id="sci-chemistry">
-              <catDesc>Chemistry</catDesc>
-            </category>
-            <category xml:id="sci-natural-history">
-              <catDesc>Natural History</catDesc>
-            </category>
-          </category>
-          <category xml:id="wright-fly-leaves">
-            <category xml:id="fly-leaves">
-              <catDesc>Fly Leaves</catDesc>
-            </category>
-          </category>
-          <category xml:id="appendices">
-            <category xml:id="appendix-a">
-              <catDesc>Appendix A</catDesc>
-            </category>
-            <category xml:id="appendix-b">
-              <catDesc>Appendix B</catDesc>
-            </category>
-          </category>
-          <category xml:id="unclassified">
-            <catDesc>Unclassified</catDesc>
-          </category>
-        </taxonomy>
+    <bibl>
+        <ptr target="http://syriaca.org/documentation/Wright-BL-Taxonomy.html"/>
+    </bibl>
+    <category xml:id="biblical-manuscripts">
+        <catDesc>Biblical Manuscripts</catDesc>
+        <category xml:id="bible-ot">
+            <catDesc>Old Testament</catDesc>
+        </category>
+        <category xml:id="bible-nt">
+            <catDesc>New Testament</catDesc>
+        </category>
+        <category xml:id="bible-apocrypha">
+            <catDesc>Apocrypha</catDesc>
+        </category>
+        <category xml:id="bible-punctuation">
+            <catDesc>Punctuation</catDesc>
+        </category>
+    </category>
+    <category xml:id="service-books">
+        <catDesc>Service-books</catDesc>
+        <category xml:id="psalter">
+            <catDesc>Psalters</catDesc>
+        </category>
+        <category xml:id="lectionaries">
+            <catDesc>Lectionaries</catDesc>
+        </category>
+        <category xml:id="missals">
+            <catDesc>Missals</catDesc>
+        </category>
+        <category xml:id="sacerdotals">
+            <catDesc>Sacerdotals</catDesc>
+        </category>
+        <category xml:id="choral">
+            <catDesc>Choral Books</catDesc>
+        </category>
+        <category xml:id="hymns">
+            <catDesc>Hymns</catDesc>
+        </category>
+        <category xml:id="prayers">
+            <catDesc>Prayers</catDesc>
+        </category>
+        <category xml:id="funerals">
+            <catDesc>Funeral Services</catDesc>
+        </category>
+    </category>
+    <category xml:id="theology">
+        <catDesc>Theology</catDesc>
+        <category xml:id="theo-single">
+            <catDesc>Individual Authors</catDesc>
+        </category>
+        <category xml:id="theo-collected">
+            <catDesc>Collected Authors</catDesc>
+        </category>
+        <category xml:id="theo-catenae">
+            <catDesc>Catenae Patrum and Demonstrations against Heresies</catDesc>
+        </category>
+        <category xml:id="theo-anonymous">
+            <catDesc>Anonymous Works</catDesc>
+        </category>
+        <category xml:id="theo-council">
+            <catDesc>Councils of the Church and Ecclesiastical Canons</catDesc>
+        </category>
+    </category>
+    <category xml:id="history">
+        <catDesc>History</catDesc>
+    </category>
+    <category xml:id="lives">
+        <catDesc>Lives of Saints, etc.</catDesc>
+        <category xml:id="lives-collect">
+            <catDesc>Collected Lives</catDesc>
+        </category>
+        <category xml:id="lives-single">
+            <catDesc>Single Lives</catDesc>
+        </category>
+    </category>
+    <category xml:id="scientific-lit">
+        <catDesc>Scientific Literature</catDesc>
+        <category xml:id="sci-logic">
+            <catDesc>Logic and Rhetoric</catDesc>
+        </category>
+        <category xml:id="sci-grammar">
+            <catDesc>Grammar and Lexicography</catDesc>
+        </category>
+        <category xml:id="sci-ethics">
+            <catDesc>Ethics</catDesc>
+        </category>
+        <category xml:id="sci-medicine">
+            <catDesc>Medicine</catDesc>
+        </category>
+        <category xml:id="sci-agriculture">
+            <catDesc>Agriculture</catDesc>
+        </category>
+        <category xml:id="sci-chemistry">
+            <catDesc>Chemistry</catDesc>
+        </category>
+        <category xml:id="sci-natural-history">
+            <catDesc>Natural History</catDesc>
+        </category>
+    </category>
+    <category xml:id="fly-leaves">
+        <catDesc>Fly Leaves</catDesc>
+    </category>
+    <category xml:id="unclassified">
+        <catDesc>Unclassified</catDesc>
+    </category>
+</taxonomy>
       </classDecl>
     </encodingDesc>
     <profileDesc>

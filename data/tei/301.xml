@@ -1,4 +1,7 @@
-<?xml-model href="https://raw.githubusercontent.com/srophe/britishLibrary/main/documentation/schema/out/Syriacamsdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/srophe/britishLibrary/main/documentation/schema/out/Syriacamsdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-stylesheet href="https://raw.githubusercontent.com/srophe/wright-catalogue/master/parameters/tei.css"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="manuscript_301">
+<?xml-model href="https://raw.githubusercontent.com/srophe/britishLibrary/main/documentation/schema/out/Syriacamsdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/srophe/britishLibrary/main/documentation/schema/out/Syriacamsdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet href="https://raw.githubusercontent.com/srophe/wright-catalogue/master/parameters/tei.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="manuscript_301">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -114,9 +117,15 @@
             </altIdentifier>
           </msIdentifier>
           <head>
-            <note type="contents-note">This manuscript contains: The commentary of Athanasius of Alexandria on the Psalms. In total, including sub-sections, this manuscript contains 3 items.</note>
+            <note type="contents-note">Athanasius of Alexandria. The commentary of Athanasius of Alexandria on the Psalms; The apocryphal Psalm cli., without any commentary<num type="item-count" value="2"/>
+            </note>
             <listRelation type="Wright-BL-Taxonomy">
-              <relation name="dcterms:type" ref="http://purl.org/dc/terms/type" active="https://bl.syriac.uk/ms/301" passive="#theo-single"/>
+              <relation name="dcterms:type" ref="http://purl.org/dc/terms/type" active="https://bl.syriac.uk/ms/301" passive="#theo-single">
+                <desc>Individual Authors</desc>
+              </relation>
+            <relation name="dcterms:type" ref="http://purl.org/dc/terms/type" active="https://bl.syriac.uk/ms/301" passive="#theology">
+                <desc>Theology</desc>
+              </relation>
             </listRelation>
           </head>
           <msContents>
@@ -124,10 +133,10 @@
               <msItem xml:id="a1" n="1" defective="true">
                 <locus from="1a" to="49b">Foll. 1a-49b</locus>
                 <author ref="http://syriaca.org/person/354">
-                  <persName xml:lang="en">Athanasius of Alexandria</persName>
+                  <persName xml:lang="en" type="supplied">Athanasius of Alexandria</persName>
                 </author>
                 <title xml:lang="en">The commentary of Athanasius of Alexandria on the Psalms</title>
-                <rubric xml:lang="syr">ܦܘܫܩܐ ܕܡܙܡܘܪ̈ܐ ܕܩܕܝܩܐ ܐܬܢܣܝܘܣ<locus from="1a" to="1a"/>
+                <rubric xml:lang="syr">ܦܘܫܩܐ ܕܡܙܡܘܪ̈ܐ ܕܩܕܝܩܐ ܐܬܢܣܝܘܣ
                 </rubric>
                 <finalRubric xml:lang="syr">ܫܠܡ ܡܐܐ ܘܚ̈ܡܫܝܢ ܡܙܡܘܪ̈ܝܢ ܕܕܘܝܕ ܢܒܝܐ ܘܦܘܫ̈ܩܝܗܘܢ. ܕܦܫܩ ܐܢܘܢ ܛܘܒܢܐ ܐܬܢܣܝܘܣ ܪܫܐ ܕܐܦܣܩ̈ܦܐ ܕܐܠܟܣܢܕܪܝܐ܀<locus from="49b" to="49b"/>
                 </finalRubric>
@@ -135,23 +144,22 @@
                   </note>
                 <note>The following are the Psalms that remain, most of them being more or less imperfect: xvii., xxi.—xxv., xxxiv., xxxv., xxxix.—xli., xlvii., xlviii., lvii., lviii., lxvii., lxviii., lxx.—lxxii., lxxiv.—lxxvi., lxxxviii., xciii., c.—cviii., cx. —cxvi., cxviii., cxlviii.—cl.
                 </note>
-                <note>Cf. <bibl>Expositiones in Psalmos, Opera, ed. 1698, t. i., p. 1009 etc. <ref target="http://syriaca.org/cbss/U8FR2M97"/>
+                <note>
+                <bibl>Expositiones in Psalmos, Opera, ed. 1698, t. i., p. 1009 etc. <ref target="http://syriaca.org/cbss/U8FR2M97"/>
                   </bibl>; <bibl>Migne, Patrologiae Cursus Completus, Series Graeca, t. xxvii., col. 59 etc. <ref target="http://syriaca.org/cbss/AUUH2KX9"/>
                   </bibl>
                 </note>
               </msItem>
-              <msItem xml:id="b1" n="2" defective="unknown">
+              <msItem xml:id="b1" n="2">
                 <locus from="50a" to="50a">Fol. 50a</locus>
-              <colophon>
-                <ref target="#addition1">See additions.</ref>
-              </colophon>
-                <title ref="http://syriaca.org/work/39" xml:lang="en">The apocryphal Psalm cli., without any commentary</title>
-                <finalRubric xml:lang="syr">ܫܠܡ ܠܡܟܬܒ ܦܘܫܩܐ ܕܡܙܡܘܪ̈ܐ ܦܠܓܘܬܐ ܐܚܪܝܬܐ ܕܕܘܝܕ܀ ܕܦܫܩ ܛܘܒܢܐ ܐܬܢܣܝܘܣ ܦܛܪܝܪܟܐ ܕܐܠܟܣܢܕܪܝܐ ܪܒܬܐ܀<locus from="50a" to="50a"/>
-                </finalRubric>
+                <title ref="http://syriaca.org/work/39" xml:lang="en">The apocryphal Psalm cli., without any commentary</title>                
+                <colophon>
+                  <ref target="#addition1">See additions.</ref>
+                </colophon>
               </msItem>
           </msContents>
           <physDesc>
-            <p>Vellum, about 10 1/8  in. by 6 7/8 , consisting of 50 leaves, many of which are much stained and torn, especially foll. 2, 4, 7, 8, 11, 18— 21, 30, 38, 39, 44, 45, and 48—50. The quires are signed with letters, but only one of them (ܝܛ fol. 30) is complete, leaves being wanting at the beginning, as well as after foll. 1, 2, 4, 5, 8, 9, 10, 14, 20, 21, 23, 24, 27, 39, 42, 46, and 47. Each page is divided into two columns, of from 27 to 32 lines.</p>
+            <p>Vellum, about 10 1/8  in. by 6 7/8 , consisting of 50 leaves, many of which are much stained and torn, especially foll. 2, 4, 7, 8, 11, 18— 21, 30, 38, 39, 44, 45, and 48—50. The quires are signed with letters, but only one of them (<foreign xml:lang="syr">ܝܛ</foreign>, fol. 30) is complete, leaves being wanting at the beginning, as well as after foll. 1, 2, 4, 5, 8, 9, 10, 14, 20, 21, 23, 24, 27, 39, 42, 46, and 47. Each page is divided into two columns, of from 27 to 32 lines.</p>
             <objectDesc form="codex">
               <supportDesc material="perg">
                 <support>
@@ -186,17 +194,22 @@
             </objectDesc>
             <handDesc hands="3">
               <handNote xml:id="handNote1" scope="major" script="syr-Syre" medium="unknown">
-                The writing is a good, regular Esṭrangĕlā. <ref target="#addition1">See additions.</ref>
+                The writing is a good, regular Esṭrangĕlā. The volume seems to be dated <date when-custom="0910" datingMethod="Seleucid" calendar="Seleucid">A. Gr. 910</date>, <date when="0599" calendar="Gregorian">A.D. 599</date>. See additions.
                 </handNote>
               <handNote xml:id="handNote2" scope="minor" script="syr" medium="unknown">
-                <ref target="#addition2">See additions</ref>
-                </handNote>
-              <handNote xml:id="handNote3" scope="minor" script="syr" medium="unknown">
-                <ref target="#addition3">See additions</ref>
+                See additions.
                 </handNote>
             </handDesc>
             <additions>
               <list>
+                <item>
+                  <label>Colophon</label>
+                  <locus from="50a" to="50a"/>
+                  <p>Colophon, fol. 50 a:</p>
+                  <p>
+                    <quote xml:lang="syr">ܫܠܡ ܠܡܟܬܒ ܦܘܫܩܐ ܕܡܙܡܘܪ̈ܐ ܦܠܓܘܬܐ ܐܚܪܝܬܐ ܕܕܘܝܕ܀ ܕܦܫܩ ܛܘܒܢܐ ܐܬܢܣܝܘܣ ܦܛܪܝܪܟܐ ܕܐܠܟܣܢܕܪܝܐ ܪܒܬܐ܀</quote>
+                  </p>
+                </item>
                 <item xml:id="addition1" n="1">
                   <label>Colophon</label>
                   <label>Ownership Inscription</label>
@@ -209,11 +222,10 @@
                   <p>
                     <quote xml:lang="syr">ܡܢ ܛܝܒܘܬܐ ܕܐܠܗܐ . . . ܕܝܠܗܘܢ ܥܒܕܘ ܠܗܘܢ ܟܬܒܐ . . . ܩܐ ܕܡܙܡܘܪ̈ܐ ܠܩܕܝܫܐ</quote>
                   </p>
-                  <p>which show that the book was purchased by, and in all likelihood written for, certain persons in the year <date when-custom="0910" datingMethod="Seleucid">910</date>, <date when="0599" calendar="Gregorian">A.D. 599</date>.</p>
+                  <p>which show that the book was purchased by, and in all likelihood written for, certain persons in the year <date when-custom="0910" datingMethod="Seleucid" calendar="Seleucid">910</date>, <date when="0599" calendar="Gregorian">A.D. 599</date>.</p>
                 </item>
                 <item xml:id="addition2" n="2">
                   <locus from="50b" to="50b"/>
-                  <ref target="#handNote2"/>
                   <p>The next owner was a priest, whose name is now effaced, for in the fourth line we read, in a different hand, the words </p>
                   <p>
                     <quote xml:lang="syr">ܢܟܦܐ ܘܪܚܝܡ(sic) ܐܠܗܐ ܩܫܝܫܐ</quote>
@@ -221,7 +233,6 @@
                 </item>
                 <item xml:id="addition3" n="3">
                   <locus from="50b" to="50b"/>
-                  <ref target="#handNote3"/>
                   <p>The third possessor was <persName ref="smblPers532">Isaac bar Abraham bar Dīnārā</persName> of <placeName ref="http://syriaca.org/place/193">Tagrīt</placeName>, from whose hands the manuscript passed into the library of <placeName ref="http://syriaca.org/place/360">the convent of S. Mary Deipara</placeName>, A.D.<date when="0932" calendar="Gregorian">932</date>:</p>
                   <p>
                     <quote xml:lang="syr">
@@ -234,16 +245,9 @@
             </physDesc>
           <history>
             <origin>
-              <origDate calendar="Gregorian" when="0599">A.D. 599</origDate>
-              <origDate calendar="Seleucid" datingMethod="Seleucid" when-custom="0910">A.G. 910</origDate>
-              
-              
+              <origDate calendar="Gregorian" notBefore="0574" notAfter="0599">ca. before AD 599</origDate>
+              <origDate calendar="Seleucid" datingMethod="Seleucid" notBefore-custom="0885" notAfter-custom="0910">ca. before AG 910</origDate>
             </origin>
-            <provenance>
-              
-                <ref target="#addition2 #addition3">See additions.</ref>
-              
-            </provenance>
             </history>
           <additional>
             <adminInfo>
@@ -285,119 +289,112 @@
       </editorialDecl>
       <classDecl>
         <taxonomy xml:id="Wright-BL-Taxonomy">
-          <bibl>
-            <ptr target="http://syriaca.org/documentation/Wright-BL-Taxonomy.html"/>
-          </bibl>
-          <category xml:id="biblical-manuscripts">
-            <category xml:id="bible-ot">
-              <catDesc>Old Testament</catDesc>
-            </category>
-            <category xml:id="bible-nt">
-              <catDesc>New Testament</catDesc>
-            </category>
-            <category xml:id="bible-apocrypha">
-              <catDesc>Apocrypha</catDesc>
-            </category>
-            <category xml:id="bible-punctuation">
-              <catDesc>Punctuation</catDesc>
-            </category>
-          </category>
-          <category xml:id="service-books">
-            <category xml:id="psalter">
-              <catDesc>Psalters</catDesc>
-            </category>
-            <category xml:id="lectionaries">
-              <catDesc>Lectionaries</catDesc>
-            </category>
-            <category xml:id="missals">
-              <catDesc>Missals</catDesc>
-            </category>
-            <category xml:id="sacerdotals">
-              <catDesc>Sacerdotals</catDesc>
-            </category>
-            <category xml:id="choral">
-              <catDesc>Choral Books</catDesc>
-            </category>
-            <category xml:id="hymns">
-              <catDesc>Hymns</catDesc>
-            </category>
-            <category xml:id="prayers">
-              <catDesc>Prayers</catDesc>
-            </category>
-            <category xml:id="funerals">
-              <catDesc>Funeral Services</catDesc>
-            </category>
-          </category>
-          <category xml:id="theology">
-            <category xml:id="theo-single">
-              <catDesc>Individual Authors</catDesc>
-            </category>
-            <category xml:id="theo-collected">
-              <catDesc>Collected Authors</catDesc>
-            </category>
-            <category xml:id="theo-catenae">
-              <catDesc>Catenae Patrum and Demonstrations against Heresies</catDesc>
-            </category>
-            <category xml:id="theo-anonymous">
-              <catDesc>Anonymous Works</catDesc>
-            </category>
-            <category xml:id="theo-council">
-              <catDesc>Councils of the Church and Ecclesiastical Canons</catDesc>
-            </category>
-          </category>
-          <category xml:id="wright-history">
-            <category xml:id="history">
-              <catDesc>History</catDesc>
-            </category>
-          </category>
-          <category xml:id="lives">
-            <category xml:id="lives-collect">
-              <catDesc>Collected Lives</catDesc>
-            </category>
-            <category xml:id="lives-single">
-              <catDesc>Single Lives</catDesc>
-            </category>
-          </category>
-          <category xml:id="scientific-lit">
-            <category xml:id="sci-logic">
-              <catDesc>Logic and Rhetoric</catDesc>
-            </category>
-            <category xml:id="sci-grammar">
-              <catDesc>Grammar and Lexicography</catDesc>
-            </category>
-            <category xml:id="sci-ethics">
-              <catDesc>Ethics</catDesc>
-            </category>
-            <category xml:id="sci-medicine">
-              <catDesc>Medicine</catDesc>
-            </category>
-            <category xml:id="sci-agriculture">
-              <catDesc>Agriculture</catDesc>
-            </category>
-            <category xml:id="sci-chemistry">
-              <catDesc>Chemistry</catDesc>
-            </category>
-            <category xml:id="sci-natural-history">
-              <catDesc>Natural History</catDesc>
-            </category>
-          </category>
-          <category xml:id="wright-fly-leaves">
-            <category xml:id="fly-leaves">
-              <catDesc>Fly Leaves</catDesc>
-            </category>
-          </category>
-          <category xml:id="appendices">
-            <category xml:id="appendix-a">
-              <catDesc>Appendix A</catDesc>
-            </category>
-            <category xml:id="appendix-b">
-              <catDesc>Appendix B</catDesc>
-            </category>
-          </category>
-          <category xml:id="unclassified">
-            <catDesc>Unclassified</catDesc>
-          </category>
-        </taxonomy>
+    <bibl>
+        <ptr target="http://syriaca.org/documentation/Wright-BL-Taxonomy.html"/>
+    </bibl>
+    <category xml:id="biblical-manuscripts">
+        <catDesc>Biblical Manuscripts</catDesc>
+        <category xml:id="bible-ot">
+            <catDesc>Old Testament</catDesc>
+        </category>
+        <category xml:id="bible-nt">
+            <catDesc>New Testament</catDesc>
+        </category>
+        <category xml:id="bible-apocrypha">
+            <catDesc>Apocrypha</catDesc>
+        </category>
+        <category xml:id="bible-punctuation">
+            <catDesc>Punctuation</catDesc>
+        </category>
+    </category>
+    <category xml:id="service-books">
+        <catDesc>Service-books</catDesc>
+        <category xml:id="psalter">
+            <catDesc>Psalters</catDesc>
+        </category>
+        <category xml:id="lectionaries">
+            <catDesc>Lectionaries</catDesc>
+        </category>
+        <category xml:id="missals">
+            <catDesc>Missals</catDesc>
+        </category>
+        <category xml:id="sacerdotals">
+            <catDesc>Sacerdotals</catDesc>
+        </category>
+        <category xml:id="choral">
+            <catDesc>Choral Books</catDesc>
+        </category>
+        <category xml:id="hymns">
+            <catDesc>Hymns</catDesc>
+        </category>
+        <category xml:id="prayers">
+            <catDesc>Prayers</catDesc>
+        </category>
+        <category xml:id="funerals">
+            <catDesc>Funeral Services</catDesc>
+        </category>
+    </category>
+    <category xml:id="theology">
+        <catDesc>Theology</catDesc>
+        <category xml:id="theo-single">
+            <catDesc>Individual Authors</catDesc>
+        </category>
+        <category xml:id="theo-collected">
+            <catDesc>Collected Authors</catDesc>
+        </category>
+        <category xml:id="theo-catenae">
+            <catDesc>Catenae Patrum and Demonstrations against Heresies</catDesc>
+        </category>
+        <category xml:id="theo-anonymous">
+            <catDesc>Anonymous Works</catDesc>
+        </category>
+        <category xml:id="theo-council">
+            <catDesc>Councils of the Church and Ecclesiastical Canons</catDesc>
+        </category>
+    </category>
+    <category xml:id="history">
+        <catDesc>History</catDesc>
+    </category>
+    <category xml:id="lives">
+        <catDesc>Lives of Saints, etc.</catDesc>
+        <category xml:id="lives-collect">
+            <catDesc>Collected Lives</catDesc>
+        </category>
+        <category xml:id="lives-single">
+            <catDesc>Single Lives</catDesc>
+        </category>
+    </category>
+    <category xml:id="scientific-lit">
+        <catDesc>Scientific Literature</catDesc>
+        <category xml:id="sci-logic">
+            <catDesc>Logic and Rhetoric</catDesc>
+        </category>
+        <category xml:id="sci-grammar">
+            <catDesc>Grammar and Lexicography</catDesc>
+        </category>
+        <category xml:id="sci-ethics">
+            <catDesc>Ethics</catDesc>
+        </category>
+        <category xml:id="sci-medicine">
+            <catDesc>Medicine</catDesc>
+        </category>
+        <category xml:id="sci-agriculture">
+            <catDesc>Agriculture</catDesc>
+        </category>
+        <category xml:id="sci-chemistry">
+            <catDesc>Chemistry</catDesc>
+        </category>
+        <category xml:id="sci-natural-history">
+            <catDesc>Natural History</catDesc>
+        </category>
+    </category>
+    <category xml:id="fly-leaves">
+        <catDesc>Fly Leaves</catDesc>
+    </category>
+    <category xml:id="unclassified">
+        <catDesc>Unclassified</catDesc>
+    </category>
+</taxonomy>
       </classDecl>
     </encodingDesc>
     <profileDesc>
